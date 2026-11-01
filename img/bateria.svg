@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Ilustración de una persona tocando batería en un escenario">
+<defs>
+<radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0" stop-color="#3b2a0a"></stop><stop offset="0.55" stop-color="#16110a"></stop><stop offset="1" stop-color="#0a0908"></stop></radialGradient>
+<linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd27a" stop-opacity="0.55"></stop><stop offset="1" stop-color="#ffd27a" stop-opacity="0.04"></stop></linearGradient>
+<linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a1f0a"></stop><stop offset="1" stop-color="#0a0908"></stop></linearGradient>
+</defs>
+<rect width="600" height="400" fill="url(#bg)"></rect>
+<polygon points="250,0 350,0 470,372 130,372" fill="url(#beam)"></polygon>
+<rect x="0" y="360" width="600" height="40" fill="url(#floor)"></rect>
+<line x1="0" y1="360" x2="600" y2="360" stroke="#f2a31b" stroke-opacity="0.5" stroke-width="1.5"></line>
+<circle cx="300" cy="118" r="26" fill="#14110a" stroke="#5a4410" stroke-width="2"></circle><path d="M258 152 Q300 134 342 152 L334 226 L266 226 Z" fill="#14110a" stroke="#5a4410" stroke-width="2"></path><line x1="266" y1="166" x2="200" y2="226" stroke="#14110a" stroke-width="16" stroke-linecap="round"></line><line x1="266" y1="166" x2="200" y2="226" stroke="#5a4410" stroke-width="16" stroke-opacity="0" stroke-linecap="round"></line><line x1="334" y1="166" x2="400" y2="216" stroke="#14110a" stroke-width="16" stroke-linecap="round"></line><line x1="334" y1="166" x2="400" y2="216" stroke="#5a4410" stroke-width="16" stroke-opacity="0" stroke-linecap="round"></line><circle cx="300" cy="292" r="58" fill="#14110a" stroke="#f2a31b" stroke-width="6"></circle><circle cx="300" cy="292" r="12" fill="#f2a31b"></circle>
+<ellipse cx="190" cy="250" rx="46" ry="14" fill="#f2a31b"></ellipse><rect x="144" y="250" width="92" height="40" fill="#14110a" stroke="#f2a31b" stroke-width="3"></rect><ellipse cx="190" cy="290" rx="46" ry="14" fill="#14110a" stroke="#f2a31b" stroke-width="3"></ellipse>
+<ellipse cx="410" cy="240" rx="40" ry="12" fill="#f2a31b"></ellipse><rect x="370" y="240" width="80" height="36" fill="#14110a" stroke="#f2a31b" stroke-width="3"></rect><ellipse cx="410" cy="276" rx="40" ry="12" fill="#14110a" stroke="#f2a31b" stroke-width="3"></ellipse>
+<line x1="90" y1="360" x2="90" y2="170" stroke="#ffc857" stroke-width="4"></line><ellipse cx="90" cy="168" rx="58" ry="8" fill="#ffc857"></ellipse>
+<line x1="520" y1="360" x2="520" y2="190" stroke="#ffc857" stroke-width="4"></line><ellipse cx="520" cy="188" rx="58" ry="8" fill="#ffc857"></ellipse><line x1="200" y1="226" x2="168" y2="204" stroke="#ffc857" stroke-width="4"></line><line x1="400" y1="216" x2="432" y2="198" stroke="#ffc857" stroke-width="4"></line>
+</svg>
