@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Academia de Música ARPA · Panamá</title>
-<meta name="description" content="Academia de Música ARPA (AMA): aprende guitarra, piano, canto, bajo y batería paso a paso, con método y formación ministerial. Presencial, en línea o híbrida desde Panamá.">
+<meta name="description" content="Academia de Música ARPA (AMA): aprende guitarra, piano, canto, bajo y batería paso a paso, con método y formación ministerial. Clases en línea para toda Latinoamérica y el mundo; presencial e híbrida en Panamá.">
 <meta name="theme-color" content="#0a0908">
 <link rel="icon" type="image/jpeg" href="img/logo.jpg">
 <link rel="apple-touch-icon" href="img/logo.jpg">
@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Academia de Música ARPA">
 <meta property="og:url" content="https://ferminbosquezmc-debug.github.io/academia-musica-ama/">
 <meta property="og:title" content="Academia de Música ARPA · Aprende música paso a paso">
-<meta property="og:description" content="Guitarra, piano, canto, bajo, batería y formación ministerial. Tres niveles de tres meses. Panamá y Latinoamérica.">
+<meta property="og:description" content="Guitarra, piano, canto, bajo, batería y formación ministerial. Tres niveles de tres meses. Desde Panamá para el mundo, en línea.">
 <meta property="og:image" content="https://ferminbosquezmc-debug.github.io/academia-musica-ama/img/logo.jpg">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,48 +26,104 @@ a{color:#f2a31b}a:hover{color:#ffc857}
 h1,h2,h3,p{margin:0}
 html{scroll-behavior:smooth}
 section{scroll-margin-top:150px}
-nav a{flex:none;white-space:nowrap}
-nav::-webkit-scrollbar{display:none}
 </style>
 <style>
 *{box-sizing:border-box}
 img{max-width:100%}
 :focus-visible{outline:2px solid #f2a31b;outline-offset:3px}
+/* Barra superior y menú */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(10,9,8,.97);backdrop-filter:blur(8px);border-bottom:1px solid #2a2619;padding:10px max(16px,5vw);display:flex;align-items:center;justify-content:space-between;gap:12px 32px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#f4efe3;min-width:0}
+.brand img{width:52px;height:52px;object-fit:cover;border-radius:50%;flex:none}
+.brand b{display:block;font-family:'Bodoni Moda',serif;font-weight:700;font-size:20px;letter-spacing:.02em;line-height:1.15}
+.brand small{display:block;font-size:12px;color:#c9bfa6;letter-spacing:.14em}
+.top-acts{display:none;align-items:center;gap:8px}
+.cta{background:#f2a31b;color:#0a0908!important;text-decoration:none;font-weight:600;padding:12px 22px;border-radius:999px;white-space:nowrap}
+.cta:hover{background:#ffc857}
+.menu-btn{appearance:none;width:46px;height:46px;border-radius:12px;border:1px solid #3a3321;background:#14110b;color:#f4efe3;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.menu-btn svg{width:24px;height:24px}
+.menu-btn .x{display:none}
+.menu-btn[aria-expanded="true"] .x{display:block}
+.menu-btn[aria-expanded="true"] .bars{display:none}
+#menu{display:flex;align-items:center;gap:8px 26px;font-size:16px}
+#menu a.lk{color:#f4efe3;text-decoration:none;padding:10px 0 8px;border-bottom:2px solid transparent;white-space:nowrap}
+#menu a.lk[aria-current="true"]{color:#f2a31b;border-bottom-color:#f2a31b;font-weight:600}
+@media (max-width:1100px){
+  .top{flex-wrap:nowrap}
+  .brand b{font-size:17px}
+  .brand img{width:44px;height:44px}
+  .top-acts{display:flex}
+  .top-acts .cta{padding:11px 16px;font-size:15px}
+  #menu{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:0;background:#0d0b08;border-bottom:1px solid #2a2619;padding:8px max(16px,5vw) 18px;box-shadow:0 18px 40px rgba(0,0,0,.5)}
+  #menu.open{display:flex}
+  #menu a.lk{padding:14px 4px;border-bottom:1px solid #2a2619;font-size:18px}
+  #menu a.lk[aria-current="true"]{border-bottom-color:#2a2619}
+  #menu .cta{margin-top:14px;text-align:center}
+}
+@media (max-width:560px){.brand small{display:none}.brand .bp{display:block;font-family:'Jost',sans-serif;font-weight:500;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#c9bfa6}.brand b{font-size:22px;letter-spacing:.08em}}
+@media (max-width:380px){.top-acts .cta{padding:10px 13px;font-size:14px}}
+/* Formulario de inscripción */
+.form{border:1px solid #3a3321;border-radius:20px;padding:24px;background:#0d0b08;display:flex;flex-direction:column;gap:16px}
+.form h3{font-family:'Bodoni Moda',serif;font-weight:700;font-size:26px}
+.fl{display:flex;flex-direction:column;gap:6px;font-size:15px;color:#d9d0ba}
+.fl>span b{color:#f2a31b;font-weight:600}
+.form input,.form select,.form textarea{font:inherit;font-size:17px;color:#f4efe3;background:#14110b;border:1px solid #3a3321;border-radius:12px;padding:12px 14px;width:100%;min-height:48px}
+.form select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,#f2a31b 50%),linear-gradient(135deg,#f2a31b 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 14px) 50%;background-size:6px 6px;background-repeat:no-repeat;padding-right:40px}
+.form input:focus,.form select:focus,.form textarea:focus{border-color:#f2a31b;outline:none}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:560px){.row2{grid-template-columns:1fr}}
+.tel{display:flex;gap:8px}
+.tel .pre{flex:none;min-width:76px;display:flex;align-items:center;justify-content:center;border:1px solid #3a3321;border-radius:12px;background:#1a1405;color:#f2a31b;font-weight:600}
+fieldset.fl{border:0;padding:0;margin:0}
+fieldset.fl legend{padding:0;margin-bottom:6px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts label{display:flex;align-items:center;gap:8px;border:1px solid #3a3321;border-radius:999px;padding:10px 16px;cursor:pointer;color:#f4efe3;min-height:44px}
+.opts input{width:18px;height:18px;min-height:0;accent-color:#f2a31b;margin:0}
+.opts label:has(input:checked){border-color:#f2a31b;background:#1a1405}
+.opts label:has(input:disabled){opacity:.4;cursor:not-allowed}
+.note{font-size:14px;color:#c9bfa6}
+.note.hl{color:#f2a31b}
+.send{appearance:none;border:0;cursor:pointer;font:inherit;font-size:18px;font-weight:600;background:#f2a31b;color:#0a0908;border-radius:999px;padding:16px 26px;min-height:52px;display:flex;align-items:center;justify-content:center;gap:10px}
+.send:hover{background:#ffc857}
+.send svg{width:22px;height:22px}
+.err{color:#ff8a7a;font-size:14px;min-height:1em}
+.world{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.world span{font-size:14px;border:1px solid #3a3321;border-radius:999px;padding:6px 12px;color:#d9d0ba}
 </style>
 </head>
 <body>
 <div style="background:#0a0908;color:#f4efe3;font-family:'Jost',system-ui,sans-serif;line-height:1.55">
 
 <!-- Barra superior -->
-<header style="position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(10,9,8,.96);backdrop-filter:blur(8px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 32px;padding:10px max(20px,5vw);border-bottom:1px solid #2a2619">
-<a href="#inicio" style="display:flex;align-items:center;gap:14px;text-decoration:none;color:#f4efe3">
-<img src="img/logo.jpg" alt="Logo de ARP Music Academy" style="width:56px;height:56px;object-fit:cover;border-radius:50%">
-<span style="display:flex;flex-direction:column"><span style="font-family:'Bodoni Moda',serif;font-weight:700;font-size:20px;letter-spacing:.02em">Academia de Música ARPA</span><span style="font-size:13px;color:#c9bfa6;letter-spacing:.14em">AMA · PANAMÁ</span></span>
+<header class="top">
+<a class="brand" href="#inicio">
+<img src="img/logo.jpg" alt="Logo de ARP Music Academy">
+<span><b><span class="bp">Academia de Música </span>ARPA</b><small>AMA · DESDE PANAMÁ AL MUNDO</small></span>
 </a>
-<nav id="menu" aria-label="Menú principal" style="display:flex;flex-wrap:nowrap;gap:8px 26px;align-items:center;font-size:16px;min-width:0;max-width:100%;overflow-x:auto;scrollbar-width:none">
-
-<a href="#programas" aria-current="false" style="color:#f4efe3;text-decoration:none;padding:10px 0 8px;border-bottom:2px solid transparent;font-weight:400">Programas</a>
-
-<a href="#niveles" aria-current="false" style="color:#f4efe3;text-decoration:none;padding:10px 0 8px;border-bottom:2px solid transparent;font-weight:400">Niveles</a>
-
-<a href="#metodo" aria-current="false" style="color:#f4efe3;text-decoration:none;padding:10px 0 8px;border-bottom:2px solid transparent;font-weight:400">Cómo aprendes</a>
-
-<a href="#carreras" aria-current="false" style="color:#f4efe3;text-decoration:none;padding:10px 0 8px;border-bottom:2px solid transparent;font-weight:400">Carreras</a>
-
-<a href="#fundadores" aria-current="false" style="color:#f4efe3;text-decoration:none;padding:10px 0 8px;border-bottom:2px solid transparent;font-weight:400">Fundadores</a>
-
-<a href="#equipo" aria-current="false" style="color:#f4efe3;text-decoration:none;padding:10px 0 8px;border-bottom:2px solid transparent;font-weight:400">Equipo</a>
-
-<a href="#contacto" style="background:#f2a31b;color:#0a0908;text-decoration:none;font-weight:600;padding:12px 22px;border-radius:999px">Quiero inscribirme</a>
+<div class="top-acts">
+<a class="cta" href="#contacto">Inscribirme</a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+<svg class="bars" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+<svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+</button>
+</div>
+<nav id="menu" aria-label="Menú principal">
+<a class="lk" href="#programas" aria-current="false">Programas</a>
+<a class="lk" href="#niveles" aria-current="false">Niveles</a>
+<a class="lk" href="#metodo" aria-current="false">Cómo aprendes</a>
+<a class="lk" href="#carreras" aria-current="false">Carreras</a>
+<a class="lk" href="#fundadores" aria-current="false">Fundadores</a>
+<a class="lk" href="#equipo" aria-current="false">Equipo</a>
+<a class="cta" href="#contacto">Quiero inscribirme</a>
 </nav>
 </header>
 
 <!-- Portada -->
 <section id="inicio" style="display:flex;flex-wrap:wrap;align-items:center;gap:40px;padding:72px max(20px,5vw);background:radial-gradient(ellipse 60% 70% at 78% 40%,#3a2808 0%,#0a0908 70%)">
 <div style="flex:1 1 440px;min-width:0;display:flex;flex-direction:column;gap:24px">
-<p style="font-size:14px;letter-spacing:.2em;color:#f2a31b;font-weight:500">PRESENCIAL · EN LÍNEA · HÍBRIDA</p>
+<p style="font-size:14px;letter-spacing:.2em;color:#f2a31b;font-weight:500">EN LÍNEA PARA EL MUNDO · PRESENCIAL EN PANAMÁ</p>
 <h1 style="font-family:'Bodoni Moda',serif;font-weight:700;font-size:clamp(40px,6vw,76px);line-height:1.05;text-wrap:balance">Aprende música paso a paso, con método y sin presión.</h1>
-<p style="font-size:20px;color:#d9d0ba;max-width:560px">Una academia que empieza en Panamá y quiere llegar a toda Latinoamérica. Clases cortas, mucha práctica y la meta de que cada alumno aprenda de verdad.</p>
+<p style="font-size:20px;color:#d9d0ba;max-width:560px">Una academia nacida en Panamá, con clases en línea para alumnos de toda Latinoamérica y del mundo. Clases cortas, mucha práctica y la meta de que cada alumno aprenda de verdad.</p>
 <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:8px">
 <a href="#contacto" style="background:#f2a31b;color:#0a0908;text-decoration:none;font-weight:600;font-size:18px;padding:16px 30px;border-radius:999px">Quiero inscribirme</a>
 <a href="#programas" style="border:1px solid #f2a31b;color:#f4efe3;text-decoration:none;font-size:18px;padding:15px 30px;border-radius:999px">Ver programas</a>
@@ -336,16 +392,51 @@ img{max-width:100%}
 <!-- Contacto -->
 <section id="contacto" style="padding:88px max(20px,5vw);border-top:1px solid #2a2619;background:radial-gradient(ellipse 70% 90% at 20% 100%,#2c1f07 0%,#0a0908 70%)">
 <div style="display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start">
-<div style="flex:1 1 360px;min-width:0;display:flex;flex-direction:column;gap:16px">
-<p style="font-size:14px;letter-spacing:.2em;color:#f2a31b;font-weight:500">INSCRIPCIONES</p>
-<h2 style="font-family:'Bodoni Moda',serif;font-weight:700;font-size:clamp(32px,4.4vw,52px);line-height:1.1;text-wrap:balance">Empieza tu primer nivel</h2>
-<p style="font-size:19px;color:#d9d0ba">Escríbenos y te contamos fechas, horarios y modalidad. Cuéntanos qué instrumento quieres aprender y si ya tocaste antes.</p>
+<div style="flex:1 1 340px;min-width:0;display:flex;flex-direction:column;gap:16px">
+<p style="font-size:14px;letter-spacing:.2em;color:#f2a31b;font-weight:500">INSCRIPCIONES · DESDE CUALQUIER PAÍS</p>
+<h2 style="font-family:'Bodoni Moda',serif;font-weight:700;font-size:clamp(32px,4.4vw,52px);line-height:1.1;text-wrap:balance">Empieza tu primer nivel, estés donde estés</h2>
+<p style="font-size:19px;color:#d9d0ba">Las clases en línea están abiertas para alumnos de toda Latinoamérica y del mundo. Las modalidades presencial e híbrida son en Panamá.</p>
+<p style="font-size:19px;color:#d9d0ba">Llena el formulario y te escribimos por WhatsApp con fechas, horarios en tu zona horaria y modalidad.</p>
+<div class="world" aria-label="Alcance">
+<span>Panamá</span><span>Centroamérica</span><span>Caribe</span><span>Sudamérica</span><span>México</span><span>EE. UU. y Canadá</span><span>España</span>
 </div>
-<div style="flex:1 1 360px;min-width:0;display:flex;flex-direction:column;gap:14px">
-<div style="border:1px solid #3a3321;border-radius:16px;padding:20px 24px"><p style="font-size:14px;letter-spacing:.14em;color:#c9bfa6">CORREO</p><p style="font-size:20px">[correo de la academia]</p></div>
-<div style="border:1px solid #3a3321;border-radius:16px;padding:20px 24px"><p style="font-size:14px;letter-spacing:.14em;color:#c9bfa6">WHATSAPP</p><p style="font-size:20px">[número de WhatsApp]</p></div>
-<div style="border:1px solid #3a3321;border-radius:16px;padding:20px 24px"><p style="font-size:14px;letter-spacing:.14em;color:#c9bfa6">UBICACIÓN</p><p style="font-size:20px">Panamá · [dirección o ciudad de las clases]</p></div>
+<div style="border:1px solid #3a3321;border-radius:16px;padding:18px 22px;margin-top:8px;display:flex;flex-direction:column;gap:4px">
+<p style="font-size:14px;letter-spacing:.14em;color:#c9bfa6">CORREO</p><p style="font-size:18px">[correo de la academia]</p>
+<p style="font-size:14px;letter-spacing:.14em;color:#c9bfa6;margin-top:10px">SEDE PRESENCIAL</p><p style="font-size:18px">Panamá · [dirección o ciudad de las clases]</p>
 </div>
+</div>
+<form class="form" id="registro" novalidate style="flex:1 1 400px;min-width:0">
+<h3>Formulario de inscripción</h3>
+<label class="fl"><span>Nombre completo <b>*</b></span><input name="nombre" autocomplete="name" required></label>
+<div class="row2">
+<label class="fl"><span>País <b>*</b></span><select name="pais" id="f-pais" autocomplete="country-name" required><option value="" selected disabled>Elige tu país</option><option value="Panamá" data-code="+507">Panamá</option><option value="Argentina" data-code="+54">Argentina</option><option value="Bolivia" data-code="+591">Bolivia</option><option value="Brasil" data-code="+55">Brasil</option><option value="Canadá" data-code="+1">Canadá</option><option value="Chile" data-code="+56">Chile</option><option value="Colombia" data-code="+57">Colombia</option><option value="Costa Rica" data-code="+506">Costa Rica</option><option value="Cuba" data-code="+53">Cuba</option><option value="Ecuador" data-code="+593">Ecuador</option><option value="El Salvador" data-code="+503">El Salvador</option><option value="España" data-code="+34">España</option><option value="Estados Unidos" data-code="+1">Estados Unidos</option><option value="Guatemala" data-code="+502">Guatemala</option><option value="Honduras" data-code="+504">Honduras</option><option value="México" data-code="+52">México</option><option value="Nicaragua" data-code="+505">Nicaragua</option><option value="Paraguay" data-code="+595">Paraguay</option><option value="Perú" data-code="+51">Perú</option><option value="Puerto Rico" data-code="+1">Puerto Rico</option><option value="República Dominicana" data-code="+1">República Dominicana</option><option value="Uruguay" data-code="+598">Uruguay</option><option value="Venezuela" data-code="+58">Venezuela</option><option value="Otro país" data-code="">Otro país</option></select></label>
+<label class="fl"><span>Ciudad</span><input name="ciudad" autocomplete="address-level2"></label>
+</div>
+<label class="fl"><span>WhatsApp <b>*</b></span>
+<span class="tel"><span class="pre" id="f-pre" aria-live="polite">+ —</span><input name="tel" id="f-tel" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="Tu número" required></span>
+</label>
+<label class="fl"><span>Correo</span><input name="correo" type="email" autocomplete="email"></label>
+<label class="fl"><span>¿Qué quieres estudiar? <b>*</b></span><select name="programa" required><option value="" selected disabled>Elige un programa</option><option>Guitarra</option><option>Piano</option><option>Canto</option><option>Bajo</option><option>Batería</option><option>Audiotécnica (carrera)</option><option>Producción musical (carrera)</option><option>Música e inteligencia artificial (carrera)</option><option>Todavía no sé</option></select></label>
+<fieldset class="fl"><legend>Modalidad <b style="color:#f2a31b">*</b></legend>
+<div class="opts">
+<label><input type="radio" name="modalidad" value="En línea" checked> En línea</label>
+<label><input type="radio" name="modalidad" value="Presencial" data-pa> Presencial</label>
+<label><input type="radio" name="modalidad" value="Híbrida" data-pa> Híbrida</label>
+</div>
+<span class="note" id="f-mod-note">Presencial e híbrida: solo en Panamá.</span>
+</fieldset>
+<fieldset class="fl"><legend>¿Ya tocas o cantas?</legend>
+<div class="opts">
+<label><input type="radio" name="exp" value="Empiezo desde cero" checked> Empiezo desde cero</label>
+<label><input type="radio" name="exp" value="Sé un poco"> Sé un poco</label>
+<label><input type="radio" name="exp" value="Ya toco o canto"> Ya toco o canto</label>
+</div>
+</fieldset>
+<label class="fl"><span>Mensaje</span><textarea name="mensaje" rows="3" placeholder="Cuéntanos algo más (opcional)"></textarea></label>
+<p class="err" id="f-err" role="alert"></p>
+<button class="send" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9 9.5c.3 2 1.8 3.8 4 4.6l1.2-1.2 2 .8-.4 1.8c-3.6.2-7.4-3.4-7.6-7l1.8-.4.8 2z"/></svg>Enviar inscripción por WhatsApp</button>
+<p class="note">Al enviar se abre WhatsApp con tus datos ya escritos. Solo tienes que tocar «Enviar».</p>
+</form>
 </div>
 </section>
 
@@ -363,22 +454,69 @@ img{max-width:100%}
 
 </div>
 <script>
+/* Número de WhatsApp que recibe las inscripciones (código de país + número, sin + ni espacios) */
+var WHATSAPP_ACADEMIA="50768346940";
+
+/* Menú del celular */
+(function(){
+  var btn=document.querySelector('.menu-btn'),menu=document.getElementById('menu');
+  function set(o){menu.classList.toggle('open',o);btn.setAttribute('aria-expanded',o?'true':'false');btn.setAttribute('aria-label',o?'Cerrar menú':'Abrir menú')}
+  btn.addEventListener('click',function(){set(!menu.classList.contains('open'))});
+  menu.addEventListener('click',function(e){if(e.target.closest('a'))set(false)});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&menu.classList.contains('open')){set(false);btn.focus()}});
+  document.addEventListener('click',function(e){if(menu.classList.contains('open')&&!e.target.closest('.top'))set(false)});
+})();
+
 /* Resalta en el menú la sección que se está viendo */
 (function(){
   var ids=['programas','niveles','metodo','carreras','fundadores','equipo','contacto'];
-  var links=[].slice.call(document.querySelectorAll('#menu a[href^="#"]')).filter(function(a){return a.getAttribute('aria-current')!==null});
+  var links=[].slice.call(document.querySelectorAll('#menu a.lk'));
   function upd(){
     var best='';
     ids.forEach(function(i){var el=document.getElementById(i);if(el&&el.getBoundingClientRect().top<=190)best=i});
-    links.forEach(function(a){
-      var on=a.getAttribute('href')==='#'+best;
-      a.setAttribute('aria-current',on?'true':'false');
-      a.style.color=on?'#f2a31b':'#f4efe3';
-      a.style.borderBottomColor=on?'#f2a31b':'transparent';
-      a.style.fontWeight=on?'600':'400';
-    });
+    links.forEach(function(a){a.setAttribute('aria-current',a.getAttribute('href')==='#'+best?'true':'false')});
   }
   addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd();
+})();
+
+/* Formulario de inscripción: país, código telefónico y envío por WhatsApp */
+(function(){
+  var f=document.getElementById('registro'),pais=document.getElementById('f-pais'),pre=document.getElementById('f-pre'),
+      note=document.getElementById('f-mod-note'),err=document.getElementById('f-err');
+  var pa=[].slice.call(f.querySelectorAll('input[data-pa]'));
+  pais.addEventListener('change',function(){
+    var o=pais.options[pais.selectedIndex],code=o.getAttribute('data-code')||'';
+    pre.textContent=code||'+ —';
+    var esPa=pais.value==='Panamá';
+    pa.forEach(function(r){r.disabled=!esPa;if(!esPa&&r.checked){f.querySelector('input[value="En línea"]').checked=true}});
+    note.textContent=esPa?'Puedes elegir clases en línea, presenciales o híbridas.':(pais.value==='Otro país'?'Desde tu país las clases son en línea. Escribe tu número con el código de tu país.':'Desde '+pais.value+' las clases son en línea.');
+    note.classList.toggle('hl',!esPa);
+  });
+  pa.forEach(function(r){r.disabled=true});
+  f.addEventListener('input',function(){err.textContent=''});
+  f.addEventListener('change',function(){err.textContent=''});
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var d=new FormData(f),falta=[];
+    if(!(d.get('nombre')||'').trim())falta.push('tu nombre');
+    if(!d.get('pais'))falta.push('tu país');
+    if(!(d.get('tel')||'').trim())falta.push('tu WhatsApp');
+    if(!d.get('programa'))falta.push('qué quieres estudiar');
+    if(falta.length){err.textContent='Falta: '+falta.join(', ')+'.';var first=f.querySelector(':invalid');if(first)first.focus();return}
+    err.textContent='';
+    var code=pre.textContent.indexOf('+')===0&&pre.textContent!=='+ —'?pre.textContent+' ':'';
+    var t=['Hola, quiero inscribirme en la Academia de Música ARPA.','',
+      'Nombre: '+d.get('nombre').trim(),
+      'País: '+d.get('pais')+((d.get('ciudad')||'').trim()?' ('+d.get('ciudad').trim()+')':''),
+      'WhatsApp: '+code+d.get('tel').trim(),
+      (d.get('correo')||'').trim()?'Correo: '+d.get('correo').trim():'',
+      'Programa: '+d.get('programa'),
+      'Modalidad: '+d.get('modalidad'),
+      'Experiencia: '+d.get('exp'),
+      (d.get('mensaje')||'').trim()?'Mensaje: '+d.get('mensaje').trim():''
+    ].filter(function(x,i){return x!==''||i===1}).join('\n');
+    window.open('https://wa.me/'+WHATSAPP_ACADEMIA+'?text='+encodeURIComponent(t),'_blank','noopener');
+  });
 })();
 </script>
 </body>
