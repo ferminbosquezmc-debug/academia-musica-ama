@@ -26,7 +26,7 @@ Al finalizar el módulo, el participante podrá:
 ## Clases que componen el módulo
 
 1. [Identidad y el peso del escenario](clase-1.md)
-2. Identidad espiritual y lugar en el Cuerpo de Cristo
+2. [Identidad espiritual y lugar en el Cuerpo de Cristo](clase-2.md)
 3. Motivaciones personales y ministeriales
 4. Percepción del carácter: ¿cómo me ven los demás?
 
