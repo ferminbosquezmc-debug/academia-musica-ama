@@ -16,8 +16,8 @@ La plataforma (clases, práctica, biblioteca y perfil) es un artifact de claude.
 https://claude.ai/artifact/WJNwYKDShseYxAFLTbHmxS
 
 - Niveles 1, 2 y 3: preparación técnica musical. El progreso se guarda en cada dispositivo.
-- Nivel 4, ARPA | Formación Ministerial (Diplomado en Formación Integral del Músico y Líder Ministerial): seis asignaturas, dos vías de ingreso (académica y ministerial) y administración propia. Usa la base de datos del artifact:
-  - `n4plan/config` y `n4plan/a1`…`a6`: parámetros y plan de estudios. Los leen todos; los cambia la dirección.
+- Nivel 4, ARPA | Formación Ministerial (Diplomado en Formación Integral del Músico y Líder Ministerial): seis módulos con 24 clases (cada clase es un espacio propio; su contenido se agrega desde la administración), dos vías de ingreso (académica y ministerial) y administración propia. Usa la base de datos del artifact:
+  - `n4plan/config` y `n4plan/a1`…`a6`: parámetros y módulos; cada módulo guarda sus clases (`c1`…`c24`) con objetivos, contenido, materiales, tarea y evaluación. Los leen todos; los cambia la dirección.
   - `n4sol/<id>`: solicitudes de ingreso. Cada estudiante escribe la suya; solo la dirección las lee.
   - `n4mat/<id>`: matrículas, avances y evaluaciones. Solo la dirección.
   - `n4est/<id>`: estado que ve cada estudiante. Lo escribe la dirección.
