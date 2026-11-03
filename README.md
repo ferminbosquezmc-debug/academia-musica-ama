@@ -21,6 +21,7 @@ https://claude.ai/artifact/WJNwYKDShseYxAFLTbHmxS
   - `n4sol/<id>`: solicitudes de ingreso. Cada estudiante escribe la suya; solo la dirección las lee.
   - `n4mat/<id>`: matrículas, avances y evaluaciones. Solo la dirección.
   - `n4est/<id>`: estado que ve cada estudiante. Lo escribe la dirección.
+- `contenido/nivel-4/`: copia en texto del contenido del Nivel 4 ya publicado (descripción de cada módulo y sus clases).
 - La dirección es el propietario del artifact y las personas con acceso de Editor. Los estudiantes necesitan acceso de Colaborador para enviar su solicitud desde la plataforma; si no lo tienen, la descargan y la entregan.
 
 ## Pendiente
