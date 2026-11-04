@@ -4,19 +4,19 @@ Copia del contenido publicado en la plataforma del estudiante (base de datos del
 
 ## Descripción del módulo
 
-Este módulo busca ayudar al músico, cantante y líder ministerial a reconocer y fortalecer su identidad personal y espiritual, comprendiendo que su valor no depende de su talento, su posición, el reconocimiento, su participación en una plataforma ni la aprobación de los demás.
+Este módulo busca ayudar a toda persona que sirve en una iglesia, ministerio o institución (músicos, cantantes, maestros, predicadores, líderes, coordinadores y colaboradores) a reconocer y fortalecer su identidad personal y espiritual, comprendiendo que su valor no depende de sus dones, su posición, el reconocimiento, la visibilidad de su servicio ni la aprobación de los demás.
 
-Se abordarán las motivaciones que impulsan el servicio musical, la relación entre identidad y autoestima, y la manera en que las actitudes personales pueden influir en la convivencia y el testimonio dentro de una congregación.
+Se abordarán las motivaciones que impulsan el servicio, la relación entre identidad y autoestima, y la manera en que las actitudes personales pueden influir en la convivencia y el testimonio dentro de una congregación.
 
 ## Objetivo general
 
-Fortalecer la identidad y la autoestima del músico y líder ministerial, promoviendo una comprensión saludable de su valor personal, su identidad espiritual y sus motivaciones para servir, independientemente del reconocimiento, el talento musical o la posición que ocupe dentro de la congregación.
+Fortalecer la identidad y la autoestima de quien sirve en un ministerio, promoviendo una comprensión saludable de su valor personal, su identidad espiritual y sus motivaciones para servir, independientemente del reconocimiento, de sus dones y capacidades o de la posición que ocupe dentro de la congregación.
 
 ## Objetivos específicos
 
 Al finalizar el módulo, el participante podrá:
 
-1. Reconocer que su valor personal no depende de su desempeño musical ni del reconocimiento público.
+1. Reconocer que su valor personal no depende de su desempeño en el servicio ni del reconocimiento público.
 2. Comprender su identidad espiritual y su lugar dentro del Cuerpo de Cristo.
 3. Identificar las motivaciones personales que influyen en su servicio ministerial.
 4. Reconocer cómo sus actitudes y comportamientos pueden ser percibidos por otras personas.
@@ -32,4 +32,4 @@ Al finalizar el módulo, el participante podrá:
 
 ## Resultado esperado
 
-Que el participante comprenda que su identidad y su valor personal van más allá de su función musical, y que pueda desarrollar una autoestima saludable, motivaciones correctas y una actitud de humildad y servicio dentro de su congregación.
+Que el participante comprenda que su identidad y su valor personal van más allá de su función o área de servicio, y que pueda desarrollar una autoestima saludable, motivaciones correctas y una actitud de humildad y servicio dentro de su congregación.
