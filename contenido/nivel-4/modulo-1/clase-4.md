@@ -51,7 +51,7 @@ Muchas veces no hay orgullo intencional, pero ciertas conductas pueden recibirse
 
 - La manera de hablar y de responder.
 - La dificultad para aceptar sugerencias.
-- La actitud frente a personas con menos experiencia.
+- La actitud frente a personas con menos experiencia: el músico veterano con quien recién empieza, el maestro con un nuevo colaborador o el líder con un voluntario.
 - La indiferencia ante las necesidades de otros.
 - La tendencia a justificar siempre las propias acciones.
 
@@ -159,7 +159,7 @@ El carácter no se demuestra solamente por lo que pensamos de nosotros mismos, s
 
 Con esta clase termina el módulo «Identidad y autoestima». En las cuatro clases respondimos cuatro preguntas:
 
-1. ¿Quién soy cuando no estoy en la plataforma?
+1. ¿Quién soy fuera de mi espacio de servicio?
 2. ¿Cuál es mi lugar en el Cuerpo de Cristo?
 3. ¿Por qué y para quién sirvo?
 4. ¿Cómo me ven los demás?

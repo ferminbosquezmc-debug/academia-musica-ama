@@ -4,7 +4,7 @@ Copia del contenido publicado en la plataforma del estudiante (`n4plan/a1`, clas
 
 ## 1. Propósito de la clase
 
-Ayudar al participante a comprender su identidad espiritual y su lugar dentro del Cuerpo de Cristo, reconociendo que el ministerio musical es una función de servicio dentro de una comunidad y no una posición que determina superioridad sobre los demás.
+Ayudar al participante a comprender su identidad espiritual y su lugar dentro del Cuerpo de Cristo, reconociendo que todo ministerio, incluido el musical, es una función de servicio dentro de una comunidad y no una posición que determina superioridad sobre los demás.
 
 ## 2. Objetivos de aprendizaje
 
@@ -13,8 +13,8 @@ Al finalizar la clase, el participante podrá:
 - Explicar la importancia de su identidad espiritual.
 - Comprender la enseñanza bíblica del Cuerpo de Cristo.
 - Reconocer que todas las funciones dentro de la iglesia tienen importancia.
-- Valorar el servicio que se realiza fuera de la plataforma.
-- Comprender que el músico ministerial forma parte de una comunidad de creyentes.
+- Valorar el servicio que se realiza fuera de los espacios visibles.
+- Comprender que toda persona que sirve en un ministerio forma parte de una comunidad de creyentes.
 - Asumir un compromiso concreto para fortalecer la unidad en su congregación.
 
 ## 3. Fundamento bíblico
@@ -34,21 +34,21 @@ Sugerencia: lean juntos 1 Corintios 12:12-27, una persona por versículo. Así e
 
 ### Para comenzar
 
-Imagina un servicio sin músicos. Ahora imagina uno sin quien abre el templo, sin quien recibe a las personas o sin quien prepara el sonido. ¿Cuál de esos servicios podría realizarse con normalidad? Comenten en grupo lo que descubren.
+Imagina un servicio sin músicos. Ahora imagina uno sin quien predica, sin quien enseña a los niños, sin quien abre el templo, sin quien recibe a las personas, sin quien administra los recursos o sin quien prepara el sonido. ¿Cuál de esos servicios podría realizarse con normalidad? Comenten en grupo lo que descubren.
 
 ### Tema 1. Mi identidad espiritual
 
 Mi identidad no comienza en lo que hago dentro de la iglesia, sino en lo que soy delante de Dios. La Biblia me enseña quién soy, y mi relación con Él existe más allá de mi actividad ministerial.
 
-No es lo mismo pertenecer a una iglesia que comprender mi identidad como parte del Cuerpo de Cristo: lo primero puede reducirse a asistir; lo segundo significa saberme unido a Cristo y a los demás creyentes. Por eso es importante cultivar una vida espiritual personal que no dependa del calendario de ensayos ni de los servicios.
+No es lo mismo pertenecer a una iglesia que comprender mi identidad como parte del Cuerpo de Cristo: lo primero puede reducirse a asistir; lo segundo significa saberme unido a Cristo y a los demás creyentes. Por eso es importante cultivar una vida espiritual personal que no dependa del calendario de reuniones, ensayos o actividades.
 
-> Idea clave: antes de ser músico en la iglesia, soy hijo de Dios.
+> Idea clave: antes de servir en cualquier área, soy hijo de Dios.
 
 ### Tema 2. Mi lugar en el Cuerpo de Cristo
 
 La Biblia compara a la iglesia con un cuerpo formado por muchos miembros. Hay diversidad de dones, funciones y responsabilidades, y todas son necesarias. Reconocer el valor de otras personas es parte de entender mi propio lugar.
 
-Existe un peligro sutil: pensar que la función musical es más importante que otras áreas de servicio solo porque es más visible.
+Existe un peligro sutil: pensar que nuestra área de servicio (la música, la predicación, la enseñanza o el liderazgo) es más importante que las demás solo porque es más visible.
 
 > Idea clave: soy parte del cuerpo, no el cuerpo completo.
 
@@ -60,15 +60,15 @@ Servir y buscar protagonismo pueden parecer lo mismo desde afuera, pero se difer
 
 > Idea clave: lo que hago cuando nadie me ve también es servicio.
 
-### Tema 4. El músico como parte de una comunidad
+### Tema 4. El servidor como parte de una comunidad
 
-El músico no trabaja solo. Se relaciona con pastores, líderes y otros servidores, y tiene la responsabilidad de trabajar en unidad con ellos. Esto incluye respetar las diferentes funciones y comprometerse con el bienestar de toda la congregación, no solo del grupo musical.
+Nadie sirve solo. Quien canta, enseña, predica, administra o coordina se relaciona con pastores, líderes y servidores de otras áreas, y tiene la responsabilidad de trabajar en unidad con ellos. Esto incluye respetar las diferentes funciones y comprometerse con el bienestar de toda la congregación, no solo del propio equipo.
 
-> Idea clave: el ministerio musical sirve a la congregación; no compite con ella.
+> Idea clave: mi ministerio sirve a la congregación; no compite con los demás ministerios.
 
 ### Para recordar
 
-- Mi identidad espiritual va más allá de mi función musical.
+- Mi identidad espiritual va más allá de mi función o área de servicio.
 - Todas las funciones del cuerpo son importantes y se necesitan entre sí.
 - El liderazgo cristiano se expresa en el servicio.
 
@@ -76,10 +76,10 @@ El músico no trabaja solo. Se relaciona con pastores, líderes y otros servidor
 
 Responde con honestidad. No hay respuestas correctas ni incorrectas: estas preguntas son para conocerte mejor, no para juzgarte.
 
-1. ¿Comprendo mi identidad espiritual más allá de mi participación musical?
+1. ¿Comprendo mi identidad espiritual más allá de mi participación en un ministerio?
 2. ¿Considero que mi función es más importante que la de otros servidores?
 3. ¿Cómo reacciono cuando no me asignan una función visible?
-4. ¿Estoy dispuesto a servir en tareas que no tienen relación directa con la música?
+4. ¿Estoy dispuesto a servir en tareas que no tienen relación directa con mi área habitual de servicio?
 5. ¿Qué puedo hacer para fortalecer mi sentido de pertenencia y la unidad del equipo?
 
 ## 6. Aplicación práctica
@@ -97,12 +97,12 @@ El servicio cristiano no debe estar condicionado por la oportunidad de aparecer,
 ### Para practicar esta semana
 
 - Agradece en persona a un servidor de otra área de la congregación por su trabajo.
-- Ofrécete para colaborar en una tarea que no tenga relación con la música.
+- Ofrécete para colaborar en una tarea fuera de tu área habitual de servicio.
 - Ora por los pastores, líderes y servidores de tu congregación, mencionando sus nombres.
 
 ## 7. Actividad de aprendizaje
 
-### Ejercicio: Más allá de mi función musical
+### Ejercicio: Más allá de mi función ministerial
 
 Dedica entre 20 y 30 minutos a elaborar una reflexión sobre tu participación dentro de la comunidad cristiana. Identifica:
 
@@ -130,8 +130,8 @@ El docente valora la comprensión de la enseñanza del Cuerpo de Cristo, el reco
 
 ## 9. Cierre de la clase
 
-El músico ministerial no es una figura aislada ni el centro de la congregación. Es un miembro del Cuerpo de Cristo que ha recibido una función y una responsabilidad de servicio.
+Quien sirve en un ministerio no es una figura aislada ni el centro de la congregación. Es un miembro del Cuerpo de Cristo que ha recibido una función y una responsabilidad de servicio.
 
-> Para llevar: mi talento tiene un lugar en el cuerpo, y ese lugar es para servir.
+> Para llevar: mis dones tienen un lugar en el cuerpo, y ese lugar es para servir.
 
 Para terminar, oren juntos por la unidad del equipo y de toda la congregación.
