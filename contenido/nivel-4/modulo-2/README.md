@@ -24,7 +24,7 @@ Al finalizar el módulo, el participante podrá:
 
 5. [Conociendo y comprendiendo mis emociones](clase-5.md)
 6. [Ego, comparación y envidia en el servicio](clase-6.md)
-7. Cómo enfrentar las críticas y las frustraciones
+7. [Cómo enfrentar las críticas y las frustraciones](clase-7.md)
 8. Resiliencia y madurez emocional
 
 ## Metodología
