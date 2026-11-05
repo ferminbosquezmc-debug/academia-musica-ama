@@ -26,7 +26,7 @@ Al finalizar el módulo, el estudiante será capaz de:
 21. [Historia de la música cristiana y nuestras raíces](clase-21.md)
 22. [Influencias, referentes y formación](clase-22.md)
 23. [El sustento y la sostenibilidad de quien sirve](clase-23.md)
-24. Madurez, legado y compromiso de servicio
+24. [Madurez, legado y compromiso de servicio](clase-24.md)
 
 ## Metodología de aprendizaje
 
