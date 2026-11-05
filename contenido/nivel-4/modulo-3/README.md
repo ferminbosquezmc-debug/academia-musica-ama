@@ -50,7 +50,7 @@ Cada clase integrará:
 9. [La vida espiritual de quien sirve](clase-9.md)
 10. [El carácter de quien sirve](clase-10.md)
 11. [Vocación, ambición y propósito](clase-11.md)
-12. Ética e integridad en el servicio
+12. [Ética e integridad en el servicio](clase-12.md)
 
 ## Resultado esperado
 
