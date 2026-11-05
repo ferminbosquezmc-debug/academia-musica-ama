@@ -22,7 +22,7 @@ Al finalizar el módulo, el estudiante será capaz de:
 
 ## Clases que componen el módulo
 
-17. El liderazgo de quienes sirven
+17. [El liderazgo de quienes sirven](clase-17.md)
 18. Cultura de servicio: servir sin buscar protagonismo
 19. Disciplina y organización ministerial
 20. Trabajo en equipo: servir juntos
