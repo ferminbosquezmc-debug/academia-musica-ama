@@ -22,7 +22,7 @@ Al finalizar el módulo, el participante podrá:
 
 ## Clases que componen el módulo
 
-5. Conociendo y comprendiendo mis emociones
+5. [Conociendo y comprendiendo mis emociones](clase-5.md)
 6. Ego, comparación y envidia en el servicio
 7. Cómo enfrentar las críticas y las frustraciones
 8. Resiliencia y madurez emocional
