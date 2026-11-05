@@ -23,7 +23,7 @@ Al finalizar el módulo, el estudiante será capaz de:
 
 ## Clases que componen el módulo
 
-21. Historia de la música cristiana y nuestras raíces
+21. [Historia de la música cristiana y nuestras raíces](clase-21.md)
 22. Influencias, referentes y formación
 23. El sustento y la sostenibilidad de quien sirve
 24. Madurez, legado y compromiso de servicio
