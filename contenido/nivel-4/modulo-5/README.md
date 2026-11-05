@@ -25,7 +25,7 @@ Al finalizar el módulo, el estudiante será capaz de:
 17. [El liderazgo de quienes sirven](clase-17.md)
 18. [Cultura de servicio: servir sin buscar protagonismo](clase-18.md)
 19. [Disciplina y organización ministerial](clase-19.md)
-20. Trabajo en equipo: servir juntos
+20. [Trabajo en equipo: servir juntos](clase-20.md)
 
 ## Metodología de aprendizaje
 
