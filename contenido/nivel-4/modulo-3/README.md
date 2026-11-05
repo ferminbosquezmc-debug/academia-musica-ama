@@ -48,7 +48,7 @@ Cada clase integrará:
 ## Clases que componen el módulo
 
 9. [La vida espiritual de quien sirve](clase-9.md)
-10. El carácter y la madurez de quien sirve
+10. [El carácter de quien sirve](clase-10.md)
 11. Vocación, ambición y propósito
 12. Ética e integridad en el servicio
 
