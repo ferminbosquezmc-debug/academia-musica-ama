@@ -22,7 +22,7 @@ Al finalizar este módulo, el estudiante será capaz de:
 
 ## Clases que componen el módulo
 
-13. Comunicación y escucha efectiva
+13. [Comunicación y escucha efectiva](clase-13.md)
 14. Empatía y respeto entre servidores
 15. Manejo de conflictos y relaciones con el liderazgo
 16. Deberes, derechos y responsabilidades ministeriales
