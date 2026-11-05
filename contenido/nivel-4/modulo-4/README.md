@@ -24,7 +24,7 @@ Al finalizar este módulo, el estudiante será capaz de:
 
 13. [Comunicación y escucha efectiva](clase-13.md)
 14. [Empatía y respeto entre servidores](clase-14.md)
-15. Manejo de conflictos y relaciones con el liderazgo
+15. [Manejo de conflictos y relaciones con el liderazgo](clase-15.md)
 16. Deberes, derechos y responsabilidades ministeriales
 
 ## Metodología de aprendizaje
