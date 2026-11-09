@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="780" viewBox="0 0 2400 780" role="img" aria-label="Las teclas negras tienen dos nombres">
+<title>Las teclas negras tienen dos nombres</title>
+<rect width="2400" height="780" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >Las teclas negras tienen dos nombres</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >♯ sube a la tecla vecina de la derecha · ♭ baja a la de la izquierda</text>
+<rect x="200" y="200" width="250" height="460" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3" />
+<text x="325" y="636" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#5F6368" text-anchor="middle" >DO</text>
+<rect x="450" y="200" width="250" height="460" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3" />
+<text x="575" y="636" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#5F6368" text-anchor="middle" >RE</text>
+<rect x="700" y="200" width="250" height="460" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3" />
+<text x="825" y="636" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#5F6368" text-anchor="middle" >MI</text>
+<rect x="950" y="200" width="250" height="460" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3" />
+<text x="1075" y="636" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#5F6368" text-anchor="middle" >FA</text>
+<rect x="1200" y="200" width="250" height="460" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3" />
+<text x="1325" y="636" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#5F6368" text-anchor="middle" >SOL</text>
+<rect x="1450" y="200" width="250" height="460" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3" />
+<text x="1575" y="636" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#5F6368" text-anchor="middle" >LA</text>
+<rect x="1700" y="200" width="250" height="460" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3" />
+<text x="1825" y="636" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#5F6368" text-anchor="middle" >SI</text>
+<rect x="1950" y="200" width="250" height="460" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3" />
+<text x="2075" y="636" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#5F6368" text-anchor="middle" >DO</text>
+<rect x="377.5" y="200" width="145" height="285.2" rx="4" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+<rect x="627.5" y="200" width="145" height="285.2" rx="4" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+<rect x="1127.5" y="200" width="145" height="285.2" rx="4" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+<rect x="1377.5" y="200" width="145" height="285.2" rx="4" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+<rect x="1627.5" y="200" width="145" height="285.2" rx="4" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+<text x="1700" y="410.3" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="middle" >LA♯</text>
+<text x="1700" y="471.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="middle" >SI♭</text>
+<text x="1450" y="410.3" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="middle" >SOL♯</text>
+<text x="1450" y="471.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="middle" >LA♭</text>
+<text x="1200" y="410.3" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="middle" >FA♯</text>
+<text x="1200" y="471.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="middle" >SOL♭</text>
+<text x="700" y="410.3" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="middle" >RE♯</text>
+<text x="700" y="471.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="middle" >MI♭</text>
+<text x="450" y="410.3" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="middle" >DO♯</text>
+<text x="450" y="471.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="middle" >RE♭</text>
+<text x="1200" y="730" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="middle" >Entre MI–FA y SI–DO no hay tecla negra: están a un semitono.</text>
+</svg>

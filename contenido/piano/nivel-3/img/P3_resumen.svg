@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1180" viewBox="0 0 2400 1180" role="img" aria-label="Acordes y escalas de los tres niveles">
+<title>Acordes y escalas de los tres niveles</title>
+<rect width="2400" height="1180" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >Lo que aprendí en los tres niveles de piano</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >Escalas, acordes y progresiones</text>
+<rect x="60" y="190" width="730" height="440" rx="22" fill="#FAF6EE" stroke="#C9A227" stroke-width="3" />
+<text x="100" y="260" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#1A1A1A" text-anchor="start" >Escalas mayores</text>
+<text x="100" y="340" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• Do · sin alteraciones</text>
+<text x="100" y="410" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• Sol · FA♯</text>
+<text x="100" y="480" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• Re · FA♯ DO♯</text>
+<text x="100" y="550" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• La · FA♯ DO♯ SOL♯</text>
+<text x="100" y="620" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• Fa · SI♭</text>
+<rect x="830" y="190" width="730" height="440" rx="22" fill="#FAF6EE" stroke="#C9A227" stroke-width="3" />
+<text x="870" y="260" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#1A1A1A" text-anchor="start" >Escalas menores</text>
+<text x="870" y="340" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• La menor · sin alteraciones</text>
+<text x="870" y="410" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• Mi menor · FA♯</text>
+<text x="870" y="480" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• Pentatónica de La menor</text>
+<text x="870" y="550" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• Escala cromática</text>
+<rect x="1600" y="190" width="730" height="440" rx="22" fill="#FAF6EE" stroke="#C9A227" stroke-width="3" />
+<text x="1640" y="260" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#1A1A1A" text-anchor="start" >Acordes</text>
+<text x="1640" y="340" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• Mayores: C D E F G A</text>
+<text x="1640" y="410" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• Menores: Am Dm Em Cm</text>
+<text x="1640" y="480" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• Disminuido: B°</text>
+<text x="1640" y="550" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• Séptimas: G7 D7 C7</text>
+<rect x="60" y="670" width="730" height="440" rx="22" fill="#FAF6EE" stroke="#C9A227" stroke-width="3" />
+<text x="100" y="740" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#1A1A1A" text-anchor="start" >Armonía</text>
+<text x="100" y="820" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• Inversiones: C · C/E · C/G</text>
+<text x="100" y="890" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• I – IV – V7 – I</text>
+<text x="100" y="960" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• I – V – vi – IV</text>
+<text x="100" y="1030" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• Cadencia V7 → I</text>
+<rect x="830" y="670" width="730" height="440" rx="22" fill="#FAF6EE" stroke="#C9A227" stroke-width="3" />
+<text x="870" y="740" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#1A1A1A" text-anchor="start" >Técnica</text>
+<text x="870" y="820" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• Manos juntas: contrario y paralelo</text>
+<text x="870" y="890" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• Legato y staccato</text>
+<text x="870" y="960" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• Pedal sincopado</text>
+<text x="870" y="1030" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• Caída y elevación</text>
+<rect x="1600" y="670" width="730" height="440" rx="22" fill="#FAF6EE" stroke="#C9A227" stroke-width="3" />
+<text x="1640" y="740" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#1A1A1A" text-anchor="start" >Música</text>
+<text x="1640" y="820" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• Lectura en dos claves</text>
+<text x="1640" y="890" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• Estilos: balada, pop, vals, caribeño</text>
+<text x="1640" y="960" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• Transporte y armonización</text>
+<text x="1640" y="1030" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• Improvisación</text>
+</svg>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="170" viewBox="0 0 320 170" role="img" aria-label="Semifusa: figura y silencio">
+<title>Semifusa: figura y silencio</title>
+<rect width="320" height="170" fill="#FFFFFF"/>
+<line x1="12" y1="46" x2="308" y2="46" stroke="#9AA0A6" stroke-width="2" />
+<line x1="12" y1="62" x2="308" y2="62" stroke="#9AA0A6" stroke-width="2" />
+<line x1="12" y1="78" x2="308" y2="78" stroke="#9AA0A6" stroke-width="2" />
+<line x1="12" y1="94" x2="308" y2="94" stroke="#9AA0A6" stroke-width="2" />
+<line x1="12" y1="110" x2="308" y2="110" stroke="#9AA0A6" stroke-width="2" />
+<ellipse cx="92" cy="86" rx="11" ry="7.6" transform="rotate(-20 92 86)" fill="#1A1A1A"/>
+<line x1="102" y1="84" x2="102" y2="6" stroke="#1A1A1A" stroke-width="3" />
+<path d="M102 6 C105 15 120 19 117 37 C115 26 107 21 102 19 Z" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<path d="M102 18 C105 27 120 31 117 49 C115 38 107 33 102 31 Z" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<path d="M102 30 C105 39 120 43 117 61 C115 50 107 45 102 43 Z" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<path d="M102 42 C105 51 120 55 117 73 C115 62 107 57 102 55 Z" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<line x1="233" y1="38" x2="206.12" y2="127.6" stroke="#1A1A1A" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="220.4" cy="42" r="4.6" fill="#1A1A1A" stroke="none" stroke-width="0"/>
+<path d="M220.4 45 Q227.4 47 232.4 40" fill="none" stroke="#1A1A1A" stroke-width="3" />
+<circle cx="215.6" cy="58" r="4.6" fill="#1A1A1A" stroke="none" stroke-width="0"/>
+<path d="M215.6 61 Q222.6 63 227.6 56" fill="none" stroke="#1A1A1A" stroke-width="3" />
+<circle cx="210.8" cy="74" r="4.6" fill="#1A1A1A" stroke="none" stroke-width="0"/>
+<path d="M210.8 77 Q217.8 79 222.8 72" fill="none" stroke="#1A1A1A" stroke-width="3" />
+<circle cx="206" cy="90" r="4.6" fill="#1A1A1A" stroke="none" stroke-width="0"/>
+<path d="M206 93 Q213 95 218 88" fill="none" stroke="#1A1A1A" stroke-width="3" />
+<text x="92" y="164" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="600" fill="#5F6368" text-anchor="middle" >figura</text>
+<text x="226" y="164" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="600" fill="#5F6368" text-anchor="middle" >silencio</text>
+</svg>

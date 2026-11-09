@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="760" viewBox="0 0 2400 760" role="img" aria-label="La clave de fa">
+<title>La clave de fa</title>
+<rect width="2400" height="760" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >La clave de fa</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >Sus dos puntos rodean la 4.ª línea: ahí vive FA, justo debajo del DO central</text>
+<line x1="300" y1="280" x2="2300" y2="280" stroke="#1A1A1A" stroke-width="3" />
+<line x1="300" y1="322" x2="2300" y2="322" stroke="#1A1A1A" stroke-width="3" />
+<line x1="300" y1="364" x2="2300" y2="364" stroke="#1A1A1A" stroke-width="3" />
+<line x1="300" y1="406" x2="2300" y2="406" stroke="#1A1A1A" stroke-width="3" />
+<line x1="300" y1="448" x2="2300" y2="448" stroke="#1A1A1A" stroke-width="3" />
+<circle cx="335.7" cy="322" r="15.12" fill="#1A1A1A" stroke="none" stroke-width="0"/>
+<path d="M331.5 311.5 C344.1 269.5 411.3 271.6 409.2 330.4 C407.1 385 363 418.6 318.9 439.6" fill="none" stroke="#1A1A1A" stroke-width="12.6" stroke-linecap="round"/>
+<circle cx="432.3" cy="301" r="7.14" fill="#1A1A1A" stroke="none" stroke-width="0"/>
+<circle cx="432.3" cy="343" r="7.14" fill="#1A1A1A" stroke="none" stroke-width="0"/>
+<line x1="649.16" y1="280" x2="649.16" y2="448" stroke="#1A1A1A" stroke-width="3" />
+<line x1="855.51" y1="280" x2="855.51" y2="448" stroke="#1A1A1A" stroke-width="3" />
+<line x1="1061.87" y1="280" x2="1061.87" y2="448" stroke="#1A1A1A" stroke-width="3" />
+<line x1="1268.22" y1="280" x2="1268.22" y2="448" stroke="#1A1A1A" stroke-width="3" />
+<line x1="1474.58" y1="280" x2="1474.58" y2="448" stroke="#1A1A1A" stroke-width="3" />
+<line x1="1680.93" y1="280" x2="1680.93" y2="448" stroke="#1A1A1A" stroke-width="3" />
+<line x1="1887.29" y1="280" x2="1887.29" y2="448" stroke="#1A1A1A" stroke-width="3" />
+<line x1="2093.64" y1="280" x2="2093.64" y2="448" stroke="#1A1A1A" stroke-width="3" />
+<line x1="2281.1" y1="280" x2="2281.1" y2="448" stroke="#1A1A1A" stroke-width="3" />
+<rect x="2289.5" y="280" width="10.5" height="168" rx="0" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<ellipse cx="533.38" cy="448" rx="27.72" ry="19.74" transform="rotate(-20 533.38 448)" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="533.38" cy="448" rx="16.8" ry="7.98" transform="rotate(-35 533.38 448)" fill="#FFFFFF"/>
+<ellipse cx="739.73" cy="406" rx="27.72" ry="19.74" transform="rotate(-20 739.73 406)" fill="#8E3BB8" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="739.73" cy="406" rx="16.8" ry="7.98" transform="rotate(-35 739.73 406)" fill="#FFFFFF"/>
+<ellipse cx="946.09" cy="364" rx="27.72" ry="19.74" transform="rotate(-20 946.09 364)" fill="#F57C00" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="946.09" cy="364" rx="16.8" ry="7.98" transform="rotate(-35 946.09 364)" fill="#FFFFFF"/>
+<ellipse cx="1152.44" cy="322" rx="27.72" ry="19.74" transform="rotate(-20 1152.44 322)" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="1152.44" cy="322" rx="16.8" ry="7.98" transform="rotate(-35 1152.44 322)" fill="#FFFFFF"/>
+<ellipse cx="1358.8" cy="280" rx="27.72" ry="19.74" transform="rotate(-20 1358.8 280)" fill="#283593" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="1358.8" cy="280" rx="16.8" ry="7.98" transform="rotate(-35 1358.8 280)" fill="#FFFFFF"/>
+<ellipse cx="1565.16" cy="427" rx="27.72" ry="19.74" transform="rotate(-20 1565.16 427)" fill="#283593" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="1565.16" cy="427" rx="16.8" ry="7.98" transform="rotate(-35 1565.16 427)" fill="#FFFFFF"/>
+<ellipse cx="1771.51" cy="385" rx="27.72" ry="19.74" transform="rotate(-20 1771.51 385)" fill="#E5312B" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="1771.51" cy="385" rx="16.8" ry="7.98" transform="rotate(-35 1771.51 385)" fill="#FFFFFF"/>
+<ellipse cx="1977.87" cy="343" rx="27.72" ry="19.74" transform="rotate(-20 1977.87 343)" fill="#FFD21F" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="1977.87" cy="343" rx="16.8" ry="7.98" transform="rotate(-35 1977.87 343)" fill="#FFFFFF"/>
+<ellipse cx="2184.22" cy="301" rx="27.72" ry="19.74" transform="rotate(-20 2184.22 301)" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="2184.22" cy="301" rx="16.8" ry="7.98" transform="rotate(-35 2184.22 301)" fill="#FFFFFF"/>
+<rect x="475.78" y="524" width="115.2" height="48" rx="24" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="533.38" y="557.12" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24.96" font-weight="700" fill="#1A1A1A" text-anchor="middle" >SOL</text>
+<rect x="694.13" y="524" width="91.2" height="48" rx="24" fill="#8E3BB8" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="739.73" y="557.12" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24.96" font-weight="700" fill="#FFFFFF" text-anchor="middle" >SI</text>
+<rect x="900.49" y="524" width="91.2" height="48" rx="24" fill="#F57C00" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="946.09" y="557.12" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24.96" font-weight="700" fill="#1A1A1A" text-anchor="middle" >RE</text>
+<rect x="1106.84" y="524" width="91.2" height="48" rx="24" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1152.44" y="557.12" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24.96" font-weight="700" fill="#1A1A1A" text-anchor="middle" >FA</text>
+<rect x="1313.2" y="524" width="91.2" height="48" rx="24" fill="#283593" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1358.8" y="557.12" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24.96" font-weight="700" fill="#FFFFFF" text-anchor="middle" >LA</text>
+<rect x="1519.56" y="524" width="91.2" height="48" rx="24" fill="#283593" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1565.16" y="557.12" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24.96" font-weight="700" fill="#FFFFFF" text-anchor="middle" >LA</text>
+<rect x="1725.91" y="524" width="91.2" height="48" rx="24" fill="#E5312B" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1771.51" y="557.12" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24.96" font-weight="700" fill="#FFFFFF" text-anchor="middle" >DO</text>
+<rect x="1932.27" y="524" width="91.2" height="48" rx="24" fill="#FFD21F" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1977.87" y="557.12" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24.96" font-weight="700" fill="#1A1A1A" text-anchor="middle" >MI</text>
+<rect x="2126.62" y="524" width="115.2" height="48" rx="24" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="2184.22" y="557.12" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24.96" font-weight="700" fill="#1A1A1A" text-anchor="middle" >SOL</text>
+<path d="M493.38 245 L493.38 225 L1398.8 225 L1398.8 245" fill="none" stroke="#C9A227" stroke-width="5" />
+<text x="946.09" y="205" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="700" fill="#8A6A0A" text-anchor="middle" >Líneas: SOL – SI – RE – FA – LA</text>
+<path d="M1525.16 245 L1525.16 225 L2224.22 225 L2224.22 245" fill="none" stroke="#5F6368" stroke-width="5" />
+<text x="1874.69" y="205" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="700" fill="#5F6368" text-anchor="middle" >Espacios: LA – DO – MI – SOL</text>
+<text x="270" y="334" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#2E9E4F" text-anchor="end" >FA →</text>
+<text x="1200" y="700" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="middle" >La clave de fa es la clave de la mano izquierda.</text>
+</svg>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="900" viewBox="0 0 2400 900" role="img" aria-label="Melodía, armonía y ritmo">
+<title>Melodía, armonía y ritmo</title>
+<rect width="2400" height="900" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >Los tres elementos de la música</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >Melodía, armonía y ritmo</text>
+<rect x="60" y="170" width="720" height="680" rx="24" fill="#FAF6EE" stroke="#1A1A1A" stroke-width="3" />
+<text x="420" y="245" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="52" font-weight="700" fill="#1A1A1A" text-anchor="middle" >Melodía</text>
+<text x="420" y="300" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="500" fill="#5F6368" text-anchor="middle" >notas una después de otra</text>
+<rect x="840" y="170" width="720" height="680" rx="24" fill="#FAF6EE" stroke="#1A1A1A" stroke-width="3" />
+<text x="1200" y="245" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="52" font-weight="700" fill="#1A1A1A" text-anchor="middle" >Armonía</text>
+<text x="1200" y="300" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="500" fill="#5F6368" text-anchor="middle" >notas al mismo tiempo</text>
+<rect x="1620" y="170" width="720" height="680" rx="24" fill="#FAF6EE" stroke="#1A1A1A" stroke-width="3" />
+<text x="1980" y="245" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="52" font-weight="700" fill="#1A1A1A" text-anchor="middle" >Ritmo</text>
+<text x="1980" y="300" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="500" fill="#5F6368" text-anchor="middle" >sonidos largos y cortos sobre el pulso</text>
+<line x1="100" y1="420" x2="740" y2="420" stroke="#1A1A1A" stroke-width="3" />
+<line x1="100" y1="446" x2="740" y2="446" stroke="#1A1A1A" stroke-width="3" />
+<line x1="100" y1="472" x2="740" y2="472" stroke="#1A1A1A" stroke-width="3" />
+<line x1="100" y1="498" x2="740" y2="498" stroke="#1A1A1A" stroke-width="3" />
+<line x1="100" y1="524" x2="740" y2="524" stroke="#1A1A1A" stroke-width="3" />
+<path d="M434 2Q464 -103 464 -170Q464 -223 427.0 -257.0Q390 -291 337 -291Q287 -291 250.0 -261.5Q213 -232 213 -190Q213 -160 233.5 -133.5Q254 -107 283.5 -107.0Q313 -107 331.5 -128.5Q350 -150 350 -178Q350 -240 280 -240Q298 -268 338 -268Q353 -268 368.5 -263.5Q384 -259 401.0 -248.0Q418 -237 428.5 -213.5Q439 -190 439 -157Q439 -136 411 -6Q389 -12 356 -12Q259 -12 189.5 60.0Q120 132 120 232Q120 267 131.5 303.0Q143 339 157.5 366.5Q172 394 200.5 428.5Q229 463 248.5 483.5Q268 504 303 539Q280 621 280 689Q280 779 313.0 839.5Q346 900 379 900Q389 900 401.5 887.0Q414 874 426.0 851.0Q438 828 446.5 790.5Q455 753 455 710Q455 551 342 447L368 329Q384 332 397 332Q458 332 500.0 282.5Q542 233 542 162Q542 44 434 2ZM426 746Q426 801 394 801Q358 801 333.0 748.0Q308 695 308 630Q308 588 321 557Q359 580 392.5 639.5Q426 699 426 746ZM498 128Q498 183 466.0 216.0Q434 249 383 249L428 23Q498 52 498 128ZM407 17 361 247Q334 241 311.5 214.0Q289 187 289 158Q289 143 295.0 128.5Q301 114 309.5 104.0Q318 94 327.0 86.0Q336 78 342.0 74.5Q348 71 348 71L340 66Q307 75 277.5 106.0Q248 137 248 184Q248 231 277.5 270.5Q307 310 343 323L325 430Q168 299 168 177Q168 104 223.0 55.0Q278 6 348 6Q365 6 407 17Z" fill="#1A1A1A" transform="translate(103.9,519.88) scale(0.16,-0.16)"/>
+<line x1="262.7" y1="550" x2="317.3" y2="550" stroke="#1A1A1A" stroke-width="3" />
+<ellipse cx="290" cy="550" rx="17.16" ry="12.22" transform="rotate(-20 290 550)" fill="#E5312B" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="306.12" y1="550" x2="306.12" y2="459" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="390" cy="537" rx="17.16" ry="12.22" transform="rotate(-20 390 537)" fill="#F57C00" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="406.12" y1="537" x2="406.12" y2="446" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="490" cy="524" rx="17.16" ry="12.22" transform="rotate(-20 490 524)" fill="#FFD21F" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="506.12" y1="524" x2="506.12" y2="433" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="590" cy="511" rx="17.16" ry="12.22" transform="rotate(-20 590 511)" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="606.12" y1="511" x2="606.12" y2="420" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="690" cy="498" rx="17.16" ry="12.22" transform="rotate(-20 690 498)" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="706.12" y1="498" x2="706.12" y2="407" stroke="#1A1A1A" stroke-width="4" />
+<line x1="260" y1="700" x2="700" y2="700" stroke="#C9A227" stroke-width="6" stroke-linecap="round"/>
+<path d="M700 700 L680.19 709.57 L680.19 690.43 Z" fill="#C9A227" stroke="none" stroke-width="0" />
+<text x="480" y="770" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >1 · 2 · 3 · 4 · 5</text>
+<line x1="880" y1="420" x2="1520" y2="420" stroke="#1A1A1A" stroke-width="3" />
+<line x1="880" y1="446" x2="1520" y2="446" stroke="#1A1A1A" stroke-width="3" />
+<line x1="880" y1="472" x2="1520" y2="472" stroke="#1A1A1A" stroke-width="3" />
+<line x1="880" y1="498" x2="1520" y2="498" stroke="#1A1A1A" stroke-width="3" />
+<line x1="880" y1="524" x2="1520" y2="524" stroke="#1A1A1A" stroke-width="3" />
+<path d="M434 2Q464 -103 464 -170Q464 -223 427.0 -257.0Q390 -291 337 -291Q287 -291 250.0 -261.5Q213 -232 213 -190Q213 -160 233.5 -133.5Q254 -107 283.5 -107.0Q313 -107 331.5 -128.5Q350 -150 350 -178Q350 -240 280 -240Q298 -268 338 -268Q353 -268 368.5 -263.5Q384 -259 401.0 -248.0Q418 -237 428.5 -213.5Q439 -190 439 -157Q439 -136 411 -6Q389 -12 356 -12Q259 -12 189.5 60.0Q120 132 120 232Q120 267 131.5 303.0Q143 339 157.5 366.5Q172 394 200.5 428.5Q229 463 248.5 483.5Q268 504 303 539Q280 621 280 689Q280 779 313.0 839.5Q346 900 379 900Q389 900 401.5 887.0Q414 874 426.0 851.0Q438 828 446.5 790.5Q455 753 455 710Q455 551 342 447L368 329Q384 332 397 332Q458 332 500.0 282.5Q542 233 542 162Q542 44 434 2ZM426 746Q426 801 394 801Q358 801 333.0 748.0Q308 695 308 630Q308 588 321 557Q359 580 392.5 639.5Q426 699 426 746ZM498 128Q498 183 466.0 216.0Q434 249 383 249L428 23Q498 52 498 128ZM407 17 361 247Q334 241 311.5 214.0Q289 187 289 158Q289 143 295.0 128.5Q301 114 309.5 104.0Q318 94 327.0 86.0Q336 78 342.0 74.5Q348 71 348 71L340 66Q307 75 277.5 106.0Q248 137 248 184Q248 231 277.5 270.5Q307 310 343 323L325 430Q168 299 168 177Q168 104 223.0 55.0Q278 6 348 6Q365 6 407 17Z" fill="#1A1A1A" transform="translate(883.9,519.88) scale(0.16,-0.16)"/>
+<line x1="1172.7" y1="550" x2="1227.3" y2="550" stroke="#1A1A1A" stroke-width="3" />
+<ellipse cx="1200" cy="550" rx="17.16" ry="12.22" transform="rotate(-20 1200 550)" fill="#E5312B" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="1200" cy="550" rx="10.4" ry="4.94" transform="rotate(-35 1200 550)" fill="#FFFFFF"/>
+<ellipse cx="1200" cy="524" rx="17.16" ry="12.22" transform="rotate(-20 1200 524)" fill="#FFD21F" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="1200" cy="524" rx="10.4" ry="4.94" transform="rotate(-35 1200 524)" fill="#FFFFFF"/>
+<ellipse cx="1200" cy="498" rx="17.16" ry="12.22" transform="rotate(-20 1200 498)" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="1200" cy="498" rx="10.4" ry="4.94" transform="rotate(-35 1200 498)" fill="#FFFFFF"/>
+<line x1="1290" y1="498" x2="1290" y2="550" stroke="#C9A227" stroke-width="6" stroke-linecap="round"/>
+<text x="1200" y="770" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >DO + MI + SOL = C</text>
+<path d="M1750 470 c-18 -26 -54 -6 -30 22 l30 28 l30 -28 c24 -28 -12 -48 -30 -22 z" fill="#E5312B" stroke="none" stroke-width="0" />
+<text x="1750" y="545" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#1A1A1A" text-anchor="middle" >1</text>
+<path d="M1900 470 c-18 -26 -54 -6 -30 22 l30 28 l30 -28 c24 -28 -12 -48 -30 -22 z" fill="#E5312B" stroke="none" stroke-width="0" />
+<text x="1900" y="545" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#1A1A1A" text-anchor="middle" >2</text>
+<path d="M2050 470 c-18 -26 -54 -6 -30 22 l30 28 l30 -28 c24 -28 -12 -48 -30 -22 z" fill="#E5312B" stroke="none" stroke-width="0" />
+<text x="2050" y="545" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#1A1A1A" text-anchor="middle" >3</text>
+<path d="M2200 470 c-18 -26 -54 -6 -30 22 l30 28 l30 -28 c24 -28 -12 -48 -30 -22 z" fill="#E5312B" stroke="none" stroke-width="0" />
+<text x="2200" y="545" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<rect x="1726" y="600" width="288" height="70" rx="14" fill="#C9A227" stroke="#1A1A1A" stroke-width="3" />
+<text x="1870" y="720" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#1A1A1A" text-anchor="middle" >taa-aa</text>
+<rect x="2026" y="600" width="138" height="70" rx="14" fill="#C9A227" stroke="#1A1A1A" stroke-width="3" />
+<text x="2095" y="720" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#1A1A1A" text-anchor="middle" >ta</text>
+<rect x="2176" y="600" width="63" height="70" rx="14" fill="#C9A227" stroke="#1A1A1A" stroke-width="3" />
+<text x="2207.5" y="720" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#1A1A1A" text-anchor="middle" >ti</text>
+<rect x="2251" y="600" width="63" height="70" rx="14" fill="#C9A227" stroke="#1A1A1A" stroke-width="3" />
+<text x="2282.5" y="720" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#1A1A1A" text-anchor="middle" >ti</text>
+<text x="2010" y="800" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="600" fill="#5F6368" text-anchor="middle" >pulso ♥ · ritmo ▬</text>
+</svg>

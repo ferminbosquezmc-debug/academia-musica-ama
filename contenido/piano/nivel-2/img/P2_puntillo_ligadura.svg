@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="900" viewBox="0 0 2400 900" role="img" aria-label="El puntillo y la ligadura de prolongación">
+<title>El puntillo y la ligadura de prolongación</title>
+<rect width="2400" height="900" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >El puntillo y la ligadura de prolongación</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >El puntillo suma la mitad · la ligadura une dos notas iguales</text>
+<line x1="120" y1="240" x2="1120" y2="240" stroke="#1A1A1A" stroke-width="3" />
+<line x1="120" y1="276" x2="1120" y2="276" stroke="#1A1A1A" stroke-width="3" />
+<line x1="120" y1="312" x2="1120" y2="312" stroke="#1A1A1A" stroke-width="3" />
+<line x1="120" y1="348" x2="1120" y2="348" stroke="#1A1A1A" stroke-width="3" />
+<line x1="120" y1="384" x2="1120" y2="384" stroke="#1A1A1A" stroke-width="3" />
+<path d="M434 2Q464 -103 464 -170Q464 -223 427.0 -257.0Q390 -291 337 -291Q287 -291 250.0 -261.5Q213 -232 213 -190Q213 -160 233.5 -133.5Q254 -107 283.5 -107.0Q313 -107 331.5 -128.5Q350 -150 350 -178Q350 -240 280 -240Q298 -268 338 -268Q353 -268 368.5 -263.5Q384 -259 401.0 -248.0Q418 -237 428.5 -213.5Q439 -190 439 -157Q439 -136 411 -6Q389 -12 356 -12Q259 -12 189.5 60.0Q120 132 120 232Q120 267 131.5 303.0Q143 339 157.5 366.5Q172 394 200.5 428.5Q229 463 248.5 483.5Q268 504 303 539Q280 621 280 689Q280 779 313.0 839.5Q346 900 379 900Q389 900 401.5 887.0Q414 874 426.0 851.0Q438 828 446.5 790.5Q455 753 455 710Q455 551 342 447L368 329Q384 332 397 332Q458 332 500.0 282.5Q542 233 542 162Q542 44 434 2ZM426 746Q426 801 394 801Q358 801 333.0 748.0Q308 695 308 630Q308 588 321 557Q359 580 392.5 639.5Q426 699 426 746ZM498 128Q498 183 466.0 216.0Q434 249 383 249L428 23Q498 52 498 128ZM407 17 361 247Q334 241 311.5 214.0Q289 187 289 158Q289 143 295.0 128.5Q301 114 309.5 104.0Q318 94 327.0 86.0Q336 78 342.0 74.5Q348 71 348 71L340 66Q307 75 277.5 106.0Q248 137 248 184Q248 231 277.5 270.5Q307 310 343 323L325 430Q168 299 168 177Q168 104 223.0 55.0Q278 6 348 6Q365 6 407 17Z" fill="#1A1A1A" transform="translate(125.4,378.29) scale(0.22,-0.22)"/>
+<text x="274.8" y="309.12" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="82.8" font-weight="700" fill="#1A1A1A" text-anchor="middle" >3</text>
+<text x="274.8" y="384" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="82.8" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<line x1="728" y1="240" x2="728" y2="384" stroke="#1A1A1A" stroke-width="3" />
+<line x1="1103.8" y1="240" x2="1103.8" y2="384" stroke="#1A1A1A" stroke-width="3" />
+<rect x="1111" y="240" width="9" height="144" rx="0" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<ellipse cx="521.2" cy="348" rx="23.76" ry="16.92" transform="rotate(-20 521.2 348)" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="521.2" cy="348" rx="14.4" ry="6.84" transform="rotate(-35 521.2 348)" fill="#FFFFFF"/>
+<circle cx="557.2" cy="330" r="5.76" fill="#1A1A1A" stroke="none" stroke-width="0"/>
+<line x1="543.52" y1="348" x2="543.52" y2="222" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="806.21" cy="348" rx="23.76" ry="16.92" transform="rotate(-20 806.21 348)" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="3"/>
+<circle cx="842.21" cy="330" r="5.76" fill="#1A1A1A" stroke="none" stroke-width="0"/>
+<line x1="828.53" y1="348" x2="828.53" y2="222" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="946.9" cy="330" rx="23.76" ry="16.92" transform="rotate(-20 946.9 330)" fill="#283593" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="969.22" y1="330" x2="969.22" y2="204" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1024.34" cy="348" rx="23.76" ry="16.92" transform="rotate(-20 1024.34 348)" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1046.66" y1="348" x2="1046.66" y2="222" stroke="#1A1A1A" stroke-width="4" />
+<text x="521.2" y="470.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="25.2" font-weight="600" fill="#5F6368" text-anchor="middle" >taa-aa-aa</text>
+<text x="806.21" y="470.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="25.2" font-weight="600" fill="#5F6368" text-anchor="middle" >ta-a</text>
+<text x="946.9" y="470.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="25.2" font-weight="600" fill="#5F6368" text-anchor="middle" >ti</text>
+<text x="1024.34" y="470.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="25.2" font-weight="600" fill="#5F6368" text-anchor="middle" >ta</text>
+<text x="620" y="549.6" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28" font-weight="600" fill="#1A1A1A" text-anchor="middle" >blanca con puntillo = 2 + 1 = 3 · negra con puntillo + corchea = 2</text>
+<line x1="1220" y1="240" x2="2300" y2="240" stroke="#1A1A1A" stroke-width="3" />
+<line x1="1220" y1="276" x2="2300" y2="276" stroke="#1A1A1A" stroke-width="3" />
+<line x1="1220" y1="312" x2="2300" y2="312" stroke="#1A1A1A" stroke-width="3" />
+<line x1="1220" y1="348" x2="2300" y2="348" stroke="#1A1A1A" stroke-width="3" />
+<line x1="1220" y1="384" x2="2300" y2="384" stroke="#1A1A1A" stroke-width="3" />
+<path d="M434 2Q464 -103 464 -170Q464 -223 427.0 -257.0Q390 -291 337 -291Q287 -291 250.0 -261.5Q213 -232 213 -190Q213 -160 233.5 -133.5Q254 -107 283.5 -107.0Q313 -107 331.5 -128.5Q350 -150 350 -178Q350 -240 280 -240Q298 -268 338 -268Q353 -268 368.5 -263.5Q384 -259 401.0 -248.0Q418 -237 428.5 -213.5Q439 -190 439 -157Q439 -136 411 -6Q389 -12 356 -12Q259 -12 189.5 60.0Q120 132 120 232Q120 267 131.5 303.0Q143 339 157.5 366.5Q172 394 200.5 428.5Q229 463 248.5 483.5Q268 504 303 539Q280 621 280 689Q280 779 313.0 839.5Q346 900 379 900Q389 900 401.5 887.0Q414 874 426.0 851.0Q438 828 446.5 790.5Q455 753 455 710Q455 551 342 447L368 329Q384 332 397 332Q458 332 500.0 282.5Q542 233 542 162Q542 44 434 2ZM426 746Q426 801 394 801Q358 801 333.0 748.0Q308 695 308 630Q308 588 321 557Q359 580 392.5 639.5Q426 699 426 746ZM498 128Q498 183 466.0 216.0Q434 249 383 249L428 23Q498 52 498 128ZM407 17 361 247Q334 241 311.5 214.0Q289 187 289 158Q289 143 295.0 128.5Q301 114 309.5 104.0Q318 94 327.0 86.0Q336 78 342.0 74.5Q348 71 348 71L340 66Q307 75 277.5 106.0Q248 137 248 184Q248 231 277.5 270.5Q307 310 343 323L325 430Q168 299 168 177Q168 104 223.0 55.0Q278 6 348 6Q365 6 407 17Z" fill="#1A1A1A" transform="translate(1225.4,378.29) scale(0.22,-0.22)"/>
+<text x="1374.8" y="309.12" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="82.8" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<text x="1374.8" y="384" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="82.8" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<line x1="1724" y1="240" x2="1724" y2="384" stroke="#1A1A1A" stroke-width="3" />
+<line x1="2012" y1="240" x2="2012" y2="384" stroke="#1A1A1A" stroke-width="3" />
+<line x1="2283.8" y1="240" x2="2283.8" y2="384" stroke="#1A1A1A" stroke-width="3" />
+<rect x="2291" y="240" width="9" height="144" rx="0" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<ellipse cx="1491.84" cy="384" rx="23.76" ry="16.92" transform="rotate(-20 1491.84 384)" fill="#FFD21F" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="1491.84" cy="384" rx="14.4" ry="6.84" transform="rotate(-35 1491.84 384)" fill="#FFFFFF"/>
+<line x1="1514.16" y1="384" x2="1514.16" y2="258" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1603.44" cy="384" rx="23.76" ry="16.92" transform="rotate(-20 1603.44 384)" fill="#FFD21F" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1625.76" y1="384" x2="1625.76" y2="258" stroke="#1A1A1A" stroke-width="4" />
+<path d="M1650.24 258 L1673.64 286.8 L1648.44 313.8 L1673.64 340.8 Q1639.44 331.8 1661.04 364.2" fill="none" stroke="#1A1A1A" stroke-width="10.08" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1760.04" y="294" width="39.6" height="18" rx="0" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<ellipse cx="1891.44" cy="348" rx="23.76" ry="16.92" transform="rotate(-20 1891.44 348)" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="1891.44" cy="348" rx="14.4" ry="6.84" transform="rotate(-35 1891.44 348)" fill="#FFFFFF"/>
+<line x1="1913.76" y1="348" x2="1913.76" y2="222" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="2067.84" cy="348" rx="23.76" ry="16.92" transform="rotate(-20 2067.84 348)" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="2067.84" cy="348" rx="14.4" ry="6.84" transform="rotate(-35 2067.84 348)" fill="#FFFFFF"/>
+<line x1="2090.16" y1="348" x2="2090.16" y2="222" stroke="#1A1A1A" stroke-width="4" />
+<rect x="2159.64" y="294" width="39.6" height="18" rx="0" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<path d="M1499.04 409.2 Q1547.64 441.6 1596.24 409.2" fill="none" stroke="#1A1A1A" stroke-width="5.76" stroke-linecap="round"/>
+<path d="M1898.64 373.2 Q1979.64 405.6 2060.64 373.2" fill="none" stroke="#1A1A1A" stroke-width="5.76" stroke-linecap="round"/>
+<text x="1491.84" y="470.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="25.2" font-weight="600" fill="#5F6368" text-anchor="middle" >taa-aa</text>
+<text x="1603.44" y="470.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="25.2" font-weight="600" fill="#5F6368" text-anchor="middle" >(-aa)</text>
+<text x="1659.24" y="470.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="25.2" font-weight="600" fill="#5F6368" text-anchor="middle" >sh</text>
+<text x="1779.84" y="470.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="25.2" font-weight="600" fill="#5F6368" text-anchor="middle" >sh</text>
+<text x="1891.44" y="470.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="25.2" font-weight="600" fill="#5F6368" text-anchor="middle" >taa-aa</text>
+<text x="2067.84" y="470.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="25.2" font-weight="600" fill="#5F6368" text-anchor="middle" >(-aa-aa)</text>
+<text x="2179.44" y="470.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="25.2" font-weight="600" fill="#5F6368" text-anchor="middle" >sh</text>
+<text x="1760" y="549.6" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28" font-weight="600" fill="#1A1A1A" text-anchor="middle" >la 2.ª nota ligada no se toca: se suman los tiempos</text>
+<rect x="120" y="600" width="2180" height="220" rx="20" fill="#FAF6EE" stroke="#C9A227" stroke-width="3" />
+<text x="160" y="670" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#1A1A1A" text-anchor="start" >Blanca con puntillo  →  taa-aa-aa  =  3 tiempos (llena un compás de 3/4)</text>
+<text x="160" y="730" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#1A1A1A" text-anchor="start" >Negra con puntillo   →  ta-a  =  1½ tiempos</text>
+<text x="160" y="790" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#1A1A1A" text-anchor="start" >Blanca ligada a negra  →  2 + 1  =  3 tiempos</text>
+</svg>

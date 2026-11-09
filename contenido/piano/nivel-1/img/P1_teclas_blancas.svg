@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="800" viewBox="0 0 2400 800" role="img" aria-label="Las teclas blancas: las 7 notas con su color">
+<title>Las teclas blancas: las 7 notas con su color</title>
+<rect width="2400" height="800" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >Las teclas blancas: las 7 notas con su color</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >DO está justo a la izquierda del grupo de 2 teclas negras</text>
+<rect x="240" y="190" width="240" height="400" rx="6" fill="#E5312B" stroke="#1A1A1A" stroke-width="3" />
+<text x="360" y="558.8" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="52" font-weight="700" fill="#FFFFFF" text-anchor="middle" >DO</text>
+<rect x="480" y="190" width="240" height="400" rx="6" fill="#F57C00" stroke="#1A1A1A" stroke-width="3" />
+<text x="600" y="558.8" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="52" font-weight="700" fill="#1A1A1A" text-anchor="middle" >RE</text>
+<rect x="720" y="190" width="240" height="400" rx="6" fill="#FFD21F" stroke="#1A1A1A" stroke-width="3" />
+<text x="840" y="558.8" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="52" font-weight="700" fill="#1A1A1A" text-anchor="middle" >MI</text>
+<rect x="960" y="190" width="240" height="400" rx="6" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="3" />
+<text x="1080" y="558.8" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="52" font-weight="700" fill="#1A1A1A" text-anchor="middle" >FA</text>
+<rect x="1200" y="190" width="240" height="400" rx="6" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="3" />
+<text x="1320" y="558.8" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="52" font-weight="700" fill="#1A1A1A" text-anchor="middle" >SOL</text>
+<rect x="1440" y="190" width="240" height="400" rx="6" fill="#283593" stroke="#1A1A1A" stroke-width="3" />
+<text x="1560" y="558.8" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="52" font-weight="700" fill="#FFFFFF" text-anchor="middle" >LA</text>
+<rect x="1680" y="190" width="240" height="400" rx="6" fill="#8E3BB8" stroke="#1A1A1A" stroke-width="3" />
+<text x="1800" y="558.8" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="52" font-weight="700" fill="#FFFFFF" text-anchor="middle" >SI</text>
+<rect x="1920" y="190" width="240" height="400" rx="6" fill="#E5312B" stroke="#1A1A1A" stroke-width="3" />
+<text x="2040" y="558.8" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="52" font-weight="700" fill="#FFFFFF" text-anchor="middle" >DO</text>
+<rect x="410.4" y="190" width="139.2" height="248" rx="4" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+<rect x="650.4" y="190" width="139.2" height="248" rx="4" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+<rect x="1130.4" y="190" width="139.2" height="248" rx="4" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+<rect x="1370.4" y="190" width="139.2" height="248" rx="4" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+<rect x="1610.4" y="190" width="139.2" height="248" rx="4" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+<text x="360" y="650" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#5F6368" text-anchor="middle" >C</text>
+<text x="600" y="650" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#5F6368" text-anchor="middle" >D</text>
+<text x="840" y="650" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#5F6368" text-anchor="middle" >E</text>
+<text x="1080" y="650" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#5F6368" text-anchor="middle" >F</text>
+<text x="1320" y="650" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#5F6368" text-anchor="middle" >G</text>
+<text x="1560" y="650" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#5F6368" text-anchor="middle" >A</text>
+<text x="1800" y="650" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#5F6368" text-anchor="middle" >B</text>
+<text x="2040" y="650" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#5F6368" text-anchor="middle" >C</text>
+<path d="M360 672 L346 692 L374 692 Z" fill="#8A6A0A" stroke="none" stroke-width="0" />
+<text x="360" y="725" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#8A6A0A" text-anchor="middle" >DO central</text>
+<text x="1320" y="770" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="middle" >Después de SI vuelve DO: la serie se repite en todo el teclado.</text>
+</svg>

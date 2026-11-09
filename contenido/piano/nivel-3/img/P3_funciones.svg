@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1000" viewBox="0 0 2400 1000" role="img" aria-label="I – IV – V7 – I en Do, Sol y Fa">
+<title>I – IV – V7 – I en Do, Sol y Fa</title>
+<rect width="2400" height="1000" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >La familia de acordes: I – IV – V7 – I</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >Tónica = reposo · subdominante = movimiento · dominante = tensión</text>
+<text x="640" y="230" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="700" fill="#1A1A1A" text-anchor="middle" >I · Tónica</text>
+<text x="1120" y="230" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="700" fill="#1A1A1A" text-anchor="middle" >IV · Subdominante</text>
+<text x="1600" y="230" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="700" fill="#1A1A1A" text-anchor="middle" >V7 · Dominante</text>
+<text x="2080" y="230" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="700" fill="#1A1A1A" text-anchor="middle" >I · Tónica</text>
+<text x="90" y="380" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="36" font-weight="700" fill="#1A1A1A" text-anchor="start" >Do mayor</text>
+<rect x="420" y="270" width="440" height="190" rx="18" fill="#DCEFE0" stroke="#1A1A1A" stroke-width="2" />
+<text x="640" y="360" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="56" font-weight="700" fill="#1A1A1A" text-anchor="middle" >C</text>
+<text x="640" y="420" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="600" fill="#5F6368" text-anchor="middle" >DO-MI-SOL</text>
+<rect x="900" y="270" width="440" height="190" rx="18" fill="#DCEBF7" stroke="#1A1A1A" stroke-width="2" />
+<text x="1120" y="360" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="56" font-weight="700" fill="#1A1A1A" text-anchor="middle" >F/C</text>
+<text x="1120" y="420" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="600" fill="#5F6368" text-anchor="middle" >DO-FA-LA</text>
+<rect x="1380" y="270" width="440" height="190" rx="18" fill="#F9D9D7" stroke="#1A1A1A" stroke-width="2" />
+<text x="1600" y="360" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="56" font-weight="700" fill="#1A1A1A" text-anchor="middle" >G7/B</text>
+<text x="1600" y="420" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="600" fill="#5F6368" text-anchor="middle" >SI-FA-SOL</text>
+<rect x="1860" y="270" width="440" height="190" rx="18" fill="#DCEFE0" stroke="#1A1A1A" stroke-width="2" />
+<text x="2080" y="360" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="56" font-weight="700" fill="#1A1A1A" text-anchor="middle" >C</text>
+<text x="2080" y="420" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="600" fill="#5F6368" text-anchor="middle" >DO-MI-SOL</text>
+<text x="90" y="610" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="36" font-weight="700" fill="#1A1A1A" text-anchor="start" >Sol mayor</text>
+<rect x="420" y="500" width="440" height="190" rx="18" fill="#DCEFE0" stroke="#1A1A1A" stroke-width="2" />
+<text x="640" y="590" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="56" font-weight="700" fill="#1A1A1A" text-anchor="middle" >G</text>
+<text x="640" y="650" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="600" fill="#5F6368" text-anchor="middle" >SOL-SI-RE</text>
+<rect x="900" y="500" width="440" height="190" rx="18" fill="#DCEBF7" stroke="#1A1A1A" stroke-width="2" />
+<text x="1120" y="590" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="56" font-weight="700" fill="#1A1A1A" text-anchor="middle" >C/G</text>
+<text x="1120" y="650" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="600" fill="#5F6368" text-anchor="middle" >SOL-DO-MI</text>
+<rect x="1380" y="500" width="440" height="190" rx="18" fill="#F9D9D7" stroke="#1A1A1A" stroke-width="2" />
+<text x="1600" y="590" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="56" font-weight="700" fill="#1A1A1A" text-anchor="middle" >D7/F♯</text>
+<text x="1600" y="650" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="600" fill="#5F6368" text-anchor="middle" >FA♯-DO-RE</text>
+<rect x="1860" y="500" width="440" height="190" rx="18" fill="#DCEFE0" stroke="#1A1A1A" stroke-width="2" />
+<text x="2080" y="590" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="56" font-weight="700" fill="#1A1A1A" text-anchor="middle" >G</text>
+<text x="2080" y="650" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="600" fill="#5F6368" text-anchor="middle" >SOL-SI-RE</text>
+<text x="90" y="840" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="36" font-weight="700" fill="#1A1A1A" text-anchor="start" >Fa mayor</text>
+<rect x="420" y="730" width="440" height="190" rx="18" fill="#DCEFE0" stroke="#1A1A1A" stroke-width="2" />
+<text x="640" y="820" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="56" font-weight="700" fill="#1A1A1A" text-anchor="middle" >F</text>
+<text x="640" y="880" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="600" fill="#5F6368" text-anchor="middle" >FA-LA-DO</text>
+<rect x="900" y="730" width="440" height="190" rx="18" fill="#DCEBF7" stroke="#1A1A1A" stroke-width="2" />
+<text x="1120" y="820" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="56" font-weight="700" fill="#1A1A1A" text-anchor="middle" >B♭/F</text>
+<text x="1120" y="880" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="600" fill="#5F6368" text-anchor="middle" >FA-SI♭-RE</text>
+<rect x="1380" y="730" width="440" height="190" rx="18" fill="#F9D9D7" stroke="#1A1A1A" stroke-width="2" />
+<text x="1600" y="820" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="56" font-weight="700" fill="#1A1A1A" text-anchor="middle" >C7/E</text>
+<text x="1600" y="880" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="600" fill="#5F6368" text-anchor="middle" >MI-SI♭-DO</text>
+<rect x="1860" y="730" width="440" height="190" rx="18" fill="#DCEFE0" stroke="#1A1A1A" stroke-width="2" />
+<text x="2080" y="820" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="56" font-weight="700" fill="#1A1A1A" text-anchor="middle" >F</text>
+<text x="2080" y="880" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="600" fill="#5F6368" text-anchor="middle" >FA-LA-DO</text>
+<text x="1200" y="975" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="500" fill="#5F6368" text-anchor="middle" >Mano derecha con acordes vecinos · mano izquierda: el bajo de cada grado</text>
+</svg>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="820" viewBox="0 0 2400 820" role="img" aria-label="Lectura sorpresa con las dos manos">
+<title>Lectura sorpresa con las dos manos</title>
+<rect width="2400" height="820" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >Lectura sorpresa · sin color</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >Primero los nombres, después el ritmo con sílabas y al final, despacio, en el piano</text>
+<line x1="160" y1="260" x2="2280" y2="260" stroke="#1A1A1A" stroke-width="3" />
+<line x1="160" y1="292" x2="2280" y2="292" stroke="#1A1A1A" stroke-width="3" />
+<line x1="160" y1="324" x2="2280" y2="324" stroke="#1A1A1A" stroke-width="3" />
+<line x1="160" y1="356" x2="2280" y2="356" stroke="#1A1A1A" stroke-width="3" />
+<line x1="160" y1="388" x2="2280" y2="388" stroke="#1A1A1A" stroke-width="3" />
+<path d="M434 2Q464 -103 464 -170Q464 -223 427.0 -257.0Q390 -291 337 -291Q287 -291 250.0 -261.5Q213 -232 213 -190Q213 -160 233.5 -133.5Q254 -107 283.5 -107.0Q313 -107 331.5 -128.5Q350 -150 350 -178Q350 -240 280 -240Q298 -268 338 -268Q353 -268 368.5 -263.5Q384 -259 401.0 -248.0Q418 -237 428.5 -213.5Q439 -190 439 -157Q439 -136 411 -6Q389 -12 356 -12Q259 -12 189.5 60.0Q120 132 120 232Q120 267 131.5 303.0Q143 339 157.5 366.5Q172 394 200.5 428.5Q229 463 248.5 483.5Q268 504 303 539Q280 621 280 689Q280 779 313.0 839.5Q346 900 379 900Q389 900 401.5 887.0Q414 874 426.0 851.0Q438 828 446.5 790.5Q455 753 455 710Q455 551 342 447L368 329Q384 332 397 332Q458 332 500.0 282.5Q542 233 542 162Q542 44 434 2ZM426 746Q426 801 394 801Q358 801 333.0 748.0Q308 695 308 630Q308 588 321 557Q359 580 392.5 639.5Q426 699 426 746ZM498 128Q498 183 466.0 216.0Q434 249 383 249L428 23Q498 52 498 128ZM407 17 361 247Q334 241 311.5 214.0Q289 187 289 158Q289 143 295.0 128.5Q301 114 309.5 104.0Q318 94 327.0 86.0Q336 78 342.0 74.5Q348 71 348 71L340 66Q307 75 277.5 106.0Q248 137 248 184Q248 231 277.5 270.5Q307 310 343 323L325 430Q168 299 168 177Q168 104 223.0 55.0Q278 6 348 6Q365 6 407 17Z" fill="#1A1A1A" transform="translate(164.8,382.93) scale(0.2,-0.2)"/>
+<line x1="160" y1="612" x2="2280" y2="612" stroke="#1A1A1A" stroke-width="3" />
+<line x1="160" y1="644" x2="2280" y2="644" stroke="#1A1A1A" stroke-width="3" />
+<line x1="160" y1="676" x2="2280" y2="676" stroke="#1A1A1A" stroke-width="3" />
+<line x1="160" y1="708" x2="2280" y2="708" stroke="#1A1A1A" stroke-width="3" />
+<line x1="160" y1="740" x2="2280" y2="740" stroke="#1A1A1A" stroke-width="3" />
+<circle cx="187.2" cy="644" r="11.52" fill="#1A1A1A" stroke="none" stroke-width="0"/>
+<path d="M184 636 C193.6 604 244.8 605.6 243.2 650.4 C241.6 692 208 717.6 174.4 733.6" fill="none" stroke="#1A1A1A" stroke-width="9.6" stroke-linecap="round"/>
+<circle cx="260.8" cy="628" r="5.44" fill="#1A1A1A" stroke="none" stroke-width="0"/>
+<circle cx="260.8" cy="660" r="5.44" fill="#1A1A1A" stroke="none" stroke-width="0"/>
+<text x="297.6" y="321.44" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="73.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<text x="297.6" y="388" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="73.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<text x="297.6" y="673.44" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="73.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<text x="297.6" y="740" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="73.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<line x1="160" y1="260" x2="160" y2="740" stroke="#1A1A1A" stroke-width="4" />
+<path d="M147.2 260 Q115.2 308 128 476 Q128 500 108.8 500 Q128 524 147.2 740" fill="none" stroke="#1A1A1A" stroke-width="8.96" />
+<line x1="834" y1="260" x2="834" y2="740" stroke="#1A1A1A" stroke-width="3" />
+<line x1="1316" y1="260" x2="1316" y2="740" stroke="#1A1A1A" stroke-width="3" />
+<line x1="1798" y1="260" x2="1798" y2="740" stroke="#1A1A1A" stroke-width="3" />
+<line x1="2265.6" y1="260" x2="2265.6" y2="740" stroke="#1A1A1A" stroke-width="3" />
+<rect x="2272" y="260" width="8" height="480" rx="0" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<ellipse cx="425.36" cy="388" rx="21.12" ry="15.04" transform="rotate(-20 425.36 388)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="445.2" y1="388" x2="445.2" y2="276" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="531.46" cy="404" rx="21.12" ry="15.04" transform="rotate(-20 531.46 404)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="551.3" y1="404" x2="551.3" y2="292" stroke="#1A1A1A" stroke-width="4" />
+<line x1="603.96" y1="420" x2="671.16" y2="420" stroke="#1A1A1A" stroke-width="3" />
+<ellipse cx="637.56" cy="420" rx="21.12" ry="15.04" transform="rotate(-20 637.56 420)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="657.4" y1="420" x2="657.4" y2="308" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="743.66" cy="404" rx="21.12" ry="15.04" transform="rotate(-20 743.66 404)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="763.5" y1="404" x2="763.5" y2="292" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="907.36" cy="388" rx="21.12" ry="15.04" transform="rotate(-20 907.36 388)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="927.2" y1="388" x2="927.2" y2="276" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1013.46" cy="388" rx="21.12" ry="15.04" transform="rotate(-20 1013.46 388)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1033.3" y1="388" x2="1033.3" y2="276" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1119.56" cy="388" rx="21.12" ry="15.04" transform="rotate(-20 1119.56 388)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="1119.56" cy="388" rx="12.8" ry="6.08" transform="rotate(-35 1119.56 388)" fill="#FFFFFF"/>
+<line x1="1139.4" y1="388" x2="1139.4" y2="276" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1389.36" cy="404" rx="21.12" ry="15.04" transform="rotate(-20 1389.36 404)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1409.2" y1="404" x2="1409.2" y2="292" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1495.46" cy="404" rx="21.12" ry="15.04" transform="rotate(-20 1495.46 404)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1515.3" y1="404" x2="1515.3" y2="292" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1601.56" cy="388" rx="21.12" ry="15.04" transform="rotate(-20 1601.56 388)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1621.4" y1="388" x2="1621.4" y2="276" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1707.66" cy="404" rx="21.12" ry="15.04" transform="rotate(-20 1707.66 404)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1727.5" y1="404" x2="1727.5" y2="292" stroke="#1A1A1A" stroke-width="4" />
+<line x1="1995.8" y1="420" x2="2063" y2="420" stroke="#1A1A1A" stroke-width="3" />
+<ellipse cx="2029.4" cy="420" rx="21.12" ry="15.04" transform="rotate(-20 2029.4 420)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="2029.4" cy="420" rx="12.8" ry="6.08" transform="rotate(-35 2029.4 420)" fill="#FFFFFF"/>
+<ellipse cx="583.4" cy="692" rx="21.12" ry="15.04" transform="rotate(-20 583.4 692)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="583.4" cy="692" rx="12.8" ry="6.08" transform="rotate(-35 583.4 692)" fill="#FFFFFF"/>
+<ellipse cx="1065.4" cy="692" rx="21.12" ry="15.04" transform="rotate(-20 1065.4 692)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="1065.4" cy="692" rx="12.8" ry="6.08" transform="rotate(-35 1065.4 692)" fill="#FFFFFF"/>
+<ellipse cx="1547.4" cy="628" rx="21.12" ry="15.04" transform="rotate(-20 1547.4 628)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="1547.4" cy="628" rx="12.8" ry="6.08" transform="rotate(-35 1547.4 628)" fill="#FFFFFF"/>
+<ellipse cx="2029.4" cy="692" rx="21.12" ry="15.04" transform="rotate(-20 2029.4 692)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="2029.4" cy="692" rx="12.8" ry="6.08" transform="rotate(-35 2029.4 692)" fill="#FFFFFF"/>
+</svg>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1200" viewBox="0 0 2400 1200" role="img" aria-label="Himno de la alegría (versión piano, posición de DO)">
+<title>Himno de la alegría (versión piano, posición de DO)</title>
+<rect width="2400" height="1200" fill="#FFFFFF"/>
+<text x="60" y="65" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="start" >Frase 1</text>
+<line x1="60" y1="150" x2="2340" y2="150" stroke="#1A1A1A" stroke-width="3" />
+<line x1="60" y1="190" x2="2340" y2="190" stroke="#1A1A1A" stroke-width="3" />
+<line x1="60" y1="230" x2="2340" y2="230" stroke="#1A1A1A" stroke-width="3" />
+<line x1="60" y1="270" x2="2340" y2="270" stroke="#1A1A1A" stroke-width="3" />
+<line x1="60" y1="310" x2="2340" y2="310" stroke="#1A1A1A" stroke-width="3" />
+<path d="M434 2Q464 -103 464 -170Q464 -223 427.0 -257.0Q390 -291 337 -291Q287 -291 250.0 -261.5Q213 -232 213 -190Q213 -160 233.5 -133.5Q254 -107 283.5 -107.0Q313 -107 331.5 -128.5Q350 -150 350 -178Q350 -240 280 -240Q298 -268 338 -268Q353 -268 368.5 -263.5Q384 -259 401.0 -248.0Q418 -237 428.5 -213.5Q439 -190 439 -157Q439 -136 411 -6Q389 -12 356 -12Q259 -12 189.5 60.0Q120 132 120 232Q120 267 131.5 303.0Q143 339 157.5 366.5Q172 394 200.5 428.5Q229 463 248.5 483.5Q268 504 303 539Q280 621 280 689Q280 779 313.0 839.5Q346 900 379 900Q389 900 401.5 887.0Q414 874 426.0 851.0Q438 828 446.5 790.5Q455 753 455 710Q455 551 342 447L368 329Q384 332 397 332Q458 332 500.0 282.5Q542 233 542 162Q542 44 434 2ZM426 746Q426 801 394 801Q358 801 333.0 748.0Q308 695 308 630Q308 588 321 557Q359 580 392.5 639.5Q426 699 426 746ZM498 128Q498 183 466.0 216.0Q434 249 383 249L428 23Q498 52 498 128ZM407 17 361 247Q334 241 311.5 214.0Q289 187 289 158Q289 143 295.0 128.5Q301 114 309.5 104.0Q318 94 327.0 86.0Q336 78 342.0 74.5Q348 71 348 71L340 66Q307 75 277.5 106.0Q248 137 248 184Q248 231 277.5 270.5Q307 310 343 323L325 430Q168 299 168 177Q168 104 223.0 55.0Q278 6 348 6Q365 6 407 17Z" fill="#1A1A1A" transform="translate(66,303.66) scale(0.25,-0.25)"/>
+<text x="236" y="226.8" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<text x="236" y="310" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<line x1="810" y1="150" x2="810" y2="310" stroke="#1A1A1A" stroke-width="3" />
+<line x1="1320" y1="150" x2="1320" y2="310" stroke="#1A1A1A" stroke-width="3" />
+<line x1="1830" y1="150" x2="1830" y2="310" stroke="#1A1A1A" stroke-width="3" />
+<line x1="2322" y1="150" x2="2322" y2="310" stroke="#1A1A1A" stroke-width="3" />
+<rect x="2330" y="150" width="10" height="160" rx="0" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<ellipse cx="378.83" cy="310" rx="26.4" ry="18.8" transform="rotate(-20 378.83 310)" fill="#FFD21F" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="403.63" y1="310" x2="403.63" y2="170" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="490.33" cy="310" rx="26.4" ry="18.8" transform="rotate(-20 490.33 310)" fill="#FFD21F" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="515.13" y1="310" x2="515.13" y2="170" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="601.83" cy="290" rx="26.4" ry="18.8" transform="rotate(-20 601.83 290)" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="626.63" y1="290" x2="626.63" y2="150" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="713.33" cy="270" rx="26.4" ry="18.8" transform="rotate(-20 713.33 270)" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="738.13" y1="270" x2="738.13" y2="130" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="888.83" cy="270" rx="26.4" ry="18.8" transform="rotate(-20 888.83 270)" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="913.63" y1="270" x2="913.63" y2="130" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1000.33" cy="290" rx="26.4" ry="18.8" transform="rotate(-20 1000.33 290)" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1025.13" y1="290" x2="1025.13" y2="150" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1111.83" cy="310" rx="26.4" ry="18.8" transform="rotate(-20 1111.83 310)" fill="#FFD21F" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1136.63" y1="310" x2="1136.63" y2="170" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1223.33" cy="330" rx="26.4" ry="18.8" transform="rotate(-20 1223.33 330)" fill="#F57C00" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1248.13" y1="330" x2="1248.13" y2="190" stroke="#1A1A1A" stroke-width="4" />
+<line x1="1356.83" y1="350" x2="1440.83" y2="350" stroke="#1A1A1A" stroke-width="3" />
+<ellipse cx="1398.83" cy="350" rx="26.4" ry="18.8" transform="rotate(-20 1398.83 350)" fill="#E5312B" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1423.63" y1="350" x2="1423.63" y2="210" stroke="#1A1A1A" stroke-width="4" />
+<line x1="1468.33" y1="350" x2="1552.33" y2="350" stroke="#1A1A1A" stroke-width="3" />
+<ellipse cx="1510.33" cy="350" rx="26.4" ry="18.8" transform="rotate(-20 1510.33 350)" fill="#E5312B" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1535.13" y1="350" x2="1535.13" y2="210" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1621.83" cy="330" rx="26.4" ry="18.8" transform="rotate(-20 1621.83 330)" fill="#F57C00" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1646.63" y1="330" x2="1646.63" y2="190" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1733.33" cy="310" rx="26.4" ry="18.8" transform="rotate(-20 1733.33 310)" fill="#FFD21F" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1758.13" y1="310" x2="1758.13" y2="170" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1908.83" cy="310" rx="26.4" ry="18.8" transform="rotate(-20 1908.83 310)" fill="#FFD21F" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1933.63" y1="310" x2="1933.63" y2="170" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="2020.33" cy="330" rx="26.4" ry="18.8" transform="rotate(-20 2020.33 330)" fill="#F57C00" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="2045.13" y1="330" x2="2045.13" y2="190" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="2131.83" cy="330" rx="26.4" ry="18.8" transform="rotate(-20 2131.83 330)" fill="#F57C00" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="2131.83" cy="330" rx="16" ry="7.6" transform="rotate(-35 2131.83 330)" fill="#FFFFFF"/>
+<line x1="2156.63" y1="330" x2="2156.63" y2="190" stroke="#1A1A1A" stroke-width="4" />
+<rect x="335.13" y="379" width="87.4" height="46" rx="23" fill="#FFD21F" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="378.83" y="410.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >MI</text>
+<rect x="446.63" y="379" width="87.4" height="46" rx="23" fill="#FFD21F" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="490.33" y="410.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >MI</text>
+<rect x="558.13" y="379" width="87.4" height="46" rx="23" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="601.83" y="410.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >FA</text>
+<rect x="658.13" y="379" width="110.4" height="46" rx="23" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="713.33" y="410.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >SOL</text>
+<rect x="833.63" y="379" width="110.4" height="46" rx="23" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="888.83" y="410.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >SOL</text>
+<rect x="956.63" y="379" width="87.4" height="46" rx="23" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1000.33" y="410.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >FA</text>
+<rect x="1068.13" y="379" width="87.4" height="46" rx="23" fill="#FFD21F" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1111.83" y="410.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >MI</text>
+<rect x="1179.63" y="379" width="87.4" height="46" rx="23" fill="#F57C00" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1223.33" y="410.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >RE</text>
+<rect x="1355.13" y="379" width="87.4" height="46" rx="23" fill="#E5312B" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1398.83" y="410.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#FFFFFF" text-anchor="middle" >DO</text>
+<rect x="1466.63" y="379" width="87.4" height="46" rx="23" fill="#E5312B" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1510.33" y="410.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#FFFFFF" text-anchor="middle" >DO</text>
+<rect x="1578.13" y="379" width="87.4" height="46" rx="23" fill="#F57C00" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1621.83" y="410.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >RE</text>
+<rect x="1689.63" y="379" width="87.4" height="46" rx="23" fill="#FFD21F" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1733.33" y="410.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >MI</text>
+<rect x="1865.13" y="379" width="87.4" height="46" rx="23" fill="#FFD21F" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1908.83" y="410.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >MI</text>
+<rect x="1976.63" y="379" width="87.4" height="46" rx="23" fill="#F57C00" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="2020.33" y="410.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >RE</text>
+<rect x="2088.13" y="379" width="87.4" height="46" rx="23" fill="#F57C00" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="2131.83" y="410.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >RE</text>
+<text x="60" y="492" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24.8" font-weight="700" fill="#8A6A0A" text-anchor="start" >dedo</text>
+<text x="378.83" y="492" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >3</text>
+<text x="490.33" y="492" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >3</text>
+<text x="601.83" y="492" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >4</text>
+<text x="713.33" y="492" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >5</text>
+<text x="888.83" y="492" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >5</text>
+<text x="1000.33" y="492" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >4</text>
+<text x="1111.83" y="492" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >3</text>
+<text x="1223.33" y="492" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >2</text>
+<text x="1398.83" y="492" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >1</text>
+<text x="1510.33" y="492" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >1</text>
+<text x="1621.83" y="492" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >2</text>
+<text x="1733.33" y="492" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >3</text>
+<text x="1908.83" y="492" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >3</text>
+<text x="2020.33" y="492" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >2</text>
+<text x="2131.83" y="492" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >2</text>
+<rect x="338.93" y="527" width="79.8" height="42" rx="21" fill="#E5312B" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="378.83" y="555.98" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="21.84" font-weight="700" fill="#FFFFFF" text-anchor="middle" >DO</text>
+<rect x="838.43" y="527" width="100.8" height="42" rx="21" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="888.83" y="555.98" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="21.84" font-weight="700" fill="#1A1A1A" text-anchor="middle" >SOL</text>
+<rect x="1358.93" y="527" width="79.8" height="42" rx="21" fill="#E5312B" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1398.83" y="555.98" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="21.84" font-weight="700" fill="#FFFFFF" text-anchor="middle" >DO</text>
+<rect x="1858.43" y="527" width="100.8" height="42" rx="21" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1908.83" y="555.98" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="21.84" font-weight="700" fill="#1A1A1A" text-anchor="middle" >SOL</text>
+<text x="60" y="554" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24.8" font-weight="700" fill="#5F6368" text-anchor="start" >mano izq. (redonda)</text>
+<text x="60" y="605" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="start" >Frase 2</text>
+<line x1="60" y1="690" x2="2340" y2="690" stroke="#1A1A1A" stroke-width="3" />
+<line x1="60" y1="730" x2="2340" y2="730" stroke="#1A1A1A" stroke-width="3" />
+<line x1="60" y1="770" x2="2340" y2="770" stroke="#1A1A1A" stroke-width="3" />
+<line x1="60" y1="810" x2="2340" y2="810" stroke="#1A1A1A" stroke-width="3" />
+<line x1="60" y1="850" x2="2340" y2="850" stroke="#1A1A1A" stroke-width="3" />
+<path d="M434 2Q464 -103 464 -170Q464 -223 427.0 -257.0Q390 -291 337 -291Q287 -291 250.0 -261.5Q213 -232 213 -190Q213 -160 233.5 -133.5Q254 -107 283.5 -107.0Q313 -107 331.5 -128.5Q350 -150 350 -178Q350 -240 280 -240Q298 -268 338 -268Q353 -268 368.5 -263.5Q384 -259 401.0 -248.0Q418 -237 428.5 -213.5Q439 -190 439 -157Q439 -136 411 -6Q389 -12 356 -12Q259 -12 189.5 60.0Q120 132 120 232Q120 267 131.5 303.0Q143 339 157.5 366.5Q172 394 200.5 428.5Q229 463 248.5 483.5Q268 504 303 539Q280 621 280 689Q280 779 313.0 839.5Q346 900 379 900Q389 900 401.5 887.0Q414 874 426.0 851.0Q438 828 446.5 790.5Q455 753 455 710Q455 551 342 447L368 329Q384 332 397 332Q458 332 500.0 282.5Q542 233 542 162Q542 44 434 2ZM426 746Q426 801 394 801Q358 801 333.0 748.0Q308 695 308 630Q308 588 321 557Q359 580 392.5 639.5Q426 699 426 746ZM498 128Q498 183 466.0 216.0Q434 249 383 249L428 23Q498 52 498 128ZM407 17 361 247Q334 241 311.5 214.0Q289 187 289 158Q289 143 295.0 128.5Q301 114 309.5 104.0Q318 94 327.0 86.0Q336 78 342.0 74.5Q348 71 348 71L340 66Q307 75 277.5 106.0Q248 137 248 184Q248 231 277.5 270.5Q307 310 343 323L325 430Q168 299 168 177Q168 104 223.0 55.0Q278 6 348 6Q365 6 407 17Z" fill="#1A1A1A" transform="translate(66,843.66) scale(0.25,-0.25)"/>
+<text x="236" y="766.8" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<text x="236" y="850" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<line x1="810" y1="690" x2="810" y2="850" stroke="#1A1A1A" stroke-width="3" />
+<line x1="1320" y1="690" x2="1320" y2="850" stroke="#1A1A1A" stroke-width="3" />
+<line x1="1830" y1="690" x2="1830" y2="850" stroke="#1A1A1A" stroke-width="3" />
+<line x1="2322" y1="690" x2="2322" y2="850" stroke="#1A1A1A" stroke-width="3" />
+<rect x="2330" y="690" width="10" height="160" rx="0" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<ellipse cx="378.83" cy="850" rx="26.4" ry="18.8" transform="rotate(-20 378.83 850)" fill="#FFD21F" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="403.63" y1="850" x2="403.63" y2="710" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="490.33" cy="850" rx="26.4" ry="18.8" transform="rotate(-20 490.33 850)" fill="#FFD21F" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="515.13" y1="850" x2="515.13" y2="710" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="601.83" cy="830" rx="26.4" ry="18.8" transform="rotate(-20 601.83 830)" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="626.63" y1="830" x2="626.63" y2="690" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="713.33" cy="810" rx="26.4" ry="18.8" transform="rotate(-20 713.33 810)" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="738.13" y1="810" x2="738.13" y2="670" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="888.83" cy="810" rx="26.4" ry="18.8" transform="rotate(-20 888.83 810)" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="913.63" y1="810" x2="913.63" y2="670" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1000.33" cy="830" rx="26.4" ry="18.8" transform="rotate(-20 1000.33 830)" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1025.13" y1="830" x2="1025.13" y2="690" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1111.83" cy="850" rx="26.4" ry="18.8" transform="rotate(-20 1111.83 850)" fill="#FFD21F" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1136.63" y1="850" x2="1136.63" y2="710" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1223.33" cy="870" rx="26.4" ry="18.8" transform="rotate(-20 1223.33 870)" fill="#F57C00" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1248.13" y1="870" x2="1248.13" y2="730" stroke="#1A1A1A" stroke-width="4" />
+<line x1="1356.83" y1="890" x2="1440.83" y2="890" stroke="#1A1A1A" stroke-width="3" />
+<ellipse cx="1398.83" cy="890" rx="26.4" ry="18.8" transform="rotate(-20 1398.83 890)" fill="#E5312B" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1423.63" y1="890" x2="1423.63" y2="750" stroke="#1A1A1A" stroke-width="4" />
+<line x1="1468.33" y1="890" x2="1552.33" y2="890" stroke="#1A1A1A" stroke-width="3" />
+<ellipse cx="1510.33" cy="890" rx="26.4" ry="18.8" transform="rotate(-20 1510.33 890)" fill="#E5312B" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1535.13" y1="890" x2="1535.13" y2="750" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1621.83" cy="870" rx="26.4" ry="18.8" transform="rotate(-20 1621.83 870)" fill="#F57C00" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1646.63" y1="870" x2="1646.63" y2="730" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1733.33" cy="850" rx="26.4" ry="18.8" transform="rotate(-20 1733.33 850)" fill="#FFD21F" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1758.13" y1="850" x2="1758.13" y2="710" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1908.83" cy="870" rx="26.4" ry="18.8" transform="rotate(-20 1908.83 870)" fill="#F57C00" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1933.63" y1="870" x2="1933.63" y2="730" stroke="#1A1A1A" stroke-width="4" />
+<line x1="1978.33" y1="890" x2="2062.33" y2="890" stroke="#1A1A1A" stroke-width="3" />
+<ellipse cx="2020.33" cy="890" rx="26.4" ry="18.8" transform="rotate(-20 2020.33 890)" fill="#E5312B" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="2045.13" y1="890" x2="2045.13" y2="750" stroke="#1A1A1A" stroke-width="4" />
+<line x1="2089.83" y1="890" x2="2173.83" y2="890" stroke="#1A1A1A" stroke-width="3" />
+<ellipse cx="2131.83" cy="890" rx="26.4" ry="18.8" transform="rotate(-20 2131.83 890)" fill="#E5312B" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="2131.83" cy="890" rx="16" ry="7.6" transform="rotate(-35 2131.83 890)" fill="#FFFFFF"/>
+<line x1="2156.63" y1="890" x2="2156.63" y2="750" stroke="#1A1A1A" stroke-width="4" />
+<rect x="335.13" y="919" width="87.4" height="46" rx="23" fill="#FFD21F" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="378.83" y="950.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >MI</text>
+<rect x="446.63" y="919" width="87.4" height="46" rx="23" fill="#FFD21F" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="490.33" y="950.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >MI</text>
+<rect x="558.13" y="919" width="87.4" height="46" rx="23" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="601.83" y="950.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >FA</text>
+<rect x="658.13" y="919" width="110.4" height="46" rx="23" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="713.33" y="950.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >SOL</text>
+<rect x="833.63" y="919" width="110.4" height="46" rx="23" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="888.83" y="950.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >SOL</text>
+<rect x="956.63" y="919" width="87.4" height="46" rx="23" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1000.33" y="950.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >FA</text>
+<rect x="1068.13" y="919" width="87.4" height="46" rx="23" fill="#FFD21F" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1111.83" y="950.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >MI</text>
+<rect x="1179.63" y="919" width="87.4" height="46" rx="23" fill="#F57C00" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1223.33" y="950.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >RE</text>
+<rect x="1355.13" y="919" width="87.4" height="46" rx="23" fill="#E5312B" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1398.83" y="950.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#FFFFFF" text-anchor="middle" >DO</text>
+<rect x="1466.63" y="919" width="87.4" height="46" rx="23" fill="#E5312B" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1510.33" y="950.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#FFFFFF" text-anchor="middle" >DO</text>
+<rect x="1578.13" y="919" width="87.4" height="46" rx="23" fill="#F57C00" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1621.83" y="950.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >RE</text>
+<rect x="1689.63" y="919" width="87.4" height="46" rx="23" fill="#FFD21F" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1733.33" y="950.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >MI</text>
+<rect x="1865.13" y="919" width="87.4" height="46" rx="23" fill="#F57C00" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1908.83" y="950.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >RE</text>
+<rect x="1976.63" y="919" width="87.4" height="46" rx="23" fill="#E5312B" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="2020.33" y="950.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#FFFFFF" text-anchor="middle" >DO</text>
+<rect x="2088.13" y="919" width="87.4" height="46" rx="23" fill="#E5312B" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="2131.83" y="950.74" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="23.92" font-weight="700" fill="#FFFFFF" text-anchor="middle" >DO</text>
+<text x="60" y="1032" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24.8" font-weight="700" fill="#8A6A0A" text-anchor="start" >dedo</text>
+<text x="378.83" y="1032" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >3</text>
+<text x="490.33" y="1032" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >3</text>
+<text x="601.83" y="1032" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >4</text>
+<text x="713.33" y="1032" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >5</text>
+<text x="888.83" y="1032" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >5</text>
+<text x="1000.33" y="1032" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >4</text>
+<text x="1111.83" y="1032" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >3</text>
+<text x="1223.33" y="1032" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >2</text>
+<text x="1398.83" y="1032" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >1</text>
+<text x="1510.33" y="1032" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >1</text>
+<text x="1621.83" y="1032" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >2</text>
+<text x="1733.33" y="1032" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >3</text>
+<text x="1908.83" y="1032" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >2</text>
+<text x="2020.33" y="1032" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >1</text>
+<text x="2131.83" y="1032" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="middle" >1</text>
+<rect x="338.93" y="1067" width="79.8" height="42" rx="21" fill="#E5312B" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="378.83" y="1095.98" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="21.84" font-weight="700" fill="#FFFFFF" text-anchor="middle" >DO</text>
+<rect x="838.43" y="1067" width="100.8" height="42" rx="21" fill="#2AA7E8" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="888.83" y="1095.98" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="21.84" font-weight="700" fill="#1A1A1A" text-anchor="middle" >SOL</text>
+<rect x="1358.93" y="1067" width="79.8" height="42" rx="21" fill="#E5312B" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1398.83" y="1095.98" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="21.84" font-weight="700" fill="#FFFFFF" text-anchor="middle" >DO</text>
+<rect x="1868.93" y="1067" width="79.8" height="42" rx="21" fill="#E5312B" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1908.83" y="1095.98" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="21.84" font-weight="700" fill="#FFFFFF" text-anchor="middle" >DO</text>
+<text x="60" y="1094" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24.8" font-weight="700" fill="#5F6368" text-anchor="start" >mano izq. (redonda)</text>
+</svg>

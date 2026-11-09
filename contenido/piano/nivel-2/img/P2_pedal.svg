@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="760" viewBox="0 0 2400 760" role="img" aria-label="El pedal sincopado">
+<title>El pedal sincopado</title>
+<rect width="2400" height="760" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >El pedal sincopado: toco – levanto – bajo</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >El pedal se cambia justo después de tocar el acorde nuevo</text>
+<text x="330" y="300" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#1A1A1A" text-anchor="end" >Manos</text>
+<text x="330" y="520" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#1A1A1A" text-anchor="end" >Pedal</text>
+<rect x="360" y="250" width="480" height="80" rx="12" fill="#FBF1D3" stroke="#C9A227" stroke-width="2.5" />
+<text x="390" y="304" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#1A1A1A" text-anchor="start" >C</text>
+<line x1="360" y1="230" x2="360" y2="600" stroke="#5F6368" stroke-width="2" stroke-dasharray="8 8"/>
+<rect x="840" y="250" width="480" height="80" rx="12" fill="#FBF1D3" stroke="#C9A227" stroke-width="2.5" />
+<text x="870" y="304" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#1A1A1A" text-anchor="start" >F</text>
+<line x1="840" y1="230" x2="840" y2="600" stroke="#5F6368" stroke-width="2" stroke-dasharray="8 8"/>
+<rect x="1320" y="250" width="480" height="80" rx="12" fill="#FBF1D3" stroke="#C9A227" stroke-width="2.5" />
+<text x="1350" y="304" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#1A1A1A" text-anchor="start" >C</text>
+<line x1="1320" y1="230" x2="1320" y2="600" stroke="#5F6368" stroke-width="2" stroke-dasharray="8 8"/>
+<rect x="1800" y="250" width="480" height="80" rx="12" fill="#FBF1D3" stroke="#C9A227" stroke-width="2.5" />
+<text x="1830" y="304" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#1A1A1A" text-anchor="start" >G</text>
+<line x1="1800" y1="230" x2="1800" y2="600" stroke="#5F6368" stroke-width="2" stroke-dasharray="8 8"/>
+<path d="M360 450 L360 520 L870 520 L890 470 L910 520 L1350 520 L1370 470 L1390 520 L1830 520 L1850 470 L1870 520 L2270 520 L2270 450" fill="none" stroke="#1A1A1A" stroke-width="6" stroke-linejoin="round"/>
+<text x="890" y="575" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="26" font-weight="700" fill="#8A6A0A" text-anchor="middle" >levanto y bajo</text>
+<text x="846" y="220" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="26" font-weight="700" fill="#8A6A0A" text-anchor="start" >toco</text>
+<text x="1370" y="575" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="26" font-weight="700" fill="#8A6A0A" text-anchor="middle" >levanto y bajo</text>
+<text x="1326" y="220" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="26" font-weight="700" fill="#8A6A0A" text-anchor="start" >toco</text>
+<text x="1850" y="575" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="26" font-weight="700" fill="#8A6A0A" text-anchor="middle" >levanto y bajo</text>
+<text x="1806" y="220" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="26" font-weight="700" fill="#8A6A0A" text-anchor="start" >toco</text>
+<text x="360" y="575" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="26" font-weight="700" fill="#8A6A0A" text-anchor="start" >bajo</text>
+<text x="1200" y="690" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#5F6368" text-anchor="middle" >Talón en el suelo · la punta del pie sube y baja sin golpear</text>
+</svg>

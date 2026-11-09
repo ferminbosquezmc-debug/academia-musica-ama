@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="900" viewBox="0 0 2400 900" role="img" aria-label="La pentatónica de La menor">
+<title>La pentatónica de La menor</title>
+<rect width="2400" height="900" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >La pentatónica de La menor</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >La escala menor sin el II y el VI grado · cinco notas, cinco dedos</text>
+<rect x="400" y="300" width="200" height="300" rx="6" fill="#C9A227" stroke="#1A1A1A" stroke-width="3" />
+<text x="500" y="579.6" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#1A1A1A" text-anchor="middle" >LA</text>
+<rect x="600" y="300" width="200" height="300" rx="6" fill="#E6E1D6" stroke="#1A1A1A" stroke-width="3" />
+<text x="700" y="579.6" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#1A1A1A" text-anchor="middle" >SI</text>
+<rect x="800" y="300" width="200" height="300" rx="6" fill="#C9A227" stroke="#1A1A1A" stroke-width="3" />
+<text x="900" y="579.6" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#1A1A1A" text-anchor="middle" >DO</text>
+<rect x="1000" y="300" width="200" height="300" rx="6" fill="#C9A227" stroke="#1A1A1A" stroke-width="3" />
+<text x="1100" y="579.6" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#1A1A1A" text-anchor="middle" >RE</text>
+<rect x="1200" y="300" width="200" height="300" rx="6" fill="#C9A227" stroke="#1A1A1A" stroke-width="3" />
+<text x="1300" y="579.6" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#1A1A1A" text-anchor="middle" >MI</text>
+<rect x="1400" y="300" width="200" height="300" rx="6" fill="#E6E1D6" stroke="#1A1A1A" stroke-width="3" />
+<text x="1500" y="579.6" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#1A1A1A" text-anchor="middle" >FA</text>
+<rect x="1600" y="300" width="200" height="300" rx="6" fill="#C9A227" stroke="#1A1A1A" stroke-width="3" />
+<text x="1700" y="579.6" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#1A1A1A" text-anchor="middle" >SOL</text>
+<rect x="1800" y="300" width="200" height="300" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3" />
+<rect x="542" y="300" width="116" height="186" rx="4" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+<rect x="942" y="300" width="116" height="186" rx="4" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+<rect x="1142" y="300" width="116" height="186" rx="4" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+<rect x="1542" y="300" width="116" height="186" rx="4" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+<rect x="1742" y="300" width="116" height="186" rx="4" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+<circle cx="1700" cy="252" r="34" fill="#1A1A1A" stroke="none" stroke-width="0"/>
+<text x="1700" y="265.6" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="39.1" font-weight="700" fill="#C9A227" text-anchor="middle" >5</text>
+<circle cx="1300" cy="252" r="34" fill="#1A1A1A" stroke="none" stroke-width="0"/>
+<text x="1300" y="265.6" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="39.1" font-weight="700" fill="#C9A227" text-anchor="middle" >4</text>
+<circle cx="1100" cy="252" r="34" fill="#1A1A1A" stroke="none" stroke-width="0"/>
+<text x="1100" y="265.6" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="39.1" font-weight="700" fill="#C9A227" text-anchor="middle" >3</text>
+<circle cx="900" cy="252" r="34" fill="#1A1A1A" stroke="none" stroke-width="0"/>
+<text x="900" y="265.6" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="39.1" font-weight="700" fill="#C9A227" text-anchor="middle" >2</text>
+<circle cx="500" cy="252" r="34" fill="#1A1A1A" stroke="none" stroke-width="0"/>
+<text x="500" y="265.6" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="39.1" font-weight="700" fill="#C9A227" text-anchor="middle" >1</text>
+<text x="1200" y="680" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#5F6368" text-anchor="middle" >Dorado = pentatónica · gris = las notas que se quitan (SI y FA)</text>
+<text x="1200" y="760" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="36" font-weight="700" fill="#1A1A1A" text-anchor="middle" >Acompañamiento para improvisar: Am – F – G – Am</text>
+<text x="1200" y="830" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#5F6368" text-anchor="middle" >Empieza y termina en LA · deja silencios · pregunta y respuesta</text>
+</svg>

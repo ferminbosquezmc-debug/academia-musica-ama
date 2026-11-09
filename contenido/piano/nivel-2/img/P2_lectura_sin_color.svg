@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1080" viewBox="0 0 2400 1080" role="img" aria-label="Lectura sin color en posición de SOL">
+<title>Lectura sin color en posición de SOL</title>
+<rect width="2400" height="1080" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >Lectura sin color · posición de SOL</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >Escribe el nombre de cada nota en su casilla y después tócala</text>
+<line x1="120" y1="260" x2="2280" y2="260" stroke="#1A1A1A" stroke-width="3" />
+<line x1="120" y1="292" x2="2280" y2="292" stroke="#1A1A1A" stroke-width="3" />
+<line x1="120" y1="324" x2="2280" y2="324" stroke="#1A1A1A" stroke-width="3" />
+<line x1="120" y1="356" x2="2280" y2="356" stroke="#1A1A1A" stroke-width="3" />
+<line x1="120" y1="388" x2="2280" y2="388" stroke="#1A1A1A" stroke-width="3" />
+<path d="M434 2Q464 -103 464 -170Q464 -223 427.0 -257.0Q390 -291 337 -291Q287 -291 250.0 -261.5Q213 -232 213 -190Q213 -160 233.5 -133.5Q254 -107 283.5 -107.0Q313 -107 331.5 -128.5Q350 -150 350 -178Q350 -240 280 -240Q298 -268 338 -268Q353 -268 368.5 -263.5Q384 -259 401.0 -248.0Q418 -237 428.5 -213.5Q439 -190 439 -157Q439 -136 411 -6Q389 -12 356 -12Q259 -12 189.5 60.0Q120 132 120 232Q120 267 131.5 303.0Q143 339 157.5 366.5Q172 394 200.5 428.5Q229 463 248.5 483.5Q268 504 303 539Q280 621 280 689Q280 779 313.0 839.5Q346 900 379 900Q389 900 401.5 887.0Q414 874 426.0 851.0Q438 828 446.5 790.5Q455 753 455 710Q455 551 342 447L368 329Q384 332 397 332Q458 332 500.0 282.5Q542 233 542 162Q542 44 434 2ZM426 746Q426 801 394 801Q358 801 333.0 748.0Q308 695 308 630Q308 588 321 557Q359 580 392.5 639.5Q426 699 426 746ZM498 128Q498 183 466.0 216.0Q434 249 383 249L428 23Q498 52 498 128ZM407 17 361 247Q334 241 311.5 214.0Q289 187 289 158Q289 143 295.0 128.5Q301 114 309.5 104.0Q318 94 327.0 86.0Q336 78 342.0 74.5Q348 71 348 71L340 66Q307 75 277.5 106.0Q248 137 248 184Q248 231 277.5 270.5Q307 310 343 323L325 430Q168 299 168 177Q168 104 223.0 55.0Q278 6 348 6Q365 6 407 17Z" fill="#1A1A1A" transform="translate(124.8,382.93) scale(0.2,-0.2)"/>
+<text x="257.6" y="321.44" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="73.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<text x="257.6" y="388" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="73.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<line x1="804" y1="260" x2="804" y2="388" stroke="#1A1A1A" stroke-width="3" />
+<line x1="1296" y1="260" x2="1296" y2="388" stroke="#1A1A1A" stroke-width="3" />
+<line x1="1788" y1="260" x2="1788" y2="388" stroke="#1A1A1A" stroke-width="3" />
+<line x1="2280" y1="260" x2="2280" y2="388" stroke="#1A1A1A" stroke-width="3" />
+<ellipse cx="386.41" cy="356" rx="21.12" ry="15.04" transform="rotate(-20 386.41 356)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="406.25" y1="356" x2="406.25" y2="244" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="495.01" cy="340" rx="21.12" ry="15.04" transform="rotate(-20 495.01 340)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="514.85" y1="340" x2="514.85" y2="228" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="603.61" cy="324" rx="21.12" ry="15.04" transform="rotate(-20 603.61 324)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="583.77" y1="324" x2="583.77" y2="436" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="712.21" cy="308" rx="21.12" ry="15.04" transform="rotate(-20 712.21 308)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="692.37" y1="308" x2="692.37" y2="420" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="878.41" cy="292" rx="21.12" ry="15.04" transform="rotate(-20 878.41 292)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="878.41" cy="292" rx="12.8" ry="6.08" transform="rotate(-35 878.41 292)" fill="#FFFFFF"/>
+<line x1="858.57" y1="292" x2="858.57" y2="404" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1095.61" cy="324" rx="21.12" ry="15.04" transform="rotate(-20 1095.61 324)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="1095.61" cy="324" rx="12.8" ry="6.08" transform="rotate(-35 1095.61 324)" fill="#FFFFFF"/>
+<line x1="1075.77" y1="324" x2="1075.77" y2="436" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1370.41" cy="308" rx="21.12" ry="15.04" transform="rotate(-20 1370.41 308)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1350.57" y1="308" x2="1350.57" y2="420" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1479.01" cy="324" rx="21.12" ry="15.04" transform="rotate(-20 1479.01 324)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1459.17" y1="324" x2="1459.17" y2="436" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1587.61" cy="340" rx="21.12" ry="15.04" transform="rotate(-20 1587.61 340)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1607.45" y1="340" x2="1607.45" y2="228" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1696.21" cy="356" rx="21.12" ry="15.04" transform="rotate(-20 1696.21 356)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1716.05" y1="356" x2="1716.05" y2="244" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="2024.4" cy="340" rx="21.12" ry="15.04" transform="rotate(-20 2024.4 340)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="2024.4" cy="340" rx="12.8" ry="6.08" transform="rotate(-35 2024.4 340)" fill="#FFFFFF"/>
+<text x="306.41" y="183.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="19.2" font-weight="700" fill="#8A6A0A" text-anchor="end" >dedo</text>
+<text x="386.41" y="183.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.2" font-weight="700" fill="#8A6A0A" text-anchor="middle" >1</text>
+<text x="495.01" y="183.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.2" font-weight="700" fill="#8A6A0A" text-anchor="middle" >2</text>
+<text x="603.61" y="183.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.2" font-weight="700" fill="#8A6A0A" text-anchor="middle" >3</text>
+<text x="712.21" y="183.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.2" font-weight="700" fill="#8A6A0A" text-anchor="middle" >4</text>
+<text x="878.41" y="183.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.2" font-weight="700" fill="#8A6A0A" text-anchor="middle" >5</text>
+<text x="1095.61" y="183.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.2" font-weight="700" fill="#8A6A0A" text-anchor="middle" >3</text>
+<text x="1370.41" y="183.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.2" font-weight="700" fill="#8A6A0A" text-anchor="middle" >4</text>
+<text x="1479.01" y="183.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.2" font-weight="700" fill="#8A6A0A" text-anchor="middle" >3</text>
+<text x="1587.61" y="183.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.2" font-weight="700" fill="#8A6A0A" text-anchor="middle" >2</text>
+<text x="1696.21" y="183.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.2" font-weight="700" fill="#8A6A0A" text-anchor="middle" >1</text>
+<text x="2024.4" y="183.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.2" font-weight="700" fill="#8A6A0A" text-anchor="middle" >2</text>
+<rect x="346.41" y="439.2" width="80" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="2" />
+<rect x="455.01" y="439.2" width="80" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="2" />
+<rect x="563.61" y="439.2" width="80" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="2" />
+<rect x="672.21" y="439.2" width="80" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="2" />
+<rect x="838.41" y="439.2" width="80" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="2" />
+<rect x="1055.61" y="439.2" width="80" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="2" />
+<rect x="1330.41" y="439.2" width="80" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="2" />
+<rect x="1439.01" y="439.2" width="80" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="2" />
+<rect x="1547.61" y="439.2" width="80" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="2" />
+<rect x="1656.21" y="439.2" width="80" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="2" />
+<rect x="1984.4" y="439.2" width="80" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="2" />
+<line x1="120" y1="680" x2="2280" y2="680" stroke="#1A1A1A" stroke-width="3" />
+<line x1="120" y1="712" x2="2280" y2="712" stroke="#1A1A1A" stroke-width="3" />
+<line x1="120" y1="744" x2="2280" y2="744" stroke="#1A1A1A" stroke-width="3" />
+<line x1="120" y1="776" x2="2280" y2="776" stroke="#1A1A1A" stroke-width="3" />
+<line x1="120" y1="808" x2="2280" y2="808" stroke="#1A1A1A" stroke-width="3" />
+<path d="M434 2Q464 -103 464 -170Q464 -223 427.0 -257.0Q390 -291 337 -291Q287 -291 250.0 -261.5Q213 -232 213 -190Q213 -160 233.5 -133.5Q254 -107 283.5 -107.0Q313 -107 331.5 -128.5Q350 -150 350 -178Q350 -240 280 -240Q298 -268 338 -268Q353 -268 368.5 -263.5Q384 -259 401.0 -248.0Q418 -237 428.5 -213.5Q439 -190 439 -157Q439 -136 411 -6Q389 -12 356 -12Q259 -12 189.5 60.0Q120 132 120 232Q120 267 131.5 303.0Q143 339 157.5 366.5Q172 394 200.5 428.5Q229 463 248.5 483.5Q268 504 303 539Q280 621 280 689Q280 779 313.0 839.5Q346 900 379 900Q389 900 401.5 887.0Q414 874 426.0 851.0Q438 828 446.5 790.5Q455 753 455 710Q455 551 342 447L368 329Q384 332 397 332Q458 332 500.0 282.5Q542 233 542 162Q542 44 434 2ZM426 746Q426 801 394 801Q358 801 333.0 748.0Q308 695 308 630Q308 588 321 557Q359 580 392.5 639.5Q426 699 426 746ZM498 128Q498 183 466.0 216.0Q434 249 383 249L428 23Q498 52 498 128ZM407 17 361 247Q334 241 311.5 214.0Q289 187 289 158Q289 143 295.0 128.5Q301 114 309.5 104.0Q318 94 327.0 86.0Q336 78 342.0 74.5Q348 71 348 71L340 66Q307 75 277.5 106.0Q248 137 248 184Q248 231 277.5 270.5Q307 310 343 323L325 430Q168 299 168 177Q168 104 223.0 55.0Q278 6 348 6Q365 6 407 17Z" fill="#1A1A1A" transform="translate(124.8,802.93) scale(0.2,-0.2)"/>
+<line x1="741.6" y1="680" x2="741.6" y2="808" stroke="#1A1A1A" stroke-width="3" />
+<line x1="1254.4" y1="680" x2="1254.4" y2="808" stroke="#1A1A1A" stroke-width="3" />
+<line x1="1767.2" y1="680" x2="1767.2" y2="808" stroke="#1A1A1A" stroke-width="3" />
+<line x1="2265.6" y1="680" x2="2265.6" y2="808" stroke="#1A1A1A" stroke-width="3" />
+<rect x="2272" y="680" width="8" height="128" rx="0" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<ellipse cx="305.4" cy="744" rx="21.12" ry="15.04" transform="rotate(-20 305.4 744)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="285.56" y1="744" x2="285.56" y2="856" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="419.2" cy="728" rx="21.12" ry="15.04" transform="rotate(-20 419.2 728)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="399.36" y1="728" x2="399.36" y2="840" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="533" cy="712" rx="21.12" ry="15.04" transform="rotate(-20 533 712)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="513.16" y1="712" x2="513.16" y2="824" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="646.8" cy="744" rx="21.12" ry="15.04" transform="rotate(-20 646.8 744)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="626.96" y1="744" x2="626.96" y2="856" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="818.2" cy="728" rx="21.12" ry="15.04" transform="rotate(-20 818.2 728)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="818.2" cy="728" rx="12.8" ry="6.08" transform="rotate(-35 818.2 728)" fill="#FFFFFF"/>
+<line x1="798.36" y1="728" x2="798.36" y2="840" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1045.8" cy="760" rx="21.12" ry="15.04" transform="rotate(-20 1045.8 760)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="1045.8" cy="760" rx="12.8" ry="6.08" transform="rotate(-35 1045.8 760)" fill="#FFFFFF"/>
+<line x1="1065.64" y1="760" x2="1065.64" y2="648" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1331" cy="744" rx="21.12" ry="15.04" transform="rotate(-20 1331 744)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1311.16" y1="744" x2="1311.16" y2="856" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1444.8" cy="760" rx="21.12" ry="15.04" transform="rotate(-20 1444.8 760)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1464.64" y1="760" x2="1464.64" y2="648" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1558.6" cy="776" rx="21.12" ry="15.04" transform="rotate(-20 1558.6 776)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1578.44" y1="776" x2="1578.44" y2="664" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="1672.4" cy="760" rx="21.12" ry="15.04" transform="rotate(-20 1672.4 760)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<line x1="1692.24" y1="760" x2="1692.24" y2="648" stroke="#1A1A1A" stroke-width="4" />
+<ellipse cx="2014" cy="776" rx="21.12" ry="15.04" transform="rotate(-20 2014 776)" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3"/>
+<ellipse cx="2014" cy="776" rx="12.8" ry="6.08" transform="rotate(-35 2014 776)" fill="#FFFFFF"/>
+<text x="225.4" y="603.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="19.2" font-weight="700" fill="#8A6A0A" text-anchor="end" >dedo</text>
+<text x="305.4" y="603.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.2" font-weight="700" fill="#8A6A0A" text-anchor="middle" >3</text>
+<text x="419.2" y="603.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.2" font-weight="700" fill="#8A6A0A" text-anchor="middle" >4</text>
+<text x="533" y="603.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.2" font-weight="700" fill="#8A6A0A" text-anchor="middle" >5</text>
+<text x="646.8" y="603.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.2" font-weight="700" fill="#8A6A0A" text-anchor="middle" >3</text>
+<text x="818.2" y="603.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.2" font-weight="700" fill="#8A6A0A" text-anchor="middle" >4</text>
+<text x="1045.8" y="603.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.2" font-weight="700" fill="#8A6A0A" text-anchor="middle" >2</text>
+<text x="1331" y="603.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.2" font-weight="700" fill="#8A6A0A" text-anchor="middle" >3</text>
+<text x="1444.8" y="603.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.2" font-weight="700" fill="#8A6A0A" text-anchor="middle" >2</text>
+<text x="1558.6" y="603.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.2" font-weight="700" fill="#8A6A0A" text-anchor="middle" >1</text>
+<text x="1672.4" y="603.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.2" font-weight="700" fill="#8A6A0A" text-anchor="middle" >2</text>
+<text x="2014" y="603.2" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.2" font-weight="700" fill="#8A6A0A" text-anchor="middle" >1</text>
+<rect x="265.4" y="859.2" width="80" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="2" />
+<rect x="379.2" y="859.2" width="80" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="2" />
+<rect x="493" y="859.2" width="80" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="2" />
+<rect x="606.8" y="859.2" width="80" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="2" />
+<rect x="778.2" y="859.2" width="80" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="2" />
+<rect x="1005.8" y="859.2" width="80" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="2" />
+<rect x="1291" y="859.2" width="80" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="2" />
+<rect x="1404.8" y="859.2" width="80" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="2" />
+<rect x="1518.6" y="859.2" width="80" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="2" />
+<rect x="1632.4" y="859.2" width="80" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="2" />
+<rect x="1974" y="859.2" width="80" height="56" rx="8" fill="#FFFFFF" stroke="#5F6368" stroke-width="2" />
+</svg>

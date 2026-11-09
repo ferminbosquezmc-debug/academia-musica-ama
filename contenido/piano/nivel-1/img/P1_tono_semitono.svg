@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="780" viewBox="0 0 2400 780" role="img" aria-label="Tono y semitono en el teclado">
+<title>Tono y semitono en el teclado</title>
+<rect width="2400" height="780" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >Tono y semitono en el teclado</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >Entre MI–FA y SI–DO no hay tecla negra en medio: son semitonos</text>
+<rect x="280" y="350" width="230" height="330" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3" />
+<text x="395" y="653.6" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="44" font-weight="700" fill="#5F6368" text-anchor="middle" >DO</text>
+<rect x="510" y="350" width="230" height="330" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3" />
+<text x="625" y="653.6" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="44" font-weight="700" fill="#5F6368" text-anchor="middle" >RE</text>
+<rect x="740" y="350" width="230" height="330" rx="6" fill="#FBF1D3" stroke="#1A1A1A" stroke-width="3" />
+<text x="855" y="653.6" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="44" font-weight="700" fill="#1A1A1A" text-anchor="middle" >MI</text>
+<rect x="970" y="350" width="230" height="330" rx="6" fill="#FBF1D3" stroke="#1A1A1A" stroke-width="3" />
+<text x="1085" y="653.6" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="44" font-weight="700" fill="#1A1A1A" text-anchor="middle" >FA</text>
+<rect x="1200" y="350" width="230" height="330" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3" />
+<text x="1315" y="653.6" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="44" font-weight="700" fill="#5F6368" text-anchor="middle" >SOL</text>
+<rect x="1430" y="350" width="230" height="330" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3" />
+<text x="1545" y="653.6" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="44" font-weight="700" fill="#5F6368" text-anchor="middle" >LA</text>
+<rect x="1660" y="350" width="230" height="330" rx="6" fill="#FBF1D3" stroke="#1A1A1A" stroke-width="3" />
+<text x="1775" y="653.6" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="44" font-weight="700" fill="#1A1A1A" text-anchor="middle" >SI</text>
+<rect x="1890" y="350" width="230" height="330" rx="6" fill="#FBF1D3" stroke="#1A1A1A" stroke-width="3" />
+<text x="2005" y="653.6" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="44" font-weight="700" fill="#1A1A1A" text-anchor="middle" >DO</text>
+<rect x="443.3" y="350" width="133.4" height="204.6" rx="4" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+<rect x="673.3" y="350" width="133.4" height="204.6" rx="4" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+<rect x="1133.3" y="350" width="133.4" height="204.6" rx="4" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+<rect x="1363.3" y="350" width="133.4" height="204.6" rx="4" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+<rect x="1593.3" y="350" width="133.4" height="204.6" rx="4" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+<path d="M415 335 Q510 250 605 335" fill="none" stroke="#5F6368" stroke-width="5" stroke-linecap="round"/>
+<circle cx="510" cy="262" r="30" fill="#5F6368" stroke="none" stroke-width="0"/>
+<text x="510" y="276" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="38" font-weight="700" fill="#FFFFFF" text-anchor="middle" >T</text>
+<path d="M645 335 Q740 250 835 335" fill="none" stroke="#5F6368" stroke-width="5" stroke-linecap="round"/>
+<circle cx="740" cy="262" r="30" fill="#5F6368" stroke="none" stroke-width="0"/>
+<text x="740" y="276" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="38" font-weight="700" fill="#FFFFFF" text-anchor="middle" >T</text>
+<path d="M875 335 Q970 250 1065 335" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round"/>
+<circle cx="970" cy="262" r="30" fill="#C9A227" stroke="none" stroke-width="0"/>
+<text x="970" y="276" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="38" font-weight="700" fill="#FFFFFF" text-anchor="middle" >S</text>
+<path d="M1105 335 Q1200 250 1295 335" fill="none" stroke="#5F6368" stroke-width="5" stroke-linecap="round"/>
+<circle cx="1200" cy="262" r="30" fill="#5F6368" stroke="none" stroke-width="0"/>
+<text x="1200" y="276" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="38" font-weight="700" fill="#FFFFFF" text-anchor="middle" >T</text>
+<path d="M1335 335 Q1430 250 1525 335" fill="none" stroke="#5F6368" stroke-width="5" stroke-linecap="round"/>
+<circle cx="1430" cy="262" r="30" fill="#5F6368" stroke="none" stroke-width="0"/>
+<text x="1430" y="276" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="38" font-weight="700" fill="#FFFFFF" text-anchor="middle" >T</text>
+<path d="M1565 335 Q1660 250 1755 335" fill="none" stroke="#5F6368" stroke-width="5" stroke-linecap="round"/>
+<circle cx="1660" cy="262" r="30" fill="#5F6368" stroke="none" stroke-width="0"/>
+<text x="1660" y="276" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="38" font-weight="700" fill="#FFFFFF" text-anchor="middle" >T</text>
+<path d="M1795 335 Q1890 250 1985 335" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round"/>
+<circle cx="1890" cy="262" r="30" fill="#C9A227" stroke="none" stroke-width="0"/>
+<text x="1890" y="276" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="38" font-weight="700" fill="#FFFFFF" text-anchor="middle" >S</text>
+<text x="1200" y="740" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#5F6368" text-anchor="middle" >S = semitono: la tecla vecina, sin ninguna en medio  ·  T = tono: dos semitonos (hay una tecla negra en medio)</text>
+</svg>
