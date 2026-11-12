@@ -41,7 +41,8 @@ function segHome(){let h=document.getElementById('seg-home');
  if(!h){h=document.createElement('div');h.id='seg-home';const hero=document.querySelector('#v-home .hero');if(!hero)return;hero.after(h)}
  const anyDone=Object.keys(S.done||{}).some(k=>S.done[k]);let x='';
  if(!S.ubic&&!anyDone&&!kid())x+='<div class="card" style="border-color:var(--gold)"><h3>¿Ya tocas o cantas?</h3><p class="mute" style="font-size:15px;margin:4px 0 12px">Haz la prueba de ubicación (unos 10 minutos) y empieza en la clase que te corresponde, sin repetir lo que ya sabes.</p><button class="btn" data-go="ubic">Hacer la prueba de ubicación</button></div>';
- if(ADMS)x+='<button class="m4home athome" data-go="seg"><span class="em" aria-hidden="true">📋</span><span>Seguimiento de estudiantes<small>Avance, actividad y evaluaciones con rúbrica</small></span></button>';
+ if(ADMS)x+='<button class="m4home athome" data-go="seg"><span class="em" aria-hidden="true">📋</span><span>Seguimiento de estudiantes<small>Avance, actividad y evaluaciones con rúbrica</small></span></button>'
+  +'<button class="m4home athome" data-go="guia"><span class="em" aria-hidden="true">📘</span><span>Guía del docente<small>Método ARPA, rúbrica, seguimiento y certificados</small></span></button>';
  h.innerHTML=x}
 
 /* ---- Perfil: dónde se guarda, ubicación y mis evaluaciones ---- */
@@ -125,7 +126,7 @@ function segView(){const v=document.getElementById('v-seg'),back='<button class=
  const L=PROGS.slice().sort((a,b)=>String(b.act).localeCompare(String(a.act)));
  const act=L.filter(p=>dias(p)<=7).length,ina=L.length-act;
  const vis=SEGfil==='inactivos'?L.filter(p=>dias(p)>7):L;
- let h=back+'<h2>Seguimiento de estudiantes</h2><p class="mute">Avance guardado en la nube por cada estudiante. Lo ven la dirección y el equipo docente.</p>'
+ let h=back+'<h2>Seguimiento de estudiantes</h2><p class="mute">Avance guardado en la nube por cada estudiante. Lo ven la dirección y el equipo docente.</p><button class="btn ghost m4mini" data-go="guia" style="margin-top:4px">📘 Guía del docente</button>'
  +'<div class="m4facts"><div><b>'+L.length+'</b><span>Estudiantes con avance en la nube</span></div><div><b>'+act+'</b><span>Activos en los últimos 7 días</span></div><div><b>'+ina+'</b><span>Sin actividad hace más de 7 días</span></div></div>'
  +'<div class="chips" role="group" aria-label="Filtro" style="margin-top:12px"><button class="chip" data-sf="todos" aria-pressed="'+(SEGfil==='todos')+'">Todos</button><button class="chip" data-sf="inactivos" aria-pressed="'+(SEGfil==='inactivos')+'">Solo inactivos</button></div>'
  +'<div class="card"><h3>Comprobar un certificado</h3><div class="row" style="gap:8px;flex-wrap:wrap;margin-top:8px"><input class="fi" id="cm-q" placeholder="ARPA-G1-XXXXXXX" autocomplete="off" style="flex:1;min-width:180px"><button class="btn m4mini" id="cm-go">Comprobar</button></div><div id="cm-res"></div></div>';
