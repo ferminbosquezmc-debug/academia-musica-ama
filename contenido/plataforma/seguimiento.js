@@ -41,7 +41,7 @@ function segHome(){let h=document.getElementById('seg-home');
  if(!h){h=document.createElement('div');h.id='seg-home';const hero=document.querySelector('#v-home .hero');if(!hero)return;hero.after(h)}
  const anyDone=Object.keys(S.done||{}).some(k=>S.done[k]);let x='';
  if(!S.ubic&&!anyDone&&!kid())x+='<div class="card" style="border-color:var(--gold)"><h3>¿Ya tocas o cantas?</h3><p class="mute" style="font-size:15px;margin:4px 0 12px">Haz la prueba de ubicación (unos 10 minutos) y empieza en la clase que te corresponde, sin repetir lo que ya sabes.</p><button class="btn" data-go="ubic">Hacer la prueba de ubicación</button></div>';
- x+=rtMini();if(ADMS)x+='<button class="m4home athome" data-go="seg"><span class="em" aria-hidden="true">📋</span><span>Seguimiento de estudiantes<small>Avance, actividad y evaluaciones con rúbrica</small></span></button>'
+ x+=ruCard()+rtMini();if(ADMS)x+='<button class="m4home athome" data-go="seg"><span class="em" aria-hidden="true">📋</span><span>Seguimiento de estudiantes<small>Avance, actividad y evaluaciones con rúbrica</small></span></button>'
   +'<button class="m4home athome" data-go="guia"><span class="em" aria-hidden="true">📘</span><span>Guía del docente<small>Método ARPA, rúbrica, seguimiento y certificados</small></span></button>';
  h.innerHTML=x}
 
