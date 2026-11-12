@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="900" viewBox="0 0 2400 900" role="img" aria-label="Tres alturas de la baqueta, tres volúmenes">
+<title>Tres alturas de la baqueta, tres volúmenes</title>
+<rect width="2400" height="900" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >Tres alturas, tres volúmenes</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >La baqueta cae y rebota; cuanto más alta, más fuerte</text>
+<rect x="180" y="700" width="560" height="40" rx="10" fill="#F3F1EA" stroke="#2B2F3A" stroke-width="4" />
+<rect x="180" y="740" width="560" height="60" rx="6" fill="#2B2F3A" stroke="#1A1A1A" stroke-width="2" />
+<line x1="240" y1="660" x2="590" y2="620" stroke="#C9A06A" stroke-width="18" stroke-linecap="round"/>
+<circle cx="590" cy="620" r="14" fill="#C9A06A" stroke="#1A1A1A" stroke-width="2"/>
+<path d="M620 620 Q680 655 630 690" fill="none" stroke="#C9A227" stroke-width="5" stroke-dasharray="12 10"/>
+<line x1="720" y1="620" x2="720" y2="700" stroke="#5F6368" stroke-width="3" />
+<text x="730" y="660" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="600" fill="#5F6368" text-anchor="start" >baja · unos 5 cm</text>
+<text x="460" y="860" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="44" font-weight="700" fill="#1A1A1A" text-anchor="middle" >p · suave</text>
+<rect x="640" y="230" width="24" height="40" rx="4" fill="#C9A227" stroke="#1A1A1A" stroke-width="1.5" />
+<rect x="674" y="204" width="24" height="66" rx="4" fill="#D5D9E0" stroke="#1A1A1A" stroke-width="1.5" />
+<rect x="708" y="178" width="24" height="92" rx="4" fill="#D5D9E0" stroke="#1A1A1A" stroke-width="1.5" />
+<rect x="940" y="700" width="560" height="40" rx="10" fill="#F3F1EA" stroke="#2B2F3A" stroke-width="4" />
+<rect x="940" y="740" width="560" height="60" rx="6" fill="#2B2F3A" stroke="#1A1A1A" stroke-width="2" />
+<line x1="1000" y1="660" x2="1350" y2="490" stroke="#C9A06A" stroke-width="18" stroke-linecap="round"/>
+<circle cx="1350" cy="490" r="14" fill="#C9A06A" stroke="#1A1A1A" stroke-width="2"/>
+<path d="M1380 490 Q1440 590 1390 690" fill="none" stroke="#C9A227" stroke-width="5" stroke-dasharray="12 10"/>
+<line x1="1480" y1="490" x2="1480" y2="700" stroke="#5F6368" stroke-width="3" />
+<text x="1490" y="595" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="600" fill="#5F6368" text-anchor="start" >media · unos 15 cm</text>
+<text x="1220" y="860" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="44" font-weight="700" fill="#1A1A1A" text-anchor="middle" >mf · mediano</text>
+<rect x="1400" y="230" width="24" height="40" rx="4" fill="#C9A227" stroke="#1A1A1A" stroke-width="1.5" />
+<rect x="1434" y="204" width="24" height="66" rx="4" fill="#C9A227" stroke="#1A1A1A" stroke-width="1.5" />
+<rect x="1468" y="178" width="24" height="92" rx="4" fill="#D5D9E0" stroke="#1A1A1A" stroke-width="1.5" />
+<rect x="1700" y="700" width="560" height="40" rx="10" fill="#F3F1EA" stroke="#2B2F3A" stroke-width="4" />
+<rect x="1700" y="740" width="560" height="60" rx="6" fill="#2B2F3A" stroke="#1A1A1A" stroke-width="2" />
+<line x1="1760" y1="660" x2="2110" y2="310" stroke="#C9A06A" stroke-width="18" stroke-linecap="round"/>
+<circle cx="2110" cy="310" r="14" fill="#C9A06A" stroke="#1A1A1A" stroke-width="2"/>
+<path d="M2140 310 Q2200 500 2150 690" fill="none" stroke="#C9A227" stroke-width="5" stroke-dasharray="12 10"/>
+<line x1="2240" y1="310" x2="2240" y2="700" stroke="#5F6368" stroke-width="3" />
+<text x="2250" y="505" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="600" fill="#5F6368" text-anchor="start" >alta · unos 30 cm</text>
+<text x="1980" y="860" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="44" font-weight="700" fill="#1A1A1A" text-anchor="middle" >f · fuerte</text>
+<rect x="2160" y="230" width="24" height="40" rx="4" fill="#C9A227" stroke="#1A1A1A" stroke-width="1.5" />
+<rect x="2194" y="204" width="24" height="66" rx="4" fill="#C9A227" stroke="#1A1A1A" stroke-width="1.5" />
+<rect x="2228" y="178" width="24" height="92" rx="4" fill="#C9A227" stroke="#1A1A1A" stroke-width="1.5" />
+</svg>

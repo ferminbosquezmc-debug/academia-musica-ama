@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="900" viewBox="0 0 2400 900" role="img" aria-label="El Himno de la alegría con la batería">
+<title>El Himno de la alegría con la batería</title>
+<rect width="2400" height="900" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >«Himno de la alegría» con la batería</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >8 compases · Ritmo básico #2 a 70 BPM · crash al empezar cada frase</text>
+<rect x="300" y="270" width="460" height="210" rx="18" fill="#FFF3CF" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="330" y="320" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700" fill="#5F6368" text-anchor="start" >Compás 1</text>
+<text x="530" y="395" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="700" fill="#8A6A0A" text-anchor="middle" >crash + bombo en el 1</text>
+<text x="530" y="440" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="500" fill="#1A1A1A" text-anchor="middle" >y Ritmo básico #2</text>
+<rect x="800" y="270" width="460" height="210" rx="18" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="830" y="320" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700" fill="#5F6368" text-anchor="start" >Compás 2</text>
+<text x="1030" y="410" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="middle" >Ritmo básico #2</text>
+<rect x="1300" y="270" width="460" height="210" rx="18" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1330" y="320" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700" fill="#5F6368" text-anchor="start" >Compás 3</text>
+<text x="1530" y="410" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="middle" >Ritmo básico #2</text>
+<rect x="1800" y="270" width="460" height="210" rx="18" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1830" y="320" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700" fill="#5F6368" text-anchor="start" >Compás 4</text>
+<text x="2030" y="410" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="middle" >Ritmo básico #2</text>
+<rect x="300" y="560" width="460" height="210" rx="18" fill="#FFF3CF" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="330" y="610" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700" fill="#5F6368" text-anchor="start" >Compás 5</text>
+<text x="530" y="685" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="700" fill="#8A6A0A" text-anchor="middle" >crash + bombo en el 1</text>
+<text x="530" y="730" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="500" fill="#1A1A1A" text-anchor="middle" >y Ritmo básico #2</text>
+<rect x="800" y="560" width="460" height="210" rx="18" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="830" y="610" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700" fill="#5F6368" text-anchor="start" >Compás 6</text>
+<text x="1030" y="700" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="middle" >Ritmo básico #2</text>
+<rect x="1300" y="560" width="460" height="210" rx="18" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1330" y="610" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700" fill="#5F6368" text-anchor="start" >Compás 7</text>
+<text x="1530" y="700" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="middle" >Ritmo básico #2</text>
+<rect x="1800" y="560" width="460" height="210" rx="18" fill="#FCE1DF" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1830" y="610" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700" fill="#5F6368" text-anchor="start" >Compás 8</text>
+<text x="2030" y="685" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="700" fill="#E5312B" text-anchor="middle" >golpe final en el 3</text>
+<text x="2030" y="730" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="500" fill="#1A1A1A" text-anchor="middle" >crash + bombo y dejo sonar</text>
+<text x="120" y="380" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#1A1A1A" text-anchor="start" >Frase 1</text>
+<text x="120" y="410" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="500" fill="#5F6368" text-anchor="start" >pregunta</text>
+<text x="120" y="670" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#1A1A1A" text-anchor="start" >Frase 2</text>
+<text x="120" y="700" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="500" fill="#5F6368" text-anchor="start" >respuesta</text>
+</svg>

@@ -1,0 +1,645 @@
+<title>Batería AMA · Plan de clases</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: una columna de lectura; tablas y gráficos anchos se desplazan dentro de su caja en el celular */
+:root{
+  --bg:#f4f5f7;--surface:#ffffff;--fg:#17181c;--muted:#5b6070;--line:#dcdfe5;--accent:#9a6a06;--accent-bg:#fbf1dc;
+  --shell:#2b2f3a;--head:#f3f1ea;--metal:#c9a227;--metal-dk:#8a6a0a;
+  --d:#E5312B;--i:#2370D6;--pd:#2E9E4F;--pi:#8E3BB8;
+  --f-display:"Space Grotesk",system-ui,sans-serif;--f-body:Inter,system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111216;--surface:#1a1c21;--fg:#eceef2;--muted:#a0a6b3;--line:#2d3038;--accent:#f2a31b;--accent-bg:#2a2210;--shell:#3a3f4d;--head:#e9e6dc;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#111216;--surface:#1a1c21;--fg:#eceef2;--muted:#a0a6b3;--line:#2d3038;--accent:#f2a31b;--accent-bg:#2a2210;--shell:#3a3f4d;--head:#e9e6dc;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:400 16px/1.6 var(--f-body)}
+.wrap{max-width:980px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 64px;display:grid;gap:30px}
+h1,h2,h3{font-family:var(--f-display);line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:clamp(30px,6vw,46px);font-weight:700}
+h2{font-size:26px;font-weight:700}
+h3{font-size:18px;font-weight:600}
+p{margin:0;max-width:68ch}
+.eyebrow{font:600 12px/1 var(--f-body);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.lead{color:var(--muted);font-size:17px}
+header{display:grid;gap:10px}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.toc a{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;font-size:14px;color:var(--fg);text-decoration:none}
+.toc a:hover{border-color:var(--accent)}
+section{display:grid;gap:14px;scroll-margin-top:16px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:grid;gap:12px;min-width:0}
+.cap{color:var(--muted);font-size:14px}
+ol.principles{margin:0;padding-left:22px;display:grid;gap:8px;max-width:72ch}
+ol.principles b,.theory b{font-weight:600}
+.limbs{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.limb{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--surface)}
+.chip{flex:none;min-width:38px;height:30px;border-radius:999px;display:grid;place-items:center;color:#fff;font:700 13px var(--f-body);padding:0 8px}
+.limb small{display:block;color:var(--muted);font-size:13px;line-height:1.3}
+.retiro{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.retiro div{border-left:3px solid var(--accent);padding:4px 0 4px 12px}
+.retiro b{display:block;font-variant-numeric:tabular-nums}
+.retiro span{color:var(--muted);font-size:14px}
+
+/* Batería digital */
+.kitbox{display:grid;gap:12px}
+.kit{width:100%;height:auto;display:block;touch-action:manipulation;user-select:none;-webkit-user-select:none}
+.pz{cursor:pointer;outline:none;transform-box:fill-box;transform-origin:center;transition:transform .08s}
+.pz.hit{transform:scale(.94)}
+.pz.hit .glow{opacity:.55}
+.pz:focus-visible .ring{stroke:var(--accent);stroke-width:4}
+.glow{opacity:0;transition:opacity .25s;fill:var(--accent)}
+.kit .lbl{fill:var(--fg);font:600 14px var(--f-body);pointer-events:none}
+.kit .key{fill:var(--muted);font:600 12px var(--f-body);pointer-events:none}
+.kit .shell{fill:var(--shell)}
+.kit .head{fill:var(--head);stroke:var(--shell);stroke-width:3}
+.kit .metal{fill:var(--metal);stroke:var(--metal-dk);stroke-width:2}
+.kit .stand{stroke:var(--muted);stroke-width:3}
+.pads{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.pads button{border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:12px;min-height:56px;font:600 14px var(--f-body);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;touch-action:manipulation;cursor:pointer}
+.pads button small{color:var(--muted);font-weight:500;font-size:12px}
+.pads button.hit{border-color:var(--accent);background:var(--accent-bg)}
+@media (max-width:520px){.pads{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.fig{overflow-x:auto}
+.fig svg{display:block;width:100%;min-width:640px;height:auto}
+.fig svg text{fill:var(--fg);font-family:var(--f-body)}
+.fig svg .mut{fill:var(--muted)}
+.fig svg .ln{stroke:var(--fg)}
+.fig svg .hd{fill:var(--fg)}
+.colhl{fill:var(--accent);opacity:0;transition:opacity .08s}
+.colhl.on{opacity:.2}
+.ctl{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.btn{border:0;border-radius:999px;background:var(--accent);color:#fff;font:600 15px var(--f-body);padding:10px 18px;min-height:44px;cursor:pointer}
+:root[data-theme="dark"] .btn{color:#111}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn{color:#111}}
+.btn.ghost{background:none;color:var(--accent);border:1px solid var(--accent)}
+.ctl label{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.ctl input[type=range]{accent-color:var(--accent);width:150px}
+
+/* Escalera de ritmos */
+.rsel{display:grid;gap:10px}
+.rsel .lv{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.rsel .lv b{font:600 12px var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);min-width:64px}
+.rsel button{border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:999px;padding:6px 12px;font:500 14px var(--f-body);cursor:pointer;min-height:36px}
+.rsel button.ad{border-style:dashed}
+.rsel button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff}
+:root[data-theme="dark"] .rsel button[aria-pressed=true]{color:#111}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .rsel button[aria-pressed=true]{color:#111}}
+.rinfo{font-size:15px}.rinfo span{color:var(--muted)}
+.rg-w{overflow-x:auto}
+.rg{display:grid;gap:4px;align-items:center;min-width:0}
+.rg .lb{font-weight:600;font-size:14px;white-space:nowrap;padding-right:8px}
+.rg .hd{text-align:center;font:600 13px var(--f-body);color:var(--muted);font-variant-numeric:tabular-nums}
+.rg .hd.b{color:var(--fg)}
+.rg .c{height:34px;border-radius:8px;background:var(--bg);display:grid;place-items:center}
+.rg .c.beat{box-shadow:inset 2px 0 0 var(--line)}
+.rg .c i{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;color:#fff;font:700 11px var(--f-body);font-style:normal}
+.rg .c i.gh{opacity:.4}
+.rg .c.on{outline:2px solid var(--accent)}
+
+/* Figuras en la caja */
+.cnt{overflow-x:auto}
+.cnt-grid{display:grid;grid-template-columns:150px repeat(16,minmax(26px,1fr)) 44px;gap:4px;min-width:720px;align-items:center}
+.cnt-grid .h{font:600 12px var(--f-body);color:var(--muted);text-align:center;font-variant-numeric:tabular-nums}
+.cnt-grid .h.b{color:var(--fg)}
+.cnt-name{display:flex;align-items:center;gap:8px;font-weight:600;font-size:14px}
+.cnt-name img{width:70px;border-radius:6px;background:#fff}
+.note{height:34px;border-radius:8px;background:var(--i);color:#fff;font:600 12px var(--f-body);display:grid;place-items:center;white-space:nowrap;overflow:hidden}
+.note.on{outline:3px solid var(--accent);outline-offset:1px}
+.playfig{width:40px;height:40px;border-radius:50%;border:1px solid var(--accent);background:none;color:var(--accent);font-size:15px;cursor:pointer}
+
+/* Rudimentos */
+.rud{display:grid;gap:10px}
+.rud-row{display:grid;grid-template-columns:170px 1fr;gap:12px;align-items:center;border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--surface)}
+.rud-row b{display:block}
+.rud-row small{color:var(--accent);font-weight:600;font-variant-numeric:tabular-nums}
+.stk{display:flex;flex-wrap:wrap;gap:4px}
+.stk span{min-width:30px;height:30px;border-radius:6px;display:grid;place-items:center;color:#fff;font:700 13px var(--f-body);padding:0 4px}
+.stk .D{background:var(--d)}.stk .I{background:var(--i)}
+.stk .g{height:22px;min-width:22px;font-size:11px;align-self:center;opacity:.8}
+.stk .acc{box-shadow:inset 0 -4px 0 rgba(0,0,0,.35)}
+.stk .sep{background:none;color:var(--muted);min-width:10px}
+@media (max-width:560px){.rud-row{grid-template-columns:1fr}}
+
+/* Teoría común */
+.theory{display:grid;gap:14px}
+.th-lv{display:grid;gap:10px}
+.th-items{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px}
+.th-item{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--surface);display:grid;gap:4px}
+.th-item .cl{font:600 11px var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-variant-numeric:tabular-nums}
+.th-item p{font-size:14.5px}
+.th-item .bat{color:var(--muted);font-size:13.5px}
+.th-imgs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px}
+.th-imgs img{width:100%;border-radius:10px;background:#fff;border:1px solid var(--line)}
+.tbl-w{overflow-x:auto}
+.mini{border-collapse:collapse;font-size:14px;min-width:560px;width:100%}
+.mini th,.mini td{border:1px solid var(--line);padding:6px 8px;text-align:center;font-variant-numeric:tabular-nums}
+.mini th{color:var(--muted);font-weight:600}
+
+.level-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px}
+.level-head p{color:var(--muted)}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+table.cls{border-collapse:collapse;width:100%;min-width:760px;font-size:14.5px}
+.cls th,.cls td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.cls thead th{font:600 12px var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--bg)}
+.cls td.n{font:700 18px var(--f-display);font-variant-numeric:tabular-nums;width:46px;color:var(--accent)}
+.cls td.t{font-weight:600;width:22%}
+.cls td.th{color:var(--muted);width:22%}
+.cls td.lam{color:var(--muted);font-size:13.5px;width:20%}
+.cls tr.mes td{background:var(--accent-bg);font:600 12px var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);padding:6px 12px}
+.ev{display:inline-block;margin-left:6px;font:600 11px var(--f-body);letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--accent);color:var(--accent);border-radius:999px;padding:1px 7px;vertical-align:2px}
+.steps{display:flex;flex-wrap:wrap;gap:8px}
+.steps span{border:1px solid var(--line);border-radius:8px;padding:6px 10px;background:var(--surface);font-size:14px}
+.ask{border:1px solid var(--accent);background:var(--accent-bg);border-radius:14px;padding:18px;display:grid;gap:10px}
+.ask ol{margin:0;padding-left:22px;display:grid;gap:8px}
+ul.rep{margin:0;padding-left:20px;display:grid;gap:6px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+<header>
+  <span class="eyebrow">Método Integral AMA · Propuesta para revisar</span>
+  <h1>Batería: los tres niveles</h1>
+  <p class="lead">Las 36 clases de batería organizadas con los temas del libro AMA (Batería 1 y Batería 2), de menos a más: de cero conocimiento a un nivel básico sólido.</p>
+  <nav class="toc" aria-label="Secciones">
+    <a href="#bateria-digital">🥁 Batería digital</a><a href="#ritmos">Escalera de ritmos</a><a href="#graficos">Gráficos</a><a href="#teoria">Teoría musical</a><a href="#niveles">Las 36 clases</a><a href="#decidir">Para decidir</a>
+  </nav>
+</header>
+
+<section id="bateria-digital">
+  <h2>La batería digital</h2>
+  <p>Toca cada pieza con el dedo o el mouse, o con las letras del teclado. Así el estudiante conoce las partes de la batería y cómo suena cada una desde la clase 1.</p>
+  <div class="panel kitbox">
+    <svg class="kit" viewBox="0 0 900 470" role="group" aria-label="Batería digital">
+      <!-- soportes -->
+      <g class="stand"><line x1="150" y1="120" x2="150" y2="440"/><line x1="750" y1="120" x2="750" y2="440"/><line x1="90" y1="250" x2="90" y2="440"/></g>
+      <!-- Crash -->
+      <g class="pz" data-p="crash" tabindex="0" role="button" aria-label="Platillo crash, tecla C">
+        <ellipse class="metal ring" cx="150" cy="110" rx="105" ry="30"/><ellipse class="glow" cx="150" cy="110" rx="105" ry="30"/><ellipse cx="150" cy="108" rx="10" ry="4" fill="var(--metal-dk)"/>
+        <text class="lbl" x="150" y="60" text-anchor="middle">Crash</text><text class="key" x="150" y="152" text-anchor="middle">C</text></g>
+      <!-- Ride -->
+      <g class="pz" data-p="ride" tabindex="0" role="button" aria-label="Platillo ride, tecla Y">
+        <ellipse class="metal ring" cx="750" cy="110" rx="120" ry="34"/><ellipse class="glow" cx="750" cy="110" rx="120" ry="34"/><ellipse cx="750" cy="108" rx="18" ry="7" fill="var(--metal-dk)"/>
+        <text class="lbl" x="750" y="56" text-anchor="middle">Ride</text><text class="key" x="750" y="158" text-anchor="middle">Y</text></g>
+      <!-- Hi-hat -->
+      <g class="pz" data-p="hihat" tabindex="0" role="button" aria-label="Hi-hat, tecla H">
+        <ellipse class="metal ring" cx="90" cy="250" rx="70" ry="18"/><ellipse class="metal" cx="90" cy="242" rx="70" ry="18"/><ellipse class="glow" cx="90" cy="246" rx="70" ry="20"/>
+        <text class="lbl" x="90" y="210" text-anchor="middle">Hi-hat</text><text class="key" x="90" y="285" text-anchor="middle">H</text></g>
+      <!-- Tom 1 -->
+      <g class="pz" data-p="tom1" tabindex="0" role="button" aria-label="Tom 1, tecla 1">
+        <rect class="shell" x="335" y="150" width="104" height="60" rx="8"/><ellipse class="head ring" cx="387" cy="150" rx="52" ry="18"/><ellipse class="glow" cx="387" cy="150" rx="52" ry="18"/>
+        <text class="lbl" x="387" y="122" text-anchor="middle">Tom 1</text><text class="key" x="387" y="196" text-anchor="middle" style="fill:#ddd">1</text></g>
+      <!-- Tom 2 -->
+      <g class="pz" data-p="tom2" tabindex="0" role="button" aria-label="Tom 2, tecla 2">
+        <rect class="shell" x="455" y="148" width="116" height="66" rx="8"/><ellipse class="head ring" cx="513" cy="148" rx="58" ry="20"/><ellipse class="glow" cx="513" cy="148" rx="58" ry="20"/>
+        <text class="lbl" x="513" y="118" text-anchor="middle">Tom 2</text><text class="key" x="513" y="198" text-anchor="middle" style="fill:#ddd">2</text></g>
+      <!-- Bombo -->
+      <g class="pz" data-p="bombo" tabindex="0" role="button" aria-label="Bombo, tecla B o barra espaciadora">
+        <circle class="shell" cx="450" cy="330" r="118"/><circle class="head ring" cx="450" cy="330" r="102"/><circle class="glow" cx="450" cy="330" r="102"/>
+        <text x="450" y="322" text-anchor="middle" style="font:700 30px var(--f-display);fill:var(--accent)">AMA</text>
+        <text class="lbl" x="450" y="350" text-anchor="middle" style="fill:#2b2f3a">Bombo</text><text class="key" x="450" y="372" text-anchor="middle" style="fill:#5b6070">B · espacio</text></g>
+      <!-- Redoblante -->
+      <g class="pz" data-p="caja" tabindex="0" role="button" aria-label="Redoblante o tarola, tecla R">
+        <rect class="shell" x="205" y="300" width="130" height="52" rx="8"/><ellipse class="head ring" cx="270" cy="300" rx="65" ry="22"/><ellipse class="glow" cx="270" cy="300" rx="65" ry="22"/>
+        <line x1="205" y1="326" x2="335" y2="326" stroke="var(--metal)" stroke-width="3"/>
+        <text class="lbl" x="270" y="268" text-anchor="middle">Redoblante</text><text class="key" x="270" y="345" text-anchor="middle" style="fill:#ddd">R</text></g>
+      <!-- Tom de piso -->
+      <g class="pz" data-p="piso" tabindex="0" role="button" aria-label="Tom de piso, tecla 3">
+        <rect class="shell" x="600" y="290" width="150" height="130" rx="10"/><ellipse class="head ring" cx="675" cy="290" rx="75" ry="24"/><ellipse class="glow" cx="675" cy="290" rx="75" ry="24"/>
+        <text class="lbl" x="675" y="256" text-anchor="middle">Tom de piso</text><text class="key" x="675" y="370" text-anchor="middle" style="fill:#ddd">3</text></g>
+    </svg>
+    <div class="pads" aria-label="Botones de la batería">
+      <button data-p="bombo">Bombo<small>B · espacio</small></button>
+      <button data-p="caja">Redoblante<small>R</small></button>
+      <button data-p="hihat">Hi-hat<small>H</small></button>
+      <button data-p="tom1">Tom 1<small>1</small></button>
+      <button data-p="tom2">Tom 2<small>2</small></button>
+      <button data-p="piso">Tom de piso<small>3</small></button>
+      <button data-p="ride">Ride<small>Y</small></button>
+      <button data-p="crash">Crash<small>C</small></button>
+    </div>
+    <p class="cap">El redoblante también se llama caja o tarola. Los sonidos se generan en el navegador; el primer toque activa el audio.</p>
+  </div>
+</section>
+
+<section id="graficos">
+  <h2>Gráficos de batería</h2>
+
+  <div class="panel" id="ritmos">
+    <h3>La escalera de ritmos · de menos a más</h3>
+    <p class="cap">Los ritmos básicos del libro (#1 a #7) y 3 ritmos de práctica adicional por nivel (botón punteado). Elige uno y escúchalo completo, o solo el bombo, solo el redoblante o solo el hi-hat. También puedes cambiar el hi-hat por el ride.</p>
+    <div id="drp-todos"></div>
+  </div>
+
+  <div class="panel">
+    <h3>Las figuras en el redoblante · clases 2 y 5</h3>
+    <p class="cap">Cuatro pulsos. Cada bloque azul es un golpe con la mano izquierda; su largo es lo que dura. Toca ▶ para oírlo con el pulso del hi-hat.</p>
+    <div class="cnt"><div class="cnt-grid" id="cnt"></div></div>
+  </div>
+
+  <div class="panel">
+    <h3>La partitura de batería · clase 4</h3>
+    <div class="fig" role="img" aria-label="Leyenda: dónde va cada pieza de la batería en el pentagrama">
+      <svg viewBox="0 0 900 250" xmlns="http://www.w3.org/2000/svg">
+        <g class="ln" stroke-width="2">
+          <line x1="40" y1="80" x2="880" y2="80"/><line x1="40" y1="100" x2="880" y2="100"/><line x1="40" y1="120" x2="880" y2="120"/><line x1="40" y1="140" x2="880" y2="140"/><line x1="40" y1="160" x2="880" y2="160"/>
+          <line x1="122" y1="60" x2="148" y2="60"/>
+        </g>
+        <rect x="58" y="100" width="7" height="40" class="hd"/><rect x="71" y="100" width="7" height="40" class="hd"/>
+        <g class="ln" stroke-width="3" stroke-linecap="round">
+          <path d="M128 54 l12 12 M140 54 l-12 12"/><path d="M213 64 l12 12 M225 64 l-12 12"/><path d="M298 74 l12 12 M310 74 l-12 12"/><path d="M808 164 l12 12 M820 164 l-12 12"/>
+        </g>
+        <g class="hd">
+          <ellipse cx="389" cy="90" rx="9" ry="6.5" transform="rotate(-20 389 90)"/><ellipse cx="474" cy="100" rx="9" ry="6.5" transform="rotate(-20 474 100)"/><ellipse cx="559" cy="110" rx="9" ry="6.5" transform="rotate(-20 559 110)"/><ellipse cx="644" cy="130" rx="9" ry="6.5" transform="rotate(-20 644 130)"/><ellipse cx="729" cy="150" rx="9" ry="6.5" transform="rotate(-20 729 150)"/>
+        </g>
+        <g font-size="14" font-weight="600" text-anchor="middle">
+          <text x="134" y="212">Crash</text><text x="219" y="212">Hi-hat</text><text x="304" y="212">Ride</text><text x="389" y="212">Tom 1</text><text x="474" y="212">Tom 2</text><text x="559" y="212">Redoblante</text><text x="644" y="212">Tom de piso</text><text x="729" y="212">Bombo</text><text x="814" y="212">Hi-hat (pie)</text>
+        </g>
+        <g font-size="12" text-anchor="middle" class="mut">
+          <text x="134" y="232">X · línea extra</text><text x="219" y="232">X · sobre el pent.</text><text x="304" y="232">X · 5.ª línea</text><text x="389" y="232">4.º espacio</text><text x="474" y="232">4.ª línea</text><text x="559" y="232">3.er espacio</text><text x="644" y="232">2.º espacio</text><text x="729" y="232">1.er espacio</text><text x="814" y="232">X · debajo</text>
+        </g>
+        <text x="66" y="30" font-size="13" class="mut">Clave de percusión: cabeza normal = tambor · cabeza en X = platillo</text>
+      </svg>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>Los rudimentos, uno por etapa</h3>
+    <p class="cap">Rojo = mano derecha, azul = mano izquierda. Las notas pequeñas son de adorno; la raya inferior marca el acento.</p>
+    <div class="rud" id="rud"></div>
+  </div>
+</section>
+
+<section id="teoria">
+  <h2>La teoría musical, igual que en guitarra y piano</h2>
+  <p>El baterista aprende la misma teoría que sus compañeros: así lee, entiende las canciones y toca en banda. Abajo de cada tema dice para qué le sirve en la batería.</p>
+  <div class="theory" id="theory"></div>
+</section>
+
+<section>
+  <h2>Cómo aprende el estudiante</h2>
+  <div class="panel">
+    <ol class="principles">
+      <li><b>Del cuerpo a la batería y de la batería al papel.</b> Primero dice y aplaude el ritmo con las sílabas AMA (ta, ti-ti…), después lo toca en el redoblante o en el pad, al final lo lee y lo escribe.</li>
+      <li><b>Un paso nuevo por clase.</b> Lo demás es repaso aplicado.</li>
+      <li><b>Por capas.</b> Manos solas, después mano y pie, al final las cuatro extremidades.</li>
+      <li><b>Lento y con metrónomo.</b> Todo empieza a 60 BPM y sube de 5 en 5 cuando sale limpio tres veces seguidas.</li>
+      <li><b>Música desde el primer día.</b> Cada clase termina acompañando una canción: las mismas de guitarra y piano, para que las tres carreras toquen juntas.</li>
+      <li><b>Los rudimentos son las escalas del baterista.</b> Uno por etapa, del golpe sencillo al redoble de 5 golpes.</li>
+    </ol>
+  </div>
+  <h3>Los colores AMA en la batería</h3>
+  <p>En guitarra y piano el color es de la nota. En batería el color dice <b>con qué extremidad</b> se toca:</p>
+  <div class="limbs">
+    <div class="limb"><span class="chip" style="background:var(--d)">D</span><div>Mano derecha<small>hi-hat, ride, crash</small></div></div>
+    <div class="limb"><span class="chip" style="background:var(--i)">I</span><div>Mano izquierda<small>redoblante</small></div></div>
+    <div class="limb"><span class="chip" style="background:var(--pd)">PD</span><div>Pie derecho<small>bombo</small></div></div>
+    <div class="limb"><span class="chip" style="background:var(--pi)">PI</span><div>Pie izquierdo<small>hi-hat con el pie</small></div></div>
+  </div>
+  <div class="retiro">
+    <div><b>Clases 1–12</b><span>Color completo</span></div>
+    <div><b>Clases 13–24</b><span>Color, con fragmentos 🖤 sin color</span></div>
+    <div><b>Clases 25–32</b><span>Solo las letras D, I, PD y PI</span></div>
+    <div><b>Clases 33–36</b><span>Partitura de batería convencional</span></div>
+  </div>
+</section>
+
+<section id="niveles"></section>
+
+<section>
+  <h2>Repertorio</h2>
+  <div class="panel">
+    <p>Las mismas canciones de guitarra y piano, para que las tres carreras toquen juntas.</p>
+    <ul class="rep">
+      <li><b>Nivel 1:</b> «Himno de la alegría» (Beethoven) · «Cuando los santos marchan» · «Estrellita» · «Sublime gracia» en 3/4.</li>
+      <li><b>Nivel 2:</b> «Paso a paso» (composición AMA) · «Noche de paz» · «Cascabeles» · «Sublime gracia» en 6/8.</li>
+      <li><b>Nivel 3:</b> pistas AMA de estilos (latino, funk, reggae) · el «Minueto en Sol» con acompañamiento · repertorio de banda.</li>
+    </ul>
+  </div>
+  <h3>Cada clase, por dentro</h3>
+  <div class="steps"><span>Mes y objetivo</span><span>📖 Aprendo</span><span>👀 Observo (láminas)</span><span>🥁 Practico</span><span>🎵 Interpreto</span><span>✏️ Escribo</span><span>🏠 Mi tarea</span><span>✅ ¿Lo logré?</span><span>3 preguntas de repaso</span></div>
+  <p class="cap">En la plataforma cada clase tendrá el lector de texto, el metrónomo, la batería digital y el botón para escuchar cada ritmo.</p>
+</section>
+
+<div class="ask" id="decidir">
+  <h2>Por confirmar</h2>
+  <ol>
+    <li><b>Ritmos básicos del libro:</b> numeré los ritmos #1 a #7 con una progresión AMA (un cambio por ritmo). Si el libro trae otros patrones con esos números, mándame esas páginas y los ajusto.</li>
+    <li><b>Ritmo básico #5:</b> el índice no lo muestra; lo puse al comienzo del Nivel 2 (hi-hat abierto).</li>
+    <li><b>Nivel 3:</b> el PDF no lo trae; lo desarrollé con la misma progresión. Si existe el libro Batería 3, mándamelo.</li>
+    <li><b>Teoría:</b> alteraciones, notas enarmónicas, claves y 12 tonalidades (Batería 1) pasan al Nivel 2, para que las clases 1 a 12 sigan iguales a guitarra y piano.</li>
+  </ol>
+</div>
+</div>
+
+<style>
+/* AMA · Batería: reproductor de ritmos y batería digital (usa los colores de la página si existen) */
+#ritmos{--gold:var(--accent)}
+.drp,.drk{display:grid;gap:10px;margin-top:12px;color:inherit}
+.drp-sel{display:grid;gap:8px}
+.drp-lv{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.drp-lv b{font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.7;min-width:62px}
+.drp button,.drk-pads button{border:1px solid var(--line,#cfd3da);background:transparent;color:inherit;border-radius:999px;padding:6px 12px;font:inherit;font-size:14px;cursor:pointer;min-height:38px}
+.drp-sel button.ad{border-style:dashed}
+.drp button[aria-pressed=true]{background:var(--gold,#9a6a06);border-color:var(--gold,#9a6a06);color:#111;font-weight:600}
+.drp-info{font-size:15px}.drp-info span{opacity:.7}
+.drp-gw{overflow-x:auto}
+.drp-g{display:grid;gap:4px;align-items:center}
+.drp-l{font-weight:600;font-size:13px;white-space:nowrap;padding-right:6px}
+.drp-h{text-align:center;font-size:12px;font-weight:600;opacity:.6;font-variant-numeric:tabular-nums}
+.drp-h.b{opacity:1}
+.drp-c{height:32px;border-radius:8px;background:rgba(127,127,127,.12);display:grid;place-items:center}
+.drp-c.beat{box-shadow:inset 2px 0 0 rgba(127,127,127,.35)}
+.drp-c i{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;color:#fff;font:700 11px sans-serif;font-style:normal}
+.drp-c i.gh{opacity:.45}
+.drp-c.off i,.drp-l.off{opacity:.25}
+.drp-c.on{outline:2px solid var(--gold,#9a6a06)}
+.drp-ctl,.drp-mix{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.drp-mix span{font-size:14px;opacity:.75;min-width:70px}
+.drp-go{font-weight:600}
+.drp-ctl label{display:flex;align-items:center;gap:8px;font-size:14px;font-variant-numeric:tabular-nums}
+.drp-bpm{accent-color:var(--gold,#9a6a06);width:150px}
+.drp-cap{font-size:13px;opacity:.7;margin:0}
+.drk-svg{width:100%;height:auto;display:block;touch-action:manipulation;user-select:none;-webkit-user-select:none;max-width:640px;margin:0 auto}
+.drk-t{fill:currentColor;font:600 14px sans-serif;pointer-events:none}
+.drk-pz{cursor:pointer;outline:none;transform-box:fill-box;transform-origin:center;transition:transform .08s}
+.drk-pz.hit{transform:scale(.94)}
+.drk-pz:focus-visible{outline:2px solid var(--gold,#9a6a06)}
+.drk-pads{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.drk-pads button{border-radius:12px;min-height:54px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;touch-action:manipulation}
+.drk-pads button small{opacity:.65;font-size:12px}
+.drk-pads button.hit{border-color:var(--gold,#9a6a06);background:rgba(242,163,27,.15)}
+@media (max-width:520px){.drk-pads{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (prefers-reduced-motion:reduce){.drk-pz{transition:none}}
+</style>
+<script>
+/* ===== AMA · Batería: sonidos, ritmos de práctica, reproductor y batería digital =====
+   Se usa igual en la plataforma y en la página del plan.
+   · DRP.player('b1,marcha')  → reproductor de uno o varios ritmos ('todos' = los 17 por nivel)
+   · DRP.kit()                → batería digital de 8 piezas
+   · DRP.mount(raíz)          → dibuja los reproductores que haya dentro de la raíz
+   · DRP.stop()               → detiene lo que esté sonando */
+const DRP=(()=>{
+let ac=null,M=null,NZ=null;
+function ctx(){if(!ac){ac=new (window.AudioContext||window.webkitAudioContext)();M=ac.createGain();M.gain.value=.8;const c=ac.createDynamicsCompressor();M.connect(c).connect(ac.destination);
+  NZ=ac.createBuffer(1,ac.sampleRate,ac.sampleRate);const d=NZ.getChannelData(0);for(let i=0;i<d.length;i++)d[i]=Math.random()*2-1}
+ if(ac.state==='suspended')ac.resume();return ac}
+function env(t,p,dec){const g=ac.createGain();g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(p,t+.003);g.gain.exponentialRampToValueAtTime(.0001,t+dec);g.connect(M);return g}
+function noise(t,dec,p,type,f,q){const s=ac.createBufferSource();s.buffer=NZ;const b=ac.createBiquadFilter();b.type=type;b.frequency.value=f;if(q)b.Q.value=q;s.connect(b).connect(env(t,p,dec));s.start(t);s.stop(t+dec+.05)}
+function tone(t,f0,f1,dec,p,type){const o=ac.createOscillator();o.type=type||'sine';o.frequency.setValueAtTime(f0,t);o.frequency.exponentialRampToValueAtTime(f1,t+dec*.6);o.connect(env(t,p,dec));o.start(t);o.stop(t+dec+.05)}
+function metal(t,dec,p,hp,mult){const out=env(t,p,dec),h=ac.createBiquadFilter();h.type='highpass';h.frequency.value=hp;const b=ac.createBiquadFilter();b.type='bandpass';b.frequency.value=hp*1.3;b.Q.value=.6;h.connect(b).connect(out);
+  [205.3,304.4,369.6,522.7,540,800].forEach(f=>{const o=ac.createOscillator();o.type='square';o.frequency.value=f*mult;o.connect(h);o.start(t);o.stop(t+dec+.05)})}
+const SND={
+ bombo:t=>{tone(t,150,48,.45,1);noise(t,.02,.25,'lowpass',2500)},
+ caja:t=>{tone(t,190,160,.12,.5,'triangle');noise(t,.22,.7,'highpass',1200)},
+ ghost:t=>{tone(t,190,160,.08,.1,'triangle');noise(t,.12,.12,'highpass',1500)},
+ rim:t=>{tone(t,1700,1500,.05,.35,'triangle');noise(t,.04,.3,'bandpass',2200,2)},
+ hihat:t=>{metal(t,.07,.35,7000,1.2)},
+ hhopen:t=>{metal(t,.45,.3,6500,1.2)},
+ hhpie:t=>{metal(t,.05,.22,6000,1.1)},
+ ride:t=>{metal(t,1.2,.17,5200,1.6);tone(t,2600,2550,.5,.04)},
+ crash:t=>{metal(t,1.9,.22,4000,1.35);noise(t,1.6,.28,'highpass',5000)},
+ tom1:t=>{tone(t,240,170,.4,.8);noise(t,.04,.12,'bandpass',900,1)},
+ tom2:t=>{tone(t,185,128,.5,.8);noise(t,.04,.12,'bandpass',700,1)},
+ piso:t=>{tone(t,120,82,.7,.9);noise(t,.05,.12,'bandpass',500,1)}};
+function hit(p,t){ctx();SND[p](t===undefined?ac.currentTime:t)}
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+/* pieza: nombre, extremidad, color, grupo (b bombo · r redoblante · p platillo · f pie) */
+const PZ={hihat:['Hi-hat','D','#E5312B','p'],hhopen:['Hi-hat abierto','D','#E5312B','p'],ride:['Ride','D','#E5312B','p'],caja:['Redoblante','I','#2370D6','r'],ghost:['Redoblante suave','I','#2370D6','r'],rim:['Aro (cross-stick)','I','#2370D6','r'],bombo:['Bombo','PD','#2E9E4F','b'],hhpie:['Hi-hat con el pie','PI','#8E3BB8','f']};
+const CNT={2:['1','2'],3:['1','2','3'],4:['1','2','3','4'],6:['1','2','3','4','5','6'],8:['1','y','2','y','3','y','4','y'],12:['1','·','·','2','·','·','3','·','·','4','·','·'],16:['1','e','y','a','2','e','y','a','3','e','y','a','4','e','y','a']};
+const BEAT={2:1,3:1,4:1,6:3,8:2,12:3,16:4};
+/* [id, nivel, nombre, compás, pasos por compás, clase, adicional, filas, compases, tempo] */
+const RY=[
+ ['b1',1,'Ritmo básico #1','4/4 · negras',4,'Clase 5',0,{hihat:[0,1,2,3],caja:[1,3],bombo:[0,2]},1,80],
+ ['marcha',1,'Marcha','2/4',2,'Clase 6',1,{caja:[1],bombo:[0]},2,100],
+ ['vals',1,'Vals','3/4',3,'Clase 6',1,{hihat:[1,2],bombo:[0]},2,100],
+ ['b2',1,'Ritmo básico #2','4/4 · rock en corcheas',8,'Clase 8',0,{hihat:[0,1,2,3,4,5,6,7],caja:[2,6],bombo:[0,4]},1,80],
+ ['b3',1,'Ritmo básico #3','4/4',8,'Clase 9',0,{hihat:[0,1,2,3,4,5,6,7],caja:[2,6],bombo:[0,4,5]},1,80],
+ ['balada',1,'Balada','4/4 lenta',4,'Clase 10',1,{hihat:[0,1,2,3],caja:[2],bombo:[0]},1,65],
+ ['b4',1,'Ritmo básico #4','4/4',8,'Clase 11',0,{hihat:[0,1,2,3,4,5,6,7],caja:[2,6],bombo:[0,3,4,5]},1,80],
+ ['b5',2,'Ritmo básico #5','4/4 · hi-hat abierto',8,'Clase 13',0,{hihat:[0,1,2,3,4,5,6],hhopen:[7],caja:[2,6],bombo:[0,4]},1,85],
+ ['disco',2,'Disco / pop','4/4',8,'Clase 13',1,{hihat:[0,2,4,6],hhopen:[1,3,5,7],caja:[2,6],bombo:[0,2,4,6]},1,110],
+ ['b6',2,'Ritmo básico #6','12/8 · hi-hat en tresillos',12,'Clase 15',0,{hihat:[0,1,2,3,4,5,6,7,8,9,10,11],caja:[3,9],bombo:[0,6]},1,60],
+ ['b68',2,'Balada en 6/8','6/8',6,'Clase 15',1,{hihat:[0,1,2,3,4,5],caja:[3],bombo:[0]},2,60],
+ ['b7',2,'Ritmo básico #7','4/4 · hi-hat en semicorcheas',16,'Clase 17',0,{hihat:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],caja:[4,12],bombo:[0,8]},1,70],
+ ['shuffle',2,'Shuffle','4/4 con tresillos',12,'Clase 21',1,{hihat:[0,2,3,5,6,8,9,11],caja:[3,9],bombo:[0,6]},1,90],
+ ['cumbia',3,'Cumbia','4/4 · corcheas',8,'Clase 26',1,{hhopen:[1,3,5,7],rim:[2,6],bombo:[0,4]},1,95],
+ ['bossa',3,'Bossa nova','4/4 · 2 compases',8,'Clase 26',1,{hihat:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],rim:[0,3,6,10,13],bombo:[0,3,4,7]},2,120],
+ ['reggae',3,'Reggae (one drop)','4/4',8,'Clase 29',1,{hihat:[0,1,2,3,4,5,6,7],rim:[4],bombo:[4]},1,75],
+ ['funk',3,'Funk','4/4 · semicorcheas',16,'Clase 30',1,{hihat:[0,2,4,6,8,10,12,14],caja:[4,12],ghost:[7,9,14],bombo:[0,3,10]},1,90]];
+const byId=id=>RY.find(r=>r[0]===id);
+/* filas efectivas: cada pieza con sus golpes en todo el patrón; con «ride» el hi-hat pasa al ride */
+function lines(r,ride){const n=r[4],cols=n*(r[8]||1),out={};
+  Object.keys(r[7]).forEach(p=>{const a=r[7][p],abs=Math.max(...a)>=n,k=ride&&(p==='hihat'||p==='hhopen')?'ride':p;
+    out[k]=out[k]||new Array(cols).fill(0);for(let c=0;c<cols;c++)if(abs?a.includes(c):a.includes(c%n))out[k][c]=1});
+  const order=['ride','hihat','hhopen','caja','ghost','rim','bombo','hhpie'];return order.filter(k=>out[k]).map(k=>[k,out[k]])}
+const audible=(p,mode)=>mode==='all'||PZ[p][3]===mode;
+const st={on:false,el:null,step:0,next:0,timer:null};
+function stop(){st.on=false;clearInterval(st.timer);if(st.el){st.el.querySelectorAll('.drp-c.on').forEach(c=>c.classList.remove('on'));const b=st.el.querySelector('.drp-go');if(b){b.textContent='▶ Escuchar';b.setAttribute('aria-pressed','false')}}st.el=null}
+function sched(){const el=st.el;if(!el||!el.isConnected)return stop();const r=byId(el.dataset.cur),n=r[4],cols=n*(r[8]||1),L=lines(r,el.dataset.pl==='1'),mode=el.dataset.mix,dur=60/+el.querySelector('.drp-bpm').value/BEAT[n];
+  while(st.next<ac.currentTime+.12){const s=st.step%cols,t=st.next;
+    L.forEach(([p,a])=>{if(a[s]&&audible(p,mode))SND[p](t)});
+    const d=Math.max(0,(t-ac.currentTime)*1000);setTimeout(()=>{if(st.el!==el)return;el.querySelectorAll('.drp-c').forEach(c=>c.classList.toggle('on',+c.dataset.k===s))},d);
+    st.step++;st.next+=dur}}
+function play(el){if(st.on&&st.el===el)return stop();stop();ctx();st.on=true;st.el=el;st.step=0;st.next=ac.currentTime+.08;st.timer=setInterval(sched,25);sched();const b=el.querySelector('.drp-go');b.textContent='⏹ Detener';b.setAttribute('aria-pressed','true')}
+function draw(el){const r=byId(el.dataset.cur);if(!r)return;const n=r[4],bars=r[8]||1,cols=n*bars,ride=el.dataset.pl==='1',mode=el.dataset.mix,L=lines(r,ride);
+  el.querySelector('.drp-info').innerHTML='<b>'+esc(r[2])+'</b> <span>· '+esc(r[3])+' · '+esc(r[5])+(r[6]?' · ritmo de práctica adicional':' · ritmo básico')+'</span>';
+  const g=el.querySelector('.drp-g');g.style.gridTemplateColumns='118px repeat('+cols+',minmax(26px,1fr))';g.style.minWidth=(118+cols*30)+'px';
+  let h='<div></div>';for(let b=0;b<bars;b++)CNT[n].forEach((c,i)=>{h+='<div class="drp-h'+(i%BEAT[n]===0?' b':'')+'">'+c+'</div>'});
+  L.forEach(([p,a])=>{const z=PZ[p],dim=audible(p,mode)?'':' off';h+='<div class="drp-l'+dim+'">'+z[0]+'</div>';
+    for(let k=0;k<cols;k++)h+='<div class="drp-c'+(k%BEAT[n]===0?' beat':'')+dim+'" data-k="'+k+'">'+(a[k]?'<i class="'+(p==='ghost'?'gh':'')+'" style="background:'+z[2]+'">'+z[1]+'</i>':'')+'</div>'});
+  g.innerHTML=h;
+  el.querySelectorAll('[data-r]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.r===r[0])));
+  el.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));
+  el.querySelectorAll('[data-ride]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.ride===el.dataset.pl)));
+  const pl=el.querySelector('[data-mode="p"]');if(pl)pl.textContent=ride?'Solo ride':'Solo hi-hat';
+  const bp=el.querySelector('.drp-bpm');if(!el.dataset.bpmset){bp.value=r[9];el.querySelector('.drp-bv').textContent=r[9]}}
+function player(ids){const all=ids==='todos',list=all?RY.map(r=>r[0]):String(ids).split(',').map(s=>s.trim()).filter(byId);if(!list.length)return '';
+  let sel='';
+  if(all)sel='<div class="drp-sel">'+[1,2,3].map(lv=>'<div class="drp-lv"><b>Nivel '+lv+'</b>'+RY.filter(r=>r[1]===lv).map(r=>'<button data-r="'+r[0]+'" class="'+(r[6]?'ad':'')+'">'+esc(r[2])+'</button>').join('')+'</div>').join('')+'</div>';
+  else if(list.length>1)sel='<div class="drp-sel"><div class="drp-lv">'+list.map(id=>'<button data-r="'+id+'" class="'+(byId(id)[6]?'ad':'')+'">'+esc(byId(id)[2])+'</button>').join('')+'</div></div>';
+  return '<div class="drp" data-cur="'+list[0]+'" data-mix="all" data-pl="0">'+sel
+   +'<div class="drp-info"></div><div class="drp-gw"><div class="drp-g"></div></div>'
+   +'<div class="drp-ctl"><button class="drp-go" aria-pressed="false">▶ Escuchar</button><label>Tempo <input type="range" class="drp-bpm" min="50" max="160" step="5" value="80" aria-label="Tempo en BPM"> <b class="drp-bv">80</b> BPM</label></div>'
+   +'<div class="drp-mix" role="group" aria-label="Qué escuchar"><span>Escuchar:</span><button data-mode="all">Todo</button><button data-mode="b">Solo bombo</button><button data-mode="r">Solo redoblante</button><button data-mode="p">Solo hi-hat</button></div>'
+   +'<div class="drp-mix" role="group" aria-label="Platillo"><span>Platillo:</span><button data-ride="0">Hi-hat</button><button data-ride="1">Ride</button></div>'
+   +'<p class="drp-cap">Rojo = mano derecha · azul = mano izquierda · verde = pie derecho · morado = pie izquierdo. Con «Solo» escuchas una parte; las demás quedan en gris para que las cuentes.</p></div>'}
+function mount(root){(root||document).querySelectorAll('.drp').forEach(draw)}
+/* ---- Batería digital ---- */
+const KIT=[['crash','Crash','C'],['ride','Ride','Y'],['hihat','Hi-hat','H'],['tom1','Tom 1','1'],['tom2','Tom 2','2'],['bombo','Bombo','B · espacio'],['caja','Redoblante','R'],['piso','Tom de piso','3']];
+function kit(){const SH='#3a3f4d',HD='#ece8dd',MT='#c9a227',MD='#8a6a0a',ST='#9aa0a6';
+  const g=(p,lbl,inner)=>'<g class="drk-pz" data-kp="'+p+'" tabindex="0" role="button" aria-label="'+lbl+'">'+inner+'</g>';
+  const svg='<svg class="drk-svg" viewBox="0 0 900 470" role="group" aria-label="Batería digital">'
+   +'<g stroke="'+ST+'" stroke-width="3"><line x1="150" y1="120" x2="150" y2="440"/><line x1="750" y1="120" x2="750" y2="440"/><line x1="90" y1="250" x2="90" y2="440"/><line x1="270" y1="350" x2="270" y2="440"/></g>'
+   +g('crash','Platillo crash, tecla C','<ellipse cx="150" cy="110" rx="105" ry="30" fill="'+MT+'" stroke="'+MD+'" stroke-width="2"/><text x="150" y="62" text-anchor="middle" class="drk-t">Crash</text>')
+   +g('ride','Platillo ride, tecla Y','<ellipse cx="750" cy="110" rx="120" ry="34" fill="'+MT+'" stroke="'+MD+'" stroke-width="2"/><ellipse cx="750" cy="108" rx="18" ry="7" fill="'+MD+'"/><text x="750" y="58" text-anchor="middle" class="drk-t">Ride</text>')
+   +g('hihat','Hi-hat, tecla H','<ellipse cx="90" cy="252" rx="70" ry="17" fill="'+MT+'" stroke="'+MD+'" stroke-width="2"/><ellipse cx="90" cy="242" rx="70" ry="17" fill="'+MT+'" stroke="'+MD+'" stroke-width="2"/><text x="90" y="212" text-anchor="middle" class="drk-t">Hi-hat</text>')
+   +g('tom1','Tom 1, tecla 1','<rect x="335" y="150" width="104" height="60" rx="8" fill="'+SH+'"/><ellipse cx="387" cy="150" rx="52" ry="18" fill="'+HD+'" stroke="'+SH+'" stroke-width="3"/><text x="387" y="122" text-anchor="middle" class="drk-t">Tom 1</text>')
+   +g('tom2','Tom 2, tecla 2','<rect x="455" y="148" width="116" height="66" rx="8" fill="'+SH+'"/><ellipse cx="513" cy="148" rx="58" ry="20" fill="'+HD+'" stroke="'+SH+'" stroke-width="3"/><text x="513" y="118" text-anchor="middle" class="drk-t">Tom 2</text>')
+   +g('bombo','Bombo, tecla B o barra espaciadora','<circle cx="450" cy="330" r="118" fill="'+SH+'"/><circle cx="450" cy="330" r="102" fill="'+HD+'"/><text x="450" y="325" text-anchor="middle" style="font:700 30px sans-serif;fill:#a8740a">AMA</text><text x="450" y="355" text-anchor="middle" style="font:600 15px sans-serif;fill:#2b2f3a">Bombo</text>')
+   +g('caja','Redoblante, tecla R','<rect x="205" y="300" width="130" height="52" rx="8" fill="'+SH+'"/><ellipse cx="270" cy="300" rx="65" ry="22" fill="'+HD+'" stroke="'+SH+'" stroke-width="3"/><line x1="205" y1="326" x2="335" y2="326" stroke="'+MT+'" stroke-width="3"/><text x="270" y="268" text-anchor="middle" class="drk-t">Redoblante</text>')
+   +g('piso','Tom de piso, tecla 3','<rect x="600" y="290" width="150" height="130" rx="10" fill="'+SH+'"/><ellipse cx="675" cy="290" rx="75" ry="24" fill="'+HD+'" stroke="'+SH+'" stroke-width="3"/><text x="675" y="256" text-anchor="middle" class="drk-t">Tom de piso</text>')
+   +'</svg>';
+  return '<div class="drk">'+svg+'<div class="drk-pads">'+KIT.map(k=>'<button data-kp="'+k[0]+'">'+k[1]+'<small>'+k[2]+'</small></button>').join('')+'</div><p class="drp-cap">Toca cada pieza con el dedo, el mouse o las letras del teclado. El redoblante también se llama caja o tarola.</p></div>'}
+function flash(p){document.querySelectorAll('[data-kp="'+p+'"]').forEach(e=>{e.classList.add('hit');setTimeout(()=>e.classList.remove('hit'),120)})}
+/* ---- eventos (delegados: sirven para lo que se dibuje después) ---- */
+document.addEventListener('pointerdown',e=>{const k=e.target.closest&&e.target.closest('[data-kp]');if(!k)return;e.preventDefault();hit(k.dataset.kp);flash(k.dataset.kp)});
+document.addEventListener('click',e=>{const t=e.target;if(!t.closest)return;const el=t.closest('.drp');if(!el)return;let b;
+  if(b=t.closest('.drp-go'))return play(el);
+  if(b=t.closest('[data-r]')){if(st.el===el)stop();el.dataset.cur=b.dataset.r;delete el.dataset.bpmset;return draw(el)}
+  if(b=t.closest('[data-mode]')){el.dataset.mix=b.dataset.mode;return draw(el)}
+  if(b=t.closest('[data-ride]')){el.dataset.pl=b.dataset.ride;return draw(el)}});
+document.addEventListener('input',e=>{const t=e.target;if(!t.classList||!t.classList.contains('drp-bpm'))return;const el=t.closest('.drp');el.dataset.bpmset='1';el.querySelector('.drp-bv').textContent=t.value});
+const KEYS={b:'bombo',' ':'bombo',r:'caja',h:'hihat','1':'tom1','2':'tom2','3':'piso',y:'ride',c:'crash'};
+document.addEventListener('keydown',e=>{const t=e.target;
+  if(t&&t.closest&&t.closest('[data-kp]')&&(e.key==='Enter'||e.key===' ')){e.preventDefault();hit(t.closest('[data-kp]').dataset.kp);flash(t.closest('[data-kp]').dataset.kp);return}
+  if(e.repeat||e.ctrlKey||e.metaKey||e.altKey)return;if(t&&(/^(INPUT|TEXTAREA|SELECT|BUTTON)$/.test(t.tagName)||t.isContentEditable))return;
+  const vis=[...document.querySelectorAll('.drk')].some(k=>k.offsetParent!==null);if(!vis)return;const p=KEYS[e.key.toLowerCase()];if(p){e.preventDefault();hit(p);flash(p)}});
+return {player,kit,mount,stop,hit,RY};
+})();
+</script>
+<script>
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* ===== Sonidos de la batería (Web Audio, sintetizados) ===== */
+let AC=null,NOISE=null,MASTER=null;
+function ac(){if(!AC){AC=new (window.AudioContext||window.webkitAudioContext)();MASTER=AC.createGain();MASTER.gain.value=.8;
+  const comp=AC.createDynamicsCompressor();MASTER.connect(comp).connect(AC.destination);
+  NOISE=AC.createBuffer(1,AC.sampleRate,AC.sampleRate);const d=NOISE.getChannelData(0);for(let i=0;i<d.length;i++)d[i]=Math.random()*2-1}
+ if(AC.state==='suspended')AC.resume();return AC}
+function env(t,peak,dec){const g=AC.createGain();g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(peak,t+0.003);g.gain.exponentialRampToValueAtTime(0.0001,t+dec);g.connect(MASTER);return g}
+function noise(t,dec,peak,type,freq,q){const s=AC.createBufferSource();s.buffer=NOISE;const f=AC.createBiquadFilter();f.type=type;f.frequency.value=freq;if(q)f.Q.value=q;s.connect(f).connect(env(t,peak,dec));s.start(t);s.stop(t+dec+.05)}
+function tone(t,f0,f1,dec,peak,type){const o=AC.createOscillator();o.type=type||'sine';o.frequency.setValueAtTime(f0,t);o.frequency.exponentialRampToValueAtTime(f1,t+dec*.6);o.connect(env(t,peak,dec));o.start(t);o.stop(t+dec+.05)}
+function metal(t,dec,peak,hp,mult){const out=env(t,peak,dec),h=AC.createBiquadFilter();h.type='highpass';h.frequency.value=hp;const b=AC.createBiquadFilter();b.type='bandpass';b.frequency.value=hp*1.3;b.Q.value=.6;h.connect(b).connect(out);
+  [205.3,304.4,369.6,522.7,540,800].forEach(f=>{const o=AC.createOscillator();o.type='square';o.frequency.value=f*mult;o.connect(h);o.start(t);o.stop(t+dec+.05)})}
+const SND={
+ bombo:t=>{tone(t,150,48,.45,1,'sine');noise(t,.02,.25,'lowpass',2500)},
+ caja:t=>{tone(t,190,160,.12,.5,'triangle');noise(t,.22,.7,'highpass',1200)},
+ hihat:t=>{metal(t,.07,.35,7000,1.2)},
+ tom1:t=>{tone(t,240,170,.4,.8,'sine');noise(t,.04,.12,'bandpass',900,1)},
+ tom2:t=>{tone(t,185,128,.5,.8,'sine');noise(t,.04,.12,'bandpass',700,1)},
+ piso:t=>{tone(t,120,82,.7,.9,'sine');noise(t,.05,.12,'bandpass',500,1)},
+ ride:t=>{metal(t,1.4,.18,5200,1.6);tone(t,2600,2550,.6,.04,'sine')},
+ crash:t=>{metal(t,1.9,.22,4000,1.35);noise(t,1.6,.28,'highpass',5000)}
+};
+function flash(p){document.querySelectorAll('[data-p="'+p+'"]').forEach(el=>{el.classList.add('hit');setTimeout(()=>el.classList.remove('hit'),120)})}
+function hit(p,when){ac();SND[p](when||AC.currentTime);if(!when)flash(p)}
+document.querySelectorAll('[data-p]').forEach(el=>{
+  el.addEventListener('pointerdown',e=>{e.preventDefault();hit(el.dataset.p)});
+  el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();e.stopPropagation();hit(el.dataset.p)}});
+});
+const KEYS={b:'bombo',' ':'bombo',r:'caja',h:'hihat','1':'tom1','2':'tom2','3':'piso',y:'ride',c:'crash'};
+document.addEventListener('keydown',e=>{if(e.repeat||e.ctrlKey||e.metaKey||e.altKey)return;const t=e.target;if(t&&(t.tagName==='INPUT'||t.closest('[data-p]')))return;const p=KEYS[e.key.toLowerCase()];if(p){e.preventDefault();hit(p)}});
+
+/* ===== Escalera de ritmos (reproductor compartido con la plataforma) ===== */
+document.getElementById("drp-todos").innerHTML=DRP.player("todos");DRP.mount(document);
+/* ===== Figuras en el redoblante ===== */
+const FG=[['redonda','Redonda',1,'taa-aa-aa-aa'],['blanca','Blanca',2,'taa-aa'],['negra','Negra',4,'ta'],['corchea','Corchea',8,'ti'],['semicorchea','Semicorchea',16,'ti-ri']];
+let g='<div></div>';for(let i=0;i<16;i++)g+='<div class="h'+(i%4===0?' b':'')+'">'+(i%4===0?(i/4+1):['','e','y','a'][i%4])+'</div>';g+='<div></div>';
+FG.forEach((f,r)=>{g+='<div class="cnt-name"><img src="img/fig_'+f[0]+'.svg" alt="'+f[1]+' y su silencio">'+f[1]+'</div>';const span=16/f[2];
+  for(let k=0;k<f[2];k++){const syl=f[2]===16?(k%2?'ri':'ti'):f[2]===8?'ti':f[3];g+='<div class="note" data-r="'+r+'" data-k="'+k+'" style="grid-column:span '+span+'">'+esc(syl)+'</div>'}
+  g+='<button class="playfig" data-f="'+r+'" aria-label="Escuchar '+f[1]+'">▶</button>'});
+$('#cnt').innerHTML=g;
+let FT=[];
+document.querySelectorAll('.playfig').forEach(b=>b.addEventListener('click',()=>{ac();FT.forEach(clearTimeout);FT=[];document.querySelectorAll('.note.on').forEach(n=>n.classList.remove('on'));
+  const r=+b.dataset.f,n=FG[r][2],t0=AC.currentTime+.1;for(let k=0;k<4;k++)hit('hihat',t0+k);
+  for(let k=0;k<n;k++){const t=t0+k*4/n;hit('caja',t);const el=document.querySelector('.note[data-r="'+r+'"][data-k="'+k+'"]');FT.push(setTimeout(()=>{document.querySelectorAll('.note.on').forEach(x=>x.classList.remove('on'));el.classList.add('on')},(t-AC.currentTime)*1000))}
+  FT.push(setTimeout(()=>document.querySelectorAll('.note.on').forEach(x=>x.classList.remove('on')),4300))}));
+
+/* ===== Rudimentos ===== */
+const RU=[['Golpes alternos','Clase 7','D I D I D I D I'],['Redoble abierto','Clase 10','D D I I D D I I'],['Redobles alternados en tresillos','Clase 14','D I D | I D I'],['Redoble en semicorcheas','Clase 16','D I D I | D I D I'],['Redoble cerrado (fusas)','Clase 23','D D I I D D I I | D D I I D D I I'],['Paradiddle','Clase 25','D I D D | I D I I'],['Flam','Clase 27','i D^ | d I^'],['Drag','Clase 27','ii D^ | dd I^'],['Redoble de 5 golpes','Clase 28','D D I I D^ | I I D D I^']];
+$('#rud').innerHTML=RU.map(r=>'<div class="rud-row"><div><small>'+r[1]+'</small><b>'+r[0]+'</b></div><div class="stk">'+r[2].split(' ').map(t=>{if(t==='|')return '<span class="sep">|</span>';
+  if(/^[id]+$/.test(t))return t.split('').map(c=>'<span class="g '+c.toUpperCase()+'">'+c.toUpperCase()+'</span>').join('');
+  const a=t.endsWith('^'),l=t.replace('^','');return '<span class="'+l+(a?' acc':'')+'">'+l+'</span>'}).join('')+'</div></div>').join('');
+
+/* ===== Teoría común ===== */
+const TH=[
+ ['Nivel 1',[
+  ['1','Las 7 notas, el cifrado y los 8 grados','DO RE MI FA SOL LA SI = C D E F G A B. El grado 1 y el grado 8 son la misma nota, grave y aguda.','Entiende de qué hablan sus compañeros y cómo empieza y termina una escala.'],
+  ['1','Melodía, armonía y ritmo','Notas una después de otra · notas al mismo tiempo · sonidos largos y cortos sobre el pulso.','El ritmo es su elemento principal; escucha la melodía para acompañarla.'],
+  ['2','Pulso, tiempo y figuras','El pulso es el latido regular; las figuras se miden en tiempos: redonda 4, blanca 2, negra 1, corchea ½, semicorchea ¼.','Es la base de todo lo que toca.'],
+  ['3','Cualidades del sonido','Altura, intensidad, timbre y duración.','Toms agudos y graves, golpe fuerte o suave, centro o borde, platillo largo o ahogado.'],
+  ['4','Pentagrama y clave','Cinco líneas y cuatro espacios; la clave dice cómo leerlas.','La clave de percusión: cada pieza tiene su lugar.'],
+  ['5–6','Tempo, compás y silencios','BPM, metrónomo, compases de 4/4, 3/4 y 2/4; cada figura tiene su silencio.','Cuenta los compases y sabe cuándo no tocar.'],
+  ['7','La corchea','Dos sonidos por pulso: «1 y 2 y».','El hi-hat del ritmo rock.'],
+  ['9–11','Acorde, tono y semitono, escala mayor','Acorde mayor y menor; T T S T T T S.','Afina los toms escalonados y elige la energía según el carácter de la canción.'],
+  ['12','Cifrado de una canción','Las letras de los acordes y la forma: intro, estrofa, coro, final.','Lee el mapa de la canción para saber dónde poner los rellenos.']]],
+ ['Nivel 2 · libro Batería 2',[
+  ['13','Líneas adicionales y signo de medida','Notas fuera del pentagrama y la fracción del compás (4/4, 3/4, 6/8).','Lee el crash en la línea adicional y los compases de 12/8.'],
+  ['14','El tresillo','Tres figuras en el lugar de dos; se pronuncia tri-o-la.','Redobles alternados en tresillos y el Ritmo básico #6.'],
+  ['16','Alteraciones','Sostenido ♯, bemol ♭ y becuadro ♮.','Lee las partituras de banda.'],
+  ['17','La ligadura','Une dos figuras: suenan como una sola más larga.','Deja sonar el crash a través del compás.'],
+  ['18','Notas enarmónicas','Dos nombres para el mismo sonido (DO♯ = RE♭).','Entiende el cifrado que usan sus compañeros.'],
+  ['20','Las claves y las 12 tonalidades','Clave de sol, de fa y de percusión; las 12 tonalidades mayores.','Sabe en qué tono está la canción que acompaña.'],
+  ['21','El puntillo','El puntillo suma la mitad del valor.','La corchea con puntillo da el shuffle.'],
+  ['22','Solfeo','Leer el ritmo y las notas con la voz.','Canta el ritmo antes de tocarlo.'],
+  ['23','La escala mayor en 3 pasos','Tono, tono, semitono… construida desde cualquier nota.','Afina los toms escalonados y entiende las tonalidades.']]],
+ ['Nivel 3',[
+  ['25','Escala menor y armadura','La menor relativa y la armadura de la tonalidad.','Lee la partitura completa de la banda.'],
+  ['27','Legato, staccato y articulaciones','Ligadura de expresión, notas cortas y largas.','Notas fantasma y acentos en el redoblante.'],
+  ['29','Funciones y cadencias','Tensión (dominante) y reposo (tónica).','Prepara el final de una frase con el relleno.'],
+  ['30','Contratiempo y síncopa','Acentos fuera del pulso.','Reggae, funk y dembow.'],
+  ['31','Transportar','La misma música en otra tonalidad o tempo.','Half-time y double-time.'],
+  ['32','Pentatónica e improvisación','Crear dentro de reglas claras.','Su primer solo de 8 compases.']]]];
+let th='';TH.forEach((L,i)=>{th+='<div class="th-lv"><h3>'+L[0]+'</h3>';
+  if(i===0)th+='<div class="th-imgs"><img src="img/G1_grados.svg" alt="Los 8 grados de la escala de DO en el pentagrama" loading="lazy"><img src="img/AMA_elementos.svg" alt="Melodía, armonía y ritmo" loading="lazy"></div>';
+  th+='<div class="th-items">'+L[1].map(x=>'<div class="th-item"><span class="cl">Clase '+x[0]+'</span><b>'+esc(x[1])+'</b><p>'+esc(x[2])+'</p><p class="bat">🥁 '+esc(x[3])+'</p></div>').join('')+'</div>';
+  if(i===0)th+='<div class="tbl-w"><table class="mini"><tr><th>Figura</th><th>Redonda</th><th>Blanca</th><th>Negra</th><th>Corchea</th><th>Semicorchea</th><th>Fusa</th><th>Semifusa</th></tr><tr><th>Dura</th><td>4</td><td>2</td><td>1</td><td>½</td><td>¼</td><td>⅛</td><td>1/16</td></tr><tr><th>Se dice</th><td>taa-aa-aa-aa</td><td>taa-aa</td><td>ta</td><td>ti</td><td>ti-ri</td><td colspan="2">referencia</td></tr></table></div>';
+  th+='</div>'});
+$('#theory').innerHTML=th;
+
+/* ===== Las 36 clases ===== */
+const N=[
+ {n:'Nivel 1 · Iniciación · libro Batería 1',s:'Clases 1–12 · meses 1 a 3',d:'Las manos, el bombo, la lectura y los ritmos básicos #1 a #4.',c:[
+  [1,1,'¡Bienvenidos a la música!','Notas, cifrado, 8 grados, elementos de la música','Elementos de la batería: los tambores y los platillos · los tres sonidos básicos','Tambores y platillos · Los tres sonidos'],
+  [1,2,'Conozco mi batería','Pulso y tiempo · duración y pronunciación de las figuras','Las 10 partes · postura · técnica de las baquetas I: el agarre · D, I, PD y PI','Partes · Postura · Agarre · Extremidades'],
+  [1,3,'El sonido de la batería','Cualidades del sonido · la octava','Técnica de las baquetas II: golpe completo con rebote y tres alturas · elementos para practicar','Alturas de la baqueta · Del agudo al grave'],
+  [1,4,'La escritura de la batería','Pentagrama y claves · figuras y silencios en el pentagrama','Nomenclatura en el pentagrama · técnicas para el bombo · lectura en negras · Taller #1','Partitura · Técnica del bombo · Lectura',1],
+  [2,5,'Compases y pulsos','Compás, tempo, metrónomo','Figuras en el redoblante · Ritmo básico #1 (hi-hat en negras)','Figuras en el redoblante · Ritmo #1'],
+  [2,6,'El silencio también es música','Silencios · relación de figuras y silencios · 2/4 y 3/4','Ejercicio de coordinación I · ritmos adicionales: marcha y vals','Silencios · Coordinación I · Marcha · Vals'],
+  [2,7,'Corcheas','La corchea','Golpes alternos (rudimento 1) · hi-hat en corcheas','Corcheas · Golpes alternos'],
+  [2,8,'Mi primer ritmo de rock','Repaso','Ritmo básico #2 (rock en corcheas) · «Himno de la alegría» · Taller #2','Ritmo #2 · El Himno',1],
+  [3,9,'Juntos al mismo tiempo','Acorde · mayor y menor','Ejercicio de coordinación II · Ritmo básico #3','Coordinación II · Ritmo #3'],
+  [3,10,'El redoble abierto','Distancia entre las notas: tono y semitono','Redoble abierto (rudimento 2) · ritmo adicional: balada · Taller #3','Redoble abierto · Balada'],
+  [3,11,'Recorro los toms','La escala mayor','Recorrido por los toms · primer relleno · Ritmo básico #4','Recorrido · Relleno · Ritmo #4'],
+  [3,12,'Mis primeras canciones','Repaso · cifrado de canción','Nomenclatura (repaso) · mapa de la canción · dos canciones · Taller #4 y taller final','Mapa de la canción · Mis ritmos del Nivel 1',2]]},
+ {n:'Nivel 2 · Desarrollo · libro Batería 2',s:'Clases 13–24 · meses 4 a 6',d:'Tresillos, semicorcheas, fills y ritmos básicos #5 a #7.',c:[
+  [4,13,'El grip y el hi-hat abierto','Líneas y espacios adicionales · signo de medida','Grip y ejercicios · hi-hat abierto (o) y cerrado (+) · Ritmo básico #5 · ritmo adicional: disco / pop','Grip · Hi-hat abierto · Ritmo #5 · Disco'],
+  [4,14,'El tresillo','El tresillo y su pronunciación (tri-o-la)','Redobles alternados en tresillos','Tresillos'],
+  [4,15,'Hi-hat y tresillo','Lectura con tresillos','Ritmo básico #6 (12/8) · ritmo adicional: balada en 6/8','Ritmo #6 · Balada 6/8'],
+  [4,16,'Redobles en semicorcheas','Alteraciones (♯ ♭ ♮)','Redobles en semicorcheas (1 e y a) · Taller #1','Semicorcheas',1],
+  [5,17,'Ritmo básico #7','La ligadura','Ritmo básico #7 (hi-hat en semicorcheas) · patrones básicos de rock','Ritmo #7 · Patrones de rock'],
+  [5,18,'Desplazamientos','Notas enarmónicas · notación musical','Desplazamiento del hi-hat con el bombo (A) y con el redoblante (B)','Desplazamientos A y B'],
+  [5,19,'Fills (rellenos)','Resumen de lectura','Fills de 1, 2 y 4 tiempos en corcheas, tresillos y semicorcheas','Fills'],
+  [5,20,'Afinación de la batería','Las claves · las 12 tonalidades','Afinación en estrella y toms escalonados · lectura de ritmos','Afinación en estrella',1],
+  [6,21,'El puntillo','El puntillo y sus ejercicios','Lectura con redoble en tresillos y puntillo · ritmo adicional: shuffle','Puntillo · Shuffle'],
+  [6,22,'Estudio del bombo','Solfeo: lectura con la voz','Estudio y ejercicios del bombo (dos golpes seguidos, bombo en semicorcheas)','Ejercicios de bombo'],
+  [6,23,'Redobles en semicorcheas y fusas','La escala mayor en 3 pasos','Redoble cerrado en fusas · repertorio · Taller #2','Redoble cerrado'],
+  [6,24,'Canciones completas','Repaso','Tres canciones con ritmos, fills y dinámica · taller final','Mis ritmos del Nivel 2',2]]},
+ {n:'Nivel 3 · Consolidación · desarrollo AMA',s:'Clases 25–36 · meses 7 a 9',d:'Independencia, estilos y escenario.',c:[
+  [7,25,'Independencia','Escala menor · relativas · armadura','Ostinato fijo mientras la mano izquierda lee · paradiddle','Ostinato · Paradiddle'],
+  [7,26,'Ritmos latinos','Intervalos','La clave 3-2 y 2-3 · ritmos adicionales: cumbia y bossa nova','Clave · Cumbia · Bossa'],
+  [7,27,'Notas fantasma','Legato, staccato, articulaciones','Ghost notes y acentos · flam y drag','Ghost notes · Flam · Drag'],
+  [7,28,'Rellenos avanzados','Séptima de dominante · inversiones','Rellenos por los toms con tresillos y semicorcheas · redoble de 5 golpes','Rellenos avanzados',1],
+  [8,29,'Contratiempo y síncopa','Contratiempo y síncopa','Ritmo adicional: reggae (one drop) · ska y dembow','Reggae · Ska · Dembow'],
+  [8,30,'El funk','Funciones y cadencias','Ritmo adicional: funk (semicorcheas, ghost notes, bombo sincopado)','Funk'],
+  [8,31,'Mitad y doble tiempo','Transportar','Half-time y double-time','Half-time y double-time'],
+  [8,32,'Mi primer solo','Pentatónica e improvisación','Solo de 8 compases · «cuatro y cuatro» con el profesor','Solo de 8 compases',1],
+  [9,33,'Leo una partitura completa','Lectura independiente','Chart de batería: repeticiones, casillas, D.C., avisos de sección','Chart de batería'],
+  [9,34,'Tocamos juntos','Repaso','Con el bajo, con click o pista, señales del director · acompañar la voz','La batería en la banda'],
+  [9,35,'Ensayo general','Repaso','Montaje del kit · memoria por secciones · nervios · cuidado del oído','Montaje del kit · Memorizar'],
+  [9,36,'¡Presentación final!','Repaso','Concierto: rudimentos, tres estilos, una canción con banda y el solo','Resumen de los tres niveles',2]]}];
+let h='<h2>Las 36 clases</h2>';
+N.forEach(L=>{
+  h+='<div class="level-head"><h3>'+esc(L.n)+'</h3><p>'+esc(L.s)+' · '+esc(L.d)+'</p></div><div class="tw"><table class="cls"><thead><tr><th>Clase</th><th>Título</th><th>Teoría común</th><th>En la batería (paso nuevo)</th><th>Láminas</th></tr></thead><tbody>';
+  let mes=0;
+  L.c.forEach(r=>{
+    if(r[0]!==mes){mes=r[0];h+='<tr class="mes"><td colspan="5">Mes '+mes+'</td></tr>'}
+    const ev=r[6]===1?'<span class="ev">Evaluación mes '+mes+'</span>':r[6]===2?'<span class="ev">Evaluación final</span>':'';
+    h+='<tr><td class="n">'+r[1]+'</td><td class="t">'+esc(r[2])+ev+'</td><td class="th">'+esc(r[3])+'</td><td>'+esc(r[4])+'</td><td class="lam">'+esc(r[5])+'</td></tr>';
+  });
+  h+='</tbody></table></div>';
+});
+$('#niveles').innerHTML=h;
+</script>

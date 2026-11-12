@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1520" viewBox="0 0 2400 1520" role="img" aria-label="Mis ritmos del Nivel 1">
+<title>Mis ritmos del Nivel 1</title>
+<rect width="2400" height="1520" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >Mis ritmos del Nivel 1</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >Los ritmos básicos #1 a #4, los ritmos adicionales y los dos rudimentos</text>
+<text x="60" y="220" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="start" >Ritmo básico #1</text>
+<rect x="284" y="236" width="202" height="232.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<rect x="494" y="236" width="202" height="232.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<rect x="704" y="236" width="202" height="232.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<rect x="914" y="236" width="202" height="232.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<text x="385" y="264.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >1</text>
+<text x="595" y="264.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >2</text>
+<text x="805" y="264.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >3</text>
+<text x="1015" y="264.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<text x="60" y="314.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" >Hi-hat</text>
+<line x1="280" y1="304.4" x2="1120" y2="304.4" stroke="#D5D9E0" stroke-width="2" />
+<circle cx="385" cy="304.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="385" y="312.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="595" cy="304.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="595" y="312.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="805" cy="304.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="805" y="312.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="1015" cy="304.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1015" y="312.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<text x="60" y="376.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" >Redoblante</text>
+<line x1="280" y1="366.4" x2="1120" y2="366.4" stroke="#D5D9E0" stroke-width="2" />
+<circle cx="595" cy="366.4" r="22.32" fill="#2370D6" stroke="#1A1A1A" stroke-width="2"/>
+<text x="595" y="374.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >I</text>
+<circle cx="1015" cy="366.4" r="22.32" fill="#2370D6" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1015" y="374.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >I</text>
+<text x="60" y="438.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" >Bombo</text>
+<line x1="280" y1="428.4" x2="1120" y2="428.4" stroke="#D5D9E0" stroke-width="2" />
+<circle cx="385" cy="428.4" r="22.32" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="2"/>
+<text x="385" y="436.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >PD</text>
+<circle cx="805" cy="428.4" r="22.32" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="2"/>
+<text x="805" y="436.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >PD</text>
+<text x="60" y="550" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="start" >Ritmo básico #2</text>
+<rect x="284" y="566" width="97" height="232.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<rect x="494" y="566" width="97" height="232.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<rect x="704" y="566" width="97" height="232.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<rect x="914" y="566" width="97" height="232.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<text x="332.5" y="594.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >1</text>
+<text x="437.5" y="594.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#5F6368" text-anchor="middle" >y</text>
+<text x="542.5" y="594.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >2</text>
+<text x="647.5" y="594.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#5F6368" text-anchor="middle" >y</text>
+<text x="752.5" y="594.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >3</text>
+<text x="857.5" y="594.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#5F6368" text-anchor="middle" >y</text>
+<text x="962.5" y="594.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<text x="1067.5" y="594.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#5F6368" text-anchor="middle" >y</text>
+<text x="60" y="644.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" >Hi-hat</text>
+<line x1="280" y1="634.4" x2="1120" y2="634.4" stroke="#D5D9E0" stroke-width="2" />
+<circle cx="332.5" cy="634.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="332.5" y="642.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="437.5" cy="634.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="437.5" y="642.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="542.5" cy="634.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="542.5" y="642.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="647.5" cy="634.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="647.5" y="642.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="752.5" cy="634.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="752.5" y="642.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="857.5" cy="634.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="857.5" y="642.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="962.5" cy="634.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="962.5" y="642.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="1067.5" cy="634.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1067.5" y="642.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<text x="60" y="706.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" >Redoblante</text>
+<line x1="280" y1="696.4" x2="1120" y2="696.4" stroke="#D5D9E0" stroke-width="2" />
+<circle cx="542.5" cy="696.4" r="22.32" fill="#2370D6" stroke="#1A1A1A" stroke-width="2"/>
+<text x="542.5" y="704.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >I</text>
+<circle cx="962.5" cy="696.4" r="22.32" fill="#2370D6" stroke="#1A1A1A" stroke-width="2"/>
+<text x="962.5" y="704.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >I</text>
+<text x="60" y="768.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" >Bombo</text>
+<line x1="280" y1="758.4" x2="1120" y2="758.4" stroke="#D5D9E0" stroke-width="2" />
+<circle cx="332.5" cy="758.4" r="22.32" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="2"/>
+<text x="332.5" y="766.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >PD</text>
+<circle cx="752.5" cy="758.4" r="22.32" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="2"/>
+<text x="752.5" y="766.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >PD</text>
+<text x="60" y="880" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="start" >Ritmo básico #3</text>
+<rect x="284" y="896" width="97" height="232.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<rect x="494" y="896" width="97" height="232.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<rect x="704" y="896" width="97" height="232.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<rect x="914" y="896" width="97" height="232.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<text x="332.5" y="924.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >1</text>
+<text x="437.5" y="924.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#5F6368" text-anchor="middle" >y</text>
+<text x="542.5" y="924.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >2</text>
+<text x="647.5" y="924.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#5F6368" text-anchor="middle" >y</text>
+<text x="752.5" y="924.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >3</text>
+<text x="857.5" y="924.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#5F6368" text-anchor="middle" >y</text>
+<text x="962.5" y="924.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<text x="1067.5" y="924.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#5F6368" text-anchor="middle" >y</text>
+<text x="60" y="974.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" >Hi-hat</text>
+<line x1="280" y1="964.4" x2="1120" y2="964.4" stroke="#D5D9E0" stroke-width="2" />
+<circle cx="332.5" cy="964.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="332.5" y="972.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="437.5" cy="964.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="437.5" y="972.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="542.5" cy="964.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="542.5" y="972.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="647.5" cy="964.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="647.5" y="972.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="752.5" cy="964.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="752.5" y="972.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="857.5" cy="964.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="857.5" y="972.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="962.5" cy="964.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="962.5" y="972.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="1067.5" cy="964.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1067.5" y="972.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<text x="60" y="1036.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" >Redoblante</text>
+<line x1="280" y1="1026.4" x2="1120" y2="1026.4" stroke="#D5D9E0" stroke-width="2" />
+<circle cx="542.5" cy="1026.4" r="22.32" fill="#2370D6" stroke="#1A1A1A" stroke-width="2"/>
+<text x="542.5" y="1034.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >I</text>
+<circle cx="962.5" cy="1026.4" r="22.32" fill="#2370D6" stroke="#1A1A1A" stroke-width="2"/>
+<text x="962.5" y="1034.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >I</text>
+<text x="60" y="1098.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" >Bombo</text>
+<line x1="280" y1="1088.4" x2="1120" y2="1088.4" stroke="#D5D9E0" stroke-width="2" />
+<circle cx="332.5" cy="1088.4" r="22.32" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="2"/>
+<text x="332.5" y="1096.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >PD</text>
+<circle cx="752.5" cy="1088.4" r="22.32" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="2"/>
+<text x="752.5" y="1096.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >PD</text>
+<circle cx="857.5" cy="1088.4" r="22.32" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="2"/>
+<text x="857.5" y="1096.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >PD</text>
+<text x="60" y="1210" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="start" >Ritmo básico #4</text>
+<rect x="284" y="1226" width="97" height="232.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<rect x="494" y="1226" width="97" height="232.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<rect x="704" y="1226" width="97" height="232.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<rect x="914" y="1226" width="97" height="232.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<text x="332.5" y="1254.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >1</text>
+<text x="437.5" y="1254.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#5F6368" text-anchor="middle" >y</text>
+<text x="542.5" y="1254.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >2</text>
+<text x="647.5" y="1254.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#5F6368" text-anchor="middle" >y</text>
+<text x="752.5" y="1254.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >3</text>
+<text x="857.5" y="1254.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#5F6368" text-anchor="middle" >y</text>
+<text x="962.5" y="1254.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<text x="1067.5" y="1254.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#5F6368" text-anchor="middle" >y</text>
+<text x="60" y="1304.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" >Hi-hat</text>
+<line x1="280" y1="1294.4" x2="1120" y2="1294.4" stroke="#D5D9E0" stroke-width="2" />
+<circle cx="332.5" cy="1294.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="332.5" y="1302.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="437.5" cy="1294.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="437.5" y="1302.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="542.5" cy="1294.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="542.5" y="1302.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="647.5" cy="1294.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="647.5" y="1302.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="752.5" cy="1294.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="752.5" y="1302.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="857.5" cy="1294.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="857.5" y="1302.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="962.5" cy="1294.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="962.5" y="1302.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="1067.5" cy="1294.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1067.5" y="1302.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<text x="60" y="1366.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" >Redoblante</text>
+<line x1="280" y1="1356.4" x2="1120" y2="1356.4" stroke="#D5D9E0" stroke-width="2" />
+<circle cx="542.5" cy="1356.4" r="22.32" fill="#2370D6" stroke="#1A1A1A" stroke-width="2"/>
+<text x="542.5" y="1364.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >I</text>
+<circle cx="962.5" cy="1356.4" r="22.32" fill="#2370D6" stroke="#1A1A1A" stroke-width="2"/>
+<text x="962.5" y="1364.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >I</text>
+<text x="60" y="1428.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" >Bombo</text>
+<line x1="280" y1="1418.4" x2="1120" y2="1418.4" stroke="#D5D9E0" stroke-width="2" />
+<circle cx="332.5" cy="1418.4" r="22.32" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="2"/>
+<text x="332.5" y="1426.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >PD</text>
+<circle cx="647.5" cy="1418.4" r="22.32" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="2"/>
+<text x="647.5" y="1426.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >PD</text>
+<circle cx="752.5" cy="1418.4" r="22.32" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="2"/>
+<text x="752.5" y="1426.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >PD</text>
+<circle cx="857.5" cy="1418.4" r="22.32" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="2"/>
+<text x="857.5" y="1426.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >PD</text>
+<text x="1300" y="220" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#2370D6" text-anchor="start" >Marcha · 2/4</text>
+<rect x="1524" y="236" width="142" height="170.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<rect x="1674" y="236" width="142" height="170.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<text x="1595" y="264.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >1</text>
+<text x="1745" y="264.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >2</text>
+<text x="1300" y="314.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" >Redoblante</text>
+<line x1="1520" y1="304.4" x2="1820" y2="304.4" stroke="#D5D9E0" stroke-width="2" />
+<circle cx="1745" cy="304.4" r="22.32" fill="#2370D6" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1745" y="312.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >I</text>
+<text x="1300" y="376.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" >Bombo</text>
+<line x1="1520" y1="366.4" x2="1820" y2="366.4" stroke="#D5D9E0" stroke-width="2" />
+<circle cx="1595" cy="366.4" r="22.32" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1595" y="374.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >PD</text>
+<text x="1300" y="506" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#2370D6" text-anchor="start" >Vals · 3/4</text>
+<rect x="1524" y="522" width="142" height="170.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<rect x="1674" y="522" width="142" height="170.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<rect x="1824" y="522" width="142" height="170.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<text x="1595" y="550.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >1</text>
+<text x="1745" y="550.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >2</text>
+<text x="1895" y="550.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >3</text>
+<text x="1300" y="600.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" >Hi-hat</text>
+<line x1="1520" y1="590.4" x2="1970" y2="590.4" stroke="#D5D9E0" stroke-width="2" />
+<circle cx="1745" cy="590.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1745" y="598.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="1895" cy="590.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1895" y="598.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<text x="1300" y="662.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" >Bombo</text>
+<line x1="1520" y1="652.4" x2="1970" y2="652.4" stroke="#D5D9E0" stroke-width="2" />
+<circle cx="1595" cy="652.4" r="22.32" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1595" y="660.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >PD</text>
+<text x="1300" y="792" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#2370D6" text-anchor="start" >Balada · 4/4 lenta</text>
+<rect x="1524" y="808" width="142" height="232.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<rect x="1674" y="808" width="142" height="232.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<rect x="1824" y="808" width="142" height="232.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<rect x="1974" y="808" width="142" height="232.5" rx="14" fill="#EEF0F4" stroke="none" stroke-width="0" />
+<text x="1595" y="836.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >1</text>
+<text x="1745" y="836.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >2</text>
+<text x="1895" y="836.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >3</text>
+<text x="2045" y="836.1" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="27.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<text x="1300" y="886.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" >Hi-hat</text>
+<line x1="1520" y1="876.4" x2="2120" y2="876.4" stroke="#D5D9E0" stroke-width="2" />
+<circle cx="1595" cy="876.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1595" y="884.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="1745" cy="876.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1745" y="884.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="1895" cy="876.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1895" y="884.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="2045" cy="876.4" r="22.32" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="2045" y="884.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<text x="1300" y="948.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" >Redoblante</text>
+<line x1="1520" y1="938.4" x2="2120" y2="938.4" stroke="#D5D9E0" stroke-width="2" />
+<circle cx="1895" cy="938.4" r="22.32" fill="#2370D6" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1895" y="946.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >I</text>
+<text x="1300" y="1010.4" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" >Bombo</text>
+<line x1="1520" y1="1000.4" x2="2120" y2="1000.4" stroke="#D5D9E0" stroke-width="2" />
+<circle cx="1595" cy="1000.4" r="22.32" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1595" y="1008.44" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="20.09" font-weight="700" fill="#FFFFFF" text-anchor="middle" >PD</text>
+<text x="1300" y="1140" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="start" >Golpes alternos</text>
+<rect x="1300" y="1170" width="110" height="80" rx="16" fill="#E5312B" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1355" y="1222.8" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<rect x="1424" y="1170" width="110" height="80" rx="16" fill="#2370D6" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1479" y="1222.8" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#FFFFFF" text-anchor="middle" >I</text>
+<rect x="1548" y="1170" width="110" height="80" rx="16" fill="#E5312B" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1603" y="1222.8" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<rect x="1672" y="1170" width="110" height="80" rx="16" fill="#2370D6" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1727" y="1222.8" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#FFFFFF" text-anchor="middle" >I</text>
+<text x="1300" y="1330" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="start" >Redoble abierto</text>
+<rect x="1300" y="1360" width="110" height="80" rx="16" fill="#E5312B" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1355" y="1412.8" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<rect x="1424" y="1360" width="110" height="80" rx="16" fill="#E5312B" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1479" y="1412.8" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<rect x="1548" y="1360" width="110" height="80" rx="16" fill="#2370D6" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1603" y="1412.8" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#FFFFFF" text-anchor="middle" >I</text>
+<rect x="1672" y="1360" width="110" height="80" rx="16" fill="#2370D6" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1727" y="1412.8" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#FFFFFF" text-anchor="middle" >I</text>
+</svg>

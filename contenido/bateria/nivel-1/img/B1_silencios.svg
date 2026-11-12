@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="760" viewBox="0 0 2400 760" role="img" aria-label="Lectura con silencios en el redoblante">
+<title>Lectura con silencios en el redoblante</title>
+<rect width="2400" height="760" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >Lectura con silencios</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >En el silencio digo «sh» y sigo contando</text>
+<line x1="100" y1="300" x2="2300" y2="300" stroke="#1A1A1A" stroke-width="3" />
+<line x1="100" y1="340" x2="2300" y2="340" stroke="#1A1A1A" stroke-width="3" />
+<line x1="100" y1="380" x2="2300" y2="380" stroke="#1A1A1A" stroke-width="3" />
+<line x1="100" y1="420" x2="2300" y2="420" stroke="#1A1A1A" stroke-width="3" />
+<line x1="100" y1="460" x2="2300" y2="460" stroke="#1A1A1A" stroke-width="3" />
+<rect x="128" y="340" width="12.8" height="80" rx="0" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<rect x="150" y="340" width="12.8" height="80" rx="0" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<line x1="2300" y1="300" x2="2300" y2="460" stroke="#1A1A1A" stroke-width="4" />
+<text x="216" y="376.8" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<text x="216" y="460" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<ellipse cx="420" cy="360" rx="24.8" ry="17.6" transform="rotate(-20 420 360)" fill="#1A1A1A"/>
+<line x1="442.4" y1="360" x2="442.4" y2="232" stroke="#1A1A1A" stroke-width="3.5" />
+<text x="420" y="640" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="38" font-weight="700" fill="#1A1A1A" text-anchor="middle" >ta</text>
+<path d="M630 320 L656 352 L628 382 L656 412 Q618 402 642 438" fill="none" stroke="#1A1A1A" stroke-width="11.2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="640" y="640" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="38" font-weight="700" fill="#1A1A1A" text-anchor="middle" >sh</text>
+<ellipse cx="860" cy="360" rx="24.8" ry="17.6" transform="rotate(-20 860 360)" fill="#1A1A1A"/>
+<line x1="882.4" y1="360" x2="882.4" y2="232" stroke="#1A1A1A" stroke-width="3.5" />
+<text x="860" y="640" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="38" font-weight="700" fill="#1A1A1A" text-anchor="middle" >ta</text>
+<path d="M1070 320 L1096 352 L1068 382 L1096 412 Q1058 402 1082 438" fill="none" stroke="#1A1A1A" stroke-width="11.2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1080" y="640" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="38" font-weight="700" fill="#1A1A1A" text-anchor="middle" >sh</text>
+<ellipse cx="1420" cy="360" rx="24.8" ry="17.6" transform="rotate(-20 1420 360)" fill="#1A1A1A"/>
+<ellipse cx="1420" cy="360" rx="15.2" ry="7.2" transform="rotate(-35 1420 360)" fill="#FFFFFF"/>
+<line x1="1442.4" y1="360" x2="1442.4" y2="232" stroke="#1A1A1A" stroke-width="3.5" />
+<text x="1420" y="640" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="38" font-weight="700" fill="#1A1A1A" text-anchor="middle" >taa-aa</text>
+<rect x="1838" y="360" width="44" height="20" rx="0" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<text x="1860" y="640" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="38" font-weight="700" fill="#1A1A1A" text-anchor="middle" >sh-sh</text>
+<line x1="1260" y1="300" x2="1260" y2="460" stroke="#1A1A1A" stroke-width="3" />
+<text x="420" y="700" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#5F6368" text-anchor="middle" >1</text>
+<text x="640" y="700" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#5F6368" text-anchor="middle" >2</text>
+<text x="860" y="700" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#5F6368" text-anchor="middle" >3</text>
+<text x="1080" y="700" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#5F6368" text-anchor="middle" >4</text>
+<text x="1420" y="700" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#5F6368" text-anchor="middle" >1 2</text>
+<text x="1860" y="700" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#5F6368" text-anchor="middle" >3 4</text>
+</svg>

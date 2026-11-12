@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1100" viewBox="0 0 2400 1100" role="img" aria-label="Las cuatro extremidades y sus colores">
+<title>Las cuatro extremidades y sus colores</title>
+<rect width="2400" height="1100" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >Mis cuatro extremidades</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >Cada una con su letra y su color AMA</text>
+<g transform="translate(70,260) scale(1.5)">
+<line x1="150" y1="120" x2="150" y2="448" stroke="#9AA0A6" stroke-width="4" />
+<line x1="750" y1="120" x2="750" y2="448" stroke="#9AA0A6" stroke-width="4" />
+<line x1="90" y1="120" x2="90" y2="448" stroke="#9AA0A6" stroke-width="4" />
+<ellipse cx="150" cy="110" rx="105" ry="28" fill="#F4A7A3" stroke="#8A6A0A" stroke-width="2"/>
+<ellipse cx="750" cy="110" rx="122" ry="32" fill="#F4A7A3" stroke="#8A6A0A" stroke-width="2"/>
+<circle cx="750" cy="108" r="16" fill="#8A6A0A" stroke="none" stroke-width="0"/>
+<circle cx="150" cy="108" r="9" fill="#8A6A0A" stroke="none" stroke-width="0"/>
+<ellipse cx="90" cy="252" rx="70" ry="16" fill="#F4A7A3" stroke="#8A6A0A" stroke-width="2"/>
+<ellipse cx="90" cy="242" rx="70" ry="16" fill="#F4A7A3" stroke="#8A6A0A" stroke-width="2"/>
+<rect x="335" y="150" width="104" height="60" rx="8" fill="#2B2F3A" stroke="#1A1A1A" stroke-width="2" />
+<ellipse cx="387" cy="150" rx="52" ry="17" fill="#F3F1EA" stroke="#2B2F3A" stroke-width="3"/>
+<rect x="455" y="148" width="116" height="66" rx="8" fill="#2B2F3A" stroke="#1A1A1A" stroke-width="2" />
+<ellipse cx="513" cy="148" rx="58" ry="19" fill="#F3F1EA" stroke="#2B2F3A" stroke-width="3"/>
+<circle cx="450" cy="330" r="118" fill="#2B2F3A" stroke="#1A1A1A" stroke-width="2"/>
+<circle cx="450" cy="330" r="102" fill="#A8DDB8" stroke="#2B2F3A" stroke-width="3"/>
+<text x="450" y="338" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="700" fill="#8A6A0A" text-anchor="middle" >AMA</text>
+<line x1="270" y1="352" x2="270" y2="448" stroke="#9AA0A6" stroke-width="4" />
+<rect x="205" y="300" width="130" height="50" rx="8" fill="#2B2F3A" stroke="#1A1A1A" stroke-width="2" />
+<ellipse cx="270" cy="300" rx="65" ry="21" fill="#A9C8F0" stroke="#2B2F3A" stroke-width="3"/>
+<line x1="205" y1="325" x2="335" y2="325" stroke="#C9A227" stroke-width="3" />
+<rect x="600" y="290" width="150" height="130" rx="10" fill="#2B2F3A" stroke="#1A1A1A" stroke-width="2" />
+<ellipse cx="675" cy="290" rx="75" ry="23" fill="#F3F1EA" stroke="#2B2F3A" stroke-width="3"/>
+<line x1="612" y1="420" x2="606" y2="452" stroke="#9AA0A6" stroke-width="5" />
+<line x1="738" y1="420" x2="744" y2="452" stroke="#9AA0A6" stroke-width="5" />
+<rect x="425" y="440" width="50" height="14" rx="4" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="2" />
+<rect x="62" y="440" width="56" height="14" rx="4" fill="#8E3BB8" stroke="#1A1A1A" stroke-width="2" />
+</g>
+<circle cx="295" cy="425" r="30" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="295" y="435.8" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="1195" cy="418" r="30" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1195" y="428.8" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="205" cy="548" r="30" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="205" y="558.8" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<circle cx="475" cy="712" r="30" fill="#2370D6" stroke="#1A1A1A" stroke-width="2"/>
+<text x="475" y="722.8" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#FFFFFF" text-anchor="middle" >I</text>
+<circle cx="745" cy="830" r="32" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="2"/>
+<text x="745" y="841.52" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="26.24" font-weight="700" fill="#FFFFFF" text-anchor="middle" >PD</text>
+<circle cx="275" cy="918" r="32" fill="#8E3BB8" stroke="#1A1A1A" stroke-width="2"/>
+<text x="275" y="929.52" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="26.24" font-weight="700" fill="#FFFFFF" text-anchor="middle" >PI</text>
+<circle cx="1520" cy="330" r="50" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1520" y="348" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="50" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<text x="1600" y="324" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="42" font-weight="700" fill="#1A1A1A" text-anchor="start" >Mano derecha</text>
+<text x="1600" y="372" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#5F6368" text-anchor="start" >hi-hat, ride y crash</text>
+<circle cx="1520" cy="500" r="50" fill="#2370D6" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1520" y="518" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="50" font-weight="700" fill="#FFFFFF" text-anchor="middle" >I</text>
+<text x="1600" y="494" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="42" font-weight="700" fill="#1A1A1A" text-anchor="start" >Mano izquierda</text>
+<text x="1600" y="542" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#5F6368" text-anchor="start" >redoblante</text>
+<circle cx="1520" cy="670" r="50" fill="#2E9E4F" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1520" y="688" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="41" font-weight="700" fill="#FFFFFF" text-anchor="middle" >PD</text>
+<text x="1600" y="664" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="42" font-weight="700" fill="#1A1A1A" text-anchor="start" >Pie derecho</text>
+<text x="1600" y="712" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#5F6368" text-anchor="start" >bombo</text>
+<circle cx="1520" cy="840" r="50" fill="#8E3BB8" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1520" y="858" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="41" font-weight="700" fill="#FFFFFF" text-anchor="middle" >PI</text>
+<text x="1600" y="834" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="42" font-weight="700" fill="#1A1A1A" text-anchor="start" >Pie izquierdo</text>
+<text x="1600" y="882" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#5F6368" text-anchor="start" >pedal del hi-hat</text>
+</svg>

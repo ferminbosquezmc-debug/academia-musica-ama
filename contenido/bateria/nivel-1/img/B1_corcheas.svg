@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="860" viewBox="0 0 2400 860" role="img" aria-label="Corcheas en el hi-hat">
+<title>Corcheas en el hi-hat</title>
+<rect width="2400" height="860" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >Corcheas en el hi-hat</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >Mano derecha (D) · cuento 1 y 2 y 3 y 4 y</text>
+<line x1="100" y1="400" x2="2300" y2="400" stroke="#1A1A1A" stroke-width="3" />
+<line x1="100" y1="440" x2="2300" y2="440" stroke="#1A1A1A" stroke-width="3" />
+<line x1="100" y1="480" x2="2300" y2="480" stroke="#1A1A1A" stroke-width="3" />
+<line x1="100" y1="520" x2="2300" y2="520" stroke="#1A1A1A" stroke-width="3" />
+<line x1="100" y1="560" x2="2300" y2="560" stroke="#1A1A1A" stroke-width="3" />
+<rect x="128" y="440" width="12.8" height="80" rx="0" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<rect x="150" y="440" width="12.8" height="80" rx="0" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<line x1="2300" y1="400" x2="2300" y2="560" stroke="#1A1A1A" stroke-width="4" />
+<text x="216" y="476.8" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<text x="216" y="560" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="92" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<line x1="423.2" y1="363.2" x2="456.8" y2="396.8" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<line x1="423.2" y1="396.8" x2="456.8" y2="363.2" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<line x1="456.8" y1="380" x2="456.8" y2="280" stroke="#1A1A1A" stroke-width="3.5" />
+<circle cx="440" cy="220" r="26" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="440" y="229.36" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<text x="440" y="680" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#1A1A1A" text-anchor="middle" >1</text>
+<line x1="648.2" y1="363.2" x2="681.8" y2="396.8" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<line x1="648.2" y1="396.8" x2="681.8" y2="363.2" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<line x1="681.8" y1="380" x2="681.8" y2="280" stroke="#1A1A1A" stroke-width="3.5" />
+<circle cx="665" cy="220" r="26" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="665" y="229.36" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<text x="665" y="680" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#5F6368" text-anchor="middle" >y</text>
+<line x1="873.2" y1="363.2" x2="906.8" y2="396.8" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<line x1="873.2" y1="396.8" x2="906.8" y2="363.2" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<line x1="906.8" y1="380" x2="906.8" y2="280" stroke="#1A1A1A" stroke-width="3.5" />
+<circle cx="890" cy="220" r="26" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="890" y="229.36" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<text x="890" y="680" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#1A1A1A" text-anchor="middle" >2</text>
+<line x1="1098.2" y1="363.2" x2="1131.8" y2="396.8" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<line x1="1098.2" y1="396.8" x2="1131.8" y2="363.2" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<line x1="1131.8" y1="380" x2="1131.8" y2="280" stroke="#1A1A1A" stroke-width="3.5" />
+<circle cx="1115" cy="220" r="26" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1115" y="229.36" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<text x="1115" y="680" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#5F6368" text-anchor="middle" >y</text>
+<line x1="1323.2" y1="363.2" x2="1356.8" y2="396.8" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<line x1="1323.2" y1="396.8" x2="1356.8" y2="363.2" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<line x1="1356.8" y1="380" x2="1356.8" y2="280" stroke="#1A1A1A" stroke-width="3.5" />
+<circle cx="1340" cy="220" r="26" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1340" y="229.36" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<text x="1340" y="680" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#1A1A1A" text-anchor="middle" >3</text>
+<line x1="1548.2" y1="363.2" x2="1581.8" y2="396.8" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<line x1="1548.2" y1="396.8" x2="1581.8" y2="363.2" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<line x1="1581.8" y1="380" x2="1581.8" y2="280" stroke="#1A1A1A" stroke-width="3.5" />
+<circle cx="1565" cy="220" r="26" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1565" y="229.36" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<text x="1565" y="680" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#5F6368" text-anchor="middle" >y</text>
+<line x1="1773.2" y1="363.2" x2="1806.8" y2="396.8" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<line x1="1773.2" y1="396.8" x2="1806.8" y2="363.2" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<line x1="1806.8" y1="380" x2="1806.8" y2="280" stroke="#1A1A1A" stroke-width="3.5" />
+<circle cx="1790" cy="220" r="26" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1790" y="229.36" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<text x="1790" y="680" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<line x1="1998.2" y1="363.2" x2="2031.8" y2="396.8" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<line x1="1998.2" y1="396.8" x2="2031.8" y2="363.2" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<line x1="2031.8" y1="380" x2="2031.8" y2="280" stroke="#1A1A1A" stroke-width="3.5" />
+<circle cx="2015" cy="220" r="26" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="2015" y="229.36" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<text x="2015" y="680" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#5F6368" text-anchor="middle" >y</text>
+<rect x="456.8" y="280" width="225" height="18" rx="0" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<rect x="906.8" y="280" width="225" height="18" rx="0" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<rect x="1356.8" y="280" width="225" height="18" rx="0" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<rect x="1806.8" y="280" width="225" height="18" rx="0" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<text x="1200" y="790" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#5F6368" text-anchor="middle" >El pie izquierdo (PI) mantiene el hi-hat cerrado</text>
+</svg>

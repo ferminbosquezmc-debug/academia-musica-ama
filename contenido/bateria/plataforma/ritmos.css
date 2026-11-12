@@ -1,0 +1,37 @@
+/* AMA · Batería: reproductor de ritmos y batería digital (usa los colores de la página si existen) */
+.drp,.drk{display:grid;gap:10px;margin-top:12px;color:inherit}
+.drp-sel{display:grid;gap:8px}
+.drp-lv{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.drp-lv b{font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.7;min-width:62px}
+.drp button,.drk-pads button{border:1px solid var(--line,#cfd3da);background:transparent;color:inherit;border-radius:999px;padding:6px 12px;font:inherit;font-size:14px;cursor:pointer;min-height:38px}
+.drp-sel button.ad{border-style:dashed}
+.drp button[aria-pressed=true]{background:var(--gold,#9a6a06);border-color:var(--gold,#9a6a06);color:#111;font-weight:600}
+.drp-info{font-size:15px}.drp-info span{opacity:.7}
+.drp-gw{overflow-x:auto}
+.drp-g{display:grid;gap:4px;align-items:center}
+.drp-l{font-weight:600;font-size:13px;white-space:nowrap;padding-right:6px}
+.drp-h{text-align:center;font-size:12px;font-weight:600;opacity:.6;font-variant-numeric:tabular-nums}
+.drp-h.b{opacity:1}
+.drp-c{height:32px;border-radius:8px;background:rgba(127,127,127,.12);display:grid;place-items:center}
+.drp-c.beat{box-shadow:inset 2px 0 0 rgba(127,127,127,.35)}
+.drp-c i{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;color:#fff;font:700 11px sans-serif;font-style:normal}
+.drp-c i.gh{opacity:.45}
+.drp-c.off i,.drp-l.off{opacity:.25}
+.drp-c.on{outline:2px solid var(--gold,#9a6a06)}
+.drp-ctl,.drp-mix{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.drp-mix span{font-size:14px;opacity:.75;min-width:70px}
+.drp-go{font-weight:600}
+.drp-ctl label{display:flex;align-items:center;gap:8px;font-size:14px;font-variant-numeric:tabular-nums}
+.drp-bpm{accent-color:var(--gold,#9a6a06);width:150px}
+.drp-cap{font-size:13px;opacity:.7;margin:0}
+.drk-svg{width:100%;height:auto;display:block;touch-action:manipulation;user-select:none;-webkit-user-select:none;max-width:640px;margin:0 auto}
+.drk-t{fill:currentColor;font:600 14px sans-serif;pointer-events:none}
+.drk-pz{cursor:pointer;outline:none;transform-box:fill-box;transform-origin:center;transition:transform .08s}
+.drk-pz.hit{transform:scale(.94)}
+.drk-pz:focus-visible{outline:2px solid var(--gold,#9a6a06)}
+.drk-pads{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.drk-pads button{border-radius:12px;min-height:54px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;touch-action:manipulation}
+.drk-pads button small{opacity:.65;font-size:12px}
+.drk-pads button.hit{border-color:var(--gold,#9a6a06);background:rgba(242,163,27,.15)}
+@media (max-width:520px){.drk-pads{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (prefers-reduced-motion:reduce){.drk-pz{transition:none}}

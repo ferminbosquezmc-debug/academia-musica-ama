@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="950" viewBox="0 0 2400 950" role="img" aria-label="Afinación en estrella">
+<title>Afinación en estrella</title>
+<rect width="2400" height="950" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >Afino en estrella</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >Uno y el de enfrente · el mismo giro en cada afinador</text>
+<circle cx="560" cy="540" r="278" fill="#2B2F3A" stroke="#1A1A1A" stroke-width="2"/>
+<circle cx="560" cy="540" r="260" fill="#F3F1EA" stroke="#2B2F3A" stroke-width="4"/>
+<path d="M560 306 L560 774 L762.65 423 L357.35 657 L762.65 657 L357.35 423" fill="none" stroke="#C9A227" stroke-width="4" stroke-dasharray="14 10"/>
+<circle cx="560" cy="240" r="26" fill="#C9A227" stroke="#1A1A1A" stroke-width="2.5"/>
+<text x="560" y="249.88" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >1</text>
+<circle cx="560" cy="840" r="26" fill="#C9A227" stroke="#1A1A1A" stroke-width="2.5"/>
+<text x="560" y="849.88" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >2</text>
+<circle cx="819.81" cy="390" r="26" fill="#C9A227" stroke="#1A1A1A" stroke-width="2.5"/>
+<text x="819.81" y="399.88" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >3</text>
+<circle cx="300.19" cy="690" r="26" fill="#C9A227" stroke="#1A1A1A" stroke-width="2.5"/>
+<text x="300.19" y="699.88" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<circle cx="819.81" cy="690" r="26" fill="#C9A227" stroke="#1A1A1A" stroke-width="2.5"/>
+<text x="819.81" y="699.88" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >5</text>
+<circle cx="300.19" cy="390" r="26" fill="#C9A227" stroke="#1A1A1A" stroke-width="2.5"/>
+<text x="300.19" y="399.88" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >6</text>
+<text x="560" y="900" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="700" fill="#1A1A1A" text-anchor="middle" >6 afinadores (toms)</text>
+<circle cx="1300" cy="540" r="278" fill="#2B2F3A" stroke="#1A1A1A" stroke-width="2"/>
+<circle cx="1300" cy="540" r="260" fill="#F3F1EA" stroke="#2B2F3A" stroke-width="4"/>
+<path d="M1300 306 L1300 774 L1534 540 L1066 540 L1465.46 374.54 L1134.54 705.46 L1465.46 705.46 L1134.54 374.54" fill="none" stroke="#C9A227" stroke-width="4" stroke-dasharray="14 10"/>
+<circle cx="1300" cy="240" r="26" fill="#C9A227" stroke="#1A1A1A" stroke-width="2.5"/>
+<text x="1300" y="249.88" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >1</text>
+<circle cx="1300" cy="840" r="26" fill="#C9A227" stroke="#1A1A1A" stroke-width="2.5"/>
+<text x="1300" y="849.88" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >2</text>
+<circle cx="1600" cy="540" r="26" fill="#C9A227" stroke="#1A1A1A" stroke-width="2.5"/>
+<text x="1600" y="549.88" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >3</text>
+<circle cx="1000" cy="540" r="26" fill="#C9A227" stroke="#1A1A1A" stroke-width="2.5"/>
+<text x="1000" y="549.88" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >4</text>
+<circle cx="1512.13" cy="327.87" r="26" fill="#C9A227" stroke="#1A1A1A" stroke-width="2.5"/>
+<text x="1512.13" y="337.75" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >5</text>
+<circle cx="1087.87" cy="752.13" r="26" fill="#C9A227" stroke="#1A1A1A" stroke-width="2.5"/>
+<text x="1087.87" y="762.01" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >6</text>
+<circle cx="1512.13" cy="752.13" r="26" fill="#C9A227" stroke="#1A1A1A" stroke-width="2.5"/>
+<text x="1512.13" y="762.01" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >7</text>
+<circle cx="1087.87" cy="327.87" r="26" fill="#C9A227" stroke="#1A1A1A" stroke-width="2.5"/>
+<text x="1087.87" y="337.75" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="28.6" font-weight="700" fill="#1A1A1A" text-anchor="middle" >8</text>
+<text x="1300" y="900" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="700" fill="#1A1A1A" text-anchor="middle" >8 afinadores (redoblante y bombo)</text>
+<text x="1900" y="420" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="38" font-weight="700" fill="#1A1A1A" text-anchor="start" >Más apretado</text>
+<text x="1900" y="470" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="600" fill="#8A6A0A" text-anchor="start" >= más agudo</text>
+<text x="1900" y="600" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="38" font-weight="700" fill="#1A1A1A" text-anchor="start" >Más flojo</text>
+<text x="1900" y="650" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="600" fill="#8A6A0A" text-anchor="start" >= más grave</text>
+</svg>

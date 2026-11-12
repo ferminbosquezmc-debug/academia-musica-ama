@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1000" viewBox="0 0 2400 1000" role="img" aria-label="El agarre paralelo de las baquetas">
+<title>El agarre paralelo de las baquetas</title>
+<rect width="2400" height="1000" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >Así tomo las baquetas: agarre paralelo</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >Las dos manos igual, palma hacia abajo, sin apretar</text>
+<rect x="160" y="430" width="1000" height="30" rx="15" fill="#C9A06A" stroke="#1A1A1A" stroke-width="2.5" />
+<ellipse cx="1172" cy="445" rx="26" ry="20" fill="#C9A06A" stroke="#1A1A1A" stroke-width="2.5"/>
+<line x1="493" y1="405" x2="493" y2="485" stroke="#C9A227" stroke-width="6" />
+<line x1="493" y1="545" x2="493" y2="575" stroke="#C9A227" stroke-width="4" />
+<text x="560" y="610" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#8A6A0A" text-anchor="start" >punto de apoyo</text>
+<path d="M160 380 Q326 350 493 380" fill="none" stroke="#5F6368" stroke-width="3" />
+<text x="326" y="360" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#5F6368" text-anchor="middle" >1/3</text>
+<path d="M493 380 Q830 340 1172 380" fill="none" stroke="#5F6368" stroke-width="3" />
+<text x="830" y="350" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#5F6368" text-anchor="middle" >2/3</text>
+<ellipse cx="430" cy="455" rx="120" ry="80" fill="#F2D3B3" stroke="#1A1A1A" stroke-width="3" opacity=".9"/>
+<rect x="440" y="410" width="120" height="30" rx="15" fill="#F2D3B3" stroke="#1A1A1A" stroke-width="3" />
+<text x="590" y="405" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="600" fill="#5F6368" text-anchor="start" >pulgar</text>
+<rect x="350" y="470" width="44" height="70" rx="20" fill="#F2D3B3" stroke="#1A1A1A" stroke-width="2.5" />
+<rect x="400" y="470" width="44" height="70" rx="20" fill="#F2D3B3" stroke="#1A1A1A" stroke-width="2.5" />
+<rect x="450" y="470" width="44" height="70" rx="20" fill="#F2D3B3" stroke="#1A1A1A" stroke-width="2.5" />
+<rect x="500" y="455" width="60" height="40" rx="18" fill="#F2D3B3" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="560" y="650" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="24" font-weight="500" fill="#5F6368" text-anchor="start" >(entre el pulgar y el índice)</text>
+<text x="160" y="730" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• El punto de apoyo: entre el pulgar y el índice</text>
+<text x="160" y="790" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• Los otros dedos rodean la baqueta sin apretar</text>
+<text x="160" y="850" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="600" fill="#1A1A1A" text-anchor="start" >• La baqueta debe poder rebotar</text>
+<circle cx="1800" cy="520" r="230" fill="#F3F1EA" stroke="#2B2F3A" stroke-width="6"/>
+<text x="1800" y="470" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#5F6368" text-anchor="middle" >redoblante</text>
+<line x1="1540" y1="900" x2="1730" y2="560" stroke="#C9A06A" stroke-width="22" stroke-linecap="round"/>
+<line x1="2060" y1="900" x2="1870" y2="560" stroke="#C9A06A" stroke-width="22" stroke-linecap="round"/>
+<circle cx="1540" cy="900" r="36" fill="#2370D6" stroke="#1A1A1A" stroke-width="2"/>
+<text x="1540" y="912.96" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="36" font-weight="700" fill="#FFFFFF" text-anchor="middle" >I</text>
+<circle cx="2060" cy="900" r="36" fill="#E5312B" stroke="#1A1A1A" stroke-width="2"/>
+<text x="2060" y="912.96" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="36" font-weight="700" fill="#FFFFFF" text-anchor="middle" >D</text>
+<text x="1800" y="640" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="70" font-weight="700" fill="#8A6A0A" text-anchor="middle" >V</text>
+</svg>

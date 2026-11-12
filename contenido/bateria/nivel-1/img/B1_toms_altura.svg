@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="820" viewBox="0 0 2400 820" role="img" aria-label="Los tambores del agudo al grave">
+<title>Los tambores del agudo al grave</title>
+<rect width="2400" height="820" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >Del agudo al grave</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >Cuanto más grande el tambor, más grave su sonido</text>
+<rect x="220" y="550" width="192" height="90" rx="10" fill="#2B2F3A" stroke="#1A1A1A" stroke-width="2" />
+<ellipse cx="316" cy="550" rx="96" ry="26.88" fill="#F3F1EA" stroke="#2B2F3A" stroke-width="3"/>
+<text x="316" y="700" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="36" font-weight="700" fill="#1A1A1A" text-anchor="middle" >Tom 1</text>
+<rect x="562" y="530" width="240" height="110" rx="10" fill="#2B2F3A" stroke="#1A1A1A" stroke-width="2" />
+<ellipse cx="682" cy="530" rx="120" ry="33.6" fill="#F3F1EA" stroke="#2B2F3A" stroke-width="3"/>
+<text x="682" y="700" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="36" font-weight="700" fill="#1A1A1A" text-anchor="middle" >Tom 2</text>
+<rect x="952" y="440" width="304" height="200" rx="10" fill="#2B2F3A" stroke="#1A1A1A" stroke-width="2" />
+<ellipse cx="1104" cy="440" rx="152" ry="42.56" fill="#F3F1EA" stroke="#2B2F3A" stroke-width="3"/>
+<text x="1104" y="700" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="36" font-weight="700" fill="#1A1A1A" text-anchor="middle" >Tom de piso</text>
+<circle cx="1566" cy="480" r="160" fill="#2B2F3A" stroke="#1A1A1A" stroke-width="2"/>
+<circle cx="1566" cy="480" r="142" fill="#F3F1EA" stroke="#2B2F3A" stroke-width="3"/>
+<text x="1566" y="700" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="36" font-weight="700" fill="#1A1A1A" text-anchor="middle" >Bombo</text>
+<line x1="260" y1="230" x2="2050" y2="230" stroke="#8A6A0A" stroke-width="6" stroke-linecap="round"/>
+<path d="M2050 230 L2028.39 240.44 L2028.39 219.56 Z" fill="#8A6A0A" stroke="none" stroke-width="0" />
+<text x="260" y="200" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="start" >agudo</text>
+<text x="2050" y="200" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="700" fill="#8A6A0A" text-anchor="end" >grave</text>
+</svg>

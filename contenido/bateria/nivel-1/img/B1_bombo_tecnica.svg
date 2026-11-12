@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="900" viewBox="0 0 2400 900" role="img" aria-label="Técnicas para el bombo">
+<title>Técnicas para el bombo</title>
+<rect width="2400" height="900" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >Técnicas para el bombo</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >Talón abajo: control · talón arriba: fuerza · el mazo siempre vuelve atrás</text>
+<line x1="120" y1="760" x2="1120" y2="760" stroke="#5F6368" stroke-width="4" />
+<rect x="880" y="380" width="240" height="380" rx="12" fill="#2B2F3A" stroke="#1A1A1A" stroke-width="3" />
+<line x1="880" y1="380" x2="880" y2="760" stroke="#9AA0A6" stroke-width="10" />
+<line x1="810" y1="470" x2="860" y2="470" stroke="#9AA0A6" stroke-width="8" stroke-linecap="round"/>
+<circle cx="864" cy="470" r="20" fill="#E8E3D6" stroke="#1A1A1A" stroke-width="2"/>
+<line x1="810" y1="470" x2="760" y2="700" stroke="#9AA0A6" stroke-width="6" stroke-linecap="round"/>
+<path d="M450 745 L770 690 L772 700 L450 752 Z" fill="#6B7280" stroke="#1A1A1A" stroke-width="2" />
+<path d="M460 728 Q590 700 740 676 L760 690 Q600 720 465 745 Z" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+<line x1="480" y1="720" x2="450" y2="420" stroke="#5F6368" stroke-width="70" stroke-linecap="round"/>
+<text x="620" y="830" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="42" font-weight="700" fill="#1A1A1A" text-anchor="middle" >Talón abajo</text>
+<text x="620" y="875" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="500" fill="#5F6368" text-anchor="middle" >se mueve el tobillo · empiezo con esta</text>
+<line x1="1300" y1="760" x2="2300" y2="760" stroke="#5F6368" stroke-width="4" />
+<rect x="2060" y="380" width="240" height="380" rx="12" fill="#2B2F3A" stroke="#1A1A1A" stroke-width="3" />
+<line x1="2060" y1="380" x2="2060" y2="760" stroke="#9AA0A6" stroke-width="10" />
+<line x1="1990" y1="470" x2="2040" y2="470" stroke="#9AA0A6" stroke-width="8" stroke-linecap="round"/>
+<circle cx="2044" cy="470" r="20" fill="#E8E3D6" stroke="#1A1A1A" stroke-width="2"/>
+<line x1="1990" y1="470" x2="1940" y2="700" stroke="#9AA0A6" stroke-width="6" stroke-linecap="round"/>
+<path d="M1630 745 L1950 690 L1952 700 L1630 752 Z" fill="#6B7280" stroke="#1A1A1A" stroke-width="2" />
+<path d="M1680 640 Q1800 650 1920 676 L1940 690 Q1800 680 1685 665 Z" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+<line x1="1700" y1="650" x2="1630" y2="360" stroke="#5F6368" stroke-width="70" stroke-linecap="round"/>
+<line x1="1600" y1="700" x2="1600" y2="610" stroke="#8A6A0A" stroke-width="5" stroke-linecap="round"/>
+<path d="M1600 610 L1607.83 626.21 L1592.17 626.21 Z" fill="#8A6A0A" stroke="none" stroke-width="0" />
+<text x="1800" y="830" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="42" font-weight="700" fill="#1A1A1A" text-anchor="middle" >Talón arriba</text>
+<text x="1800" y="875" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="500" fill="#5F6368" text-anchor="middle" >se mueve toda la pierna · más fuerza</text>
+</svg>

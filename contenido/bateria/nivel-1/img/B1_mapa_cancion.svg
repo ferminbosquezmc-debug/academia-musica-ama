@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1100" viewBox="0 0 2400 1100" role="img" aria-label="El mapa de una canción: Estrellita">
+<title>El mapa de una canción: Estrellita</title>
+<rect width="2400" height="1100" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >El mapa de la canción · «Estrellita»</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >3 frases de 4 compases · crash al empezar · relleno al terminar cada frase</text>
+<rect x="380" y="230" width="430" height="190" rx="16" fill="#FFF3CF" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="404" y="272" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#5F6368" text-anchor="start" >1</text>
+<text x="595" y="345" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="52" font-weight="700" fill="#1A1A1A" text-anchor="middle" >C</text>
+<text x="595" y="398" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#8A6A0A" text-anchor="middle" >crash</text>
+<rect x="850" y="230" width="430" height="190" rx="16" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="874" y="272" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#5F6368" text-anchor="start" >2</text>
+<text x="1065" y="345" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="52" font-weight="700" fill="#1A1A1A" text-anchor="middle" >F C</text>
+<rect x="1320" y="230" width="430" height="190" rx="16" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1344" y="272" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#5F6368" text-anchor="start" >3</text>
+<text x="1535" y="345" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="52" font-weight="700" fill="#1A1A1A" text-anchor="middle" >F C</text>
+<rect x="1790" y="230" width="430" height="190" rx="16" fill="#E3EEFB" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1814" y="272" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#5F6368" text-anchor="start" >4</text>
+<text x="2005" y="345" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="52" font-weight="700" fill="#1A1A1A" text-anchor="middle" >G C</text>
+<text x="2005" y="398" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#2370D6" text-anchor="middle" >relleno</text>
+<rect x="380" y="480" width="430" height="190" rx="16" fill="#FFF3CF" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="404" y="522" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#5F6368" text-anchor="start" >5</text>
+<text x="595" y="595" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="52" font-weight="700" fill="#1A1A1A" text-anchor="middle" >C F</text>
+<text x="595" y="648" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#8A6A0A" text-anchor="middle" >crash</text>
+<rect x="850" y="480" width="430" height="190" rx="16" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="874" y="522" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#5F6368" text-anchor="start" >6</text>
+<text x="1065" y="595" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="52" font-weight="700" fill="#1A1A1A" text-anchor="middle" >C G</text>
+<rect x="1320" y="480" width="430" height="190" rx="16" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1344" y="522" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#5F6368" text-anchor="start" >7</text>
+<text x="1535" y="595" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="52" font-weight="700" fill="#1A1A1A" text-anchor="middle" >C F</text>
+<rect x="1790" y="480" width="430" height="190" rx="16" fill="#E3EEFB" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1814" y="522" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#5F6368" text-anchor="start" >8</text>
+<text x="2005" y="595" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="52" font-weight="700" fill="#1A1A1A" text-anchor="middle" >C G</text>
+<text x="2005" y="648" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#2370D6" text-anchor="middle" >relleno</text>
+<rect x="380" y="730" width="430" height="190" rx="16" fill="#FFF3CF" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="404" y="772" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#5F6368" text-anchor="start" >9</text>
+<text x="595" y="845" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="52" font-weight="700" fill="#1A1A1A" text-anchor="middle" >C</text>
+<text x="595" y="898" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#8A6A0A" text-anchor="middle" >crash</text>
+<rect x="850" y="730" width="430" height="190" rx="16" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="874" y="772" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#5F6368" text-anchor="start" >10</text>
+<text x="1065" y="845" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="52" font-weight="700" fill="#1A1A1A" text-anchor="middle" >F C</text>
+<rect x="1320" y="730" width="430" height="190" rx="16" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1344" y="772" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#5F6368" text-anchor="start" >11</text>
+<text x="1535" y="845" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="52" font-weight="700" fill="#1A1A1A" text-anchor="middle" >F C</text>
+<rect x="1790" y="730" width="430" height="190" rx="16" fill="#FCE1DF" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1814" y="772" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#5F6368" text-anchor="start" >12</text>
+<text x="2005" y="845" font-family="'DejaVu Serif', 'Times New Roman', serif" font-size="52" font-weight="700" fill="#1A1A1A" text-anchor="middle" >G C</text>
+<text x="2005" y="898" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#E5312B" text-anchor="middle" >golpe final</text>
+<text x="120" y="340" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="36" font-weight="700" fill="#1A1A1A" text-anchor="start" >Frase 1</text>
+<text x="120" y="590" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="36" font-weight="700" fill="#1A1A1A" text-anchor="start" >Frase 2</text>
+<text x="120" y="840" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="36" font-weight="700" fill="#1A1A1A" text-anchor="start" >Frase 3</text>
+</svg>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="760" viewBox="0 0 2400 760" role="img" aria-label="Dónde va cada pieza en la partitura de batería">
+<title>Dónde va cada pieza en la partitura de batería</title>
+<rect width="2400" height="760" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >La partitura de batería</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >Clave de percusión · cabeza redonda = tambor · cabeza en ✕ = platillo</text>
+<line x1="100" y1="300" x2="2300" y2="300" stroke="#1A1A1A" stroke-width="3" />
+<line x1="100" y1="344" x2="2300" y2="344" stroke="#1A1A1A" stroke-width="3" />
+<line x1="100" y1="388" x2="2300" y2="388" stroke="#1A1A1A" stroke-width="3" />
+<line x1="100" y1="432" x2="2300" y2="432" stroke="#1A1A1A" stroke-width="3" />
+<line x1="100" y1="476" x2="2300" y2="476" stroke="#1A1A1A" stroke-width="3" />
+<rect x="130.8" y="344" width="14.08" height="88" rx="0" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<rect x="155" y="344" width="14.08" height="88" rx="0" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<line x1="2300" y1="300" x2="2300" y2="476" stroke="#1A1A1A" stroke-width="4" />
+<line x1="286" y1="256" x2="374" y2="256" stroke="#1A1A1A" stroke-width="3" />
+<line x1="311.52" y1="237.52" x2="348.48" y2="274.48" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<line x1="311.52" y1="274.48" x2="348.48" y2="237.52" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<text x="330" y="610" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="700" fill="#1A1A1A" text-anchor="middle" >Crash</text>
+<line x1="546.52" y1="259.52" x2="583.48" y2="296.48" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<line x1="546.52" y1="296.48" x2="583.48" y2="259.52" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<text x="565" y="610" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="700" fill="#1A1A1A" text-anchor="middle" >Hi-hat</text>
+<line x1="781.52" y1="281.52" x2="818.48" y2="318.48" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<line x1="781.52" y1="318.48" x2="818.48" y2="281.52" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<text x="800" y="610" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="700" fill="#1A1A1A" text-anchor="middle" >Ride</text>
+<ellipse cx="1035" cy="322" rx="27.28" ry="19.36" transform="rotate(-20 1035 322)" fill="#1A1A1A"/>
+<text x="1035" y="610" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="700" fill="#1A1A1A" text-anchor="middle" >Tom 1</text>
+<ellipse cx="1270" cy="344" rx="27.28" ry="19.36" transform="rotate(-20 1270 344)" fill="#1A1A1A"/>
+<text x="1270" y="610" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="700" fill="#1A1A1A" text-anchor="middle" >Tom 2</text>
+<ellipse cx="1505" cy="366" rx="27.28" ry="19.36" transform="rotate(-20 1505 366)" fill="#1A1A1A"/>
+<text x="1505" y="610" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="700" fill="#1A1A1A" text-anchor="middle" >Redoblante</text>
+<ellipse cx="1740" cy="410" rx="27.28" ry="19.36" transform="rotate(-20 1740 410)" fill="#1A1A1A"/>
+<text x="1740" y="610" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="700" fill="#1A1A1A" text-anchor="middle" >Tom de piso</text>
+<ellipse cx="1975" cy="454" rx="27.28" ry="19.36" transform="rotate(-20 1975 454)" fill="#1A1A1A"/>
+<text x="1975" y="610" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="700" fill="#1A1A1A" text-anchor="middle" >Bombo</text>
+<line x1="2191.52" y1="479.52" x2="2228.48" y2="516.48" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<line x1="2191.52" y1="516.48" x2="2228.48" y2="479.52" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<text x="2210" y="610" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="700" fill="#1A1A1A" text-anchor="middle" >Hi-hat (pie)</text>
+<text x="1200" y="700" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#5F6368" text-anchor="middle" >Más arriba = más agudo · más abajo = más grave</text>
+</svg>

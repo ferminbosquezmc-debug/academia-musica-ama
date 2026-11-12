@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1000" viewBox="0 0 2400 1000" role="img" aria-label="Los tres sonidos básicos de la batería">
+<title>Los tres sonidos básicos de la batería</title>
+<rect width="2400" height="1000" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >Los tres sonidos básicos de la batería</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >Grave, medio y agudo, igual que las notas</text>
+<g transform="translate(60,230) scale(1.3)">
+<line x1="150" y1="120" x2="150" y2="448" stroke="#9AA0A6" stroke-width="4" />
+<line x1="750" y1="120" x2="750" y2="448" stroke="#9AA0A6" stroke-width="4" />
+<line x1="90" y1="120" x2="90" y2="448" stroke="#9AA0A6" stroke-width="4" />
+<ellipse cx="150" cy="110" rx="105" ry="28" fill="#F2C94C" stroke="#8A6A0A" stroke-width="2"/>
+<ellipse cx="750" cy="110" rx="122" ry="32" fill="#C9A227" stroke="#8A6A0A" stroke-width="2"/>
+<circle cx="750" cy="108" r="16" fill="#8A6A0A" stroke="none" stroke-width="0"/>
+<circle cx="150" cy="108" r="9" fill="#8A6A0A" stroke="none" stroke-width="0"/>
+<ellipse cx="90" cy="252" rx="70" ry="16" fill="#C9A227" stroke="#8A6A0A" stroke-width="2"/>
+<ellipse cx="90" cy="242" rx="70" ry="16" fill="#C9A227" stroke="#8A6A0A" stroke-width="2"/>
+<rect x="335" y="150" width="104" height="60" rx="8" fill="#2B2F3A" stroke="#1A1A1A" stroke-width="2" />
+<ellipse cx="387" cy="150" rx="52" ry="17" fill="#F3F1EA" stroke="#2B2F3A" stroke-width="3"/>
+<rect x="455" y="148" width="116" height="66" rx="8" fill="#2B2F3A" stroke="#1A1A1A" stroke-width="2" />
+<ellipse cx="513" cy="148" rx="58" ry="19" fill="#F3F1EA" stroke="#2B2F3A" stroke-width="3"/>
+<circle cx="450" cy="330" r="118" fill="#2B2F3A" stroke="#1A1A1A" stroke-width="2"/>
+<circle cx="450" cy="330" r="102" fill="#C8E8D2" stroke="#2B2F3A" stroke-width="3"/>
+<text x="450" y="338" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="32" font-weight="700" fill="#8A6A0A" text-anchor="middle" >AMA</text>
+<line x1="270" y1="352" x2="270" y2="448" stroke="#9AA0A6" stroke-width="4" />
+<rect x="205" y="300" width="130" height="50" rx="8" fill="#2B2F3A" stroke="#1A1A1A" stroke-width="2" />
+<ellipse cx="270" cy="300" rx="65" ry="21" fill="#BFD7F5" stroke="#2B2F3A" stroke-width="3"/>
+<line x1="205" y1="325" x2="335" y2="325" stroke="#C9A227" stroke-width="3" />
+<rect x="600" y="290" width="150" height="130" rx="10" fill="#2B2F3A" stroke="#1A1A1A" stroke-width="2" />
+<ellipse cx="675" cy="290" rx="75" ry="23" fill="#F3F1EA" stroke="#2B2F3A" stroke-width="3"/>
+<line x1="612" y1="420" x2="606" y2="452" stroke="#9AA0A6" stroke-width="5" />
+<line x1="738" y1="420" x2="744" y2="452" stroke="#9AA0A6" stroke-width="5" />
+<rect x="425" y="440" width="50" height="14" rx="4" fill="#6B7280" stroke="#1A1A1A" stroke-width="2" />
+<rect x="62" y="440" width="56" height="14" rx="4" fill="#6B7280" stroke="#1A1A1A" stroke-width="2" />
+</g>
+<line x1="1330" y1="860" x2="1330" y2="300" stroke="#8A6A0A" stroke-width="6" stroke-linecap="round"/>
+<path d="M1330 300 L1339.57 319.81 L1320.43 319.81 Z" fill="#8A6A0A" stroke="none" stroke-width="0" />
+<text x="1330" y="270" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#8A6A0A" text-anchor="middle" >agudo</text>
+<text x="1330" y="905" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="30" font-weight="700" fill="#8A6A0A" text-anchor="middle" >grave</text>
+<rect x="1400" y="260" width="900" height="160" rx="24" fill="#F2C94C" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1440" y="326" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="46" font-weight="700" fill="#1A1A1A" text-anchor="start" >Platillo</text>
+<text x="1440" y="376" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#1A1A1A" text-anchor="start" >agudo y largo: sigue sonando</text>
+<text x="2270" y="326" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="600" fill="#5F6368" text-anchor="end" >baqueta</text>
+<rect x="1400" y="470" width="900" height="160" rx="24" fill="#BFD7F5" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1440" y="536" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="46" font-weight="700" fill="#1A1A1A" text-anchor="start" >Redoblante</text>
+<text x="1440" y="586" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#1A1A1A" text-anchor="start" >medio y seco, como una palmada</text>
+<text x="2270" y="536" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="600" fill="#5F6368" text-anchor="end" >baqueta</text>
+<rect x="1400" y="680" width="900" height="160" rx="24" fill="#C8E8D2" stroke="#1A1A1A" stroke-width="2.5" />
+<text x="1440" y="746" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="46" font-weight="700" fill="#1A1A1A" text-anchor="start" >Bombo</text>
+<text x="1440" y="796" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#1A1A1A" text-anchor="start" >grave, como un latido</text>
+<text x="2270" y="746" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="600" fill="#5F6368" text-anchor="end" >pie derecho</text>
+</svg>
