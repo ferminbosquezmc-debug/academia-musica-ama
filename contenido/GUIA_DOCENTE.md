@@ -104,6 +104,7 @@ Una vez por semana, abre **Seguimiento de estudiantes**:
 - En el Nivel 1, guitarra, piano y batería ven **la misma teoría en la misma clase**. Puedes explicar la teoría a todos juntos y separar solo la práctica del instrumento.
 - Si en un grupo hay estudiantes de clases distintas, usa la canción de la clase más baja para tocar todos y da a cada uno su ejercicio aparte.
 - Junta a un estudiante avanzado con uno nuevo para tocar la canción del mes: los dos aprenden.
+- Si el estudiante practica solo, usa las **pistas de acompañamiento** (Práctica → Pistas): una banda virtual con las progresiones de cada nivel. Se puede apagar la batería, el bajo o los acordes, y cambiar el tempo.
 
 ### 🛡️ Cuidar al estudiante
 
