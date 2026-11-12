@@ -96,6 +96,8 @@ Una vez por semana, abre **Seguimiento de estudiantes**:
 - Escríbele ese mismo día, con un mensaje corto y sin reproche: «Te extrañamos en la práctica. ¿Te ayudo con la clase 6?».
 - Fíjate en los **minutos de práctica**: si son pocos, ajusta la meta semanal para que sea alcanzable.
 - Antes de cada evaluación, revisa que el estudiante haya terminado las clases del mes.
+- Abre su **🎬 Portafolio** cuando tenga entregas «por revisar». Escucha la grabación, elige un resultado del 1 al 4 y deja un comentario: el estudiante lo ve en su portafolio. Para la evaluación del mes, pídele que entregue ahí el audio o video de la pieza.
+- Revisa también su **laboratorio de oído**: el porcentaje de aciertos y el resultado de pulso aparecen en su tarjeta.
 
 ### 👥 Grupos y niveles mezclados
 
@@ -113,6 +115,6 @@ Una vez por semana, abre **Seguimiento de estudiantes**:
 
 ### 📌 Lo que todavía se hace fuera de la plataforma
 
-- **Grabaciones:** el audio o video de la evaluación todavía se envía por WhatsApp. Guarda la fecha en el comentario de la rúbrica. La entrega dentro de la plataforma está en preparación.
+- **Grabaciones grandes:** el portafolio acepta archivos de hasta 20 MB. Para un video más largo, el estudiante lo sube a YouTube (oculto) o a Drive y pega el enlace en su portafolio.
 - **Asistencia:** se lleva en la lista de la academia.
 - **Firmas:** los certificados se firman en papel al entregarlos.
