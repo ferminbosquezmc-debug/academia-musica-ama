@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Afinador · Academia de Música ARPA</title>
+<meta name="description" content="Afinador con micrófono de la Academia de Música ARPA para guitarra, bajo, piano y voz. El sonido se analiza en tu teléfono y no se envía a ningún lugar.">
+<meta name="theme-color" content="#0a0908">
+<link rel="icon" type="image/jpeg" href="img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;700&family=Jost:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#0a0908;--card:#14110c;--line:#3a3321;--ink:#f4efe3;--mute:#c9bfa6;--gold:#f2a31b;--ok:#2E9E4F;--mid:#f2a31b;--bad:#E5312B}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Jost',system-ui,sans-serif;line-height:1.5}
+main{max-width:560px;margin:0 auto;padding:20px 16px 48px}
+a{color:var(--gold)}
+h1{font-family:'Bodoni Moda',serif;font-size:32px;margin:8px 0 4px;font-weight:700}
+h2{font-family:'Bodoni Moda',serif;font-size:21px;margin:0 0 6px}
+p{margin:0}
+.mute{color:var(--mute)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;margin-top:16px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{font:inherit;font-size:15px;min-height:44px;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#0a0908;font-weight:600}
+.btn{font:inherit;font-weight:600;font-size:17px;min-height:52px;padding:12px 24px;border-radius:999px;border:0;background:var(--gold);color:#0a0908;cursor:pointer}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--ink);font-size:15px;min-height:44px;padding:8px 14px}
+.note{font-size:72px;font-weight:600;line-height:1;text-align:center;margin-top:10px}
+.hz{text-align:center;color:var(--mute);min-height:22px}
+.meter{position:relative;height:30px;border-radius:15px;background:#221d14;margin:16px 0 4px}
+.meter .c{position:absolute;left:calc(50% - 1px);top:0;bottom:0;width:2px;background:var(--gold)}
+.meter .n{position:absolute;top:4px;width:22px;height:22px;border-radius:50%;left:calc(50% - 11px);background:#666;transition:left .1s,background .2s}
+.scale{display:flex;justify-content:space-between;font-size:12px;color:var(--mute)}
+.hint{text-align:center;font-size:18px;min-height:28px;margin-top:12px}
+.row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:14px}
+.top{display:flex;align-items:center;gap:10px}
+.top img{width:40px;height:40px;border-radius:50%}
+small{font-size:13px}
+</style>
+</head>
+<body>
+<main>
+  <div class="top"><img src="img/logo.jpg" alt=""><b>Academia de Música ARPA</b></div>
+  <h1>Afinador</h1>
+  <p class="mute">Guitarra, bajo, piano o voz. El sonido se analiza en tu teléfono y no se envía a ningún lugar.</p>
+
+  <div class="card">
+    <div class="chips" role="group" aria-label="Instrumento">
+      <button class="chip" data-i="guitarra" aria-pressed="true">Guitarra</button>
+      <button class="chip" data-i="bajo" aria-pressed="false">Bajo</button>
+      <button class="chip" data-i="cromatico" aria-pressed="false">Piano o voz</button>
+    </div>
+    <div class="note" id="nt" aria-live="polite">—</div>
+    <div class="hz" id="hz"></div>
+    <div class="meter" aria-hidden="true"><div class="c"></div><div class="n" id="nd"></div></div>
+    <div class="scale"><span>Grave (−50)</span><span>Afinada</span><span>Agudo (+50)</span></div>
+    <p class="hint" id="hint"></p>
+    <div class="row"><button class="btn" id="mic">🎙️ Activar el micrófono</button></div>
+    <p class="mute" id="msg" style="text-align:center;margin-top:10px;font-size:15px">El navegador te pedirá permiso para usar el micrófono: toca «Permitir».</p>
+  </div>
+
+  <div class="card">
+    <h2>Sonidos de referencia</h2>
+    <p class="mute" style="font-size:15px">Toca una cuerda al aire junto con su sonido y gira la clavija hasta que los dos suenen como uno solo.</p>
+    <div class="row" id="refs" style="justify-content:flex-start"></div>
+  </div>
+
+  <div class="card">
+    <h2>Si no aparece la nota</h2>
+    <p class="mute" style="font-size:15px">Acerca el teléfono al instrumento, toca una sola cuerda o nota y déjala sonar. Si negaste el permiso, ábrelo de nuevo desde el candado o el ícono junto a la dirección de la página.</p>
+  </div>
+  <p style="margin-top:20px"><a href="./">← Volver a la página de la academia</a></p>
+</main>
+<script>
+const NM=['Do','Do♯','Re','Mi♭','Mi','Fa','Fa♯','Sol','Sol♯','La','Si♭','Si'];
+const ST={guitarra:[[40,'6ª'],[45,'5ª'],[50,'4ª'],[55,'3ª'],[59,'2ª'],[64,'1ª']],bajo:[[28,'4ª'],[33,'3ª'],[38,'2ª'],[43,'1ª']],cromatico:[[60],[62],[64],[65],[67],[69],[71],[72]]};
+let ins='guitarra',ac=null,mic=null;
+const $=id=>document.getElementById(id);
+const name=m=>NM[((m%12)+12)%12];
+const AC=()=>{if(!ac)ac=new (window.AudioContext||window.webkitAudioContext)();if(ac.state==='suspended')ac.resume();return ac};
+function refs(){$('refs').innerHTML=ST[ins].map(x=>'<button class="btn ghost" data-r="'+x[0]+'">'+(x[1]?x[1]+' · ':'')+name(x[0])+'</button>').join('')}
+function tone(m){const c=AC(),t=c.currentTime+.03,f=440*Math.pow(2,(m-69)/12),o=c.createOscillator(),o2=c.createOscillator(),lp=c.createBiquadFilter(),g=c.createGain(),g2=c.createGain(),cr=ins==='cromatico';
+ o.type=cr?'triangle':'sawtooth';o2.type='sine';o.frequency.value=f;o2.frequency.value=f*2;g2.gain.value=.2;lp.type='lowpass';lp.frequency.value=Math.max(900,f*6);
+ o.connect(lp);o2.connect(g2).connect(lp);lp.connect(g).connect(c.destination);const d=cr?1.6:3,v=ins==='bajo'?.3:.2;
+ g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v,t+.02);g.gain.setValueAtTime(v,t+d-.3);g.gain.exponentialRampToValueAtTime(.001,t+d);o.start(t);o2.start(t);o.stop(t+d+.05);o2.stop(t+d+.05)}
+function pitch(b,sr){const n=b.length;let r=0;for(let i=0;i<n;i++)r+=b[i]*b[i];r=Math.sqrt(r/n);if(r<.012)return -1;
+ const mn=Math.floor(sr/1200),mx=Math.min(Math.floor(sr/36),n>>1),c=new Float32Array(mx+2);
+ for(let l=0;l<=mx+1;l++){let s=0;for(let j=0;j<n-l;j++)s+=b[j]*b[j+l];c[l]=s}
+ let d=mn;while(d<mx&&c[d]>c[d+1])d++;let bi=-1,bv=-Infinity;for(let l=d;l<=mx;l++)if(c[l]>bv){bv=c[l];bi=l}
+ if(bi<1||bv<c[0]*.3)return -1;const x1=c[bi-1],x2=c[bi],x3=c[bi+1],a=(x1+x3-2*x2)/2,bb=(x3-x1)/2;return sr/(a?bi-bb/(2*a):bi)}
+async function start(){if(mic){stop();return}
+ try{const st=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:false}});const c=AC(),an=c.createAnalyser();an.fftSize=4096;c.createMediaStreamSource(st).connect(an);
+  mic={st:st,an:an,buf:new Float32Array(4096),h:[],last:0};$('mic').textContent='⏹ Detener el micrófono';$('msg').textContent='Toca una cuerda o una nota cerca del teléfono.';loop()}
+ catch(e){$('msg').textContent='No se pudo usar el micrófono. Revisa el permiso del navegador (el candado junto a la dirección) y vuelve a intentarlo.'}}
+function stop(){if(mic){mic.st.getTracks().forEach(t=>t.stop());mic=null}$('mic').textContent='🎙️ Activar el micrófono'}
+function loop(){if(!mic)return;requestAnimationFrame(loop);const now=performance.now();if(now-mic.last<80)return;mic.last=now;
+ mic.an.getFloatTimeDomainData(mic.buf);const f=pitch(mic.buf,AC().sampleRate);if(f<0||!isFinite(f)){mic.h=[];return}
+ mic.h.push(f);if(mic.h.length>5)mic.h.shift();const fs=mic.h.slice().sort((a,b)=>a-b)[mic.h.length>>1],mf=69+12*Math.log2(fs/440);let tg=Math.round(mf),lab='';
+ if(ins!=='cromatico'){let best=null;ST[ins].forEach(x=>{if(best===null||Math.abs(mf-x[0])<Math.abs(mf-best[0]))best=x});tg=best[0];lab='Cuerda '+best[1]+' · '}
+ const ce=Math.max(-50,Math.min(50,Math.round((mf-tg)*100))),ok=Math.abs(ce)<=5;
+ $('nt').textContent=name(tg);$('hz').textContent=lab+fs.toFixed(1)+' Hz · '+(ce>0?'+':'')+ce+' cents';
+ $('nd').style.left='calc('+(50+ce)+'% - 11px)';$('nd').style.background=ok?'var(--ok)':Math.abs(ce)<=15?'var(--mid)':'var(--bad)';
+ $('hint').textContent=Math.abs(mf-tg)>1.5&&ins!=='cromatico'?'Esa nota está lejos de la cuerda: revisa cuál estás tocando.':ok?'¡Afinada!':ce<0?'Está grave: sube un poco (aprieta).':'Está aguda: baja un poco (afloja).'}
+document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
+ if(b.dataset.i){ins=b.dataset.i;document.querySelectorAll('[data-i]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));refs();return}
+ if(b.dataset.r)return tone(+b.dataset.r);if(b.id==='mic')start()});
+const q=new URLSearchParams(location.search).get('i');if(q&&ST[q]){ins=q;document.querySelectorAll('[data-i]').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.i===q)))}
+refs();
+</script>
+</body>
+</html>
