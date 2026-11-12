@@ -12,7 +12,7 @@ const segTot=c=>Object.keys(LD).filter(k=>k.indexOf('-0'+c+'-')>0).length;
 function segSum(){const done=Object.keys(S.done||{}).filter(k=>S.done[k]),car={};
  done.forEach(k=>{const m=k.match(/^\d-0([a-z]+)-/);if(m)car[m[1]]=(car[m[1]]||0)+1});
  let min=0;Object.keys(S.min||{}).forEach(d=>{min+=+S.min[d]||0});
- return{nombre:S.name||'',inst:S.inst||{},lvl:S.lvl||0,done:done.slice(0,3000),car:car,at:done.filter(k=>LD[k]&&LD[k].at).length,min:min,cur:S.cur||'',ubic:S.ubic||null,act:new Date().toISOString(),v:1}}
+ return{nombre:S.name||'',inst:S.inst||{},lvl:S.lvl||0,done:done.slice(0,3000),car:car,at:done.filter(k=>LD[k]&&LD[k].at).length,min:min,cur:S.cur||'',ubic:S.ubic||null,cert:S.cert||null,act:new Date().toISOString(),v:1}}
 window.SEGsync=function(){if(!DBS||!UIDS)return;clearTimeout(SEGt);
  SEGt=setTimeout(async()=>{try{await DBS.doc('prog/'+UIDS).set(segSum());SEGst='nube'}catch(e){SEGst='local'}segBadge()},2500)};
 (async()=>{try{if(!window.claude||!window.claude.use){SEGst='local';return}
@@ -22,7 +22,7 @@ window.SEGsync=function(){if(!DBS||!UIDS)return;clearTimeout(SEGt);
  try{const g=await DBS.doc('prog/'+UIDS).get();
   if(g.exists){const p=g.data()||{};let ch=false;
    (p.done||[]).forEach(k=>{if(!S.done[k]){S.done[k]=true;ch=true}});
-   if(!S.ubic&&p.ubic){S.ubic=p.ubic;ch=true}if(!S.name&&p.nombre){S.name=p.nombre;ch=true}
+   if(!S.ubic&&p.ubic){S.ubic=p.ubic;ch=true}if(!S.cert&&p.cert){S.cert=p.cert;ch=true}if(!S.name&&p.nombre){S.name=p.nombre;ch=true}
    if(p.inst&&!Object.keys(S.inst||{}).length){S.inst=p.inst;ch=true}
    if(ch){try{localStorage.setItem('arp',JSON.stringify(S))}catch(e){}}}
  }catch(e){}
@@ -52,7 +52,7 @@ function segPerfil(){const v=document.getElementById('v-perfil');if(!v)return;le
  h+='<div class="row" style="flex-wrap:wrap;gap:8px;margin-top:12px"><button class="btn ghost m4mini" data-go="ubic">'+(S.ubic?'Repetir la prueba de ubicación':'Hacer la prueba de ubicación')+'</button>'+(ADMS?'<button class="btn m4mini" data-go="seg">📋 Seguimiento de estudiantes</button>':'')+'</div></div>';
  const it=(EVme&&EVme.items)||[];
  h+='<div class="card"><h3>Mis evaluaciones</h3>'+(it.length?it.slice().reverse().map(evCard).join(''):'<p class="mute" style="font-size:15px;margin-top:6px">Aquí aparecerán las evaluaciones mensuales que registre tu docente, con la rúbrica de cada criterio.</p>')+'</div>';
- c.innerHTML=h;segBadge()}
+ h+=cmPerfil();c.innerHTML=h;segBadge()}
 const fdS=s=>{const d=new Date(s);return isNaN(d)?'':d.toLocaleDateString('es-PA',{day:'numeric',month:'long',year:'numeric'})};
 const evAvg=e=>{const n=(e.r||[]).filter(x=>x>0);return n.length?n.reduce((a,b)=>a+b,0)/n.length:0};
 function evCard(e){const a=evAvg(e);
@@ -127,22 +127,24 @@ function segView(){const v=document.getElementById('v-seg'),back='<button class=
  const vis=SEGfil==='inactivos'?L.filter(p=>dias(p)>7):L;
  let h=back+'<h2>Seguimiento de estudiantes</h2><p class="mute">Avance guardado en la nube por cada estudiante. Lo ven la dirección y el equipo docente.</p>'
  +'<div class="m4facts"><div><b>'+L.length+'</b><span>Estudiantes con avance en la nube</span></div><div><b>'+act+'</b><span>Activos en los últimos 7 días</span></div><div><b>'+ina+'</b><span>Sin actividad hace más de 7 días</span></div></div>'
- +'<div class="chips" role="group" aria-label="Filtro" style="margin-top:12px"><button class="chip" data-sf="todos" aria-pressed="'+(SEGfil==='todos')+'">Todos</button><button class="chip" data-sf="inactivos" aria-pressed="'+(SEGfil==='inactivos')+'">Solo inactivos</button></div>';
+ +'<div class="chips" role="group" aria-label="Filtro" style="margin-top:12px"><button class="chip" data-sf="todos" aria-pressed="'+(SEGfil==='todos')+'">Todos</button><button class="chip" data-sf="inactivos" aria-pressed="'+(SEGfil==='inactivos')+'">Solo inactivos</button></div>'
+ +'<div class="card"><h3>Comprobar un certificado</h3><div class="row" style="gap:8px;flex-wrap:wrap;margin-top:8px"><input class="fi" id="cm-q" placeholder="ARPA-G1-XXXXXXX" autocomplete="off" style="flex:1;min-width:180px"><button class="btn m4mini" id="cm-go">Comprobar</button></div><div id="cm-res"></div></div>';
  if(!vis.length)h+='<div class="card"><p class="mute">'+(L.length?'No hay estudiantes inactivos.':'Todavía no hay avances en la nube. Aparecen aquí cuando un estudiante con acceso de Colaborador abre la plataforma con su cuenta.')+'</p></div>';
  h+=vis.map(p=>{const dd=dias(p),cars=Object.keys(p.car||{}),ev=(EVALS[p._id]&&EVALS[p._id].items)||[];
   return '<div class="card m4card"><div class="row" style="flex-wrap:wrap;gap:8px"><h3 class="grow">'+esc(p.nombre||'Estudiante sin nombre')+'</h3><span class="m4st '+(dd<=7?'ok':'')+'">'+(dd<=0?'Activo hoy':dd<=7?'Activo hace '+dd+' d':'Sin actividad hace '+dd+' d')+'</span></div>'
   +'<div class="atchips">'+(cars.length?cars.map(c=>'<span>'+(EMO[c]||'')+' '+esc(CARN[c]||c)+': <b>'+p.car[c]+'/'+segTot(c)+'</b> clases</span>').join(''):'<span>Sin clases terminadas</span>')+(p.at?'<span>🎚️ Audio técnica: <b>'+p.at+'</b></span>':'')+'<span>⏱️ '+(p.min||0)+' min de práctica</span></div>'
   +(p.ubic?'<p class="mute" style="font-size:14px;margin-top:8px">Ubicación: '+esc(CARN[p.ubic.car]||p.ubic.car)+' · Nivel '+p.ubic.nivel+' · Clase '+p.ubic.clase+'</p>':'')
   +(ev.length?'<p style="font-size:14px;margin-top:6px">Última evaluación: mes '+esc(ev[ev.length-1].mes)+' · '+evAvg(ev[ev.length-1]).toFixed(1)+' / 4 ('+ev.length+' en total)</p>':'')
+  +(p.cert&&Object.keys(p.cert).length?'<p style="font-size:14px;margin-top:6px">🎓 Certificados: '+Object.values(p.cert).map(x=>esc(CARN[x.car]||x.car)+' · Nivel '+x.nivel+' (<b>'+esc(x.code)+'</b>)').join(', ')+'</p>':'')
   +'<div class="row" style="margin-top:10px"><button class="btn m4mini" data-se="'+esc(p._id)+'">📝 Evaluar con la rúbrica</button></div></div>'}).join('');
  v.innerHTML=h}
 function segForm(id){const p=PROGS.find(x=>x._id===id);if(!p)return;SEGsel=id;const v=document.getElementById('v-seg'),cars=Object.keys(p.car||{}).concat(Object.values(p.inst||{})).filter((c,i,a)=>c&&CARN[c]&&a.indexOf(c)===i),ev=(EVALS[id]&&EVALS[id].items)||[];
  v.innerHTML='<button class="link" id="se-back" style="font-size:16px;min-height:44px">⬅ Volver al seguimiento</button><h2>Evaluación mensual</h2><p class="mute">'+esc(p.nombre||'Estudiante sin nombre')+'</p>'
- +'<div class="card"><label class="fl">Mes<select class="fi" id="se-mes">'+[1,2,3,4,5,6,7,8,9].map(m=>'<option value="'+m+'">Mes '+m+' · Nivel '+Math.ceil(m/3)+'</option>').join('')+'</select></label>'
+ +'<div class="card"><label class="fl">Mes<select class="fi" id="se-mes">'+[1,2,3,4,5,6,7,8,9].map(m=>'<option value="'+m+'">Mes '+m+' · Nivel '+Math.ceil(m/3)+(m%3===0?' · evaluación final':'')+'</option>').join('')+'</select></label>'
  +'<label class="fl">Carrera<select class="fi" id="se-car">'+(cars.length?cars:Object.keys(CARN)).map(c=>'<option value="'+c+'">'+CARN[c]+'</option>').join('')+'</select></label>'
  +RBC.map((c,i)=>'<label class="fl">'+c+'<select class="fi" id="se-r'+i+'">'+[1,2,3,4].map(n=>'<option value="'+n+'"'+(n===3?' selected':'')+'>'+n+' · '+RBN[n]+'</option>').join('')+'</select></label>').join('')
  +'<label class="fl">Comentario para el estudiante<textarea class="fi" id="se-com" rows="3" placeholder="Qué logró y qué debe practicar"></textarea></label>'
- +'<p class="mute" style="font-size:13px;margin-top:8px">Aprueba con un promedio de 3 (Logrado) o más.</p><button class="btn" id="se-save" style="margin-top:12px">Guardar evaluación</button></div>'
+ +'<p class="mute" style="font-size:13px;margin-top:8px">Aprueba con un promedio de 3 (Logrado) o más. La evaluación de los meses 3, 6 y 9 es la final del nivel: si la aprueba y terminó las clases, el estudiante puede descargar su certificado.</p><button class="btn" id="se-save" style="margin-top:12px">Guardar evaluación</button></div>'
  +'<div class="card"><h3>Evaluaciones anteriores</h3>'+(ev.length?ev.slice().reverse().map(evCard).join(''):'<p class="mute">Todavía no tiene evaluaciones.</p>')+'</div>'}
 async function segSave(){const id=SEGsel;if(!id||!DBS)return;const b=document.getElementById('se-save');b.disabled=true;
  const it={mes:+document.getElementById('se-mes').value,car:document.getElementById('se-car').value,r:RBC.map((_,i)=>+document.getElementById('se-r'+i).value),com:document.getElementById('se-com').value.trim().slice(0,600),fecha:new Date().toISOString()};
