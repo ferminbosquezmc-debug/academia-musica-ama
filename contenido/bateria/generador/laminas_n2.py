@@ -220,4 +220,63 @@ for k, (n, c, r, col, dyn) in enumerate(MAP):
 s.text(60, 720, '▲ = fill antes de la parte nueva', 30, 700, DGOLD, 'start', FI)
 s.text(60, 790, 'Las letras p, mp, f y ff son las dinámicas: de suave a muy fuerte.', 30, 600, GRAY, 'start', FI)
 s.save('B2_mapa')
+
+# ===================== NIVEL 3 · MES 7 (clases 25–28) =====================
+# 25 · Paradiddle y ostinato ------------------------------------------------------------
+s = Svg(2400, 1300, 'El paradiddle y el ostinato')
+s.head('El paradiddle', 'D I D D · I D I I — dos golpes alternos y un doble · el acento en el primero de cada grupo')
+PD = ['D', 'I', 'D', 'D', 'I', 'D', 'I', 'I']
+grid(s, 360, 200, C16[:8] + C16[:8], [('Redoblante', {k: (PD[k % 8], k % 4 == 0, None) for k in range(16)})], 120, 140, 4)
+s.text(60, 600, 'Ostinato: el ride y el bombo no cambian; la mano izquierda lee', 34, 700, INK, 'start')
+grid(s, 520, 640, C8, [('Ride', {k: ('D', False, None) for k in range(8)}), ('Redoblante', {1: ('I', False, None), 3: ('I', False, None), 4: ('I', False, None), 7: ('I', False, None)}),
+     ('Bombo', {0: ('PD', False, None), 4: ('PD', False, None)}), ('Hi-hat (pie)', {2: ('PI', False, None), 6: ('PI', False, None)})], 220, 100)
+s.save('B3_paradiddle')
+
+# 26 · La clave 3-2 y 2-3 ------------------------------------------------------------------
+s = Svg(2400, 1000, 'La clave 3-2 y 2-3')
+s.head('La clave', 'El patrón de 2 compases que ordena los ritmos latinos · 3 golpes en un compás y 2 en el otro')
+def clave(y0, a, b, lab):
+    s.text(60, y0 + 120, lab, 40, 700, INK, 'start')
+    cnt = ['1', 'y', '2', 'y', '3', 'y', '4', 'y']
+    for bar, hits in enumerate((a, b)):
+        x0 = 380 + bar * 1000
+        for k in range(8):
+            x = x0 + k * 120
+            s.rect(x + 4, y0, 112, 200, BOX if k % 2 == 0 else '#FAFAF7', rx=12); s.text(x + 60, y0 + 45, cnt[k], 30, 700, INK if k % 2 == 0 else GRAY)
+            if k in hits: hitc(s, x + 60, y0 + 125, 'I', 40, False, '●')
+        s.text(x0 + 480, y0 + 250, f'compás {bar + 1} · {len(hits)} golpes', 26, 600, GRAY, 'middle', FI)
+clave(220, [0, 3, 6], [2, 4], 'Clave 3-2')
+clave(600, [2, 4], [0, 3, 6], 'Clave 2-3')
+s.save('B3_clave')
+
+# 27 · Notas fantasma, flam y drag ------------------------------------------------------------
+s = Svg(2400, 1150, 'Notas fantasma, flam y drag')
+s.head('Notas fantasma, flam y drag', 'Golpes muy suaves (entre paréntesis) alrededor de los golpes fuertes')
+s.text(60, 250, 'Notas fantasma en el redoblante', 34, 700, INK, 'start')
+gh = {4: ('I', True, None), 12: ('I', True, None)}
+for k in (7, 9, 14): gh[k] = ('I', False, '( )')
+grid(s, 400, 280, C16, [('Redoblante', gh)], 118, 120, 4)
+s.text(1200, 520, 'Los golpes acentuados (borde dorado) suenan fuerte; los fantasma, apenas se oyen: baqueta a 1–2 cm (aproximado).', 26, 600, GRAY, 'middle', FI)
+for k, (n, desc, gr) in enumerate([('Flam', 'una nota de adorno pegada a la principal', 1), ('Drag', 'dos notas de adorno pegadas a la principal', 2)]):
+    x = 300 + k * 1100; y = 700
+    s.text(x, y, n, 44, 700, INK, 'start'); s.text(x, y + 50, desc, 26, 600, GRAY, 'start', FI)
+    for g in range(gr): s.circle(x + 120 + g * 70, y + 200, 24, '#FFFFFF', '#2370D6', 4); s.text(x + 120 + g * 70, y + 209, 'I', 22, 700, '#2370D6')
+    hitc(s, x + 120 + gr * 70 + 90, y + 200, 'D', 52, True)
+    s.text(x + 330, y + 320, 'baqueta baja (I) + baqueta alta (D) casi juntas', 24, 600, GRAY, 'middle', FI)
+s.save('B3_ghost')
+
+# 28 · Redoble de 5 golpes y fill en tresillos ---------------------------------------------------
+s = Svg(2400, 1050, 'Redoble de cinco golpes y fill en tresillos')
+s.head('Redoble de 5 golpes', 'Dos dobles golpes y un golpe con acento: D D I I D · luego empieza la otra mano')
+FIVE = {0: ('D', False, None), 1: ('D', False, None), 2: ('I', False, None), 3: ('I', False, None), 4: ('D', True, None),
+        8: ('I', False, None), 9: ('I', False, None), 10: ('D', False, None), 11: ('D', False, None), 12: ('I', True, None)}
+grid(s, 360, 200, C16, [('Redoblante', FIVE)], 120, 140, 4)
+s.text(60, 600, 'Fill de 2 tiempos en tresillos por los toms', 34, 700, INK, 'start')
+TR = ['3', 'o', 'la', '4', 'o', 'la']
+col = ['#2370D6', '#2370D6', '#2370D6', '#F57C00', '#2AA7E8', '#283593']; nm = ['red.', 'red.', 'red.', 'tom 1', 'tom 2', 'piso']
+for k in range(6):
+    x = 420 + k * 280
+    s.rect(x, 650, 260, 230, col[k], INK, 2, 18); s.text(x + 130, 720, TR[k], 34, 700, '#FFFFFF'); s.text(x + 130, 790, ['D', 'I', 'D', 'I', 'D', 'I'][k], 40, 700, '#FFFFFF'); s.text(x + 130, 850, nm[k], 26, 600, '#FFFFFF', 'middle', FI)
+s.circle(2200, 765, 80, GOLD, INK, 3); s.text(2200, 755, 'crash', 30, 700); s.text(2200, 790, '+ bombo', 24, 700)
+s.save('B3_cinco')
 print('ok')
