@@ -88,4 +88,30 @@ for k, (tm, t, d, c) in enumerate(CAL):
 s.text(1200, 780, 'Al terminar de cantar, enfrío: tarareo suave bajando y tomo agua', 28, 700, INK, 'middle', FI)
 s.text(1200, 840, 'Si algo duele, paro', 26, 600, DGOLD, 'middle', FI)
 s.save('C1_calentamiento')
+
+# ===================== MES 2 (clases 5–8) =====================
+# 6 · Dónde respiro --------------------------------------------------------------------------------
+s = Svg(2400, 900, 'Dónde respirar al cantar')
+s.head('¿Dónde respiro?', 'En los silencios y al final de cada frase · la marca de respiración es una comita (’)')
+FR = [('Frase 1', 'compases 1 a 4', BLUE), ('Frase 2', 'compases 5 a 8', GREEN)]
+for k, (t, d, c) in enumerate(FR):
+    x = 120 + k * 1100
+    s.add(f'<path d="M {x} 420 Q {x + 450} 230 {x + 900} 420" fill="none" stroke="{c}" stroke-width="10" stroke-linecap="round"/>')
+    s.text(x + 450, 380, t, 40, 700, c); s.text(x + 450, 440, d, 26, 600, GRAY, 'middle', FI)
+    s.text(x + 960, 330, '’', 120, 700, RED); s.text(x + 960, 470, 'respiro', 24, 700, RED, 'middle', FI)
+s.rect(120, 560, 2160, 260, BOX, 'none', 0, 20)
+for k, t in enumerate(['1. Respiro ANTES de empezar, con calma, contando la entrada', '2. No respiro en medio de una palabra', '3. En los silencios largos tomo aire lleno; en los cortos, «aire rápido» por la boca']):
+    s.text(170, 630 + k * 70, t, 28, 600, INK, 'start', FI)
+s.save('C1_respiro')
+
+# 7 · Las cinco vocales -------------------------------------------------------------------------------
+s = Svg(2400, 900, 'Las cinco vocales cantadas')
+s.head('Las 5 vocales del canto', 'Boca abierta y redonda · la mandíbula suelta · la lengua relajada detrás de los dientes de abajo')
+VOC = [('A', 'boca bien abierta', 120, 120, RED), ('E', 'sonrisa suave', 140, 80, ORANGE), ('I', 'sonrisa, sin apretar', 140, 55, '#C9A227'), ('O', 'labios redondos', 95, 115, GREEN), ('U', 'labios hacia adelante', 60, 80, BLUE)]
+for k, (v, d, rx, ry, c) in enumerate(VOC):
+    x = 280 + k * 460
+    s.add(f'<ellipse cx="{x}" cy="420" rx="{rx}" ry="{ry}" fill="{c}" opacity=".2" stroke="{c}" stroke-width="8"/>')
+    s.text(x, 445, v, 80, 700, c); s.text(x, 640, d, 26, 600, INK, 'middle', FI)
+s.text(1200, 780, 'Ejercicio: «mi – me – ma – mo – mu» en una nota, cambiando solo la forma de la boca', 28, 700, DGOLD, 'middle', FI)
+s.save('C1_vocales')
 print('ok')
