@@ -411,4 +411,68 @@ scale_shape(330, 300, 4, 3, 'SOL mayor · desde la cuerda MI', ['SOL', 'LA', 'SI
 scale_shape(330, 780, 3, 3, 'DO mayor · desde la cuerda LA', ['DO', 'RE', 'MI', 'FA', 'SOL', 'LA', 'SI', 'DO'])
 s.text(1200, 1290, 'T – T – S – T – T – T – S · ♯ = un traste más agudo · ♭ = un traste más grave', 28, 700, DGOLD, 'middle', FI)
 s.save('J2_escala')
+
+# ===================== NIVEL 2 · MES 5 (clases 17–20) =====================
+MAJ = [0, 2, 4, 5, 7, 9, 11]
+def nname(pc): return CHROM[pc % 12]
+def scale_box(x0, y0, root_pc, b, fw=200, sg=78, strings=(1, 2, 3, 4, 5), show='nota', title=None, root_mark=True):
+    """Caja de 4 trastes (b..b+3), un dedo por traste. show: 'nota' | 'grado'."""
+    frets = b + 3
+    # diapasón parcial: dibujo trastes b..b+3
+    W = 4 * fw; n = len(strings)
+    s.rect(x0, y0 - sg * 0.6, W, sg * (n - 1) + sg * 1.2, WOOD, FRET, 2, 10)
+    for k in range(5): s.line(x0 + k * fw, y0 - sg * 0.6, x0 + k * fw, y0 + sg * (n - 1) + sg * 0.6, FRET, 5)
+    for i, st in enumerate(strings):
+        s.line(x0 - 30, y0 + i * sg, x0 + W, y0 + i * sg, STR, 2 + st * 1.1)
+        pill(s, x0 - 80, y0 + i * sg, SNAME[st], 18, 60)
+    for k in range(4): s.text(x0 + (k + 0.5) * fw, y0 + sg * (n - 1) + sg * 0.6 + 36, f'traste {b + k}', 20, 600, GRAY, 'middle', FI)
+    for i, st in enumerate(strings):
+        for k in range(4):
+            fr = b + k; pc = (OPEN[st] + fr) % 12; d = (pc - root_pc) % 12
+            if d in MAJ:
+                deg = MAJ.index(d) + 1; x = x0 + (k + 0.5) * fw; y = y0 + i * sg
+                if show == 'grado':
+                    col = '#E5312B' if deg == 1 else ('#FFFFFF')
+                    s.circle(x, y, 28, col, INK, 2.5); s.text(x, y + 9, str(deg), 26, 700, '#FFFFFF' if deg == 1 else INK)
+                else:
+                    nm = nname(pc); pill(s, x, y, nm, 18, 86 if len(nm) > 3 else 70)
+                    if root_mark and d == 0: s.circle(x + 44, y - 22, 9, '#E5312B', INK, 1.5)
+    for k in range(4): s.text(x0 + (k + 0.5) * fw, y0 - sg * 0.6 - 14, f'dedo {k + 1}', 20, 700, DGOLD, 'middle', FI)
+    if title: s.text(x0 - 120, y0 - sg * 0.6 - 60, title, 30, 700, INK, 'start')
+
+# 17 · Grados y digitación ------------------------------------------------------------------------
+s = Svg(2400, 1150, 'Grados y digitación de la escala mayor')
+s.head('Los grados de la escala mayor en el bajo', 'SOL mayor, raíz con el dedo 2 · cada número es el lugar de la nota en la escala')
+scale_box(300, 380, 7, 2, show='grado', title='Grados (1 = raíz)')
+scale_box(1460, 380, 7, 2, show='nota', title='Las mismas notas')
+s.rect(120, 900, 2160, 190, BOX, 'none', 0, 20)
+s.text(1200, 965, 'Los grados no cambian aunque cambie la tonalidad: el 1 siempre es la raíz, el 5 la quinta, el 8 la octava', 26, 700, INK, 'middle', FI)
+s.text(1200, 1030, 'Un dedo por traste: dedo 1 en el primer traste de la caja, dedo 4 en el último', 24, 600, DGOLD, 'middle', FI)
+s.save('J2_grados')
+
+# 18 · Arpegio mayor --------------------------------------------------------------------------------
+def arp(x0, y0, marks, title, fw=230, sg=86):
+    shape(s, x0, y0, fw, sg, 8, (1, 2, 3, 4, 5), marks); s.text(x0 - 200, y0 - 80, title, 32, 700, INK, 'start')
+s = Svg(2400, 1450, 'El arpegio mayor en el bajo')
+s.head('El arpegio mayor: 1 – 3 – 5 – 8', 'Las notas del acorde, una por una · la forma se mueve a cualquier raíz')
+arp(330, 330, [(3, 3, '1', '#E5312B', 'DO'), (2, 2, '3', '#F57C00', 'MI'), (2, 5, '5', '#2370D6', 'SOL'), (1, 5, '8', '#2E9E4F', 'DO')], 'C mayor · raíz en la cuerda LA (dedo 2)')
+arp(330, 960, [(4, 3, '1', '#E5312B', 'SOL'), (3, 2, '3', '#F57C00', 'SI'), (3, 5, '5', '#2370D6', 'RE'), (2, 5, '8', '#2E9E4F', 'SOL')], 'G mayor · raíz en la cuerda MI (dedo 2)')
+s.save('J2_arpmayor')
+
+# 19 · Arpegio menor ----------------------------------------------------------------------------------
+s = Svg(2400, 1450, 'El arpegio menor en el bajo')
+s.head('El arpegio menor: 1 – ♭3 – 5 – 8', 'La tercera baja un traste: suena más triste · raíz con el dedo 1')
+arp(330, 330, [(4, 5, '1', '#E5312B', 'LA'), (4, 8, '♭3', '#8E3BB8', 'DO'), (3, 7, '5', '#2370D6', 'MI'), (2, 7, '8', '#2E9E4F', 'LA')], 'Am · raíz en la cuerda MI, traste 5')
+arp(330, 960, [(3, 5, '1', '#E5312B', 'RE'), (3, 8, '♭3', '#8E3BB8', 'FA'), (2, 7, '5', '#2370D6', 'LA'), (1, 7, '8', '#2E9E4F', 'RE')], 'Dm · raíz en la cuerda LA, traste 5')
+s.save('J2_arpmenor')
+
+# 20 · Patrones 1 y 4 ------------------------------------------------------------------------------------
+s = Svg(2400, 1300, 'Patrones 1 y 4 de la escala mayor')
+s.head('Patrones 1 y 4 de la escala mayor (SOL mayor)', 'Cajas de 4 trastes que cubren todas las cuerdas · el punto rojo marca cada SOL (la raíz)')
+scale_box(300, 400, 7, 2, title='Patrón 1 · raíz en la cuerda MI con el dedo 2')
+scale_box(1460, 400, 7, 9, title='Patrón 4 · raíz en la cuerda LA con el dedo 2')
+s.text(1200, 1000, 'Patrón 1 en SOL: trastes 2 a 5 · Patrón 4 en SOL: trastes 9 a 12', 28, 700, INK, 'middle', FI)
+s.text(1200, 1060, 'Para otra tonalidad, muevo la caja: la raíz siempre queda bajo el mismo dedo', 26, 600, DGOLD, 'middle', FI)
+s.text(1200, 1120, 'Bajo de 4 cuerdas: igual, sin la fila de la cuerda SI', 24, 600, GRAY, 'middle', FI)
+s.save('J2_patrones14')
 print('ok')
