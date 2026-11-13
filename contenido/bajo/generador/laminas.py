@@ -175,4 +175,85 @@ for f, n in ((0, 'MI'), (1, 'FA'), (3, 'SOL')):
     else: s.circle(fx(600, 300, 0), 780 + 3 * 80, 26, COL['MI'], INK, 2); s.text(fx(600, 300, 0), 780 + 3 * 80 + 8, 'MI', 20, 700)
 s.text(1200, 1260, 'El bajo suena una octava más grave de lo que se escribe: así sus notas caben en el pentagrama', 26, 600, DGOLD, 'middle', FI)
 s.save('J1_clavefa')
+
+# ===================== NIVEL 1 · MES 2 (clases 5–8) =====================
+def bar_grid(s, x0, y0, cw, rows, counts=('1', '2', '3', '4')):
+    for k, c in enumerate(counts):
+        s.rect(x0 + k * cw + 4, y0, cw - 8, 70 + 110 * len(rows), BOX, 'none', 0, 14); s.text(x0 + (k + 0.5) * cw, y0 + 50, c, 34, 700)
+    for r, (name, hits, col) in enumerate(rows):
+        y = y0 + 70 + r * 110 + 55
+        s.text(x0 - 30, y + 11, name, 30, 700, INK, 'end'); s.line(x0, y, x0 + len(counts) * cw, y, '#D5D9E0', 2)
+        for k, lab, ln in hits:
+            if ln > 1: s.rect(x0 + (k + 0.5) * cw, y - 12, (ln - 1) * cw, 24, col, 'none', 0, 12)
+            s.circle(x0 + (k + 0.5) * cw, y, 38, col, INK, 2); s.text(x0 + (k + 0.5) * cw, y + 12, lab, 30, 700, '#FFFFFF' if col != COL['MI'] else INK)
+
+# 5 · El bajo con el bombo ---------------------------------------------------------------
+s = Svg(2400, 1150, 'El bajo toca con el bombo')
+s.head('El bajo y el bombo, juntos', 'Mismo pulso, mismo lugar: así la banda suena firme')
+s.text(60, 240, 'Negras: una nota en cada pulso', 34, 700, INK, 'start')
+bar_grid(s, 420, 270, 440, [('Bombo', [(k, '●', 1) for k in range(4)], '#2E9E4F'), ('Bajo', [(k, 'MI', 1) for k in range(4)], COL['MI'])])
+s.text(60, 720, 'Blancas: el bajo suena 2 pulsos, en el 1 y en el 3', 34, 700, INK, 'start')
+bar_grid(s, 420, 750, 440, [('Bombo', [(0, '●', 1), (2, '●', 1)], '#2E9E4F'), ('Bajo', [(0, 'LA', 2), (2, 'LA', 2)], COL['LA'])])
+s.save('J1_bombo')
+
+# 6 · Cuerda LA ---------------------------------------------------------------------------
+s = Svg(2400, 1200, 'Las notas LA, SI y DO en la cuerda LA')
+s.head('Cuerda LA (3.ª): LA · SI · DO', 'Al aire, traste 2 (dedo 2) y traste 3 (dedo 3)')
+sp = 40
+staff(s, 140, 1000, 280, sp)
+for k, (n, o) in enumerate([('LA', 2), ('SI', 2), ('DO', 3)]): note_bf(s, 470 + k * 200, 280, sp, n, o)
+s.text(570, 280 + 4 * sp + 90, 'LA: 1.er espacio · SI: 2.ª línea · DO: 2.º espacio', 26, 600, GRAY, 'middle', FI)
+fretboard(s, 1350, 300, 4, 230, 70)
+y3 = 300 + 2 * 70
+s.circle(fx(1350, 230, 0), y3, 24, COL['LA'], INK, 2); s.text(fx(1350, 230, 0), y3 + 8, 'LA', 18, 700, '#FFFFFF')
+pill(s, fx(1350, 230, 2), y3, 'SI', 22, 70); pill(s, fx(1350, 230, 3), y3, 'DO', 22, 76)
+s.text(60, 830, 'El silencio en el bajo: apago la cuerda con la mano', 34, 700, INK, 'start')
+for k, (a, b) in enumerate([('3/4 · vals', ['LA', '𝄽', '𝄽']), ('4/4', ['DO', '𝄽', 'SI', '𝄽'])]):
+    x0 = 120 + k * 1150; s.text(x0, 920, a, 30, 700, GRAY, 'start', FI)
+    for j, n in enumerate(b):
+        x = x0 + 60 + j * 230
+        if n in COL: pill(s, x + 40, 1030, n, 30, 110)
+        else: s.rect(x - 15, 985, 110, 90, BOX, 'none', 0, 14); s.text(x + 40, 1045, 'silencio', 22, 700, GRAY, 'middle', FI)
+s.text(1200, 1160, 'En el silencio, la mano izquierda afloja el dedo (sin soltar la cuerda) y la nota se apaga', 26, 600, DGOLD, 'middle', FI)
+s.save('J1_cuerdaLA')
+
+# 7 · Cuerda RE y corcheas -------------------------------------------------------------------
+s = Svg(2400, 1150, 'Las notas RE, MI y FA en la cuerda RE y las corcheas')
+s.head('Cuerda RE (2.ª): RE · MI · FA', 'Al aire, traste 2 (dedo 2) y traste 3 (dedo 3)')
+staff(s, 140, 1000, 280, sp)
+for k, (n, o) in enumerate([('RE', 3), ('MI', 3), ('FA', 3)]): note_bf(s, 470 + k * 200, 280, sp, n, o)
+s.text(570, 280 + 4 * sp + 90, 'RE: 3.ª línea · MI: 3.er espacio · FA: 4.ª línea', 26, 600, GRAY, 'middle', FI)
+fretboard(s, 1350, 300, 4, 230, 70)
+y2 = 300 + 70
+s.circle(fx(1350, 230, 0), y2, 24, COL['RE'], INK, 2); s.text(fx(1350, 230, 0), y2 + 8, 'RE', 18, 700)
+pill(s, fx(1350, 230, 2), y2, 'MI', 22, 70); pill(s, fx(1350, 230, 3), y2, 'FA', 22, 70)
+s.text(60, 820, 'Corcheas: dos notas en cada pulso, alternando i y m', 34, 700, INK, 'start')
+for k in range(8):
+    x = 260 + k * 250; c = str(k // 2 + 1) if k % 2 == 0 else 'y'
+    s.text(x, 900, c, 34, 700, INK if k % 2 == 0 else GRAY)
+    lab = 'i' if k % 2 == 0 else 'm'; s.circle(x, 990, 44, '#E5312B' if lab == 'i' else '#2370D6', INK, 2); s.text(x, 1006, lab, 40, 700, '#FFFFFF')
+s.text(1200, 1100, 'Digo «ti-ti» en cada pulso · el pie sigue marcando solo el 1, 2, 3, 4', 26, 600, DGOLD, 'middle', FI)
+s.save('J1_cuerdaRE')
+
+# 8 · Himno de la alegría en el bajo ---------------------------------------------------------
+s = Svg(2400, 1300, 'Himno de la alegría en el bajo')
+s.head('«Himno de la alegría» · L. van Beethoven', 'Melodía de dominio público · versión AMA para bajo, en clave de fa')
+MEL = [[('MI', 1), ('MI', 1), ('FA', 1), ('SOL', 1)], [('SOL', 1), ('FA', 1), ('MI', 1), ('RE', 1)], [('DO', 1), ('DO', 1), ('RE', 1), ('MI', 1)], [('MI', 1), ('RE', 1), ('RE', 2)],
+       [('MI', 1), ('MI', 1), ('FA', 1), ('SOL', 1)], [('SOL', 1), ('FA', 1), ('MI', 1), ('RE', 1)], [('DO', 1), ('DO', 1), ('RE', 1), ('MI', 1)], [('RE', 1), ('DO', 1), ('DO', 2)]]
+sp = 36
+for row in range(2):
+    y0 = 230 + row * 330; x1, x2 = 120, 2280
+    staff(s, x1, x2, y0, sp); bw = (x2 - x1 - 160) / 4
+    for b in range(4):
+        bx = x1 + 160 + b * bw
+        s.line(bx + bw, y0, bx + bw, y0 + 4 * sp, INK, 3 if b < 3 else 7)
+        t = 0
+        for n, d in MEL[row * 4 + b]:
+            note_bf(s, bx + 60 + t * (bw - 80) / 4, y0, sp, n, 3, half=(d == 2)); t += d
+s.text(60, 950, 'Dónde toco cada nota', 34, 700, INK, 'start')
+MAP = [('DO', 'cuerda LA · traste 3'), ('RE', 'cuerda RE al aire'), ('MI', 'cuerda RE · traste 2'), ('FA', 'cuerda RE · traste 3'), ('SOL', 'cuerda SOL al aire')]
+for k, (n, d) in enumerate(MAP):
+    x = 80 + k * 460; s.rect(x, 990, 430, 200, BOX, 'none', 0, 18); pill(s, x + 215, 1060, n, 32, 130); s.text(x + 215, 1150, d, 24, 600, INK, 'middle', FI)
+s.text(1200, 1260, 'Nueva: SOL es la 1.ª cuerda al aire · la blanca dura 2 pulsos', 26, 600, DGOLD, 'middle', FI)
+s.save('J1_himno')
 print('ok')
