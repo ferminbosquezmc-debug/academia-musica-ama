@@ -197,4 +197,44 @@ for k, (c, g, a, b) in enumerate(CH):
 s.text(60, 460, 'alta', 26, 700, BLUE, 'start'); s.text(60, 610, 'baja', 26, 700, ORANGE, 'start')
 s.text(1200, 820, 'La voz baja canta DO – DO – SI – DO: casi no se mueve, y por eso suena unida', 26, 600, DGOLD, 'middle', FI)
 s.save('C2_coro')
+
+# ===================== NIVEL 3 (clases 25–36) =====================
+# 27 · Registros de la voz -------------------------------------------------------------------------
+s = Svg(2400, 1050, 'Los registros de la voz')
+s.head('Voz de pecho, voz de cabeza y la zona de paso', 'La meta es una sola voz pareja de abajo hacia arriba, sin «quiebres» ni gritos')
+REG = [('Voz de cabeza', 'notas agudas · se siente vibrar en la cabeza y la cara', BLUE, 230), ('Zona de paso', 'donde la voz quiere «quebrarse» · se canta más liviano', ORANGE, 470),
+       ('Voz de pecho', 'notas graves y medias · se siente vibrar en el pecho', RED, 710)]
+s.rect(200, 230, 120, 700, BOX, INK, 2, 20)
+for t, d, c, y in REG:
+    s.rect(200, y, 120, 220, c, INK, 2, 16); s.text(380, y + 100, t, 40, 700, c, 'start'); s.text(380, y + 150, d, 26, 600, INK, 'start', FI)
+s.text(260, 210, 'agudo', 24, 700, GRAY, 'middle', FI); s.text(260, 970, 'grave', 24, 700, GRAY, 'middle', FI)
+s.rect(1500, 300, 820, 560, BOX, 'none', 0, 22); s.text(1910, 370, 'Voz mixta', 40, 700, PURPLE)
+for k, t in enumerate(['mezcla de pecho y cabeza', 'une los registros sin quiebre', 'ejercicios: sirena con «u»,', 'labios «brrr» subiendo y bajando,', 'escalas de 5 notas con «ng-a»', 'siempre suave, nunca forzado']):
+    s.text(1560, 450 + k * 62, '• ' + t, 26, 600, INK, 'start', FI)
+s.save('C3_registros')
+
+# 28 · Armonía a tres voces ------------------------------------------------------------------------
+s = Svg(2400, 1000, 'Armonía a tres voces')
+s.head('Tres voces sobre C – F – G7 – C', 'Cada voz canta una nota del acorde y se mueve lo menos posible · en G7, la voz media canta la séptima (FA)')
+CH3 = [('C', 'SOL', 'MI', 'DO'), ('F', 'LA', 'FA', 'DO'), ('G7', 'SOL', 'FA', 'SI'), ('C', 'SOL', 'MI', 'DO')]
+NC3 = {'DO': RED, 'RE': ORANGE, 'MI': '#FFD21F', 'FA': GREEN, 'SOL': '#2AA7E8', 'LA': '#283593', 'SI': PURPLE}
+def p3(x, y, n):
+    c = NC3[n]; s.rect(x - 65, y - 30, 130, 54, c, INK, 2.5, 27); s.text(x, y + 10, n, 30, 700, '#FFFFFF' if n in ('DO', 'LA', 'SI') else INK)
+for k, (c, a, m, b) in enumerate(CH3):
+    x = 420 + k * 500
+    s.rect(x - 200, 200, 400, 640, BOX, 'none', 0, 22); s.text(x, 270, c, 48, 700)
+    p3(x, 420, a); p3(x, 570, m); p3(x, 720, b)
+for y, t, c in ((420, 'alta', BLUE), (570, 'media', GREEN), (720, 'baja', ORANGE)): s.text(60, y + 10, t, 28, 700, c, 'start')
+s.text(1200, 920, 'En G7 → C: FA baja a MI y SI sube a DO · así se resuelve la tensión', 28, 700, DGOLD, 'middle', FI)
+s.save('C3_tres_voces')
+
+# 36 · Recital final ----------------------------------------------------------------------------------
+s = Svg(2400, 900, 'Programa del recital final de canto')
+s.head('¡Recital final! · Canto', 'El programa de mi recital · Nivel 3')
+for k, (n, t, d, col) in enumerate([('1', 'Vocalización', 'escalas, arpegios y registros', '#2AA7E8'), ('2', 'Canción solista', 'con micrófono y acompañamiento', GREEN),
+                                     ('3', 'Canción a voces', 'a dos o tres voces, en coro', ORANGE), ('4', 'Improvisación', 'pregunta y respuesta con la banda', RED)]):
+    x = 80 + k * 570; s.rect(x, 220, 540, 460, col, INK, 2, 24); s.circle(x + 270, 320, 50, '#FFFFFF', INK, 2); s.text(x + 270, 340, n, 52, 700)
+    s.text(x + 270, 460, t, 44, 700, '#FFFFFF'); s.text(x + 270, 540, d, 22, 600, '#FFFFFF', 'middle', FI)
+s.text(1200, 790, 'Antes: caliento, tomo agua y respiro · Después: enfrío la voz, saludo y agradezco', 30, 600, GRAY, 'middle', FI)
+s.save('C3_recital')
 print('ok')
