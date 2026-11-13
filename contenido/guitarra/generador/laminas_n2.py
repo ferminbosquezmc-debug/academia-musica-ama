@@ -517,4 +517,60 @@ for st, fr in PEN.items():
         s.text(x + 60, y - 30, 'd' + str({5: 1, 7: 3, 8: 4}[f]), 20, 700, GRAY)
 s.text(1200, 990, 'Sobre Am – F – G – Am, cualquier nota de la caja suena bien: ¡empieza y termina en LA!', 30, 600, INK, 'middle', FI)
 s.save('G3_pentatonica')
+
+# ===================== NIVEL 3 · MES 9 (clases 33–36) =====================
+# 33 · Estudio en Do (composición AMA al estilo de Sor): tablatura con análisis -----
+EST = [('C', [(5, 3), (3, 0), (2, 1)]), ('C', [(5, 3), (3, 0), (1, 0)]), ('G7', [(6, 3), (3, 0), (1, 1)]), ('C', [(5, 3), (3, 0), (1, 0)]),
+       ('F', [(4, 3), (3, 2), (2, 1)]), ('C', [(5, 3), (3, 0), (2, 1)]), ('G7', [(6, 3), (3, 0), (2, 0)]), ('C', [(5, 3), (3, 0), (2, 1)])]
+s = Svg(2400, 1300, 'Estudio en Do, composición AMA al estilo de Fernando Sor')
+s.head('Estudio en Do (composición AMA, al estilo de Sor)', '3/4 · en cada compás: p (bajo) – i – m · lento, legato y con dinámicas')
+for row in range(2):
+    y0 = 360 + row * 460; x0 = 160
+    s.text(x0, y0 - 120, ['Frase A · compases 1–4 · p', 'Frase B · compases 5–8 · mf → p'][row], 34, 700, DGOLD, 'start')
+    for i in range(6): s.line(x0, y0 + i * 40, x0 + 2100, y0 + i * 40, GRAY, 2)
+    for i, lab in enumerate(['1ª', '2ª', '3ª', '4ª', '5ª', '6ª']): s.text(x0 - 40, y0 + i * 40 + 9, lab, 22, 600, GRAY)
+    for m in range(4):
+        sym, notes = EST[row * 4 + m]; mx = x0 + m * 525
+        s.line(mx, y0, mx, y0 + 200, INK, 3)
+        s.text(mx + 262, y0 - 40, f'{row * 4 + m + 1} · {sym}', 30, 700)
+        for k, (st, f) in enumerate(notes):
+            x = mx + 90 + k * 170; y = y0 + (st - 1) * 40
+            s.rect(x - 22, y - 20, 44, 40, '#FFFFFF'); s.text(x, y + 11, str(f), 32, 700)
+            s.text(x, y0 + 250, ['p', 'i', 'm'][k], 26, 700, GRAY)
+    s.line(x0 + 2100, y0, x0 + 2100, y0 + 200, INK, 5 if row else 3)
+    s.add(f'<path d="M{x0+1050+100} {y0+300} q260 -40 520 0" stroke="{DGOLD}" stroke-width="4" fill="none"/>')
+    s.text(x0 + 1050 + 360, y0 + 340, 'V7 → I · cadencia auténtica', 28, 700, DGOLD)
+s.save('G3_estudio')
+
+# 35 · Plan de ensayo de 7 días ------------------------------------------------------
+s = Svg(2400, 1000, 'Plan de ensayo de siete días antes de la presentación')
+s.head('Mi semana de ensayo', 'Siete días antes de la presentación · 30 minutos al día')
+DAYS = [('1', 'Divido', 'cada obra en secciones de 4 compases'), ('2', 'Memorizo', 'sección por sección, lento'), ('3', 'Uno', 'las secciones de dos en dos'),
+        ('4', 'Grabo', 'todo el programa y me escucho'), ('5', 'Corrijo', 'solo las partes difíciles'), ('6', 'Ensayo general', 'de pie, saludo, afino y toco todo'), ('7', 'Descanso', 'repaso suave y duermo bien')]
+for k, (d, t_, sub) in enumerate(DAYS):
+    x = 190 + k * 340
+    s.rect(x - 155, 220, 310, 520, '#FAFAF7' if k < 6 else '#FFF8E1', GOLD if k in (5, 6) else '#C9C3B6', 4, 22)
+    s.circle(x, 300, 48, GOLD, INK, 2); s.text(x, 318, d, 48, 700)
+    s.text(x, 410, t_, 32 if len(t_) < 10 else 26, 700)
+    words = sub.split(); lines = []; cur = ''
+    for w in words:
+        if len(cur) + len(w) > 14: lines.append(cur); cur = w
+        else: cur = (cur + ' ' + w).strip()
+    lines.append(cur)
+    for j, ln in enumerate(lines): s.text(x, 470 + j * 40, ln, 24, 600, GRAY, 'middle', FI)
+TIPS = ['Respira lento 4 veces antes de empezar.', 'Si te equivocas, sigue: el público casi nunca lo nota.', 'Mira un punto fijo o a una persona amiga.']
+for k, tx in enumerate(TIPS): s.circle(160, 820 + k * 56, 15, GOLD, INK, 2); s.text(195, 830 + k * 56, tx, 30, 600, INK, 'start', FI)
+s.save('G3_ensayo')
+
+# 36 · Programa de la presentación final -----------------------------------------------
+s = Svg(2400, 900, 'Programa de la presentación final de guitarra')
+s.head('Mi presentación final', 'Cuatro partes · unos 8 a 10 minutos · Academia de Música ARPA')
+PRG = [('1', 'Escala', 'mayor móvil o pentatónica', '#2AA7E8'), ('2', 'Obra', 'Estudio en Do (al estilo de Sor)', '#2E9E4F'), ('3', 'Canción', 'acompaño a un cantante o en dúo', '#F57C00'), ('4', 'Improvisación', 'blues en La o Am – F – G – Am', '#8E3BB8')]
+for k, (n, t_, sub, c) in enumerate(PRG):
+    x = 330 + k * 580
+    s.rect(x - 260, 220, 520, 480, '#FAFAF7', c, 6, 26)
+    s.circle(x, 320, 56, c, INK, 2); s.text(x, 342, n, 58, 700, '#FFFFFF')
+    s.text(x, 460, t_, 42, 700); s.text(x, 530, sub, 26, 600, GRAY, 'middle', FI)
+s.text(1200, 800, 'Entro, saludo, afino, toco, agradezco y salgo: todo es parte de la presentación.', 32, 600, INK, 'middle', FI)
+s.save('G3_concierto')
 print('ok')
