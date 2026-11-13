@@ -326,4 +326,112 @@ for k in range(8):
     s.text(x + 132, 820, str(k + 1), 34, 700); s.text(x + 132, 870, who, 26, 600, INK, 'middle', FI)
 s.text(1200, 990, 'Consejo: deja silencios y vuelve siempre al 1 con fuerza', 28, 600, GRAY, 'middle', FI)
 s.save('B3_solo')
+
+# ===================== NIVEL 3 · MES 9 (clases 33–36) =====================
+def staff(s, x0, y0, w, gap=26):
+    for j in range(5): s.line(x0, y0 + j * gap, x0 + w, y0 + j * gap, INK, 3)
+def bar(s, x, y0, gap=26, w=3): s.line(x, y0, x, y0 + 4 * gap, INK, w)
+def rep(s, x, y0, side, gap=26):
+    """side='L' inicio ||:  side='R' final :||"""
+    t = x if side == 'L' else x - 10
+    s.rect(t, y0, 10, 4 * gap, INK); bar(s, x + 18 if side == 'L' else x - 18, y0, gap)
+    dx = 34 if side == 'L' else -34
+    s.circle(x + dx, y0 + 1.5 * gap, 6, INK); s.circle(x + dx, y0 + 2.5 * gap, 6, INK)
+def slashes(s, x0, w, y0, gap=26):
+    for k in range(4):
+        x = x0 + (k + 0.5) * w / 4; s.line(x - 14, y0 + 2.9 * gap, x + 14, y0 + 1.1 * gap, INK, 9)
+def beat(s, x0, w, y0, gap=26):
+    """Ritmo de rock en notación: hi-hat x en corcheas, redoblante en 2 y 4, bombo en 1 y 3"""
+    for k in range(8):
+        x = x0 + (k + 0.5) * w / 8; y = y0 - gap / 2
+        s.line(x - 11, y - 11, x + 11, y + 11, INK, 4); s.line(x - 11, y + 11, x + 11, y - 11, INK, 4)
+        s.line(x + 12, y, x + 12, y0 - 2.6 * gap, INK, 3)
+        if k in (2, 6): s.add(f'<ellipse cx="{x}" cy="{y0 + 1.5 * gap}" rx="14" ry="10" fill="{INK}" transform="rotate(-20 {x} {y0 + 1.5 * gap})"/>')
+        if k in (0, 4): s.add(f'<ellipse cx="{x}" cy="{y0 + 3.5 * gap}" rx="14" ry="10" fill="{INK}" transform="rotate(-20 {x} {y0 + 3.5 * gap})"/>')
+    for g in (0, 4):
+        s.line(x0 + (g + 0.5) * w / 8 + 12, y0 - 2.6 * gap, x0 + (g + 3.5) * w / 8 + 12, y0 - 2.6 * gap, INK, 8)
+
+# 33 · Chart de batería ------------------------------------------------------------------------
+s = Svg(2400, 1560, 'Un chart de batería completo')
+s.head('Leo un chart completo', 'La hoja de la banda: secciones, repeticiones, casillas y saltos · sin colores, como la leen los músicos')
+G = 26; W = 2100; X0 = 160
+# fila 1: intro con ritmo escrito y 3 compases de barras
+y = 300; s.text(X0, y - 70, 'Intro', 34, 700, INK, 'start'); s.text(X0 + 160, y - 70, '♩ = 90', 30, 600, GRAY, 'start', FI)
+staff(s, X0, y, W); bar(s, X0, y)
+for m in range(4):
+    x = X0 + m * W / 4; bar(s, x + W / 4, y)
+    if m == 0: beat(s, x + 20, W / 4 - 40, y)
+    else: s.text(x + W / 8, y + 3 * G, '%', 70, 700, INK, 'middle', FS)
+# fila 2: estrofa con repetición y casillas
+y = 640; s.text(X0, y - 90, 'Estrofa', 34, 700, INK, 'start'); s.rect(X0 + 190, y - 125, 60, 60, '#FFFFFF', INK, 3, 8); s.text(X0 + 220, y - 82, '1', 36, 700)
+staff(s, X0, y, W); rep(s, X0, y, 'L')
+for m in range(4):
+    x = X0 + m * W / 4; slashes(s, x + 30, W / 4 - 40, y)
+    if m < 3: bar(s, x + W / 4, y)
+rep(s, X0 + W * 0.75, y, 'R'); bar(s, X0 + W, y, G, 6)
+for k, (xa, xb) in enumerate([(X0 + W / 2, X0 + W * 0.75 - 30), (X0 + W * 0.75, X0 + W)]):
+    s.line(xa, y - 40, xb, y - 40, INK, 3); s.line(xa, y - 40, xa, y - 10, INK, 3); s.text(xa + 20, y - 52, f'{k + 1}.', 32, 700, INK, 'start')
+# fila 3: coro con Fine y D.C.
+y = 980; s.text(X0, y - 90, 'Coro', 34, 700, INK, 'start'); s.rect(X0 + 130, y - 125, 60, 60, '#FFFFFF', INK, 3, 8); s.text(X0 + 160, y - 82, '2', 36, 700)
+staff(s, X0, y, W); bar(s, X0, y)
+for m in range(4):
+    x = X0 + m * W / 4; slashes(s, x + 30, W / 4 - 40, y); bar(s, x + W / 4, y, G, 3 if m < 3 else 8)
+s.text(X0 + W / 2, y - 30, 'Fine', 34, 700, INK, 'middle', FS, 'font-style="italic"')
+s.text(X0 + W, y + 5 * G + 30, 'D.C. al Fine', 34, 700, INK, 'end', FS, 'font-style="italic"')
+s.text(X0 + W * 0.6, y - 30, 'fill', 28, 600, DGOLD, 'middle', FI)
+s.rect(X0 + W * 0.75 + 20, y - 55, W / 4 - 40, 36, '#F4E9C7', 'none', 0, 8); s.text(X0 + W * 0.875, y - 28, 'aviso: fill + crash', 24, 600, DGOLD, 'middle', FI)
+# leyenda
+LG = [('%', 'repite el compás anterior'), ('/ / / /', 'sigue el ritmo, a tu manera'), ('||:  :||', 'repite la parte'), ('1.   2.', 'casillas: 1.ª vez y 2.ª vez'),
+      ('D.C.', 'vuelve al principio'), ('Fine', 'aquí termina la canción')]
+for k, (sym, d) in enumerate(LG):
+    x = 80 + (k % 3) * 760; yy = 1270 + (k // 3) * 130
+    s.rect(x, yy, 720, 110, BOX, 'none', 0, 16); s.text(x + 120, yy + 70, sym, 38, 700, INK, 'middle', FS); s.text(x + 250, yy + 66, d, 28, 600, INK, 'start', FI)
+s.save('B3_chart')
+
+# 34 · Tocamos juntos ----------------------------------------------------------------------------
+s = Svg(2400, 1300, 'Tocar con la banda')
+s.head('Tocamos juntos', 'El bombo camina con el bajo · el click marca el pulso · el director avisa con señales')
+s.text(60, 250, 'Bombo y bajo: juntos', 36, 700, INK, 'start')
+grid(s, 480, 270, C8, [('Bajo', {k: ('PI', False, '♪') for k in (0, 3, 4)}), ('Bombo', {k: ('PD', False, None) for k in (0, 3, 4)}), ('Click', {k: ('I', False, '·') for k in (0, 2, 4, 6)})], 230, 90)
+s.text(1400, 655, 'Cuando el bajo y el bombo coinciden, la banda suena «pegada»', 28, 600, GRAY, 'middle', FI)
+s.text(60, 760, 'Señales del director (acuérdenlas antes del ensayo)', 36, 700, INK, 'start')
+SG = [('✊', 'Corte', 'puño cerrado: todos paran juntos'), ('🔁', 'Repetir', 'dedo que gira: otra vuelta'), ('⬇', 'Más suave', 'palma hacia abajo'),
+      ('⬆', 'Más fuerte', 'palma hacia arriba'), ('☝', 'Al inicio', 'señala arriba: vuelve al principio')]
+for k, (ic, n, d) in enumerate(SG):
+    x = 60 + k * 462
+    s.rect(x, 800, 440, 380, '#FFFFFF', INK, 3, 22); s.text(x + 220, 940, ic, 100, 700); s.text(x + 220, 1040, n, 40, 700); s.text(x + 220, 1100, d, 22, 600, GRAY, 'middle', FI)
+s.text(1200, 1250, 'Las señales pueden cambiar en cada banda: lo importante es acordarlas antes', 26, 600, DGOLD, 'middle', FI)
+s.save('B3_banda')
+
+# 35 · Ensayo general ----------------------------------------------------------------------------
+s = Svg(2400, 1350, 'Montaje del kit y lista del ensayo general')
+s.head('Ensayo general', 'Monto el kit en orden · repaso por secciones · cuido los nervios y el oído')
+cx, cy = 620, 760
+PIE = [(620, 1180, 100, 1, 'Banco'), (640, 780, 110, 2, 'Bombo'), (330, 960, 85, 3, 'Hi-hat'), (560, 990, 85, 4, 'Redoblante'),
+       (500, 600, 70, 5, 'Tom 1'), (720, 590, 70, 5, 'Tom 2'), (880, 960, 95, 6, 'Tom de piso'), (280, 620, 100, 7, 'Crash'), (980, 660, 110, 7, 'Ride')]
+for x, y, r, n, lab in PIE:
+    s.circle(x, y, r, '#F1EDE4' if n in (1, 2) else ('#E9D9A6' if n == 7 else '#FFFFFF'), INK, 3)
+    s.text(x, y - 8, lab, 24 if r > 80 else 20, 700); s.circle(x, y + 34, 22, GOLD, INK, 2); s.text(x, y + 43, str(n), 26, 700)
+s.text(cx, 400, 'Vista desde arriba · los números dan el orden', 26, 600, GRAY, 'middle', FI)
+CK = [('Montaje', 'banco a la altura de las rodillas · pedales cómodos · todo al alcance sin estirarme'),
+      ('Memoria', 'repaso por secciones: intro, estrofa, coro, final · sé qué viene después'),
+      ('Nervios', 'respiro: 4 tiempos dentro, 4 fuera · cuento antes de empezar'),
+      ('Oído', 'uso tapones para músicos · pido volumen moderado en el ensayo')]
+for k, (n, d) in enumerate(CK):
+    y = 260 + k * 260
+    s.rect(1240, y, 1100, 220, BOX, 'none', 0, 20); s.rect(1270, y + 40, 46, 46, '#FFFFFF', INK, 3, 8)
+    s.text(1350, y + 80, n, 38, 700, INK, 'start'); s.text(1270, y + 150, d, 24, 600, INK, 'start', FI)
+s.save('B3_ensayo')
+
+# 36 · Presentación final ------------------------------------------------------------------------
+s = Svg(2400, 900, 'Programa de la presentación final')
+s.head('¡Presentación final!', 'El programa de mi concierto · Nivel 3')
+PR = [('1', 'Rudimentos', 'paradiddle · redoble de 5 · flam', '#2AA7E8'), ('2', 'Tres estilos', 'elijo tres: funk, reggae, cumbia, bossa…', '#2E9E4F'),
+      ('3', 'Canción con banda', 'leo el chart y sigo las señales', '#F57C00'), ('4', 'Mi solo', '8 compases: idea, repetición, subida y final', '#E5312B')]
+for k, (n, t, d, col) in enumerate(PR):
+    x = 80 + k * 570
+    s.rect(x, 220, 540, 460, col, INK, 2, 24); s.circle(x + 270, 320, 50, '#FFFFFF', INK, 2); s.text(x + 270, 340, n, 52, 700)
+    s.text(x + 270, 460, t, 44, 700, '#FFFFFF'); s.text(x + 270, 540, d, 22, 600, '#FFFFFF', 'middle', FI)
+s.text(1200, 790, 'Antes: afino, monto el kit y respiro · Después: saludo, agradezco y recojo mi equipo', 30, 600, GRAY, 'middle', FI)
+s.save('B3_final')
 print('ok')
