@@ -475,4 +475,233 @@ s.text(1200, 1000, 'Patrón 1 en SOL: trastes 2 a 5 · Patrón 4 en SOL: trastes
 s.text(1200, 1060, 'Para otra tonalidad, muevo la caja: la raíz siempre queda bajo el mismo dedo', 26, 600, DGOLD, 'middle', FI)
 s.text(1200, 1120, 'Bajo de 4 cuerdas: igual, sin la fila de la cuerda SI', 24, 600, GRAY, 'middle', FI)
 s.save('J2_patrones14')
+
+# ===================== NIVEL 2 · MES 6 (clases 21–24) =====================
+# 21 · Tríadas ---------------------------------------------------------------------------------------
+s = Svg(2400, 1400, 'Las tríadas mayor, menor y disminuida en el bajo')
+s.head('Tres clases de tríadas', 'Mayor 1–3–5 · menor 1–♭3–5 · disminuida 1–♭3–♭5 (raíz en la cuerda LA)')
+for k, (t, marks) in enumerate([('Mayor · C', [(3, 3, '1', '#E5312B', 'DO'), (2, 2, '3', '#F57C00', 'MI'), (2, 5, '5', '#2370D6', 'SOL')]),
+                                 ('Menor · Cm', [(3, 3, '1', '#E5312B', 'DO'), (3, 6, '♭3', '#8E3BB8', 'MI♭'), (2, 5, '5', '#2370D6', 'SOL')]),
+                                 ('Disminuida · B°', [(3, 2, '1', '#E5312B', 'SI'), (3, 5, '♭3', '#8E3BB8', 'RE'), (2, 3, '♭5', '#5F6368', 'FA')])]):
+    x0 = 280 + k * 760; y0 = 330
+    fretboard(s, x0, y0, 6, 80, 70, (1, 2, 3, 4))
+    for st, fr, lab, col, n in marks:
+        x = fx(x0, 80, fr); y = y0 + (st - 1) * 70; s.circle(x, y, 28, col, INK, 2); s.text(x, y + 9, lab, 22, 700, '#FFFFFF')
+    s.text(x0 + 240, y0 - 80, t, 32, 700)
+s.text(80, 820, 'Las tríadas de DO mayor (una sobre cada grado)', 32, 700, INK, 'start')
+TR = [('I', 'C', 'mayor'), ('ii', 'Dm', 'menor'), ('iii', 'Em', 'menor'), ('IV', 'F', 'mayor'), ('V', 'G', 'mayor'), ('vi', 'Am', 'menor'), ('vii°', 'B°', 'disminuida')]
+for k, (g, c, t) in enumerate(TR):
+    x = 100 + k * 316; col = {'mayor': '#E5312B', 'menor': '#2370D6', 'disminuida': '#5F6368'}[t]
+    s.rect(x, 870, 290, 300, BOX, 'none', 0, 18); s.text(x + 145, 940, g, 40, 700, col); s.text(x + 145, 1030, c, 48, 700); s.text(x + 145, 1110, t, 24, 600, GRAY, 'middle', FI)
+s.text(1200, 1290, 'Fórmula: mayor – menor – menor – mayor – mayor – menor – disminuida', 28, 700, DGOLD, 'middle', FI)
+s.save('J2_triadas')
+
+# 22 · Mapa del mástil ---------------------------------------------------------------------------------
+s = Svg(2400, 1000, 'Las notas naturales en las cinco cuerdas')
+s.head('El mapa de mi mástil: trastes 0 a 12', 'Notas naturales en color · los puntos negros son notas con ♯ o ♭ · en el traste 12 todo se repite')
+x0, fw, sg = 300, 160, 100
+fretboard(s, x0, 280, 12, fw, sg)
+for i, st in enumerate((1, 2, 3, 4, 5)):
+    for fr in range(0, 13):
+        nm = CHROM[(OPEN[st] + fr) % 12]; x = fx(x0, fw, fr) if fr else x0 - 40; y = 280 + i * sg
+        if '♯' in nm: s.circle(x, y, 10, INK)
+        elif fr: pill(s, x, y, nm, 18, 72)
+s.text(1200, 960, 'Truco: las notas con punto doble (traste 12) son las mismas de las cuerdas al aire, una octava más agudas', 26, 600, DGOLD, 'middle', FI)
+s.save('J2_mastil')
+
+# 23 · Séptima dominante y blues -------------------------------------------------------------------------
+s = Svg(2400, 1400, 'Arpegio de séptima dominante y blues de 12 compases')
+s.head('Séptima dominante: 1 – 3 – 5 – ♭7', 'G7: el arpegio mayor más la séptima menor · la ♭7 está dos cuerdas arriba, en el mismo traste de la raíz')
+shape(s, 400, 300, 230, 80, 6, (1, 2, 3, 4, 5), [(4, 3, '1', '#E5312B', 'SOL'), (3, 2, '3', '#F57C00', 'SI'), (3, 5, '5', '#2370D6', 'RE'), (2, 3, '♭7', '#8E3BB8', 'FA')])
+s.text(80, 830, 'Blues de 12 compases en LA (raíces al aire)', 32, 700, INK, 'start')
+BL = ['A7', 'A7', 'A7', 'A7', 'D7', 'D7', 'A7', 'A7', 'E7', 'D7', 'A7', 'E7']
+RT = {'A7': 'LA', 'D7': 'RE', 'E7': 'MI'}
+for k, ch in enumerate(BL):
+    r, c = divmod(k, 4); x = 140 + c * 540; y = 870 + r * 160
+    s.rect(x, y, 520, 130, BOX, 'none', 0, 16); s.line(x + 520, y + 10, x + 520, y + 120, INK, 4)
+    s.text(x + 40, y + 80, ch, 40, 700, INK, 'start'); pill(s, x + 330, y + 66, RT[ch], 24, 100)
+s.save('J2_septima')
+
+# ===================== NIVEL 3 (clases 25–36) =====================
+def pattern_box(x0, y0, b, title, root_pc=7):
+    scale_box(x0, y0, root_pc, b, title=title)
+
+# 25 · El bajo es doble ----------------------------------------------------------------------------------
+s = Svg(2400, 1450, 'El bajo es doble: desde el traste 12 las notas se repiten')
+s.head('El bajo es doble', 'Del traste 0 al 11 están las 12 notas · en el traste 12 empieza todo otra vez, una octava más agudo')
+x0, fw = 180, 88
+s.rect(x0, 300, 24 * fw, 90, WOOD, FRET, 2, 10); s.rect(x0 - 12, 300, 14, 90, INK)
+for fr in range(1, 25): s.line(x0 + fr * fw, 300, x0 + fr * fw, 390, FRET, 6 if fr == 12 else 3)
+s.line(x0 - 40, 345, x0 + 24 * fw, 345, STR, 6)
+for fr in range(0, 25):
+    nm = CHROM[(4 + fr) % 12]; x = x0 + (fr - 0.5) * fw if fr else x0 - 24
+    if '♯' in nm: s.circle(x, 345, 9, INK)
+    else: s.text(x, 290, nm, 18, 700, INK)
+for fr in (3, 5, 7, 9, 15, 17, 19, 21): s.circle(x0 + (fr - 0.5) * fw, 420, 8, '#BBA98C')
+for fr in (12, 24): [s.circle(x0 + (fr - 0.5) * fw + d, 420, 8, '#BBA98C') for d in (-12, 12)]
+s.text(x0 + 6 * fw, 480, 'primera vuelta: trastes 0 a 11', 26, 700, '#2370D6', 'middle', FI); s.text(x0 + 18 * fw, 480, 'segunda vuelta: trastes 12 a 23', 26, 700, '#E5312B', 'middle', FI)
+pattern_box(330, 720, 4, 'Patrón 2 de SOL mayor · raíz en la cuerda RE con el dedo 2 (trastes 4 a 7)')
+s.text(1900, 900, 'Cuerda MI', 30, 700); s.text(1900, 950, 'traste 0 = MI', 26, 600, GRAY, 'middle', FI); s.text(1900, 995, 'traste 12 = MI (octava)', 26, 600, GRAY, 'middle', FI)
+s.save('J3_doble')
+
+# 26 · Intervalos ---------------------------------------------------------------------------------------------
+s = Svg(2400, 1150, 'Intervalos mayores y justos en el mástil')
+s.head('Intervalos mayores y justos desde DO', 'Raíz en la cuerda LA, traste 3 · las mismas formas sirven desde cualquier raíz')
+INT = [(3, 3, '1', 'DO'), (3, 5, '2M', 'RE'), (2, 2, '3M', 'MI'), (2, 3, '4J', 'FA'), (2, 5, '5J', 'SOL'), (1, 2, '6M', 'LA'), (1, 4, '7M', 'SI'), (1, 5, '8J', 'DO')]
+fretboard(s, 400, 300, 6, 230, 90, (1, 2, 3, 4, 5))
+for st, fr, lab, n in INT:
+    x = fx(400, 230, fr); y = 300 + (st - 1) * 90; col = '#E5312B' if lab == '1' else ('#2370D6' if 'M' in lab else '#2E9E4F')
+    s.circle(x, y, 34, col, INK, 2); s.text(x, y + 10, lab, 24, 700, '#FFFFFF')
+s.text(1950, 330, 'M = mayor', 30, 700, '#2370D6'); s.text(1950, 380, 'J = justo', 30, 700, '#2E9E4F')
+s.text(1950, 440, '2.ª, 3.ª, 6.ª y 7.ª: mayores', 24, 600, GRAY, 'middle', FI); s.text(1950, 480, '4.ª, 5.ª y 8.ª: justas', 24, 600, GRAY, 'middle', FI)
+for k, (a, b) in enumerate([('2M', '2 trastes, misma cuerda'), ('3M', 'cuerda siguiente, 1 traste atrás'), ('4J', 'cuerda siguiente, mismo traste'), ('5J', 'cuerda siguiente, 2 trastes adelante'),
+                            ('6M', 'dos cuerdas arriba, 1 traste atrás'), ('7M', 'dos cuerdas arriba, 1 traste adelante'), ('8J', 'dos cuerdas arriba, 2 trastes adelante')]):
+    x = 100 + (k % 4) * 560; y = 830 + (k // 4) * 120
+    s.rect(x, y, 530, 100, BOX, 'none', 0, 16); s.text(x + 60, y + 62, a, 32, 700, '#2370D6' if 'M' in a else '#2E9E4F'); s.text(x + 120, y + 60, b, 22, 600, INK, 'start', FI)
+s.save('J3_intervalos')
+
+# 27 · Ligados y patrón 3 --------------------------------------------------------------------------------------
+s = Svg(2400, 1450, 'Ligados en el bajo y patrón 3 de la escala mayor')
+s.head('Ligados: dos notas con una sola pulsación', 'Hammer-on (H) · pull-off (P) · slide (S) · en la tablatura se escriben con una curva o una línea')
+for k, (t, d, a, b, sym) in enumerate([('Hammer-on (H)', 'pulso la 1.ª y «martillo» la 2.ª con otro dedo', 5, 7, 'H'), ('Pull-off (P)', 'pulso la 1.ª y jalo el dedo para que suene la 2.ª', 7, 5, 'P'), ('Slide (S)', 'pulso y deslizo el mismo dedo al otro traste', 5, 7, 'S')]):
+    x = 100 + k * 760
+    s.rect(x, 230, 720, 420, BOX, 'none', 0, 20); s.text(x + 360, 300, t, 34, 700); s.text(x + 360, 350, d, 22, 600, GRAY, 'middle', FI)
+    for i in range(5): s.line(x + 80, 420 + i * 40, x + 640, 420 + i * 40, '#9AA0A6', 2)
+    xa, xb = x + 230, x + 490; y = 420 + 2 * 40
+    for xx, n in ((xa, a), (xb, b)): s.rect(xx - 22, y - 22, 44, 44, BOX); s.text(xx, y + 12, str(n), 32, 700)
+    if sym == 'S': s.line(xa + 30, y + 14, xb - 30, y - 14, INK, 4)
+    else: s.add(f'<path d="M {xa:.0f} {y-30:.0f} Q {(xa+xb)/2:.0f} {y-90:.0f} {xb:.0f} {y-30:.0f}" fill="none" stroke="{INK}" stroke-width="4"/>'); s.text((xa + xb) / 2, y - 70, sym, 28, 700, '#E5312B')
+pattern_box(330, 840, 7, 'Patrón 3 de SOL mayor · raíz en la cuerda SI con el dedo 2 o en la cuerda LA con el dedo 4 (trastes 7 a 10)')
+s.save('J3_ligados')
+
+# 28 · Octavas ---------------------------------------------------------------------------------------------------
+s = Svg(2400, 1200, 'Octavas en el bajo')
+s.head('El truco de las octavas', 'Octava arriba: dos cuerdas más agudas, dos trastes adelante · octava abajo: dos cuerdas más graves, dos trastes atrás')
+shape(s, 400, 300, 230, 90, 7, (1, 2, 3, 4, 5), [(4, 3, '1', '#E5312B', 'SOL'), (2, 5, '8', '#2E9E4F', 'SOL'), (3, 5, '1', '#E5312B', 'RE'), (1, 7, '8', '#2E9E4F', 'RE'), (5, 3, '8↓', '#8E3BB8', 'RE')])
+s.text(80, 860, 'Construyo una escala mayor en una sola cuerda: T – T – S – T – T – T – S', 32, 700, INK, 'start')
+x0 = 160
+for k, (n, d) in enumerate([('DO', 0), ('RE', 2), ('MI', 4), ('FA', 5), ('SOL', 7), ('LA', 9), ('SI', 11), ('DO', 12)]):
+    x = x0 + k * 270; pill(s, x, 960, n, 26, 110); s.text(x, 1030, f'traste {3 + d}', 22, 600, GRAY, 'middle', FI)
+    if k < 7: s.text(x + 135, 960, ['T', 'T', 'S', 'T', 'T', 'T', 'S'][k], 30, 700, '#E5312B' if k in (2, 6) else '#2370D6')
+s.text(1200, 1120, 'Cuerda LA desde el traste 3 · si empiezo en otro traste, construyo otra escala mayor', 26, 600, DGOLD, 'middle', FI)
+s.save('J3_octavas')
+
+# 29 · Slap ------------------------------------------------------------------------------------------------------
+s = Svg(2400, 1250, 'Técnica de slap: pulgar y pop')
+s.head('Slap: pulgar (T) y pop (P)', 'T = golpe del pulgar en la cuerda grave · P = el índice engancha y suelta la cuerda aguda')
+for k, (t, l1, l2, c) in enumerate([('T · pulgar', 'golpeo con el hueso del pulgar', 'al final del mástil y reboto', '#E5312B'), ('P · pop', 'el índice engancha la cuerda RE o SOL', 'la jala y la suelta contra los trastes', '#2370D6'), ('x · nota muerta', 'la mano izquierda apoya sin pisar', 'suena un golpe sin nota', GRAY)]):
+    x = 100 + k * 760
+    s.rect(x, 230, 720, 330, BOX, 'none', 0, 20); s.circle(x + 360, 320, 50, c, INK, 2); s.text(x + 360, 336, t[0], 44, 700, '#FFFFFF')
+    s.text(x + 360, 420, t, 32, 700); s.text(x + 360, 470, l1, 22, 600, GRAY, 'middle', FI); s.text(x + 360, 505, l2, 22, 600, GRAY, 'middle', FI)
+s.text(80, 680, 'Ejercicio de octavas en MI: T en la raíz, P en la octava', 32, 700, INK, 'start')
+cnt = ['1', 'e', 'y', 'a', '2', 'e', 'y', 'a']; pat = ['T', '', 'P', '', 'T', 'T', 'P', '']
+for k in range(8):
+    x = 260 + k * 250; s.text(x, 760, cnt[k], 30, 700, INK if k % 4 == 0 else GRAY)
+    p = pat[k]
+    if p: s.circle(x, 860, 46, '#E5312B' if p == 'T' else '#2370D6', INK, 2); s.text(x, 876, p, 40, 700, '#FFFFFF')
+s.text(1200, 990, 'T: cuerda MI al aire · P: cuerda RE, traste 2 (MI una octava arriba)', 28, 700, INK, 'middle', FI)
+s.text(1200, 1060, 'Empieza lento (60 BPM): el slap se aprende con precisión, no con fuerza', 26, 600, DGOLD, 'middle', FI)
+s.save('J3_slap')
+
+# 30 · Funk slap ----------------------------------------------------------------------------------------------------
+s = Svg(2400, 900, 'Groove de funk con slap')
+s.head('Groove de funk con slap (en MI)', 'Semicorcheas: «1 e y a» · T pulgar · P pop · x nota muerta')
+cnt = ['1', 'e', 'y', 'a'] * 4; pat = ['T', '', 'x', 'P', '', 'T', 'x', 'P', 'T', '', 'x', 'P', 'T', 'T', 'x', 'P']
+for k in range(16):
+    x = 160 + k * 136; s.text(x, 260, cnt[k] if k % 4 else str(k // 4 + 1), 28, 700, INK if k % 4 == 0 else GRAY)
+    if k % 4 == 0: s.rect(x - 60, 290, 4 * 136 - 8, 220, BOX, 'none', 0, 14)
+for k in range(16):
+    x = 160 + k * 136; p = pat[k]
+    if p: s.circle(x, 400, 40, {'T': '#E5312B', 'P': '#2370D6', 'x': '#9AA0A6'}[p], INK, 2); s.text(x, 414, p, 34, 700, '#FFFFFF')
+s.text(1200, 620, 'T = MI al aire (cuerda MI) · P = MI en la cuerda RE, traste 2 · x = nota muerta', 28, 700, INK, 'middle', FI)
+s.text(1200, 690, 'Toca con el reproductor de funk: el pulgar cae con el bombo', 26, 600, DGOLD, 'middle', FI)
+s.save('J3_funk')
+
+# 31 · Transformar intervalos --------------------------------------------------------------------------------------
+s = Svg(2400, 1100, 'Transformar intervalos en el mástil')
+s.head('Transformo intervalos: un traste cambia todo', 'Mayor – 1 traste = menor · justo + 1 traste = aumentado · justo – 1 traste = disminuido')
+TF = [('3M → 3m', 'MI → MI♭', 'un traste atrás'), ('6M → 6m', 'LA → LA♭', 'un traste atrás'), ('7M → 7m', 'SI → SI♭', 'un traste atrás'), ('5J → 5dim', 'SOL → SOL♭', 'un traste atrás'), ('4J → 4aum', 'FA → FA♯', 'un traste adelante')]
+for k, (a, b, c) in enumerate(TF):
+    x = 100 + k * 450; s.rect(x, 250, 420, 330, BOX, 'none', 0, 20)
+    s.text(x + 210, 340, a, 38, 700); s.text(x + 210, 420, b, 30, 700, '#2370D6'); s.text(x + 210, 490, c, 24, 600, GRAY, 'middle', FI)
+s.text(80, 700, 'Transportar: muevo toda la forma y la canción suena en otra tonalidad', 32, 700, INK, 'start')
+for k, (t, r) in enumerate([('en DO', 'cuerda LA, traste 3'), ('en RE', 'cuerda LA, traste 5'), ('en MI', 'cuerda LA, traste 7')]):
+    x = 140 + k * 740; s.rect(x, 760, 700, 220, BOX, 'none', 0, 20); s.text(x + 350, 840, 'misma línea ' + t, 32, 700); s.text(x + 350, 910, 'raíz: ' + r, 26, 600, GRAY, 'middle', FI)
+s.save('J3_transforma')
+
+# 32 · Patrón 5 y pentatónica -----------------------------------------------------------------------------------------
+s = Svg(2400, 1450, 'Patrón 5 de la escala mayor y pentatónica menor')
+s.head('Patrón 5 y la pentatónica menor', 'La pentatónica tiene 5 notas: 1 – ♭3 – 4 – 5 – ♭7 · ideal para rellenos e improvisación')
+pattern_box(330, 330, 12, 'Patrón 5 de SOL mayor · raíz en la cuerda SOL con el dedo 1 o en la cuerda MI con el dedo 4 (trastes 12 a 15)')
+fretboard(s, 400, 930, 4, 230, 80, (1, 2, 3, 4, 5))
+PEN = {1: [(5, 'DO'), (7, 'RE')], 2: [(5, 'SOL'), (7, 'LA')], 3: [(5, 'RE'), (7, 'MI')], 4: [(5, 'LA'), (8, 'DO')], 5: [(5, 'MI'), (8, 'SOL')]}
+for st, lst in PEN.items():
+    for fr, n in lst:
+        x = 400 + (fr - 4.5) * 230; y = 930 + (st - 1) * 80
+        s.circle(x, y, 30, '#E5312B' if n == 'LA' else '#FFFFFF', INK, 2.5); s.text(x, y + 8, n, 18, 700, '#FFFFFF' if n == 'LA' else INK)
+for k in range(4): s.text(400 + (k + 0.5) * 230, 1300, f'traste {k + 5}', 20, 600, GRAY, 'middle', FI)
+s.text(1700, 960, 'LA menor pentatónica', 32, 700, INK, 'start'); s.text(1700, 1010, 'LA – DO – RE – MI – SOL', 26, 600, GRAY, 'start', FI)
+s.text(1700, 1060, 'raíz LA en rojo · trastes 5 a 8', 24, 600, GRAY, 'start', FI)
+s.save('J3_penta')
+
+# 33 · Chart de bajo -------------------------------------------------------------------------------------------------------
+s = Svg(2400, 1400, 'Un chart de bajo en clave de fa')
+s.head('Leo un chart completo de bajo', 'Secciones, cifrado, repeticiones, casillas y saltos · sin colores, como en la banda')
+def rowstaff(y, label, chords, rep_l=False, rep_r=False, casillas=False, fine=False, dc=False):
+    staff(s, 140, 2280, y, 30); s.text(140, y - 70, label, 32, 700, INK, 'start'); bw = (2280 - 260) / 4
+    for m in range(4):
+        bx = 260 + m * bw; s.line(bx + bw, y, bx + bw, y + 120, INK, 7 if (m == 3 and (fine or dc)) else 3)
+        s.text(bx + 30, y - 22, chords[m], 30, 700, INK, 'start')
+        for q in range(4):
+            xx = bx + 60 + q * (bw - 80) / 4; s.line(xx - 12, y + 85, xx + 12, y + 35, INK, 8)
+    if rep_l: s.rect(266, y, 8, 120, INK); s.circle(290, y + 45, 5, INK); s.circle(290, y + 75, 5, INK)
+    if rep_r:
+        xr = 260 + 3 * bw - 4; s.rect(xr - 8, y, 8, 120, INK); s.circle(xr - 24, y + 45, 5, INK); s.circle(xr - 24, y + 75, 5, INK)
+    if casillas:
+        for k, (xa, xb) in enumerate([(260 + 2 * bw, 260 + 3 * bw - 30), (260 + 3 * bw, 2280)]):
+            s.line(xa, y - 60, xb, y - 60, INK, 3); s.line(xa, y - 60, xa, y - 40, INK, 3); s.text(xa + 160, y - 66, f'{k + 1}.', 26, 700, INK, 'start')
+    if fine: s.text(2280, y + 175, 'Fine', 30, 700, INK, 'end', "'DejaVu Serif', serif", 'font-style="italic"')
+    if dc: s.text(2280, y + 175, 'D.C. al Fine', 30, 700, INK, 'end', "'DejaVu Serif', serif", 'font-style="italic"')
+rowstaff(330, 'Intro', ['C', 'G', 'Am', 'F'])
+rowstaff(650, 'Estrofa (2 veces)', ['C', 'F', 'G', 'C'], rep_l=True, rep_r=True, casillas=True, fine=True)
+rowstaff(970, 'Coro', ['F', 'G', 'C', 'C'], dc=True)
+s.text(1200, 1330, 'Barras inclinadas = toco raíces o mi línea, siguiendo el cifrado · Fine está al final de la estrofa', 26, 600, DGOLD, 'middle', FI)
+s.save('J3_chart')
+
+# 34 · Los 5 patrones ------------------------------------------------------------------------------------------------------
+s = Svg(2400, 900, 'Los cinco patrones de la escala mayor en el mástil')
+s.head('Los 5 patrones cubren todo el mástil (SOL mayor)', 'Cada patrón es una caja de 4 trastes · se encadenan uno detrás del otro')
+x0, fw = 160, 140
+s.rect(x0, 300, 16 * fw, 330, WOOD, FRET, 2, 10)
+for fr in range(1, 17): s.line(x0 + fr * fw, 300, x0 + fr * fw, 630, FRET, 4)
+for fr in range(1, 17): s.text(x0 + (fr - 0.5) * fw, 670, str(fr), 22, 600, GRAY)
+for k, (p, b, col) in enumerate([(1, 2, '#E5312B'), (2, 4, '#F57C00'), (3, 7, '#2E9E4F'), (4, 9, '#2370D6'), (5, 12, '#8E3BB8')]):
+    y = 320 + (k % 2) * 150
+    s.rect(x0 + (b - 1) * fw + 6, y, 4 * fw - 12, 130, col, INK, 2, 16)
+    s.text(x0 + (b + 1) * fw, y + 82, f'Patrón {p}', 32, 700, '#FFFFFF')
+s.text(1200, 760, 'Patrón 1: trastes 2–5 · 2: 4–7 · 3: 7–10 · 4: 9–12 · 5: 12–15 · después del 5 vuelve el 1 (trastes 14–17)', 26, 700, INK, 'middle', FI)
+s.text(1200, 820, 'Para otra tonalidad, toda la cadena se mueve junta', 24, 600, DGOLD, 'middle', FI)
+s.save('J3_patrones')
+
+# 35 · Equipo -------------------------------------------------------------------------------------------------------------
+s = Svg(2400, 900, 'El camino del sonido del bajo')
+s.head('Mi equipo: el camino del sonido', 'Del bajo a la sala · revisa cada paso antes del ensayo')
+CH = [('Bajo', 'volumen arriba, tono a gusto'), ('Cable', 'sin nudos, bien conectado'), ('Afinador', 'afino antes de empezar'), ('Amplificador', 'volumen moderado, graves sin exceso'), ('Caja directa', 'envía la señal a la consola')]
+for k, (t, d) in enumerate(CH):
+    x = 80 + k * 460; s.rect(x, 280, 400, 300, GOLD if k == 0 else BOX, INK, 2, 22)
+    s.text(x + 200, 400, t, 38, 700); s.text(x + 200, 470, d, 20, 600, INK, 'middle', FI)
+    if k < 4: s.text(x + 430, 445, '→', 50, 700, GRAY)
+s.text(1200, 700, 'Encender: primero el bajo y los cables, al final el amplificador · apagar: primero el amplificador', 28, 700, INK, 'middle', FI)
+s.text(1200, 770, 'Cuida tu oído: tapones para músicos y volumen moderado en el escenario', 26, 600, DGOLD, 'middle', FI)
+s.save('J3_equipo')
+
+# 36 · Presentación final --------------------------------------------------------------------------------------------------
+s = Svg(2400, 900, 'Programa de la presentación final de bajo')
+s.head('¡Presentación final! · Bajo', 'El programa de mi concierto · Nivel 3')
+for k, (n, t, d, col) in enumerate([('1', 'Escalas', 'los 5 patrones y la pentatónica', '#2AA7E8'), ('2', 'Tres estilos', 'balada, rock, cumbia o reggae', '#2E9E4F'),
+                                     ('3', 'Canción con banda', 'leo el chart y sigo las señales', '#F57C00'), ('4', 'Groove de slap', 'mi groove de funk con slap', '#E5312B')]):
+    x = 80 + k * 570; s.rect(x, 220, 540, 460, col, INK, 2, 24); s.circle(x + 270, 320, 50, '#FFFFFF', INK, 2); s.text(x + 270, 340, n, 52, 700)
+    s.text(x + 270, 460, t, 44, 700, '#FFFFFF'); s.text(x + 270, 540, d, 22, 600, '#FFFFFF', 'middle', FI)
+s.text(1200, 790, 'Antes: afino, reviso cables y amplificador · Después: saludo, agradezco y guardo mi equipo', 30, 600, GRAY, 'middle', FI)
+s.save('J3_final')
 print('ok')
