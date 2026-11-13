@@ -67,6 +67,7 @@ def step_of(name, octv): return (octv * 7 + LET.index(name)) - (2 * 7 + 4)  # SO
 def note_bf(s, x, y0, sp, name, octv, half=False):
     st = step_of(name, octv); yb = y0 + 4 * sp; y = yb - st * sp / 2
     for k in range(-2, st - 1, -2): s.line(x - 34, yb - k * sp / 2, x + 34, yb - k * sp / 2, INK, 3)
+    for k in range(10, st + 1, 2): s.line(x - 34, yb - k * sp / 2, x + 34, yb - k * sp / 2, INK, 3)
     s.add(f'<ellipse cx="{x:.1f}" cy="{y:.1f}" rx="{sp*0.62:.1f}" ry="{sp*0.44:.1f}" transform="rotate(-20 {x:.1f} {y:.1f})" fill="{COL[name]}" stroke="{INK}" stroke-width="2.5"/>')
     if half: s.add(f'<ellipse cx="{x:.1f}" cy="{y:.1f}" rx="{sp*0.36:.1f}" ry="{sp*0.17:.1f}" transform="rotate(-35 {x:.1f} {y:.1f})" fill="#FFFFFF"/>')
     up = st < 4; sx = x + sp * 0.55 if up else x - sp * 0.55
@@ -335,4 +336,79 @@ for k, ch in enumerate(SANTOS):
     for j in range(4): pill(s, x + 150 + j * 95, y + 105, RN[ch], 18, 78)
 s.text(1200, 1080, 'DO: cuerda LA traste 3 (o cuerda SI traste 1) · FA: cuerda MI traste 1 · SOL: cuerda MI traste 3', 26, 600, DGOLD, 'middle', FI)
 s.save('J1_santos')
+
+# ===================== NIVEL 2 · MES 4 (clases 13–16) =====================
+def shape(s, x0, y0, fw, sg, frets, strings, marks):
+    """marks: [(cuerda, traste, etiqueta, color, nota)] sobre un diapasón parcial"""
+    fretboard(s, x0, y0, frets, fw, sg, strings)
+    for st, fr, lab, col, n in marks:
+        i = strings.index(st); x = fx(x0, fw, fr) if fr else x0 - 40; y = y0 + i * sg
+        s.circle(x, y, 32, col, INK, 2); s.text(x, y + 10, lab, 26, 700, '#FFFFFF' if col not in (COL['MI'], GOLD) else INK)
+        if n: s.text(x + 42, y + 8, n, 24, 700, INK, 'start')
+
+def tsig(s, x, y0, sp, a, b):
+    s.text(x, y0 + 2 * sp - 6, a, sp * 1.5, 700, INK, 'middle', "'DejaVu Serif', serif"); s.text(x, y0 + 4 * sp - 6, b, sp * 1.5, 700, INK, 'middle', "'DejaVu Serif', serif")
+
+# 13 · Las cuerdas en el pentagrama -------------------------------------------------------------
+s = Svg(2400, 1250, 'Las cuerdas del bajo en el pentagrama y las líneas adicionales')
+s.head('Las cuerdas en el pentagrama', 'Las 5 cuerdas al aire en clave de fa · las notas graves usan líneas adicionales')
+sp = 40
+staff(s, 140, 2280, 330, sp); tsig(s, 300, 330, sp, '4', '4')
+OPN = [('SI', 1, '5.ª cuerda'), ('MI', 2, '4.ª cuerda'), ('LA', 2, '3.ª cuerda'), ('RE', 3, '2.ª cuerda'), ('SOL', 3, '1.ª cuerda')]
+for k, (n, o, lab) in enumerate(OPN):
+    x = 560 + k * 380; note_bf(s, x, 330, sp, n, o, half=True)
+    s.text(x, 330 + 4 * sp + 230, lab, 26, 700, GRAY, 'middle', FI); pill(s, x, 330 + 4 * sp + 290, n, 22, 84)
+s.text(80, 960, 'Signo de medida: arriba, cuántos pulsos · abajo, qué figura vale un pulso', 32, 700, INK, 'start')
+for k, (a, b, d) in enumerate([('4', '4', '4 negras'), ('3', '4', '3 negras · vals'), ('6', '8', '6 corcheas'), ('12', '8', '12 corcheas')]):
+    x = 200 + k * 560
+    for j in range(5): s.line(x - 120, 1010 + j * 26, x + 120, 1010 + j * 26, INK, 2)
+    tsig(s, x, 1010, 26, a, b); s.text(x + 260, 1075, d, 26, 600, GRAY, 'middle', FI)
+s.save('J2_cuerdas')
+
+# 14 · Raíz y quinta ------------------------------------------------------------------------------
+s = Svg(2400, 1150, 'Raíz y quinta en el bajo')
+s.head('Raíz y quinta: la forma que sirve en todo el mástil', 'Quinta arriba: una cuerda más aguda y dos trastes más · quinta abajo: una cuerda más grave, mismo traste')
+shape(s, 400, 300, 220, 90, 6, (1, 2, 3, 4, 5), [(3, 3, 'R', '#E5312B', 'DO'), (2, 5, '5', '#2370D6', 'SOL'), (4, 3, '5', '#2370D6', 'SOL')])
+s.text(1900, 330, 'Acorde de C', 34, 700); s.text(1900, 390, 'R = raíz (DO)', 28, 600, '#E5312B', 'middle', FI); s.text(1900, 440, '5 = quinta (SOL)', 28, 600, '#2370D6', 'middle', FI)
+s.text(1900, 500, 'misma forma en cualquier traste', 24, 600, GRAY, 'middle', FI)
+s.text(80, 860, 'Patrones de acompañamiento (4/4)', 32, 700, INK, 'start')
+for k, (t, p) in enumerate([('blancas', ['R', '–', '5', '–']), ('negras', ['R', '5', 'R', '5']), ('negras', ['R', 'R', '5', '5'])]):
+    x0 = 120 + k * 760
+    s.text(x0, 920, t, 26, 600, GRAY, 'start', FI)
+    for j, c in enumerate(p):
+        x = x0 + 60 + j * 160
+        if c == '–': s.line(x - 50, 1000, x + 50, 1000, '#E5312B', 8)
+        else: s.circle(x, 1000, 40, '#E5312B' if c == 'R' else '#2370D6', INK, 2); s.text(x, 1012, c, 32, 700, '#FFFFFF')
+s.save('J2_quinta')
+
+# 15 · Raíz, quinta y octava en tresillos ----------------------------------------------------------
+s = Svg(2400, 1200, 'Raíz, quinta y octava en tresillos')
+s.head('Raíz – quinta – octava en tresillos', 'La octava: dos cuerdas más agudas y dos trastes más · perfecta para el 12/8 y el 6/8')
+shape(s, 400, 300, 220, 80, 6, (1, 2, 3, 4, 5), [(4, 1, 'R', '#E5312B', 'FA'), (3, 3, '5', '#2370D6', 'DO'), (2, 3, '8', '#2E9E4F', 'FA')])
+s.text(1900, 330, 'Acorde de F', 34, 700); s.text(1900, 390, '8 = octava (FA agudo)', 28, 600, '#2E9E4F', 'middle', FI)
+for row, (lab, cnt, pat) in enumerate([('12/8 (4 pulsos de tres)', ['1', 'o', 'la', '2', 'o', 'la', '3', 'o', 'la', '4', 'o', 'la'], ['R', '5', '8'] * 4),
+                                       ('6/8 (2 pulsos de tres)', ['1', 'o', 'la', '2', 'o', 'la'], ['R', '5', '8', '8', '5', 'R'])]):
+    y0 = 760 + row * 210; s.text(80, y0, lab, 28, 700, INK, 'start')
+    cw = 170 if len(cnt) == 12 else 340
+    for k, c in enumerate(cnt):
+        x = 150 + (k + 0.5) * cw; s.text(x, y0 + 50, c, 26, 700, INK if k % 3 == 0 else GRAY)
+        p = pat[k]; col = {'R': '#E5312B', '5': '#2370D6', '8': '#2E9E4F'}[p]
+        s.circle(x, y0 + 115, 32, col, INK, 2); s.text(x, y0 + 125, p, 26, 700, '#FFFFFF')
+s.save('J2_tresillo')
+
+# 16 · La escala mayor móvil -------------------------------------------------------------------------
+s = Svg(2400, 1350, 'La escala mayor de una octava, forma móvil')
+s.head('La escala mayor en una octava: forma móvil', 'Empiezo con el dedo 2 · 3 cuerdas · un dedo por traste · sirve para cualquier tonalidad')
+def scale_shape(x0, y0, st0, f, name, notes):
+    strs = (st0 - 2, st0 - 1, st0); fw, sg = 210, 90
+    fretboard(s, x0, y0, f + 3, fw, sg, strs)
+    pos = [(st0, f, 2), (st0, f + 2, 4), (st0 - 1, f - 1, 1), (st0 - 1, f, 2), (st0 - 1, f + 2, 4), (st0 - 2, f - 1, 1), (st0 - 2, f + 1, 3), (st0 - 2, f + 2, 4)]
+    for k, (st, fr, d) in enumerate(pos):
+        x = fx(x0, fw, fr); y = y0 + strs.index(st) * sg; n = notes[k]
+        pill(s, x, y, n, 20, 96 if len(n) > 3 else 80); s.text(x, y + 54, 'dedo ' + str(d), 18, 600, GRAY, 'middle', FI)
+    s.text(x0 + (f + 3) * fw + 40, y0 + sg + 10, name, 32, 700, INK, 'start')
+scale_shape(330, 300, 4, 3, 'SOL mayor · desde la cuerda MI', ['SOL', 'LA', 'SI', 'DO', 'RE', 'MI', 'FA♯', 'SOL'])
+scale_shape(330, 780, 3, 3, 'DO mayor · desde la cuerda LA', ['DO', 'RE', 'MI', 'FA', 'SOL', 'LA', 'SI', 'DO'])
+s.text(1200, 1290, 'T – T – S – T – T – T – S · ♯ = un traste más agudo · ♭ = un traste más grave', 28, 700, DGOLD, 'middle', FI)
+s.save('J2_escala')
 print('ok')
