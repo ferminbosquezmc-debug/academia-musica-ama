@@ -279,4 +279,51 @@ for k in range(6):
     s.rect(x, 650, 260, 230, col[k], INK, 2, 18); s.text(x + 130, 720, TR[k], 34, 700, '#FFFFFF'); s.text(x + 130, 790, ['D', 'I', 'D', 'I', 'D', 'I'][k], 40, 700, '#FFFFFF'); s.text(x + 130, 850, nm[k], 26, 600, '#FFFFFF', 'middle', FI)
 s.circle(2200, 765, 80, GOLD, INK, 3); s.text(2200, 755, 'crash', 30, 700); s.text(2200, 790, '+ bombo', 24, 700)
 s.save('B3_cinco')
+
+# ===================== NIVEL 3 · MES 8 (clases 29–32) =====================
+# 29 · Reggae, ska y dembow ---------------------------------------------------------------
+s = Svg(2400, 1520, 'Reggae, ska y dembow')
+s.head('Ritmos de contratiempo', 'Reggae (one drop) · ska · dembow: cada uno pone el peso en un lugar distinto')
+s.text(60, 240, 'Reggae · one drop', 34, 700, INK, 'start')
+grid(s, 480, 260, C8, [('Hi-hat', HH8), ('Aro', {4: ('I', True, None)}), ('Bombo', {4: ('PD', False, None)})], 230, 80)
+s.text(60, 680, 'Ska', 34, 700, INK, 'start')
+grid(s, 480, 700, C8, [('Hi-hat', {k: ('D', False, None) for k in (1, 3, 5, 7)}), ('Redoblante', SN), ('Bombo', {0: ('PD', False, None), 4: ('PD', False, None)})], 230, 80)
+s.text(60, 1120, 'Dembow', 34, 700, INK, 'start')
+grid(s, 400, 1140, C16, [('Redoblante', {k: ('I', False, None) for k in (3, 6, 11, 14)}), ('Bombo', {k: ('PD', False, None) for k in (0, 4, 8, 12)})], 116, 100, 4)
+s.save('B3_reggae')
+
+# 30 · Funk con notas fantasma -------------------------------------------------------------
+s = Svg(2400, 760, 'El funk')
+s.head('El funk', 'Hi-hat en corcheas · redoblante fuerte en 2 y 4 con notas fantasma · bombo sincopado')
+fk = {4: ('I', True, None), 12: ('I', True, None), 7: ('I', False, '( )'), 9: ('I', False, '( )'), 14: ('I', False, '( )')}
+grid(s, 400, 200, C16, [('Hi-hat', HH16), ('Redoblante', fk), ('Bombo', {0: ('PD', False, None), 3: ('PD', False, None), 10: ('PD', False, None)})], 116, 110, 4)
+s.text(1200, 700, 'Bombo en el 1, en la «a» del 1 y en la «y» del 3: ese desplazamiento es la síncopa del funk', 28, 600, GRAY, 'middle', FI)
+s.save('B3_funk')
+
+# 31 · Mitad y doble tiempo ------------------------------------------------------------------
+s = Svg(2400, 1520, 'Mitad de tiempo, tiempo normal y doble tiempo')
+s.head('Mitad y doble tiempo', 'El mismo tempo del metrónomo, tres sensaciones distintas · solo cambian el redoblante y el bombo')
+TM = [('Mitad de tiempo', 'se siente lento', {4: ('I', True, None)}, [0]), ('Normal', 'el rock de siempre', SN, [0, 4]), ('Doble tiempo', 'se siente rápido', {k: ('I', False, None) for k in (1, 3, 5, 7)}, [0, 2, 4, 6])]
+for r, (n, d, sn, bb) in enumerate(TM):
+    y0 = 200 + r * 430
+    s.text(60, y0 + 140, n, 34, 700, INK, 'start'); s.text(60, y0 + 185, d, 26, 600, GRAY, 'start', FI)
+    grid(s, 520, y0, C8, [('Hi-hat', HH8), ('Redoblante', sn), ('Bombo', {k: ('PD', False, None) for k in bb})], 220, 90)
+s.save('B3_tiempos')
+
+# 32 · Mi primer solo -------------------------------------------------------------------------
+s = Svg(2400, 1050, 'Plan de un solo de ocho compases')
+s.head('Mi primer solo · 8 compases', 'Un solo es una historia corta: idea, repetición, subida y final')
+SOL = [('1–2', 'Idea', 'un ritmo corto en el redoblante', '#2AA7E8'), ('3–4', 'Repetición', 'la misma idea, cambiando el final', '#2E9E4F'),
+       ('5–6', 'Subida', 'más fuerte, por los toms', '#F57C00'), ('7–8', 'Final', 'redoble de 5 golpes + crash y bombo', '#E5312B')]
+for k, (c, n, d, col) in enumerate(SOL):
+    x = 80 + k * 570
+    s.rect(x, 220, 540, 360, col, INK, 2, 22)
+    s.text(x + 270, 300, 'compases ' + c, 30, 700, '#FFFFFF'); s.text(x + 270, 390, n, 50, 700, '#FFFFFF'); s.text(x + 270, 470, d, 24, 600, '#FFFFFF', 'middle', FI)
+s.text(60, 700, '«Cuatro y cuatro»: el profesor toca 4 compases de solo, yo respondo con 4; la banda mantiene el pulso', 30, 700, INK, 'start', FI)
+for k in range(8):
+    x = 80 + k * 285; who = 'profesor' if (k // 4) % 2 == 0 else 'yo'
+    s.rect(x, 760, 265, 140, '#C9C3B6' if who == 'profesor' else GOLD, INK, 2, 16)
+    s.text(x + 132, 820, str(k + 1), 34, 700); s.text(x + 132, 870, who, 26, 600, INK, 'middle', FI)
+s.text(1200, 990, 'Consejo: deja silencios y vuelve siempre al 1 con fuerza', 28, 600, GRAY, 'middle', FI)
+s.save('B3_solo')
 print('ok')
