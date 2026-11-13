@@ -431,4 +431,90 @@ for k, (pts, lab, low) in enumerate(SH3):
     cx = sum(xs) / len(xs); s.text(cx, 690, lab, 26, 700, INK, 'middle', FI)
     s.circle(cx, 600, 22, GOLD, INK, 2); s.text(cx, 609, low, 24, 700)
 s.save('G3_triadas')
+
+# ===================== NIVEL 3 · MES 8 (clases 29–32) =====================
+def fretboard_at(s, x0, y0, f0, f1, fw, sg):
+    """Diapasón horizontal de los trastes f0..f1 (sin cejuela); 1.ª cuerda arriba."""
+    n = f1 - f0 + 1; W = n * fw
+    s.rect(x0, y0 - sg * 0.6, W, sg * 6.2, WOOD, FRET, 2, 10)
+    for k in range(n + 1): s.line(x0 + k * fw, y0 - sg * 0.6, x0 + k * fw, y0 + sg * 5.6, FRET, 5)
+    for i, st in enumerate((1, 2, 3, 4, 5, 6)):
+        s.line(x0 - 30, y0 + i * sg, x0 + W, y0 + i * sg, STR, 2 + st * 0.8); s.text(x0 - 70, y0 + i * sg + 10, f'{st}ª', 26, 600, GRAY)
+    for k in range(n): s.text(x0 + (k + 0.5) * fw, y0 + sg * 5.6 + 44, str(f0 + k), 26, 700, DGOLD)
+def fxa(x0, fw, f0, f): return x0 + (f - f0 + 0.5) * fw
+
+# 29 · Funciones y cadencias ------------------------------------------------------
+s = Svg(2400, 1100, 'Las funciones de los acordes y las cadencias')
+s.head('La familia de los acordes', 'Cada acorde tiene una función: reposo (T), alejamiento (S) o tensión (D)')
+FAM = [('T', 'Tónica · reposo', 'I · vi · iii', 'C · Am · Em', '#2E9E4F'), ('S', 'Subdominante · alejamiento', 'IV · ii', 'F · Dm', '#2AA7E8'), ('D', 'Dominante · tensión', 'V · V7 · vii°', 'G · G7 · B°', '#E5312B')]
+for k, (l, n, g, c, col) in enumerate(FAM):
+    x = 420 + k * 780
+    s.rect(x - 340, 200, 680, 380, '#FAFAF7', col, 6, 26)
+    s.circle(x, 285, 52, col, INK, 2); s.text(x, 305, l, 56, 700, '#FFFFFF')
+    s.text(x, 395, n, 34, 700); s.text(x, 460, g, 40, 700, DGOLD); s.text(x, 530, 'en Do: ' + c, 30, 600, GRAY, 'middle', FI)
+CAD = [('Cadencia auténtica', 'V → I', 'G7 → C', 'final fuerte, como un punto'), ('Cadencia plagal', 'IV → I', 'F → C', 'final suave, «amén»'),
+       ('Semicadencia', '… → V', 'C → G', 'queda en suspenso, como una coma'), ('Cadencia rota', 'V → vi', 'G7 → Am', 'sorpresa: no llega a casa')]
+for k, (n, f, e, d) in enumerate(CAD):
+    x = 320 + k * 590
+    s.rect(x - 270, 680, 540, 340, '#FFF8E1', GOLD, 3, 22)
+    s.text(x, 750, n, 32, 700); s.text(x, 830, f, 50, 700, DGOLD); s.text(x, 895, e, 34, 700, INK, 'middle', FI); s.text(x, 960, d, 24, 600, GRAY, 'middle', FI)
+s.save('G3_funciones')
+
+# 30 · Estilos de acompañamiento ---------------------------------------------------
+s = Svg(2400, 1450, 'Estilos de acompañamiento')
+s.head('Estilos de acompañamiento', 'La misma progresión cambia de carácter según el ritmo · ↓ ↑ rasgueo · p bajo con el pulgar · ✕ golpe apagado')
+STY = [('Balada', '4/4', ['1', 'y', '2', 'y', '3', 'y', '4', 'y'], ['p', 'i', 'm', 'a', 'p', 'i', 'm', 'a'], 'arpegio tranquilo'),
+       ('Pop', '4/4', ['1', 'y', '2', 'y', '3', 'y', '4', 'y'], ['D', '', 'D', 'U', '', 'U', 'D', 'U'], 'la «y» del 2 se alarga sobre el 3: síncopa'),
+       ('Vals', '3/4', ['1', '2', '3'], ['p', 'D', 'D'], 'bajo y dos rasgueos'),
+       ('Caribeño', '4/4', ['1', 'y', '2', 'y', '3', 'y', '4', 'y'], ['p', 'X', '', 'X', 'p', 'X', '', 'X'], 'golpes apagados en las «y»: contratiempo'),
+       ('Shuffle', '4/4', ['1', '', 'a', '2', '', 'a', '3', '', 'a', '4', '', 'a'], ['D', '', 'D', 'D', '', 'D', 'D', '', 'D', 'D', '', 'D'], 'tresillo: largo-corto, largo-corto')]
+for r, (nm, cp, cnt, st, note_) in enumerate(STY):
+    y = 210 + r * 245
+    s.text(60, y + 60, nm, 36, 700, INK, 'start'); s.text(60, y + 105, cp, 28, 600, GRAY, 'start', FI); s.text(60, y + 145, note_, 22, 600, DGOLD, 'start', FI)
+    n = len(cnt); cw = 1600 / n
+    for k in range(n):
+        x = 700 + k * cw + cw / 2
+        s.rect(x - cw / 2 + 4, y, cw - 8, 190, '#F3F1EA' if cnt[k] not in ('y', 'a', '') else '#FAFAF7', rx=12)
+        s.text(x, y + 175, cnt[k], 28, 700, INK if cnt[k] not in ('y', 'a', '') else GRAY)
+        a = st[k]
+        if a == 'D':
+            s.line(x, y + 30, x, y + 110, INK, 8); s.add(f'<path d="M{x-20} {y+100} L{x+20} {y+100} L{x} {y+134} Z" fill="{INK}"/>')
+        elif a == 'U':
+            s.line(x, y + 55, x, y + 134, GRAY, 7); s.add(f'<path d="M{x-18} {y+64} L{x+18} {y+64} L{x} {y+32} Z" fill="{GRAY}"/>')
+        elif a == 'X': s.text(x, y + 100, '✕', 48, 700, '#E5312B')
+        elif a: s.circle(x, y + 80, 30, GOLD if a == 'p' else '#2AA7E8', INK, 2); s.text(x, y + 91, a, 30, 700, INK if a == 'p' else '#FFFFFF')
+s.save('G3_estilos')
+
+# 31 · Escala mayor móvil ------------------------------------------------------------
+s = Svg(2400, 1050, 'Escala mayor móvil con la tónica en la sexta cuerda')
+s.head('Escala mayor móvil', 'Dos octavas sin cuerdas al aire · aquí en SOL (tónica en la 6.ª cuerda, traste 3) · los círculos dorados son la tónica')
+x0, y0, fw, sg = 330, 260, 330, 105
+fretboard_at(s, x0, y0, 2, 6, fw, sg)
+MOV = {6: [3, 5], 5: [2, 3, 5], 4: [2, 4, 5], 3: [2, 4, 5], 2: [3, 5], 1: [2, 3]}
+FING = {2: 1, 3: 2, 4: 3, 5: 4}
+for st, fr in MOV.items():
+    i = (1, 2, 3, 4, 5, 6).index(st)
+    for f in fr:
+        x, y = fxa(x0, fw, 2, f), y0 + i * sg; n = note(st, f)
+        if n == 'SOL': s.circle(x, y, 44, GOLD, INK, 3)
+        pill(s, x, y, n, 22, 84)
+        s.text(x + 60, y - 30, f'd{FING[f]}', 20, 700, GRAY)
+s.text(1200, 990, 'Mueve la forma: con la tónica en el traste 5 es LA mayor; en el traste 8, DO mayor. Los dedos no cambian.', 30, 600, INK, 'middle', FI)
+s.save('G3_escala_movil')
+
+# 32 · Pentatónica menor, caja 1 -------------------------------------------------------
+s = Svg(2400, 1050, 'Escala pentatónica de La menor, caja 1')
+s.head('Pentatónica de LA menor · caja 1', 'Cinco notas: LA – DO – RE – MI – SOL · dedo 1 en el traste 5 · la tónica (LA) en dorado')
+x0, y0, fw, sg = 480, 260, 360, 105
+fretboard_at(s, x0, y0, 5, 8, fw, sg)
+PEN = {6: [5, 8], 5: [5, 7], 4: [5, 7], 3: [5, 7], 2: [5, 8], 1: [5, 8]}
+for st, fr in PEN.items():
+    i = (1, 2, 3, 4, 5, 6).index(st)
+    for f in fr:
+        x, y = fxa(x0, fw, 5, f), y0 + i * sg; n = note(st, f)
+        if n == 'LA': s.circle(x, y, 44, GOLD, INK, 3)
+        pill(s, x, y, n, 22, 84)
+        s.text(x + 60, y - 30, 'd' + str({5: 1, 7: 3, 8: 4}[f]), 20, 700, GRAY)
+s.text(1200, 990, 'Sobre Am – F – G – Am, cualquier nota de la caja suena bien: ¡empieza y termina en LA!', 30, 600, INK, 'middle', FI)
+s.save('G3_pentatonica')
 print('ok')
