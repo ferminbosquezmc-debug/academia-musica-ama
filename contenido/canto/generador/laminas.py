@@ -136,4 +136,65 @@ for k, (v, a, b, c) in enumerate(VOZ):
     s.text((xa + xb) / 2, y + 46, f'{a[0]}{a[1]} – {b[0]}{b[1]}', 24, 700, '#FFFFFF' if c not in ('#C9A227',) else INK)
 s.text(1200, 1100, 'Las voces de niños y niñas suelen estar entre DO4 y DO5, y crecen con los años · VibraVoice y tu profesor te ayudan a conocer la tuya', 24, 600, DGOLD, 'middle', FI)
 s.save('C1_extension')
+
+# ===================== NIVEL 2 (clases 13–24) =====================
+NC = {'DO': '#E5312B', 'RE': '#F57C00', 'MI': '#FFD21F', 'FA': '#2E9E4F', 'SOL': '#2AA7E8', 'LA': '#283593', 'SI': '#8E3BB8'}
+def pill(s, x, y, n, size=26, w=None):
+    b = n.replace('↑', '').strip(); c = NC.get(b, INK); tc = '#FFFFFF' if b in ('DO', 'LA', 'SI') or b not in NC else INK
+    w = w or max(80, len(n) * size * 0.75 + 24)
+    s.rect(x - w / 2, y - size * 0.95, w, size * 1.7, c, INK, 2.5, size * 0.85); s.text(x, y + size * 0.38, n, size, 700, tc)
+
+# 14 · Intervalos con melodías de referencia ----------------------------------------------------
+s = Svg(2400, 1050, 'Intervalos con melodías de referencia')
+s.head('3.ª, 5.ª y 8.ª: las recuerdo con canciones', 'Si recuerdo cómo empieza una canción, recuerdo el intervalo')
+IV = [('3.ª mayor', 'DO', 'MI', '«Mi voz» (clase 12): «Ca-da dí-a…»', 260, GREEN), ('5.ª justa', 'DO', 'SOL', '«Estrellita»: «Bri-lla, bri-lla…»', 420, BLUE), ('8.ª justa', 'DO', 'DO↑', 'la escala de Do: del primero al último', 560, PURPLE)]
+for k, (t, a, b, ref, h, c) in enumerate(IV):
+    x = 260 + k * 760
+    s.rect(x - 200, 220, 600, 640, BOX, 'none', 0, 22); s.text(x + 100, 290, t, 40, 700, c)
+    pill(s, x, 780, a, 32, 130); pill(s, x + 200, 780 - h, b, 32, 130)
+    s.add(f'<path d="M {x} 730 Q {x + 40} {780 - h / 2} {x + 160} {800 - h}" fill="none" stroke="{c}" stroke-width="8" stroke-linecap="round"/>')
+    s.text(x + 100, 940, ref, 24, 600, INK, 'middle', FI)
+s.text(1200, 1010, '↑ = la nota de la octava de arriba', 22, 600, GRAY, 'middle', FI)
+s.save('C2_intervalos')
+
+# 20 · Segunda voz en terceras -------------------------------------------------------------------
+s = Svg(2400, 900, 'Segunda voz en terceras')
+s.head('La segunda voz: una tercera abajo', '«Estrellita»: la voz 1 canta la melodía y la voz 2 canta 3 notas más abajo · al final se juntan')
+V1 = ['DO', 'DO', 'SOL', 'SOL', 'LA', 'LA', 'SOL', 'FA', 'FA', 'MI', 'MI', 'RE', 'RE', 'DO']
+V2 = ['LA', 'LA', 'MI', 'MI', 'FA', 'FA', 'MI', 'RE', 'RE', 'DO', 'DO', 'SI', 'SI', 'DO']
+s.text(80, 300, 'Voz 1', 34, 700, BLUE, 'start'); s.text(80, 470, 'Voz 2', 34, 700, ORANGE, 'start')
+for k, (a, b) in enumerate(zip(V1, V2)):
+    x = 300 + k * 148; pill(s, x, 290, a, 22, 104); pill(s, x, 460, b, 22, 104)
+    if k < 13: s.line(x, 330, x, 410, '#C9C3B6', 3, 'stroke-dasharray="6 6"')
+s.text(300 + 13 * 148, 560, 'unísono', 24, 700, RED, 'middle', FI)
+s.rect(120, 640, 2160, 180, BOX, 'none', 0, 20)
+s.text(1200, 715, 'Voz 2 de abajo: LA está 3 notas debajo de DO, MI debajo de SOL, FA debajo de LA…', 28, 700, INK, 'middle', FI)
+s.text(1200, 775, 'Cada voz aprende su parte sola; después se juntan, despacio y escuchándose', 24, 600, DGOLD, 'middle', FI)
+s.save('C2_terceras')
+
+# 21 · El micrófono --------------------------------------------------------------------------------
+s = Svg(2400, 1000, 'Cómo cantar con micrófono')
+s.head('Cantar con micrófono', 'Distancia, ángulo y movimiento · distancias aproximadas, el técnico de sonido ajusta el resto')
+for k, (t, d, dist, c) in enumerate([('Normal', 'a unos 3 a 5 cm, frente a la boca', 120, GREEN), ('Notas fuertes o agudas', 'me alejo un poco: 10 a 15 cm', 300, ORANGE), ('Muy cerca', 'sonido grave y «pegado»: lo evito', 30, RED)]):
+    x = 140 + k * 760; y = 420
+    s.circle(x + 100, y, 70, '#FDE7C8', INK, 3); s.add(f'<path d="M {x+150} {y+20} q 18 8 0 22" fill="none" stroke="{INK}" stroke-width="4"/>')
+    mx = x + 170 + dist; s.rect(mx, y - 10, 170, 40, '#5F6368', INK, 2, 18); s.circle(mx, y + 10, 30, '#9AA0A6', INK, 2)
+    s.line(x + 175, y + 70, mx, y + 70, c, 4); s.text((x + 175 + mx) / 2 + 6, y + 110, '↔', 30, 700, c)
+    s.text(x + 280, 620, t, 32, 700, c); s.text(x + 280, 670, d, 22, 600, INK, 'middle', FI)
+s.rect(120, 760, 2160, 190, BOX, 'none', 0, 20)
+for k, t in enumerate(['Apunto el micrófono a la boca, no al pecho ni a la nariz', 'Lo tomo del cuerpo, no de la rejilla, y no lo golpeo', 'No apunto el micrófono a los altavoces: produce acople (pitido)']):
+    s.text(170, 820 + k * 50, '• ' + t, 26, 600, INK, 'start', FI)
+s.save('C2_microfono')
+
+# 22 · Voces de coro sobre I – IV – V --------------------------------------------------------------------
+s = Svg(2400, 900, 'Voces de coro sobre I, IV y V')
+s.head('Voces de coro: cada voz canta una nota del acorde', 'Progresión C – F – G – C (I – IV – V – I) · la voz se mueve lo menos posible')
+CH = [('C', 'I', 'MI', 'DO'), ('F', 'IV', 'FA', 'DO'), ('G', 'V', 'RE', 'SI'), ('C', 'I', 'MI', 'DO')]
+for k, (c, g, a, b) in enumerate(CH):
+    x = 300 + k * 520
+    s.rect(x - 200, 200, 400, 520, BOX, 'none', 0, 22); s.text(x, 270, c, 48, 700); s.text(x, 320, g, 30, 700, GRAY)
+    pill(s, x, 450, a, 30, 130); pill(s, x, 600, b, 30, 130)
+s.text(60, 460, 'alta', 26, 700, BLUE, 'start'); s.text(60, 610, 'baja', 26, 700, ORANGE, 'start')
+s.text(1200, 820, 'La voz baja canta DO – DO – SI – DO: casi no se mueve, y por eso suena unida', 26, 600, DGOLD, 'middle', FI)
+s.save('C2_coro')
 print('ok')
