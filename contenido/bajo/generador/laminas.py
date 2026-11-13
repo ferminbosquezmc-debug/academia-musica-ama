@@ -377,7 +377,7 @@ for k, (t, p) in enumerate([('blancas', ['R', '–', '5', '–']), ('negras', ['
     s.text(x0, 920, t, 26, 600, GRAY, 'start', FI)
     for j, c in enumerate(p):
         x = x0 + 60 + j * 160
-        if c == '–': s.line(x - 50, 1000, x + 50, 1000, '#E5312B', 8)
+        if c == '–': s.line(x - 50, 1000, x + 50, 1000, '#E5312B' if p[j - 1] == 'R' else '#2370D6', 8)
         else: s.circle(x, 1000, 40, '#E5312B' if c == 'R' else '#2370D6', INK, 2); s.text(x, 1012, c, 32, 700, '#FFFFFF')
 s.save('J2_quinta')
 
