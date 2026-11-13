@@ -163,4 +163,61 @@ for k, (n, d, r) in enumerate(TOMS):
 s.text(1630, 860, 'Los toms van de agudo a grave, como una escalera', 30, 600, INK, 'middle', FI)
 s.text(1630, 910, '(la distancia exacta entre ellos es a gusto: suele ser una 3.ª o 4.ª, aproximadamente)', 24, 600, GRAY, 'middle', FI)
 s.save('B2_afinacion')
+
+# ===================== MES 6 (clases 21–24) =====================
+C16 = []
+for b in range(4): C16 += [str(b + 1), 'e', 'y', 'a']
+# 21 · El puntillo y el shuffle ----------------------------------------------------------
+s = Svg(2400, 1250, 'El puntillo y el shuffle')
+s.head('El puntillo', 'El puntillo suma la mitad del valor de la figura · el shuffle «largo-corto» sale del tresillo')
+s.text(60, 250, 'Negra con puntillo + corchea  ·  «ta-a-ti»  (2 pulsos)', 32, 700, INK, 'start')
+grid(s, 520, 280, ['1', 'y', '2', 'y'], [('Redoblante', {0: ('D', True, None), 3: ('I', False, None)})], 300, 110)
+s.text(1800, 360, '1½ + ½ = 2 pulsos', 30, 700, DGOLD, 'middle', FI)
+s.text(60, 560, 'Corchea con puntillo + semicorchea  ·  «taa-ri»  (1 pulso)', 32, 700, INK, 'start')
+grid(s, 520, 590, ['1', 'e', 'y', 'a'], [('Redoblante', {0: ('D', True, None), 3: ('I', False, None)})], 300, 110)
+s.text(1800, 670, '¾ + ¼ = 1 pulso', 30, 700, DGOLD, 'middle', FI)
+s.text(60, 870, 'Shuffle  ·  tresillo sin la nota del medio: «tri – la»  (1 pulso)', 32, 700, INK, 'start')
+grid(s, 520, 900, ['tri', 'o', 'la'], [('Hi-hat', {0: ('D', True, None), 2: ('D', False, None)})], 400, 110, 3)
+s.text(1800, 980, 'largo – corto', 30, 700, DGOLD, 'middle', FI)
+s.save('B2_puntillo')
+
+# 22 · Estudio del bombo ------------------------------------------------------------------
+s = Svg(2400, 1620, 'Estudio del bombo')
+s.head('Estudio del bombo', 'Hi-hat en corcheas y redoblante en el 2 y el 4 · el bombo se mueve, también en semicorcheas')
+HH16 = {k: ('D', False, None) for k in range(0, 16, 2)}
+SN16 = {4: ('I', False, None), 12: ('I', False, None)}
+BOM = [('1', 'dos golpes seguidos en corcheas', [0, 2, 8]), ('2', 'bombo en la «y» del 2', [0, 6, 8]), ('3', 'dos golpes en semicorcheas', [0, 1, 8]), ('4', 'bombo en la «a»', [0, 3, 8, 11])]
+for r, (n, d, bb) in enumerate(BOM):
+    y0 = 190 + r * 350
+    s.circle(100, y0 + 150, 42, GOLD, INK, 2); s.text(100, y0 + 165, n, 42, 700)
+    s.text(100, y0 + 230, '', 20)
+    grid(s, 430, y0, C16, [('Hi-hat', HH16), ('Redoblante', SN16), ('Bombo', {k: ('PD', False, None) for k in bb})], 116, 80, 4)
+    s.text(430, y0 + 340, d, 26, 600, GRAY, 'start', FI)
+s.save('B2_bombo')
+
+# 23 · Del semicorchea a la fusa: el redoble cerrado ----------------------------------------
+s = Svg(2400, 1050, 'Redoble cerrado en fusas')
+s.head('Redoble cerrado', 'Dobles golpes (D D I I) tan seguidos que el sonido se vuelve continuo')
+s.text(60, 250, 'Semicorcheas · dobles golpes · 4 por pulso', 32, 700, INK, 'start')
+grid(s, 420, 280, ['1', 'e', 'y', 'a'], [('Redoblante', {0: ('D', True, None), 1: ('D', False, None), 2: ('I', False, None), 3: ('I', False, None)})], 440, 110)
+s.text(60, 620, 'Fusas · dobles golpes · 8 por pulso', 32, 700, INK, 'start')
+grid(s, 420, 650, ['1', '', 'e', '', 'y', '', 'a', ''], [('Redoblante', {k: ('D' if (k // 2) % 2 == 0 else 'I', k == 0, None) for k in range(8)})], 220, 110, 8)
+s.text(1200, 1000, 'Sube el tempo poco a poco: cuando los dobles golpes van rápido, los dos golpes de cada mano casi se juntan', 28, 600, GRAY, 'middle', FI)
+s.save('B2_fusas')
+
+# 24 · Mapa de una canción ---------------------------------------------------------------------
+s = Svg(2400, 900, 'Mapa de una canción para la batería')
+s.head('El mapa de la canción', 'Antes de tocar, dibujo las partes, el ritmo de cada una y dónde van los fills')
+MAP = [('Intro', '4 comp.', 'hi-hat solo', '#C9C3B6', 'p'), ('Estrofa', '8 comp.', 'ritmo suave', '#2AA7E8', 'mp'), ('Coro', '8 comp.', 'ritmo con crash', '#F57C00', 'f'),
+       ('Estrofa', '8 comp.', 'ritmo suave', '#2AA7E8', 'mp'), ('Coro', '8 comp.', 'ritmo con crash', '#F57C00', 'f'), ('Final', '2 comp.', 'crash + bombo', '#2E9E4F', 'ff')]
+for k, (n, c, r, col, dyn) in enumerate(MAP):
+    x = 60 + k * 385
+    s.rect(x, 230, 360, 340, col, INK, 2, 20)
+    s.text(x + 180, 300, n, 40, 700, '#FFFFFF' if col != '#C9C3B6' else INK); s.text(x + 180, 350, c, 28, 600, '#FFFFFF' if col != '#C9C3B6' else INK, 'middle', FI)
+    s.text(x + 180, 420, r, 26, 600, '#FFFFFF' if col != '#C9C3B6' else INK, 'middle', FI)
+    s.text(x + 180, 510, dyn, 44, 700, '#FFFFFF' if col != '#C9C3B6' else INK, 'middle', FS, 'font-style="italic"')
+    if 0 < k < len(MAP): s.add(f'<path d="M{x - 18} 640 l18 -40 l18 40 Z" fill="{GOLD}" stroke="{INK}" stroke-width="2"/>')
+s.text(60, 720, '▲ = fill antes de la parte nueva', 30, 700, DGOLD, 'start', FI)
+s.text(60, 790, 'Las letras p, mp, f y ff son las dinámicas: de suave a muy fuerte.', 30, 600, GRAY, 'start', FI)
+s.save('B2_mapa')
 print('ok')
