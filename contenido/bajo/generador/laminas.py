@@ -256,4 +256,83 @@ for k, (n, d) in enumerate(MAP):
     x = 80 + k * 460; s.rect(x, 990, 430, 200, BOX, 'none', 0, 18); pill(s, x + 215, 1060, n, 32, 130); s.text(x + 215, 1150, d, 24, 600, INK, 'middle', FI)
 s.text(1200, 1260, 'Nueva: SOL es la 1.ª cuerda al aire · la blanca dura 2 pulsos', 26, 600, DGOLD, 'middle', FI)
 s.save('J1_himno')
+
+# ===================== NIVEL 1 · MES 3 (clases 9–12) =====================
+def tab(s, x0, y0, w, items, gap=46, lab=True):
+    """Tablatura de 5 líneas (SOL arriba, SI abajo). items: [(cuerda, traste, nota)]"""
+    for i, st in enumerate((1, 2, 3, 4, 5)):
+        s.line(x0, y0 + i * gap, x0 + w, y0 + i * gap, '#9AA0A6', 3)
+        if lab: s.text(x0 - 20, y0 + i * gap + 10, SNAME[st][0] if st != 1 else 'G', 26, 700, GRAY, 'end')
+    s.text(x0 + 40, y0 + 2 * gap + 12, 'TAB', 30, 700, INK, 'middle')
+    step = (w - 120) / len(items)
+    for k, (st, fr, n) in enumerate(items):
+        x = x0 + 120 + (k + 0.5) * step; y = y0 + (st - 1) * gap
+        s.rect(x - 22, y - 22, 44, 44, '#FFFFFF'); s.text(x, y + 12, str(fr), 34, 700, COL.get(n, INK) if n not in ('MI',) else DGOLD)
+
+# 9 · La raíz del acorde -------------------------------------------------------------------
+s = Svg(2400, 1150, 'La raíz de los acordes en el bajo')
+s.head('La raíz: la nota que nombra al acorde', 'El bajo toca la letra del cifrado · la «m» de menor no cambia la nota del bajo')
+fretboard(s, 520, 300, 4, 300, 90)
+ROOT = [(3, 3, 'C', 'DO'), (2, 0, 'D', 'RE'), (4, 0, 'E', 'MI'), (4, 1, 'F', 'FA'), (4, 3, 'G', 'SOL'), (3, 0, 'A', 'LA')]
+for st, fr, ch, n in ROOT:
+    y = 300 + (st - 1) * 90; x = fx(520, 300, fr) if fr else 520 - 40
+    pill(s, x, y, n, 22, 84 if len(n) > 2 else 70)
+    s.text(x, y - 34, ch, 28, 700, INK)
+s.text(1900, 330, 'Cifrado → nota del bajo', 32, 700)
+for k, (ch, n) in enumerate([('C', 'DO'), ('G', 'SOL'), ('Am', 'LA'), ('F', 'FA'), ('Em', 'MI'), ('D', 'RE')]):
+    y = 410 + k * 70; s.text(1800, y, ch, 34, 700, INK, 'end'); s.text(1830, y, '→', 30, 700, GRAY, 'middle'); pill(s, 1920, y - 10, n, 22, 84)
+s.rect(120, 960, 2160, 140, BOX, 'none', 0, 20)
+s.text(1200, 1020, 'Mayor (C) y menor (Cm) tienen la misma raíz: DO. Lo que cambia son las notas del piano y la guitarra.', 28, 700, INK, 'middle', FI)
+s.text(1200, 1070, 'Si hay una barra (C/E), el bajo toca la nota después de la barra: MI.', 24, 600, DGOLD, 'middle', FI)
+s.save('J1_raiz')
+
+# 10 · Tonos y semitonos · cuerda SI ---------------------------------------------------------
+s = Svg(2400, 1200, 'Tonos y semitonos en el bajo y la cuerda SI')
+s.head('Un traste = un semitono · dos trastes = un tono', 'Cuerda SI (5.ª): SI al aire · DO traste 1 · RE traste 3')
+x0, fw = 300, 250
+fretboard(s, x0, 300, 5, fw, 70, strings=(5,))
+for fr, n in ((0, 'SI'), (1, 'DO'), (2, 'DO♯'), (3, 'RE'), (4, 'RE♯'), (5, 'MI')):
+    x = fx(x0, fw, fr) if fr else x0 - 40
+    if fr == 0: s.circle(x, 300, 26, COL['SI'], INK, 2); s.text(x, 308, 'SI', 18, 700, '#FFFFFF')
+    else: pill(s, x, 300, n, 22, 86)
+for a, b, lab, c in ((0, 1, 'semitono', '#E5312B'), (1, 3, 'tono', '#2370D6'), (3, 5, 'tono', '#2370D6')):
+    xa = fx(x0, fw, a) if a else x0 - 40; xb = fx(x0, fw, b)
+    s.add(f'<path d="M {xa:.0f} 410 Q {(xa+xb)/2:.0f} 480 {xb:.0f} 410" fill="none" stroke="{c}" stroke-width="5"/>'); s.text((xa + xb) / 2, 510, lab, 28, 700, c)
+s.text(1800, 300, 'MI–FA y SI–DO:', 30, 700, INK, 'start'); s.text(1800, 345, 'semitonos naturales', 26, 600, GRAY, 'start', FI)
+s.text(80, 600, 'En el pentagrama (clave de fa): debajo, con líneas adicionales', 32, 700, INK, 'start')
+staff(s, 140, 1300, 680, 40)
+for k, (n, o) in enumerate([('SI', 1), ('DO', 2), ('RE', 2)]): note_bf(s, 520 + k * 240, 680, 40, n, o)
+s.text(1700, 760, 'SI cuelga de la 2.ª línea adicional', 26, 600, GRAY, 'start', FI)
+s.text(1700, 810, 'DO va sobre la 2.ª línea adicional', 26, 600, GRAY, 'start', FI)
+s.text(1700, 860, 'RE va entre las dos líneas adicionales', 26, 600, GRAY, 'start', FI)
+s.text(1200, 1150, 'Bajo de 4 cuerdas: estas notas graves no existen; tócalas una octava arriba (DO: cuerda LA, traste 3)', 26, 600, DGOLD, 'middle', FI)
+s.save('J1_semitono')
+
+# 11 · Escala de Do ----------------------------------------------------------------------------
+s = Svg(2400, 1250, 'La escala de Do en el bajo de cinco cuerdas')
+s.head('La escala de Do · una octava', 'Bajo de 5 cuerdas: empieza en la cuerda SI, traste 1 · todo en los trastes 0 a 3')
+ESC = [('DO', 2, 5, 1), ('RE', 2, 5, 3), ('MI', 2, 4, 0), ('FA', 2, 4, 1), ('SOL', 2, 4, 3), ('LA', 2, 3, 0), ('SI', 2, 3, 2), ('DO', 3, 3, 3)]
+staff(s, 140, 2280, 260, 36)
+for k, (n, o, st, fr) in enumerate(ESC): note_bf(s, 470 + k * 230, 260, 36, n, o)
+for k, d in enumerate(['T', 'T', 'S', 'T', 'T', 'T', 'S']):
+    x = 470 + (k + 0.5) * 230; c = '#E5312B' if d == 'S' else '#2370D6'
+    s.circle(x, 560, 30, c, INK, 2); s.text(x, 571, d, 28, 700, '#FFFFFF')
+tab(s, 230, 680, 2050, [(st, fr, n) for n, o, st, fr in ESC])
+for k, (n, o, st, fr) in enumerate(ESC): pill(s, 230 + 120 + (k + 0.5) * (2050 - 120) / 8, 950, n, 22, 84)
+s.text(1200, 1060, 'Dedos: traste 1 = dedo 1 · traste 2 = dedo 2 · traste 3 = dedo 3 · al aire = sin dedo', 28, 700, INK, 'middle', FI)
+s.text(1200, 1130, 'Bajo de 4 cuerdas: empieza en DO de la cuerda LA (traste 3) y sigue en las cuerdas RE y SOL', 26, 600, DGOLD, 'middle', FI)
+s.save('J1_escala')
+
+# 12 · Mapa de raíces de una canción ------------------------------------------------------------
+s = Svg(2400, 1150, 'Raíces de «Cuando los santos marchan»')
+s.head('«Cuando los santos marchan» (tradicional) · las raíces', 'Leo el cifrado, toco la raíz de cada acorde: un compás por acorde, en negras o blancas')
+SANTOS = ['C', 'C', 'C', 'C', 'C', 'C', 'G', 'G', 'C', 'C', 'F', 'F', 'C', 'G', 'C', 'C']
+RN = {'C': 'DO', 'G': 'SOL', 'F': 'FA'}
+for k, ch in enumerate(SANTOS):
+    r, c = divmod(k, 4); x = 140 + c * 540; y = 230 + r * 200
+    s.rect(x, y, 520, 160, BOX, 'none', 0, 16); s.line(x + 520, y + 10, x + 520, y + 150, INK, 4)
+    s.text(x + 40, y + 60, ch, 40, 700, INK, 'start')
+    for j in range(4): pill(s, x + 150 + j * 95, y + 105, RN[ch], 18, 78)
+s.text(1200, 1080, 'DO: cuerda LA traste 3 (o cuerda SI traste 1) · FA: cuerda MI traste 1 · SOL: cuerda MI traste 3', 26, 600, DGOLD, 'middle', FI)
+s.save('J1_santos')
 print('ok')
