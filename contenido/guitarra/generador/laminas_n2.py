@@ -319,4 +319,116 @@ TIP = ['Escucha a la batería: ella marca el pulso de todos.', 'Si hay teclado, 
 for k, tx in enumerate(TIP):
     s.circle(160, 760 + k * 70, 18, GOLD, INK, 2); s.text(200, 770 + k * 70, tx, 32, 600, INK, 'start', FI)
 s.save('G2_banda')
+
+# ===================== NIVEL 3 · MES 7 (clases 25–28) =====================
+def chordbox_at(s, bx, top, sym, name, sh, start, gx=62, fh=105, barre=None):
+    """Diagrama de acorde que empieza en el traste `start` (los trastes de `sh` son relativos: 1 = start)."""
+    s.text(bx + 2.5 * gx, top - 110, sym, 54, 700); s.text(bx + 2.5 * gx, top - 72, name, 24, 500, GRAY, 'middle', FI)
+    s.line(bx, top, bx + 5 * gx, top, FRET, 4)
+    s.text(bx - 40, top + 0.5 * fh + 10, f'{start}', 30, 700, DGOLD, 'end')
+    for f in range(1, 5): s.line(bx, top + f * fh, bx + 5 * gx, top + f * fh, FRET, 4)
+    if barre:
+        f, a, b = barre; xa, xb = bx + (6 - a) * gx, bx + (6 - b) * gx
+        s.rect(min(xa, xb) - 24, top + (f - 0.5) * fh - 24, abs(xb - xa) + 48, 48, INK, rx=24)
+    for j, st in enumerate((6, 5, 4, 3, 2, 1)):
+        x = bx + j * gx; s.line(x, top, x, top + 4 * fh, STR, 2 + st * 0.7)
+        v = sh[st]
+        if v == 'x': s.text(x, top - 26, '✕', 26, 700, GRAY); continue
+        f, d = v
+        s.circle(x, top + (f - 0.5) * fh, 25, INK); s.text(x, top + (f - 0.5) * fh + 10, str(d), 27, 700, '#FFFFFF')
+        n = note(st, f + start - 1)
+        if n in FLAT: s.rect(x - 29, top + 4 * fh + 24, 58, 32, INK, INK, 2, 16); s.text(x, top + 4 * fh + 46, n, 14, 700, '#FFFFFF')
+        else:
+            s.rect(x - 29, top + 4 * fh + 24, 58, 32, COL[n], INK, 2, 16)
+            s.text(x, top + 4 * fh + 46, n, 15 if len(n) > 2 else 17, 700, '#FFFFFF' if n in WHITE_TXT else INK)
+
+def scale_on(s, x0, y0, fw, sg, frets, notes, grades):
+    fretboard(s, x0, y0, frets, fw, sg)
+    for k, (st, f) in enumerate(notes):
+        i = (1, 2, 3, 4, 5, 6).index(st); x, y = fx(x0, fw, f), y0 + i * sg
+        pill(s, x, y, note(st, f), 22, 92)
+        s.circle(x + 56, y - 32, 21, GOLD, INK, 2); s.text(x + 56, y - 24, grades[k], 18 if len(grades[k]) > 2 else 21, 700, INK)
+
+# 25 · Escalas menores en primera posición ---------------------------------------
+s = Svg(2400, 1500, 'Escalas de La menor y Mi menor en primera posición')
+s.head('Dos escalas menores', 'La menor (relativa de Do mayor) y Mi menor (relativa de Sol mayor) · fórmula T-S-T-T-S-T-T')
+R = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII']
+s.text(140, 230, 'LA menor · sin alteraciones', 34, 700, INK, 'start')
+scale_on(s, 420, 320, 380, 82, 4, [(5, 0), (5, 2), (5, 3), (4, 0), (4, 2), (4, 3), (3, 0), (3, 2)], R)
+s.text(140, 860, 'MI menor · un FA♯', 34, 700, INK, 'start')
+scale_on(s, 420, 950, 380, 82, 4, [(6, 0), (6, 2), (6, 3), (5, 0), (5, 2), (5, 3), (4, 0), (4, 2)], R)
+s.save('G3_escalas_menores')
+
+# 25 · Armaduras ------------------------------------------------------------------------
+s = Svg(2400, 760, 'Las armaduras: sostenidos y bemoles al inicio del pentagrama')
+s.head('La armadura', 'Los ♯ o ♭ que van al principio valen para toda la canción · cada armadura sirve a una mayor y a su relativa menor')
+ARM = [('Do mayor · La menor', []), ('Sol mayor · Mi menor', [('♯', 'FA5')]), ('Re mayor · Si menor', [('♯', 'FA5'), ('♯', 'DO5')]), ('Fa mayor · Re menor', [('♭', 'SI')])]
+STEP2 = {'FA5': 8, 'DO5': 5, 'SI': 4}
+for k, (lab, acc) in enumerate(ARM):
+    x1 = 80 + k * 580; y0 = 300; sp = 34
+    staff(s, x1, x1 + 500, y0)
+    for j, (sg_, pos) in enumerate(acc):
+        y = y0 + 4 * sp - STEP2[pos] * sp / 2
+        s.add(f'<text x="{x1 + 150 + j * 50}" y="{y + 18:.1f}" font-family="\'DejaVu Serif\', \'Times New Roman\', serif" font-size="64" font-weight="700" fill="{INK}" text-anchor="middle">{sg_}</text>')
+    s.text(x1 + 250, 560, lab.split(' · ')[0], 32, 700); s.text(x1 + 250, 605, lab.split(' · ')[1], 28, 600, GRAY, 'middle', FI)
+    s.text(x1 + 250, 660, ['sin alteraciones', '1 sostenido', '2 sostenidos', '1 bemol'][k], 26, 600, DGOLD, 'middle', FI)
+s.save('G3_armaduras')
+
+# 26 · Quintas y power chords --------------------------------------------------------------
+s = Svg(2400, 1050, 'Acordes de quinta (power chords)')
+s.head('Acordes de quinta («power chords»)', 'Solo dos notas distintas: la nota base (1) y su quinta justa (5), a veces con la octava (8) · se escriben con un 5')
+PW = [('E5', 'en la 6.ª al aire', {6: (0, '1'), 5: (2, '5'), 4: (2, '8')}), ('A5', 'en la 5.ª al aire', {5: (0, '1'), 4: (2, '5'), 3: (2, '8')}),
+      ('G5', 'móvil · traste 3', {6: (3, '1'), 5: (5, '5'), 4: (5, '8')}), ('C5', 'móvil · traste 3', {5: (3, '1'), 4: (5, '5'), 3: (5, '8')})]
+for k, (sym, sub, sh) in enumerate(PW):
+    x0 = 160 + k * 570; y0 = 330; fw, sg = 80, 70
+    s.text(x0 + 200, 230, sym, 54, 700); s.text(x0 + 200, 272, sub, 24, 500, GRAY, 'middle', FI)
+    for i, st in enumerate((1, 2, 3, 4, 5, 6)): s.line(x0, y0 + i * sg, x0 + 6 * fw, y0 + i * sg, STR, 2 + st * 0.7)
+    s.rect(x0 - 8, y0 - 20, 10, 5 * sg + 40, INK)
+    for f in range(1, 7): s.line(x0 + f * fw, y0 - 20, x0 + f * fw, y0 + 5 * sg + 20, FRET, 4)
+    for st, (f, lab) in sh.items():
+        i = (1, 2, 3, 4, 5, 6).index(st); x = x0 - 26 if f == 0 else x0 + (f - 0.5) * fw; y = y0 + i * sg
+        s.circle(x, y, 26, GOLD if lab == '1' else INK, INK, 2); s.text(x, y + 10, lab, 26, 700, INK if lab == '1' else '#FFFFFF')
+    s.text(x0 + 200, y0 + 5 * sg + 70, 'trastes 1–6', 22, 600, GRAY, 'middle', FI)
+s.text(1200, 900, 'La forma no cambia: muévela por el mástil y la nota base (dorada) da el nombre del acorde.', 30, 600, INK, 'middle', FI)
+s.text(1200, 960, 'Quinta justa = 7 semitonos · octava = 12 semitonos', 30, 600, DGOLD, 'middle', FI)
+s.save('G3_quintas')
+
+# 27 · Ligados --------------------------------------------------------------------------------
+s = Svg(2400, 900, 'Ligados: martillo y tirón')
+s.head('Los ligados', 'Dos notas con un solo ataque de la mano derecha · H = martillo (sube) · P = tirón (baja)')
+def tabrow(s, x0, y0, items, title):
+    s.text(x0, y0 - 70, title, 36, 700, INK, 'start')
+    for i in range(6): s.line(x0, y0 + i * 40, x0 + 1000, y0 + i * 40, GRAY, 2)
+    for i, lab in enumerate(['1ª', '2ª', '3ª', '4ª', '5ª', '6ª']): s.text(x0 - 40, y0 + i * 40 + 9, lab, 22, 600, GRAY)
+    for k, (st, f, x, arc) in enumerate(items):
+        y = y0 + (st - 1) * 40; s.rect(x0 + x - 22, y - 20, 44, 40, '#FFFFFF'); s.text(x0 + x, y + 11, str(f), 32, 700)
+        if arc: a, lab = arc; s.add(f'<path d="M{x0+x} {y-24} Q{x0+x+a/2} {y-80} {x0+x+a} {y-24}" stroke="{DGOLD}" stroke-width="4" fill="none"/>'); s.text(x0 + x + a / 2, y - 70, lab, 26, 700, DGOLD)
+tabrow(s, 160, 330, [(1, 0, 120, (160, 'H')), (1, 2, 280, None), (1, 0, 520, (160, 'H')), (1, 3, 680, None)], 'Martillo (H): toco 0 y «martillo» el traste 2')
+tabrow(s, 1300, 330, [(1, 2, 120, (160, 'P')), (1, 0, 280, None), (1, 3, 520, (160, 'P')), (1, 0, 680, None)], 'Tirón (P): toco 2 y tiro del dedo hacia abajo')
+TX = ['Martillo: el dedo cae con fuerza justo detrás del traste, como un martillo pequeño.', 'Tirón: el dedo jala la cuerda un poco hacia el piso al soltarla, para que siga sonando.', 'Las dos notas deben sonar parejas: escucha que la segunda no se apague.']
+for k, tx in enumerate(TX): s.circle(160, 700 + k * 60, 16, GOLD, INK, 2); s.text(195, 710 + k * 60, tx, 30, 600, INK, 'start', FI)
+s.save('G3_ligados')
+
+# 28 · Séptimas móviles con cejilla ------------------------------------------------------------
+s = Svg(2400, 1100, 'Acordes de séptima con cejilla')
+s.head('Séptimas móviles con cejilla', 'Forma de Mi séptima (cejilla en la 6.ª) y forma de La séptima (cejilla en la 5.ª) · el número dorado es el traste')
+chordbox_at(s, 330, 470, 'A7', 'forma de Mi7 · traste 5', {6: (1, 1), 5: (3, 3), 4: (1, 1), 3: (2, 2), 2: (1, 1), 1: (1, 1)}, 5, barre=(1, 6, 1))
+chordbox_at(s, 1430, 470, 'B7', 'forma de La7 · traste 2', {6: 'x', 5: (1, 1), 4: (3, 3), 3: (1, 1), 2: (3, 4), 1: (1, 1)}, 2, barre=(1, 5, 1))
+s.text(1200, 1040, 'Muévelas: la forma de Mi7 en el traste 3 es G7; la forma de La7 en el traste 3 es C7.', 30, 600, INK, 'middle', FI)
+s.save('G3_septimas_cejilla')
+
+# 28 · Tríadas en las tres primeras cuerdas -------------------------------------------------
+s = Svg(2400, 760, 'El acorde de Do en tres posiciones')
+s.head('Un acorde, tres posiciones (inversiones)', 'Acorde de C en las cuerdas 1, 2 y 3 · el número dorado dice qué nota está abajo')
+x0, y0, fw, sg = 280, 300, 195, 110
+fretboard(s, x0, y0, 10, fw, sg, strings=(1, 2, 3))
+SH3 = [([(3, 0), (2, 1), (1, 0)], 'C/G · 2.ª inversión', '5'), ([(3, 5), (2, 5), (1, 3)], 'C · fundamental', '1'), ([(3, 9), (2, 8), (1, 8)], 'C/E · 1.ª inversión', '3')]
+for k, (pts, lab, low) in enumerate(SH3):
+    xs = []
+    for st, f in pts:
+        i = (1, 2, 3).index(st); x, y = fx(x0, fw, f), y0 + i * sg; xs.append(x)
+        pill(s, x, y, note(st, f), 22, 86)
+    cx = sum(xs) / len(xs); s.text(cx, 690, lab, 26, 700, INK, 'middle', FI)
+    s.circle(cx, 600, 22, GOLD, INK, 2); s.text(cx, 609, low, 24, 700)
+s.save('G3_triadas')
 print('ok')
