@@ -264,4 +264,59 @@ chordbox(s, 520, 640, 'Dm', 'Re menor', {6: 'x', 5: 'x', 4: 0, 3: (2, 2), 2: (3,
 chordbox(s, 1420, 640, 'F', 'Fa mayor (pequeño)', {6: 'x', 5: 'x', 4: (3, 3), 3: (2, 2), 2: (1, 1), 1: (1, 1)}, barre=(1, 2, 1))
 s.text(1200, 1120, 'En F, el dedo 1 pisa a la vez la 1.ª y la 2.ª cuerda en el traste 1: es tu primera mini-cejilla.', 30, 500, GRAY, 'middle', FI)
 s.save('G2_acordes_tonalidad')
+
+# ===================== MES 6 (clases 21–24) =====================
+# 21 · La cejilla --------------------------------------------------------------------
+s = Svg(2400, 1150, 'La cejilla: formas de Mi y de La menor')
+s.head('La cejilla', 'El dedo 1 pisa varias cuerdas a la vez, como un traste nuevo · F (forma de Mi) y Bm (forma de La menor)')
+chordbox(s, 330, 470, 'F', 'Fa mayor · cejilla en el traste 1', {6: (1, 1), 5: (3, 3), 4: (3, 4), 3: (2, 2), 2: (1, 1), 1: (1, 1)}, barre=(1, 6, 1))
+chordbox(s, 1430, 470, 'Bm', 'Si menor · cejilla en el traste 2', {6: 'x', 5: (2, 1), 4: (4, 3), 3: (4, 4), 2: (3, 2), 1: (2, 1)}, barre=(2, 5, 1))
+s.text(1200, 1040, 'Pulgar detrás del mástil, a la altura del dedo 1 · el dedo 1 bien recto y pegado al traste.', 30, 500, GRAY, 'middle', FI)
+s.text(1200, 1100, 'Revisa la cejilla cuerda por cuerda: cada una debe sonar limpia.', 30, 600, DGOLD, 'middle', FI)
+s.save('G2_cejilla')
+
+# 22 · Acordes de séptima abiertos ---------------------------------------------------
+s = Svg(2400, 1000, 'Acordes de séptima: G7, D7, E7 y A7')
+s.head('Acordes de séptima', 'Al acorde mayor se le suma una cuarta nota: la séptima. Suenan con ganas de ir al acorde siguiente')
+SEP = [('G7', 'Sol séptima', {6: (3, 3), 5: (2, 2), 4: 0, 3: 0, 2: 0, 1: (1, 1)}),
+       ('D7', 'Re séptima', {6: 'x', 5: 'x', 4: 0, 3: (2, 2), 2: (1, 1), 1: (2, 3)}),
+       ('E7', 'Mi séptima', {6: 0, 5: (2, 2), 4: 0, 3: (1, 1), 2: 0, 1: 0}),
+       ('A7', 'La séptima', {6: 'x', 5: 0, 4: (2, 2), 3: 0, 2: (2, 3), 1: 0})]
+for c, (sym, name, sh) in enumerate(SEP):
+    chordbox(s, 150 + c * 570, 400, sym, name, sh)
+s.text(1200, 960, 'G7 lleva a C · D7 lleva a G · A7 lleva a D · E7 lleva a A (o a Am)', 30, 600, DGOLD, 'middle', FI)
+s.save('G2_septimas')
+
+# 23 · Dinámicas y forma ---------------------------------------------------------------
+s = Svg(2400, 1080, 'Dinámicas y forma A–B–A')
+s.head('Toco con expresión', 'Las dinámicas dicen qué tan fuerte o suave se toca · la forma dice cómo se ordenan las partes')
+DYN = [('pp', 'pianissimo', 'muy suave'), ('p', 'piano', 'suave'), ('mp', 'mezzo piano', 'medio suave'),
+       ('mf', 'mezzo forte', 'medio fuerte'), ('f', 'forte', 'fuerte'), ('ff', 'fortissimo', 'muy fuerte')]
+for k, (sym, it, es) in enumerate(DYN):
+    x = 260 + k * 376; h = 50 + k * 42
+    s.rect(x - 70, 470 - h, 140, h, GOLD if k >= 3 else '#E9D9A6', INK, 2, 10)
+    s.add(f'<text x="{x}" y="540" font-family="\'DejaVu Serif\', \'Times New Roman\', serif" font-size="58" font-style="italic" font-weight="700" fill="{INK}" text-anchor="middle">{sym}</text>')
+    s.text(x, 585, it, 24, 600, GRAY, 'middle', FI); s.text(x, 620, es, 26, 700, INK, 'middle', FI)
+s.add(f'<path d="M260 690 L1000 660 M260 690 L1000 720" stroke="{INK}" stroke-width="5" fill="none"/>'); s.text(630, 770, 'crescendo: cada vez más fuerte', 26, 600, GRAY, 'middle', FI)
+s.add(f'<path d="M1400 660 L2140 690 L1400 720" stroke="{INK}" stroke-width="5" fill="none"/>'); s.text(1770, 770, 'decrescendo: cada vez más suave', 26, 600, GRAY, 'middle', FI)
+FORM = [('A', 'estrofa', '#2AA7E8'), ('B', 'coro', '#F57C00'), ('A', 'estrofa', '#2AA7E8')]
+for k, (l, n, c) in enumerate(FORM):
+    x = 520 + k * 680
+    s.rect(x - 280, 840, 560, 180, c, INK, 2, 22); s.text(x, 935, l, 72, 700, '#FFFFFF' if c == '#2AA7E8' else INK); s.text(x, 995, n, 30, 700, '#FFFFFF' if c == '#2AA7E8' else INK, 'middle', FI)
+s.save('G2_dinamicas_forma')
+
+# 24 · La guitarra en la banda ----------------------------------------------------------
+s = Svg(2400, 1000, 'La guitarra en la banda')
+s.head('Tocamos en banda', 'Cada instrumento tiene su tarea; la guitarra no tiene que tocarlo todo')
+BAND = [('🎤', 'Voz', 'la melodía y la letra', '#E5312B'), ('🎸', 'Guitarra', 'acordes y ritmo', '#2AA7E8'), ('🎹', 'Teclado', 'acordes largos de fondo', '#2E9E4F'),
+        ('🎸', 'Bajo', 'las notas graves de cada acorde', '#283593'), ('🥁', 'Batería', 'el pulso y la energía', '#F57C00')]
+for k, (em, n, d, c) in enumerate(BAND):
+    x = 250 + k * 475
+    s.rect(x - 215, 240, 430, 420, '#FAFAF7', c, 6, 24)
+    s.text(x, 380, em, 96, 400); s.text(x, 470, n, 44, 700); s.text(x, 530, d, 26, 600, GRAY, 'middle', FI)
+TIP = ['Escucha a la batería: ella marca el pulso de todos.', 'Si hay teclado, toca más suave o con arpegios: no tapes al cantante.',
+       'Mira al líder: él indica la entrada, el coro y el final.']
+for k, tx in enumerate(TIP):
+    s.circle(160, 760 + k * 70, 18, GOLD, INK, 2); s.text(200, 770 + k * 70, tx, 32, 600, INK, 'start', FI)
+s.save('G2_banda')
 print('ok')
