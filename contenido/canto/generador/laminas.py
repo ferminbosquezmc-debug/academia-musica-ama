@@ -114,4 +114,26 @@ for k, (v, d, rx, ry, c) in enumerate(VOC):
     s.text(x, 445, v, 80, 700, c); s.text(x, 640, d, 26, 600, INK, 'middle', FI)
 s.text(1200, 780, 'Ejercicio: «mi – me – ma – mo – mu» en una nota, cambiando solo la forma de la boca', 28, 700, DGOLD, 'middle', FI)
 s.save('C1_vocales')
+
+# ===================== MES 3 (clases 9–12) =====================
+# 11 · Tipos de voz (rangos aproximados) ----------------------------------------------------------
+s = Svg(2400, 1200, 'Tipos de voz y sus rangos aproximados')
+s.head('Tipos de voz · rangos aproximados', 'Cada voz es distinta: estos rangos son una guía, no una regla · el número indica la octava (DO4 = DO central)')
+NOTES = ['DO', 'RE', 'MI', 'FA', 'SOL', 'LA', 'SI']
+def pos(n, o): return (o - 2) * 7 + NOTES.index(n)  # DO2 = 0
+x0, step = 300, 66
+lo, hi = pos('DO', 2), pos('DO', 6)
+for k in range(lo, hi + 1):
+    x = x0 + k * step; n = NOTES[k % 7]; o = 2 + k // 7
+    s.rect(x - step / 2 + 2, 230, step - 4, 90, '#FFFFFF' if n != 'DO' else '#F4E9C7', INK, 1.5, 6)
+    if n == 'DO': s.text(x, 290, f'DO{o}', 18, 700)
+s.text(x0 + pos('DO', 4) * step, 350, '▲ DO central', 20, 700, RED, 'middle', FI)
+VOZ = [('Soprano', ('DO', 4), ('LA', 5), RED), ('Mezzosoprano', ('LA', 3), ('FA', 5), ORANGE), ('Contralto', ('FA', 3), ('RE', 5), '#C9A227'),
+       ('Tenor', ('DO', 3), ('LA', 4), GREEN), ('Barítono', ('LA', 2), ('FA', 4), BLUE), ('Bajo', ('MI', 2), ('RE', 4), PURPLE)]
+for k, (v, a, b, c) in enumerate(VOZ):
+    y = 420 + k * 105; xa = x0 + pos(*a) * step; xb = x0 + pos(*b) * step
+    s.rect(xa - 20, y, xb - xa + 40, 70, c, INK, 2, 35); s.text(xa - 40, y + 46, v, 28, 700, INK, 'end')
+    s.text((xa + xb) / 2, y + 46, f'{a[0]}{a[1]} – {b[0]}{b[1]}', 24, 700, '#FFFFFF' if c not in ('#C9A227',) else INK)
+s.text(1200, 1100, 'Las voces de niños y niñas suelen estar entre DO4 y DO5, y crecen con los años · VibraVoice y tu profesor te ayudan a conocer la tuya', 24, 600, DGOLD, 'middle', FI)
+s.save('C1_extension')
 print('ok')
