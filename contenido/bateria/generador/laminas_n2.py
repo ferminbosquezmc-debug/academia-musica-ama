@@ -99,4 +99,68 @@ grid(s, 300, 230, cnt, [('Redoblante', hits)], 125, 140, 4)
 s.text(1200, 620, 'D I D I · D I D I · D I D I · D I D I', 34, 700, INK, 'middle', FI)
 s.text(1200, 680, 'Empieza a 50 BPM: cuando salga parejo tres veces, sube 5 BPM', 28, 600, GRAY, 'middle', FI)
 s.save('B2_semicorcheas')
+
+# ===================== MES 5 (clases 17–20) =====================
+import math
+C8 = ['1', 'y', '2', 'y', '3', 'y', '4', 'y']
+HH8 = {k: ('D', False, None) for k in range(8)}
+SN = {2: ('I', False, None), 6: ('I', False, None)}
+# 17 · Patrones de rock: el bombo cambia ---------------------------------------------
+s = Svg(2400, 1500, 'Patrones de rock: el bombo cambia de lugar')
+s.head('Patrones de rock', 'Hi-hat en corcheas y redoblante en el 2 y el 4 siempre iguales · solo cambia el bombo')
+PAT = [('A', [0, 4]), ('B', [0, 4, 5]), ('C', [0, 3, 4, 5]), ('D', [0, 1, 4, 6])]
+for r, (lab, bb) in enumerate(PAT):
+    y0 = 200 + r * 320
+    s.circle(110, y0 + 150, 44, GOLD, INK, 2); s.text(110, y0 + 166, lab, 44, 700)
+    grid(s, 450, y0, C8, [('Hi-hat', HH8), ('Redoblante', SN), ('Bombo', {k: ('PD', False, None) for k in bb})], 230, 80)
+s.save('B2_rock_bombo')
+
+# 18 · Desplazamientos ------------------------------------------------------------------
+s = Svg(2400, 1000, 'Desplazamientos del hi-hat al contratiempo')
+s.head('Desplazamiento: el hi-hat en las «y»', 'El hi-hat se mueve al contratiempo · A: con el bombo en cada pulso · B: con el redoblante')
+off = {k: ('D', False, None) for k in (1, 3, 5, 7)}
+s.circle(110, 340, 44, GOLD, INK, 2); s.text(110, 356, 'A', 44, 700)
+grid(s, 450, 190, C8, [('Hi-hat', off), ('Bombo', {k: ('PD', False, None) for k in (0, 2, 4, 6)})], 230, 90)
+s.circle(110, 740, 44, GOLD, INK, 2); s.text(110, 756, 'B', 44, 700)
+grid(s, 450, 560, C8, [('Hi-hat', off), ('Redoblante', SN), ('Bombo', {0: ('PD', False, None), 4: ('PD', False, None)})], 230, 90)
+s.save('B2_desplazamiento')
+
+# 19 · Fills de 1, 2 y 4 tiempos -----------------------------------------------------------
+s = Svg(2400, 1180, 'Fills de uno, dos y cuatro tiempos')
+s.head('Fills (rellenos)', 'Tres compases de ritmo y uno de relleno · al terminar: crash + bombo en el 1')
+PZC = {'R': ('Redoblante', '#2370D6'), 'T1': ('Tom 1', '#F57C00'), 'T2': ('Tom 2', '#2AA7E8'), 'P': ('Tom de piso', '#283593'), 'Rit': ('Ritmo', '#C9C3B6')}
+FIL = [('1 tiempo', ['Rit', 'Rit', 'Rit', 'R']), ('2 tiempos', ['Rit', 'Rit', 'R', 'T1']), ('4 tiempos', ['R', 'T1', 'T2', 'P'])]
+for r, (lab, beats) in enumerate(FIL):
+    y = 230 + r * 270
+    s.text(60, y + 95, lab, 36, 700, INK, 'start')
+    for b, pz in enumerate(beats):
+        x = 420 + b * 420; nm, col = PZC[pz]
+        s.rect(x, y, 400, 190, col if pz != 'Rit' else '#F3F1EA', INK, 2, 18)
+        s.text(x + 200, y + 70, str(b + 1) + (' e y a' if pz != 'Rit' else ''), 34, 700, '#FFFFFF' if pz not in ('Rit',) else GRAY)
+        s.text(x + 200, y + 140, nm if pz != 'Rit' else 'ritmo de rock', 32, 700, '#FFFFFF' if pz != 'Rit' else GRAY)
+    s.circle(2200, y + 95, 70, '#C9A227', INK, 3); s.text(2200, y + 85, 'crash', 28, 700); s.text(2200, y + 120, '+ bombo', 22, 700)
+s.text(1200, 1100, 'En cada tiempo del fill: 4 semicorcheas con las manos alternadas (D I D I)', 32, 600, INK, 'middle', FI)
+s.save('B2_fills')
+
+# 20 · Afinación en estrella -------------------------------------------------------------
+s = Svg(2400, 1100, 'Afinación en estrella y toms escalonados')
+s.head('Afinación en estrella', 'Ajusta cada tornillo poco a poco, en este orden: el parche se estira parejo')
+cx, cy, R = 600, 600, 320
+s.circle(cx, cy, R + 30, '#E8E3D6', INK, 6); s.circle(cx, cy, R - 30, '#F7F4EC', '#C9C3B6', 2)
+ORDER = [0, 4, 2, 6, 1, 5, 3, 7]
+for pos in range(8):
+    a = -math.pi / 2 + pos * math.pi / 4; x, y = cx + R * math.cos(a), cy + R * math.sin(a)
+    n = ORDER.index(pos) + 1
+    s.circle(x, y, 40, GOLD if n <= 2 else '#FFFFFF', INK, 3); s.text(x, y + 13, str(n), 36, 700)
+for k in range(0, 8, 2):
+    a1 = -math.pi / 2 + ORDER[k] * math.pi / 4; a2 = -math.pi / 2 + ORDER[k + 1] * math.pi / 4
+    s.line(cx + (R - 50) * math.cos(a1), cy + (R - 50) * math.sin(a1), cx + (R - 50) * math.cos(a2), cy + (R - 50) * math.sin(a2), '#C9A227', 3, 'stroke-dasharray="10 8"')
+s.text(cx, cy + 10, '¼ de vuelta', 28, 700, GRAY, 'middle', FI)
+TOMS = [('Tom 1', 'más agudo', 150), ('Tom 2', 'medio', 185), ('Tom de piso', 'más grave', 230)]
+for k, (n, d, r) in enumerate(TOMS):
+    x = 1300 + k * 330; y = 560 - k * 0
+    s.circle(x, y, r / 2 + 40, '#E8E3D6', INK, 4); s.text(x, y + 10, n, 28, 700); s.text(x, y + r / 2 + 100, d, 26, 600, GRAY, 'middle', FI)
+s.text(1630, 860, 'Los toms van de agudo a grave, como una escalera', 30, 600, INK, 'middle', FI)
+s.text(1630, 910, '(la distancia exacta entre ellos es a gusto: suele ser una 3.ª o 4.ª, aproximadamente)', 24, 600, GRAY, 'middle', FI)
+s.save('B2_afinacion')
 print('ok')
