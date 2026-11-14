@@ -44,9 +44,17 @@ Cada mano tiene un trabajo distinto y sus dedos se nombran de forma distinta:
 
 Antes de tocar, conoce tres ayudantes que verás en las clases:
 
-1. **Púa** (también se le dice «plumilla»): una pieza pequeña y plana, casi siempre de plástico, con forma de gota. Se toma entre el **pulgar y el índice**, con la punta asomando poco, y sirve para rasguear o tocar las cuerdas con un sonido más brillante y parejo. Las hay delgadas (más suaves, buenas para rasguear), medias (las mejores para empezar) y gruesas (más control en notas sueltas). Puedes tocar con los dedos (p i m a) o con púa: aprenderás las dos formas.
-2. **Capotraste** (o «capo»): una pinza que se coloca en el mástil, justo detrás de un traste, y aprieta todas las cuerdas a la vez. Sube el tono de todo lo que tocas **sin cambiar las formas de los acordes**: cada traste sube un semitono. Por ejemplo, con el capo en el traste 2, la forma del acorde de Sol suena como La. Lo usarás más adelante, en el Nivel 3.
-3. **Correa**: una cinta que se engancha en los **dos botones** de la guitarra (uno abajo, en la caja, y otro cerca del mástil). Sirve para tocar **de pie** con la guitarra a la misma altura que sentado. Si tu guitarra no tiene botones, pregúntale a tu docente cómo ponerle uno.
+**1. Púa** (también se le dice «plumilla»): una pieza pequeña y plana, casi siempre de plástico, con forma de gota. Se toma entre el **pulgar y el índice**, con la punta asomando poco, y sirve para rasguear o tocar las cuerdas con un sonido más brillante y parejo. Las hay delgadas (más suaves, buenas para rasguear), medias (las mejores para empezar) y gruesas (más control en notas sueltas). Puedes tocar con los dedos (p i m a) o con púa: aprenderás las dos formas.
+
+![Cómo tomo la púa, paso a paso](guitarra/img/G1_pua.svg)
+
+**2. Capotraste** (o «capo»): una pinza que se coloca en el mástil, justo detrás de un traste, y aprieta todas las cuerdas a la vez. Sube el tono de todo lo que tocas **sin cambiar las formas de los acordes**: cada traste sube un semitono. Por ejemplo, con el capo en el traste 2, la forma del acorde de Sol suena como La. Lo usarás más adelante, en el Nivel 3.
+
+![Cómo pongo el capotraste, paso a paso](guitarra/img/G1_capo.svg)
+
+**3. Correa**: una cinta que se engancha en los **dos botones** de la guitarra (uno abajo, en la caja, y otro cerca del mástil). Sirve para tocar **de pie** con la guitarra a la misma altura que sentado. Si tu guitarra no tiene botones, pregúntale a tu docente cómo ponerle uno.
+
+![Cómo me pongo la correa, paso a paso](guitarra/img/G1_correa.svg)
 
 > Guarda la púa siempre en el mismo lugar (el estuche o el bolsillo de la funda): se pierde con facilidad. Antes de pararte con la correa, revisa que esté bien enganchada.
 

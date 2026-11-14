@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1200" viewBox="0 0 2400 1200" role="img" aria-label="Cómo me pongo la correa">
+<title>Cómo me pongo la correa</title>
+<rect width="2400" height="1200" fill="#FFFFFF"/>
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#C0392B"/></marker></defs>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start">Cómo me pongo la correa</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#555" text-anchor="start">Dos botones, un hombro y la guitarra a la misma altura que cuando estoy sentado</text>
+<rect x="40" y="170" width="740" height="990" rx="36" fill="#FAFAF7" stroke="#8E44AD" stroke-width="6"/>
+<circle cx="110" cy="240" r="40" fill="#8E44AD"/><text x="110" y="254" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#FFF" text-anchor="middle">1</text>
+<rect x="820" y="170" width="740" height="990" rx="36" fill="#FAFAF7" stroke="#8E44AD" stroke-width="6"/>
+<circle cx="890" cy="240" r="40" fill="#8E44AD"/><text x="890" y="254" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#FFF" text-anchor="middle">2</text>
+<rect x="1600" y="170" width="740" height="990" rx="36" fill="#FAFAF7" stroke="#8E44AD" stroke-width="6"/>
+<circle cx="1670" cy="240" r="40" fill="#8E44AD"/><text x="1670" y="254" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#FFF" text-anchor="middle">3</text>
+<g transform="translate(380 520) rotate(90) scale(0.4)">
+<rect x="-28" y="-600" width="56" height="380" fill="#8B5E3C" stroke="#6E4B2A" stroke-width="6"/>
+<rect x="-45" y="-700" width="90" height="110" rx="14" fill="#5D3A1A"/>
+<circle cx="0" cy="-150" r="95" fill="#D4A373" stroke="#6E4B2A" stroke-width="8"/>
+<circle cx="0" cy="0" r="125" fill="#D4A373" stroke="#6E4B2A" stroke-width="8"/>
+<rect x="-95" y="-160" width="190" height="80" fill="#D4A373"/>
+<circle cx="0" cy="-110" r="40" fill="#3B2A1A"/>
+<circle cx="0" cy="128" r="18" fill="#444"/><circle cx="0" cy="-232" r="16" fill="#444"/></g>
+<path d="M328.8 520.0 C268.8 670.0 408.8 780.0 548.8 750.0" fill="none" stroke="#8E44AD" stroke-width="24" stroke-linecap="round"/>
+<circle cx="328.8" cy="520.0" r="34" fill="none" stroke="#C0392B" stroke-width="6"/>
+<text x="368.8" y="450.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#C0392B" text-anchor="middle">botón de abajo</text>
+<g transform="translate(1160 520) rotate(90) scale(0.4)">
+<rect x="-28" y="-600" width="56" height="380" fill="#8B5E3C" stroke="#6E4B2A" stroke-width="6"/>
+<rect x="-45" y="-700" width="90" height="110" rx="14" fill="#5D3A1A"/>
+<circle cx="0" cy="-150" r="95" fill="#D4A373" stroke="#6E4B2A" stroke-width="8"/>
+<circle cx="0" cy="0" r="125" fill="#D4A373" stroke="#6E4B2A" stroke-width="8"/>
+<rect x="-95" y="-160" width="190" height="80" fill="#D4A373"/>
+<circle cx="0" cy="-110" r="40" fill="#3B2A1A"/>
+<circle cx="0" cy="128" r="18" fill="#444"/><circle cx="0" cy="-232" r="16" fill="#444"/></g>
+<path d="M1108.8 520.0 C1068.8 780.0 1292.8 780.0 1252.8 520.0" fill="none" stroke="#8E44AD" stroke-width="24" stroke-linecap="round"/>
+<circle cx="1252.8" cy="520.0" r="34" fill="none" stroke="#C0392B" stroke-width="6"/>
+<text x="1292.8" y="450.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#C0392B" text-anchor="middle">botón del mástil</text>
+<rect x="1860" y="380" width="220" height="380" rx="70" fill="#5DADE2" stroke="#2471A3" stroke-width="6"/>
+<circle cx="1970" cy="315" r="60" fill="#F1C27D" stroke="#B07B3E" stroke-width="6"/>
+<rect x="1880" y="740" width="70" height="100" fill="#34495E"/><rect x="1990" y="740" width="70" height="100" fill="#34495E"/>
+<path d="M2050 395 C2140 470 2078.3735791541453 578.5293653489482 2018.3735791541453 578.5293653489482" fill="none" stroke="#8E44AD" stroke-width="20" stroke-dasharray="20 14" opacity=".7"/>
+<g transform="translate(1920 640) rotate(58) scale(0.5)">
+<rect x="-28" y="-600" width="56" height="380" fill="#8B5E3C" stroke="#6E4B2A" stroke-width="6"/>
+<rect x="-45" y="-700" width="90" height="110" rx="14" fill="#5D3A1A"/>
+<circle cx="0" cy="-150" r="95" fill="#D4A373" stroke="#6E4B2A" stroke-width="8"/>
+<circle cx="0" cy="0" r="125" fill="#D4A373" stroke="#6E4B2A" stroke-width="8"/>
+<rect x="-95" y="-160" width="190" height="80" fill="#D4A373"/>
+<circle cx="0" cy="-110" r="40" fill="#3B2A1A"/>
+<circle cx="0" cy="128" r="18" fill="#444"/><circle cx="0" cy="-232" r="16" fill="#444"/></g>
+<path d="M1865.7249218459888 673.9148329109252 C1770 520 1910 400 2050 395" fill="none" stroke="#8E44AD" stroke-width="24" stroke-linecap="round"/>
+<path d="M2200 560 L2064 415" stroke="#C0392B" stroke-width="4" marker-end="url(#ar)"/>
+<text x="2210" y="600" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="700" fill="#C0392B" text-anchor="middle">hombro izquierdo</text>
+<text x="410" y="880" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="700" fill="#1A1A1A" text-anchor="middle">Engancho un extremo</text>
+<text x="410" y="928" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#333" text-anchor="middle">en el botón de abajo de la caja.</text>
+<text x="410" y="976" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#333" text-anchor="middle">Que entre bien hasta el fondo.</text>
+<text x="1190" y="880" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="700" fill="#1A1A1A" text-anchor="middle">Engancho el otro extremo</text>
+<text x="1190" y="928" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#333" text-anchor="middle">en el botón cerca del mástil.</text>
+<text x="1190" y="976" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#333" text-anchor="middle">Reviso que los dos estén firmes.</text>
+<text x="1970" y="880" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="700" fill="#1A1A1A" text-anchor="middle">Me la cuelgo y ajusto el largo</text>
+<text x="1970" y="928" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#333" text-anchor="middle">La correa pasa por el hombro izquierdo.</text>
+<text x="1970" y="976" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#333" text-anchor="middle">La guitarra, a la altura de sentado.</text>
+</svg>

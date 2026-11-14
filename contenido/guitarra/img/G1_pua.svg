@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1200" viewBox="0 0 2400 1200" role="img" aria-label="Cómo tomo la púa">
+<title>Cómo tomo la púa</title>
+<rect width="2400" height="1200" fill="#FFFFFF"/>
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#C0392B"/></marker></defs>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start">Cómo tomo la púa</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#555" text-anchor="start">Tres pasos con la mano derecha. Así la púa no se cae y el sonido sale parejo</text>
+<rect x="40" y="170" width="740" height="990" rx="36" fill="#FAFAF7" stroke="#F2A31B" stroke-width="6"/>
+<circle cx="110" cy="240" r="40" fill="#F2A31B"/><text x="110" y="254" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#FFF" text-anchor="middle">1</text>
+<rect x="820" y="170" width="740" height="990" rx="36" fill="#FAFAF7" stroke="#F2A31B" stroke-width="6"/>
+<circle cx="890" cy="240" r="40" fill="#F2A31B"/><text x="890" y="254" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#FFF" text-anchor="middle">2</text>
+<rect x="1600" y="170" width="740" height="990" rx="36" fill="#FAFAF7" stroke="#F2A31B" stroke-width="6"/>
+<circle cx="1670" cy="240" r="40" fill="#F2A31B"/><text x="1670" y="254" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="40" font-weight="700" fill="#FFF" text-anchor="middle">3</text>
+<ellipse cx="160" cy="680" rx="125" ry="150" fill="#F1C27D" stroke="#B07B3E" stroke-width="6"/>
+<path d="M180 630 C350 640 450 560 430 450 C410 370 320 370 300 430" fill="none" stroke="#B07B3E" stroke-width="78" stroke-linecap="round"/>
+<path d="M180 630 C350 640 450 560 430 450 C410 370 320 370 300 430" fill="none" stroke="#F1C27D" stroke-width="64" stroke-linecap="round"/>
+<ellipse cx="940" cy="680" rx="125" ry="150" fill="#F1C27D" stroke="#B07B3E" stroke-width="6"/>
+<path d="M960 630 C1130 640 1230 560 1210 450 C1190 370 1100 370 1080 430" fill="none" stroke="#B07B3E" stroke-width="78" stroke-linecap="round"/>
+<path d="M960 630 C1130 640 1230 560 1210 450 C1190 370 1100 370 1080 430" fill="none" stroke="#F1C27D" stroke-width="64" stroke-linecap="round"/>
+<path d="M1160 425 Q1220 400 1280 425 Q1290 480 1325 540 Q1240 520 1160 425 Z" fill="#F2A31B" stroke="#7E5109" stroke-width="6"/>
+<ellipse cx="1720" cy="680" rx="125" ry="150" fill="#F1C27D" stroke="#B07B3E" stroke-width="6"/>
+<path d="M1740 630 C1910 640 2010 560 1990 450 C1970 370 1880 370 1860 430" fill="none" stroke="#B07B3E" stroke-width="78" stroke-linecap="round"/>
+<path d="M1740 630 C1910 640 2010 560 1990 450 C1970 370 1880 370 1860 430" fill="none" stroke="#F1C27D" stroke-width="64" stroke-linecap="round"/>
+<path d="M1940 425 Q2000 400 2060 425 Q2070 480 2105 540 Q2020 520 1940 425 Z" fill="#F2A31B" stroke="#7E5109" stroke-width="6"/>
+<path d="M1700 520 L2010 465" stroke="#B07B3E" stroke-width="80" stroke-linecap="round"/>
+<path d="M1700 520 L2010 465" stroke="#F1C27D" stroke-width="66" stroke-linecap="round"/>
+<line x1="2170" y1="330" x2="2170" y2="780" stroke="#999" stroke-width="3"/>
+<line x1="2206" y1="330" x2="2206" y2="780" stroke="#999" stroke-width="4"/>
+<line x1="2242" y1="330" x2="2242" y2="780" stroke="#999" stroke-width="5"/>
+<text x="2206" y="820" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="600" fill="#555" text-anchor="middle">Cuerdas</text>
+<path d="M2090 520 L2140 520" stroke="#C0392B" stroke-width="6" marker-end="url(#ar)"/>
+<text x="410" y="880" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="700" fill="#1A1A1A" text-anchor="middle">Doblo el índice</text>
+<text x="410" y="928" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#333" text-anchor="middle">como si fuera un gancho.</text>
+<text x="410" y="976" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#333" text-anchor="middle">La mano queda suelta, sin apretar.</text>
+<text x="1190" y="880" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="700" fill="#1A1A1A" text-anchor="middle">Pongo la púa sobre el índice</text>
+<text x="1190" y="928" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#333" text-anchor="middle">acostada sobre el costado del dedo,</text>
+<text x="1190" y="976" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#333" text-anchor="middle">con la punta mirando a las cuerdas.</text>
+<text x="1970" y="880" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="700" fill="#1A1A1A" text-anchor="middle">El pulgar la sujeta encima</text>
+<text x="1970" y="928" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#333" text-anchor="middle">Solo asoma la punta, poquito.</text>
+<text x="1970" y="976" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#333" text-anchor="middle">Toco desde la muñeca: ↓ bajo · ↑ subo.</text>
+</svg>
