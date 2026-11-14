@@ -65,7 +65,10 @@ La escala tiene **8 grados**: los **números del 1 al 8** que indican el **lugar
 - ☐ Canto DO-RE-MI-FA-SOL-LA-SI-DO, subiendo y bajando, suave y sin forzar.
 - ☐ Digo las notas con su cifrado: «DO, C; RE, D; MI, E…».
 - ☐ **Juego de los grados:** mi profesor dice un número y yo canto esa nota de la escala.
-- ☐ **¿Melodía, armonía o ritmo?** Escucho tres ejemplos de mi profesor y digo cuál es cuál.
+- ☐ **¿Melodía, armonía o ritmo?** Hago el ejercicio «¿Qué suena?»: escucho cada fragmento y marco lo que oigo.
+
+[[que-suena]]
+
 - ☐ **Mi voz hablada y cantada:** digo mi nombre hablando y luego cantándolo en una nota.
 
 ### ✏️ Completa la tabla

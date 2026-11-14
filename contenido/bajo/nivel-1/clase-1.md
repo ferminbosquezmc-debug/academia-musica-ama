@@ -73,7 +73,10 @@ En AMA aprendemos con el **bajo de 5 cuerdas**. Las cuerdas se cuentan **de la m
 - ☐ Digo las notas con su cifrado: «DO, C; RE, D; MI, E…».
 - ☐ **Juego de los grados:** mi profesor dice un número y yo digo la nota y la letra («5» → «SOL, G»).
 - ☐ **Mis cuerdas:** toco cada cuerda al aire, de la 5.ª a la 1.ª, y digo su nombre: SI, MI, LA, RE, SOL.
-- ☐ **¿Melodía, armonía o ritmo?** Escucho tres ejemplos de mi profesor y digo cuál es cuál.
+- ☐ **¿Melodía, armonía o ritmo?** Hago el ejercicio «¿Qué suena?»: escucho cada fragmento y marco lo que oigo.
+
+[[que-suena]]
+
 - ☐ **Busco el bajo:** escucho una canción y trato de seguir con la voz las notas más graves.
 
 ### ✏️ Completa la tabla
@@ -84,7 +87,7 @@ En AMA aprendemos con el **bajo de 5 cuerdas**. Las cuerdas se cuentan **de la m
 ### 🏠 Mi tarea
 - ☐ Me aprendo de memoria las 7 notas con su cifrado.
 - ☐ Me aprendo los nombres de las 5 cuerdas: SI, MI, LA, RE, SOL.
-- ☐ Escucho dos canciones y busco el bajo.
+- ☐ En «¿Qué suena?», escucho la canción completa y sigo con la voz las notas más graves: ese es el bajo.
 
 ### ✅ ¿Lo logré?
 - ☐ Digo las 7 notas en orden. ☐ Conozco su cifrado. ☐ Sé que el 1 y el 8 son la misma nota. ☐ Distingo melodía, armonía y ritmo. ☐ Explico qué hace el bajo en la banda. ☐ Nombro las 5 cuerdas.

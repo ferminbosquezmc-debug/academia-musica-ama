@@ -55,7 +55,10 @@ El color AMA te ayuda a reconocer la nota; **lo importante es el nombre**.
 - ☐ Digo las notas con su cifrado: «DO, C; RE, D; MI, E…».
 - ☐ **Juego de los grados:** mi profesor dice un número y yo digo la nota y la letra («5» → «SOL, G»).
 - ☐ **Primer sonido:** mi profesor me muestra el **DO central**. Con el dedo 3 de la mano derecha toco DO-RE-MI-FA-SOL-LA-SI-DO, diciendo el nombre, la letra y el número de cada nota.
-- ☐ **¿Melodía, armonía o ritmo?** Escucho tres ejemplos de mi profesor y digo cuál es cuál.
+- ☐ **¿Melodía, armonía o ritmo?** Hago el ejercicio «¿Qué suena?»: escucho cada fragmento y marco lo que oigo.
+
+[[que-suena]]
+
 
 ### ✏️ Completa la tabla
 | Grado | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
@@ -65,7 +68,7 @@ El color AMA te ayuda a reconocer la nota; **lo importante es el nombre**.
 
 ### 🏠 Mi tarea
 - ☐ Me aprendo de memoria las 7 notas con su cifrado.
-- ☐ Escucho una canción y escribo dónde oigo la melodía, la armonía y el ritmo: _______________________________________________
+- ☐ Repito el ejercicio «¿Qué suena?» de esta clase hasta acertar los 5 fragmentos. Mi resultado: ________
 
 ### ✅ ¿Lo logré?
 - ☐ Digo las 7 notas en orden. ☐ Conozco su cifrado. ☐ Sé qué son los 8 grados y que el 1 y el 8 son la misma nota (grave y aguda). ☐ Distingo melodía, armonía y ritmo.
