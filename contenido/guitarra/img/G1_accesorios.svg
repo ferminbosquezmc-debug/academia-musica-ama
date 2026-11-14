@@ -8,33 +8,47 @@
 <rect x="820" y="170" width="740" height="990" rx="36" fill="#FAFAF7" stroke="#2E86C1" stroke-width="6"/>
 <rect x="1600" y="170" width="740" height="990" rx="36" fill="#FAFAF7" stroke="#8E44AD" stroke-width="6"/>
 <text x="410" y="250" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="44" font-weight="700" fill="#B9770E" text-anchor="middle">1 · Púa</text>
-<path d="M410 760 C240 560 210 360 410 340 C610 360 580 560 410 760 Z" fill="#F2A31B" stroke="#7E5109" stroke-width="8"/>
-<path d="M410 740 L410 690" stroke="#7E5109" stroke-width="6"/>
-<text x="530" y="735" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#7E5109" text-anchor="start">Punta</text>
+<g transform="translate(410 520) rotate(0) scale(1.7)"><path d="M-100 -90 Q0 -132 100 -90 Q138 -66 110 -18 L22 124 Q0 152 -22 124 L-110 -18 Q-138 -66 -100 -90 Z" fill="#E74C3C" stroke="#922B21" stroke-width="4.7"/><path d="M-60 -70 Q0 -96 60 -70" fill="none" stroke="#FFFFFF" stroke-opacity=".35" stroke-width="5.9" stroke-linecap="round"/></g>
+<path d="M480 760 L430 745" stroke="#922B21" stroke-width="5"/>
+<text x="490" y="770" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#922B21" text-anchor="start">Punta</text>
 <text x="410" y="870" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#333" text-anchor="middle">Delgada · suave, para rasguear</text>
 <text x="410" y="930" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#333" text-anchor="middle">Media · ideal para empezar</text>
 <text x="410" y="990" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#333" text-anchor="middle">Gruesa · más control en notas sueltas</text>
 <text x="410" y="1070" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#1A1A1A" text-anchor="middle">Se toma entre el pulgar y el índice</text>
 <text x="410" y="1112" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#1A1A1A" text-anchor="middle">con la punta asomando poco</text>
 <text x="1200" y="250" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="44" font-weight="700" fill="#1B4F72" text-anchor="middle">2 · Capotraste</text>
-<rect x="870" y="440" width="660" height="200" fill="#C49A6C" stroke="#6E4B2A" stroke-width="6"/>
-<rect x="920" y="440" width="10" height="200" fill="#9AA3A8"/>
-<rect x="1070" y="440" width="10" height="200" fill="#9AA3A8"/>
-<rect x="1220" y="440" width="10" height="200" fill="#9AA3A8"/>
-<rect x="1370" y="440" width="10" height="200" fill="#9AA3A8"/>
-<rect x="1520" y="440" width="10" height="200" fill="#9AA3A8"/>
-<line x1="870" y1="460" x2="1530" y2="460" stroke="#E8E8E8" stroke-width="3.0"/>
-<line x1="870" y1="492" x2="1530" y2="492" stroke="#E8E8E8" stroke-width="3.8"/>
-<line x1="870" y1="524" x2="1530" y2="524" stroke="#E8E8E8" stroke-width="4.6"/>
-<line x1="870" y1="556" x2="1530" y2="556" stroke="#E8E8E8" stroke-width="5.4"/>
-<line x1="870" y1="588" x2="1530" y2="588" stroke="#E8E8E8" stroke-width="6.2"/>
-<line x1="870" y1="620" x2="1530" y2="620" stroke="#E8E8E8" stroke-width="7.0"/>
-<rect x="1150" y="400" width="70" height="280" rx="20" fill="#2E86C1" stroke="#1B4F72" stroke-width="6"/>
-<text x="1185" y="380" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#1B4F72" text-anchor="middle">Traste 2</text>
-<text x="1200" y="760" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#1A1A1A" text-anchor="middle">Aprieta todas las cuerdas a la vez</text>
-<text x="1200" y="802" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#1A1A1A" text-anchor="middle">justo detrás de un traste</text>
-<text x="1200" y="880" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#333" text-anchor="middle">Cada traste sube un semitono</text>
-<text x="1200" y="930" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#333" text-anchor="middle">las formas de los acordes no cambian</text>
+<g transform="translate(1180 560) scale(1.2)">
+<path d="M-150 -60 L150 -60 Q150 100 0 100 Q-150 100 -150 -60 Z" fill="#C49A6C" stroke="#6E4B2A" stroke-width="6"/>
+<rect x="-150" y="-70" width="300" height="12" fill="#5D3A1A"/>
+<circle cx="-125" cy="-78" r="5.0" fill="#BDC3C7" stroke="#7F8C8D" stroke-width="2"/>
+<circle cx="-75" cy="-78" r="5.7" fill="#BDC3C7" stroke="#7F8C8D" stroke-width="2"/>
+<circle cx="-25" cy="-78" r="6.4" fill="#BDC3C7" stroke="#7F8C8D" stroke-width="2"/>
+<circle cx="25" cy="-78" r="7.1" fill="#BDC3C7" stroke="#7F8C8D" stroke-width="2"/>
+<circle cx="75" cy="-78" r="7.8" fill="#BDC3C7" stroke="#7F8C8D" stroke-width="2"/>
+<circle cx="125" cy="-78" r="8.5" fill="#BDC3C7" stroke="#7F8C8D" stroke-width="2"/>
+</g>
+<g transform="translate(1180 560) scale(1.2)">
+<path d="M-185 -112 L140 -112 Q205 -112 208 -48 L212 40" fill="none" stroke="#222222" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="-175" y="-92" width="300" height="16" rx="6" fill="#7F8C8D"/>
+<g transform="rotate(0 212 40)">
+<path d="M212 40 Q205 124 130 124 L-50 124" fill="none" stroke="#222222" stroke-width="36" stroke-linecap="round"/>
+<rect x="-45" y="100" width="150" height="10" rx="4" fill="#7F8C8D"/>
+<circle cx="236" cy="132" r="46" fill="#333" stroke="#222222" stroke-width="6"/>
+<line x1="200" y1="96" x2="200" y2="168" stroke="#555" stroke-width="3"/>
+<line x1="210" y1="96" x2="210" y2="168" stroke="#555" stroke-width="3"/>
+<line x1="220" y1="96" x2="220" y2="168" stroke="#555" stroke-width="3"/>
+<line x1="230" y1="96" x2="230" y2="168" stroke="#555" stroke-width="3"/>
+<line x1="240" y1="96" x2="240" y2="168" stroke="#555" stroke-width="3"/>
+<line x1="250" y1="96" x2="250" y2="168" stroke="#555" stroke-width="3"/>
+<line x1="260" y1="96" x2="260" y2="168" stroke="#555" stroke-width="3"/>
+<line x1="270" y1="96" x2="270" y2="168" stroke="#555" stroke-width="3"/>
+<circle cx="212" cy="40" r="9" fill="#888"/></g></g>
+<text x="1180" y="330" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#1B4F72" text-anchor="middle">Visto de lado, apretando el mástil</text>
+<text x="1500" y="640" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#333" text-anchor="middle">Perilla</text>
+<text x="1200" y="820" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#1A1A1A" text-anchor="middle">Aprieta todas las cuerdas a la vez</text>
+<text x="1200" y="862" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#1A1A1A" text-anchor="middle">justo detrás de un traste</text>
+<text x="1200" y="930" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#333" text-anchor="middle">Cada traste sube un semitono</text>
+<text x="1200" y="975" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#333" text-anchor="middle">las formas de los acordes no cambian</text>
 <text x="1200" y="1060" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#1B4F72" text-anchor="middle">Capo en el traste 2: SOL suena como LA</text>
 <text x="1990" y="250" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="44" font-weight="700" fill="#5B2C6F" text-anchor="middle">3 · Correa</text>
 <ellipse cx="2050" cy="640" rx="190" ry="230" fill="#D4A373" stroke="#6E4B2A" stroke-width="6"/>

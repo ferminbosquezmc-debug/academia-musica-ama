@@ -3,6 +3,8 @@
 G1_pua.svg (cómo tomo la púa), G1_capo.svg (cómo pongo el capotraste), G1_correa.svg (cómo me pongo la correa).
 Uso: python3 accesorios_acciones.py <carpeta_salida>"""
 import sys, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from ama_dibujos import pick as pick_svg, neck_section, capo_side
 F1="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif"; F2="Inter, 'Segoe UI', Arial, sans-serif"
 SK, SKD = '#F1C27D', '#B07B3E'          # piel
 WOOD, WOODD = '#D4A373', '#6E4B2A'
@@ -27,7 +29,7 @@ def hand(cx,cy,pick=False,thumb=False):
     s+= [f'<path d="{idx}" fill="none" stroke="{SKD}" stroke-width="78" stroke-linecap="round"/>',f'<path d="{idx}" fill="none" stroke="{SK}" stroke-width="64" stroke-linecap="round"/>']
     if pick:
         px,py=cx+30,cy-80
-        s.append(f'<path d="M{px-60} {py-55} Q{px} {py-80} {px+60} {py-55} Q{px+70} {py} {px+105} {py+60} Q{px+20} {py+40} {px-60} {py-55} Z" fill="#F2A31B" stroke="#7E5109" stroke-width="6"/>')
+        s.append(pick_svg(px+20,py-10,.62,-75))
     if thumb:
         th=f'M{cx-270} {cy-40} L{cx+40} {cy-95}'
         s+= [f'<path d="{th}" stroke="{SKD}" stroke-width="80" stroke-linecap="round"/>',f'<path d="{th}" stroke="{SK}" stroke-width="66" stroke-linecap="round"/>']
@@ -54,30 +56,30 @@ def neck(cx,cy,capx=None,openc=False):
     for k in range(6): s.append(f'<line x1="{cx-320}" y1="{cy-85+k*34}" x2="{cx+320}" y2="{cy-85+k*34}" stroke="#EDEDED" stroke-width="{3+k*0.8}"/>')
     s.append(T(cx-330,cy+150,'← hacia la cabeza',26,500,'#666',a='start')); s.append(T(cx+330,cy+150,'hacia la caja →',26,500,'#666',a='end'))
     return s,fr
-def capo(x,y1,y2,col='#2E86C1'):
-    return [f'<rect x="{x}" y="{y1}" width="60" height="{y2-y1}" rx="22" fill="{col}" stroke="#1B4F72" stroke-width="6"/>',
-            f'<rect x="{x+18}" y="{y1-60}" width="24" height="70" rx="10" fill="#1B4F72"/>']
+def capo_top(x,y1,y2):
+    # visto desde arriba: el brazo negro cruza las cuerdas; la perilla queda abajo, detrás del mástil
+    return [f'<rect x="{x}" y="{y1}" width="60" height="{y2-y1}" rx="24" fill="#222" stroke="#000" stroke-width="4"/>',
+            f'<rect x="{x+8}" y="{y1+14}" width="44" height="{y2-y1-28}" rx="14" fill="#555"/>']
 def capof(out):
     v=head('Cómo pongo el capotraste','Siempre justo detrás del traste, recto y apretando todas las cuerdas','#2E86C1')
-    # paso 1: pinza abierta fuera del mástil
-    cx=410; s,fr=neck(cx,620); v+=s
-    v+=capo(cx-30,300,470)
-    v.append(f'<rect x="{cx+10}" y="250" width="150" height="34" rx="14" fill="#1B4F72" transform="rotate(-20 {cx+10} 267)"/>')
-    v.append(f'<path d="M{cx+190} 330 L{cx+150} 260" stroke="#C0392B" stroke-width="6" marker-end="url(#ar)"/>')
-    v.append(T(cx+200,370,'aprieto aquí',26,700,'#C0392B'))
-    # paso 2: colocar detrás del traste 2 (a la izquierda del segundo traste)
+    # paso 1: capo abierto (visto de lado) junto al mástil cortado
+    cx=410; v+=capo_side(cx-60,520,1.0,open_ang=-24)
+    v.append(f'<path d="M{cx+250} 780 A60 60 0 1 1 {cx+300} 710" fill="none" stroke="#C0392B" stroke-width="6" marker-end="url(#ar)"/>')
+    v.append(T(cx+150,830,'giro la perilla y se abre',26,700,'#C0392B'))
+    v.append(T(cx-40,360,'Visto de lado, abierto',28,600,'#555'))
+    # paso 2: visto desde arriba, detrás del traste 2
     cx=1190; s,fr=neck(cx,620); v+=s
     x=fr[1]-68; v.append(f'<rect x="{x-8}" y="514" width="76" height="212" rx="12" fill="#27AE6033" stroke="#27AE60" stroke-width="6" stroke-dasharray="14 10"/>')
-    v.append(T(x-20,470,'aquí',30,700,'#27AE60',a='end')); v+=capo(x,300,440)
+    v.append(T(x-20,470,'aquí',30,700,'#27AE60',a='end')); v+=capo_top(x,300,440)
     v.append(f'<path d="M{x+30} 450 L{x+30} 500" stroke="#C0392B" stroke-width="6" marker-end="url(#ar)"/>')
     v.append(f'<path d="M{fr[1]+60} 470 L{fr[1]+14} 512" stroke="#555" stroke-width="4"/>'); v.append(T(fr[1]+66,466,'traste',26,600,'#555',a='start'))
-    # paso 3: puesto y cerrado
-    cx=1970; s,fr=neck(cx,620); v+=s
-    x=fr[1]-68; v+=capo(x,500,740)
-    v.append(T(cx,420,'✓ Todas las cuerdas suenan claras',30,700,'#27AE60'))
-    cap(v,410,[('Abro la pinza',True),('Aprieto los extremos con los dedos.',False),('Fíjate en qué traste lo quieres.',False)])
+    v.append(T(cx,360-90,'Visto desde arriba',28,600,'#555'))
+    # paso 3: cerrado, apretando el mástil (visto de lado)
+    cx=1970; v+=neck_section(cx-40,600,1.0); v+=capo_side(cx-40,600,1.0)
+    v.append(T(cx,400,'✓ Todas las cuerdas suenan claras',30,700,'#27AE60'))
+    cap(v,410,[('Abro el capotraste',True),('Giro la perilla para abrirlo.',False),('(Si es de resorte, aprieto la pinza.)',False)])
     cap(v,1190,[('Lo pongo justo detrás del traste',True),('cerca del traste, no encima de él,',False),('y bien recto, de lado a lado.',False)])
-    cap(v,1970,[('Suelto la pinza y pruebo',True),('Si una cuerda zumba, lo acerco',False),('un poco más al traste.',False)])
+    cap(v,1970,[('Cierro y pruebo',True),('Giro la perilla solo hasta que suene',False),('claro. Si una cuerda zumba, lo acerco.',False)])
     save(v,out,'G1_capo.svg')
 
 # ---------- 3. La correa ----------

@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Lámina original AMA: Mis accesorios (púa, capotraste y correa). Uso: python3 accesorios.py <carpeta_salida>"""
 import sys, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from ama_dibujos import pick, neck_section, capo_side
 F1="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif"; F2="Inter, 'Segoe UI', Arial, sans-serif"
 def t(x,y,s,sz=32,w=500,c='#1A1A1A',a='middle',f=F2): return f'<text x="{x}" y="{y}" font-family="{f}" font-size="{sz}" font-weight="{w}" fill="{c}" text-anchor="{a}">{s}</text>'
 v=['<?xml version="1.0" encoding="UTF-8"?>','<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1200" viewBox="0 0 2400 1200" role="img" aria-label="Mis accesorios: púa, capotraste y correa">',
@@ -12,19 +14,18 @@ for i,col in enumerate(['#F2A31B','#2E86C1','#8E44AD']):
     x=40+i*780; v.append(f'<rect x="{x}" y="170" width="740" height="990" rx="36" fill="#FAFAF7" stroke="{col}" stroke-width="6"/>')
 # 1 púa
 cx=410; v.append(t(cx,250,'1 · Púa',44,700,'#B9770E',f=F1))
-v.append(f'<path d="M{cx} 760 C{cx-170} 560 {cx-200} 360 {cx} 340 C{cx+200} 360 {cx+170} 560 {cx} 760 Z" fill="#F2A31B" stroke="#7E5109" stroke-width="8"/>')
-v.append(f'<path d="M{cx} 740 L{cx} 690" stroke="#7E5109" stroke-width="6"/>'); v.append(t(cx+120,735,'Punta',30,600,'#7E5109',a='start'))
+v.append(pick(cx,520,1.7))
+v.append(f'<path d="M{cx+70} 760 L{cx+20} 745" stroke="#922B21" stroke-width="5"/>'); v.append(t(cx+80,770,'Punta',30,600,'#922B21',a='start'))
 for k,(nm,yy) in enumerate([('Delgada · suave, para rasguear',870),('Media · ideal para empezar',930),('Gruesa · más control en notas sueltas',990)]): v.append(t(cx,yy,nm,30,500,'#333'))
 v.append(t(cx,1070,'Se toma entre el pulgar y el índice',30,600)); v.append(t(cx,1112,'con la punta asomando poco',30,600))
 # 2 capotraste
 cx=1200; v.append(t(cx,250,'2 · Capotraste',44,700,'#1B4F72',f=F1))
-v.append(f'<rect x="{cx-330}" y="440" width="660" height="200" fill="#C49A6C" stroke="#6E4B2A" stroke-width="6"/>')
-for k in range(5): xx=cx-280+k*150; v.append(f'<rect x="{xx}" y="440" width="10" height="200" fill="#9AA3A8"/>')
-for k in range(6): yy=460+k*32; v.append(f'<line x1="{cx-330}" y1="{yy}" x2="{cx+330}" y2="{yy}" stroke="#E8E8E8" stroke-width="{3+k*0.8}"/>')
-v.append(f'<rect x="{cx-50}" y="400" width="70" height="280" rx="20" fill="#2E86C1" stroke="#1B4F72" stroke-width="6"/>')
-v.append(t(cx-15,380,'Traste 2',30,600,'#1B4F72'))
-v.append(t(cx,760,'Aprieta todas las cuerdas a la vez',30,600)); v.append(t(cx,802,'justo detrás de un traste',30,600))
-v.append(t(cx,880,'Cada traste sube un semitono',30,500,'#333')); v.append(t(cx,930,'las formas de los acordes no cambian',30,500,'#333'))
+v+=neck_section(cx-20,560,1.2)
+v+=capo_side(cx-20,560,1.2)
+v.append(t(cx-20,330,'Visto de lado, apretando el mástil',30,600,'#1B4F72'))
+v.append(t(cx+300,640,'Perilla',28,700,'#333'))
+v.append(t(cx,820,'Aprieta todas las cuerdas a la vez',30,600)); v.append(t(cx,862,'justo detrás de un traste',30,600))
+v.append(t(cx,930,'Cada traste sube un semitono',30,500,'#333')); v.append(t(cx,975,'las formas de los acordes no cambian',30,500,'#333'))
 v.append(t(cx,1060,'Capo en el traste 2: SOL suena como LA',30,600,'#1B4F72'))
 # 3 correa
 cx=1990; v.append(t(cx,250,'3 · Correa',44,700,'#5B2C6F',f=F1))
