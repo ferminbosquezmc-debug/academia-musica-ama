@@ -6,7 +6,7 @@
 ---
 
 ### 👋 Bienvenido
-¡Bienvenido a la **Academia de Música ARPA**! Hoy empiezas el **Nivel 1**, el primer paso de todas las carreras: guitarra, piano, canto, bajo y batería. En 12 clases vas a aprender a leer, escuchar y tocar con seguridad, poco a poco y todos los días.
+¡Bienvenido a la **Academia de Música ARPA**! Hoy empiezas el **Nivel 1 de Piano**, el primer paso de tu carrera en la academia. En 12 clases vas a aprender a leer, escuchar y tocar el piano con seguridad, poco a poco y todos los días.
 
 > «Aprende, practica, disfruta y vive la música».
 
