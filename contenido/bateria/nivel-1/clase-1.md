@@ -77,7 +77,10 @@ La batería tiene sonidos **graves**, **medios** y **agudos**, igual que las not
 - ☐ Digo las notas con su cifrado: «DO, C; RE, D; MI, E…».
 - ☐ **Juego de los grados:** mi profesor dice un número y yo digo la nota y la letra («5» → «SOL, G»).
 - ☐ **Primer sonido:** toco una vez el bombo con el pie, una vez el redoblante y una vez el platillo. Escucho cuál es grave, cuál es agudo y cuál suena más tiempo.
-- ☐ **¿Melodía, armonía o ritmo?** Escucho tres ejemplos de mi profesor y digo cuál es cuál.
+- ☐ **¿Melodía, armonía o ritmo?** Hago el ejercicio «¿Qué suena?»: escucho cada fragmento y marco lo que oigo.
+
+[[que-suena]]
+
 
 ### ✏️ Completa la tabla
 | Grado | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
@@ -87,7 +90,7 @@ La batería tiene sonidos **graves**, **medios** y **agudos**, igual que las not
 
 ### 🏠 Mi tarea
 - ☐ Me aprendo de memoria las 7 notas con su cifrado.
-- ☐ Escucho una canción y marco con el pie el bombo y con la mano el redoblante cuando los oigo.
+- ☐ En «¿Qué suena?», escucho el fragmento 1 (solo ritmo) y marco con el pie el bombo y con la mano el redoblante.
 
 ### ✅ ¿Lo logré?
 - ☐ Digo las 7 notas en orden. ☐ Conozco su cifrado. ☐ Sé qué son los 8 grados y que el 1 y el 8 son la misma nota. ☐ Distingo melodía, armonía y ritmo. ☐ Separo los tambores de los platillos. ☐ Reconozco el bombo, el redoblante y el platillo por su sonido.
