@@ -31,6 +31,8 @@ En el Nivel 3 vas a unir tu voz de abajo a arriba, cantar a tres voces, conocer 
 | Letra | Lu-na de luz | can-ta mi voz | duer-me la tie-rra | ba-jo tu luz |
 
 ### 🎤 Practico
+[[escuchar:Escala de LA menor|LA3 SI3 DO4 RE4 MI4 FA4 SOL4 LA4:2]]
+
 - ☐ **Escala de LA menor** con los nombres, subiendo y bajando.
 - ☐ **Relativas:** DO mayor y luego LA menor; escucho que tienen las mismas notas.
 - ☐ **Mismo texto, dos colores:** canto «Estrellita» en DO mayor y luego una frase en LA menor que invente mi profesor.

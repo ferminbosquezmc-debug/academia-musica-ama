@@ -19,6 +19,8 @@ La **armadura** son los ♯ o ♭ que van al inicio del pentagrama, después de 
 > Antes de cantar una partitura, miro la armadura y me pregunto: «¿qué notas cambian?».
 
 ### 🎤 Practico
+[[escuchar:Escala de SOL mayor (si es aguda, cántala una octava abajo)|SOL3 LA3 SI3 DO4 RE4 MI4 FA#4 SOL4:2]]
+
 - ☐ Escribo la escala de SOL mayor aplicando la fórmula.
 - ☐ **Canto SOL mayor** con los nombres, subiendo y bajando, con el piano. Cuido el FA♯: está cerca del SOL.
 - ☐ **Con «la»** y luego con las 5 vocales.

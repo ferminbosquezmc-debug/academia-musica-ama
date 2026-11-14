@@ -27,6 +27,12 @@ Una **segunda voz** canta **otra melodía** al mismo tiempo que la principal. La
 4. Al final de la frase, las dos voces se **juntan** en la misma nota (unísono).
 
 ### 🎤 Practico
+[[escuchar:Voz 1 (melodía)|DO4 DO4 SOL4 SOL4 LA4 LA4 SOL4:2]]
+
+[[escuchar:Voz 2 (una tercera abajo)|LA3 LA3 MI4 MI4 FA4 FA4 MI4:2]]
+
+[[escuchar:Las dos voces juntas|DO4+LA3 DO4+LA3 SOL4+MI4 SOL4+MI4 LA4+FA4 LA4+FA4 SOL4+MI4:2]]
+
 - ☐ Canto las tríadas de C, F y G nota por nota (1 – 3 – 5).
 - ☐ **Voz 2 sola:** LA – LA – MI – MI – FA – FA – MI, con el piano.
 - ☐ **Las dos voces:** mi profesor canta la melodía de «Estrellita» y yo la segunda voz; luego cambiamos.

@@ -23,7 +23,15 @@
 
 > Fíjate: en el paso de G7 a C, **FA baja a MI** y **SI sube a DO**. Así se «resuelve» la tensión.
 
+### 📖 Patrones melódicos con séptima
+| Patrón | Grados | Sobre |
+|---|---|---|
+| Arpegio de séptima | 1 – 3 – 5 – ♭7 – 5 – 3 – 1 | G7 |
+| Resolución | ♭7 → 3 del acorde siguiente | FA → MI (G7 → C) |
+
 ### 🎤 Practico
+[[escuchar:Arpegio de G7 y resolución|SOL3 SI3 RE4 FA4 RE4 SI3 SOL3 - FA4 MI4:2]]
+
 - ☐ Cada voz sola con el piano, con «u».
 - ☐ **Voz baja + voz media**, luego **voz media + voz alta**, luego las tres.
 - ☐ Las tres voces con «la», con «u» y con «m» (tarareo), escuchando el empaste.

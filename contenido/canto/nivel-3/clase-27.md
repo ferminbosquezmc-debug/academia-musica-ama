@@ -25,6 +25,11 @@
 
 > En la zona de paso **no empujo** la voz de pecho hacia arriba: la aligero y dejo que entre la voz de cabeza.
 
+### 📖 Registro no es tipo de voz
+- El **registro** es cómo vibra la voz en una zona (pecho, cabeza, mixta). **Todas** las voces tienen registros.
+- El **tipo de voz** (soprano, tenor…) y la **extensión** son otra cosa (clase 11).
+- Cada persona tiene su propia zona de paso: no se compara con otros ni se fuerza para «llegar».
+
 ### 📖 Agilidad
 La **agilidad** es cantar notas rápidas, limpias y afinadas. Se entrena **lento primero** y luego más rápido, con staccato y con legato.
 

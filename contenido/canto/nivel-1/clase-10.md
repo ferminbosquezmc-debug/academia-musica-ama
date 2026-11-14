@@ -27,6 +27,8 @@ La **resonancia** hace que la voz suene **llena y brillante sin gritar**.
 - Después abro a una vocal: «mmm-a», «ng-a». La vocal debe conservar la vibración.
 
 ### 🎤 Practico
+[[escuchar:Semitonos MI – FA y SI – DO|MI4 FA4 MI4:2 - SI3 DO4 SI3:2]]
+
 - ☐ **Semitonos con el piano:** MI – FA – MI y SI – DO – SI, escuchando primero.
 - ☐ **Tonos:** DO – RE – DO y FA – SOL – FA.
 - ☐ **¿Tono o semitono?** Mi profesor toca dos notas y digo cuál es.

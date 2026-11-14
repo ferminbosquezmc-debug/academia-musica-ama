@@ -24,7 +24,20 @@ Aunque una sola voz no puede cantar tres notas a la vez, el cantante **canta el 
 - entrena el oído para **encontrar su nota** dentro del acorde que toca la banda;
 - prepara para cantar **segundas voces** en el Nivel 2.
 
+### 📖 Patrones de arpegio para practicar
+| Patrón | Grados | Para qué sirve |
+|---|---|---|
+| Subir y bajar | 1 – 3 – 5 – 3 – 1 | afinar las notas del acorde |
+| Hasta la octava | 1 – 3 – 5 – 8 – 5 – 3 – 1 | ampliar la extensión sin forzar |
+| Con paso | 1 – 2 – 3 – 4 – 5 – 3 – 1 | unir escala y acorde |
+
+> Empieza en una nota cómoda y sube de semitono en semitono **solo mientras sea cómodo**.
+
 ### 🎤 Practico
+[[escuchar:Arpegio de DO mayor|DO4 MI4 SOL4 MI4 DO4:2]]
+
+[[escuchar:Arpegio de LA menor|LA3 DO4 MI4 DO4 LA3:2]]
+
 - ☐ **Arpegio de DO:** canto DO – MI – SOL – MI – DO con los nombres, luego con «la».
 - ☐ **Con el piano:** mi profesor toca el acorde de C y yo canto DO, luego MI, luego SOL: cada nota «cabe» dentro del acorde.
 - ☐ **Mayor y menor:** canto DO – MI – SOL y luego DO – MI♭ – SOL. Escucho cómo cambia el color.
