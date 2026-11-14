@@ -39,6 +39,17 @@ Cada mano tiene un trabajo distinto y sus dedos se nombran de forma distinta:
 
 > Números para la mano que pisa; letras para la mano que toca.
 
+### 📖 Mis accesorios: púa, capotraste y correa
+![Mis accesorios: púa, capotraste y correa](guitarra/img/G1_accesorios.svg)
+
+Antes de tocar, conoce tres ayudantes que verás en las clases:
+
+1. **Púa** (también se le dice «plumilla»): una pieza pequeña y plana, casi siempre de plástico, con forma de gota. Se toma entre el **pulgar y el índice**, con la punta asomando poco, y sirve para rasguear o tocar las cuerdas con un sonido más brillante y parejo. Las hay delgadas (más suaves, buenas para rasguear), medias (las mejores para empezar) y gruesas (más control en notas sueltas). Puedes tocar con los dedos (p i m a) o con púa: aprenderás las dos formas.
+2. **Capotraste** (o «capo»): una pinza que se coloca en el mástil, justo detrás de un traste, y aprieta todas las cuerdas a la vez. Sube el tono de todo lo que tocas **sin cambiar las formas de los acordes**: cada traste sube un semitono. Por ejemplo, con el capo en el traste 2, la forma del acorde de Sol suena como La. Lo usarás más adelante, en el Nivel 3.
+3. **Correa**: una cinta que se engancha en los **dos botones** de la guitarra (uno abajo, en la caja, y otro cerca del mástil). Sirve para tocar **de pie** con la guitarra a la misma altura que sentado. Si tu guitarra no tiene botones, pregúntale a tu docente cómo ponerle uno.
+
+> Guarda la púa siempre en el mismo lugar (el estuche o el bolsillo de la funda): se pierde con facilidad. Antes de pararte con la correa, revisa que esté bien enganchada.
+
 ### 📖 El pulso y el tiempo
 - **Pulso:** el latido regular de la música, como el tic-tac de un reloj. Todos los pulsos están a la misma distancia.
 - **Tiempo:** cada uno de esos latidos que contamos: 1, 2, 3, 4. Las figuras se miden en tiempos: la negra dura **1 tiempo**.
@@ -90,7 +101,7 @@ Cuantas más **banderas** (o más rayitas en el silencio), más corta es la figu
 - ☐ Digo en voz alta las sílabas de las figuras con el pie en el pulso.
 
 ### ✅ ¿Lo logré?
-- ☐ Nombro las 10 partes. ☐ Me siento con la postura de 7 pasos. ☐ Sé los números y las letras de mis dedos. ☐ Sé qué son el pulso y el tiempo. ☐ Reconozco el símbolo de cada figura y su silencio, y los pronuncio.
+- ☐ Nombro las 10 partes. ☐ Me siento con la postura de 7 pasos. ☐ Sé los números y las letras de mis dedos. ☐ Sé qué son el pulso y el tiempo. ☐ Sé qué son la púa, el capotraste y la correa. ☐ Reconozco el símbolo de cada figura y su silencio, y los pronuncio.
 
 ---
 
@@ -111,3 +122,8 @@ Cuantas más **banderas** (o más rayitas en el silencio), más corta es la figu
    - ✔ taa-aa
    - taa-aa-aa-aa
    > Redonda taa-aa-aa-aa (4) · blanca taa-aa (2) · negra ta (1) · corchea ti (½).
+4. ¿Para qué sirve el capotraste?
+   - Para colgar la guitarra y tocar de pie
+   - Para rasguear las cuerdas
+   - ✔ Para subir el tono sin cambiar las formas de los acordes
+   > El capotraste aprieta todas las cuerdas detrás de un traste: cada traste sube un semitono. La correa sirve para tocar de pie y la púa, para rasguear.

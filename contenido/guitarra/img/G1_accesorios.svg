@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1200" viewBox="0 0 2400 1200" role="img" aria-label="Mis accesorios: púa, capotraste y correa">
+<title>Mis accesorios: púa, capotraste y correa</title>
+<rect width="2400" height="1200" fill="#FFFFFF"/>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start">Mis accesorios: púa, capotraste y correa</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#555" text-anchor="start">Tres ayudantes de la guitarra: para tocar, para cambiar el tono y para tocar de pie</text>
+<rect x="40" y="170" width="740" height="990" rx="36" fill="#FAFAF7" stroke="#F2A31B" stroke-width="6"/>
+<rect x="820" y="170" width="740" height="990" rx="36" fill="#FAFAF7" stroke="#2E86C1" stroke-width="6"/>
+<rect x="1600" y="170" width="740" height="990" rx="36" fill="#FAFAF7" stroke="#8E44AD" stroke-width="6"/>
+<text x="410" y="250" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="44" font-weight="700" fill="#B9770E" text-anchor="middle">1 · Púa</text>
+<path d="M410 760 C240 560 210 360 410 340 C610 360 580 560 410 760 Z" fill="#F2A31B" stroke="#7E5109" stroke-width="8"/>
+<path d="M410 740 L410 690" stroke="#7E5109" stroke-width="6"/>
+<text x="530" y="735" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#7E5109" text-anchor="start">Punta</text>
+<text x="410" y="870" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#333" text-anchor="middle">Delgada · suave, para rasguear</text>
+<text x="410" y="930" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#333" text-anchor="middle">Media · ideal para empezar</text>
+<text x="410" y="990" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#333" text-anchor="middle">Gruesa · más control en notas sueltas</text>
+<text x="410" y="1070" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#1A1A1A" text-anchor="middle">Se toma entre el pulgar y el índice</text>
+<text x="410" y="1112" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#1A1A1A" text-anchor="middle">con la punta asomando poco</text>
+<text x="1200" y="250" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="44" font-weight="700" fill="#1B4F72" text-anchor="middle">2 · Capotraste</text>
+<rect x="870" y="440" width="660" height="200" fill="#C49A6C" stroke="#6E4B2A" stroke-width="6"/>
+<rect x="920" y="440" width="10" height="200" fill="#9AA3A8"/>
+<rect x="1070" y="440" width="10" height="200" fill="#9AA3A8"/>
+<rect x="1220" y="440" width="10" height="200" fill="#9AA3A8"/>
+<rect x="1370" y="440" width="10" height="200" fill="#9AA3A8"/>
+<rect x="1520" y="440" width="10" height="200" fill="#9AA3A8"/>
+<line x1="870" y1="460" x2="1530" y2="460" stroke="#E8E8E8" stroke-width="3.0"/>
+<line x1="870" y1="492" x2="1530" y2="492" stroke="#E8E8E8" stroke-width="3.8"/>
+<line x1="870" y1="524" x2="1530" y2="524" stroke="#E8E8E8" stroke-width="4.6"/>
+<line x1="870" y1="556" x2="1530" y2="556" stroke="#E8E8E8" stroke-width="5.4"/>
+<line x1="870" y1="588" x2="1530" y2="588" stroke="#E8E8E8" stroke-width="6.2"/>
+<line x1="870" y1="620" x2="1530" y2="620" stroke="#E8E8E8" stroke-width="7.0"/>
+<rect x="1150" y="400" width="70" height="280" rx="20" fill="#2E86C1" stroke="#1B4F72" stroke-width="6"/>
+<text x="1185" y="380" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#1B4F72" text-anchor="middle">Traste 2</text>
+<text x="1200" y="760" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#1A1A1A" text-anchor="middle">Aprieta todas las cuerdas a la vez</text>
+<text x="1200" y="802" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#1A1A1A" text-anchor="middle">justo detrás de un traste</text>
+<text x="1200" y="880" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#333" text-anchor="middle">Cada traste sube un semitono</text>
+<text x="1200" y="930" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#333" text-anchor="middle">las formas de los acordes no cambian</text>
+<text x="1200" y="1060" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#1B4F72" text-anchor="middle">Capo en el traste 2: SOL suena como LA</text>
+<text x="1990" y="250" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="44" font-weight="700" fill="#5B2C6F" text-anchor="middle">3 · Correa</text>
+<ellipse cx="2050" cy="640" rx="190" ry="230" fill="#D4A373" stroke="#6E4B2A" stroke-width="6"/>
+<circle cx="2050" cy="600" r="60" fill="#3B2A1A"/>
+<rect x="1980" y="300" width="70" height="140" fill="#8B5E3C"/>
+<circle cx="2050" cy="875" r="16" fill="#555"/><circle cx="2070" cy="420" r="14" fill="#555"/>
+<path d="M2050 875 C1730 860 1690 420 2070 420" fill="none" stroke="#8E44AD" stroke-width="26" stroke-linecap="round"/>
+<text x="2100" y="920" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="600" fill="#333" text-anchor="start">Botón</text>
+<text x="2100" y="400" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="600" fill="#333" text-anchor="start">Botón</text>
+<text x="1990" y="1010" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#1A1A1A" text-anchor="middle">Se engancha en los dos botones</text>
+<text x="1990" y="1052" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600" fill="#1A1A1A" text-anchor="middle">para tocar de pie</text>
+</svg>
