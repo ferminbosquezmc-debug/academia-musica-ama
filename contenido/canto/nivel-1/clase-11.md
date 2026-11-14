@@ -33,7 +33,23 @@
 
 [[vibravoice]]
 
+### 📖 Tres palabras distintas
+| Palabra | Qué es | Ejemplo |
+|---|---|---|
+| **Extensión** | todas las notas que canto, de la más grave a la más aguda | de LA3 a MI5 |
+| **Tipo de voz** | el grupo al que se parece mi voz por su extensión y su timbre | soprano, tenor… |
+| **Registro** | la «manera» en que vibra la voz en una zona: pecho o cabeza (clase 27) | voz de pecho |
+
+> No son lo mismo: dos sopranos pueden tener extensiones distintas, y todas usan registros.
+
+### 📖 Voces que están creciendo
+- En niños y niñas la voz todavía se está formando: se canta en notas **cómodas**, sin buscar extremos.
+- En la **adolescencia** la voz cambia (sobre todo en los chicos, que bajan casi una octava). Durante ese cambio la voz puede «quebrarse»: es normal. Se canta **suave**, en la zona cómoda, y se comenta con el profesor.
+- **Nunca** se fuerza a nadie a llegar a una nota alta o baja.
+
 ### 🎤 Practico
+[[escuchar:Escala de DO mayor|DO4 RE4 MI4 FA4 SOL4 LA4 SI4 DO5:2 - DO5 SI4 LA4 SOL4 FA4 MI4 RE4 DO4:2]]
+
 - ☐ Digo la fórmula T – T – S – T – T – T – S mientras señalo las notas.
 - ☐ **Subo** la escala de Do con los nombres, a 60 BPM.
 - ☐ **Bajo** la escala desde el DO agudo (si es muy agudo, empiezo una octava abajo).

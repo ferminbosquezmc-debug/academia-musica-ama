@@ -38,6 +38,8 @@ Un **afinador** escucha mi voz y me dice si la nota está **justa**, **alta** o 
 > Los dos necesitan permiso de **micrófono**. Úsalos en un lugar tranquilo.
 
 ### 🎤 Practico
+[[escuchar:DO – RE – MI|DO4 RE4 MI4 RE4 DO4:2]]
+
 - ☐ Señalo en el pentagrama la 2.ª línea y digo «SOL».
 - ☐ **Leo y canto** DO – RE – MI en negras, subiendo y bajando, con el nombre de las notas.
 - ☐ **Unísono:** mi profesor toca DO, RE y MI en el piano y yo los canto después de escucharlos.

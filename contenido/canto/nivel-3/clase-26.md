@@ -28,6 +28,8 @@ El **dictado** es escuchar una melodía corta y **repetirla** o **escribirla**:
 4. La canto con los **nombres** de las notas o con **grados**.
 
 ### 🎤 Practico
+[[escuchar:3.ª mayor y 3.ª menor|DO4 MI4:2 - DO4 MIb4:2]]
+
 - ☐ Canto desde DO todos los intervalos de la tabla, volviendo siempre a DO.
 - ☐ **3.ª mayor y menor:** DO – MI – DO y DO – MI♭ – DO. ¿Cuál es cuál?
 - ☐ **Desde otras notas:** 4.ª y 5.ª desde RE, desde FA y desde LA.

@@ -24,6 +24,8 @@ Los cantantes recuerdan los intervalos con el **comienzo de canciones** que ya c
 > Antes de cantar un salto, **imagino** la segunda nota; así llego afinado y no «resbalo».
 
 ### 🎤 Practico
+[[escuchar:3.ª, 5.ª y 8.ª desde DO|DO4 MI4:2 - DO4 SOL4:2 - DO4 DO5:2]]
+
 - ☐ **3.ª:** DO – MI – DO, luego «Ca-da dí-a…» de «Mi voz».
 - ☐ **5.ª:** DO – SOL – DO, luego «Bri-lla, bri-lla…» de «Estrellita».
 - ☐ **8.ª:** DO – DO agudo – DO (si es muy agudo, empiezo más abajo).

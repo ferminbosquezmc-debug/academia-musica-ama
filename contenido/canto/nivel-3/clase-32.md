@@ -19,6 +19,8 @@ La **escala pentatónica** tiene **5 notas** que casi siempre suenan bien juntas
 - Reglas: **poco y con sentido**, **afinado** y siempre **volviendo** a la melodía.
 
 ### 🎤 Practico
+[[escuchar:Pentatónica de LA menor|LA3 DO4 RE4 MI4 SOL4 LA4:2 - LA4 SOL4 MI4 RE4 DO4 LA3:2]]
+
 - ☐ **Pentatónica** de LA menor subiendo y bajando con «la».
 - ☐ **Adorno final:** al terminar una frase en LA, adorno con DO – LA o SOL – LA.
 - ☐ **Melisma corto:** canto «a» sobre LA – DO – RE – DO – LA.
