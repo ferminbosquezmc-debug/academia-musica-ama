@@ -1,4 +1,4 @@
-# Producción musical · Mapa de los tres niveles (clases 1–36) · BORRADOR para aprobación
+# Producción musical · Mapa de los tres niveles (clases 1–36) · aprobado por el dueño
 
 Método Integral AMA de Producción Musical. Tres niveles de 3 meses, 4 clases por mes, 12 clases por nivel.
 
