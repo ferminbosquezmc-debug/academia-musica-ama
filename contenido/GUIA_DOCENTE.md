@@ -2,7 +2,7 @@
 
 ### 📘 Para qué sirve esta guía
 
-Esta guía explica cómo damos clase en ARPA, para que un estudiante reciba la misma calidad con cualquier docente y en cualquier carrera. Sirve para guitarra, piano y batería, y para las carreras que se vayan abriendo.
+Esta guía explica cómo damos clase en ARPA, para que un estudiante reciba la misma calidad con cualquier docente y en cualquier carrera. Sirve para las cinco carreras: guitarra, piano, batería, bajo y canto.
 
 La plataforma ya trae cada clase escrita, con láminas, ejercicios y preguntas. **Tu trabajo no es repetir la plataforma**: es mostrar, escuchar, corregir y acompañar.
 

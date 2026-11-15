@@ -4,6 +4,8 @@
 const JG_RWS={
  guitarra:[[3,'Acorde de Sol','Tu primer acorde completo',['Sol','Si','Re']],[7,'Ritmo de merengue','Rasgueo básico en 2 tiempos',['Do','Mi','Sol']],[14,'Acorde de Re','Para tocar más alabanzas',['Re','Fa','La']],[21,'Ritmo de balada','Patrón de 4 tiempos para adoración',['La','Do','Mi']],[30,'Insignia Arpa Dorada','Las 7 cuerdas encendidas',NORD]],
  piano:[[3,'Acorde de Do mayor','Do, Mi y Sol con los dedos 1, 3 y 5',['Do','Mi','Sol']],[7,'Acorde de Fa mayor','Fa, La y Do: el cuarto grado de Do',['Fa','La','Do']],[14,'Acorde de Sol mayor','Sol, Si y Re: el quinto grado de Do',['Sol','Si','Re']],[21,'Acorde de La menor','Tu primer acorde menor: La, Do y Mi',['La','Do','Mi']],[30,'Insignia Arpa Dorada','Las 7 cuerdas encendidas',NORD]],
+ bajo:[[3,'Raíz y quinta','El patrón más usado del bajo',['Do','Sol']],[7,'Línea de vals','Raíz en el 1 y quinta en el 3',['Do','Sol','Do']],[14,'Arpegio mayor','Raíz, tercera y quinta',['Do','Mi','Sol']],[21,'Arpegio menor','La, Do y Mi: el color oscuro',['La','Do','Mi']],[30,'Insignia Arpa Dorada','Las 7 cuerdas encendidas',NORD]],
+ canto:[[3,'Tres notas para calentar','Do, Re y Mi con «lu»',['Do','Re','Mi']],[7,'Arpegio para la voz','Do, Mi y Sol en legato',['Do','Mi','Sol']],[14,'Acorde a tres voces','Fa, La y Do para armonizar',['Fa','La','Do']],[21,'La dominante','Sol, Si y Re: la voz que pide volver a casa',['Sol','Si','Re']],[30,'Insignia Arpa Dorada','Las 7 cuerdas encendidas',NORD]],
  bateria:[[3,'Ritmo de marcha','2/4 con bombo y redoblante',['Do','Sol'],'marcha'],[7,'Ritmo de vals','3/4: bombo y dos golpes de hi-hat',['Do','Mi','Sol'],'vals'],[14,'Ritmo disco','Bombo en cada pulso y hi-hat abierto',['Re','Fa','La'],'disco'],[21,'Shuffle','El balanceo de los tresillos',['La','Do','Mi'],'shuffle'],[30,'Insignia Arpa Dorada','Y de regalo: la cumbia',NORD,'cumbia']]};
 const jgRW=()=>JG_RWS[cmCar()]||JG_RWS.guitarra;
 function jgRacha(){const e=$('#jg-racha');if(!e)return;rtRender();const R=jgRW(),car=cmCar()||'guitarra',n=streak(),nx=R.find(r=>r[0]>n),pv=[...R].reverse().find(r=>r[0]<=n),lo=pv?pv[0]:0,today=!!S.min[dkey(new Date())];
@@ -17,7 +19,7 @@ function jgRacha(){const e=$('#jg-racha');if(!e)return;rtRender();const R=jgRW()
    +(op&&(r[4]||r[3].length<=3)?'<button class="btn ghost m4mini" data-rw="'+i+'" aria-label="Escuchar '+esc(r[1])+'">▶</button>':'<span class="st">'+(op?'Abierta':r[0]+' días')+'</span>')+'</div>'}).join('')+'</div><div id="jg-rwp"></div>'}
 function rwPlay(i){const r=jgRW()[i];if(!r||streak()<r[0])return;
  if(r[4]&&typeof DRP!=='undefined'){const p=$('#jg-rwp');p.innerHTML='<div style="margin-top:12px">'+DRP.player(r[4])+'</div>';DRP.mount(p);p.scrollIntoView({block:'nearest',behavior:'smooth'});return}
- const tb=cmCar()==='guitarra'?'guitarra':'piano',fs=r[3].map(x=>(JG_N.find(n=>n.name===x)||{}).f).filter(Boolean);
+ const cc=cmCar(),tb=cc==='guitarra'||cc==='bajo'?'guitarra':cc==='canto'?'canto':'piano',fs=r[3].map(x=>(JG_N.find(n=>n.name===x)||{}).f).filter(Boolean).map(f=>cc==='bajo'?f/4:f);
  fs.forEach((f,j)=>setTimeout(()=>jgPlay(f,tb,.6),j*320));setTimeout(()=>fs.forEach(f=>jgPlay(f,tb,1.4)),fs.length*320+200)}
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-rw]');if(b)rwPlay(+b.dataset.rw)});
 

@@ -27,16 +27,48 @@ guitarra:[
   [1,'Mantiene el pulso con negras, silencios y corcheas',[5,6,7]],
   [0,'Forma y cambia los acordes de La menor, La mayor y Re mayor',[9,10,11]],
   [3,'Acompaña canciones con un rasgueo básico',[11,12]]],
- [[0,'Toca la cejilla móvil y los acordes de séptima con cambios limpios',[1,2,3]],
-  [2,'Toca las escalas mayor, menor natural y la pentatónica de La menor',[4,5]],
-  [1,'Rasguea patrones con semicorcheas, síncopa, ligadura y puntillo',[6,7]],
-  [0,'Toca arpegios con la mano derecha',[8]],
-  [3,'Usa grados y progresiones para tocar con una banda',[9,10,11]]],
- [[0,'Toca acordes de poder, tríadas y séptimas móviles',[1,5]],
-  [2,'Recorre la escala mayor por el mástil con sus cajas',[2,3]],
-  [2,'Reconoce los intervalos por su distancia y su calidad',[4]],
-  [1,'Toca con tresillos y sobre la forma del blues de 12 compases',[6,7]],
-  [3,'Presenta el taller final de nivel',[8]]]],
+ [[2,'Nombra las notas con ♯ y ♭, lee los bordones y cuenta intervalos',[1,2]],
+  [2,'Construye la escala mayor, toca Sol mayor y nombra los grados',[3,7]],
+  [0,'Toca los acordes de la tonalidad y el F con cejilla con cambios limpios',[4,8,9]],
+  [1,'Rasguea patrones con acento y arpegia con p–i–m–a',[5,6]],
+  [3,'Acompaña canciones completas con I–IV–V y expresión',[10,11,12]]],
+ [[2,'Toca escalas menores, lee armaduras y nombra los intervalos',[1,2]],
+  [0,'Toca legato y staccato, séptimas e inversiones',[3,4]],
+  [2,'Usa funciones y cadencias y cambia de tonalidad',[5,7]],
+  [3,'Acompaña en varios estilos e improvisa con la pentatónica',[6,8]],
+  [3,'Analiza una obra, toca en grupo y presenta el recital final',[9,10,11,12]]]],
+bajo:[
+ [[0,'Conoce su bajo, se sienta bien y usa los dedos de las dos manos',[1,2,3]],
+  [2,'Lee en clave de fa las notas de las cuerdas MI, LA y RE',[4,8]],
+  [1,'Mantiene el pulso con el bombo en negras, silencios y corcheas',[5,6,7]],
+  [0,'Toca la raíz de los acordes y encuentra tonos y semitonos en el mástil',[9,10]],
+  [3,'Toca la escala de Do y acompaña canciones con la raíz',[11,12]]],
+ [[2,'Lee las cuerdas en el pentagrama y las notas con alteraciones en las 5 cuerdas',[1,10]],
+  [1,'Toca raíz y quinta, también en tresillos',[2,3]],
+  [0,'Toca la escala mayor y sus patrones 1 y 4 con la digitación correcta',[4,5,8]],
+  [2,'Toca arpegios mayores, menores, de tríadas y la séptima dominante',[6,7,9,11]],
+  [3,'Acompaña canciones completas con la banda',[12]]],
+ [[2,'Usa intervalos y octavas en el diapasón',[1,2,4]],
+  [0,'Toca ligados, slap, funk y con púa',[3,5,6,7]],
+  [0,'Domina los 5 patrones de la escala y hace rellenos',[8,10]],
+  [2,'Lee una partitura completa de bajo',[9]],
+  [3,'Toca con el grupo y presenta el recital final',[10,11,12]]]],
+canto:[
+ [[0,'Respira, se para con buena postura y calienta la voz',[1,2,3]],
+  [2,'Lee notas en el pentagrama y canta su primera melodía',[4,8]],
+  [1,'Mantiene el pulso y respira en los silencios',[5,6,7]],
+  [2,'Canta arpegios, tonos y semitonos y la escala de Do',[9,10,11]],
+  [3,'Canta canciones completas, afinado y con expresión',[12]]],
+ [[2,'Canta intervalos y la escala mayor, y lee sin color',[1,2,3,7]],
+  [3,'Canta con acompañamiento, con buena dicción y fraseo',[4,5]],
+  [0,'Usa el legato, el puntillo y el micrófono',[6,9]],
+  [1,'Canta a dos voces y en coro',[8,10]],
+  [3,'Canta con expresión y se presenta ante la clase',[11,12]]],
+ [[2,'Distingue mayor y menor y entrena su oído',[1,2]],
+  [0,'Amplía sus registros y su agilidad cuidando la voz',[3,11]],
+  [1,'Canta a tres voces y resuelve los finales de frase',[4,5]],
+  [3,'Canta en varios estilos, en su tonalidad, e improvisa',[6,7,8]],
+  [3,'Interpreta, dirige voces y presenta su recital',[9,10,12]]]],
 bateria:[
  [[0,'Se sienta frente al kit con buena postura y toma bien las baquetas',[1,2,3]],
   [2,'Lee la escritura de la batería y las figuras hasta la corchea',[4,6,7]],
@@ -53,16 +85,16 @@ bateria:[
   [3,'Toca rellenos avanzados y un solo de 8 compases',[4,8]],
   [2,'Lee una partitura de batería completa',[9]],
   [3,'Toca con banda y click y presenta el concierto final',[10,11,12]]]]};
-const CMF={guitarra:'G',piano:'P',bateria:'B'};
+const CMF={guitarra:'G',piano:'P',bateria:'B',bajo:'J',canto:'C'};
 /* Clave de la clase n (1–12) de un nivel; en Guitarra I las 12 clases nuevas */
-const cmK=(c,l,n)=>c==='guitarra'&&l===0?'0-0guitarra-c'+n:l+'-0'+c+'-'+(n-1);
-const cmKeys=(c,l)=>c==='guitarra'&&l===0?[1,2,3,4,5,6,7,8,9,10,11,12].map(n=>cmK(c,l,n)):Object.keys(LD).filter(k=>k.indexOf(l+'-0'+c+'-')===0);
+const cmK=(c,l,n)=>c==='guitarra'?l+'-0guitarra-c'+(n+12*l):l+'-0'+c+'-'+(n-1);
+const cmKeys=(c,l)=>c==='guitarra'?[1,2,3,4,5,6,7,8,9,10,11,12].map(n=>cmK(c,l,n)):Object.keys(LD).filter(k=>k.indexOf(l+'-0'+c+'-')===0);
 const cmLvl=(c,l)=>{const ks=cmKeys(c,l).filter(k=>LD[k]),d=ks.filter(k=>S.done[k]).length;return{t:ks.length,d:d,ok:ks.length>0&&d===ks.length}};
 const cmCmp=(c,l,x)=>{const ks=x[2].map(n=>cmK(c,l,n)).filter(k=>LD[k]);return ks.length>0&&ks.every(k=>S.done[k])};
 const cmFin=(ev,c,l)=>((ev&&ev.items)||[]).filter(e=>e.car===c&&+e.mes===3*(l+1)&&evAvg(e)>=3).pop()||null;
 function cmCode(uid,c,l){let h=2166136261;const s=String(uid)+'|'+c+'|'+l;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)>>>0}
  return 'ARPA-'+CMF[c]+(l+1)+'-'+h.toString(36).toUpperCase().padStart(7,'0').slice(-7)}
-const cmCar=()=>{const c=(S.ubic&&S.ubic.car)||getInst(S.lvl||0)||getInst(0);return CMP[c]?c:null};
+const cmCar=()=>{const c=(S.ubic&&S.ubic.car)||getInst(S.lvl||0)||getInst(0);return CMP[c]&&AVAIL[c]?c:null};
 
 /* ---- Perfil: mis competencias y certificados ---- */
 function cmPerfil(){const c=cmCar();if(!c)return '';const fin=EVme;let h='<div class="card" id="pf-cmp"><h3>Mis competencias · '+esc(CARN[c])+'</h3><p class="mute" style="font-size:14px;margin:4px 0 6px">Lo que sabrás hacer al terminar cada nivel. Una competencia se marca al terminar las clases que la trabajan; tu docente la confirma en la evaluación final del nivel.</p>';

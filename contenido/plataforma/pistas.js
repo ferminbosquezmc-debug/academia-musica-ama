@@ -33,8 +33,20 @@ const PTR=[
  ['b2a','b',2,'Balada en 6/8 con la banda','Clase 15','b68',60,['G','Em','C','D'],'Hi-hat en las 6 corcheas, bombo en el 1 y redoblante en el 4.'],
  ['b2b','b',2,'Shuffle con la banda','Clase 21','shuffle',90,['A7','A7','A7','A7','D7','D7','A7','A7','E7','D7','A7','E7'],'Siente el tresillo: «larga-corta». Un relleno en el compás 12.'],
  ['b3a','b',3,'Cumbia con la banda','Clase 26','cumbia',95,['C','G','G','C'],'Hi-hat abierto a contratiempo y aro en el 2 y el 4.'],
- ['b3b','b',3,'Funk con la banda','Clase 30','pop',100,['Em7','A7','Em7','A7'],'Hi-hat en semicorcheas y notas fantasma en el redoblante.']];
-const PTCR={g:'guitarra',p:'piano',b:'bateria'};
+ ['b3b','b',3,'Funk con la banda','Clase 30','pop',100,['Em7','A7','Em7','A7'],'Hi-hat en semicorcheas y notas fantasma en el redoblante.'],
+ ['j1a','j',1,'La raíz con la banda','Clase 9','pop',70,['C','G','Am','F'],'Toca la raíz de cada acorde en negras, junto con el bombo. La línea de bajo de la pista empieza apagada: el bajo eres tú.'],
+ ['j1b','j',1,'Mis primeras canciones','Clase 12','balada',72,['C','F','G','C'],'Raíz en el 1 y en el 3. Mira siempre el acorde que viene.'],
+ ['j2a','j',2,'Raíz y quinta','Clase 14','pop',80,['G','C','D','G'],'Raíz en el 1 y quinta en el 3: el patrón más usado del bajo.'],
+ ['j2b','j',2,'Arpegios con la banda','Clase 18','balada',72,['C','Am','F','G'],'Raíz, tercera y quinta de cada acorde, en negras.'],
+ ['j3a','j',3,'Funk con la banda','Clase 30','pop',96,['Em7','A7','Em7','A7'],'Pulgar en la raíz y pop en la octava: el slap de las clases 29 y 30.'],
+ ['j3b','j',3,'Blues en La','Clase 32','shuffle',90,['A7','A7','A7','A7','D7','D7','A7','A7','E7','D7','A7','E7'],'Camina por raíz, tercera, quinta y sexta sobre la forma del blues.'],
+ ['c1a','c',1,'Canto con la banda','Clase 8','balada',70,['C','F','G','C'],'Canta el «Himno de la alegría»: empieza en MI después del compás de click.'],
+ ['c1b','c',1,'Mis primeras canciones','Clase 12','vals',84,['C','C','G','G','G','G','C','C'],'Respira al final de cada frase, nunca en medio de una palabra.'],
+ ['c2a','c',2,'Canto con acompañamiento','Clase 16','pop',84,['G','C','D','G'],'Escucha el acorde antes de entrar y busca tu primera nota.'],
+ ['c2b','c',2,'Armonías a dos voces','Clase 20','balada',72,['C','Am','F','G'],'Una voz canta la melodía; la otra, una tercera más arriba.'],
+ ['c3a','c',3,'Mayor y menor','Clase 25','balada',72,['Am','Dm','E7','Am'],'Escucha el color menor y llévalo a tu interpretación.'],
+ ['c3b','c',3,'Improvisación vocal','Clase 32','shuffle',84,['C7','C7','F7','C7','G7','F7','C7','G7'],'Improvisa con la pentatónica de Do: pocas notas y muchos silencios.']];
+const PTCR={g:'guitarra',p:'piano',b:'bateria',j:'bajo',c:'canto'};
 const PTQ={'':[0,4,7],m:[0,3,7],'7':[0,4,7,10],m7:[0,3,7,10],maj7:[0,4,7,11]};
 const PTPC={C:0,D:2,E:4,F:5,G:7,A:9,B:11},PTES={C:'Do',D:'Re',E:'Mi',F:'Fa',G:'Sol',A:'La',B:'Si'};
 function ptCh(s){const m=/^([A-G])([#b]?)(maj7|m7|m|7)?$/.exec(s)||['','C','',''],pc=(PTPC[m[1]]+(m[2]==='#'?1:m[2]==='b'?-1:0)+12)%12;
@@ -75,11 +87,11 @@ function ptSched(){const P=PTon;if(!P)return;if(!visS('v-pistas')){ptStop();retu
  if(P.tm.length>40)P.tm=P.tm.slice(-20)}
 /* ---- Vista ---- */
 function ptView(){const v=document.getElementById('v-pistas');if(!v)return;ptStop();
- if(!PTcar){const c=cmCar()||'guitarra';PTcar=c==='piano'?'p':c==='bateria'?'b':'g';PTlv=Math.min(3,(S.lvl||0)+1)}
+ if(!PTcar){const c=cmCar()||'guitarra';PTcar=({piano:'p',bateria:'b',bajo:'j',canto:'c'}[c]||'g');PTlv=Math.min(3,(S.lvl||0)+1)}
  const L=PTR.filter(r=>r[1].indexOf(PTcar)>=0&&r[2]===PTlv);if(!ptTr(PTsel)||L.indexOf(ptTr(PTsel))<0){PTsel=L.length?L[0][0]:null;PTbpm=null}
- const r=ptTr(PTsel);if(r&&!PTbpm){PTbpm=r[6];PTpart.dr=PTcar!=='b'}
+ const r=ptTr(PTsel);if(r&&!PTbpm){PTbpm=r[6];PTpart.dr=PTcar!=='b';PTpart.bj=PTcar!=='j'}
  let h='<style>.pt-bar.on{background:var(--gold);color:#0a0908}.pt-bar.on .mute{color:#3a2a10}</style><button class="link" data-go="practica" style="font-size:16px;min-height:44px">⬅ Volver a Práctica</button><h2>Pistas de acompañamiento</h2><p class="mute">Toca con una banda virtual: batería, bajo y acordes, con las progresiones de tu nivel.</p>'
-  +'<div class="chips" role="group" aria-label="Carrera" style="margin-top:8px">'+[['g','🎸 Guitarra'],['p','🎹 Piano'],['b','🥁 Batería']].map(x=>'<button class="chip" data-pc="'+x[0]+'" aria-pressed="'+(PTcar===x[0])+'">'+x[1]+'</button>').join('')+'</div>'
+  +'<div class="chips" role="group" aria-label="Carrera" style="margin-top:8px">'+[['g','🎸 Guitarra'],['p','🎹 Piano'],['b','🥁 Batería'],['j','🎸 Bajo'],['c','🎤 Canto']].map(x=>'<button class="chip" data-pc="'+x[0]+'" aria-pressed="'+(PTcar===x[0])+'">'+x[1]+'</button>').join('')+'</div>'
   +'<div class="chips" role="group" aria-label="Nivel" style="margin-top:6px">'+[1,2,3].map(n=>'<button class="chip" data-pn="'+n+'" aria-pressed="'+(PTlv===n)+'">Nivel '+n+'</button>').join('')+'</div>';
  if(r){const T=PTST[r[5]],ch=r[7].map(ptCh);
   h+='<div class="card" style="border-color:var(--gold)"><h3>'+esc(r[3])+'</h3><p class="mute" style="font-size:14px">'+esc(T.nm)+' · '+esc(T.m)+' · '+esc(r[4])+'</p>'
