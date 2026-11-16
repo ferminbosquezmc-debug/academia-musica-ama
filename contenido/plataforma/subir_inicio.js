@@ -31,6 +31,8 @@ rep("if(ADMS)x+='<button class=\"m4home athome\" data-go=\"opi\">",
   "if(ADMS)x+='<button class=\"m4home athome\" data-prev=\"on\"><span class=\"em\" aria-hidden=\"true\">👁</span><span>Ver como estudiante nuevo<small>Una vista limpia para revisar · no borra tu avance</small></span></button>';if(ADMS)x+='<button class=\"m4home athome\" data-go=\"opi\">");
 rep('#v-home.obon>*:not(.hero){display:none!important}',
   '#v-home.obon>*:not(.hero){display:none!important}\n#prev-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;background:#5fbf7a;color:#000;padding:8px 14px;font-weight:600;font-size:15px}#prev-bar .btn{background:#000;color:#fff;padding:6px 14px;min-height:36px}');
+/* La prueba de ubicación abre con el instrumento que el estudiante eligió en la bienvenida */
+rep("const sel=S.inst[0]&&UA[S.inst[0]]?S.inst[0]:opts[0];", "const sel=OBI&&UA[OBI]&&AVAIL[OBI]?OBI:S.inst[0]&&UA[S.inst[0]]?S.inst[0]:opts[0];");
 const js = fs.readFileSync(path.join(__dirname, 'inicio.js'), 'utf8').replace(/\r\n/g, '\n');
 rep('function perfil(){', js.trimEnd() + '\nfunction perfil(){');
 fs.writeFileSync(OUT, t); console.log('ok', (t.length / 1e6).toFixed(2), 'M caracteres');

@@ -1,26 +1,37 @@
-/* ===== Inicio sencillo: nombre → «Ya toco» (convalidar) o «Desde cero» → instrumento =====
-   Mientras falte el nombre o la carrera, Inicio muestra solo estos pasos. */
-let OBS=null;
+/* ===== Inicio sencillo: «Ya tengo conocimiento de música · Convalidar» o «Empezar desde cero» → nombre e instrumento =====
+   Mientras falte el nombre o la carrera, Inicio muestra solo estos pasos.
+   Convalidar: después del nombre y el instrumento va a la prueba de ubicación con ese instrumento elegido (OBI). */
+let OBS=null,OBP=null,OBI=null;
 const OBC=()=>['guitarra','piano','bateria','bajo','canto'].filter(k=>AVAIL[k]&&INSN[k]);
 function obNeed(){return !S.name||!myCarr()}
 function obHome(){const v=document.getElementById('v-home');if(!v)return false;const need=obNeed();
  v.classList.toggle('obon',need);
  v.querySelectorAll(':scope>[data-go="asig"],:scope>[data-go="n4"]').forEach(b=>b.style.display='none');
- if(!need){OBS=null;obMas(v);return false}
- if(!S.name)OBS='name';else if(OBS!=='inst')OBS='path';
+ if(!need){OBS=null;OBP=null;OBI=null;obMas(v);return false}
+ if(OBS!=='datos'||!OBP)OBS='path';
  let h;
- if(OBS==='name')h='<h1>Bienvenido</h1><p class="mute" style="margin-top:4px">Academia de Música ARPA</p><p style="margin-top:16px;font-size:19px">¿Cómo te llamas?</p><div class="row" style="justify-content:center;margin-top:8px"><input class="name-in" id="ob-nm" placeholder="Tu nombre" aria-label="Tu nombre" autocomplete="given-name"><button class="btn" id="ob-sv">Continuar</button></div>';
- else if(OBS==='path')h='<h1>Hola, '+esc(S.name)+'</h1><p style="margin-top:6px;font-size:19px">¿Cómo quieres empezar?</p><div class="modes ob-m"><button class="mode" data-ob="conv"><span class="em" aria-hidden="true">🎓</span><b>Ya tengo conocimiento de música · Convalidar</b><small>Hago una prueba de unos 10 minutos y empiezo en la clase que me corresponde.</small></button><button class="mode" data-ob="cero"><span class="em" aria-hidden="true">🌱</span><b>Empezar desde cero</b><small>No toco, o prefiero empezar desde la primera clase.</small></button></div><button class="link" data-ob="nm" style="margin-top:12px">Cambiar nombre</button>';
- else h='<h1>¿Qué quieres aprender?</h1><p class="mute" style="margin-top:4px">Elige tu instrumento. Empiezas en la clase 1.</p><div class="ob-g">'+OBC().map(k=>'<button class="crt" data-obi="'+k+'"><span class="em" aria-hidden="true">'+(EMO[k]||'')+'</span><b>'+esc(INSN[k])+'</b></button>').join('')+'</div><button class="link" data-ob="back" style="margin-top:12px">⬅ Volver</button>';
+ if(OBS==='path')h='<h1>Bienvenido</h1><p class="mute" style="margin-top:4px">Academia de Música ARPA</p><p style="margin-top:14px;font-size:19px">¿Cómo quieres empezar?</p><div class="modes ob-m"><button class="mode" data-ob="conv"><span class="em" aria-hidden="true">🎓</span><b>Ya tengo conocimiento de música · Convalidar</b><small>Hago una prueba de unos 10 minutos y empiezo en la clase que me corresponde.</small></button><button class="mode" data-ob="cero"><span class="em" aria-hidden="true">🌱</span><b>Empezar desde cero</b><small>No toco, o prefiero empezar desde la primera clase.</small></button></div>';
+ else{const sel=OBI||'';
+  h='<h1>'+(OBP==='conv'?'🎓 Convalidar':'🌱 Empezar desde cero')+'</h1>'
+  +'<p style="margin-top:14px;font-size:19px">¿Cómo te llamas?</p><div class="row" style="justify-content:center;margin-top:8px"><input class="name-in" id="ob-nm" placeholder="Tu nombre" aria-label="Tu nombre" autocomplete="given-name" value="'+esc(S.name||'')+'" style="width:min(320px,100%)"></div>'
+  +'<p style="margin-top:18px;font-size:19px">Selecciona tu instrumento</p><div class="ob-g">'+OBC().map(k=>'<button class="crt'+(k===sel?' on':'')+'" data-obi="'+k+'" aria-pressed="'+(k===sel)+'"><span class="em" aria-hidden="true">'+(EMO[k]||'')+'</span><b>'+esc(INSN[k])+'</b></button>').join('')+'</div>'
+  +'<p class="ob-msg" style="min-height:24px;margin-top:10px;color:#e0a46a"></p>'
+  +'<button class="btn" id="ob-go" style="margin-top:4px">'+(OBP==='conv'?'Continuar a la prueba':'Empezar mi primera clase')+'</button>'
+  +'<div><button class="link" data-ob="back" style="margin-top:12px">⬅ Volver</button></div>'}
  document.getElementById('greet').innerHTML=h;
- const nm=document.getElementById('ob-nm');
- if(nm){const f=()=>{const x=nm.value.trim();if(x){S.name=x;save();OBS='path';home()}else nm.focus()};document.getElementById('ob-sv').onclick=f;nm.onkeydown=e=>{if(e.key==='Enter')f()}}
+ const go2=document.getElementById('ob-go');
+ if(go2){const nm=document.getElementById('ob-nm'),msg=document.querySelector('#greet .ob-msg');
+  const f=()=>{const x=nm.value.trim();if(!x){msg.textContent='Escribe tu nombre.';nm.focus();return}if(!OBI){msg.textContent='Toca tu instrumento.';return}
+   S.name=x;if(S.mode===undefined)S.mode='adult';
+   if(OBP==='conv'){save();go('ubic');return}
+   S.inst=S.inst||{};S.inst[0]=S.inst[1]=S.inst[2]=OBI;S.lvl=0;const k=OBI;OBS=null;OBP=null;OBI=null;save();toast('Listo: tu carrera es '+INSN[k]);home();window.scrollTo(0,0)};
+  go2.onclick=f;nm.onkeydown=e=>{if(e.key==='Enter')f()};nm.oninput=()=>{S.name=nm.value.trim()}}
  return true}
-document.addEventListener('click',e=>{const t=e.target;if(!t.closest)return;let b;
+document.addEventListener('click',e=>{const t=e.target;if(!t.closest||!t.closest('#greet'))return;let b;
  if(b=t.closest('[data-ob]')){const a=b.dataset.ob;
-  if(a==='conv')go('ubic');else if(a==='cero'){OBS='inst';home()}else if(a==='back'){OBS='path';home()}else if(a==='nm'){S.name='';save();OBS='name';home()}
-  window.scrollTo(0,0);return}
- if(b=t.closest('[data-obi]')){const k=b.dataset.obi;S.inst=S.inst||{};S.inst[0]=S.inst[1]=S.inst[2]=k;S.lvl=0;if(S.mode===undefined)S.mode='adult';OBS=null;save();toast('Listo: tu carrera es '+INSN[k]);home();window.scrollTo(0,0)}});
+  if(a==='conv'||a==='cero'){OBP=a;OBS='datos'}else if(a==='back'){OBS='path'}
+  home();window.scrollTo(0,0);return}
+ if(b=t.closest('[data-obi]')){OBI=b.dataset.obi;document.querySelectorAll('#greet [data-obi]').forEach(x=>{const on=x===b;x.classList.toggle('on',on);x.setAttribute('aria-pressed',String(on))});const m=document.querySelector('#greet .ob-msg');if(m)m.textContent=''}});
 /* «Más opciones»: un solo botón al final de Inicio con lo que no hace falta ver todos los días */
 let OBMopen=false;
 function obMas(v){let d=document.getElementById('ob-mas');
