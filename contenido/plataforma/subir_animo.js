@@ -15,9 +15,9 @@ rep("party();toast(kid()?'¡Misión cumplida! +3 ⭐':'Lección terminada')", "a
 rep("const r=document.getElementById('qs-res');if(r)r.innerHTML=(ok===5?",
   "if(!qsRev.q)arpiCheer(ok===5?2:ok>=3?1:0,ok===5?'Reconociste los 5 fragmentos.':'Acertaste '+ok+' de 5. Escucha otra vez los que faltan.');const r=document.getElementById('qs-res');if(r)r.innerHTML=(ok===5?");
 /* Seguimiento: resultados de juegos y prácticas marcadas */
-rep('retos:(S.retos||[]).length,', 'retos:(S.retos||[]).length,chk:chkSum(),gd:S.gd&&S.gd.fin?{fin:S.gd.fin,hist:(S.gd.hist||[]).slice(-5)}:null,qs:S.qs?{best:S.qs.best||0,last:S.qs.last||0}:null,');
+rep('retos:(S.retos||[]).length,', 'retos:(S.retos||[]).length,chk:chkSum(),ent:entSum(),gd:S.gd&&S.gd.fin?{fin:S.gd.fin,hist:(S.gd.hist||[]).slice(-5)}:null,qs:S.qs?{best:S.qs.best||0,last:S.qs.last||0}:null,');
 rep("+'<div class=\"row\" style=\"margin-top:10px;flex-wrap:wrap;gap:8px\"><button class=\"btn m4mini\" data-se=\"'+esc(p._id)+'\">📝 Evaluar con la rúbrica</button>'+pfBtn(p._id)+'</div></div>'",
-  "+(segJuegos(p)?'<div class=\"atchips\">'+segJuegos(p)+'</div>':'')+'<div class=\"row\" style=\"margin-top:10px;flex-wrap:wrap;gap:8px\"><button class=\"btn m4mini\" data-se=\"'+esc(p._id)+'\">📝 Evaluar con la rúbrica</button>'+pfBtn(p._id)+segChkBtn(p)+'</div></div>'");
+  "+(segJuegos(p)?'<div class=\"atchips\">'+segJuegos(p)+'</div>':'')+'<div class=\"row\" style=\"margin-top:10px;flex-wrap:wrap;gap:8px\"><button class=\"btn m4mini\" data-se=\"'+esc(p._id)+'\">📝 Evaluar con la rúbrica</button>'+pfBtn(p._id)+segChkBtn(p)+segEntBtn(p)+'</div></div>'");
 /* Guardar una evaluación conserva las verificaciones de prácticas (campo ver) */
 rep("items=((g.exists&&g.data().items)||[]).concat([it]);await r.set({items:items});", "items=((g.exists&&g.data().items)||[]).concat([it]),ver=(g.exists&&g.data().ver)||null;await r.set(ver?{items:items,ver:ver}:{items:items});");
 const js = fs.readFileSync(path.join(__dirname, 'animo.js'), 'utf8').replace(/\r\n/g, '\n');
