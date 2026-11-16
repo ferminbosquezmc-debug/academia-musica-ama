@@ -10,9 +10,9 @@ function rep(a, b) { const c = cnt(a); if (c !== 1) throw new Error(c + ' coinci
 rep("function lecPrev(K){", "function clsLock(k){if(typeof atRev==='function'&&atRev())return false;const D=LD[k];if(!D||D.at||D.kidm||!/^\\d-0/.test(k))return false;const p=lecPrev(k);return !!p&&!S.done[p]}\n"
   + "/* Qué le falta a una clase para quedar terminada (y abrir la siguiente) */\n"
   + "function clsPend(k){const D=LD[k],L=S.ls[k]||{},Q=D&&D.q||[],out=[];if(!D||S.done[k])return out;\n"
-  + " out.push(['Terminar la prueba de la lección',!Q.length||solved(L,Q),3]);out.push(['Escribir y guardar tu entrega',L.status==='review'||L.status==='ok',4]);out.push(['Enviarla a tu docente y tocar «Ya la envié · terminar lección»',L.status==='ok',4]);return out}\n"
+  + " out.push(['Terminar la prueba de la lección',!Q.length||solved(L,Q),3]);out.push(['En la entrega, tocar cómo te fue',!!L.op||L.status==='review'||L.status==='ok',4]);out.push(['Tocar «Enviar a mi docente por WhatsApp»',L.status==='ok',4]);return out}\n"
   + "function clsPendHTML(k){const P=clsPend(k),nx=P.find(x=>!x[1]);return '<ul style=\"list-style:none;padding:0;margin:8px 0 12px\">'+P.map(x=>'<li style=\"margin-top:6px;font-size:16px\">'+(x[1]?'✅ ':'⬜ ')+x[0]+'</li>').join('')+'</ul>'+(nx?'<button class=\"btn\" data-lecst=\"'+k+'|'+nx[2]+'\">▶ '+(nx[2]===3?'Ir a la prueba':'Ir a la entrega')+'</button>':'')}\n"
-  + "function clsPendCorta(k){const P=clsPend(k);if(!P.length)return '';const L=S.ls[k]||{};if(!(typeof L.score==='number'||L.status))return '';const nx=P.find(x=>!x[1]);return nx?(nx[2]===3?'⏳ Falta: la prueba':L.status==='review'?'⏳ Falta: confirmar el envío':'⏳ Falta: la entrega'):''}\n"
+  + "function clsPendCorta(k){const P=clsPend(k);if(!P.length)return '';const L=S.ls[k]||{};if(!(typeof L.score==='number'||L.status))return '';const nx=P.find(x=>!x[1]);return nx?(nx[2]===3?'⏳ Falta: la prueba':'⏳ Falta: la entrega'):''}\n"
   + "document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-lecst]');if(!b)return;const[k,st]=b.dataset.lecst.split('|');if(!visS('v-leccion'))go('leccion');lecOpen(k,+st)});\n"
   + "function lecPrev(K){");
 /* Lista de clases: candado en las que aún no se abren */
