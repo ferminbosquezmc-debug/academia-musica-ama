@@ -51,9 +51,12 @@ El color AMA te ayuda a reconocer la nota; **lo importante es el nombre**.
 ![Melodía, armonía y ritmo](guitarra/img/AMA_elementos.svg)
 
 ### 🎹 Practico
-- ☐ Canto DO-RE-MI-FA-SOL-LA-SI-DO, subiendo y bajando.
+- ☐ Pronuncio las notas DO-RE-MI-FA-SOL-LA-SI-DO, subiendo y bajando.
 - ☐ Digo las notas con su cifrado: «DO, C; RE, D; MI, E…».
-- ☐ **Juego de los grados:** mi profesor dice un número y yo digo la nota y la letra («5» → «SOL, G»).
+- ☐ **Juego de los grados:** la plataforma me muestra un número; yo digo la nota y su letra («5» → «SOL, G») y la toco para comprobar.
+
+[[grados]]
+
 - ☐ **Primer sonido:** mi profesor me muestra el **DO central**. Con el dedo 3 de la mano derecha toco DO-RE-MI-FA-SOL-LA-SI-DO, diciendo el nombre, la letra y el número de cada nota.
 - ☐ **¿Melodía, armonía o ritmo?** Hago el ejercicio «¿Qué suena?»: escucho cada fragmento y marco lo que oigo.
 

@@ -69,9 +69,12 @@ En AMA aprendemos con el **bajo de 5 cuerdas**. Las cuerdas se cuentan **de la m
 > **Si tu bajo es de 4 cuerdas:** es igual, pero no tiene la cuerda SI. Cuando una clase use la cuerda SI, tú omítela o toca esa nota en otra cuerda, como te muestre tu profesor.
 
 ### 🎸 Practico
-- ☐ Canto DO-RE-MI-FA-SOL-LA-SI-DO, subiendo y bajando.
+- ☐ Pronuncio las notas DO-RE-MI-FA-SOL-LA-SI-DO, subiendo y bajando.
 - ☐ Digo las notas con su cifrado: «DO, C; RE, D; MI, E…».
-- ☐ **Juego de los grados:** mi profesor dice un número y yo digo la nota y la letra («5» → «SOL, G»).
+- ☐ **Juego de los grados:** la plataforma me muestra un número; yo digo la nota y su letra («5» → «SOL, G») y la toco para comprobar.
+
+[[grados]]
+
 - ☐ **Mis cuerdas:** toco cada cuerda al aire, de la 5.ª a la 1.ª, y digo su nombre: SI, MI, LA, RE, SOL.
 - ☐ **¿Melodía, armonía o ritmo?** Hago el ejercicio «¿Qué suena?»: escucho cada fragmento y marco lo que oigo.
 

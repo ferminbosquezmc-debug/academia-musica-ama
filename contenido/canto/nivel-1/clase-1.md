@@ -64,7 +64,10 @@ La escala tiene **8 grados**: los **números del 1 al 8** que indican el **lugar
 ### 🎤 Practico
 - ☐ Canto DO-RE-MI-FA-SOL-LA-SI-DO, subiendo y bajando, suave y sin forzar.
 - ☐ Digo las notas con su cifrado: «DO, C; RE, D; MI, E…».
-- ☐ **Juego de los grados:** mi profesor dice un número y yo canto esa nota de la escala.
+- ☐ **Juego de los grados:** la plataforma me muestra un número y yo canto esa nota de la escala. Después la toco para escucharla y comprobar.
+
+[[grados]]
+
 - ☐ **¿Melodía, armonía o ritmo?** Hago el ejercicio «¿Qué suena?»: escucho cada fragmento y marco lo que oigo.
 
 [[que-suena]]
