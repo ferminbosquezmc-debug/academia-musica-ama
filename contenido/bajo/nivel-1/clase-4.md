@@ -37,11 +37,11 @@
 - ☐ Señalo en el pentagrama la 4.ª línea y digo «FA».
 - ☐ Digo los nombres de las líneas en clave de fa: SOL, SI, RE, FA, LA.
 - ☐ **MI – FA – SOL** en negras, subiendo y bajando, a 60 BPM, alternando i – m.
-- ☐ **Leo y toco:** mi profesor escribe un compás con MI, FA y SOL y lo toco.
+- ☐ **Leo y toco:** escribo yo un compás con MI, FA y SOL y lo toco.
 - ☐ Toco MI, FA y SOL en blancas (taa-aa), dejando sonar los 2 tiempos completos.
 
 ### 🎵 Interpreto · Evaluación del mes 1
-Presento a mi profesor:
+Me grabo en video (o audio) y lo envío a mi docente con la entrega:
 1. Las 7 notas con su cifrado y los nombres de las 5 cuerdas.
 2. Las 10 partes del bajo.
 3. La postura sentado y de pie, y la pulsación alterna i – m.

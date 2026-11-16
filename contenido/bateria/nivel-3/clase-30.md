@@ -28,7 +28,7 @@ El **funk** es un ritmo bailable que mezcla **acentos fuertes** con **golpes muy
 - ☐ **Por capas:** primero hi-hat + bombo; después agrego el redoblante fuerte; al final, las notas fantasma.
 - ☐ **Funk** a 70 BPM, 8 compases. Subo de 5 en 5 hasta 90.
 - ☐ **Contraste:** grabo 4 compases y escucho: ¿se oye la diferencia entre acentos y fantasmas?
-- ☐ **Escucho finales:** mi profesor toca acordes en el piano o la guitarra; levanto la mano cuando siento que la frase termina (cadencia).
+- ☐ **Escucho finales:** escucho una canción que me guste y levanto la mano cada vez que siento que una frase termina (cadencia).
 
 ### ✏️ Escribe
 - ¿Qué función tiene el acorde que crea tensión? ______

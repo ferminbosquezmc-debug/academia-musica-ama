@@ -72,7 +72,7 @@ Además del rock, el baterista toca ritmos de muchos estilos. Los dos primeros s
 - ☐ **Coordinación I:** pasos A, B y C, 4 compases cada uno.
 - ☐ **Marcha en 2/4:** bombo en el 1 y redoblante en el 2, 8 compases.
 - ☐ **Vals en 3/4:** bombo en el 1 y hi-hat en el 2 y el 3, 8 compases.
-- ☐ Toco el vals mientras mi profesor canta o toca «Sublime gracia».
+- ☐ Toco el vals mientras canto o escucho «Sublime gracia».
 
 ### ✏️ Escribe
 - ¿Cuánto dura el silencio de blanca? ____ tiempos

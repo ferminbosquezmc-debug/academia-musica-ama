@@ -24,7 +24,7 @@
 
 ### 🎤 Practico
 - ☐ **Transporto «Estrellita»:** la canto empezando en DO, en RE y en SI♭ (más grave).
-- ☐ **Mi tonalidad:** con mi profesor, busco la mejor tonalidad para «Mi voz».
+- ☐ **Mi tonalidad:** con el afinador, busco la mejor tonalidad para «Mi voz» y se la cuento a mi docente en la entrega.
 - ☐ **Pedirla en voz alta:** practico la frase «¿la podemos hacer un tono más abajo?».
 - ☐ **Modulación:** canto el coro de «Mi voz» en DO y luego en RE, con el acorde de paso.
 - ☐ **Con VibraVoice**, reviso que las notas extremas de mi tonalidad estén cómodas.

@@ -16,7 +16,10 @@
 3. Al cambiar de acorde, llego a la nueva raíz **justo en el 1**.
 4. Termino con la raíz de la canción y la dejo sonar.
 
-Las canciones son melodías tradicionales o canciones AMA: mi profesor, un compañero o la pista toca la melodía y los acordes, y yo acompaño. Elijo **dos**.
+Las canciones son melodías tradicionales o canciones AMA: la pista de la plataforma o un compañero toca la melodía y los acordes, y yo acompaño.
+
+[[pistas]]
+ Elijo **dos**.
 
 ### 🎵 Canción 1 · «Cuando los santos marchan» (tradicional)
 **Compás:** 4/4 · **Raíces:** DO, FA y SOL · en negras
@@ -53,12 +56,12 @@ Las canciones son melodías tradicionales o canciones AMA: mi profesor, un compa
 - ☐ Toco cada canción lenta, solo con blancas.
 - ☐ Paso a negras (canciones 1 y 2) o a corcheas (canción 3).
 - ☐ **Con la batería:** canción 1 y 3 con el reproductor.
-- ☐ **Con mi profesor o la pista:** las dos canciones que elegí, completas y sin parar.
+- ☐ **Con la pista:** las dos canciones que elegí, completas y sin parar.
 
 [[ritmos:b2,vals,balada]]
 
 ### 🎵 Interpreto · Evaluación final del Nivel 1
-Presento a mi profesor:
+Me grabo en video (o audio) y lo envío a mi docente con la entrega:
 1. Las 5 cuerdas, la postura y la pulsación alterna, apagando las cuerdas que no suenan.
 2. Las notas de las cuerdas SI, MI, LA y RE leídas en clave de fa.
 3. El «Himno de la alegría».

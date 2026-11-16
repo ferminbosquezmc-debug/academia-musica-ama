@@ -17,7 +17,7 @@ Elijo **tres** de estas:
 - «Mi voz» con dinámicas (clases 12 y 23).
 - «Noche de paz», primera frase en legato (clase 18).
 - «Cascabeles» al unísono en grupo (clase 22).
-- Una canción que proponga mi profesor, en una tonalidad cómoda para mí.
+- Una canción que me guste, en una tonalidad cómoda para mí.
 
 ### 🎤 Practico
 - ☐ Ensayo la entrada y la salida del escenario.
@@ -28,7 +28,7 @@ Elijo **tres** de estas:
 [[vibravoice]]
 
 ### 🎵 Interpreto · Evaluación final del Nivel 2
-Presento a mi profesor:
+Me grabo en video (o audio) y lo envío a mi docente con la entrega:
 1. Calentamiento, pasos cromáticos e intervalos (3.ª, 5.ª y 8.ª).
 2. La escala de SOL mayor y una lectura a primera vista corta.
 3. Una segunda voz o una voz de coro con otra persona.

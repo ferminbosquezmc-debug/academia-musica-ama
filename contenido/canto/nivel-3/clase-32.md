@@ -24,13 +24,13 @@ La **escala pentatónica** tiene **5 notas** que casi siempre suenan bien juntas
 - ☐ **Pentatónica** de LA menor subiendo y bajando con «la».
 - ☐ **Adorno final:** al terminar una frase en LA, adorno con DO – LA o SOL – LA.
 - ☐ **Melisma corto:** canto «a» sobre LA – DO – RE – DO – LA.
-- ☐ **Pregunta y respuesta:** mi profesor canta 2 compases con la pentatónica y respondo con 2, sobre Am – G – Am.
+- ☐ **Pregunta y respuesta:** canto 2 compases con la pentatónica y me respondo con otros 2, sobre Am – G – Am.
 - ☐ **Grabo** mi improvisación y escucho si vuelvo a la nota de casa.
 
 [[vibravoice]]
 
 ### 🎵 Interpreto · Evaluación del mes 8
-Presento a mi profesor:
+Me grabo en video (o audio) y lo envío a mi docente con la entrega:
 1. Una cadencia en coro con un final seguro.
 2. Una frase en dos estilos distintos.
 3. Una canción en mi tonalidad cómoda, con modulación si es posible.

@@ -40,7 +40,7 @@ La barra (C/E) se lee «C con bajo en MI». ¿Recuerdas los «acordes vecinos» 
 - ☐ **Resolución:** B7 → Em, A7 → D, E7 → Am.
 
 ### ✅ Evaluación del mes 7
-Tu profesor te pedirá:
+En tu video de entrega muestra:
 
 | Prueba | Lo logro cuando… |
 |---|---|

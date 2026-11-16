@@ -33,7 +33,10 @@ La cuerda SI es la que hace especial al bajo de 5 cuerdas: llega a notas muy gra
 
 ### 🎸 Practico
 - ☐ **Semitonos:** en la cuerda MI toco traste 0 – 1 – 2 – 3 – 4, una nota por pulso, y digo «semitono» en cada paso.
-- ☐ **Tono o semitono:** mi profesor toca dos notas seguidas y digo si es tono o semitono.
+- ☐ **Tono o semitono:** en el Laboratorio de oído escucho dos notas seguidas y digo si es tono (2.ª mayor) o semitono (2.ª menor).
+
+[[oido:int]]
+
 - ☐ **SI – DO – RE** en negras, subiendo y bajando, a 60 BPM.
 - ☐ **DO grave y DO agudo:** DO en la cuerda SI (traste 1) y DO en la cuerda LA (traste 3). Escucho la octava.
 - ☐ **Raíces graves:** C – G – Am – F con DO en la cuerda SI.

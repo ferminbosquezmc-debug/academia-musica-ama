@@ -40,7 +40,7 @@ Elijo **tres** canciones y las toco completas, sin detenerme:
 - ☐ **Me grabo** con el celular y escucho: ¿se entiende el pulso? ¿Suenan limpios los acordes?
 
 ### ✅ Evaluación final del Nivel 2
-Tu profesor te pedirá:
+En tu video de entrega muestra:
 
 | Prueba | Lo logro cuando… |
 |---|---|

@@ -82,7 +82,7 @@ Cuantas más **banderas** (o más rayitas en el silencio), más corta es la figu
 1 redonda = 2 blancas = 4 negras = 8 corcheas = 16 semicorcheas.
 
 ### 🎸 Practico
-- ☐ **¿Dónde está?** Toco en mi guitarra la parte que dice mi profesor.
+- ☐ **¿Dónde está?** Miro la lámina de las partes, tapo los nombres y toco en mi guitarra cada parte diciendo su nombre.
 - ☐ Me siento con la postura de 7 pasos frente a un espejo. Suelto la mano izquierda: ¡la guitarra no se cae!
 - ☐ **Dedos que saludan:** levanto el dedo que me dicen («izquierda 2», «derecha i», «izquierda 4», «derecha p»…).
 - ☐ **El pulso:** marco con el pie el pulso de una canción y cuento 1-2-3-4.

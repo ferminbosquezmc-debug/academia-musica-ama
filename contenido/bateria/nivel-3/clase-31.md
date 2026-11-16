@@ -25,7 +25,7 @@ Las bandas los usan para **cambiar la energía** sin cambiar el tempo: por ejemp
 - ☐ **Los tres a 80 BPM**, 4 compases de cada uno, sin parar: mitad → normal → doble → normal.
 - ☐ **Siento la diferencia:** mientras toco, cuento en voz alta «1, 2, 3, 4» con el metrónomo: el tempo no cambia, solo la sensación.
 - ☐ **Fill de transición:** un fill de 1 tiempo antes de cada cambio.
-- ☐ **Con una canción:** estrofa en mitad de tiempo y coro en tiempo normal, con la pista o con mi profesor.
+- ☐ **Con una canción:** estrofa en mitad de tiempo y coro en tiempo normal, con la pista de la plataforma.
 
 ### ✏️ Escribe
 - En mitad de tiempo, ¿dónde va el redoblante? ______

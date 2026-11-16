@@ -45,7 +45,7 @@ Un **arpegio** es un **acorde tocado nota por nota**. El acorde mayor tiene los 
 [[ritmos:b7,disco]]
 
 ### 🎵 Interpreto · Taller práctico #2
-Presento a mi profesor:
+Me grabo en video (o audio) y lo envío a mi docente con la entrega:
 1. La escala mayor por grados en dos tonalidades.
 2. Los arpegios de C, F y G.
 3. La progresión C – F – G – C con arpegios y la batería.

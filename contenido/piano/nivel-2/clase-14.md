@@ -43,7 +43,10 @@ El piano usa **dos pentagramas unidos por una llave**: arriba la clave de sol (m
 - ☐ **La izquierda lee:** toco con la mano izquierda DO-RE-MI-FA-SOL y vuelvo, **leyendo en clave de fa**.
 - ☐ **Intervalos desde DO:** con la mano derecha toco DO y luego RE, MI, FA, SOL… diciendo «2.ª, 3.ª, 4.ª…».
 - ☐ **La quinta del bajo:** con la mano izquierda toco DO y SOL juntos (dedos 5 y 1). Cuatro redondas.
-- ☐ **Eco de intervalos:** mi profesor toca DO y otra nota; digo qué intervalo es.
+- ☐ **Eco de intervalos:** en el Laboratorio de oído escucho dos notas y digo qué intervalo es.
+
+[[oido:int]]
+
 
 ### 🎵 Interpreto · El «Himno» con dos claves
 Toco el «Himno de la alegría» con la **mano derecha leyendo en clave de sol** y la **mano izquierda leyendo en clave de fa**: redondas en DO y SOL, como en el Nivel 1.

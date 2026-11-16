@@ -24,7 +24,7 @@
 ### 🎤 Practico
 - ☐ Canto la voz baja de la progresión C – F – G7 – C y digo «casa – lejos – tensión – casa».
 - ☐ **Cadencias en coro:** las tres voces de la clase 28, cuidando el último acorde.
-- ☐ **¿Terminó o no?** Mi profesor toca frases que terminan en I o en V; digo si la frase cerró.
+- ☐ **¿Terminó o no?** Escucho una canción que me guste y en cada frase digo si cerró (termina en I) o quedó abierta (termina en V).
 - ☐ **Finales largos:** canto el final de «Mi voz» sosteniendo la última nota 4 tiempos completos.
 
 ### 🏠 Mi tarea

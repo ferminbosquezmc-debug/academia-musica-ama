@@ -39,9 +39,15 @@ Aunque una sola voz no puede cantar tres notas a la vez, el cantante **canta el 
 [[escuchar:Arpegio de LA menor|LA3 DO4 MI4 DO4 LA3:2]]
 
 - ☐ **Arpegio de DO:** canto DO – MI – SOL – MI – DO con los nombres, luego con «la».
-- ☐ **Con el piano:** mi profesor toca el acorde de C y yo canto DO, luego MI, luego SOL: cada nota «cabe» dentro del acorde.
+- ☐ **Con el acorde:** suena el acorde de C en la pista de la plataforma y yo canto DO, luego MI, luego SOL: cada nota «cabe» dentro del acorde.
+
+[[pistas]]
+
 - ☐ **Mayor y menor:** canto DO – MI – SOL y luego DO – MI♭ – SOL. Escucho cómo cambia el color.
-- ☐ **¿Mayor o menor?** Mi profesor toca acordes y digo cuál es cuál.
+- ☐ **¿Mayor o menor?** En el Laboratorio de oído escucho acordes y digo cuál es mayor y cuál menor.
+
+[[oido:acor]]
+
 - ☐ **Juego «Oído musical»** de la sección Práctica, 5 minutos.
 
 ### ✏️ Escribe

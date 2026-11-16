@@ -40,10 +40,10 @@ Cuando una nota queda **más arriba o más abajo** del pentagrama, se escribe so
 
 ### 🎸 Practico
 - ☐ Señalo en la lámina cada cuerda al aire y digo su nombre y su lugar.
-- ☐ **Leo y toco:** mi profesor escribe 8 notas al aire (redondas) y las toco sin mirar el bajo.
+- ☐ **Leo y toco:** escribo 8 notas al aire (redondas) en desorden y las toco sin mirar el bajo.
 - ☐ **Abajo del pentagrama:** leo y toco SI – DO – RE – MI – FA – SOL (cuerdas SI y MI), subiendo y bajando.
 - ☐ **Signos de medida:** cuento en voz alta un compás de 4/4, uno de 3/4 y uno de 6/8 mientras toco la cuerda LA al aire.
-- ☐ **Lectura sin color:** leo 4 compases de un ejercicio en blanco y negro que me da mi profesor.
+- ☐ **Lectura sin color:** leo 4 compases de la lámina de la clase sin mirar los colores (los tapo con un papel).
 
 ### ✏️ Escribe
 - En 3/4, ¿cuántos pulsos hay? ______ · ¿Qué figura vale un pulso? ______

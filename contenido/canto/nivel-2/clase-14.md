@@ -30,7 +30,10 @@ Los cantantes recuerdan los intervalos con el **comienzo de canciones** que ya c
 - ☐ **5.ª:** DO – SOL – DO, luego «Bri-lla, bri-lla…» de «Estrellita».
 - ☐ **8.ª:** DO – DO agudo – DO (si es muy agudo, empiezo más abajo).
 - ☐ **Desde otras notas:** las mismas distancias desde RE y desde FA.
-- ☐ **De oído:** mi profesor toca dos notas y digo si es 3.ª, 5.ª u 8.ª.
+- ☐ **De oído:** en el Laboratorio de oído escucho dos notas y digo si es 3.ª, 5.ª u 8.ª.
+
+[[oido:int]]
+
 - ☐ **Juego «Oído musical»** de la sección Práctica, 5 minutos.
 
 ### 🏠 Mi tarea

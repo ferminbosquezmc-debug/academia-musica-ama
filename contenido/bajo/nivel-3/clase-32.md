@@ -28,13 +28,13 @@ Un **relleno** (*fill*) del bajo es una frase corta que **une dos partes** de la
 - ☐ **Patrón 5 de SOL mayor** subiendo y bajando.
 - ☐ **Cadena completa:** patrones 1 – 2 – 3 – 4 – 5 en SOL, sin parar.
 - ☐ **Pentatónica de LA menor** en corcheas, subiendo y bajando.
-- ☐ **Pregunta y respuesta:** mi profesor toca 1 compás; respondo con 1 compás de la pentatónica.
+- ☐ **Pregunta y respuesta:** toco 1 compás y me respondo con 1 compás de la pentatónica.
 - ☐ **Rellenos:** 3 compases de groove en Am + 1 compás de relleno que llega a LA en el 1.
 
 [[ritmos:b2,funk]]
 
 ### 🎵 Interpreto · Evaluación del mes 8
-Presento a mi profesor:
+Me grabo en video (o audio) y lo envío a mi docente con la entrega:
 1. Golpe del pulgar y pop en octavas.
 2. El groove de funk con la batería.
 3. Una línea transportada a otra tonalidad y un ejercicio con púa.

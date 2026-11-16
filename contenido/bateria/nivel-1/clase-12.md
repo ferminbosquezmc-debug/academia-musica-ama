@@ -32,7 +32,10 @@ Antes de las canciones, repaso cada pieza con su **nombre**, su **lugar en el pe
 3. Empiezo cada frase con **crash + bombo** en el 1.
 4. Termino con un **golpe final** y lo dejo sonar.
 
-Las canciones son melodías tradicionales: mi profesor, un compañero o la pista toca la melodía y los acordes, y yo acompaño. Elijo **dos**.
+Las canciones son melodías tradicionales: la pista de la plataforma o un compañero toca la melodía y los acordes, y yo acompaño.
+
+[[pistas]]
+ Elijo **dos**.
 
 ### 🎵 Canción 1 · «Estrellita» (canción popular francesa)
 **Compás:** 4/4 · **Ritmo:** Ritmo básico #2 · **Tempo:** 80 BPM

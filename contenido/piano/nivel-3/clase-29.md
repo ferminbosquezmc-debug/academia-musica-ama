@@ -38,7 +38,7 @@ La mano derecha casi no se mueve; la izquierda toca el bajo (I, IV, V, I):
 ![I–IV–V7–I en Do, Sol y Fa](piano/img/P3_funciones.svg)
 
 ### 🎹 Practico
-- ☐ **¿Reposo o tensión?** Mi profesor se detiene en un acorde; digo «tónica», «subdominante» o «dominante».
+- ☐ **¿Reposo o tensión?** Toco C – F – G y me detengo en uno al azar; digo «tónica», «subdominante» o «dominante» y escucho si pide seguir.
 - ☐ **I – IV – V7 – I en Do**, 4 tiempos cada acorde, con pedal sincopado.
 - ☐ Lo mismo en **Sol** y en **Fa**. ¡Ojo con el FA♯ y el SI♭!
 - ☐ **Semicadencia y cadencia:** C – F – G (me detengo… ¡queda abierto!) y luego C – F – G7 – C (cierra).

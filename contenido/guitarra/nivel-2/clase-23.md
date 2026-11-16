@@ -29,7 +29,7 @@ La **forma** es el orden de las partes de una canción. Cada parte nueva recibe 
 - ☐ **Escalera de dinámicas:** rasgueo G cuatro compases en **p**, cuatro en **mf** y cuatro en **f**. Después hago un crescendo de p a f en 4 compases.
 - ☐ **Semicorcheas:** con el metrónomo a 50 BPM, rasgueo ↓↑↓↑ en cada pulso con Em, diciendo «ti-ri-ti-ri». Subo de 5 en 5 BPM.
 - ☐ **Siento la síncopa:** toco el patrón 3 y digo en voz alta «1, 2-y, (3)-y, 4-y»: el 3 no se toca, se escucha.
-- ☐ **Forma:** mi profesor toca una canción; yo levanto la mano cuando empieza el coro ([[nn:B]]).
+- ☐ **Forma:** escucho una canción que me guste y levanto la mano cuando empieza el coro ([[nn:B]]).
 
 ### 🎵 Interpreto · «Canción del puente» (composición AMA)
 Forma **[[nn:A – B – A]]**. Parte [[nn:A]] suave (**p**), con arpegio p-i-m-a; parte [[nn:B]] fuerte (**f**), con el patrón 3 de rasgueo. Un compás por acorde.

@@ -39,8 +39,11 @@
 - ☐ Construyo las tríadas de RE mayor, MI menor y FA♯ disminuida con los intervalos.
 - ☐ **Los 5 patrones en SOL**, encadenados, del traste 2 al 15 y de vuelta.
 - ☐ **Los 5 patrones en DO** (patrón 1 desde el traste 7).
-- ☐ **Con el bombo:** mi profesor o la pista toca un ritmo y copio sus lugares con la raíz.
-- ☐ **Señales:** mi profesor hace señales mientras toco y respondo.
+- ☐ **Con el bombo:** con una pista de la plataforma, escucho el bombo y copio sus lugares con la raíz.
+
+[[pistas]]
+
+- ☐ **Señales:** un compañero o familiar hace señales mientras toco y respondo; si estoy solo, las escribo en papelitos y saco una cada 4 compases.
 - ☐ **Entrenamiento auditivo:** el juego «Oído musical», 5 minutos.
 
 [[ritmos:balada,b5,cumbia]]

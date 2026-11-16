@@ -54,7 +54,10 @@ Es el **Ritmo básico #2** con un solo cambio: el bombo agrega un golpe en la **
 - ☐ **Coordinación II:** pasos A, B y C, 4 compases cada uno a 60 BPM.
 - ☐ Ritmo básico #2, 4 compases, y sin parar el Ritmo básico #3, 4 compases.
 - ☐ Ritmo básico #3, 8 compases a 70 BPM.
-- ☐ **¿Mayor o menor?** Mi profesor toca dos acordes y digo cuál es alegre y cuál es triste.
+- ☐ **¿Mayor o menor?** En el Laboratorio de oído escucho acordes y digo cuál es alegre y cuál es triste.
+
+[[oido:acor]]
+
 
 ### ✏️ Escribe
 Marca con ● dónde va el bombo en el Ritmo básico #3:

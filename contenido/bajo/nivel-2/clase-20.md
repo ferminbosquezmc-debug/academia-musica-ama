@@ -37,11 +37,11 @@ Un **patrón** es una **caja de 4 trastes** que usa **todas las cuerdas**. Dentr
 - ☐ **Las 12 raíces:** recorro la cuerda MI del traste 0 al 11 diciendo el nombre de cada nota.
 
 ### 🎵 Interpreto · Evaluación del mes 5
-Presento a mi profesor:
+Me grabo en video (o audio) y lo envío a mi docente con la entrega:
 1. La escala mayor por grados.
 2. Arpegios mayores y menores (C, G, Am, Dm).
 3. Una progresión con arpegios y la batería.
-4. Los patrones 1 y 4 en SOL mayor y en una tonalidad que elija mi profesor.
+4. Los patrones 1 y 4 en SOL mayor y en otra tonalidad que saco al azar.
 
 ### 🏠 Mi tarea
 - ☐ 10 minutos al día: patrones 1 y 4 en dos tonalidades.

@@ -66,7 +66,7 @@ En AMA aprendemos con el **bajo de 5 cuerdas**. Las cuerdas se cuentan **de la m
 | Nota al aire | SOL | RE | LA | MI | SI |
 | Cifrado | G | D | A | E | B |
 
-> **Si tu bajo es de 4 cuerdas:** es igual, pero no tiene la cuerda SI. Cuando una clase use la cuerda SI, tú omítela o toca esa nota en otra cuerda, como te muestre tu profesor.
+> **Si tu bajo es de 4 cuerdas:** es igual, pero no tiene la cuerda SI. Cuando una clase use la cuerda SI, tú omítela o toca esa nota en otra cuerda, como muestra la lámina de la clase.
 
 ### 🎸 Practico
 - ☐ Pronuncio las notas DO-RE-MI-FA-SOL-LA-SI-DO, subiendo y bajando.

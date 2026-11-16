@@ -33,10 +33,10 @@
 [[ritmos:disco]]
 
 ### 🎵 Interpreto · Taller #1 y evaluación del mes 7
-Presento a mi profesor:
+Me grabo en video (o audio) y lo envío a mi docente con la entrega:
 1. Escala menor natural de LA y las relativas.
 2. Los patrones 1, 2 y 3 encadenados.
-3. Los intervalos desde una raíz que elija mi profesor.
+3. Los intervalos desde una raíz que saco al azar.
 4. Una línea con ligados.
 5. Octavas en corcheas con el ritmo disco y la línea con inversiones.
 

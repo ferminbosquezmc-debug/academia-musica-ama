@@ -30,7 +30,7 @@ Monto siempre **en el mismo orden**, así no olvido nada:
 - ☐ **Monto y desmonto** el kit en orden, dos veces, sin ayuda.
 - ☐ **Ensayo por secciones** la canción de la presentación, a tempo lento y luego a tempo real.
 - ☐ **Ensayo general:** toco todo el programa de corrido, como si fuera el concierto.
-- ☐ **Si me equivoco, sigo:** mi profesor me distrae a propósito y yo no paro.
+- ☐ **Si me equivoco, sigo:** toco con la pista y, aunque me equivoque, no paro hasta el final.
 - ☐ **Respiro** antes de cada pieza: 4 dentro, 4 fuera.
 
 [[ritmos:funk,reggae,bossa,cumbia]]

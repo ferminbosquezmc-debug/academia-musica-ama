@@ -27,7 +27,7 @@ El **shuffle** tiene un balanceo «largo-corto». Sale del **tresillo**: de las 
 ### 🥁 Practico
 - ☐ **Lectura con la voz:** «ta-a-ti, ta-a-ti» y «taa-ri, taa-ri» con el metrónomo a 60 BPM.
 - ☐ **En el redoblante:** 4 compases de negra con puntillo + corchea; luego 4 de corchea con puntillo + semicorchea.
-- ☐ **Lectura con redoble en tresillos y puntillo:** mi profesor escribe 4 compases que mezclan tresillos (D I D · I D I) y figuras con puntillo; los digo y los toco.
+- ☐ **Lectura con redoble en tresillos y puntillo:** escribo yo 4 compases que mezclan tresillos (D I D · I D I) y figuras con puntillo; los digo y los toco.
 - ☐ **Del tresillo al shuffle:** 2 compases de tresillos completos en el hi-hat y 2 compases quitando la nota del medio.
 - ☐ **Shuffle** completo a 80 BPM, 8 compases.
 

@@ -28,8 +28,11 @@ El director (o quien guía la banda) avisa con las manos: **corte**, **repetir**
 ### 🥁 Practico
 - ☐ **Cuenta de entrada:** cuento 4 al tempo y empiezo justo en el 1, cinco veces seguidas.
 - ☐ **Con el click** a 85 BPM: 2 minutos de ritmo sin separarme.
-- ☐ **Bombo con el bajo:** mi profesor (o una pista) toca una línea de bajo y copio sus lugares con el bombo.
-- ☐ **Señales:** mi profesor hace señales mientras toco y yo respondo: corte, repetir, más suave, más fuerte.
+- ☐ **Bombo con el bajo:** con una pista de la plataforma, escucho la línea de bajo y copio sus lugares con el bombo.
+
+[[pistas]]
+
+- ☐ **Señales:** un compañero o familiar hace señales mientras toco (corte, repetir, más suave, más fuerte) y yo respondo; si estoy solo, las escribo en papelitos y saco una cada 4 compases.
 - ☐ **Acompaño una canción cantada:** estrofa suave, coro más fuerte, sin tapar la voz.
 
 [[ritmos:balada,b5]]

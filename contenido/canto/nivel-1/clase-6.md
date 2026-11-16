@@ -44,7 +44,7 @@ Para el cantante, los silencios no son «nada»: son el **momento de tomar aire*
 ### 🎤 Practico
 - ☐ Leo en voz alta un ritmo con negras y silencios: «ta – sh – ta – ta».
 - ☐ **Canto con silencios:** DO – sh – RE – sh – MI – sh – RE – sh; en cada «sh» tomo aire rápido.
-- ☐ **Marco las respiraciones:** en una melodía corta que me da mi profesor, escribo las comitas.
+- ☐ **Marco las respiraciones:** en una melodía corta de la clase, escribo las comitas.
 - ☐ **Vals:** canto el vals de la lámina con «la» y el 1 un poco más fuerte, con el reproductor.
 - ☐ **Marcha en 2/4:** canto DO – MI – DO – MI marchando en mi lugar.
 

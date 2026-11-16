@@ -31,7 +31,10 @@ La **resonancia** hace que la voz suene **llena y brillante sin gritar**.
 
 - ☐ **Semitonos con el piano:** MI – FA – MI y SI – DO – SI, escuchando primero.
 - ☐ **Tonos:** DO – RE – DO y FA – SOL – FA.
-- ☐ **¿Tono o semitono?** Mi profesor toca dos notas y digo cuál es.
+- ☐ **¿Tono o semitono?** En el Laboratorio de oído escucho dos notas y digo si es tono (2.ª mayor) o semitono (2.ª menor).
+
+[[oido:int]]
+
 - ☐ **Con el afinador:** canto MI y luego FA; reviso que la aguja quede en el centro en las dos.
 - ☐ **Resonancia:** «mmm» en DO – RE – MI – RE – DO y luego «mmm-a».
 

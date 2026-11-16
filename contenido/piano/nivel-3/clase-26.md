@@ -49,7 +49,10 @@ Los dedos 3 coinciden en MI. La derecha pasa el pulgar en FA; la izquierda cruza
 - ☐ **Espejo:** escala de Do en movimiento contrario, 1 octava, a 50 BPM.
 - ☐ **Paralelo por tramos:** DO-RE-MI con las dos manos (dedos 1-2-3 y 5-4-3); luego hasta SOL; luego completa.
 - ☐ **Paralelo completo** a 50 BPM, subiendo y bajando. Subo 4 BPM cuando sale limpio.
-- ☐ **Oído:** mi profesor toca DO–MI y DO–MI♭. ¿Cuál es 3.ª mayor y cuál menor?
+- ☐ **Oído:** toco DO–MI y DO–MI♭ y comparo: ¿cuál es 3.ª mayor y cuál menor? Luego practico en el Laboratorio de oído.
+
+[[oido:int]]
+
 
 ### ✏️ Clasifica el intervalo
 DO–LA = ______ · RE–FA = ______ · SOL–RE = ______ · MI–SOL = ______

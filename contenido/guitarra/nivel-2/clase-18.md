@@ -33,7 +33,7 @@
 - ☐ **Lectura:** digo cuántos tiempos dura una blanca con puntillo y una negra con puntillo.
 
 ### 🎵 Interpreto · «Noche de paz»
-Melodía de Franz Gruber (1818, dominio público). Mi profesor o un compañero canta o toca la melodía; yo la acompaño con el patrón p-i-m-a-m-i, **un compás por acorde**, a 60 BPM.
+Melodía de Franz Gruber (1818, dominio público). Canto la melodía mientras acompaño (o la canta un compañero o un familiar); la acompaño con el patrón p-i-m-a-m-i, **un compás por acorde**, a 60 BPM.
 
 ```
 | G    | G    | G    | G    |

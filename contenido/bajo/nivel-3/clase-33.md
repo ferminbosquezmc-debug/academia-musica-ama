@@ -30,13 +30,13 @@ Un **chart** es la hoja de la canción: no siempre escribe cada nota, pero sí e
 - ☐ **Elijo mi herramienta** para cada parte: raíces en la intro, raíz y quinta en la estrofa, arpegios en el coro.
 - ☐ **Toco el chart completo** con el metrónomo a 80 BPM, sin parar.
 - ☐ **Cuento los compases:** ¿cuántos dura la canción completa con las repeticiones y el D.C.?
-- ☐ **Leo una línea escrita** que me da mi profesor, sin colores.
+- ☐ **Leo una línea escrita** de la lámina de la clase, tapando los colores.
 
 [[ritmos:b5,balada]]
 
 ### 🏠 Mi tarea
 - ☐ 10 minutos al día: leo y toco el chart de la lámina.
-- ☐ Le pido a mi profesor otro chart sencillo.
+- ☐ Busco otro chart sencillo de una canción que me guste.
 
 ### ✅ ¿Lo logré?
 - ☐ Leo en clave de fa sin colores. ☐ Sigo repeticiones, casillas y D.C. al Fine. ☐ Elijo mi herramienta según la parte. ☐ Toco el chart completo sin perderme.

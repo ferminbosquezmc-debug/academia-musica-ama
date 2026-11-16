@@ -60,7 +60,7 @@ Cada negra dura 1 tiempo: digo **ta** y cuento 1-2-3-4.
 - ☐ Toco los dos compases seguidos, sin parar.
 
 ### 🎵 Interpreto · Taller práctico #1
-Presento a mi profesor: la postura y el agarre, el golpe completo a tres volúmenes (p, mf, f), el bombo con talón abajo y la lectura de los dos compases sin parar.
+Me grabo en video (o audio) y lo envío a mi docente con la entrega: la postura y el agarre, el golpe completo a tres volúmenes (p, mf, f), el bombo con talón abajo y la lectura de los dos compases sin parar.
 
 ### ✏️ Escribe
 - ¿Dónde se escribe el bombo? ____________ · ¿Y el redoblante? ____________

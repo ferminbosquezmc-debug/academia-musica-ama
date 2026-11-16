@@ -20,7 +20,7 @@
 
 - **Voz de pecho:** las notas graves y medias; se siente vibrar en el pecho.
 - **Voz de cabeza:** las notas agudas; se siente vibrar en la cabeza y la cara.
-- **Zona de paso:** las notas donde la voz quiere «quebrarse». Cada voz tiene la suya; tu profesor te ayuda a encontrarla.
+- **Zona de paso:** las notas donde la voz quiere «quebrarse». Cada voz tiene la suya; el VocalMap y tu docente te ayudan a encontrarla.
 - **Voz mixta:** mezcla de las dos; permite subir y bajar sin quiebres.
 
 > En la zona de paso **no empujo** la voz de pecho hacia arriba: la aligero y dejo que entre la voz de cabeza.

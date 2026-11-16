@@ -88,7 +88,7 @@ Cuantas más **banderas** (o más rayitas en el silencio), más corta es la figu
 > En la batería, un golpe en el redoblante es corto aunque sea una redonda: lo que dura es el **espacio** hasta el golpe siguiente. Por eso contamos en voz alta.
 
 ### 🥁 Practico
-- ☐ **¿Dónde está?** Toco la parte que dice mi profesor.
+- ☐ **¿Dónde está?** Miro la lámina de las partes, tapo los nombres y toco cada parte diciendo su nombre.
 - ☐ Ajusto el banco y me siento con la postura de 7 pasos.
 - ☐ **Agarre en el espejo:** tomo las baquetas, las suelto y las vuelvo a tomar 5 veces sin mirar las manos.
 - ☐ **Extremidades que saludan:** muevo la que me dicen («PD», «I», «D», «PI»…).

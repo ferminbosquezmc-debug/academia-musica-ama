@@ -35,10 +35,10 @@
 - ☐ Frase 1 a 60 BPM, cuatro veces.
 - ☐ Frase 2 a 60 BPM, cuatro veces.
 - ☐ El himno completo, sin parar, dejando sonar las blancas 2 tiempos.
-- ☐ **Con mi profesor:** mi profesor toca la melodía en el piano o la guitarra y yo la toco una octava abajo.
+- ☐ **Con la melodía:** canto la melodía (o la escucho grabada) y la toco una octava abajo.
 
 ### 🎵 Interpreto · Evaluación del mes 2
-Presento a mi profesor:
+Me grabo en video (o audio) y lo envío a mi docente con la entrega:
 1. Redondas, blancas y negras con el metrónomo, junto al bombo.
 2. Silencios exactos y el vals del bajo.
 3. Corcheas parejas alternando i – m.

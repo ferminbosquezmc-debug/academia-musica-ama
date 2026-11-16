@@ -48,7 +48,7 @@ Marca: 😀 lo hago bien · 🙂 casi · 😐 necesito practicar
 
 ### 🏠 ¿Y ahora qué?
 - ☐ Sigo tocando 15 minutos al día: una escala, una obra y una canción.
-- ☐ Elijo con mi profesor la siguiente etapa: repertorio clásico, piano para alabanza y banda, o producción musical.
+- ☐ Elijo mi siguiente etapa y se la cuento a mi docente en la entrega: repertorio clásico, piano para alabanza y banda, o producción musical.
 
 ### ✅ ¿Lo logré?
 - ☐ Presenté mi programa completo. ☐ Me sentí seguro en el escenario. ☐ ¡Terminé los tres niveles de piano! 🎉

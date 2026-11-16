@@ -42,7 +42,10 @@ En el Nivel 1 leo solo en clave de sol, con la mano derecha. La mano izquierda t
 - ☐ **¿Dónde está SOL?** Señalo la 2.ª línea y explico por qué la clave se llama de sol.
 - ☐ **Manos en posición:** coloco la mano derecha en posición de DO, la levanto y vuelvo a colocarla 5 veces sin mirar. Igual con la mano izquierda.
 - ☐ **DO-RE-MI:** toco la partitura con la mano derecha, diciendo el nombre de cada nota antes de tocarla.
-- ☐ **Eco:** mi profesor toca 3 notas con DO, RE y MI, y yo las repito de oído.
+- ☐ **Eco:** toco 3 notas con DO, RE y MI sin mirar, las canto y las vuelvo a encontrar de oído. Luego practico «Alto o bajo» en el Laboratorio de oído.
+
+[[oido:alto]]
+
 
 ### 🎵 Interpreto · Taller práctico #1
 Con la mano derecha, en posición de DO, con postura correcta y pulso estable:

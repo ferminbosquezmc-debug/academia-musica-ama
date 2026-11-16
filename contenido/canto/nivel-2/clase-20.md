@@ -35,12 +35,12 @@ Una **segunda voz** canta **otra melodía** al mismo tiempo que la principal. La
 
 - ☐ Canto las tríadas de C, F y G nota por nota (1 – 3 – 5).
 - ☐ **Voz 2 sola:** LA – LA – MI – MI – FA – FA – MI, con el piano.
-- ☐ **Las dos voces:** mi profesor canta la melodía de «Estrellita» y yo la segunda voz; luego cambiamos.
+- ☐ **Las dos voces:** me grabo cantando la melodía de «Estrellita» y canto la segunda voz encima de la grabación; luego al revés.
 - ☐ **Con un compañero**, la primera línea completa a dos voces.
 - ☐ **Grabo** las dos voces con el celular y escucho si suenan juntas.
 
 ### 🎵 Interpreto · Evaluación del mes 5
-Presento a mi profesor:
+Me grabo en video (o audio) y lo envío a mi docente con la entrega:
 1. Una canción con fraseo y respiraciones marcadas.
 2. La primera frase de «Noche de paz» en legato.
 3. Una lectura a primera vista corta.

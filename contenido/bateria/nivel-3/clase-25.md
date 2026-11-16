@@ -14,7 +14,7 @@
 **Independencia** es que cada extremidad haga **algo distinto** sin que las otras se desordenen. Se entrena con un **ostinato**: un patrón que **se repite sin cambiar** mientras otra extremidad toca algo nuevo.
 
 - **Ostinato de hoy:** ride en corcheas (D), bombo en el 1 y el 3 (PD) y hi-hat con el pie en el 2 y el 4 (PI).
-- **La mano izquierda lee:** toca en el redoblante los ritmos que escribe tu profesor, mientras el ostinato sigue igual.
+- **La mano izquierda lee:** toca en el redoblante ritmos que escribes tú, mientras el ostinato sigue igual.
 
 ### 📖 Rudimento · El paradiddle
 **Para-diddle** combina **dos golpes alternos** («para») y **un doble golpe** («diddle»):
@@ -29,7 +29,7 @@ El acento va en el primer golpe de cada grupo. Cada grupo empieza con una mano d
 - ☐ **Paradiddle** en el pad a 60 BPM, en semicorcheas, con acento. Digo «pa-ra-di-dle».
 - ☐ **Paradiddle repartido:** la D en el hi-hat y la I en el redoblante. ¡Ya suena a ritmo!
 - ☐ **Ostinato solo** (ride, bombo y pie) durante 2 minutos, sin pensar.
-- ☐ **Lectura con la izquierda:** mientras sigue el ostinato, toco con la I negras, después corcheas en el 2 y el 4, y luego la lectura de mi profesor.
+- ☐ **Lectura con la izquierda:** mientras sigue el ostinato, toco con la I negras, después corcheas en el 2 y el 4, y luego un ritmo que escribo yo.
 - ☐ **Batería digital:** pruebo el paradiddle repartido entre las piezas.
 
 [[bateria-digital]]

@@ -38,7 +38,7 @@ Después haz lo mismo en las otras cinco cuerdas: es el ejercicio de la **araña
 
 ### 🎸 Practico
 - ☐ **Cazador de FA♯:** encuentro FA♯ en la 1.ª cuerda (traste 2) y en la 4.ª cuerda (traste 4).
-- ☐ **¿Cómo se llama?** Mi profesor dice un traste de la 1.ª cuerda; yo digo la nota con sus dos nombres.
+- ☐ **¿Cómo se llama?** Elijo un traste de la 1.ª cuerda al azar, digo la nota con sus dos nombres y la compruebo en el diapasón de la clase.
 - ☐ **Escala cromática** en cada cuerda, del aire al traste 4, a 60 BPM: una nota por pulso.
 - ☐ **Posición de RE:** en la 4.ª y la 3.ª cuerda toco RE (4.ª al aire), MI (4.ª, traste 2), FA♯ (4.ª, traste 4), SOL (3.ª al aire) y LA (3.ª, traste 2). Subo y bajo 5 veces.
 

@@ -21,7 +21,7 @@
 - **Disfruta:** llevas 9 meses preparándote. ¡Este es tu momento!
 
 ### ✅ Evaluación final del Nivel 3
-Tu profesor evaluará:
+Tu docente evaluará en tu video:
 
 | Aspecto | Lo logro cuando… |
 |---|---|
@@ -40,7 +40,7 @@ En tres niveles aprendiste a **leer**, **acompañar**, **improvisar** y **presen
 
 ### 🏠 Mi tarea
 - ☐ Escribo en mi cuaderno las tres cosas que más disfruté de la carrera.
-- ☐ Elijo mi próxima meta musical y se la cuento a mi profesor.
+- ☐ Elijo mi próxima meta musical y se la cuento a mi docente en la entrega.
 
 ### ✅ ¿Lo logré?
 - ☐ Toqué las cuatro partes del programa. ☐ Seguí tocando aunque me equivoqué. ☐ Disfruté la presentación. ☐ ¡Terminé el Nivel 3!

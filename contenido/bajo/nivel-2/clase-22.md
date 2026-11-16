@@ -38,7 +38,7 @@ Los bajistas también **cantan la línea** con los nombres de las notas («DO �
 
 ### 🎸 Practico
 - ☐ Solfeo con la voz una línea de 4 compases y luego la toco.
-- ☐ **Busca la nota:** mi profesor dice una nota y la toco en 3 cuerdas distintas.
+- ☐ **Busca la nota:** elijo una nota al azar y la toco en 3 cuerdas distintas.
 - ☐ **Todas las DO:** encuentro todos los DO del mástil (trastes 0 a 12).
 - ☐ **Una cuerda, todas las notas:** cuerda LA del traste 0 al 12 diciendo cada nombre, con ♯ y ♭.
 - ☐ **Cambio de posición:** escala de DO en la cuerda LA (traste 3) y luego en la cuerda MI (traste 8).

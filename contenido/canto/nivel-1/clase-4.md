@@ -42,12 +42,15 @@ Un **afinador** escucha mi voz y me dice si la nota está **justa**, **alta** o 
 
 - ☐ Señalo en el pentagrama la 2.ª línea y digo «SOL».
 - ☐ **Leo y canto** DO – RE – MI en negras, subiendo y bajando, con el nombre de las notas.
-- ☐ **Unísono:** mi profesor toca DO, RE y MI en el piano y yo los canto después de escucharlos.
+- ☐ **Unísono:** escucho DO, RE y MI en el afinador o el Laboratorio de oído y los canto después de escucharlos.
+
+[[oido:alto]]
+
 - ☐ **Con el afinador:** canto DO durante 4 tiempos y trato de que el afinador marque «justa».
-- ☐ **Leo un compás** con DO, RE y MI que escribe mi profesor y lo canto.
+- ☐ **Leo un compás** con DO, RE y MI que escribo yo y lo canto.
 
 ### 🎵 Interpreto · Evaluación del mes 1
-Presento a mi profesor:
+Me grabo en video (o audio) y lo envío a mi docente con la entrega:
 1. Las 7 notas con su cifrado.
 2. Las 4 partes de la voz y las reglas de cuidado.
 3. La postura en 7 pasos y la respiración baja.

@@ -40,7 +40,7 @@ Si construyo una tríada sobre **cada nota de la escala de DO** (usando solo not
 [[ritmos:balada,shuffle]]
 
 ### 🎵 Interpreto · Taller práctico #4
-Presento a mi profesor:
+Me grabo en video (o audio) y lo envío a mi docente con la entrega:
 1. Un ejercicio de lectura con puntillos.
 2. Las tres clases de tríadas desde DO.
 3. Las 7 tríadas de DO mayor en arpegio.

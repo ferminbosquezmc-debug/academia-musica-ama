@@ -29,7 +29,7 @@
 
 - Los rangos son **aproximados**: cada voz es única y cambia con los años y el entrenamiento.
 - Las voces de niños y adolescentes **todavía están creciendo**: no se encasillan.
-- **VibraVoice 12D** tiene un **VocalMap** que ayuda a ver las notas de tu voz; tu profesor confirma el tipo con el tiempo.
+- **VibraVoice 12D** tiene un **VocalMap** que ayuda a ver las notas de tu voz; tu docente confirma el tipo con tus grabaciones.
 
 [[vibravoice]]
 
@@ -44,7 +44,7 @@
 
 ### 📖 Voces que están creciendo
 - En niños y niñas la voz todavía se está formando: se canta en notas **cómodas**, sin buscar extremos.
-- En la **adolescencia** la voz cambia (sobre todo en los chicos, que bajan casi una octava). Durante ese cambio la voz puede «quebrarse»: es normal. Se canta **suave**, en la zona cómoda, y se comenta con el profesor.
+- En la **adolescencia** la voz cambia (sobre todo en los chicos, que bajan casi una octava). Durante ese cambio la voz puede «quebrarse»: es normal. Se canta **suave**, en la zona cómoda, y se le cuenta al docente en la entrega.
 - **Nunca** se fuerza a nadie a llegar a una nota alta o baja.
 
 ### 🎤 Practico
@@ -54,7 +54,7 @@
 - ☐ **Subo** la escala de Do con los nombres, a 60 BPM.
 - ☐ **Bajo** la escala desde el DO agudo (si es muy agudo, empiezo una octava abajo).
 - ☐ **Con «la»** y luego con «mi-me-ma-mo-mu», una vocal por nota.
-- ☐ **Mi extensión:** con mi profesor o con el VocalMap, busco mi nota más grave y la más aguda **cómodas**. No fuerzo.
+- ☐ **Mi extensión:** con el VocalMap, busco mi nota más grave y la más aguda **cómodas**. No fuerzo.
 
 ### ✏️ Escribe
 - La fórmula de la escala mayor es: __ – __ – __ – __ – __ – __ – __

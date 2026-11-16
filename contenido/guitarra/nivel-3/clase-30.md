@@ -23,7 +23,7 @@
 - ☐ **Shuffle** con E7 y A7: rasgueo largo-corto, a 70 BPM.
 
 ### 🎵 Interpreto · «Una canción, cinco trajes» (composición AMA)
-La misma progresión, con un estilo distinto en cada vuelta. Mi profesor dice el estilo y yo cambio sin detenerme.
+La misma progresión, con un estilo distinto en cada vuelta. Sigo el orden de abajo y cambio sin detenerme.
 
 ```
 | G    | Em   | C    | D    |   × 5

@@ -30,7 +30,7 @@ Un baterista de rock casi nunca cambia el hi-hat ni el redoblante: lo que da var
 - ☐ **Hi-hat en semicorcheas** solo con la D, a 60 BPM, 8 compases. Si me canso, uso D I D I.
 - ☐ **Ritmo básico #7** completo, a 60 BPM. Subo de 5 en 5 BPM cuando salga limpio tres veces.
 - ☐ **Los cuatro patrones ([[nn:A, B, C y D]])**, 4 compases de cada uno, sin parar: [[nn:A → B → C → D]].
-- ☐ **Lectura con ligadura:** mi profesor escribe 4 compases con ligaduras; digo el ritmo callando las notas ligadas y después lo toco.
+- ☐ **Lectura con ligadura:** escribo yo 4 compases con ligaduras; digo el ritmo callando las notas ligadas y después lo toco.
 
 ### ✏️ Escribe
 - ¿Cuántas semicorcheas toca el hi-hat en un compás de 4/4? ______

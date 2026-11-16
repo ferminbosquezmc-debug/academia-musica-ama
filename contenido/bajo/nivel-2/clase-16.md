@@ -40,7 +40,7 @@ En el Nivel 1 tocaste la escala de Do con cuerdas al aire. Ahora aprendes una **
 - ☐ **Moviendo la forma:** empiezo en el traste 5 de la cuerda MI. ¿Qué escala es? (LA mayor).
 
 ### 🎵 Interpreto · Evaluación del mes 4
-Presento a mi profesor:
+Me grabo en video (o audio) y lo envío a mi docente con la entrega:
 1. Lectura de las cuerdas al aire y de notas con líneas adicionales.
 2. Raíz y quinta en C – G – Am – F con la batería.
 3. Raíz – quinta – octava en 12/8.

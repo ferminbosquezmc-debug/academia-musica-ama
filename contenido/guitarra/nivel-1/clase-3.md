@@ -37,7 +37,7 @@ Una **octava** es la distancia entre una nota y la siguiente con el **mismo nomb
 - ☐ Toco las 6 cuerdas al aire con el pulgar (**p**) y digo su nombre.
 
 ### 🎵 Interpreto
-**La orquesta del silencio:** toco cuando mi profesor levanta la mano y paro cuando la baja.
+**La orquesta del silencio:** con el metrónomo, toco 4 tiempos y callo 4 tiempos; si hay un compañero o familiar, toco cuando levanta la mano y paro cuando la baja.
 
 ### ✏️ Escribe
 Nombre de las cuerdas al aire:

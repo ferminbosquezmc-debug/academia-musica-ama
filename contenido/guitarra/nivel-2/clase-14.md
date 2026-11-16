@@ -43,7 +43,10 @@ Las cuerdas **4, 5 y 6** se llaman **bordones**: son las más gruesas y las más
 - ☐ **Bordón por bordón:** toco y digo en voz alta MI–FA–SOL (6.ª), LA–SI–DO (5.ª) y RE–MI–FA (4.ª). Subo y bajo 3 veces.
 - ☐ **Octavas:** MI de la 6.ª al aire y MI de la 4.ª, traste 2. LA de la 5.ª al aire y LA de la 3.ª, traste 2. Escucho que son la misma nota, una más aguda.
 - ☐ **Intervalos armónicos:** toco juntas la 6.ª al aire (MI) y la 5.ª, traste 2 (SI). ¿Cuántos grados hay? (MI-FA-SOL-LA-SI = 5.ª).
-- ☐ **Adivina el intervalo:** mi profesor toca dos notas; yo digo si es una 3.ª, una 5.ª o una 8.ª.
+- ☐ **Adivina el intervalo:** en el Laboratorio de oído escucho dos notas y digo si es una 3.ª, una 5.ª o una 8.ª.
+
+[[oido:int]]
+
 
 ### 🎵 Interpreto · «Bordón caminante» (composición AMA)
 Una melodía en los bordones, en negras, a 70 BPM. Debajo de cada nota: cuerda/traste. Dedo 1 en el traste 1, dedo 2 en el traste 2, dedo 3 en el traste 3.

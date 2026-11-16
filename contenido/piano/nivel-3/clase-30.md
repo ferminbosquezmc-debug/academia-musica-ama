@@ -37,7 +37,7 @@ Caribeño:     ·   X   ·   X   ·   X   ·   X      ← acordes a contratiempo
 - ☐ **Vals:** «Sublime gracia» (Nivel 1) con el cifrado C – F – G y el patrón de vals.
 
 ### 🎵 Interpreto · Una progresión, cuatro estilos
-Toco **C – G – Am – F** dos veces en cada estilo, sin parar entre uno y otro: balada → pop → caribeño. Mi profesor o un compañero canta encima.
+Toco **C – G – Am – F** dos veces en cada estilo, sin parar entre uno y otro: balada → pop → caribeño. Canto la melodía encima o la canta un compañero.
 
 ### ✏️ Escribo
 1. ¿Qué es una síncopa? ______________________________

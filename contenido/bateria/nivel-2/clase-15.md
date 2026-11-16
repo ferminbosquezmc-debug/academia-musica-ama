@@ -30,10 +30,10 @@
 - ☐ **Hi-hat en tresillos:** solo la mano derecha, 8 compases.
 - ☐ **Ritmo básico #6** completo, a 60 BPM. Cuando salga limpio 3 veces, subo a 65.
 - ☐ **Balada en 6/8:** 8 compases a 60 BPM; siento el balanceo «en dos».
-- ☐ **Lectura:** mi profesor escribe 4 compases que mezclan corcheas y tresillos; los digo y después los toco en el redoblante.
+- ☐ **Lectura:** escribo yo 4 compases que mezclen corcheas y tresillos; los digo y después los toco en el redoblante.
 
 ### 🎵 Interpreto · «Sublime gracia» en 6/8
-La melodía tradicional que tocaste en 3/4 en el Nivel 1, ahora con la balada en 6/8. Mi profesor o la pista toca la melodía; yo acompaño 16 compases y termino con un golpe de crash y bombo juntos.
+La melodía tradicional que tocaste en 3/4 en el Nivel 1, ahora con la balada en 6/8. La pista de la plataforma toca la melodía; yo acompaño 16 compases y termino con un golpe de crash y bombo juntos.
 
 ### ✏️ Escribe
 - ¿Cuántas corcheas tiene un compás de 12/8? ______ ¿En cuántos grupos? ______

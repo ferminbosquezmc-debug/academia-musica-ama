@@ -39,7 +39,7 @@
 - ☐ **Grabo** el trío y escucho si la séptima está afinada.
 
 ### 🎵 Interpreto · Evaluación del mes 7
-Presento a mi profesor:
+Me grabo en video (o audio) y lo envío a mi docente con la entrega:
 1. La escala de LA menor y «Canción de la luna».
 2. Intervalos mayores, menores y justos desde la nota que me den, y un dictado corto.
 3. Una sirena por los registros sin quiebres y una escala ágil.

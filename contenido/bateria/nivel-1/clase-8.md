@@ -30,7 +30,7 @@ Es el **Ritmo básico #1** (clase 5) con un solo cambio: el hi-hat ahora toca **
 > Digo el ritmo antes de tocarlo: «**bum**-chi-**pa**-chi-**bum**-chi-**pa**-chi».
 
 ### 🎵 «Himno de la alegría» · Ludwig van Beethoven
-Mi profesor (o la pista de la plataforma) toca la melodía. Yo acompaño con el ritmo de rock a **70 BPM**:
+La pista de la plataforma toca la melodía. Yo acompaño con el ritmo de rock a **70 BPM**:
 
 ![El Himno de la alegría con la batería](bateria/img/B1_himno.svg)
 

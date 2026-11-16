@@ -31,7 +31,7 @@ Una **cadencia** es la forma en que termina una frase, como los signos de puntua
   - Do: C – F – G7 – C · Sol: G – C – D7 – G · Re: D – G – A7 – D · La: A – D – E7 – A
 - ☐ **Las cuatro cadencias en Do:** G7 → C · F → C · C → G · G7 → Am. Después de cada una digo cómo se siente.
 - ☐ **Reemplazo:** toco C – F – G7 – C y luego Am – F – G7 – C. ¿Notas que funciona igual?
-- ☐ **Oído:** mi profesor toca una cadencia; yo digo si suena a punto, a coma o a sorpresa.
+- ☐ **Oído:** toco las cadencias de la clase (V–I, I–V y V–vi) y digo si suenan a punto, a coma o a sorpresa.
 
 ### 🎵 Interpreto · «Cuatro finales» (composición AMA)
 Arpegio p-i-m-a-m-i en 3/4, un compás por acorde. Cada línea termina con una cadencia distinta.

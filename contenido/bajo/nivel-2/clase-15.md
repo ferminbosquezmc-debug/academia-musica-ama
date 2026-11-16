@@ -45,7 +45,7 @@ La **octava** es la misma nota que la raíz, pero más aguda (clase 3). En el ba
 [[ritmos:b6,b68]]
 
 ### 🎵 Interpreto · Taller práctico #1
-Presento a mi profesor:
+Me grabo en video (o audio) y lo envío a mi docente con la entrega:
 1. Las 5 cuerdas al aire leídas en el pentagrama.
 2. Raíz y quinta en C – G – Am – F, en negras.
 3. Raíz – quinta – octava en 12/8 sobre C – F – G – C, con la batería.

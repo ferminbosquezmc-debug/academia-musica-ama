@@ -7,7 +7,7 @@
 
 ### 📖 Aprendo · Cantar con acompañamiento
 1. **La introducción:** el acompañamiento toca unos compases antes de que yo cante. La cuento y respiro **en el último tiempo** antes de entrar.
-2. **La primera nota:** la escucho en el acorde. Si dudo, le pido a mi profesor que me la dé.
+2. **La primera nota:** la escucho en el acorde. Si dudo, la busco en el afinador.
 3. **Escucho mientras canto:** el acompañamiento es mi «suelo». Si me adelanto o me atraso, vuelvo al pulso del instrumento.
 4. **Los interludios:** cuando el acompañamiento toca solo entre partes, cuento los compases y no me desconcentro.
 
@@ -16,13 +16,16 @@
 - Una tonalidad es cómoda cuando la nota **más aguda** y la **más grave** de la canción caben en mi extensión cómoda (clase 11).
 
 ### 🎤 Practico
-- ☐ **Introducciones:** mi profesor toca 2 o 4 compases y entro justo a tiempo, cinco veces.
+- ☐ **Introducciones:** pongo una pista de la plataforma, cuento 2 o 4 compases de introducción y entro justo a tiempo, cinco veces.
+
+[[pistas]]
+
 - ☐ **«Estrellita»** con acompañamiento, en DO y luego un tono más arriba (RE).
 - ☐ **«Mi voz»** con acompañamiento y una introducción de 2 compases.
 - ☐ **Mi tonalidad:** busco la nota más aguda de una canción y compruebo si está en mi extensión cómoda.
 
 ### 🎵 Interpreto · Evaluación del mes 4
-Presento a mi profesor:
+Me grabo en video (o audio) y lo envío a mi docente con la entrega:
 1. Pasos cromáticos afinados y una frase con buena dicción.
 2. La 3.ª, la 5.ª y la 8.ª desde la nota que me den.
 3. La escala de SOL mayor.

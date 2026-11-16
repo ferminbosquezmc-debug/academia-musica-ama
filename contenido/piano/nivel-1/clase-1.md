@@ -57,7 +57,7 @@ El color AMA te ayuda a reconocer la nota; **lo importante es el nombre**.
 
 [[grados]]
 
-- ☐ **Primer sonido:** mi profesor me muestra el **DO central**. Con el dedo 3 de la mano derecha toco DO-RE-MI-FA-SOL-LA-SI-DO, diciendo el nombre, la letra y el número de cada nota.
+- ☐ **Primer sonido:** busco el **DO central** con la lámina (la tecla blanca a la izquierda de las dos negras, en el centro del piano). Con el dedo 3 de la mano derecha toco DO-RE-MI-FA-SOL-LA-SI-DO, diciendo el nombre, la letra y el número de cada nota.
 - ☐ **¿Melodía, armonía o ritmo?** Hago el ejercicio «¿Qué suena?»: escucho cada fragmento y marco lo que oigo.
 
 [[que-suena]]

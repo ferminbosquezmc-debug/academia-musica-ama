@@ -21,12 +21,12 @@
 4. **Deja silencios.** Respirar también es música.
 5. **Repite una idea** que te guste y cámbiale una sola cosa.
 
-**Acompañamiento** (mano izquierda o el profesor), un acorde por compás: **Am – F – G – Am**, repetido.
+**Acompañamiento** (mano izquierda o la pista de la plataforma), un acorde por compás: **Am – F – G – Am**, repetido.
 
 ### 🎹 Practico
 - ☐ La pentatónica de La menor con la mano derecha, subiendo y bajando: LA (1) DO (2) RE (3) MI (4) SOL (5). ¡Cinco notas, cinco dedos!
-- ☐ **Eco:** mi profesor toca 2 compases con la pentatónica; yo los repito.
-- ☐ **Pregunta y respuesta:** el profesor pregunta (2 compases); yo respondo terminando en LA.
+- ☐ **Eco:** toco 2 compases con la pentatónica, los grabo y luego los repito igual escuchando la grabación.
+- ☐ **Pregunta y respuesta:** toco una pregunta de 2 compases y me respondo con otros 2 terminando en LA.
 - ☐ **Solo con la izquierda:** Am – F – G – Am en blancas, mientras la derecha improvisa con **solo 3 notas** (LA, DO, RE). Luego con las 5.
 - ☐ **Bonus:** las 5 teclas negras forman otra pentatónica. Improvisa solo en negras: ¡todo suena bien!
 

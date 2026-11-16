@@ -31,7 +31,7 @@ Cuando el guitarrista dice «estamos en FA♯ menor», ya sabes de qué habla. Y
 - ☐ Mi tempo limpio en semicorcheas: ______ BPM.
 
 ### 🥁 Taller práctico #1
-Preparo y toco para mi profesor, con el reproductor o con la pista:
+Preparo y me grabo en video, con el reproductor o con la pista, para enviarlo a mi docente con la entrega:
 1. **Ritmo básico #5** (8 compases) con el hi-hat abierto en el 4.
 2. **Disco / pop** (8 compases).
 3. **Escalera de figuras** (negras → corcheas → tresillos → semicorcheas).

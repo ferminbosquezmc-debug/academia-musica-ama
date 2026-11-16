@@ -36,7 +36,7 @@ Tocar en **otra tonalidad** conservando los **grados**:
 - ☐ **Transporto el acompañamiento:** I – IV – V7 – I en Do, Sol y Fa, uno tras otro, sin detenerme.
 
 ### 🎵 Interpreto · El «Himno» viajero
-Toco el «Himno de la alegría» con las dos manos (melodía + I y V7 vecinos) en **Do**, luego en **Sol** y luego en **Fa**. Al final, mi profesor elige una tonalidad sorpresa.
+Toco el «Himno de la alegría» con las dos manos (melodía + I y V7 vecinos) en **Do**, luego en **Sol** y luego en **Fa**. Al final, saco una tonalidad sorpresa de unos papelitos (Re, Mi, La).
 
 ### ✏️ Escribo
 1. Armoniza en Do: la nota importante es LA → acorde ______; es SI → acorde ______.

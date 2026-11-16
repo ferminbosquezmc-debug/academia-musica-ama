@@ -22,7 +22,7 @@ Cambiar de acorde sin detener el pulso es la habilidad más importante de este m
 4. **Cambia en el pulso 4:** en el último pulso del compás rasguea las cuerdas al aire mientras los dedos viajan. Así el «1» del compás siguiente llega a tiempo.
 
 ### 🎵 Interpreto · Acompaño el «Himno de la alegría»
-Un rasgueo hacia abajo en cada pulso (4 por compás). Mi profesor o un compañero canta o toca la melodía de la clase 15.
+Un rasgueo hacia abajo en cada pulso (4 por compás). Canto la melodía de la clase 15 mientras rasgueo, o la canta un compañero.
 
 ```
 Frase 1   | G    | D    | G    | D    |
@@ -38,7 +38,7 @@ En el último compás: D en los pulsos 1 y 2, G en los pulsos 3 y 4.
 - ☐ **Acompaño el Himno** con el metrónomo a 60 BPM.
 
 ### ✅ Evaluación del mes 4
-Tu profesor te pedirá:
+En tu video de entrega muestra:
 
 | Prueba | Lo logro cuando… |
 |---|---|

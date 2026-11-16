@@ -27,7 +27,7 @@ Es la escala que más vas a usar para leer: empieza en el DO de la 5.ª cuerda y
 
 ### 🎸 Practico
 - ☐ **Escala con grados:** toco DO mayor subiendo y bajando, y digo el grado de cada nota: «uno, dos, tres…».
-- ☐ **¿Qué grado es?** Mi profesor dice un grado (por ejemplo «el V de Do»); yo lo toco y digo la nota (SOL).
+- ☐ **¿Qué grado es?** Escribo los números del I al VII en papelitos, saco uno (por ejemplo «el V de Do») y lo toco diciendo la nota (SOL).
 - ☐ **Tónica y dominante:** toco SOL (V) y después DO (I). Escucho cómo el V «pide» volver al I.
 - ☐ **Comparo:** toco la escala de SOL de la clase 15 y digo sus grados.
 

@@ -33,7 +33,7 @@ Si construyo una tríada sobre cada nota de la escala de DO, sin alteraciones, o
 - ☐ **I – vi – IV – V en Sol:** G – Em – C – D (la progresión del mes 4, ahora con sus grados).
 
 ### ✅ Evaluación del mes 5
-Tu profesor te pedirá:
+En tu video de entrega muestra:
 
 | Prueba | Lo logro cuando… |
 |---|---|

@@ -26,7 +26,10 @@ Los **monitores** son los altavoces que apuntan hacia los músicos para que se e
 - Los **in-ear** son audífonos de monitoreo: protegen el oído, pero hay que ajustarlos bien.
 
 ### 🎤 Practico
-- ☐ Mi profesor toca C y luego Am; canto la misma frase y siento el cambio de color.
+- ☐ Con la pista, suena C y luego Am; canto la misma frase y siento el cambio de color.
+
+[[pistas]]
+
 - ☐ **Distancia:** canto una frase a 3 cm, a 10 cm y a 30 cm del micrófono y escucho la diferencia (o la simulo con un objeto).
 - ☐ **Fuerte y suave:** al subir el volumen alejo el micrófono; al bajar, lo acerco.
 - ☐ **Señas al técnico:** practico la seña de «más voz en mi monitor» (señalo mi oído y luego hacia arriba).

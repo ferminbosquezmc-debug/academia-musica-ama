@@ -72,7 +72,7 @@ La mano derecha toca como si **caminara** sobre la cuerda: un paso con el índic
 > En el bajo la duración **sí importa**: una blanca se deja sonar 2 tiempos completos. Por eso contamos en voz alta.
 
 ### 🎸 Practico
-- ☐ **¿Dónde está?** Señalo la parte del bajo que dice mi profesor.
+- ☐ **¿Dónde está?** Miro la lámina de las partes, tapo los nombres y señalo en mi bajo cada parte diciendo su nombre.
 - ☐ Me siento con el bajo en la pierna derecha y el mástil un poco hacia arriba.
 - ☐ Me pongo la correa y repito la misma posición de pie.
 - ☐ **Pulsación alterna** en la cuerda MI al aire: 8 veces **i – m – i – m**, a 60 BPM, una nota por pulso.

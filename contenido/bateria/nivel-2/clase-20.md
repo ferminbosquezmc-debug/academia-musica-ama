@@ -23,12 +23,12 @@ Cada tambor tiene un **parche** sostenido por **tornillos** (tensores). Para afi
 ![Afinación en estrella y toms escalonados](bateria/img/B2_afinacion.svg)
 
 - Los **toms** se afinan **escalonados**: el tom 1 más agudo, el tom 2 en medio y el tom de piso más grave.
-- Afina siempre con la ayuda de tu profesor: un parche demasiado tenso se puede romper.
+- Afina con calma y poco a poco (con un adulto si eres menor): un parche demasiado tenso se puede romper.
 
 ### 🥁 Practico
 - ☐ **Escucho** los tres toms de la batería de la academia y digo cuál es el más agudo.
-- ☐ **Afino** un tom con mi profesor siguiendo la estrella. Golpeo cerca de cada tornillo y comparo.
-- ☐ **Lectura de ritmos:** leo y toco 8 compases que mezclan negras, corcheas, tresillos y semicorcheas (los escribe mi profesor).
+- ☐ **Afino** un tom siguiendo la estrella. Golpeo cerca de cada tornillo y comparo.
+- ☐ **Lectura de ritmos:** escribo y toco 8 compases que mezclen negras, corcheas, tresillos y semicorcheas.
 - ☐ **Fill por los toms** afinados: escucho la «escalera» de agudo a grave.
 - ☐ **Repaso** los ritmos del mes con el reproductor:
 

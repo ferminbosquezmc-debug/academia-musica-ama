@@ -43,7 +43,7 @@ Si a la tríada mayor le agrego la **séptima menor (♭7)**, tengo un acorde de
 [[ritmos:shuffle,b2]]
 
 ### 🎵 Interpreto · Talleres prácticos #5 y #6
-**Taller #5:** construyo y toco dos escalas mayores que elige mi profesor.
+**Taller #5:** construyo y toco dos escalas mayores que saco al azar de unos papelitos.
 **Taller #6:** toco el blues de 12 compases completo con arpegios de séptima y la batería.
 
 ### 🏠 Mi tarea

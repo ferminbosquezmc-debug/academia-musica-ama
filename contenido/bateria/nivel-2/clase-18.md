@@ -31,7 +31,7 @@ El secreto: el pie o el redoblante **mantienen el pulso** y la mano derecha **es
 - ☐ **Ejercicio [[nn:A]]**, 8 compases a 60 BPM. Si me pierdo, toco primero solo el bombo y luego agrego el hi-hat.
 - ☐ **Ejercicio [[nn:B]]**, 8 compases a 60 BPM.
 - ☐ **Del rock al desplazamiento:** 4 compases del ritmo #2 y 4 del ejercicio [[nn:B]], sin parar.
-- ☐ **Leo signos:** mi profesor escribe 4 compases con barras de repetición y un símil; los toco completos.
+- ☐ **Leo signos:** escribo yo 4 compases con barras de repetición y un símil; los toco completos.
 
 ### ✏️ Escribe
 - Escribe el otro nombre: DO♯ = ______ · SI♭ = ______

@@ -51,7 +51,7 @@ La **balada** es lenta y tranquila. Es más sencilla que el rock porque el hi-ha
 - ☐ Mi tempo limpio en el redoble abierto: ______ BPM
 
 ### 🎵 Interpreto · Taller práctico #3
-Presento a mi profesor: los dos rudimentos (golpes alternos y redoble abierto) con metrónomo, el Ritmo básico #3 y la balada acompañando «Sublime gracia» o una canción lenta.
+Me grabo en video (o audio) y lo envío a mi docente con la entrega: los dos rudimentos (golpes alternos y redoble abierto) con metrónomo, el Ritmo básico #3 y la balada acompañando «Sublime gracia» o una canción lenta.
 
 ### ✏️ Escribe
 - Un tono tiene ____ semitonos.

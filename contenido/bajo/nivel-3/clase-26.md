@@ -37,7 +37,10 @@ Un **intervalo** es la **distancia entre dos notas**. Se nombra con un **número
 - ☐ Desde DO (cuerda LA, traste 3) toco los 7 intervalos, siempre volviendo a la raíz: DO–RE, DO–MI, DO–FA…
 - ☐ **Lo mismo desde SOL** (cuerda MI, traste 3): misma forma, otras notas.
 - ☐ **Intervalos armónicos:** toco la raíz y el intervalo al mismo tiempo (raíz con el pulgar, intervalo con el índice) y escucho.
-- ☐ **De oído:** mi profesor toca dos notas; digo si es 3.ª, 5.ª u 8.ª.
+- ☐ **De oído:** en el Laboratorio de oído escucho dos notas y digo si es 3.ª, 5.ª u 8.ª.
+
+[[oido:int]]
+
 - ☐ **Juego «Oído musical»** de la sección Práctica, 5 minutos.
 
 ### 🏠 Mi tarea

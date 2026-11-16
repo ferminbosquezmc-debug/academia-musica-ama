@@ -33,7 +33,10 @@ El **dictado** es escuchar una melodía corta y **repetirla** o **escribirla**:
 - ☐ Canto desde DO todos los intervalos de la tabla, volviendo siempre a DO.
 - ☐ **3.ª mayor y menor:** DO – MI – DO y DO – MI♭ – DO. ¿Cuál es cuál?
 - ☐ **Desde otras notas:** 4.ª y 5.ª desde RE, desde FA y desde LA.
-- ☐ **Dictado:** mi profesor toca 3 notas y las repito; luego 4; luego 5.
+- ☐ **Dictado:** en el Laboratorio de oído escucho notas y las repito con la voz; empiezo con 3, luego 4 y luego 5.
+
+[[oido:alto]]
+
 - ☐ **Juego «Oído musical»** y el entrenamiento de intervalos de VibraVoice, 10 minutos.
 
 [[vibravoice]]

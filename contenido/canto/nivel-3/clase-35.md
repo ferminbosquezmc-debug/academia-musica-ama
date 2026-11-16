@@ -27,7 +27,7 @@
 - ☐ **Rutina completa:** calentamiento, recital de prueba y enfriamiento.
 - ☐ **Memoria:** canto mis canciones del recital sin la letra, parte por parte.
 - ☐ **Ensayo general:** todo el programa de corrido, con micrófono y acompañamiento, como si fuera el día.
-- ☐ **Si me equivoco, sigo:** mi profesor me distrae a propósito y yo no paro.
+- ☐ **Si me equivoco, sigo:** toco con la pista y, aunque me equivoque, no paro hasta el final.
 - ☐ **Prueba de sonido simulada:** practico pedir cambios en mi monitor.
 
 ### 🏠 Mi tarea

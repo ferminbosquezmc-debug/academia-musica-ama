@@ -1,7 +1,7 @@
 # Batería · Nivel 3 · Clase 32: Mi primer solo · Evaluación del mes 8
 
 - **Mes:** 8 · ESTILOS Y CREATIVIDAD
-- **Objetivo:** Entender cómo improvisan los demás músicos con la escala pentatónica, crear un solo de 8 compases con idea, repetición, subida y final, tocar «cuatro y cuatro» con mi profesor y repasar el mes 8.
+- **Objetivo:** Entender cómo improvisan los demás músicos con la escala pentatónica, crear un solo de 8 compases con idea, repetición, subida y final, tocar «cuatro y cuatro» con la pista y repasar el mes 8.
 
 ---
 
@@ -19,13 +19,13 @@
 4. **Compases 7–8 · Final:** redoble de 5 golpes y crash con bombo en el 1 del compás siguiente.
 
 ### 📖 «Cuatro y cuatro»
-Mi profesor toca **4 compases de solo** y yo **respondo** con 4. Mientras tanto, la pista o el piano mantienen el pulso. Lo más importante: **no perder la cuenta** y volver al 1 con fuerza.
+Toco **4 compases de ritmo** y luego **4 de solo**, una y otra vez. Mientras tanto, la pista o el piano mantienen el pulso. Lo más importante: **no perder la cuenta** y volver al 1 con fuerza.
 
 ### 🥁 Practico
 - ☐ **Mi idea:** invento un ritmo de 2 compases y lo escribo.
 - ☐ **Solo de 8 compases** siguiendo el plan, a 80 BPM, con el metrónomo.
-- ☐ **Cuatro y cuatro** con mi profesor, tres vueltas.
-- ☐ **Pregunta y respuesta:** mi profesor toca 1 compás; yo respondo con 1 compás parecido pero distinto.
+- ☐ **Cuatro y cuatro** con la pista: 4 de ritmo y 4 de solo, tres vueltas.
+- ☐ **Pregunta y respuesta:** toco 1 compás y me respondo con 1 compás parecido pero distinto.
 - ☐ **Batería digital:** pruebo ideas nuevas tocando en la pantalla.
 
 [[bateria-digital]]
@@ -58,7 +58,7 @@ Mi profesor toca **4 compases de solo** y yo **respondo** con 4. Mientras tanto,
    - Tocar 4 ritmos distintos
    - ✔ Alternar 4 compases de solo con otro músico
    - Tocar en compás de 4/4
-   > El profesor toca 4 compases y yo respondo con 4.
+   > Toco 4 compases de ritmo y respondo con 4 de solo.
 3. En el plan del solo, ¿qué pasa en los compases 5 y 6?
    - Silencio
    - ✔ Sube la energía, por los toms

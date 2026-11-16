@@ -38,13 +38,13 @@ La melodía es de Beethoven (dominio público). La letra es **original de la aca
 - ☐ Frase 1 con solfeo, cuatro veces.
 - ☐ Frase 2 con solfeo, cuatro veces.
 - ☐ El himno completo con «la» y con el afinador de VibraVoice o del Laboratorio.
-- ☐ El himno completo con la letra AMA, con mi profesor en el piano.
-- ☐ **Unísono:** mi profesor o un compañero canta conmigo; nuestras voces se «funden».
+- ☐ El himno completo con la letra AMA, con la pista de la plataforma.
+- ☐ **Unísono:** un compañero o familiar canta conmigo; nuestras voces se «funden». Si estoy solo, canto junto con la nota del afinador.
 
 [[vibravoice]]
 
 ### 🎵 Interpreto · Evaluación del mes 2
-Presento a mi profesor:
+Me grabo en video (o audio) y lo envío a mi docente con la entrega:
 1. Redondas, blancas y negras con el metrónomo, con aire parejo.
 2. Una melodía corta con silencios y las respiraciones marcadas.
 3. DO-RE-MI-FA-SOL en corcheas con las 5 vocales.

@@ -43,7 +43,7 @@ Bajando, los mismos dedos en orden inverso.
 
 ### 🎹 Practico
 - ☐ **Cazador de DO♯:** toco todos los DO♯ del teclado y digo sus dos nombres.
-- ☐ **¿Cómo se llama?** Mi profesor señala una tecla negra; digo su nombre con ♯ y con ♭.
+- ☐ **¿Cómo se llama?** Toco una tecla negra al azar y digo su nombre con ♯ y con ♭; compruebo en la lámina.
 - ☐ **Escala cromática** con la mano derecha, de DO4 a DO5 y de vuelta, a 60 BPM: una nota por pulso.
 - ☐ **Posición de RE:** dedo 1 en RE, 2 en MI, **3 en FA♯ (tecla negra)**, 4 en SOL y 5 en LA. Subo y bajo 5 veces.
 

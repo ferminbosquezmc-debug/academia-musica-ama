@@ -17,7 +17,7 @@ Las **articulaciones** son signos que dicen **cómo** se toca cada nota:
 | **𝄐** (arco con un punto) | calderón | se sostiene más de lo escrito, a gusto del intérprete |
 
 ### 📖 Fernando Sor, un guitarrista histórico
-**Fernando Sor** (1778–1839) fue un guitarrista y compositor español. Escribió muchos **estudios**: piezas cortas para practicar una técnica mientras se hace música. En sus estudios suele haber tres cosas a la vez: un **bajo** con el pulgar, un **acompañamiento** en las cuerdas del medio y una **melodía** arriba. Sus obras son de **dominio público**: tu profesor puede traerte una edición original para comparar.
+**Fernando Sor** (1778–1839) fue un guitarrista y compositor español. Escribió muchos **estudios**: piezas cortas para practicar una técnica mientras se hace música. En sus estudios suele haber tres cosas a la vez: un **bajo** con el pulgar, un **acompañamiento** en las cuerdas del medio y una **melodía** arriba. Sus obras son de **dominio público**: puedes buscar una edición original en internet para comparar.
 
 Hoy tocas un **estudio original de la academia, escrito al estilo de Sor**.
 

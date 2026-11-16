@@ -35,7 +35,7 @@ En el Nivel 3 vas a unir tu voz de abajo a arriba, cantar a tres voces, conocer 
 
 - ☐ **Escala de LA menor** con los nombres, subiendo y bajando.
 - ☐ **Relativas:** DO mayor y luego LA menor; escucho que tienen las mismas notas.
-- ☐ **Mismo texto, dos colores:** canto «Estrellita» en DO mayor y luego una frase en LA menor que invente mi profesor.
+- ☐ **Mismo texto, dos colores:** canto «Estrellita» en DO mayor y luego una frase en LA menor que invento yo.
 - ☐ **«Canción de la luna»** con solfeo, con «lu» y con la letra AMA, en legato.
 
 [[vibravoice]]

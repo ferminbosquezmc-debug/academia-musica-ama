@@ -22,7 +22,7 @@ Antes de cantar, leo la letra **como un poema**:
 ### 📖 Mi interpretación
 - **Interpretar** es cantar lo escrito **con mi propia intención**: dinámicas, colores, pausas y mirada.
 - No cambio la melodía sin razón: la interpretación está en **cómo** la canto.
-- Mi profesor me ayuda a que la intención se **escuche** y no solo se piense.
+- Me grabo y escucho si la intención se **escucha** y no solo se piensa.
 
 ### 🎤 Practico
 - ☐ **Leo una partitura nueva** con los 4 pasos y la canto sin parar.

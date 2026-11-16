@@ -31,7 +31,10 @@ Si formo una tríada sobre cada nota de la escala, usando solo sus notas, aparec
 ### 🎹 Practico
 - ☐ **La escalera de acordes:** con la mano derecha (1-3-5) subo los siete acordes desde DO, diciendo «mayor», «menor» o «disminuido».
 - ☐ **Mayor ↔ menor:** C → Cm, D → Dm, E → Em, moviendo solo el dedo 3. (D mayor = RE-**FA♯**-LA; E mayor = MI-**SOL♯**-SI).
-- ☐ **¿Alegre o triste?** Mi profesor toca una tríada; digo si es mayor o menor.
+- ☐ **¿Alegre o triste?** En el Laboratorio de oído escucho una tríada y digo si es mayor o menor.
+
+[[oido:acor]]
+
 
 ### 🖤 Lectura sorpresa (sin color)
 Leo una melodía nueva **sin color** y con las dos claves: primero digo el nombre de las notas, luego el ritmo con sílabas, y al final la toco despacio.

@@ -70,7 +70,7 @@ Cuantas más **banderas** (o más rayitas en el silencio), más corta es la figu
 1 redonda = 2 blancas = 4 negras = 8 corcheas = 16 semicorcheas.
 
 ### 🎹 Practico
-- ☐ **¿Dónde está?** Señalo la parte del piano que dice mi profesor.
+- ☐ **¿Dónde está?** Miro la lámina de las partes, tapo los nombres y señalo en mi piano cada parte diciendo su nombre.
 - ☐ Me siento con la postura de 7 pasos frente a un espejo.
 - ☐ **Dedos que saludan:** con las manos en el aire, muevo el dedo que me dicen («mano derecha 3», «mano izquierda 5»…).
 - ☐ **Golpecitos en la tapa:** con la tapa cerrada, toco 1-2-3-4-5 y 5-4-3-2-1 con cada mano, con la mano redonda.

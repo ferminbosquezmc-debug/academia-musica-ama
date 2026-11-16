@@ -13,7 +13,7 @@
 
 ![Cómo se lee un cifrado](piano/img/P1_leer_cifrado.svg)
 
-Las canciones son melodías tradicionales: mi profesor o un compañero canta o toca la melodía, y yo acompaño. Elijo **dos**.
+Las canciones son melodías tradicionales: canto la melodía mientras acompaño, o la canta un compañero o un familiar. Elijo **dos**.
 
 ### 🎵 Canción 1 · «Estrellita» (canción popular francesa)
 **Compás:** 4/4 · **Patrón:** 1 o 2

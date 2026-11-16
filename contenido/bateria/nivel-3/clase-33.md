@@ -41,7 +41,7 @@ Un **chart** es la hoja de la canción para la batería: no escribe cada golpe, 
 
 ### 🏠 Mi tarea
 - ☐ 10 minutos al día: leo y toco el chart de la lámina.
-- ☐ Le pido a mi profesor otro chart sencillo y lo recorro con el dedo.
+- ☐ Busco otro chart sencillo de una canción que me guste y lo recorro con el dedo.
 
 ### ✅ ¿Lo logré?
 - ☐ Leo el hi-hat, el redoblante y el bombo en el pentagrama. ☐ Entiendo repeticiones y casillas. ☐ Sigo un D.C. al Fine. ☐ Toco el chart completo sin perderme.

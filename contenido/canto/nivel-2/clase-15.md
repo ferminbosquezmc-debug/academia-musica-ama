@@ -24,7 +24,7 @@ La **armadura** son los ♯ o ♭ que van al inicio del pentagrama, después de 
 - ☐ Escribo la escala de SOL mayor aplicando la fórmula.
 - ☐ **Canto SOL mayor** con los nombres, subiendo y bajando, con el piano. Cuido el FA♯: está cerca del SOL.
 - ☐ **Con «la»** y luego con las 5 vocales.
-- ☐ **Leo con armadura:** mi profesor escribe una melodía en SOL mayor y la canto.
+- ☐ **Leo con armadura:** escribo una melodía corta en SOL mayor y la canto.
 - ☐ **Con el afinador:** reviso FA♯ y SOL.
 
 [[vibravoice]]

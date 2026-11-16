@@ -37,7 +37,7 @@ Elijo **tres** estilos y preparo 8 compases de cada uno, con un relleno al final
 - ☐ **Mis tres estilos** con el reproductor, 8 compases cada uno con relleno.
 - ☐ **Groove de slap** a tempo de concierto.
 - ☐ **Ensayo general:** toco todo el programa de corrido, como si fuera el concierto.
-- ☐ **Si me equivoco, sigo:** mi profesor me distrae a propósito y yo no paro.
+- ☐ **Si me equivoco, sigo:** toco con la pista y, aunque me equivoque, no paro hasta el final.
 
 [[ritmos:balada,b2,cumbia,reggae,funk]]
 

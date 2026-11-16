@@ -48,11 +48,14 @@
 - ☐ Leo cada canción con los **nombres de las notas**, lento.
 - ☐ Canto con **«la»** cuidando la afinación; uso el afinador si dudo de una nota.
 - ☐ Canto con la **letra**, respirando al final de cada línea.
-- ☐ **Con acompañamiento:** mi profesor, un compañero o la pista toca los acordes y yo canto.
+- ☐ **Con acompañamiento:** la pista de la plataforma toca los acordes y yo canto.
+
+[[pistas]]
+
 - ☐ Elijo **dos** canciones para la evaluación.
 
 ### 🎵 Interpreto · Evaluación final del Nivel 1
-Presento a mi profesor:
+Me grabo en video (o audio) y lo envío a mi docente con la entrega:
 1. Mi calentamiento de 5 minutos y la respiración baja.
 2. Lectura y canto de notas en clave de sol (DO a SOL).
 3. Arpegios de DO mayor y LA menor.

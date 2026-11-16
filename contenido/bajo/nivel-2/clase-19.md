@@ -38,10 +38,13 @@ El acorde menor tiene la **tercera menor (♭3)**: un semitono **más grave** qu
 - ☐ **Arpegio de Dm** con la misma forma desde la cuerda LA.
 - ☐ **Mayor y menor:** arpegio de C y luego de Cm (la tercera baja un traste). ¿Qué cambia en el sonido?
 - ☐ **Progresión Am – Dm – G – C:** un arpegio por compás.
-- ☐ **¿Mayor o menor?** Mi profesor toca arpegios y digo cuál es cuál.
+- ☐ **¿Mayor o menor?** En el Laboratorio de oído escucho acordes y digo cuál es mayor y cuál menor.
+
+[[oido:acor]]
+
 
 ### 🎵 Interpreto · Taller práctico #3
-Presento a mi profesor:
+Me grabo en video (o audio) y lo envío a mi docente con la entrega:
 1. Una lectura con figuras variadas del resumen.
 2. Los arpegios de Am y Dm.
 3. La progresión Am – Dm – G – C con arpegios.

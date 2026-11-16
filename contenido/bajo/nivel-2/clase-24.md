@@ -47,12 +47,12 @@
 - ☐ Elijo la herramienta para cada parte y la escribo encima del cifrado.
 - ☐ Toco cada canción lenta y luego al tempo de la pista.
 - ☐ **Con la batería:** las tres canciones con el reproductor (balada en 12/8, ritmo #2 y shuffle).
-- ☐ **Con mi profesor o la banda:** dos canciones completas sin parar.
+- ☐ **Con la pista o la banda:** dos canciones completas sin parar.
 
 [[ritmos:b6,b2,shuffle]]
 
 ### 🎵 Interpreto · Taller final y evaluación del Nivel 2
-Presento a mi profesor:
+Me grabo en video (o audio) y lo envío a mi docente con la entrega:
 1. Lectura en clave de fa con figuras del Nivel 2 (tresillos, puntillos, semicorcheas).
 2. La escala mayor con los patrones 1 y 4.
 3. Arpegios mayores, menores, de tríada y de séptima.

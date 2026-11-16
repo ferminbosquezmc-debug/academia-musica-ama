@@ -24,7 +24,7 @@ Leer a **primera vista** es cantar una melodía que nunca había visto. Mis 4 pa
 - ☐ **Saltos:** 1 – 3 – 5 – 8 – 5 – 3 – 1.
 - ☐ **Los mismos números en SOL:** el 1 ahora es SOL.
 - ☐ **Primera vista:** leo la lámina en blanco y negro con los 4 pasos.
-- ☐ **Lectura sorpresa:** mi profesor me da 2 compases nuevos cada semana.
+- ☐ **Lectura sorpresa:** cada semana escribo 2 compases nuevos, los guardo un día y al siguiente los leo como si fueran de otra persona.
 
 ### 🏠 Mi tarea
 - ☐ Calentamiento y una lectura nueva cada día (2 a 4 compases).

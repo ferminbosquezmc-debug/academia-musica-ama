@@ -27,7 +27,7 @@ El baterista no toca escalas, pero sí las **escucha** y las **nombra** con la b
 - ☐ Mi tempo limpio en fusas: ______ BPM.
 
 ### 🥁 Taller práctico #2
-Preparo y presento a mi profesor:
+Preparo y me grabo en video para enviarlo a mi docente con la entrega:
 1. **Ritmo básico #7** y los **cuatro patrones de bombo** (clase 17).
 2. **Shuffle** de 8 compases (clase 21).
 3. Fórmula **«3 + 1»** con un fill de 2 tiempos (clase 19).

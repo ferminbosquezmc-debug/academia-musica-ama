@@ -30,12 +30,15 @@ Cada acorde tiene una **raíz**: la nota que le da su nombre. La raíz de C es D
 > **Truco:** FA y SOL (cuerda MI) y DO (cuerda LA) forman una «cajita» en los trastes 1 a 3. Casi no muevo la mano.
 
 ### 🎸 Practico
-- ☐ **¿Cuál es la raíz?** Mi profesor dice un acorde («Am», «G», «F») y yo toco su raíz.
+- ☐ **¿Cuál es la raíz?** Escribo acordes en papelitos («Am», «G», «F»), saco uno y toco su raíz.
 - ☐ **C – G – Am – F** en blancas (una raíz cada 2 tiempos) a 60 BPM.
 - ☐ La misma progresión en **negras**: 4 veces cada raíz.
 - ☐ **C – F – G – C** en negras, cambiando de cuerda sin parar.
 - ☐ **Con la batería:** raíces en negras junto al reproductor, con el bombo.
-- ☐ **Mayor y menor:** mi profesor toca C y Cm en el piano o la guitarra; yo toco DO en los dos.
+- ☐ **Mayor y menor:** en el Laboratorio de oído escucho acordes mayores y menores; mientras suenan, toco DO y siento cómo cambia el color.
+
+[[oido:acor]]
+
 
 [[ritmos:b1,b2]]
 

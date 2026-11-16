@@ -59,7 +59,7 @@ La escala tiene **7 grados**: los **números del 1 al 7** que indican el **lugar
 2. **No grito** ni hablo muy fuerte por mucho tiempo.
 3. **Caliento** antes de cantar (clase 3).
 4. **Descanso** la voz si estoy cansado o resfriado.
-5. Si me **duele** o tengo ronquera que no se va, **paro** y lo digo a mi profesor y a mi familia, para consultar a un especialista.
+5. Si me **duele** o tengo ronquera que no se va, **paro** y se lo escribo a mi docente y lo digo a mi familia, para consultar a un especialista.
 
 ### 🎤 Practico
 - ☐ Canto DO-RE-MI-FA-SOL-LA-SI-DO, subiendo y bajando, suave y sin forzar.
@@ -104,7 +104,7 @@ La escala tiene **7 grados**: los **números del 1 al 7** que indican el **lugar
 3. Si me duele la garganta al cantar, ¿qué hago?
    - Canto más fuerte
    - Sigo hasta terminar
-   - ✔ Paro y lo digo a mi profesor y a mi familia
+   - ✔ Paro y se lo escribo a mi docente y lo digo a mi familia
    > La voz se cuida: con dolor o ronquera que no se va, se consulta a un especialista.
 4. ¿Qué relación hay entre el grado 1 y la octava (8)?
    - Son notas diferentes

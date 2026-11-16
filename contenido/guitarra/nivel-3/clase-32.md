@@ -31,7 +31,7 @@ El último compás (E7) es una **vuelta**: prepara el regreso al principio.
 
 ### 🎸 Practico
 - ☐ **Caja 1** subiendo y bajando, a 60 BPM, una nota por pulso. Luego en corcheas.
-- ☐ **Pregunta y respuesta:** mi profesor toca una frase corta de 4 notas en la caja; yo la repito y después invento una respuesta.
+- ☐ **Pregunta y respuesta:** toco una frase corta de 4 notas en la caja, la repito y después invento una respuesta.
 - ☐ **Improviso sobre Am – F – G – Am** (con una pista o un compañero): uso solo 3 notas al principio (LA, DO, RE); después agrego MI y SOL.
 - ☐ **Blues en La** con shuffle (clase 30): primero acompaño; después un compañero acompaña y yo improviso con la caja 1.
 - ☐ **Adorno:** uso un martillo (5-H-7) y un tirón (8-P-5) de la clase 27 dentro de mi improvisación.
@@ -42,7 +42,7 @@ El último compás (E7) es una **vuelta**: prepara el regreso al principio.
 - **Repite y cambia:** toca una idea, repítela y cambia solo el final.
 
 ### ✅ Evaluación del mes 8
-Tu profesor te pedirá:
+En tu video de entrega muestra:
 
 | Prueba | Lo logro cuando… |
 |---|---|
