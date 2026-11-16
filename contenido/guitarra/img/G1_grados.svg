@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="900" viewBox="0 0 2400 900" role="img" aria-label="Los 8 grados de la escala de DO en el pentagrama">
-<title>Los 8 grados de la escala de DO en el pentagrama</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="900" viewBox="0 0 2400 900" role="img" aria-label="Los 7 grados de la escala de DO y su octava en el pentagrama">
+<title>Los 7 grados de la escala de DO y su octava en el pentagrama</title>
 <rect width="2400" height="900" fill="#FFFFFF"/>
-<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >Los 8 grados de la escala de DO</text>
-<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >El grado 1 es DO grave; el grado 8 es DO agudo: la misma nota, una octava más arriba</text>
+<text x="40" y="72" font-family="Poppins, Montserrat, 'Trebuchet MS', Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A" text-anchor="start" >Los 7 grados de la escala de DO y su octava</text>
+<text x="40" y="124" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500" fill="#5F6368" text-anchor="start" >El grado 1 es DO grave; la octava (8) es DO agudo: la misma nota, una octava más arriba</text>
 <line x1="160" y1="380" x2="2280" y2="380" stroke="#1A1A1A" stroke-width="3" />
 <line x1="160" y1="414" x2="2280" y2="414" stroke="#1A1A1A" stroke-width="3" />
 <line x1="160" y1="448" x2="2280" y2="448" stroke="#1A1A1A" stroke-width="3" />

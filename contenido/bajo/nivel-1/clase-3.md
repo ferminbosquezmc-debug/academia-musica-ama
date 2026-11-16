@@ -18,7 +18,7 @@
 **Atención:** «alto» en música significa **agudo**, no fuerte.
 
 ### 📖 Las octavas
-Una **octava** es la distancia entre una nota y la siguiente con el **mismo nombre** (DO – DO). Suenan «iguales», pero una es más aguda. Por eso el grado 8 es otra vez DO.
+Una **octava** es la distancia entre una nota y la siguiente con el **mismo nombre** (DO – DO). Suenan «iguales», pero una es más aguda. Por eso la octava (8) es otra vez DO.
 
 El bajo tiene notas **muy graves**: la cuerda SI al aire está **más de tres octavas** por debajo del DO central del piano. Por eso se siente en el pecho.
 

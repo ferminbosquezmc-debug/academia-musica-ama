@@ -20,7 +20,7 @@
 ![Cualidades del sonido](guitarra/img/N1_cualidades_sonido.svg)
 
 ### 📖 Las octavas
-Una **octava** es la distancia entre una nota y la siguiente con el **mismo nombre** (DO – DO). Suenan «iguales», pero una es más aguda. Por eso, en la tabla de la clase 1, el grado 8 es otra vez DO.
+Una **octava** es la distancia entre una nota y la siguiente con el **mismo nombre** (DO – DO). Suenan «iguales», pero una es más aguda. Por eso, en la tabla de la clase 1, la octava (8) es otra vez DO.
 
 ### 👀 Observo · Las seis cuerdas al aire
 - La **1.ª cuerda** es la más delgada (aguda). La **6.ª** es la más gruesa (grave).

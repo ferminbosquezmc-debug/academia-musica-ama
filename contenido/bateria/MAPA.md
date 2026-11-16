@@ -31,7 +31,7 @@ Método Integral AMA de Batería. Tres niveles de 3 meses, 4 clases por mes, 12 
 
 | Mes | Clase | Título | Teoría | En la batería (paso nuevo) | Del libro |
 |---|---|---|---|---|---|
-| 1 | 1 | ¡Bienvenidos a la música! | Notas, cifrado, 8 grados, elementos de la música | Elementos de la batería: los tambores y los platillos · los tres sonidos básicos | Práct. U1 Elementos de la batería · Teo. U1 Notas, cifrado, elementos |
+| 1 | 1 | ¡Bienvenidos a la música! | Notas, cifrado, 7 grados y la octava, elementos de la música | Elementos de la batería: los tambores y los platillos · los tres sonidos básicos | Práct. U1 Elementos de la batería · Teo. U1 Notas, cifrado, elementos |
 | 1 | 2 | Conozco mi batería | Pulso y tiempo · duración y pronunciación de las figuras | Las 10 partes · postura · **técnica de las baquetas I: el agarre** · D, I, PD, PI | Práct. U1 Técnica de las baquetas · Teo. U1 Pulso, figuras, pronunciación |
 | 1 | 3 | El sonido de la batería | Cualidades del sonido · la octava | **Técnica de las baquetas II:** golpe completo con rebote, tres alturas · elementos para practicar | Práct. U1 Técnica II, Elementos para practicar · Teo. U2 La octava |
 | 1 | 4 | La escritura de la batería · **Taller #1** · Evaluación mes 1 | Pentagrama y claves · figuras y silencios en el pentagrama | Nomenclatura de la batería en el pentagrama · **técnicas para el bombo** · lectura en negras | Práct. U2 Escritura, Técnicas para el bombo, Taller #1 · Teo. U2 y U4 |

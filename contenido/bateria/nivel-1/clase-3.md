@@ -20,7 +20,7 @@
 ![Los toms de agudo a grave](bateria/img/B1_toms_altura.svg)
 
 ### 📖 Las octavas
-Una **octava** es la distancia entre una nota y la siguiente con el **mismo nombre** (DO – DO). Suenan «iguales», pero una es más aguda. Por eso, en la tabla de la clase 1, el grado 8 es otra vez DO.
+Una **octava** es la distancia entre una nota y la siguiente con el **mismo nombre** (DO – DO). Suenan «iguales», pero una es más aguda. Por eso, en la tabla de la clase 1, la octava (8) es otra vez DO.
 
 En la batería, los tambores no tocan notas como el piano, pero sí tienen **altura**: se afinan **escalonados**, del más agudo (tom 1) al más grave (tom de piso).
 

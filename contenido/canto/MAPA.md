@@ -17,7 +17,7 @@ Método Integral AMA de Canto. Tres niveles de 3 meses, 4 clases por mes, 12 cla
 ## Nivel 1 · Iniciación (clases 1–12)
 | Mes | Clase | Título | Teoría común | En el canto (paso nuevo) |
 |---|---|---|---|---|
-| 1 | 1 | ¡Bienvenidos a la música! | 7 notas, cifrado, 8 grados, elementos | Mi voz es un instrumento · cómo se produce la voz · primeras reglas de cuidado |
+| 1 | 1 | ¡Bienvenidos a la música! | 7 notas, cifrado, 7 grados y la octava, elementos | Mi voz es un instrumento · cómo se produce la voz · primeras reglas de cuidado |
 | 1 | 2 | Conozco mi voz | Pulso · figuras y sílabas | Partes del aparato vocal: respiración, vibración, resonancia y articulación · postura en 7 pasos |
 | 1 | 3 | El sonido de mi voz | Cualidades del sonido · octavas | Respiración baja (costo-diafragmática) · calentamiento de 5 minutos · grave y agudo en mi voz |
 | 1 | 4 | El pentagrama · Evaluación mes 1 | Pentagrama y clave de sol | Leo y canto DO-RE-MI · unísono con el piano · el afinador con micrófono |

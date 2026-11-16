@@ -23,20 +23,20 @@ El **cifrado** nombra las notas con **letras**. Se usa en todo el mundo, sobre t
 **C – D – E – F – G – A – B – C**
 
 ### 📖 Los grados
-La escala tiene **8 grados**: los **números del 1 al 8** que indican el **lugar** de cada nota. DO es el 1, RE el 2, MI el 3… SI el 7 y **el 8 es otra vez DO**.
+La escala tiene **7 grados**: los **números del 1 al 7** que indican el **lugar** de cada nota. DO es el 1, RE el 2, MI el 3… y SI el 7. Al final se añade la **octava (8)**, que es **otra vez DO**: el mismo sonido del 1, pero más agudo.
 
-**El grado 1 y el grado 8 son la misma nota a diferente altura:** el 1 es el DO **grave** y el 8 es el DO **agudo**, una octava más arriba.
+**El grado 1 y la octava (8) son la misma nota a diferente altura:** el 1 es el DO **grave** y el 8 es el DO **agudo**, una octava más arriba.
 
 ### 👀 Observo · Notas, cifrado, grados y colores
 
-| Grado | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+| Grado | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 (octava) |
 |---|---|---|---|---|---|---|---|---|
 | Nota | DO | RE | MI | FA | SOL | LA | SI | DO |
 | Cifrado | C | D | E | F | G | A | B | C |
 | Color AMA | rojo | naranja | amarillo | verde | celeste | índigo | violeta | rojo |
 | Altura | grave | | | | | | | agudo |
 
-![Los 8 grados en el pentagrama](guitarra/img/G1_grados.svg)
+![Los 7 grados y la octava en el pentagrama](guitarra/img/G1_grados.svg)
 
 ### 📖 Los elementos de la música
 | Elemento | Qué es | Ejemplo |
@@ -75,7 +75,7 @@ La escala tiene **8 grados**: los **números del 1 al 8** que indican el **lugar
 - ☐ **Mi voz hablada y cantada:** digo mi nombre hablando y luego cantándolo en una nota.
 
 ### ✏️ Completa la tabla
-| Grado | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+| Grado | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 (octava) |
 |---|---|---|---|---|---|---|---|---|
 | Nota | DO | ____ | ____ | ____ | ____ | ____ | ____ | ____ |
 | Cifrado | ____ | ____ | ____ | ____ | ____ | ____ | ____ | ____ |
@@ -106,8 +106,8 @@ La escala tiene **8 grados**: los **números del 1 al 8** que indican el **lugar
    - Sigo hasta terminar
    - ✔ Paro y lo digo a mi profesor y a mi familia
    > La voz se cuida: con dolor o ronquera que no se va, se consulta a un especialista.
-4. ¿Qué relación hay entre el grado 1 y el grado 8?
+4. ¿Qué relación hay entre el grado 1 y la octava (8)?
    - Son notas diferentes
    - El 8 es más grave que el 1
    - ✔ Son la misma nota: el 1 es grave y el 8 es agudo
-   > La escala tiene 8 grados; el 1 y el 8 son DO, separados por una octava.
+   > La escala tiene 7 grados y se cierra con la octava (8): el 1 y el 8 son DO, separados por una octava.

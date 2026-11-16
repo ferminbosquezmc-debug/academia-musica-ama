@@ -10,7 +10,7 @@
 - **Escala de Do mayor:** DO RE MI FA SOL LA SI DO. Solo teclas blancas, sin alteraciones.
 
 ### 📖 La escala de Do con el paso del pulgar (mano derecha)
-La mano tiene cinco dedos y la escala tiene ocho notas. Por eso **el pulgar pasa por debajo** de la mano para seguir subiendo.
+La mano tiene cinco dedos y la escala tiene siete notas más la octava. Por eso **el pulgar pasa por debajo** de la mano para seguir subiendo.
 
 | Nota | DO | RE | MI | FA | SOL | LA | SI | DO |
 |---|---|---|---|---|---|---|---|---|

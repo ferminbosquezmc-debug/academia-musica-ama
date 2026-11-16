@@ -1,6 +1,6 @@
 /* ===== Juego de los grados (clase 1 de cada carrera): la plataforma muestra un número del 1 al 8 y el estudiante
    elige la nota (nombre y cifrado). Al responder suena la nota correcta. Se usa con [[grados]] en los .md. ===== */
-const GDL=[['DO','C'],['RE','D'],['MI','E'],['FA','F'],['SOL','G'],['LA','A'],['SI','B']];
+const GDL=[['DO','C'],['RE','D'],['MI','E'],['FA','F'],['SOL','G'],['LA','A'],['SI','B'],['DO agudo','C']]; /* 7 grados + la octava (8) */
 const GDM=[60,62,64,65,67,69,71,72];
 function gdCard(){const n=1+Math.floor(Math.random()*8);
  return '<div class="card gd" data-nn data-n="'+n+'" data-ok="0" data-tot="0"><h3>🔢 Juego de los grados</h3><p class="mute" style="font-size:14px;margin:4px 0 8px">Mira el número, di en voz alta la nota y su letra, y después tócala aquí. Al responder suena la nota correcta.</p>'
@@ -13,7 +13,7 @@ function gdPlay(ms,beat){const b=beat||.5;let t=lbNow();ms.forEach(m=>{lbNote(m,
 function gdNew(c){let n;do{n=1+Math.floor(Math.random()*8)}while(n===+c.dataset.n);c.dataset.n=n;c.querySelector('.gd-n').textContent=n;
  c.querySelector('.gd-r').textContent='';c.querySelectorAll('[data-gdi]').forEach(b=>{b.disabled=false;b.removeAttribute('aria-pressed')})}
 document.addEventListener('click',e=>{const t=e.target;if(!t.closest)return;const c=t.closest('.gd');if(!c)return;let b;
- if(b=t.closest('[data-gdi]')){if(c.dataset.wait)return;const n=+c.dataset.n,i=+b.dataset.gdi,good=i===(n-1)%7,x=GDL[(n-1)%7];
+ if(b=t.closest('[data-gdi]')){if(c.dataset.wait)return;const n=+c.dataset.n,i=+b.dataset.gdi,good=i===n-1,x=GDL[n-1];
   c.dataset.tot=+c.dataset.tot+1;if(good)c.dataset.ok=+c.dataset.ok+1;gdPlay([GDM[n-1]],.8);
   b.setAttribute('aria-pressed','true');
   c.querySelector('.gd-r').innerHTML=good?'✅ ¡Muy bien! <b>'+n+'</b> → <b>'+x[0]+', '+x[1]+'</b>':'❌ El <b>'+n+'</b> es <b>'+x[0]+', '+x[1]+'</b>. Escúchala y sigue.';

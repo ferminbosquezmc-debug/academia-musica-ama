@@ -30,7 +30,7 @@ Las teclas negras forman un dibujo que se repite: **2, 3, 2, 3…**
 ![Grupos de 2 y 3 teclas negras](piano/img/P1_grupos_negras.svg)
 
 ### 📖 Las octavas
-Una **octava** es la distancia entre una nota y la siguiente con el **mismo nombre** (DO – DO). El **DO central** es el **DO4**; una octava más arriba está el DO5. En la tabla de la clase 1, el grado 8 es otra vez DO.
+Una **octava** es la distancia entre una nota y la siguiente con el **mismo nombre** (DO – DO). El **DO central** es el **DO4**; una octava más arriba está el DO5. En la tabla de la clase 1, la octava (8) es otra vez DO.
 
 ![Las octavas](piano/img/P1_octavas.svg)
 

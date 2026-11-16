@@ -20,7 +20,7 @@ Método Integral AMA de Bajo. Tres niveles de 3 meses, 4 clases por mes, 12 clas
 ## Nivel 1 · Iniciación (clases 1–12)
 | Mes | Clase | Título | Teoría común | En el bajo (paso nuevo) |
 |---|---|---|---|---|
-| 1 | 1 | ¡Bienvenidos a la música! | 7 notas, cifrado, 8 grados, elementos | Qué hace el bajo en la banda · bajo de 4 y de 5 cuerdas · las cuerdas SI, MI, LA, RE, SOL |
+| 1 | 1 | ¡Bienvenidos a la música! | 7 notas, cifrado, 7 grados y la octava, elementos | Qué hace el bajo en la banda · bajo de 4 y de 5 cuerdas · las cuerdas SI, MI, LA, RE, SOL |
 | 1 | 2 | Conozco mi bajo | Pulso · figuras y sílabas | Partes · postura sentado y de pie (correa) · dedos · pulsación alterna índice–medio · dónde apoyar el pulgar |
 | 1 | 3 | El sonido de mi bajo | Cualidades del sonido · octavas | Cuerdas al aire · grave y agudo · apagar las cuerdas que no suenan |
 | 1 | 4 | El pentagrama · Evaluación mes 1 | Pentagrama, clave de sol y clave de fa | Notas en la cuerda MI: MI, FA, SOL |

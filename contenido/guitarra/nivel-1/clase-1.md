@@ -23,20 +23,20 @@ El **cifrado** es un sistema simplificado que nombra las notas con **letras**. S
 **C – D – E – F – G – A – B – C**
 
 ### 📖 Los grados
-La escala tiene **8 grados**: son los **números del 1 al 8** que indican el **lugar** de cada nota. DO es el 1, RE el 2, MI el 3… SI el 7 y **el 8 es otra vez DO**.
+La escala tiene **7 grados**: son los **números del 1 al 7** que indican el **lugar** de cada nota. DO es el 1, RE el 2, MI el 3… y SI el 7. Al final se añade la **octava (8)**, que es **otra vez DO**: el mismo sonido del 1, pero más agudo.
 
-**El grado 1 y el grado 8 son la misma nota a diferente altura:** el 1 es el DO **grave** y el 8 es el DO **agudo**, una octava más arriba. Por eso hay 7 nombres de notas pero 8 grados: la escala empieza y termina en la misma nota. Con los grados podemos hablar de música sin importar en qué nota empecemos: los músicos dicen «del 1 al 5» en lugar de «de DO a SOL».
+**El grado 1 y la octava (8) son la misma nota a diferente altura:** el 1 es el DO **grave** y el 8 es el DO **agudo**, una octava más arriba. Por eso hay 7 grados, uno por cada nombre de nota, y la octava repite el primero: la escala empieza y termina en la misma nota. Con los grados podemos hablar de música sin importar en qué nota empecemos: los músicos dicen «del 1 al 5» en lugar de «de DO a SOL».
 
 ### 👀 Observo · Notas, cifrado, grados y colores
 
-| Grado | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+| Grado | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 (octava) |
 |---|---|---|---|---|---|---|---|---|
 | Nota | DO | RE | MI | FA | SOL | LA | SI | DO |
 | Cifrado | C | D | E | F | G | A | B | C |
 | Color AMA | rojo | naranja | amarillo | verde | celeste | índigo | violeta | rojo |
 | Altura | grave | | | | | | | agudo |
 
-![Los 8 grados en el pentagrama](guitarra/img/G1_grados.svg)
+![Los 7 grados y la octava en el pentagrama](guitarra/img/G1_grados.svg)
 
 El color AMA te ayuda a reconocer la nota; **lo importante es el nombre**.
 
@@ -63,7 +63,7 @@ El color AMA te ayuda a reconocer la nota; **lo importante es el nombre**.
 
 
 ### ✏️ Completa la tabla
-| Grado | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+| Grado | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 (octava) |
 |---|---|---|---|---|---|---|---|---|
 | Nota | DO | ____ | ____ | ____ | ____ | ____ | ____ | ____ |
 | Cifrado | ____ | ____ | ____ | ____ | ____ | ____ | ____ | ____ |
@@ -73,7 +73,7 @@ El color AMA te ayuda a reconocer la nota; **lo importante es el nombre**.
 - ☐ Repito el ejercicio «¿Qué suena?» de esta clase hasta acertar los 5 fragmentos. Mi resultado: ________
 
 ### ✅ ¿Lo logré?
-- ☐ Digo las 7 notas en orden. ☐ Conozco su cifrado. ☐ Sé qué son los 8 grados y que el 1 y el 8 son la misma nota (grave y aguda). ☐ Distingo melodía, armonía y ritmo.
+- ☐ Digo las 7 notas en orden. ☐ Conozco su cifrado. ☐ Sé que la escala tiene 7 grados y que la octava (8) es la misma nota que el 1 (grave y aguda). ☐ Distingo melodía, armonía y ritmo.
 
 ---
 
@@ -89,11 +89,11 @@ El color AMA te ayuda a reconocer la nota; **lo importante es el nombre**.
    - ✔ SOL
    - LA
    > 1 DO · 2 RE · 3 MI · 4 FA · 5 SOL · 6 LA · 7 SI · 8 DO (agudo).
-3. ¿Qué relación hay entre el grado 1 y el grado 8?
+3. ¿Qué relación hay entre el grado 1 y la octava (8)?
    - Son notas diferentes
    - ✔ Son la misma nota: el 1 es grave y el 8 es agudo
    - El 8 es más grave que el 1
-   > La escala tiene 8 grados; el 1 y el 8 son DO, separados por una octava.
+   > La escala tiene 7 grados y se cierra con la octava (8): el 1 y el 8 son DO, separados por una octava.
 4. ¿Qué es la armonía?
    - Notas que suenan una después de otra
    - ✔ Notas que suenan al mismo tiempo
