@@ -19,6 +19,18 @@ rep("if(!S.ubic&&!anyDone&&!kid())x+='<div class=\"card\" style=\"border-color:v
 rep('x+=opSurveyCard()+ruCard()+rtMini();', 'x+=opSurveyCard();');
 /* La ruta de hoy se ve en Práctica */
 rep("if(v==='practica'&&typeof jgRacha==='function')jgRacha();", "if(v==='practica'&&typeof jgRacha==='function')jgRacha();if(v==='practica')obRuta();");
+/* Vista de estudiante nuevo (solo la dirección): un estado en blanco que vive en sessionStorage y no toca el avance real */
+rep("try{Object.assign(S,JSON.parse(localStorage.getItem('arp')||'{}'))}catch(e){}",
+  "const PREV=(()=>{try{return sessionStorage.getItem('arpPrev')==='1'}catch(e){return false}})();\ntry{Object.assign(S,JSON.parse((PREV?sessionStorage.getItem('arpPrevS'):localStorage.getItem('arp'))||'{}'))}catch(e){}");
+rep("const save=()=>{try{localStorage.setItem('arp',JSON.stringify(S))}catch(e){}if(window.SEGsync)SEGsync()};",
+  "const save=()=>{if(PREV){try{sessionStorage.setItem('arpPrevS',JSON.stringify(S))}catch(e){}return}try{localStorage.setItem('arp',JSON.stringify(S))}catch(e){}if(window.SEGsync)SEGsync()};");
+rep("if(u){UIDS=await u.id();ADMS=!!(await u.canEdit())}", "if(u){UIDS=await u.id();ADMS=!!(await u.canEdit())&&!PREV}");
+rep(" try{const g=await DBS.doc('prog/'+UIDS).get();", " if(PREV){segBadge();return}\n try{const g=await DBS.doc('prog/'+UIDS).get();");
+rep("window.SEGsync=function(){if(!DBS||!UIDS)return;", "window.SEGsync=function(){if(PREV||!DBS||!UIDS)return;");
+rep("if(ADMS)x+='<button class=\"m4home athome\" data-go=\"opi\">",
+  "if(ADMS)x+='<button class=\"m4home athome\" data-prev=\"on\"><span class=\"em\" aria-hidden=\"true\">👁</span><span>Ver como estudiante nuevo<small>Una vista limpia para revisar · no borra tu avance</small></span></button>';if(ADMS)x+='<button class=\"m4home athome\" data-go=\"opi\">");
+rep('#v-home.obon>*:not(.hero){display:none!important}',
+  '#v-home.obon>*:not(.hero){display:none!important}\n#prev-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;background:#5fbf7a;color:#000;padding:8px 14px;font-weight:600;font-size:15px}#prev-bar .btn{background:#000;color:#fff;padding:6px 14px;min-height:36px}');
 const js = fs.readFileSync(path.join(__dirname, 'inicio.js'), 'utf8').replace(/\r\n/g, '\n');
 rep('function perfil(){', js.trimEnd() + '\nfunction perfil(){');
 fs.writeFileSync(OUT, t); console.log('ok', (t.length / 1e6).toFixed(2), 'M caracteres');

@@ -40,6 +40,13 @@ function obMas(v){let d=document.getElementById('ob-mas');
 document.addEventListener('click',e=>{const t=e.target;if(!t.closest||!t.closest('#ob-mas'))return;let b;
  if(b=t.closest('[data-obm]')){S.mode=b.dataset.obm;save();applyMode();toast(kid()?'Modo Explorador':'Modo Estudiante');home();return}
  if(b=t.closest('[data-obt]')){const x=b.dataset.obt;if(x==='next'){const f=document.getElementById('fin');if(f)f.click();else go('clases')}else go(x)}});
+/* Vista de estudiante nuevo: franja verde arriba con «Empezar otra vez» y «Salir» */
+function obPrevBar(){if(!PREV||!document.body||document.getElementById('prev-bar'))return;const b=document.createElement('div');b.id='prev-bar';
+ b.innerHTML='<span>👁 Vista de estudiante nuevo · nada de lo que hagas aquí se guarda</span><span style="display:flex;gap:8px"><button class="btn m4mini" data-prev="on">Empezar otra vez</button><button class="btn m4mini" data-prev="off">Salir</button></span>';document.body.prepend(b)}
+document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-prev]');if(!b)return;
+ try{sessionStorage.removeItem('arpPrevS');if(b.dataset.prev==='on')sessionStorage.setItem('arpPrev','1');else sessionStorage.removeItem('arpPrev')}catch(x){toast('Este navegador no permite la vista de estudiante nuevo');return}
+ location.reload()});
+obPrevBar();
 /* «Tu ruta de hoy» también se ve en Práctica */
 function obRuta(){const v=document.getElementById('v-practica');if(!v||typeof ruCard!=='function')return;let d=document.getElementById('ru-pr');
  if(!d){d=document.createElement('div');d.id='ru-pr';const h2=v.querySelector('h2');if(h2)h2.after(d);else v.prepend(d)}
