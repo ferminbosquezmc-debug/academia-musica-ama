@@ -3,7 +3,15 @@
    Convalidar: después del nombre y el instrumento va a la prueba de ubicación con ese instrumento elegido (OBI). */
 let OBS=null,OBP=null,OBI=null;
 const OBC=()=>['guitarra','piano','bateria','bajo','canto'].filter(k=>AVAIL[k]&&INSN[k]);
-function obNeed(){return !S.name||!myCarr()}
+/* Audio Técnica y Formación Ministerial se eligen en el mismo panel; quedan en S.esp ('at' | 'n4') */
+const OBX=[['_at','🎚️','Audio Técnica','Sonido en vivo'],['_n4','🕊️','Formación Ministerial','Diplomado para músicos y líderes']];
+const obLbl=()=>OBI&&OBI[0]==='_'?'Entrar a mi carrera':OBP==='conv'?'Continuar a la prueba':'Empezar mi primera clase';
+function obNeed(){return !S.name||(!myCarr()&&!S.esp)}
+function obEsp(){const ring=document.querySelector('#v-home>.card.row');
+ if(!S.esp||myCarr()){if(ring)ring.style.display='';return}
+ const at=S.esp==='at',n=at?'Audio Técnica':'Formación Ministerial',g=at?'asig':'n4';if(ring)ring.style.display='none';
+ const h1=document.querySelector('#greet h1');if(h1&&!document.querySelector('#greet .ob-esp'))h1.insertAdjacentHTML('afterend','<p class="ob-esp" style="margin-top:4px;font-size:17px">Te damos la bienvenida a tu carrera de <b>'+n+'</b></p>');
+ const nx=document.getElementById('next');if(nx)nx.innerHTML='<h3>'+(at?'🎚️ ':'🕊️ ')+n+'</h3><p class="mute" style="margin:6px 0 12px">'+(at?'Sonido en vivo · 3 niveles':'Diplomado para músicos y líderes')+'</p><button class="btn" data-go="'+g+'">▶ Abrir mis clases</button>'}
 function obHome(){const v=document.getElementById('v-home');if(!v)return false;const need=obNeed();
  v.classList.toggle('obon',need);
  v.querySelectorAll(':scope>[data-go="asig"],:scope>[data-go="n4"]').forEach(b=>b.style.display='none');
@@ -12,42 +20,44 @@ function obHome(){const v=document.getElementById('v-home');if(!v)return false;c
  let h;
  if(OBS==='path')h='<h1>Bienvenido</h1><p class="mute" style="margin-top:4px">Academia de Música ARPA</p><p style="margin-top:14px;font-size:19px">¿Cómo quieres empezar?</p><div class="modes ob-m"><button class="mode" data-ob="conv"><span class="em" aria-hidden="true">🎓</span><b>Ya tengo conocimiento de música · Convalidar</b><small>Hago una prueba de unos 10 minutos y empiezo en la clase que me corresponde.</small></button><button class="mode" data-ob="cero"><span class="em" aria-hidden="true">🌱</span><b>Empezar desde cero</b><small>No toco, o prefiero empezar desde la primera clase.</small></button></div>';
  else{const sel=OBI||'';
-  h='<h1>'+(OBP==='conv'?'🎓 Convalidar':'🌱 Empezar desde cero')+'</h1>'
+  h='<button class="link" data-ob="back" style="display:block;margin:0 auto 6px;min-height:44px;font-size:16px">⬅ Volver</button><h1>'+(OBP==='conv'?'🎓 Convalidar':'🌱 Empezar desde cero')+'</h1>'
   +'<p style="margin-top:14px;font-size:19px">¿Cómo te llamas?</p><div class="row" style="justify-content:center;margin-top:8px"><input class="name-in" id="ob-nm" placeholder="Tu nombre" aria-label="Tu nombre" autocomplete="given-name" value="'+esc(S.name||'')+'" style="width:min(320px,100%)"></div>'
-  +'<p style="margin-top:18px;font-size:19px">Selecciona tu instrumento</p><div class="ob-g">'+OBC().map(k=>'<button class="crt'+(k===sel?' on':'')+'" data-obi="'+k+'" aria-pressed="'+(k===sel)+'"><span class="em" aria-hidden="true">'+(EMO[k]||'')+'</span><b>'+esc(INSN[k])+'</b></button>').join('')+'</div>'
+  +'<p style="margin-top:18px;font-size:19px">Selecciona tu instrumento o carrera</p><div class="ob-g">'+OBC().map(k=>'<button class="crt'+(k===sel?' on':'')+'" data-obi="'+k+'" aria-pressed="'+(k===sel)+'"><span class="em" aria-hidden="true">'+(EMO[k]||'')+'</span><b>'+esc(INSN[k])+'</b></button>').join('')
+  +OBX.map(x=>'<button class="crt'+(x[0]===sel?' on':'')+'" data-obi="'+x[0]+'" aria-pressed="'+(x[0]===sel)+'"><span class="em" aria-hidden="true">'+x[1]+'</span><b>'+x[2]+'</b><small>'+x[3]+'</small></button>').join('')+'</div>'
   +'<p class="ob-msg" style="min-height:24px;margin-top:10px;color:#e0a46a"></p>'
-  +'<button class="btn" id="ob-go" style="margin-top:4px">'+(OBP==='conv'?'Continuar a la prueba':'Empezar mi primera clase')+'</button>'
+  +'<button class="btn" id="ob-go" style="margin-top:4px">'+obLbl()+'</button>'
   +'<div><button class="link" data-ob="back" style="margin-top:12px">⬅ Volver</button></div>'}
  document.getElementById('greet').innerHTML=h;
  const go2=document.getElementById('ob-go');
  if(go2){const nm=document.getElementById('ob-nm'),msg=document.querySelector('#greet .ob-msg');
-  const f=()=>{const x=nm.value.trim();if(!x){msg.textContent='Escribe tu nombre.';nm.focus();return}if(!OBI){msg.textContent='Toca tu instrumento.';return}
+  const f=()=>{const x=nm.value.trim();if(!x){msg.textContent='Escribe tu nombre.';nm.focus();return}if(!OBI){msg.textContent='Toca tu instrumento o carrera.';return}
    S.name=x;if(S.mode===undefined)S.mode='adult';
+   if(OBI[0]==='_'){S.esp=OBI==='_at'?'at':'n4';const n=OBI==='_at'?'Audio Técnica':'Formación Ministerial';OBS=null;OBP=null;OBI=null;save();toast('Listo: tu carrera es '+n);go(S.esp==='at'?'asig':'n4');return}
    if(OBP==='conv'){save();go('ubic');return}
-   S.inst=S.inst||{};S.inst[0]=S.inst[1]=S.inst[2]=OBI;S.lvl=0;const k=OBI;OBS=null;OBP=null;OBI=null;save();toast('Listo: tu carrera es '+INSN[k]);home();window.scrollTo(0,0)};
+   delete S.esp;S.inst=S.inst||{};S.inst[0]=S.inst[1]=S.inst[2]=OBI;S.lvl=0;const k=OBI;OBS=null;OBP=null;OBI=null;save();toast('Listo: tu carrera es '+INSN[k]);home();window.scrollTo(0,0)};
   go2.onclick=f;nm.onkeydown=e=>{if(e.key==='Enter')f()};nm.oninput=()=>{S.name=nm.value.trim()}}
  return true}
 document.addEventListener('click',e=>{const t=e.target;if(!t.closest||!t.closest('#greet'))return;let b;
  if(b=t.closest('[data-ob]')){const a=b.dataset.ob;
   if(a==='conv'||a==='cero'){OBP=a;OBS='datos'}else if(a==='back'){OBS='path'}
   home();window.scrollTo(0,0);return}
- if(b=t.closest('[data-obi]')){OBI=b.dataset.obi;document.querySelectorAll('#greet [data-obi]').forEach(x=>{const on=x===b;x.classList.toggle('on',on);x.setAttribute('aria-pressed',String(on))});const m=document.querySelector('#greet .ob-msg');if(m)m.textContent=''}});
+ if(b=t.closest('[data-obi]')){OBI=b.dataset.obi;document.querySelectorAll('#greet [data-obi]').forEach(x=>{const on=x===b;x.classList.toggle('on',on);x.setAttribute('aria-pressed',String(on))});const m=document.querySelector('#greet .ob-msg');if(m)m.textContent='';const g=document.getElementById('ob-go');if(g)g.textContent=obLbl()}});
 /* «Más opciones»: un solo botón al final de Inicio con lo que no hace falta ver todos los días */
 let OBMopen=false;
 function obMas(v){let d=document.getElementById('ob-mas');
  if(!d){d=document.createElement('details');d.id='ob-mas';d.className='card sub';d.addEventListener('toggle',()=>{OBMopen=d.open})}
  v.appendChild(d);d.open=OBMopen;
  const H=(t)=>'<h4 class="ath4" style="margin-top:18px">'+t+'</h4>';
- const stp=[['1','Elige tu instrumento','Para ver tus clases','clases'],['2','Abre tu siguiente lección','Empieza por el paso «Ver»','next'],['3','Practica con el metrónomo','Mantén el pulso constante','practica']];
+ const stp=[['1','Ve a tus clases','Tu carrera y tus lecciones','clases'],['2','Abre tu siguiente lección','Empieza por el paso «Ver»','next'],['3','Practica con el metrónomo','Mantén el pulso constante','practica']];
  d.innerHTML='<summary><span class="em" aria-hidden="true">➕</span><span class="grow">Más opciones</span></summary>'
   +H('🧭 Cómo empezar')+'<div class="go3">'+stp.map(x=>'<button data-obt="'+x[3]+'"><span class="n">'+x[0]+'</span><span><b>'+x[1]+'</b><small>'+x[2]+'</small></span><span class="ar" aria-hidden="true">›</span></button>').join('')+'</div>'
-  +H('🎓 Prueba de ubicación')+'<p class="mute" style="font-size:15px">Si ya tocas o cantas, haz la prueba (unos 10 minutos) y empieza en la clase que te corresponde.</p><button class="btn ghost" data-go="ubic" style="margin-top:10px">'+(S.ubic?'Repetir la prueba de ubicación':'Hacer la prueba de ubicación')+'</button>'
+  +(S.esp&&!myCarr()?'':H('🎓 Prueba de ubicación')+'<p class="mute" style="font-size:15px">Si ya tocas o cantas, haz la prueba (unos 10 minutos) y empieza en la clase que te corresponde.</p><button class="btn ghost" data-go="ubic" style="margin-top:10px">'+(S.ubic?'Repetir la prueba de ubicación':'Hacer la prueba de ubicación')+'</button>')
   +H('🙂 Mi modo')+'<div class="modes"><button class="mode" data-obm="kid" aria-pressed="'+kid()+'"><span class="em">🚀</span><b>Explorador</b><small>Para 9 a 14 años · textos cortos, retos y estrellas</small></button><button class="mode" data-obm="adult" aria-pressed="'+!kid()+'"><span class="em">🎓</span><b>Estudiante</b><small>Jóvenes y adultos · más detalle y teoría</small></button></div>'
   +(typeof ruCard==='function'?ruCard():'')
   +H('🏆 Retos de la semana')+(typeof rtMini==='function'?rtMini():'')
-  +H('🎚️ Otras carreras de la academia')
+  +(!ADMS?'':H('🎚️ Otras carreras (solo la dirección)')
   +'<button class="m4home athome" data-go="asig"><span class="em" aria-hidden="true">🎚️</span><span>Audio Técnica · Sonido en Vivo<small>Carrera de técnico de sonido · 3 niveles</small></span></button>'
-  +'<button class="m4home" data-go="n4"><span class="em" aria-hidden="true">🕊️</span><span>ARPA | Formación Ministerial<small>Nivel 4 · Diplomado para músicos y líderes</small></span></button>'}
+  +'<button class="m4home" data-go="n4"><span class="em" aria-hidden="true">🕊️</span><span>ARPA | Formación Ministerial<small>Diplomado para músicos y líderes</small></span></button>')}
 document.addEventListener('click',e=>{const t=e.target;if(!t.closest||!t.closest('#ob-mas'))return;let b;
  if(b=t.closest('[data-obm]')){S.mode=b.dataset.obm;save();applyMode();toast(kid()?'Modo Explorador':'Modo Estudiante');home();return}
  if(b=t.closest('[data-obt]')){const x=b.dataset.obt;if(x==='next'){const f=document.getElementById('fin');if(f)f.click();else go('clases')}else go(x)}});
