@@ -1,7 +1,7 @@
 # Guitarra · Nivel 1 · Clase 9: ¿Qué es un acorde?
 
 - **Mes:** 3 · MIS PRIMEROS ACORDES
-- **Objetivo:** Comprender la diferencia entre melodía y armonía, leer diagramas de acordes y tocar los acordes de Mi menor (Em) y Mi mayor (E).
+- **Objetivo:** Comprender la diferencia entre melodía y armonía, leer diagramas de acordes y tocar los acordes de Mi menor (Em) y Mi mayor (EM).
 
 ---
 
@@ -20,23 +20,25 @@
 - ● con número = dedo que pisa.
 - ○ = cuerda al aire. ✕ = no se toca.
 
-| Mi menor (Em) | Mi mayor (E) |
+| Mi menor (Em) | Mi mayor (EM) |
 |---|---|
-| ![Em](guitarra/img/N1_acorde_Em.svg) | ![E](guitarra/img/N1_acorde_E.svg) |
+| ![Em](guitarra/img/N1_acorde_Em.svg) | ![EM](guitarra/img/N1_acorde_E.svg) |
 
-**E = Em + el dedo 1** en la 3.ª cuerda, traste 1.
+**EM = Em + el dedo 1** en la 3.ª cuerda, traste 1.
+
+> **Cómo se escriben:** el acorde **mayor** lleva **M** mayúscula (EM = Mi mayor) y el **menor**, **m** minúscula (Em = Mi menor).
 
 ### 🎸 Practico
 - ☐ Afino mi guitarra con el afinador (con ayuda).
 - ☐ Em cuerda por cuerda: suenan las 6.
-- ☐ Formar y soltar Em, 10 veces. Igual con E.
-- ☐ Em | E | Em | E en redondas, con el pulgar.
+- ☐ Formar y soltar Em, 10 veces. Igual con EM.
+- ☐ Em | EM | Em | EM en redondas, con el pulgar.
 
 ### 🏠 Mi tarea
-- ☐ 10–15 minutos diarios: Em, E y el cambio entre los dos.
+- ☐ 10–15 minutos diarios: Em, EM y el cambio entre los dos.
 
 ### ✅ ¿Lo logré?
-- ☐ Sé qué es un acorde. ☐ Leo un diagrama. ☐ Toco Em y E.
+- ☐ Sé qué es un acorde. ☐ Leo un diagrama. ☐ Toco Em y EM.
 
 ---
 
@@ -52,8 +54,8 @@
    - Que no se toca
    - Que va el dedo 1
    > ○ es cuerda al aire; ✕, cuerda que no se toca.
-3. ¿Qué diferencia hay entre Em y E?
-   - ✔ E lleva además el dedo 1 en la 3.ª cuerda, traste 1
+3. ¿Qué diferencia hay entre Em y EM?
+   - ✔ EM lleva además el dedo 1 en la 3.ª cuerda, traste 1
    - Em se toca solo en cinco cuerdas
    - Ninguna
-   > E = Em + el dedo 1 en la 3.ª cuerda, traste 1.
+   > EM = Em + el dedo 1 en la 3.ª cuerda, traste 1.

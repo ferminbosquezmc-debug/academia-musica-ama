@@ -10,27 +10,29 @@ Una **tríada** se forma **tecla sí, tecla no**: 1.ª + 3.ª + 5.ª. Lo que cam
 
 | Tipo | Construcción | Ejemplo | Cifrado | Carácter |
 |---|---|---|---|---|
-| Mayor | 4 semitonos + 3 semitonos | DO – MI – SOL | C | brillante, alegre |
+| Mayor | 4 semitonos + 3 semitonos | DO – MI – SOL | CM | brillante, alegre |
 | Menor | 3 semitonos + 4 semitonos | LA – DO – MI | Am | oscuro, nostálgico |
 | Disminuida | 3 semitonos + 3 semitonos | SI – RE – FA | B° | tenso |
 
-**El truco del dedo 3:** de mayor a menor, **baja el dedo del medio un semitono**. C (DO-MI-SOL) → Cm (DO-**MI♭**-SOL).
+**El truco del dedo 3:** de mayor a menor, **baja el dedo del medio un semitono**. CM (DO-MI-SOL) → Cm (DO-**MI♭**-SOL).
 
 ### 👀 Observo · Los acordes de Do mayor
 Si formo una tríada sobre cada nota de la escala, usando solo sus notas, aparecen siete acordes:
 
 | Grado | I | ii | iii | IV | V | vi | vii° |
 |---|---|---|---|---|---|---|---|
-| Acorde | C | Dm | Em | F | G | Am | B° |
+| Acorde | CM | Dm | Em | FM | GM | Am | B° |
 | Notas | DO-MI-SOL | RE-FA-LA | MI-SOL-SI | FA-LA-DO | SOL-SI-RE | LA-DO-MI | SI-RE-FA |
 
 *(Romano en mayúscula = mayor; en minúscula = menor.)*
+
+> **Cómo se escriben:** el acorde **mayor** lleva **M** mayúscula (CM = Do mayor) y el **menor**, **m** minúscula (Cm = Do menor).
 
 ![Tríadas sobre los grados de Do mayor](piano/img/P2_triadas_grados.svg)
 
 ### 🎹 Practico
 - ☐ **La escalera de acordes:** con la mano derecha (1-3-5) subo los siete acordes desde DO, diciendo «mayor», «menor» o «disminuido».
-- ☐ **Mayor ↔ menor:** C → Cm, D → Dm, E → Em, moviendo solo el dedo 3. (D mayor = RE-**FA♯**-LA; E mayor = MI-**SOL♯**-SI).
+- ☐ **Mayor ↔ menor:** CM → Cm, DM → Dm, EM → Em, moviendo solo el dedo 3. (DM = RE-**FA♯**-LA; EM = MI-**SOL♯**-SI).
 - ☐ **¿Alegre o triste?** En el Laboratorio de oído escucho una tríada y digo si es mayor o menor.
 
 [[oido:acor]]
@@ -42,7 +44,7 @@ Leo una melodía nueva **sin color** y con las dos claves: primero digo el nombr
 ![Lectura sorpresa](piano/img/P2_lectura_sorpresa.svg)
 
 ### ✏️ Construye las tríadas
-F = ______ – ______ – ______ · Dm = ______ – ______ – ______ · G = ______ – ______ – ______ · Cm = ______ – ______ – ______
+FM = ______ – ______ – ______ · Dm = ______ – ______ – ______ · GM = ______ – ______ – ______ · Cm = ______ – ______ – ______
 
 ### ⭐ Autoevaluación del mes 5
 | Puedo… | 😀 | 🙂 | 😐 |
@@ -60,7 +62,7 @@ F = ______ – ______ – ______ · Dm = ______ – ______ – ______ · G = ___
 
 ## Preguntas de repaso
 
-1. ¿Cómo se convierte C en Cm?
+1. ¿Cómo se convierte CM en Cm?
    - Se sube el SOL
    - ✔ Se baja el MI un semitono (MI♭)
    - Se cambia el DO por SI
@@ -70,7 +72,7 @@ F = ______ – ______ – ______ · Dm = ______ – ______ – ______ · G = ___
    - ✔ Menor
    - Disminuido
    > En una tonalidad mayor, ii, iii y vi son menores.
-3. ¿Qué notas tiene el acorde de RE mayor (D)?
+3. ¿Qué notas tiene el acorde de RE mayor (DM)?
    - RE – FA – LA
    - ✔ RE – FA♯ – LA
    - RE – SOL – SI

@@ -8,7 +8,7 @@
 ### 📖 Aprendo · ¿Qué es un acorde?
 - Recuerda (clase 1): **melodía** = notas una después de otra; **armonía** = notas al mismo tiempo.
 - **Acorde** = 3 o más notas distintas que suenan juntas. La guitarra y el piano tocan acordes para acompañar.
-- **Mayor** suena alegre y brillante. **Menor** (con «m»: Am = La menor) suena más triste o tranquilo.
+- **Mayor** (con **M** mayúscula: CM = Do mayor) suena alegre y brillante. **Menor** (con **m** minúscula: Am = La menor) suena más triste o tranquilo.
 
 > El baterista escucha si la canción suena **mayor o menor** para elegir su energía: más brillante y fuerte en una canción alegre, más suave en una tranquila.
 

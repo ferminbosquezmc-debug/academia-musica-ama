@@ -8,13 +8,13 @@
 ### 📖 Aprendo · ¿Qué es un acorde?
 - Recuerda (clase 1): **melodía** = notas una después de otra; **armonía** = notas al mismo tiempo.
 - **Acorde** = 3 o más notas distintas que suenan juntas. La guitarra y el piano tocan acordes para acompañar al cantante.
-- **Mayor** suena alegre y brillante. **Menor** (con «m»: Am = [[nn:La]] menor) suena más triste o tranquilo.
+- **Mayor** (con **M** mayúscula: CM = Do mayor) suena alegre y brillante. **Menor** (con **m** minúscula: Am = [[nn:La]] menor) suena más triste o tranquilo.
 
 ![Qué es un acorde](guitarra/img/N1_que_es_acorde.svg)
 
 ### 📖 El acorde se construye saltando notas
 Para formar un acorde: **tomo una nota, salto una, tomo la siguiente**.
-- DO mayor (C) = DO – MI – SOL (grados **1 – 3 – 5**).
+- DO mayor (CM) = DO – MI – SOL (grados **1 – 3 – 5**).
 - LA menor (Am) = LA – DO – MI.
 
 ![Cómo se construye la tríada: tocar una, saltar una](piano/img/P1_construir_triada.svg)
@@ -39,7 +39,7 @@ Aunque una sola voz no puede cantar tres notas a la vez, el cantante **canta el 
 [[escuchar:Arpegio de LA menor|LA3 DO4 MI4 DO4 LA3:2]]
 
 - ☐ **Arpegio de DO:** canto DO – MI – SOL – MI – DO con los nombres, luego con «la».
-- ☐ **Con el acorde:** suena el acorde de C en la pista de la plataforma y yo canto DO, luego MI, luego SOL: cada nota «cabe» dentro del acorde.
+- ☐ **Con el acorde:** suena el acorde de CM en la pista de la plataforma y yo canto DO, luego MI, luego SOL: cada nota «cabe» dentro del acorde.
 
 [[pistas]]
 
@@ -51,7 +51,7 @@ Aunque una sola voz no puede cantar tres notas a la vez, el cantante **canta el 
 - ☐ **Juego «Oído musical»** de la sección Práctica, 5 minutos.
 
 ### ✏️ Escribe
-- Notas del acorde de C: ______ – ______ – ______
+- Notas del acorde de CM: ______ – ______ – ______
 - ¿Cómo suena un acorde menor? ______
 
 ### 🏠 Mi tarea
