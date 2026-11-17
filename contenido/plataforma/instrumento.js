@@ -5,13 +5,14 @@
 const VIC={guitarra:'🎸',bajo:(typeof EMO!=='undefined'&&EMO.bajo)||'🎸',piano:'🎹',bateria:'🥁'};
 let VIsel=null,VIall=false,VIb5=false,VIch=null;
 const viCar=()=>{const c=myCarr();return c&&VIC[c]?c:null};
-const VIG=[['C',[-1,3,2,0,1,0]],['D',[-1,-1,0,2,3,2]],['E',[0,2,2,1,0,0]],['F',[1,3,3,2,1,1]],['G',[3,2,0,0,0,3]],['A',[-1,0,2,2,2,0]],['Am',[-1,0,2,2,1,0]],['Dm',[-1,-1,0,2,3,1]],['Em',[0,2,2,0,0,0]],['Bm',[-1,2,4,4,3,2]],['C7',[-1,3,2,3,1,0]],['D7',[-1,-1,0,2,1,2]],['E7',[0,2,0,1,0,0]],['G7',[3,2,0,0,0,1]],['A7',[-1,0,2,0,2,0]],['B7',[-1,2,1,2,0,2]]]; /* cuerdas 6→1 */
-const VIP=[['C',0,'M'],['Dm',2,'m'],['Em',4,'m'],['F',5,'M'],['G',7,'M'],['Am',9,'m'],['D',2,'M'],['E',4,'M'],['A',9,'M'],['G7',7,'7'],['C7',0,'7'],['D7',2,'7']];
+/* Nombres: mayor con M mayúscula (CM), menor con m minúscula (Cm), séptima de dominante con 7 (C7) */
+const VIG=[['CM',[-1,3,2,0,1,0]],['DM',[-1,-1,0,2,3,2]],['EM',[0,2,2,1,0,0]],['FM',[1,3,3,2,1,1]],['GM',[3,2,0,0,0,3]],['AM',[-1,0,2,2,2,0]],['Am',[-1,0,2,2,1,0]],['Dm',[-1,-1,0,2,3,1]],['Em',[0,2,2,0,0,0]],['Bm',[-1,2,4,4,3,2]],['C7',[-1,3,2,3,1,0]],['D7',[-1,-1,0,2,1,2]],['E7',[0,2,0,1,0,0]],['G7',[3,2,0,0,0,1]],['A7',[-1,0,2,0,2,0]],['B7',[-1,2,1,2,0,2]]]; /* cuerdas 6→1 */
+const VIP=[['CM',0,'M'],['Dm',2,'m'],['Em',4,'m'],['FM',5,'M'],['GM',7,'M'],['Am',9,'m'],['DM',2,'M'],['EM',4,'M'],['AM',9,'M'],['G7',7,'7'],['C7',0,'7'],['D7',2,'7']];
 /* ---- Sonido ---- */
 const VIBUF={};
 function viKS(m,dur,bright){const k=m+'|'+bright;if(VIBUF[k])return VIBUF[k];const c=AC(),sr=c.sampleRate,f=440*Math.pow(2,(m-69)/12),N=Math.max(2,Math.round(sr/f)),len=Math.floor(sr*dur),b=c.createBuffer(1,len,sr),d=b.getChannelData(0),w=new Float32Array(N);
  for(let i=0;i<N;i++)w[i]=Math.random()*2-1;let p=0;const damp=bright?.996:.992;for(let i=0;i<len;i++){const n=(p+1)%N,v=w[p];d[i]=v;w[p]=damp*.5*(v+w[n]);p=n}return VIBUF[k]=b}
-function viPluck(m,t0,bass){const c=AC();if(c.state==='suspended')c.resume();const s=c.createBufferSource(),g=c.createGain(),lp=c.createBiquadFilter();s.buffer=viKS(m,bass?2.4:2.8,!bass);lp.type='lowpass';lp.frequency.value=bass?1400:5200;g.gain.value=bass?.75:.5;s.connect(lp).connect(g).connect(c.destination);s.start(t0||c.currentTime)}
+function viPluck(m,t0,bass,vol,tone){const c=AC();if(c.state==='suspended')c.resume();const s=c.createBufferSource(),g=c.createGain(),lp=c.createBiquadFilter();s.buffer=viKS(m,bass?2.4:2.8,!bass);lp.type='lowpass';lp.frequency.value=tone||(bass?1400:5200);g.gain.value=(bass?.75:.5)*(vol||1);s.connect(lp).connect(g).connect(c.destination);s.start(t0||c.currentTime)}
 function viPiano(m,t0){const c=AC();if(c.state==='suspended')c.resume();const t=t0||c.currentTime,f=440*Math.pow(2,(m-69)/12),g=c.createGain(),dec=Math.max(.9,3.2-(m-48)*.06);g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.3,t+.006);g.gain.exponentialRampToValueAtTime(.001,t+dec);g.connect(c.destination);
  [1,2,3,4,5].forEach((h,i)=>{const o=c.createOscillator(),a=c.createGain();o.type='sine';o.frequency.value=f*h;a.gain.value=[1,.45,.22,.12,.06][i];o.connect(a).connect(g);o.start(t);o.stop(t+dec+.05)})}
 const viName=m=>{const i=((m%12)+12)%12;return [SN[i],CN[i]]};
@@ -31,7 +32,10 @@ function viMark(svg,list){const g=svg.querySelector('.vi-mk');if(!g)return;const
   return '<rect x="'+(c-w/2)+'" y="'+(y-10)+'" width="'+w+'" height="20" rx="10" fill="'+col+'" stroke="#fff" stroke-width="1.6"/><text x="'+c+'" y="'+(y+4.5)+'" text-anchor="middle" font-size="12" font-weight="700" fill="'+ntx(col)+'">'+lab+'</text>'}).join('')}
 function viChord(name,up){const sh=(VIG.find(x=>x[0]===name)||[])[1];if(!sh)return;VIch=name;const svg=document.querySelector('#v-vinst .vi-fb'),op=viOpen('guitarra');const L=[];
  sh.forEach((f,i)=>{const s=6-i;L.push(f<0?[s,0,1]:[s,f])});if(svg)viMark(svg,L);
- const c=AC(),t=c.currentTime+.02,ord=sh.map((f,i)=>[6-i,f]).filter(x=>x[1]>=0);(up?ord.reverse():ord).forEach(([s,f],j)=>viPluck(op[s-1]+f,t+j*.035));
+ /* Abajo: de la cuerda grave a la aguda, todas, lento y con cuerpo. Arriba: de la aguda a la grave, solo las 3–4 agudas, rápido, suave y brillante */
+ const c=AC(),t=c.currentTime+.02,ord=sh.map((f,i)=>[6-i,f]).filter(x=>x[1]>=0);
+ if(up)ord.filter(x=>x[0]<=4).reverse().forEach(([s,f],j)=>viPluck(op[s-1]+f,t+j*.016,false,.55-j*.06,7500));
+ else ord.forEach(([s,f],j)=>viPluck(op[s-1]+f,t+j*.045,false,1.05+j*.04,3800));
  document.querySelectorAll('#v-vinst [data-vch]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.vch===name)));
  const cap=document.getElementById('vi-cap');if(cap)cap.textContent='Acorde '+name+': '+sh.map((f,i)=>f<0?'✕':f).join(' ')+' (de la 6.ª a la 1.ª cuerda; ✕ = no suena)'}
 /* ---- Piano ---- */
