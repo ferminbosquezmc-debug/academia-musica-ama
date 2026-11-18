@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="170" viewBox="0 0 320 170" role="img" aria-label="Redonda: figura y silencio">
+<title>Redonda: figura y silencio</title>
+<rect width="320" height="170" fill="#FFFFFF"/>
+<line x1="12" y1="46" x2="308" y2="46" stroke="#9AA0A6" stroke-width="2" />
+<line x1="12" y1="62" x2="308" y2="62" stroke="#9AA0A6" stroke-width="2" />
+<line x1="12" y1="78" x2="308" y2="78" stroke="#9AA0A6" stroke-width="2" />
+<line x1="12" y1="94" x2="308" y2="94" stroke="#9AA0A6" stroke-width="2" />
+<line x1="12" y1="110" x2="308" y2="110" stroke="#9AA0A6" stroke-width="2" />
+<ellipse cx="92" cy="86" rx="13" ry="8.5" fill="#1A1A1A"/>
+<ellipse cx="92" cy="86" rx="5.5" ry="7" transform="rotate(-55 92 86)" fill="#FFFFFF"/>
+<rect x="215" y="62" width="22" height="9" rx="0" fill="#1A1A1A" stroke="none" stroke-width="0" />
+<text x="92" y="164" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="600" fill="#5F6368" text-anchor="middle" >figura</text>
+<text x="226" y="164" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="600" fill="#5F6368" text-anchor="middle" >silencio</text>
+</svg>
