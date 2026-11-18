@@ -18,7 +18,7 @@ const slides = [
   { k: 'Siguiente paso', h: '¡Listo para practicar!', b: `<p class="lead">Ya conoces tu guitarra. En el paso <b>Practicar</b> vas a nombrar sus partes, sentarte con la postura de 7 pasos y decir las sílabas con el pie en el pulso.</p><button class="btn" disabled>🎸 Ir a Practicar</button><p class="nota">En la muestra este botón no lleva a ningún lado.</p>` },
 ];
 const html = fs.readFileSync(path.join(D, 'plantilla.html'), 'utf8')
-  .replace('{{ACTUAL}}', actualURI).replace('{{NUEVA}}', FT.partes('g-comp')).replace('{{GALERIA}}', fs.readFileSync(path.join(D, 'galeria.html'), 'utf8'))
+  .replace('{{ACTUAL}}', actualURI).replace('{{NUEVA}}', FT.partes('g-comp')).replace('{{GALERIA}}', fs.readFileSync(path.join(D, 'galeria.html'), 'utf8')).replace('{{TECNICAS}}', fs.readFileSync(path.join(D, 'tecnicas.html'), 'utf8'))
   .replace('{{SLIDES}}', slides.map((s, i) => `<section class="slide${s.wide ? ' wide' : ''}" data-i="${i}" aria-roledescription="diapositiva" aria-label="${i + 1} de ${slides.length}"><p class="kick">${s.k}</p><h3>${s.h}</h3>${s.b}</section>`).join('\n'))
   .replace(/\{\{N\}\}/g, slides.length).replace('{{PARTES}}', JSON.stringify(PARTES));
 fs.writeFileSync(path.join(D, 'muestra_clase2.html'), html); console.log('ok', (html.length / 1024).toFixed(0), 'KB');
