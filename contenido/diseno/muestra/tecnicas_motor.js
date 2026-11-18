@@ -22,7 +22,7 @@ const compas = (x, yTop, yBot, s, num, den) => txt(x, yTop + 2 * s - 3, num, { s
 
 /* altura escrita (guitarra) → paso desde la 1.ª línea (MI4 = 0) y cuerda/traste */
 const PASO = { DO4: -2, RE4: -1, MI4: 0, FA4: 1, SOL4: 2, LA4: 3, SI4: 4, DO5: 5, RE5: 6, MI5: 7, FA5: 8, SOL5: 9 };
-const CUERDA = { MI5: [1, 0], FA5: [1, 1], SOL5: [1, 3], SI4: [2, 0], DO5: [2, 1], RE5: [2, 3] };
+const CUERDA = { MI5: [1, 0], FA5: [1, 1], SOL5: [1, 3], SI4: [2, 0], DO5: [2, 1], RE5: [2, 3], LA4: [3, 2], SOL4: [3, 0], FA4: [4, 3], MI4: [4, 2], RE4: [4, 0], DO4: [5, 3] };
 const nombre = p => p.replace(/\d/, '');
 const PESO = { w: 2.1, h: 1.45, q: 1, e: .78, hr: 1.45, qr: 1, wr: 2.1 };
 
