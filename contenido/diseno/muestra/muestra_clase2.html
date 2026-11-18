@@ -115,7 +115,7 @@ button:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
  .pnav{gap:6px}.pnav .btn{min-height:40px;padding:8px 10px;font-size:14px;min-width:0}.pnav .btn[data-pn="-1"],.pnav .btn[data-sn="-1"]{flex:0 0 46px}}
 .tfoto{display:block;width:100%;height:300px;object-fit:contain;background:#000}
 .mano.foto{width:min(260px,100%)}
-.tec{display:grid;gap:16px;margin-top:16px}.tec figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}.tec .tz{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}.tec img{display:block;width:100%;height:auto}.tec figcaption{padding:12px 14px;display:flex;flex-direction:column;gap:4px}.tec figcaption span:last-child{color:var(--mute);font-size:14px}@media(max-width:640px){.tec img{width:760px;max-width:none}}
+.tec{display:grid;gap:16px;margin-top:16px}.tec figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}.tec img{display:block;width:100%;height:auto}.tec figcaption{padding:12px 14px;display:flex;flex-direction:column;gap:4px}.tec figcaption span:last-child{color:var(--mute);font-size:14px}.tec{grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr));align-items:start}.tmes{margin-top:22px;color:var(--gold,#f2b93b)}
 .gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-top:16px}.gal figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}.gal img{display:block;width:100%;height:auto}.gal .ancha{grid-column:1/-1}.gal figcaption{padding:12px 14px;display:flex;flex-direction:column;gap:4px}.gal figcaption span:last-child{color:var(--mute);font-size:14px}
 .ok,.rev,.no{align-self:flex-start;font:600 12px var(--body);letter-spacing:.08em;padding:3px 10px;border-radius:99px}.ok{background:#1d3a26;color:#8fe0a6}.rev{background:#3a2e12;color:var(--gold2)}.no{background:#3a1714;color:#ff9b8f}
 .card2{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin-top:16px}.card2 ul{margin:8px 0 0;padding-left:20px;display:grid;gap:6px}
@@ -187,12 +187,26 @@ button:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
 </section>
 
 <section>
- <h2>4 · Láminas técnicas redibujadas · Mes 1</h2>
- <p class="mute" style="margin-top:8px;max-width:62ch">Las mismas notas, números y textos de las láminas de hoy, con el estilo nuevo: fondo oscuro, los colores de cada nota y letra más grande. En el teléfono, desliza la lámina hacia los lados o tócala para verla completa.</p>
+ <h2>4 · Láminas técnicas redibujadas</h2>
+ <p class="mute" style="margin-top:8px;max-width:62ch">Las mismas notas, números y textos de las láminas de hoy, con el estilo nuevo. Ahora son angostas: en el teléfono se ven completas, sin deslizar. Las explicaciones van como texto debajo de cada lámina.</p>
+ <h3 class="tmes">Mes 1</h3>
  <div class="tec">
-  <figure><a class="tz" href="img_tec/G1_grados.svg" target="_blank" rel="noopener"><img src="img_tec/G1_grados.svg" alt="Los 7 grados de la escala de DO y su octava en el pentagrama"></a><figcaption><span class="ok">Clase 1</span><b>Los 7 grados de la escala + la octava</b><span>De DO grave (línea adicional de abajo) a DO agudo (3.er espacio). Cada nota con su número de grado, su nombre y su cifrado.</span></figcaption></figure>
-  <figure><a class="tz" href="img_tec/N1_pentagrama_basico.svg" target="_blank" rel="noopener"><img src="img_tec/N1_pentagrama_basico.svg" alt="Pentagrama: 5 líneas y 4 espacios"></a><figcaption><span class="ok">Clase 4</span><b>El pentagrama: 5 líneas y 4 espacios</b><span>Se cuentan de abajo hacia arriba. La clave de sol nace en la 2.ª línea, donde vive SOL.</span></figcaption></figure>
-  <figure><a class="tz" href="img_tec/N1_cuerda1.svg" target="_blank" rel="noopener"><img src="img_tec/N1_cuerda1.svg" alt="MI, FA y SOL en la primera cuerda: pentagrama y tablatura"></a><figcaption><span class="ok">Clase 4</span><b>MI, FA y SOL en la 1.ª cuerda</b><span>Pentagrama en 4/4 con la tablatura debajo: MI al aire (0), FA traste 1 con el dedo 1, SOL traste 3 con el dedo 3.</span></figcaption></figure>
+  <figure><img src="img_tec/G1_grados.svg" alt="Los 7 grados de la escala + la octava" loading="lazy"><figcaption><span class="ok">Clase 1</span><b>Los 7 grados de la escala + la octava</b><span>De DO grave (en la línea adicional de abajo) a DO agudo (3.er espacio). Cada nota lleva su grado, su nombre y su cifrado. El 1 y el 8 son la misma nota: una octava.</span></figcaption></figure>
+  <figure><img src="img_tec/N1_pentagrama_basico.svg" alt="El pentagrama: 5 líneas y 4 espacios" loading="lazy"><figcaption><span class="ok">Clase 4</span><b>El pentagrama: 5 líneas y 4 espacios</b><span>Las líneas y los espacios se cuentan de abajo hacia arriba.</span></figcaption></figure>
+  <figure><img src="img_tec/N1_cuerda1.svg" alt="MI, FA y SOL en la 1.ª cuerda" loading="lazy"><figcaption><span class="ok">Clase 4</span><b>MI, FA y SOL en la 1.ª cuerda</b><span>MI al aire (0), FA en el traste 1 con el dedo 1 y SOL en el traste 3 con el dedo 3. En la tablatura, la línea de arriba es la 1.ª cuerda.</span></figcaption></figure>
+ </div>
+ <h3 class="tmes">Mes 2</h3>
+ <div class="tec">
+  <figure><img src="img_tec/N1_ritmo_negras.svg" alt="Ritmo en negras" loading="lazy"><figcaption><span class="ok">Clase 5</span><b>Ritmo en negras</b><span>Una negra = un tiempo. Di «ta» en cada nota y lleva el pulso con el pie.</span></figcaption></figure>
+  <figure><img src="img_tec/N1_figuras.svg" alt="Figuras musicales y silencios" loading="lazy"><figcaption><span class="ok">Clase 5</span><b>Figuras musicales y silencios</b><span>Cuánto dura cada figura, su silencio y la sílaba para leerla. Los cuadros dorados son los tiempos que ocupa.</span></figcaption></figure>
+  <figure><img src="img_tec/N1_ritmo_figuras.svg" alt="Ritmo con redondas, blancas y negras" loading="lazy"><figcaption><span class="ok">Clase 5</span><b>Ritmo con redondas, blancas y negras</b><span>Alarga la sílaba mientras la nota sigue sonando: «taa-aa» dura dos tiempos.</span></figcaption></figure>
+  <figure><img src="img_tec/N1_arana.svg" alt="Ejercicio 1-2-3-4" loading="lazy"><figcaption><span class="ok">Clase 5</span><b>Ejercicio 1-2-3-4</b><span>Un dedo por traste: dedo 1 en el traste 1, dedo 2 en el 2… Empieza en la 6.ª cuerda y sube hasta la 1.ª.</span></figcaption></figure>
+  <figure><img src="img_tec/N1_ritmo_silencios.svg" alt="Ritmo con silencios" loading="lazy"><figcaption><span class="ok">Clase 6</span><b>Ritmo con silencios</b><span>En el silencio no se toca: di «sh» y sigue contando el tiempo.</span></figcaption></figure>
+  <figure><img src="img_tec/N1_compases.svg" alt="Compases de 2/4, 3/4 y 4/4" loading="lazy"><figcaption><span class="ok">Clase 6</span><b>Compases de 2/4, 3/4 y 4/4</b><span>El número de arriba dice cuántos tiempos tiene cada compás. El primer tiempo es el fuerte.</span></figcaption></figure>
+  <figure><img src="img_tec/N1_cuerda2.svg" alt="SI, DO y RE en la 2.ª cuerda" loading="lazy"><figcaption><span class="ok">Clase 6</span><b>SI, DO y RE en la 2.ª cuerda</b><span>SI al aire (0), DO en el traste 1 con el dedo 1 y RE en el traste 3 con el dedo 3.</span></figcaption></figure>
+  <figure><img src="img_tec/N1_ritmo_corcheas.svg" alt="Ritmo con corcheas" loading="lazy"><figcaption><span class="ok">Clase 7</span><b>Ritmo con corcheas</b><span>Dos corcheas unidas = un tiempo: «ti-ti».</span></figcaption></figure>
+  <figure><img src="img_tec/N1_cuerdas_1y2.svg" alt="Lectura en la 1.ª y la 2.ª cuerda" loading="lazy"><figcaption><span class="ok">Clase 7</span><b>Lectura en la 1.ª y la 2.ª cuerda</b><span>Ahora se combinan las dos cuerdas. Mira la tablatura para saber en qué cuerda va cada nota.</span></figcaption></figure>
+  <figure><img src="img_tec/N1_oda_alegria.svg" alt="Himno de la alegría" loading="lazy"><figcaption><span class="ok">Clase 8</span><b>Himno de la alegría</b><span>La primera melodía completa, solo con la 1.ª y la 2.ª cuerda.</span></figcaption></figure>
  </div>
 </section>
 
