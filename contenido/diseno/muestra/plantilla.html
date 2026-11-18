@@ -100,7 +100,19 @@ button:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
 .nums button.on{background:var(--gold);color:#120c04;border-color:var(--gold2)}
 .pi{min-height:96px}.pi b{font-size:26px}
 .pnav{display:flex;gap:8px;flex-wrap:wrap}.pnav .btn{flex:1;min-width:140px}
-@media (max-width:720px){.gtr.foto{max-height:42vh}.nums button{min-height:40px}.pi{min-height:80px}.partes .lam{padding:6px}.slide.wide{padding-top:16px}}
+.ficha{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:18px;align-items:start}
+.ficha .lam{padding:8px;display:flex;justify-content:center}
+.ficha .foto{width:100%;height:auto;max-height:calc(100dvh - 230px);object-fit:contain}
+.ficha .post.foto{max-height:calc(100dvh - 230px)}
+.n7{grid-template-columns:repeat(4,minmax(0,1fr))}
+.si{min-height:96px}.si b{font-size:24px}
+.pnav .btn[data-pn="-1"],.pnav .btn[data-sn="-1"]{flex:0 0 64px;min-width:0}
+@media (max-width:720px){.ficha{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:10px}.ficha .lam{padding:4px}.ficha .foto,.ficha .post.foto{max-height:calc(100dvh - 190px)}
+ .slide:has(.ficha){padding:14px 12px 16px;gap:8px;min-height:0}.slide:has(.ficha) h3{font-size:24px}.slide:has(.ficha) .kick{margin-bottom:2px}
+ .ayuda{display:none}
+ .ctl{padding:10px 12px}.ctl .btn{min-height:40px;padding:8px 14px;font-size:14px}.puntos{gap:5px;max-width:130px}.puntos button{width:9px;height:9px}.puntos button[aria-current=true]{width:20px}.nums{gap:5px}.nums button{min-height:36px;font-size:15px;border-radius:9px}
+ .pi,.si{min-height:0;padding:10px;font-size:14px;line-height:1.35}.pi b,.si b{font-size:18px}
+ .pnav{gap:6px}.pnav .btn{min-height:40px;padding:8px 10px;font-size:14px;min-width:0}.pnav .btn[data-pn="-1"],.pnav .btn[data-sn="-1"]{flex:0 0 46px}}
 .tfoto{display:block;width:100%;height:300px;object-fit:contain;background:#000}
 .mano.foto{width:min(260px,100%)}
 .gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-top:16px}.gal figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}.gal img{display:block;width:100%;height:auto}.gal .ancha{grid-column:1/-1}.gal figcaption{padding:12px 14px;display:flex;flex-direction:column;gap:4px}.gal figcaption span:last-child{color:var(--mute);font-size:14px}
@@ -132,7 +144,7 @@ button:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
   <div class="pista" id="pista">
 {{SLIDES}}
   </div>
-  <div class="ctl" id="ctl"><button class="btn ghost" id="prev">← Anterior</button><div class="puntos" id="puntos"></div><button class="btn" id="next">Siguiente →</button></div>
+  <div class="ctl" id="ctl"><button class="btn ghost" id="prev" aria-label="Diapositiva anterior">←</button><div class="puntos" id="puntos"></div><button class="btn" id="next">Siguiente →</button></div>
  </div>
 </section>
 {{GALERIA}}
@@ -148,9 +160,10 @@ document.addEventListener('click',e=>{const m=e.target.closest('.gtr .mk');if(m)
  const b=e.target.closest('.leg button,.nums button');if(b){const svg=b.closest('.slide').querySelector('.gtr');marca(svg,b.dataset.p,null);return}
  const nv=e.target.closest('[data-pn]');if(nv){const svg=nv.closest('.slide').querySelector('.gtr');let n=(+svg.dataset.sel||0)+(+nv.dataset.pn);if(n<1)n=10;if(n>10)n=1;marca(svg,n,null)}});
 document.addEventListener('keydown',e=>{const m=e.target.closest&&e.target.closest('.gtr .mk');if(m&&(e.key==='Enter'||e.key===' ')){e.preventDefault();m.dispatchEvent(new MouseEvent('click',{bubbles:true}))}});
-/* Postura: un número del dibujo o un paso de la lista se marcan juntos */
-function paso(n){document.querySelectorAll('.post .pm').forEach(m=>m.classList.toggle('on',m.dataset.s==n));document.querySelectorAll('.p7 button').forEach(b=>b.classList.toggle('on',b.dataset.s==n))}
-document.addEventListener('click',e=>{const m=e.target.closest('.post .pm,.p7 button');if(m)paso(m.dataset.s)});
+/* Postura: el número del dibujo y el botón se marcan juntos, y abajo aparece el paso */
+const PASOS=['Pies planos en el suelo.','Me siento en el borde de la silla.','La guitarra se apoya en mi <strong>pierna derecha</strong>.','Espalda recta y hombros sueltos.','El mástil, un poco hacia arriba.','El brazo derecho descansa sobre la caja; la mano queda sobre la boca.','Mano izquierda: <strong>el pulgar detrás del mástil</strong> y los dedos arqueados.'];let PSEL=0;
+function paso(n){n=+n;PSEL=n;document.querySelectorAll('.post .pm').forEach(m=>m.classList.toggle('on',m.dataset.s==n));document.querySelectorAll('.n7 button,.p7 button').forEach(b=>b.classList.toggle('on',b.dataset.s==n));document.querySelectorAll('.si').forEach(i=>{i.innerHTML='<b>Paso '+n+'</b><br>'+PASOS[n-1]})}
+document.addEventListener('click',e=>{const m=e.target.closest('.post .pm,.p7 button,.n7 button');if(m)return paso(m.dataset.s);const s=e.target.closest('[data-sn]');if(s){let n=PSEL+(+s.dataset.sn);if(n<1)n=7;if(n>7)n=1;paso(n)}});
 document.addEventListener('keydown',e=>{const m=e.target.closest&&e.target.closest('.post .pm');if(m&&(e.key==='Enter'||e.key===' ')){e.preventDefault();paso(m.dataset.s)}});
 /* Visor */
 const S=[...document.querySelectorAll('.slide')],N=S.length;let cur=0,todo=false;
