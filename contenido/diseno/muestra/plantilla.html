@@ -1,0 +1,142 @@
+<title>Muestra de diseño AMA</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600;700&display=swap">
+<style>
+/* Una sola apariencia oscura, la de la plataforma AMA: negro cálido, oro y los 7 colores de las notas.
+   Muestra: antes/después de la lámina y la clase 2 de guitarra en diapositivas. */
+:root{--bg:#0b0907;--card:#15110c;--card2:#1c160f;--line:#2e2619;--gold:#f2a31b;--gold2:#ffc857;--ivory:#fbf7ef;--mute:#aca392;
+ --disp:"Cormorant Garamond",Georgia,serif;--body:Jost,system-ui,-apple-system,sans-serif;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ivory);font:400 17px/1.55 var(--body);margin:0;padding-block:24px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,h3,h4{font-family:var(--disp);font-weight:600;line-height:1.12;margin:0;text-wrap:balance}
+h1{font-size:clamp(34px,6vw,52px)}h2{font-size:clamp(26px,4vw,34px)}
+.kick{font:600 12px/1 var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:0 0 10px}
+.mute{color:var(--mute)}p{margin:0}
+header p{max-width:62ch;margin-top:12px;color:var(--mute)}
+.comp{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+@media (max-width:720px){.comp{grid-template-columns:minmax(0,1fr)}}
+.comp figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.comp figcaption{display:flex;flex-direction:column;gap:6px}.comp figcaption b{font:600 15px var(--body);letter-spacing:.04em}
+.comp .old{background:#fff;border-radius:10px;display:block;width:100%;height:auto}
+.comp ul{margin:0;padding-left:18px;color:var(--mute);font-size:15px}
+.badge{align-self:flex-start;font:600 12px var(--body);letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:99px;border:1px solid var(--line);color:var(--mute)}
+.badge.nueva{color:#111;background:var(--gold);border-color:var(--gold)}
+/* Lámina */
+.gtr{display:block;width:100%;height:auto;max-height:78vh;margin:0 auto}
+.gtr .mk{cursor:pointer;outline:none}.gtr .mk circle{transition:transform .15s;transform-box:fill-box;transform-origin:center}
+.gtr .mk:hover circle,.gtr .mk.on circle,.gtr .mk:focus-visible circle{transform:scale(1.18);fill:var(--gold2)}
+.gtr .hl{opacity:0;transition:opacity .2s;stroke:var(--gold2);stroke-width:4;fill:none;filter:url(#fGlow);pointer-events:none}.gtr .hl.on{opacity:1}
+.info{min-height:64px;background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.info b{font:600 20px var(--disp);color:var(--gold2)}
+/* Visor de diapositivas */
+.visor{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.barra{display:flex;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.barra .t{flex:1;min-width:0;font:600 14px var(--body);color:var(--mute)}
+.prog{height:4px;background:var(--line)}.prog i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));width:0;transition:width .3s}
+.pista{position:relative;touch-action:pan-y}
+.slide{display:none;padding:28px clamp(18px,4vw,44px) 30px;min-height:420px;flex-direction:column;gap:16px;animation:entra .35s ease}
+.slide.on{display:flex}.slide h3{font-size:clamp(28px,4.4vw,40px)}
+@keyframes entra{from{opacity:.0;transform:translateX(18px)}to{opacity:1;transform:none}}
+.todo .slide{display:flex;border-bottom:1px solid var(--line);animation:none}
+.ctl{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 16px;border-top:1px solid var(--line)}
+.ctl.todo-hide{}
+.puntos{display:flex;gap:7px;flex-wrap:wrap;justify-content:center}
+.puntos button{width:11px;height:11px;border-radius:50%;border:0;background:var(--line);padding:0;cursor:pointer}
+.puntos button[aria-current=true]{background:var(--gold);width:26px;border-radius:99px}
+.btn{font:600 16px var(--body);background:var(--gold);color:#120c04;border:0;border-radius:99px;padding:12px 20px;min-height:46px;cursor:pointer}
+.btn.ghost{background:none;color:var(--gold2);border:1px solid var(--gold)}.btn:disabled{opacity:.45;cursor:default}
+.link{background:none;border:0;color:var(--gold2);font:600 14px var(--body);text-decoration:underline;text-underline-offset:3px;cursor:pointer;min-height:40px}
+button:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
+.lead{font-size:19px;max-width:60ch}
+.metas{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.metas li{background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:12px 16px;font-size:18px}
+.partes{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;align-items:start}
+@media (max-width:720px){.partes{grid-template-columns:minmax(0,1fr)}}
+.lam{background:radial-gradient(ellipse at 50% 40%,#231a10,#0d0a07 75%);border-radius:18px;padding:14px}
+.leg{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:6px}
+.leg button{display:flex;gap:12px;align-items:flex-start;width:100%;text-align:left;background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:9px 12px;color:var(--ivory);font:inherit;cursor:pointer}
+.leg button.on{border-color:var(--gold);background:#2a1f0d}
+.leg .n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--gold);color:#120c04;display:grid;place-items:center;font-weight:700;font-size:14px}
+.leg b{display:block;font-size:16px}.leg small{display:block;color:var(--mute);font-size:14px;line-height:1.35}
+.tipos{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.tipos article{background:var(--card2);border:1px solid var(--line);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.tipos h4{font-size:26px;color:var(--gold2)}.tag{align-self:flex-start;font-size:13px;font-weight:600;border:1px solid var(--gold);color:var(--gold2);border-radius:99px;padding:2px 10px}
+.pasos{margin:0;padding:0;list-style:none;counter-reset:p;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+.pasos li{counter-increment:p;display:flex;gap:12px;align-items:flex-start;background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.pasos li::before{content:counter(p);flex:none;width:30px;height:30px;border-radius:50%;background:var(--gold);color:#120c04;font-weight:700;display:grid;place-items:center}
+.nota{font-size:14px;color:var(--mute);border-left:3px solid var(--line);padding-left:10px}
+.clave{font:500 italic 21px/1.35 var(--disp);color:var(--gold2);border-left:3px solid var(--gold);padding:4px 0 4px 14px}
+.manos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}@media (max-width:560px){.manos{grid-template-columns:minmax(0,1fr)}}
+.manos figure{margin:0;background:var(--card2);border:1px solid var(--line);border-radius:16px;padding:12px;display:flex;flex-direction:column;align-items:center;gap:8px}
+.mano{width:min(220px,100%);height:auto}.manos figcaption{display:flex;flex-direction:column;gap:4px;text-align:center}.manos figcaption span{color:var(--mute);font-size:15px}
+.pulso{display:flex;gap:14px;justify-content:center;margin:10px 0}
+.pulso span{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font:600 26px var(--body);background:var(--card2);border:2px solid var(--line);transition:all .08s}
+.pulso span.on{background:var(--gold);color:#120c04;border-color:var(--gold2);transform:scale(1.12)}
+.pulso+.btn{align-self:center}
+.figs{display:grid;gap:8px}
+.figs button{display:grid;grid-template-columns:120px 92px minmax(0,1fr) auto;gap:12px;align-items:center;text-align:left;background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:10px 14px;color:var(--ivory);font:inherit;cursor:pointer}
+.figs button.on{border-color:var(--gold)}
+@media (max-width:560px){.figs button{grid-template-columns:minmax(0,1fr) auto}.figs .bar{grid-column:1/-1}}
+.fn{font-weight:600}.fd{color:var(--mute);font-size:14px}.fs{font-weight:700;color:var(--gold2)}
+.bar{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:3px;height:14px}.bar i{background:var(--gold);border-radius:3px;opacity:.8}
+@media (prefers-reduced-motion:reduce){.slide{animation:none}*{transition:none!important}}
+</style>
+<main>
+<header>
+ <p class="kick">Academia de Música ARPA · Propuesta de diseño</p>
+ <h1>Muestra: Clase 2 de guitarra</h1>
+ <p>Una sola clase rediseñada para decidir el estilo antes de cambiar las demás. El contenido es el mismo que está hoy en la plataforma; solo cambia cómo se ve. Esta página es aparte: la plataforma de los estudiantes no se tocó.</p>
+</header>
+
+<section>
+ <h2>1 · La lámina, antes y después</h2>
+ <div class="comp">
+  <figure><span class="badge">Actual</span><img class="old" src="{{ACTUAL}}" alt="Lámina actual de las partes de la guitarra"><figcaption><b>Lo que tiene hoy</b><ul><li>Dibujo con figuras planas, sin volumen ni madera.</li><li>Hoja vertical para imprimir: en el teléfono el texto queda diminuto.</li><li>Fondo blanco que choca con la plataforma oscura.</li></ul></figcaption></figure>
+  <figure><span class="badge nueva">Nueva</span><div class="lam">{{NUEVA}}</div><div class="info" id="info-comp" aria-live="polite"><span class="mute">Toca un número del dibujo.</span></div><figcaption><b>Lo que cambia</b><ul><li>Madera con veta, brillo, roseta con los 7 colores AMA, trastes a la distancia real y cuerdas de nailon y entorchadas.</li><li>Fondo oscuro que se integra a la plataforma.</li><li>Interactiva: al tocar un número se ilumina la parte y aparece su nombre en letra grande.</li></ul></figcaption></figure>
+ </div>
+</section>
+
+<section>
+ <h2>2 · La clase en diapositivas</h2>
+ <p class="mute" style="margin-top:8px;max-width:62ch">Una idea por pantalla. Avanza con los botones, deslizando con el dedo o con las flechas del teclado. «Ver todo en una página» muestra la clase completa como hoy.</p>
+ <div class="visor" id="visor" style="margin-top:16px">
+  <div class="barra"><span class="t" id="cont">1 de {{N}}</span><button class="link" id="modo">Ver todo en una página</button></div>
+  <div class="prog"><i id="pbar"></i></div>
+  <div class="pista" id="pista">
+{{SLIDES}}
+  </div>
+  <div class="ctl" id="ctl"><button class="btn ghost" id="prev">← Anterior</button><div class="puntos" id="puntos"></div><button class="btn" id="next">Siguiente →</button></div>
+ </div>
+</section>
+</main>
+<script>
+const PARTES={{PARTES}};
+/* Lámina interactiva: un número ilumina su parte */
+function marca(svg,n,info){svg.querySelectorAll('.hl').forEach(h=>h.classList.toggle('on',h.dataset.h==n));svg.querySelectorAll('.mk').forEach(m=>m.classList.toggle('on',m.dataset.p==n));
+ if(info){const p=PARTES[n-1];info.innerHTML='<b>'+n+'. '+p[0]+'</b><br>'+p[1]}
+ const sl=svg.closest('.slide');if(sl)sl.querySelectorAll('.leg button').forEach(b=>b.classList.toggle('on',b.dataset.p==n))}
+document.addEventListener('click',e=>{const m=e.target.closest('.gtr .mk');if(m){const svg=m.closest('svg');marca(svg,m.dataset.p,svg.id==='g-comp'?document.getElementById('info-comp'):null);return}
+ const b=e.target.closest('.leg button');if(b){const svg=b.closest('.slide').querySelector('.gtr');marca(svg,b.dataset.p,null)}});
+document.addEventListener('keydown',e=>{const m=e.target.closest&&e.target.closest('.gtr .mk');if(m&&(e.key==='Enter'||e.key===' ')){e.preventDefault();m.dispatchEvent(new MouseEvent('click',{bubbles:true}))}});
+/* Visor */
+const S=[...document.querySelectorAll('.slide')],N=S.length;let cur=0,todo=false;
+const pts=document.getElementById('puntos');S.forEach((_,i)=>{const b=document.createElement('button');b.setAttribute('aria-label','Ir a la diapositiva '+(i+1));b.onclick=()=>ir(i);pts.append(b)});
+function ir(i){cur=Math.max(0,Math.min(N-1,i));S.forEach((s,j)=>s.classList.toggle('on',j===cur));[...pts.children].forEach((b,j)=>b.setAttribute('aria-current',String(j===cur)));
+ document.getElementById('cont').textContent=(cur+1)+' de '+N;document.getElementById('pbar').style.width=((cur+1)/N*100)+'%';
+ document.getElementById('prev').disabled=cur===0;document.getElementById('next').disabled=cur===N-1}
+document.getElementById('prev').onclick=()=>ir(cur-1);document.getElementById('next').onclick=()=>ir(cur+1);
+document.getElementById('modo').onclick=()=>{todo=!todo;document.getElementById('pista').classList.toggle('todo',todo);document.getElementById('ctl').hidden=todo;document.getElementById('modo').textContent=todo?'Ver en diapositivas':'Ver todo en una página';document.getElementById('cont').textContent=todo?'Clase completa':(cur+1)+' de '+N};
+document.addEventListener('keydown',e=>{if(todo||/INPUT|TEXTAREA/.test(e.target.tagName))return;const r=document.getElementById('visor').getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;if(e.key==='ArrowRight')ir(cur+1);if(e.key==='ArrowLeft')ir(cur-1)});
+let x0=null;const pista=document.getElementById('pista');pista.addEventListener('pointerdown',e=>{x0=e.clientX});pista.addEventListener('pointerup',e=>{if(x0===null||todo)return;const d=e.clientX-x0;x0=null;if(Math.abs(d)>60)ir(cur+(d<0?1:-1))});
+ir(0);
+/* Sonido: pulso y figuras */
+let ac=null;const AC=()=>ac=ac||new (window.AudioContext||window.webkitAudioContext)();
+function clic(t,f,v){const c=AC(),o=c.createOscillator(),g=c.createGain();o.frequency.value=f;g.gain.setValueAtTime(v,t);g.gain.exponentialRampToValueAtTime(.001,t+.09);o.connect(g).connect(c.destination);o.start(t);o.stop(t+.1)}
+function nota(t,d){const c=AC(),o=c.createOscillator(),g=c.createGain();o.type='triangle';o.frequency.value=392;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.22,t+.01);g.gain.setValueAtTime(.22,t+Math.max(.02,d-.06));g.gain.linearRampToValueAtTime(0,t+d);o.connect(g).connect(c.destination);o.start(t);o.stop(t+d+.02)}
+const BEAT=60/80;
+document.addEventListener('click',e=>{const p=e.target.closest('[data-pulso]');if(p){const c=AC();c.resume&&c.resume();const t0=c.currentTime+.05,sp=[...document.querySelectorAll('.pulso span')];
+  for(let i=0;i<8;i++){clic(t0+i*BEAT,i%4?880:1320,.35);setTimeout(()=>{sp.forEach((s,j)=>s.classList.toggle('on',j===i%4))},(i*BEAT+.05)*1000)}setTimeout(()=>sp.forEach(s=>s.classList.remove('on')),(8*BEAT+.2)*1000);return}
+ const f=e.target.closest('[data-fig]');if(f){const c=AC();c.resume&&c.resume();const n=[1,2,4,8,16][+f.dataset.fig],t0=c.currentTime+.05,d=4*BEAT/n;document.querySelectorAll('.figs button').forEach(b=>b.classList.toggle('on',b===f));
+  for(let i=0;i<4;i++)clic(t0+i*BEAT,1320,.12);for(let i=0;i<n;i++)nota(t0+i*d,d*.9)}});
+</script>
