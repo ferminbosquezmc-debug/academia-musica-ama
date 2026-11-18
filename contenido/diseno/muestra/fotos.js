@@ -2,7 +2,7 @@
 const MK = (cls, n, x, y, r) => `<g class="${cls}" data-${cls === 'mk' ? 'p' : 's'}="${n}" tabindex="0" role="button" aria-label="${cls === 'mk' ? 'Parte' : 'Paso'} ${n}"><circle cx="${x}" cy="${y}" r="${r}" fill="#f2b93b" stroke="#1b1206" stroke-width="${r / 6}"/><text x="${x}" y="${y + r * .36}" text-anchor="middle" font-family="Jost,sans-serif" font-size="${r * 1.05}" font-weight="700" fill="#1b1206">${n}</text></g>`;
 const LINE = (x1, y1, x2, y2) => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#f2b93b" stroke-width="5" stroke-dasharray="10 8" opacity=".85"/>`;
 function partes(id) {
-  const W = 1086, H = 1448, R = 30;
+  const W = 1086, H = 1448, R = 21;
   const hl = [[1, '<rect x="470" y="12" width="150" height="255" rx="30"/>'], [2, '<rect x="440" y="80" width="40" height="160" rx="14"/><rect x="608" y="80" width="40" height="160" rx="14"/>'], [3, '<rect x="488" y="262" width="114" height="24" rx="6"/>'],
     [4, '<rect x="482" y="278" width="126" height="420" rx="10"/>'], [5, '<rect x="494" y="280" width="102" height="545" rx="6"/>'], [6, '<rect x="488" y="330" width="114" height="230" rx="6"/>'], [7, '<circle cx="545" cy="905" r="80"/>'],
     [8, '<rect x="512" y="270" width="66" height="900" rx="12"/>'], [9, '<path d="M545,684 C450,684 345,700 340,790 C336,860 372,900 362,950 C350,1010 262,1060 262,1200 C262,1330 380,1398 545,1398 C710,1398 828,1330 828,1200 C828,1060 740,1010 728,950 C718,900 754,860 750,790 C745,700 640,684 545,684 Z"/>'], [10, '<rect x="400" y="1138" width="288" height="48" rx="8"/>']];
@@ -14,7 +14,7 @@ function partes(id) {
 ${mk.map(([n, x, y]) => MK('mk', n, x, y, R)).join('')}</svg>`;
 }
 function postura() {
-  const W = 1122, H = 1402, R = 32;
+  const W = 1122, H = 1402, R = 25;
   const mk = [[1, 560, 1300], [2, 560, 905], [3, 300, 820], [4, 560, 420], [5, 1000, 180], [6, 300, 520], [7, 960, 360]];
   return `<svg class="post foto" viewBox="0 0 ${W} ${H}" role="group" aria-label="Postura con la guitarra en 7 pasos"><image href="img/G03_postura.jpg" x="0" y="0" width="${W}" height="${H}"/>${mk.map(([n, x, y]) => MK('pm', n, x, y, R)).join('')}</svg>`;
 }
