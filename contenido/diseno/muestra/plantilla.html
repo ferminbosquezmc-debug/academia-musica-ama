@@ -93,6 +93,12 @@ button:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
 .figs button{grid-template-columns:176px 120px 92px minmax(0,1fr) auto}
 .fimg{width:176px;height:auto;background:#fff;border-radius:8px;display:block}
 @media (max-width:560px){.figs button{grid-template-columns:130px minmax(0,1fr) auto}.fimg{width:130px;grid-row:span 2}.figs .bar{grid-column:2/-1}}
+.foto{display:block;width:100%;height:auto;border-radius:14px}.gtr.foto{max-height:80vh}
+.tfoto{display:block;width:100%;height:300px;object-fit:contain;background:#000}
+.mano.foto{width:min(260px,100%)}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-top:16px}.gal figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}.gal img{display:block;width:100%;height:auto}.gal figcaption{padding:12px 14px;display:flex;flex-direction:column;gap:4px}.gal figcaption span:last-child{color:var(--mute);font-size:14px}
+.ok,.rev,.no{align-self:flex-start;font:600 12px var(--body);letter-spacing:.08em;padding:3px 10px;border-radius:99px}.ok{background:#1d3a26;color:#8fe0a6}.rev{background:#3a2e12;color:var(--gold2)}.no{background:#3a1714;color:#ff9b8f}
+.card2{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin-top:16px}.card2 ul{margin:8px 0 0;padding-left:20px;display:grid;gap:6px}
 @media (prefers-reduced-motion:reduce){.slide{animation:none}*{transition:none!important}}
 </style>
 <main>
@@ -106,7 +112,7 @@ button:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
  <h2>1 · La lámina, antes y después</h2>
  <div class="comp">
   <figure><span class="badge">Actual</span><img class="old" src="{{ACTUAL}}" alt="Lámina actual de las partes de la guitarra"><figcaption><b>Lo que tiene hoy</b><ul><li>Dibujo con figuras planas, sin volumen ni madera.</li><li>Hoja vertical para imprimir: en el teléfono el texto queda diminuto.</li><li>Fondo blanco que choca con la plataforma oscura.</li></ul></figcaption></figure>
-  <figure><span class="badge nueva">Nueva</span><div class="lam">{{NUEVA}}</div><div class="info" id="info-comp" aria-live="polite"><span class="mute">Toca un número del dibujo.</span></div><figcaption><b>Lo que cambia</b><ul><li>Madera con veta, brillo, roseta con los 7 colores AMA, trastes a la distancia real y cuerdas de nailon y entorchadas.</li><li>Fondo oscuro que se integra a la plataforma.</li><li>Interactiva: al tocar un número se ilumina la parte y aparece su nombre en letra grande.</li></ul></figcaption></figure>
+  <figure><span class="badge nueva">Nueva</span><div class="lam">{{NUEVA}}</div><div class="info" id="info-comp" aria-live="polite"><span class="mute">Toca un número del dibujo.</span></div><figcaption><b>Lo que cambia</b><ul><li>Imagen hecha con ChatGPT a partir del prompt G-02: guitarra clásica con madera, brillo y roseta de colores.</li><li>Fondo oscuro que se integra a la plataforma.</li><li>Interactiva: al tocar un número se ilumina la parte y aparece su nombre en letra grande.</li></ul></figcaption></figure>
  </div>
 </section>
 
@@ -122,6 +128,7 @@ button:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
   <div class="ctl" id="ctl"><button class="btn ghost" id="prev">← Anterior</button><div class="puntos" id="puntos"></div><button class="btn" id="next">Siguiente →</button></div>
  </div>
 </section>
+{{GALERIA}}
 </main>
 <script>
 const PARTES={{PARTES}};
