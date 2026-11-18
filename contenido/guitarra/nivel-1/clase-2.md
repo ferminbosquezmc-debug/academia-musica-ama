@@ -8,34 +8,18 @@
 ### 📖 Aprendo · Las 10 partes de la guitarra
 La guitarra tiene **10 partes**, y cada una tiene un trabajo:
 
-![Partes de la guitarra](guitarra/img/N1_partes_guitarra.svg)
+[[partes-foto]]
 
-| Guitarra | Cuerdas | Sonido |
-|---|---|---|
-| Clásica | nailon | cálido y dulce |
-| Acústica | acero | brillante y fuerte |
-| Eléctrica | acero + amplificador | necesita corriente |
+### 📖 Tres tipos de guitarra
+[[tipos-foto]]
 
 ### 📖 Mi postura en 7 pasos
-![Postura correcta con la guitarra](guitarra/img/G1_postura.svg)
-
-1. Pies planos en el suelo.
-2. Me siento en el borde de la silla.
-3. La guitarra se apoya en mi **pierna derecha**.
-4. Espalda recta y hombros sueltos.
-5. El mástil, un poco hacia arriba.
-6. El brazo derecho descansa sobre la caja; la mano queda sobre la boca.
-7. Mano izquierda: **el pulgar detrás del mástil** y los dedos arqueados.
+[[postura-foto]]
 
 ### 👀 Observo · Mis dedos
 Cada mano tiene un trabajo distinto y sus dedos se nombran de forma distinta:
 
-![Numeración de los dedos](guitarra/img/N1_dedos.svg)
-
-| Mano | Qué hace | Cómo se nombran los dedos |
-|---|---|---|
-| **Izquierda** | **pisa** las cuerdas en los trastes | con **números**: 1 índice · 2 medio · 3 anular · 4 meñique. El pulgar no lleva número: va detrás del mástil. |
-| **Derecha** | **toca** (pulsa) las cuerdas | con **letras**: **p** pulgar · **i** índice · **m** medio · **a** anular. |
+[[manos-foto]]
 
 > Números para la mano que pisa; letras para la mano que toca.
 

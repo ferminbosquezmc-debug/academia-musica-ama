@@ -11,6 +11,8 @@
 - **Tablatura (TAB):** 6 líneas = 6 cuerdas. Arriba está la **1.ª**. El número es el traste.
 
 ### 👀 Observo
+![El rasgueo](guitarra/img/G13_rasgueo.svg)
+
 | Re mayor (D) | Rasgueos |
 |---|---|
 | ![D](guitarra/img/N1_acorde_D.svg) | ![Rasgueos](guitarra/img/N1_rasgueo.svg) |
