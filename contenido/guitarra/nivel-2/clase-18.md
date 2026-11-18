@@ -19,6 +19,8 @@
 ### 📖 El arpegio
 **Arpegiar** es tocar las notas de un acorde **una por una**, en lugar de rasguearlas juntas. Cada dedo de la mano derecha tiene su cuerda:
 
+![La mano en el arpegio](guitarra/img/G14_arpegio.svg)
+
 ![Arpegio con los dedos p, i, m y a](guitarra/img/G2_arpegio.svg)
 
 - **p** (pulgar): el **bajo** del acorde (6.ª en G y Em, 5.ª en C y Am, 4.ª en D).

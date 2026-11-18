@@ -1,26 +1,11 @@
 /* Láminas técnicas de guitarra Nivel 1 · Mes 3 (clases 9 a 12), estilo nuevo y formato para teléfono.
    Uso: node tecnicas_mes3.js → img_tec/*.svg   («Qué es un acorde» ya la cubre la lámina G-12) */
 const fs = require('fs'), path = require('path');
-const { C, NOTA, F, W, chip, txt, svg, partitura, f1 } = require('./tecnicas_motor.js');
+const { C, NOTA, F, W, chip, txt, svg, partitura, f1, acorde } = require('./tecnicas_motor.js');
 const OUT = path.join(__dirname, 'img_tec');
 const out = (n, h, label, b, w = W) => fs.writeFileSync(path.join(OUT, n + '.svg'), w === W ? svg(h, label, b) : `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${Math.ceil(h)}" viewBox="0 0 ${w} ${Math.ceil(h)}" role="img" aria-label="${label}"><title>${label}</title><rect width="${w}" height="${Math.ceil(h)}" rx="26" fill="${C.BG}"/>${b}</svg>`);
 const q = p => ({ p, d: 'q' });
 
-/* Diagrama de acorde. tr: trastes de la 6.ª a la 1.ª (x = no se toca, 0 = al aire); de: dedos; ch: notas que suenan (opcional) */
-function acorde(x0, y0, w, nom, sub, tr, de, ch) {
-  const gx = x0 + w * .14, gw = w * .72, sx = i => gx + i * gw / 5, k = w / 460, top = y0 + 236 * k, fh = w * .19, NF = 4; let b = '';
-  b += txt(x0 + w / 2, y0 + 78 * k + 6, nom, { serif: 1, size: f1(84 * k), w: 700 }) + txt(x0 + w / 2, y0 + 124 * k + 8, sub, { size: f1(30 * k), w: 500, fill: C.MUTE });
-  b += `<rect x="${f1(gx - 8)}" y="${top - 16}" width="${f1(gw + 16)}" height="16" rx="3" fill="#f4ecd8"/>`;
-  for (let f = 1; f <= NF; f++) b += `<line x1="${f1(gx)}" y1="${f1(top + f * fh)}" x2="${f1(gx + gw)}" y2="${f1(top + f * fh)}" stroke="#8d8f93" stroke-width="5"/>`;
-  for (let i = 0; i < 6; i++) b += `<line x1="${f1(sx(i))}" y1="${top}" x2="${f1(sx(i))}" y2="${f1(top + NF * fh)}" stroke="${i < 3 ? '#d8c9a6' : '#eee7da'}" stroke-width="${[6.5, 5.6, 4.7, 3.8, 3, 2.3][i]}"/>`;
-  for (let i = 0; i < 6; i++) { const x = sx(i), t = tr[i], yb = top + NF * fh;
-    if (t === 'x') b += txt(x, top - 32 * k, '✕', { size: f1(40 * k), w: 700, fill: C.MUTE });
-    else if (t === 0) b += `<circle cx="${f1(x)}" cy="${f1(top - 46 * k)}" r="${f1(17 * k)}" fill="none" stroke="${C.IV}" stroke-width="5"/>`;
-    else { const y = top + (t - .5) * fh; b += `<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(32 * k)}" fill="${C.GOLD}" stroke="#1b1206" stroke-width="4"/>` + txt(x, y + 13 * k, de[i], { size: f1(38 * k), w: 700, fill: '#1b1206' }); }
-    b += txt(x, yb + 44 * k, 6 - i, { size: f1(26 * k), w: 600, fill: C.MUTE });
-    if (ch && ch[i]) b += chip(x, yb + 96 * k, ch[i], f1(58 * k), f1(38 * k)); }
-  return { b, h: top + NF * fh + (ch ? 130 : 70) * k - y0 };
-}
 const SOLO = [['N1_acorde_Em', 'Em', 'Mi menor', [0, 2, 2, 0, 0, 0], [0, 2, 3, 0, 0, 0], ['MI', 'SI', 'MI', 'SOL', 'SI', 'MI']],
   ['N1_acorde_E', 'EM', 'Mi mayor', [0, 2, 2, 1, 0, 0], [0, 2, 3, 1, 0, 0]],
   ['N1_acorde_Am', 'Am', 'La menor', ['x', 0, 2, 2, 1, 0], [0, 0, 2, 3, 1, 0], [0, 'LA', 'MI', 'LA', 'DO', 'MI']],

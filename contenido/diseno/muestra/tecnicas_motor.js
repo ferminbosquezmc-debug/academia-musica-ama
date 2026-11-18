@@ -2,6 +2,7 @@
    Las explicaciones largas van como texto debajo de la imagen (en la página), no dentro del dibujo. */
 const C = { BG: '#0b0907', PANEL: '#15110c', IV: '#fbf7ef', MUTE: '#b3aa98', GOLD: '#f2b93b', LINE: '#e9e2d3', TAB: '#8d8577' };
 const NOTA = { DO: ['#E5312B', '#fff', 'C'], RE: ['#F57C00', '#1A1A1A', 'D'], MI: ['#FFD21F', '#1A1A1A', 'E'], FA: ['#2E9E4F', '#1A1A1A', 'F'], SOL: ['#2AA7E8', '#1A1A1A', 'G'], LA: ['#283593', '#fff', 'A'], SI: ['#8E3BB8', '#fff', 'B'] };
+['FA♯', 'SOL♯', 'LA♯', 'DO♯', 'RE♯', 'SOL♭', 'LA♭', 'SI♭', 'RE♭', 'MI♭'].forEach(n => NOTA[n] = ['#1a1a1a', '#fff', '']);
 const F = 'font-family="Jost,Segoe UI,Arial,sans-serif"', S = 'font-family="Cormorant Garamond,Georgia,serif"';
 const W = 1000;
 const CLAVE = 'M434 2Q464 -103 464 -170Q464 -223 427.0 -257.0Q390 -291 337 -291Q287 -291 250.0 -261.5Q213 -232 213 -190Q213 -160 233.5 -133.5Q254 -107 283.5 -107.0Q313 -107 331.5 -128.5Q350 -150 350 -178Q350 -240 280 -240Q298 -268 338 -268Q353 -268 368.5 -263.5Q384 -259 401.0 -248.0Q418 -237 428.5 -213.5Q439 -190 439 -157Q439 -136 411 -6Q389 -12 356 -12Q259 -12 189.5 60.0Q120 132 120 232Q120 267 131.5 303.0Q143 339 157.5 366.5Q172 394 200.5 428.5Q229 463 248.5 483.5Q268 504 303 539Q280 621 280 689Q280 779 313.0 839.5Q346 900 379 900Q389 900 401.5 887.0Q414 874 426.0 851.0Q438 828 446.5 790.5Q455 753 455 710Q455 551 342 447L368 329Q384 332 397 332Q458 332 500.0 282.5Q542 233 542 162Q542 44 434 2ZM426 746Q426 801 394 801Q358 801 333.0 748.0Q308 695 308 630Q308 588 321 557Q359 580 392.5 639.5Q426 699 426 746ZM498 128Q498 183 466.0 216.0Q434 249 383 249L428 23Q498 52 498 128ZM407 17 361 247Q334 241 311.5 214.0Q289 187 289 158Q289 143 295.0 128.5Q301 114 309.5 104.0Q318 94 327.0 86.0Q336 78 342.0 74.5Q348 71 348 71L340 66Q307 75 277.5 106.0Q248 137 248 184Q248 231 277.5 270.5Q307 310 343 323L325 430Q168 299 168 177Q168 104 223.0 55.0Q278 6 348 6Q365 6 407 17Z';
@@ -15,7 +16,7 @@ const silCorchea = (cx, cy, h) => glifo(SCOR, cx, cy, h, 126, 349, 366);
 const pent = (x1, x2, top, s, w = 3) => [0, 1, 2, 3, 4].map(i => `<line x1="${x1}" y1="${top + i * s}" x2="${x2}" y2="${top + i * s}" stroke="${C.LINE}" stroke-width="${w}"/>`).join('');
 function cabeza(x, y, s, color, hueca) { const rx = s * .64, ry = s * .45;
   return `<ellipse cx="${f1(x)}" cy="${f1(y)}" rx="${f1(rx)}" ry="${f1(ry)}" transform="rotate(-20 ${f1(x)} ${f1(y)})" fill="${color}" stroke="${C.IV}" stroke-width="2.5"/>` + (hueca ? `<ellipse cx="${f1(x)}" cy="${f1(y)}" rx="${f1(rx * .55)}" ry="${f1(ry * .42)}" transform="rotate(-38 ${f1(x)} ${f1(y)})" fill="${C.BG}"/>` : ''); }
-const chip = (x, y, n, w = 84, h = 42) => { const [c, t] = NOTA[n]; w = n.length > 2 ? w + 10 : w; return `<rect x="${f1(x - w / 2)}" y="${f1(y - h / 2)}" width="${w}" height="${h}" rx="${h / 2}" fill="${c}" stroke="${C.IV}" stroke-width="2"/><text x="${f1(x)}" y="${f1(y + h * .25)}" text-anchor="middle" ${F} font-size="${f1(h * .62)}" font-weight="700" fill="${t}">${n}</text>`; };
+const chip = (x, y, n, w = 84, h = 42, fijo) => { const [c, t] = NOTA[n]; w = fijo ? w : n.length > 3 ? w + 22 : n.length > 2 ? w + 10 : w; const fs0 = fijo && n.length > 2 ? h * .48 : h * .62; return `<rect x="${f1(x - w / 2)}" y="${f1(y - h / 2)}" width="${w}" height="${h}" rx="${h / 2}" fill="${c}" stroke="${C.IV}" stroke-width="2"/><text x="${f1(x)}" y="${f1(y + h * .25)}" text-anchor="middle" ${F} font-size="${f1(fs0)}" font-weight="700" fill="${t}">${n}</text>`; };
 const txt = (x, y, t, o = {}) => `<text x="${f1(x)}" y="${f1(y)}" text-anchor="${o.a || 'middle'}" ${o.serif ? S : F} font-size="${o.size || 30}" font-weight="${o.w || 600}" fill="${o.fill || C.IV}"${o.ls ? ` letter-spacing="${o.ls}"` : ''}>${t}</text>`;
 const svg = (h, label, body) => `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${Math.ceil(h)}" viewBox="0 0 ${W} ${Math.ceil(h)}" role="img" aria-label="${label}"><title>${label}</title><rect width="${W}" height="${Math.ceil(h)}" rx="26" fill="${C.BG}"/>${body}</svg>`;
 const compas = (x, yTop, yBot, s, num, den) => txt(x, yTop + 2 * s - 3, num, { serif: 1, size: f1(2.4 * s), w: 700 }) + txt(x, yBot - 3, den, { serif: 1, size: f1(2.4 * s), w: 700 });
@@ -32,7 +33,7 @@ function anchos(ln, x0, avail, porLinea) { const wm = ln.map(ev => ev.reduce((a,
 function repartir(ev, x0, x1) { const tot = ev.reduce((a, e) => a + PESO[e.d], 0), u = (x1 - x0 - 30) / tot; let x = x0 + 34; return ev.map(e => { const r = x; x += PESO[e.d] * u; return r; }); }
 
 /* Pentagrama con notas, nombres, tablatura y dedos. mm = [[{p:'MI5',d:'q'},...], ...] ; porLinea compases por renglón */
-function partitura({ mm, porLinea = 2, compasTxt = ['4', '4'], s = 32, tab = true, dedos = true, chips = true }) {
+function partitura({ mm, porLinea = 2, compasTxt = ['4', '4'], s = 32, tab = true, dedos = true, chips = true, sinColor = false }) {
   let b = '', y = 20; const lineas = []; for (let i = 0; i < mm.length; i += porLinea) lineas.push(mm.slice(i, i + porLinea));
   lineas.forEach((ln, li) => {
     const top = y + 3 * s, bot = top + 4 * s, xL = 30, xR = W - 30, head = li === 0 ? 215 : 120;
@@ -47,9 +48,9 @@ function partitura({ mm, porLinea = 2, compasTxt = ['4', '4'], s = 32, tab = tru
         const st = PASO[e.p], yN = bot - st * s / 2, n = nombre(e.p);
         if (st <= -2) b += `<line x1="${x - s}" y1="${bot + s}" x2="${x + s}" y2="${bot + s}" stroke="${C.LINE}" stroke-width="3"/>`;
         if (st >= 10) b += `<line x1="${x - s}" y1="${top - s}" x2="${x + s}" y2="${top - s}" stroke="${C.LINE}" stroke-width="3"/>`;
-        b += cabeza(x, yN, s, NOTA[n][0], e.d === 'w' || e.d === 'h');
+        b += cabeza(x, yN, s, sinColor ? C.IV : NOTA[n][0], e.d === 'w' || e.d === 'h');
         if (e.d !== 'w') { const dn = st >= 4, sx = dn ? x - s * .58 : x + s * .58; b += `<line x1="${f1(sx)}" y1="${f1(yN)}" x2="${f1(sx)}" y2="${f1(dn ? yN + 3.4 * s : yN - 3.4 * s)}" stroke="${C.IV}" stroke-width="4"/>`; }
-        if (chips) b += chip(x, chipY, n, cw, cw < 70 ? 36 : 42);
+        if (sinColor) b += `<rect x="${f1(x - 40)}" y="${f1(chipY - 24)}" width="80" height="48" rx="10" fill="none" stroke="${C.LINE}" stroke-width="2.5"/>`; else if (chips) b += chip(x, chipY, n, cw, cw < 70 ? 36 : 42);
         if (tab) { const [cu, tr] = CUERDA[e.p], ty = tTop + (cu - 1) * ts; b += `<rect x="${x - 18}" y="${ty - 17}" width="36" height="34" rx="7" fill="${C.BG}"/>` + txt(x, ty + 11, tr, { size: 32, w: 700, fill: C.GOLD }); if (dedos) b += txt(x, dY, tr ? tr : '·', { size: 32, w: 700, fill: tr ? C.IV : C.MUTE }); }
       });
       if (ult) b += `<line x1="${x1 - 16}" y1="${top}" x2="${x1 - 16}" y2="${bot}" stroke="${C.LINE}" stroke-width="3"/><rect x="${x1 - 10}" y="${top}" width="10" height="${4 * s}" fill="${C.LINE}"/>` + (tab ? `<line x1="${x1 - 16}" y1="${tTop}" x2="${x1 - 16}" y2="${tTop + 5 * ts}" stroke="${C.LINE}" stroke-width="3"/><rect x="${x1 - 10}" y="${tTop}" width="10" height="${5 * ts}" fill="${C.LINE}"/>` : '');
@@ -83,4 +84,21 @@ function ritmo({ mm, sil, porLinea = 2, compasTxt = ['4', '4'], y0 = 20 }) {
   });
   return { b, h: y + 10 };
 }
-module.exports = { C, NOTA, F, S, W, clave, pent, cabeza, chip, txt, svg, compas, partitura, ritmo, silNegra, silCorchea, f1 };
+/* Diagrama de acorde (Mes 3 y Nivel 2). ceja = [traste, desde cuerda (0 = 6.ª), hasta cuerda] */
+/* Diagrama de acorde. tr: trastes de la 6.ª a la 1.ª (x = no se toca, 0 = al aire); de: dedos; ch: notas que suenan (opcional) */
+function acorde(x0, y0, w, nom, sub, tr, de, ch, ceja) {
+  const gx = x0 + w * .14, gw = w * .72, sx = i => gx + i * gw / 5, k = w / 460, top = y0 + 236 * k, fh = w * .19, NF = 4; let b = '';
+  b += txt(x0 + w / 2, y0 + 78 * k + 6, nom, { serif: 1, size: f1(84 * k), w: 700 }) + txt(x0 + w / 2, y0 + 124 * k + 8, sub, { size: f1(30 * k), w: 500, fill: C.MUTE });
+  b += `<rect x="${f1(gx - 8)}" y="${top - 16}" width="${f1(gw + 16)}" height="16" rx="3" fill="#f4ecd8"/>`;
+  for (let f = 1; f <= NF; f++) b += `<line x1="${f1(gx)}" y1="${f1(top + f * fh)}" x2="${f1(gx + gw)}" y2="${f1(top + f * fh)}" stroke="#8d8f93" stroke-width="5"/>`;
+  for (let i = 0; i < 6; i++) b += `<line x1="${f1(sx(i))}" y1="${top}" x2="${f1(sx(i))}" y2="${f1(top + NF * fh)}" stroke="${i < 3 ? '#d8c9a6' : '#eee7da'}" stroke-width="${[6.5, 5.6, 4.7, 3.8, 3, 2.3][i]}"/>`;
+  if (ceja) { const y = top + (ceja[0] - .5) * fh, xa = sx(ceja[1]) - 26 * k, xb = sx(ceja[2]) + 26 * k; b += `<rect x="${f1(xa)}" y="${f1(y - 26 * k)}" width="${f1(xb - xa)}" height="${f1(52 * k)}" rx="${f1(26 * k)}" fill="${C.GOLD}" stroke="#1b1206" stroke-width="4"/>` + txt(sx(ceja[1]), y + 13 * k, '1', { size: f1(38 * k), w: 700, fill: '#1b1206' }); }
+  for (let i = 0; i < 6; i++) { const x = sx(i), t = tr[i], yb = top + NF * fh;
+    if (t === 'x') b += txt(x, top - 32 * k, '✕', { size: f1(40 * k), w: 700, fill: C.MUTE });
+    else if (t === 0) b += `<circle cx="${f1(x)}" cy="${f1(top - 46 * k)}" r="${f1(17 * k)}" fill="none" stroke="${C.IV}" stroke-width="5"/>`;
+    else if (!(ceja && t === ceja[0] && i >= ceja[1] && i <= ceja[2] && de[i] === 1)) { const y = top + (t - .5) * fh; b += `<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(32 * k)}" fill="${C.GOLD}" stroke="#1b1206" stroke-width="4"/>` + txt(x, y + 13 * k, de[i], { size: f1(38 * k), w: 700, fill: '#1b1206' }); }
+    b += txt(x, yb + 44 * k, 6 - i, { size: f1(26 * k), w: 600, fill: C.MUTE });
+    if (ch && ch[i]) b += chip(x, yb + 96 * k, ch[i], f1(Math.min(58 * k, gw / 5 - 4)), f1(38 * k), 1); }
+  return { b, h: top + NF * fh + (ch ? 130 : 70) * k - y0 };
+}
+module.exports = { acorde, C, NOTA, F, S, W, clave, pent, cabeza, chip, txt, svg, compas, partitura, ritmo, silNegra, silCorchea, f1 };

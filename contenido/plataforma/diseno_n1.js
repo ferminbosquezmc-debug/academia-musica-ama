@@ -82,6 +82,7 @@ function dzInit(v){v.dataset.on=1;const K=v.dataset.k,L=(S.ls[K]=S.ls[K]||{}),ki
  let cur=Math.min(+L.dzi||0,N-1),todo=!!L.dzt;
  const pinta=(mover)=>{v.classList.toggle('todo',todo);bar.hidden=todo;S2.forEach((s,i)=>s.classList.toggle('on',i===cur));
   bar.querySelectorAll('[data-dzi]').forEach((b,i)=>{b.classList.toggle('on',i===cur);b.setAttribute('aria-current',i===cur)});
+  [cur,cur+1].forEach(j=>S2[j]&&S2[j].querySelectorAll('img[loading="lazy"]').forEach(im=>{im.loading='eager'}));if(todo)v.querySelectorAll('img[loading="lazy"]').forEach(im=>{im.loading='eager'});
   const dn=bar.querySelector('.dzn');if(dn)dn.textContent=(cur+1)+' / '+N;
   top.querySelector('.dzcnt').textContent=todo?'Toda la explicación':'Diapositiva '+(cur+1)+' de '+N;top.querySelector('.dztodo').textContent=todo?'Ver en diapositivas':'Ver todo en una página';
   bar.querySelector('[data-dzv="-1"]').disabled=cur===0;bar.querySelector('.sig').textContent=cur===N-1?'Siguiente: practicar ▶':'Siguiente →';
@@ -95,4 +96,4 @@ function dzInit(v){v.dataset.on=1;const K=v.dataset.k,L=(S.ls[K]=S.ls[K]||{}),ki
  v.addEventListener('touchend',e=>{if(x0===null)return;const dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;x0=null;if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.5)ir(cur+(dx<0?1:-1))},{passive:true});
  pinta(0)}
 (function(){const lb=document.getElementById('lec-body');if(!lb)return;new MutationObserver(()=>lb.querySelectorAll('.dzv:not([data-on])').forEach(dzInit)).observe(lb,{childList:true,subtree:true})})();
-if(typeof G1K!=='undefined')G1K.forEach(k=>{const D=LD[k];if(!D||!D.leer||D.dzw)return;const o=D.leer;D.dzw=1;D.leer=(K,L)=>dzSlides(o(K,L),k)});
+[].concat(typeof G1K!=='undefined'?G1K:[],typeof G2K!=='undefined'?G2K:[]).forEach(k=>{const D=LD[k];if(!D||!D.leer||D.dzw)return;const o=D.leer;D.dzw=1;D.leer=(K,L)=>dzSlides(o(K,L),k)});
