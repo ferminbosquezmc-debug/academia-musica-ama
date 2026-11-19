@@ -86,10 +86,10 @@ function ritmo({ mm, sil, porLinea = 2, compasTxt = ['4', '4'], y0 = 20 }) {
 }
 /* Diagrama de acorde (Mes 3 y Nivel 2). ceja = [traste, desde cuerda (0 = 6.ª), hasta cuerda] */
 /* Diagrama de acorde. tr: trastes de la 6.ª a la 1.ª (x = no se toca, 0 = al aire); de: dedos; ch: notas que suenan (opcional) */
-function acorde(x0, y0, w, nom, sub, tr, de, ch, ceja) {
+function acorde(x0, y0, w, nom, sub, tr, de, ch, ceja, base) {
   const gx = x0 + w * .14, gw = w * .72, sx = i => gx + i * gw / 5, k = w / 460, top = y0 + 236 * k, fh = w * .19, NF = 4; let b = '';
   b += txt(x0 + w / 2, y0 + 78 * k + 6, nom, { serif: 1, size: f1(84 * k), w: 700 }) + txt(x0 + w / 2, y0 + 124 * k + 8, sub, { size: f1(30 * k), w: 500, fill: C.MUTE });
-  b += `<rect x="${f1(gx - 8)}" y="${top - 16}" width="${f1(gw + 16)}" height="16" rx="3" fill="#f4ecd8"/>`;
+  b += base > 1 ? `<line x1="${f1(gx)}" y1="${top}" x2="${f1(gx + gw)}" y2="${top}" stroke="#8d8f93" stroke-width="5"/>` + txt(gx - 60 * k, top + fh / 2 + 12 * k, base, { size: f1(34 * k), w: 700, fill: C.GOLD }) : `<rect x="${f1(gx - 8)}" y="${top - 16}" width="${f1(gw + 16)}" height="16" rx="3" fill="#f4ecd8"/>`;
   for (let f = 1; f <= NF; f++) b += `<line x1="${f1(gx)}" y1="${f1(top + f * fh)}" x2="${f1(gx + gw)}" y2="${f1(top + f * fh)}" stroke="#8d8f93" stroke-width="5"/>`;
   for (let i = 0; i < 6; i++) b += `<line x1="${f1(sx(i))}" y1="${top}" x2="${f1(sx(i))}" y2="${f1(top + NF * fh)}" stroke="${i < 3 ? '#d8c9a6' : '#eee7da'}" stroke-width="${[6.5, 5.6, 4.7, 3.8, 3, 2.3][i]}"/>`;
   if (ceja) { const y = top + (ceja[0] - .5) * fh, xa = sx(ceja[1]) - 26 * k, xb = sx(ceja[2]) + 26 * k; b += `<rect x="${f1(xa)}" y="${f1(y - 26 * k)}" width="${f1(xb - xa)}" height="${f1(52 * k)}" rx="${f1(26 * k)}" fill="${C.GOLD}" stroke="#1b1206" stroke-width="4"/>` + txt(sx(ceja[1]), y + 13 * k, '1', { size: f1(38 * k), w: 700, fill: '#1b1206' }); }
