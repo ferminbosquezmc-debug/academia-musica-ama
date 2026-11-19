@@ -30,8 +30,8 @@ rep("  if(s==='[[que-suena]]'){h+=qsCard();i++;continue}", "  if(s==='[[que-suen
 
 /* 3) Textos debajo de cada lámina, tomados de la muestra */
 const TX = {}, th = fs.readFileSync(path.join(MU, 'tecnicas.html'), 'utf8');
-for (const f of th.split('<figure>').slice(1)) { const imgs = [...f.matchAll(/img_tec\/(\w+)\.svg/g)].map(m => m[1]), b = (f.match(/<b>([^<]+)<\/b>/) || [])[1], d = (f.match(/<\/b><span>(.*?)<\/span><\/figcaption>/) || [])[1];
-  imgs.forEach((n, i) => TX['guitarra/img/' + n + '.svg'] = i ? [] : [b, d.replace(/<[^>]+>/g, '').replace(/ «Qué es un acorde».*$/, '')]); }
+for (const f of th.split('<figure>').slice(1)) { const imgs = [...f.matchAll(/img_(tec|piano)\/(\w+)\.svg/g)].map(m => (m[1] === 'piano' ? 'piano/img/' : 'guitarra/img/') + m[2]), b = (f.match(/<b>([^<]+)<\/b>/) || [])[1], d = (f.match(/<\/b><span>(.*?)<\/span><\/figcaption>/) || [])[1];
+  imgs.forEach((n, i) => TX[n + '.svg'] = i ? [] : [b, d.replace(/<[^>]+>/g, '').replace(/ «Qué es un acorde».*$/, '')]); }
 Object.assign(TX, { 'guitarra/img/N1_que_es_acorde.svg': ['Qué es un acorde', 'Un acorde = varias notas que suenan al mismo tiempo. En Em: dedo 2 en la 5.ª cuerda y dedo 3 en la 4.ª, los dos en el traste 2.'],
   'guitarra/img/N1_cualidades_sonido.svg': ['Las cuatro cualidades del sonido', 'Altura (agudo o grave), duración (largo o corto), intensidad (fuerte o suave) y timbre (quién suena).'],
   'guitarra/img/N1_cuerdas.svg': ['Las seis cuerdas', 'De la 6.ª, la más gruesa y grave, a la 1.ª, la más delgada y aguda: MI – LA – RE – SOL – SI – MI.'],
@@ -45,6 +45,7 @@ fs.writeFileSync(OUT, t);
 /* 4) Archivos para publicar en guitarra/img/ */
 const PUB = path.join(R, 'plataforma', 'guitarra_img'); fs.mkdirSync(PUB, { recursive: true });
 for (const f of fs.readdirSync(path.join(MU, 'img_tec'))) fs.copyFileSync(path.join(MU, 'img_tec', f), path.join(PUB, f));
+const PPI = path.join(R, 'plataforma', 'piano_img'); fs.mkdirSync(PPI, { recursive: true }); for (const f of fs.readdirSync(path.join(MU, 'img_piano'))) fs.copyFileSync(path.join(MU, 'img_piano', f), path.join(PPI, f));
 fs.copyFileSync(path.join(MU, 'img_ia', 'G12_acorde_lamina.svg'), path.join(PUB, 'N1_que_es_acorde.svg'));
 const envolver = (jpg, out, w, h, label) => { const b = fs.readFileSync(path.join(MU, 'img_ia', jpg)).toString('base64');
   fs.writeFileSync(path.join(PUB, out), `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${label}"><title>${label}</title><image width="${w}" height="${h}" href="data:image/jpeg;base64,${b}" xlink:href="data:image/jpeg;base64,${b}"/></svg>`); };

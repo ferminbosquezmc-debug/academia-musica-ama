@@ -33,7 +33,7 @@ function anchos(ln, x0, avail, porLinea) { const wm = ln.map(ev => ev.reduce((a,
 function repartir(ev, x0, x1) { const tot = ev.reduce((a, e) => a + PESO[e.d], 0), u = (x1 - x0 - 30) / tot; let x = x0 + 34; return ev.map(e => { const r = x; x += PESO[e.d] * u; return r; }); }
 
 /* Pentagrama con notas, nombres, tablatura y dedos. mm = [[{p:'MI5',d:'q'},...], ...] ; porLinea compases por renglón */
-function partitura({ mm, porLinea = 2, compasTxt = ['4', '4'], s = 32, tab = true, dedos = true, chips = true, sinColor = false }) {
+function partitura({ mm, porLinea = 2, compasTxt = ['4', '4'], s = 32, tab = true, dedos = true, chips = true, sinColor = false, filas = [] }) {
   let b = '', y = 20; const lineas = []; for (let i = 0; i < mm.length; i += porLinea) lineas.push(mm.slice(i, i + porLinea));
   lineas.forEach((ln, li) => {
     const top = y + 3 * s, bot = top + 4 * s, xL = 30, xR = W - 30, head = li === 0 ? 215 : 120;
@@ -41,23 +41,27 @@ function partitura({ mm, porLinea = 2, compasTxt = ['4', '4'], s = 32, tab = tru
     const AW = anchos(ln, xL + head, xR - xL - head, porLinea), chipY = bot + 2.1 * s + 6, tTop = chipY + 52, ts = 22, dY = tTop + 5 * ts + 46;
     if (tab) { for (let i = 0; i < 6; i++) b += `<line x1="${xL}" y1="${tTop + i * ts}" x2="${xR}" y2="${tTop + i * ts}" stroke="${C.TAB}" stroke-width="2"/>`;
       b += ['T', 'A', 'B'].map((l, i) => txt(xL + 22, tTop + 26 + i * 34, l, { size: 28, w: 700 })).join(''); }
-    ln.forEach((ev, mi) => {
+    const fY = j => chipY + 58 + j * 50, filaTx = (e, x) => filas.map(([k], j) => e[k] === undefined || e[k] === '' ? '' : k === 'iz' ? chip(x, fY(j) - 8, e[k], 70, 36) : txt(x, fY(j), e[k], { size: k === 'f' ? 30 : 26, w: 700, fill: k === 'f' ? C.IV : k === 'sil' ? C.GOLD : C.MUTE })).join('');
+    ln.forEach((ev, mi) => { const tops = [];
       const [x0, x1] = AW[mi], xs = repartir(ev, x0, x1), gap = Math.min(...AW.map(([a, c], j) => { const z = repartir(ln[j], a, c); return Math.min(...z.slice(1).map((v, k) => v - z[k]), 999); })), cw = Math.max(54, Math.min(84, gap - 22)), ult = li === lineas.length - 1 && mi === ln.length - 1;
       ev.forEach((e, k) => { const x = xs[k] + 6;
-        if (e.d.endsWith('r')) { b += e.d === 'qr' ? silNegra(x, top + 2 * s, 3 * s) : e.d === 'hr' ? `<rect x="${x - s * .6}" y="${top + 2 * s - s * .5}" width="${s * 1.2}" height="${s * .5}" fill="${C.IV}"/>` : `<rect x="${x - s * .6}" y="${top + s}" width="${s * 1.2}" height="${s * .5}" fill="${C.IV}"/>`; return; }
+        if (e.d.endsWith('r')) { b += filaTx(e, x); tops.push(null); b += e.d === 'qr' ? silNegra(x, top + 2 * s, 3 * s) : e.d === 'hr' ? `<rect x="${x - s * .6}" y="${top + 2 * s - s * .5}" width="${s * 1.2}" height="${s * .5}" fill="${C.IV}"/>` : `<rect x="${x - s * .6}" y="${top + s}" width="${s * 1.2}" height="${s * .5}" fill="${C.IV}"/>`; return; }
         const st = PASO[e.p], yN = bot - st * s / 2, n = nombre(e.p);
         if (st <= -2) b += `<line x1="${x - s}" y1="${bot + s}" x2="${x + s}" y2="${bot + s}" stroke="${C.LINE}" stroke-width="3"/>`;
         if (st >= 10) b += `<line x1="${x - s}" y1="${top - s}" x2="${x + s}" y2="${top - s}" stroke="${C.LINE}" stroke-width="3"/>`;
         b += cabeza(x, yN, s, sinColor ? C.IV : NOTA[n][0], e.d === 'w' || e.d === 'h');
-        if (e.d !== 'w') { const dn = st >= 4, sx = dn ? x - s * .58 : x + s * .58; b += `<line x1="${f1(sx)}" y1="${f1(yN)}" x2="${f1(sx)}" y2="${f1(dn ? yN + 3.4 * s : yN - 3.4 * s)}" stroke="${C.IV}" stroke-width="4"/>`; }
+        b += filaTx(e, x);
+        if (e.d !== 'w') { const dn = st >= 4, sx = dn ? x - s * .58 : x + s * .58; tops.push(e.d === 'e' ? [sx, dn ? yN + 3.4 * s : yN - 3.4 * s, dn] : null); b += `<line x1="${f1(sx)}" y1="${f1(yN)}" x2="${f1(sx)}" y2="${f1(dn ? yN + 3.4 * s : yN - 3.4 * s)}" stroke="${C.IV}" stroke-width="4"/>`; }
         if (sinColor) b += `<rect x="${f1(x - 40)}" y="${f1(chipY - 24)}" width="80" height="48" rx="10" fill="none" stroke="${C.LINE}" stroke-width="2.5"/>`; else if (chips) b += chip(x, chipY, n, cw, cw < 70 ? 36 : 42);
         if (tab) { const [cu, tr] = CUERDA[e.p], ty = tTop + (cu - 1) * ts; b += `<rect x="${x - 18}" y="${ty - 17}" width="36" height="34" rx="7" fill="${C.BG}"/>` + txt(x, ty + 11, tr, { size: 32, w: 700, fill: C.GOLD }); if (dedos) b += txt(x, dY, tr ? tr : '·', { size: 32, w: 700, fill: tr ? C.IV : C.MUTE }); }
       });
+      for (let j = 0; j < tops.length - 1; j++) if (tops[j] && tops[j + 1]) { const [ax, ay, dn] = tops[j], [bx, by] = tops[j + 1], yy = dn ? Math.max(ay, by) : Math.min(ay, by); b += `<line x1="${f1(ax)}" y1="${f1(ay)}" x2="${f1(ax)}" y2="${f1(yy)}" stroke="${C.IV}" stroke-width="4"/><line x1="${f1(bx)}" y1="${f1(by)}" x2="${f1(bx)}" y2="${f1(yy)}" stroke="${C.IV}" stroke-width="4"/><rect x="${f1(ax - 2)}" y="${f1(dn ? yy - 12 : yy)}" width="${f1(bx - ax + 4)}" height="12" fill="${C.IV}"/>`; j++; }
       if (ult) b += `<line x1="${x1 - 16}" y1="${top}" x2="${x1 - 16}" y2="${bot}" stroke="${C.LINE}" stroke-width="3"/><rect x="${x1 - 10}" y="${top}" width="10" height="${4 * s}" fill="${C.LINE}"/>` + (tab ? `<line x1="${x1 - 16}" y1="${tTop}" x2="${x1 - 16}" y2="${tTop + 5 * ts}" stroke="${C.LINE}" stroke-width="3"/><rect x="${x1 - 10}" y="${tTop}" width="10" height="${5 * ts}" fill="${C.LINE}"/>` : '');
       else b += `<line x1="${x1}" y1="${top}" x2="${x1}" y2="${bot}" stroke="${C.LINE}" stroke-width="3"/>` + (tab ? `<line x1="${x1}" y1="${tTop}" x2="${x1}" y2="${tTop + 5 * ts}" stroke="${C.LINE}" stroke-width="3"/>` : '');
     });
+    filas.forEach(([k, lab], j) => { if (lab && li === 0) b += txt(xL, fY(j), lab, { a: 'start', size: 22, w: 700, fill: C.GOLD }); });
     if (tab && dedos && li === 0) b += txt(xL, dY, 'dedo', { a: 'start', size: 26, w: 700, fill: C.GOLD });
-    y = (tab ? (dedos ? dY + 30 : tTop + 5 * ts + 30) : chips ? chipY + 40 : bot + 2 * s) + 30;
+    y = (tab ? (dedos ? dY + 30 : tTop + 5 * ts + 30) : filas.length ? fY(filas.length - 1) + 20 : chips ? chipY + 40 : bot + 2 * s) + 30;
   });
   return { b, h: y };
 }
