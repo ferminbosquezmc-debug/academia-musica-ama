@@ -7,11 +7,11 @@ const { C, W, txt, svg, f1, pent, cabeza, silNegra } = require('./tecnicas_motor
 const OUT = path.join(__dirname, 'img_bateria'); fs.mkdirSync(OUT, { recursive: true });
 const out = (n, h, label, b) => fs.writeFileSync(path.join(OUT, n + '.svg'), svg(h, label, b));
 const EX = { D: ['#E5312B', '#fff'], I: ['#2F6FD8', '#fff'], PD: ['#2E9E4F', '#fff'], PI: ['#8E3BB8', '#fff'] };
-const golpe = (x, y, g, r = 26) => `<circle cx="${f1(x)}" cy="${f1(y)}" r="${r}" fill="${EX[g][0]}" stroke="${C.IV}" stroke-width="2.5"/>` + txt(x, y + r * .36, g, { size: f1(g.length > 1 ? r * .78 : r * .95), w: 700, fill: EX[g][1] });
+const golpe = (x, y, g, r = 26) => { const ac = />$/.test(g), lab = g === 'o' ? 'o' : null; g = g === 'o' ? 'D' : g.replace('>', ''); return (ac ? `<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(r + 7)}" fill="none" stroke="${C.GOLD}" stroke-width="5"/>` : '') + `<circle cx="${f1(x)}" cy="${f1(y)}" r="${r}" fill="${EX[g][0]}" stroke="${C.IV}" stroke-width="2.5"/>` + txt(x, y + r * .36, lab || g, { size: f1(g.length > 1 ? r * .78 : r * .95), w: 700, fill: EX[g][1] }); };
 const L8 = ['1', 'y', '2', 'y', '3', 'y', '4', 'y'], L4 = ['1', '2', '3', '4'];
 
 /* Tabla de ritmo: filas [[instrumento, [golpes por columna]]], columnas = etiquetas de conteo */
-function grilla(y0, cols, filas, o = {}) { let b = ''; const lw = o.lw || 200, x0 = 20 + lw, cw = (W - 30 - x0) / cols.length, rh = o.rh || 74, r = Math.min(26, cw * .32);
+function grilla(y0, cols, filas, o = {}) { let b = ''; const lw = o.lw || 200, x0 = 20 + lw, cw = (W - 30 - x0) / cols.length, rh = o.rh || 74, r = o.r || Math.min(26, cw * .32);
   cols.forEach((c, i) => { const x = x0 + (i + .5) * cw, num = /\d/.test(c);
     b += `<rect x="${f1(x0 + i * cw + 3)}" y="${y0}" width="${f1(cw - 6)}" height="${50 + filas.length * rh}" rx="12" fill="${num ? '#1c160f' : '#120f0b'}"/>` + txt(x, y0 + 36, c, { size: 28, w: 700, fill: num ? C.GOLD : C.MUTE }); });
   if (o.marca) o.marca.forEach(i => b += `<rect x="${f1(x0 + i * cw + 3)}" y="${y0}" width="${f1(cw - 6)}" height="${50 + filas.length * rh}" rx="12" fill="none" stroke="${C.GOLD}" stroke-width="4"/>`);
@@ -119,4 +119,5 @@ function percusion({ y0 = 20, ev, s = 34, filas = [], compas = ['4', '4'], barra
     ['Marcha · 2/4', ['1', '2'], [['Redoblante', ['', 'I']], ['Bombo', ['PD', '']]]], ['Vals · 3/4', ['1', '2', '3'], [['Hi-hat', ['', 'D', 'D']], ['Bombo', ['PD', '', '']]]], ['Balada · 4/4 lenta', L4, [['Hi-hat', ['D', 'D', 'D', 'D']], ['Redoblante', ['', '', 'I', '']], ['Bombo', ['PD', '', '', '']]]],
     ['Golpes alternos', L4, [['Manos', ['D', 'I', 'D', 'I']]]], ['Redoble abierto', L4, [['Manos', ['D', 'D', 'I', 'I']]]]].map(([t, c, f]) => [t, c, f, { rh: 60 }]);
   P('B1_resumen', 'Mis ritmos del Nivel 1', R); })();
-console.log('ok batería 1:', fs.readdirSync(OUT).length, 'láminas');
+module.exports = { EX, golpe, grilla, pasos, percusion, clavePerc, POS, XH, L8, L4, HH8 };
+if (require.main === module) console.log('ok batería 1:', fs.readdirSync(OUT).length, 'láminas');
