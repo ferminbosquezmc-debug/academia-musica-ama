@@ -26,6 +26,8 @@ Hacer **cejilla** es pisar **varias cuerdas a la vez con el dedo 1**, estirado s
 ### 👀 Observo · Dos formas de cejilla
 ![La cejilla: F y Bm](guitarra/img/G2_cejilla.svg)
 
+![Cinco formas de tocar FA](guitarra/img/G_formas_fa.svg)
+
 - **Forma de Mi:** es la forma del acorde E, con la cejilla detrás. En el traste 1 es **F**; en el traste 3, **G**; en el traste 5, **A**.
 - **Forma de La menor:** es la forma de Am, con la cejilla detrás. En el traste 2 es **Bm**; en el traste 3, **Cm**.
 

@@ -17,12 +17,14 @@ const CAMBIOS = [
   [corta(c2, '![Postura correcta con la guitarra](guitarra/img/G1_postura.svg)', 'y los dedos arqueados.'), '[[postura-foto]]'],
   [corta(c2, '![Numeración de los dedos](guitarra/img/N1_dedos.svg)', 'con **letras**: **p** pulgar · **i** índice · **m** medio · **a** anular. |'), '[[manos-foto]]'],
   ['| Re mayor (D) | Rasgueos |', '![El rasgueo](guitarra/img/G13_rasgueo.svg)\n\n| Re mayor (D) | Rasgueos |'],
-  ['![Arpegio con los dedos p, i, m y a](guitarra/img/G2_arpegio.svg)', '![La mano en el arpegio](guitarra/img/G14_arpegio.svg)\n\n![Arpegio con los dedos p, i, m y a](guitarra/img/G2_arpegio.svg)']];
+  ['![Arpegio con los dedos p, i, m y a](guitarra/img/G2_arpegio.svg)', '![La mano en el arpegio](guitarra/img/G14_arpegio.svg)\n\n![Arpegio con los dedos p, i, m y a](guitarra/img/G2_arpegio.svg)'],
+  ['![La cejilla: F y Bm](guitarra/img/G2_cejilla.svg)', '![La cejilla: F y Bm](guitarra/img/G2_cejilla.svg)\n\n![Cinco formas de tocar FA](guitarra/img/G_formas_fa.svg)']];
 const esc = s => JSON.stringify(s).slice(1, -1);
 for (const [a, b] of CAMBIOS) { if (t.includes(esc(b))) continue; rep(esc(a), esc(b)); }
 if (process.argv.includes('--repo')) { let a2 = c2, a11 = c11; for (const [a, b] of CAMBIOS.slice(0, 3)) a2 = a2.replace(a, b); a11 = a11.replace(CAMBIOS[3][0], CAMBIOS[3][1]); /* orig/ = clases tal como estaban antes del rediseño */
   fs.writeFileSync(path.join(NV, 'clase-2.md'), a2); fs.writeFileSync(path.join(NV, 'clase-11.md'), a11);
-  const f18 = path.join(R, 'guitarra', 'nivel-2', 'clase-18.md'), m18 = fs.readFileSync(f18, 'utf8'); if (!m18.includes('G14_arpegio')) fs.writeFileSync(f18, m18.replace(CAMBIOS[4][0], CAMBIOS[4][1])); }
+  const f18 = path.join(R, 'guitarra', 'nivel-2', 'clase-18.md'), m18 = fs.readFileSync(f18, 'utf8'); if (!m18.includes('G14_arpegio')) fs.writeFileSync(f18, m18.replace(CAMBIOS[4][0], CAMBIOS[4][1]));
+  const f21 = path.join(R, 'guitarra', 'nivel-2', 'clase-21.md'), m21 = fs.readFileSync(f21, 'utf8'); if (!m21.includes('G_formas_fa')) fs.writeFileSync(f21, m21.replace(CAMBIOS[5][0], CAMBIOS[5][1])); }
 
 /* 2) Lector de Markdown y clase de las láminas nuevas */
 rep(`'<img class="gimg" src="'+src+'"`, `'<img class="gimg'+(typeof DZNEW!=='undefined'&&DZNEW.has(src)?' gnew':'')+'" src="'+src+'"`, 2);
@@ -36,6 +38,7 @@ Object.assign(TX, { 'guitarra/img/N1_que_es_acorde.svg': ['Qué es un acorde', '
   'guitarra/img/N1_cualidades_sonido.svg': ['Las cuatro cualidades del sonido', 'Altura (agudo o grave), duración (largo o corto), intensidad (fuerte o suave) y timbre (quién suena).'],
   'guitarra/img/N1_cuerdas.svg': ['Las seis cuerdas', 'De la 6.ª, la más gruesa y grave, a la 1.ª, la más delgada y aguda: MI – LA – RE – SOL – SI – MI.'],
   'guitarra/img/G14_arpegio.svg': ['El arpegio', 'El pulgar en la cuerda grave y los dedos i, m y a en las agudas, uno por cuerda.'],
+  'guitarra/img/G_formas_fa.svg': ['Cinco formas de tocar FA', 'Las cinco suenan FA – LA – DO en distintos lugares del mástil. Empieza por la 3 (pequeño) y la 2; la 1 es la cejilla completa. El número dorado de la izquierda es el traste donde empieza.'],
   'guitarra/img/G13_rasgueo.svg': ['El rasgueo', 'La mano rasguea sobre la boca moviendo la muñeca: ↓ hacia el suelo, ↑ hacia el techo.'] });
 const NUEVAS = Object.keys(TX);
 let mod = fs.readFileSync(path.join(__dirname, 'diseno_n1.js'), 'utf8').replace('/*DZNEW*/', JSON.stringify(NUEVAS)).replace('/*DZTX*/', JSON.stringify(TX));
