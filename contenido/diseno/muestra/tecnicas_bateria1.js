@@ -7,7 +7,7 @@ const { C, W, txt, svg, f1, pent, cabeza, silNegra } = require('./tecnicas_motor
 const OUT = path.join(__dirname, 'img_bateria'); fs.mkdirSync(OUT, { recursive: true });
 const out = (n, h, label, b) => fs.writeFileSync(path.join(OUT, n + '.svg'), svg(h, label, b));
 const EX = { D: ['#E5312B', '#fff'], I: ['#2F6FD8', '#fff'], PD: ['#2E9E4F', '#fff'], PI: ['#8E3BB8', '#fff'] };
-const golpe = (x, y, g, r = 26) => { const ac = />$/.test(g), lab = g === 'o' ? 'o' : null; g = g === 'o' ? 'D' : g.replace('>', ''); return (ac ? `<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(r + 7)}" fill="none" stroke="${C.GOLD}" stroke-width="5"/>` : '') + `<circle cx="${f1(x)}" cy="${f1(y)}" r="${r}" fill="${EX[g][0]}" stroke="${C.IV}" stroke-width="2.5"/>` + txt(x, y + r * .36, lab || g, { size: f1(g.length > 1 ? r * .78 : r * .95), w: 700, fill: EX[g][1] }); };
+const golpe = (x, y, g, r = 26) => { if (g[0] === '(') { const k = g.slice(1, -1), rr = r * .9; return `<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(rr)}" fill="${C.BG}" stroke="${EX[k][0]}" stroke-width="3" stroke-dasharray="5 4"/>` + txt(x, y + rr * .36, k, { size: f1(rr * .9), w: 700, fill: EX[k][0] }); } const ac = />$/.test(g), lab = g === 'o' ? 'o' : null; g = g === 'o' ? 'D' : g.replace('>', ''); return (ac ? `<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(r + 7)}" fill="none" stroke="${C.GOLD}" stroke-width="5"/>` : '') + `<circle cx="${f1(x)}" cy="${f1(y)}" r="${r}" fill="${EX[g][0]}" stroke="${C.IV}" stroke-width="2.5"/>` + txt(x, y + r * .36, lab || g, { size: f1(g.length > 1 ? r * .78 : r * .95), w: 700, fill: EX[g][1] }); };
 const L8 = ['1', 'y', '2', 'y', '3', 'y', '4', 'y'], L4 = ['1', '2', '3', '4'];
 
 /* Tabla de ritmo: filas [[instrumento, [golpes por columna]]], columnas = etiquetas de conteo */
