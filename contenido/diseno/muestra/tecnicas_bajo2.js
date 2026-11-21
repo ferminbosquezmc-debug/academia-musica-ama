@@ -126,4 +126,5 @@ arpegio('J2_arpmenor', 'El arpegio menor', '1 – ♭3 – 5 – 8 · la tercera
   BL.forEach((c, k) => { const x = 30 + (k % 4) * 238, yy = y + 30 + Math.floor(k / 4) * 130; b += caja(x, yy, 226, 112) + txt(x + 22, yy + 70, c, { a: 'start', serif: 1, size: 40, w: 700, fill: C.GOLD }) + chip(x + 160, yy + 56, RT[c], 90, 44); });
   y += 30 + 390 + 10; b += nota(y, 'Las raíces van al aire: LA (3.ª), RE (2.ª) y MI (4.ª).', { size: 24 });
   out('J2_septima', y + 30, 'Arpegio de séptima dominante y blues de 12 compases', b); })();
-console.log('ok', fs.readdirSync(OUT).filter(f => f.startsWith('J2_')).length, 'láminas J2');
+module.exports = { caja4, cab, bola, leyenda, G, M, CHROM, OPEN };
+if (require.main === module) console.log('ok', fs.readdirSync(OUT).filter(f => f.startsWith('J2_')).length, 'láminas J2');
