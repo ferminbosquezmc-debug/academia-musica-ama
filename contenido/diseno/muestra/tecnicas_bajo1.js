@@ -14,17 +14,22 @@ const caja = (x, y, w, h, o = {}) => `<rect x="${f1(x)}" y="${f1(y)}" width="${f
 const CUERDA = { 1: 'SOL', 2: 'RE', 3: 'LA', 4: 'MI', 5: 'SI' };
 
 /* Diapasón del bajo: notas = [[cuerda 1-5, traste, nombre, dedo, texto debajo]] · solo = cuerdas visibles */
-function mastil({ y0 = 60, trastes = 4, notas = [], x0 = 200, fw = 190, sg = 76, solo = [1, 2, 3, 4, 5], resalta, apagadas = [] }) {
-  let b = ''; const n = solo.length, cy = c => y0 + solo.indexOf(c) * sg, nx = t => t === 0 ? x0 - 62 : x0 + (t - .5) * fw, alto = (n - 1) * sg;
-  b += `<rect x="${x0}" y="${y0 - 30}" width="${trastes * fw + 8}" height="${alto + 60}" rx="8" fill="#2a1d12" opacity=".8"/><rect x="${x0 - 14}" y="${y0 - 34}" width="16" height="${alto + 68}" rx="4" fill="#f4ecd8"/>`;
-  for (let f = 1; f <= trastes; f++) b += `<line x1="${x0 + f * fw}" y1="${y0 - 30}" x2="${x0 + f * fw}" y2="${y0 + alto + 30}" stroke="#a7a9ad" stroke-width="6"/>` + txt(x0 + (f - .5) * fw, y0 + alto + 76, f, { size: 30, w: 700, fill: C.MUTE });
-  b += txt(x0 - 62, y0 + alto + 76, 'aire', { size: 26, w: 600, fill: C.MUTE });
-  if (n > 2) [3, 5].forEach(f => { if (f <= trastes) b += `<circle cx="${x0 + (f - .5) * fw}" cy="${y0 + alto / 2}" r="9" fill="#5a4a33"/>`; });
+function mastil({ y0 = 60, trastes = 4, desde = 1, notas = [], marcas = [], x0 = 200, fw = 190, sg = 76, solo = [1, 2, 3, 4, 5], resalta, apagadas = [] }) {
+  let b = ''; const n = solo.length, cy = c => y0 + solo.indexOf(c) * sg, nx = t => t === 0 ? x0 - 62 : x0 + (t - desde + .5) * fw, alto = (n - 1) * sg;
+  b += `<rect x="${x0}" y="${y0 - 30}" width="${trastes * fw + 8}" height="${alto + 60}" rx="8" fill="#2a1d12" opacity=".8"/>` + (desde === 1 ? `<rect x="${x0 - 14}" y="${y0 - 34}" width="16" height="${alto + 68}" rx="4" fill="#f4ecd8"/>` : `<line x1="${x0}" y1="${y0 - 30}" x2="${x0}" y2="${y0 + alto + 30}" stroke="#a7a9ad" stroke-width="6"/>`);
+  for (let k = 1; k <= trastes; k++) { const f = desde + k - 1, xm = x0 + (k - .5) * fw;
+    b += `<line x1="${x0 + k * fw}" y1="${y0 - 30}" x2="${x0 + k * fw}" y2="${y0 + alto + 30}" stroke="#a7a9ad" stroke-width="6"/>` + txt(xm, y0 + alto + 76, f, { size: 30, w: 700, fill: C.MUTE });
+    if (n > 2 && [3, 5, 7, 9].includes(f)) b += `<circle cx="${xm}" cy="${y0 + alto / 2}" r="9" fill="#5a4a33"/>`;
+    if (n > 2 && f === 12) [-1, 1].forEach(d => { b += `<circle cx="${xm}" cy="${y0 + alto / 2 + d * sg}" r="9" fill="#5a4a33"/>`; }); }
+  b += txt(x0 - 62, y0 + alto + 76, desde === 1 ? 'aire' : 'traste', { size: 26, w: 600, fill: C.MUTE });
+  marcas.forEach(([c, t, lab, col, nm, tx]) => { notas.push([c, t, null, null, null, lab, col, nm, tx]); });
   solo.forEach(c => { const y = cy(c), off = apagadas.includes(c);
     b += `<line x1="${x0}" y1="${y}" x2="${x0 + trastes * fw + 8}" y2="${y}" stroke="${off ? '#6b6153' : c === resalta ? C.GOLD : '#d8c9a6'}" stroke-width="${3 + c * 1.5}"/>`;
     b += txt(26, y + 10, c + '.ª', { a: 'start', size: 28, w: 700, fill: off ? '#6b6153' : C.IV });
     if (!notas.some(([cc, t]) => cc === c && t === 0)) b += `<g opacity="${off ? .35 : .6}">${chip(x0 - 62, y, CUERDA[c], 70, 34)}</g>`; });
-  notas.forEach(([c, t, nm, dedo, ab]) => { const x = nx(t), y = cy(c); b += chip(x, y, nm, 84, 44);
+  notas.forEach(([c, t, nm, dedo, ab, lab, col, nb, tx]) => { const x = nx(t), y = cy(c);
+    if (lab !== undefined) { b += `<circle cx="${f1(x)}" cy="${y}" r="30" fill="${col}" stroke="${C.IV}" stroke-width="3"/>` + txt(x, y + 10, lab, { size: String(lab).length > 1 ? 24 : 30, w: 700, fill: tx || '#fff' }) + (nb ? txt(x + 33, y - 24, nb, { a: 'start', size: 22, w: 700, fill: C.MUTE }) : ''); return; }
+    b += chip(x, y, nm, 84, 44);
     if (dedo) b += circ(x - 48, y - 30, 18, dedo, { size: 20 });
     if (ab) b += txt(x, y + 50, ab, { size: 22, w: 700, fill: C.MUTE }); });
   return { b, h: y0 + alto + 100, cy, nx };
@@ -187,4 +192,5 @@ cuerdaLam('J1_cuerdaRE', 2, ['RE3', 'MI3', 'FA3'], [[2, 0, 'RE'], [2, 2, 'MI', 2
   [['DO', 'cuerda LA · traste 3 (o cuerda SI · traste 1)'], ['FA', 'cuerda MI · traste 1'], ['SOL', 'cuerda MI · traste 3']].forEach(([n, d], k) => { const yy = y + 40 + k * 70;
     b += chip(80, yy + 30, n, 96, 44) + txt(150, yy + 40, d, { a: 'start', size: 27, w: 600 }); });
   out('J1_santos', y + 260, 'Raíces de «Cuando los santos marchan»', b); })();
-console.log('ok', fs.readdirSync(OUT).filter(f => f.startsWith('J1_')).length, 'láminas J1');
+module.exports = { mastil, pentaFa, circ, tit, nota, caja, CUERDA, IM, DED, GOLDTX };
+if (require.main === module) console.log('ok', fs.readdirSync(OUT).filter(f => f.startsWith('J1_')).length, 'láminas J1');
